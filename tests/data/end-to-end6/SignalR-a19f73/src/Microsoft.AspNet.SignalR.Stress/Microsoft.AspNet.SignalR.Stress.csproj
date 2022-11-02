@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <DefineConstants>$(DefineConstants);SERVER</DefineConstants>
+    <TargetFrameworks>$(DefaultTestFrameworks)</TargetFrameworks>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(PerfRun)'=='True'">
+      <PropertyGroup>
+        <DefineConstants>$(DefineConstants);PERFRUN</DefineConstants>
+      </PropertyGroup>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.Diagnostics.Measurement">
+          <SpecificVersion>false</SpecificVersion>
+          <HintPath>$(PerfToolsBin)\Microsoft.VisualStudio.Diagnostics.Measurement.dll</HintPath>
+          <Private>true</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
+    <PackageReference Include="CmdLine" Version="$(CmdLinePackageVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
+    <PackageReference Include="Owin" Version="$(OwinPackageVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\Infrastructure\DisposableAction.cs">
+      <Link>Infrastructure\DisposableAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\Infrastructure\TaskQueue.cs">
+      <Link>Infrastructure\TaskQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\TaskAsyncHelper.cs">
+      <Link>TaskAsyncHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\Infrastructure\DispatchingTaskCompletionSource.cs">
+      <Link>Infrastructure\DispatchingTaskCompletionSource.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\test\Microsoft.AspNet.SignalR.Tests.Common\Microsoft.AspNet.SignalR.Tests.Common.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.Client\Microsoft.AspNet.SignalR.Client.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.Core\Microsoft.AspNet.SignalR.Core.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.Redis\Microsoft.AspNet.SignalR.Redis.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.ServiceBus\Microsoft.AspNet.SignalR.ServiceBus.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.SqlServer\Microsoft.AspNet.SignalR.SqlServer.csproj" />
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.StressServer\Microsoft.AspNet.SignalR.StressServer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CreateStressDatabase.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TPlan.Perf.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

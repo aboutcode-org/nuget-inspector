@@ -1,0 +1,76 @@
+<Project>
+  <Import
+    Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), AspNetCoreSettings.props))\AspNetCoreSettings.props"
+    Condition=" '$(CI)' != 'true' AND '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), AspNetCoreSettings.props))' != '' " />
+
+  <Import Project="version.props" />
+  <Import Project="build\dependencies.props" />
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)build\Microsoft.AspNet.SignalR.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/SignalR/SignalR</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)build\35MSSharedLib1024.snk</AssemblyOriginatorKeyFile>
+
+    <!-- The key doesn't have the private part with it, so we DelaySign when building for CI -->
+    <DelaySign Condition="'$(CI)' == 'true' And '$(DelaySign)' == ''">true</DelaySign>
+    <SignAssembly Condition="'$(CI)' == 'true' And '$(SignAssembly)' == ''">true</SignAssembly>
+    <!-- Uncomment the below lines when running JS functional tests against Azure SignalR -->
+    <!-- <DelaySign>true</DelaySign>
+    <SignAssembly>true</SignAssembly> -->
+    <DefineConstants Condition="'$(SignAssembly)' == 'true' And '$(DefineConstants)' != ''">$(DefineConstants);SIGNED</DefineConstants>
+    <DefineConstants Condition="'$(SignAssembly)' == 'true' And '$(DefineConstants)' == ''">SIGNED</DefineConstants>
+
+    <AssemblySigningCertName>Microsoft</AssemblySigningCertName>
+    <PackageSigningCertName>MicrosoftNuGet</PackageSigningCertName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <DefaultTestFrameworks>net472</DefaultTestFrameworks>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+
+    <!-- Disable warning about SemVer 2.0 versions -->
+    <NoWarn>NU5105</NoWarn>
+
+    <!-- These values don't change between official and unofficial builds -->
+    <Product>Microsoft ASP.NET SignalR</Product>
+    <PackageProjectUrl>https://www.asp.net/signalr</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/SignalR/SignalR/releases</PackageReleaseNotes>
+    <PackageIcon>packageIcon.png</PackageIcon>
+    <PackageIconFullPath>$(MSBuildThisFileDirectory)packageIcon.png</PackageIconFullPath>
+    <LicenseFullPath>$(MSBuildThisFileDirectory)LICENSE.txt</LicenseFullPath>
+    <Authors>Microsoft</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(OfficialBuild)' == 'true'">
+    <!-- Assembly/NuSpec attributes -->
+    <Company>Microsoft</Company>
+    <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(OfficialBuild)' != 'true'">
+    <!-- Assembly/NuSpec attributes -->
+    <Company>.NET Foundation</Company>
+    <Copyright>© Copyright (c) .NET Foundation. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <!-- Locating Visual Studio -->
+  <PropertyGroup Condition="'$(VsInstallRoot)' == ''">
+    <_Vs2017InstallDir>$(MSBuildProgramFiles32)\Microsoft Visual Studio\2017\Enterprise\</_Vs2017InstallDir>
+
+    <VsInstallRoot Condition="'$(VsInstallRoot)' == '' And '$(VSINSTALLDIR)' != '' And Exists('$(VSINSTALLDIR)')">$(VSINSTALLDIR)</VsInstallRoot>
+    <VsInstallRoot Condition="'$(VsInstallRoot)' == '' And Exists('$(_VstsVsInstallDir)')">$(_Vs2017InstallDir)</VsInstallRoot>
+
+    <!-- Use ProgramFiles32 instead of MSBuildExtensionsPath so we can be built with dotnet.exe -->
+    <WAPToolsPath Condition="'$(WAPToolsPath)' == ''">$(VsInstallRoot)\MSBuild\Microsoft\VisualStudio\v$(VisualStudioVersion)</WAPToolsPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(PackageIconFullPath)" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <Import Project="build\arcade.props" />
+</Project>

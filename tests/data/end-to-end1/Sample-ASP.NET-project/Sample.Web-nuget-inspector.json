@@ -1,0 +1,301 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "Packages": [
+    {
+      "Name": "Sample.Web",
+      "Version": "1.0.0.0",
+      "Type": "xproj-file",
+      "SourcePath": "/home/pombreda/w421/nuget-inspector/nuget-examples/end-to-end1/Sample-ASP.NET-project/Sample.Web/Sample.Web.csproj",
+      "OutputPaths": [],
+      "Packages": [
+        {
+          "PackageId": {
+            "Name": "Antlr",
+            "Version": "3.5.0.2"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Autofac",
+            "Version": "4.8.1"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Autofac.Mvc5",
+            "Version": "4.0.2"
+          },
+          "Dependencies": [
+            {
+              "Name": "Autofac",
+              "Version": "4.8.1"
+            },
+            {
+              "Name": "Microsoft.AspNet.Mvc",
+              "Version": "5.2.4"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.AspNet.Mvc",
+            "Version": "5.2.4"
+          },
+          "Dependencies": [
+            {
+              "Name": "Microsoft.AspNet.WebPages",
+              "Version": "3.2.4"
+            },
+            {
+              "Name": "Microsoft.AspNet.Razor",
+              "Version": "3.2.4"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.AspNet.WebPages",
+            "Version": "3.2.4"
+          },
+          "Dependencies": [
+            {
+              "Name": "Microsoft.Web.Infrastructure",
+              "Version": "1.0.0"
+            },
+            {
+              "Name": "Microsoft.AspNet.Razor",
+              "Version": "3.2.4"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.Web.Infrastructure",
+            "Version": "1.0.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.AspNet.Razor",
+            "Version": "3.2.4"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "EntityFramework",
+            "Version": "6.2.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.Agent.Intercept",
+            "Version": "2.4.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.DependencyCollector",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.PerfCounterCollector",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.Web",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.WindowsServer",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
+            "Version": "2.8.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.AspNet.TelemetryCorrelation",
+            "Version": "1.0.4"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.AspNet.Web.Optimization",
+            "Version": "1.1.3"
+          },
+          "Dependencies": [
+            {
+              "Name": "Microsoft.Web.Infrastructure",
+              "Version": "1.0.0"
+            },
+            {
+              "Name": "WebGrease",
+              "Version": "1.6.0"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "WebGrease",
+            "Version": "1.6.0"
+          },
+          "Dependencies": [
+            {
+              "Name": "Antlr",
+              "Version": "3.5.0.2"
+            },
+            {
+              "Name": "Newtonsoft.Json",
+              "Version": "9.0.1"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "Newtonsoft.Json",
+            "Version": "9.0.1"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+            "Version": "2.0.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.Owin",
+            "Version": "4.0.0"
+          },
+          "Dependencies": [
+            {
+              "Name": "Owin",
+              "Version": "1.0.0"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "Owin",
+            "Version": "1.0.0"
+          },
+          "Dependencies": []
+        },
+        {
+          "PackageId": {
+            "Name": "Microsoft.Owin.Host.SystemWeb",
+            "Version": "4.0.0"
+          },
+          "Dependencies": [
+            {
+              "Name": "Owin",
+              "Version": "1.0.0"
+            },
+            {
+              "Name": "Microsoft.Owin",
+              "Version": "4.0.0"
+            }
+          ]
+        },
+        {
+          "PackageId": {
+            "Name": "System.Diagnostics.DiagnosticSource",
+            "Version": "4.5.0"
+          },
+          "Dependencies": []
+        }
+      ],
+      "Dependencies": [
+        {
+          "Name": "Autofac.Mvc5",
+          "Version": "4.0.2"
+        },
+        {
+          "Name": "EntityFramework",
+          "Version": "6.2.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.Agent.Intercept",
+          "Version": "2.4.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.DependencyCollector",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.PerfCounterCollector",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.Web",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.WindowsServer",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
+          "Version": "2.8.0"
+        },
+        {
+          "Name": "Microsoft.AspNet.TelemetryCorrelation",
+          "Version": "1.0.4"
+        },
+        {
+          "Name": "Microsoft.AspNet.Web.Optimization",
+          "Version": "1.1.3"
+        },
+        {
+          "Name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+          "Version": "2.0.0"
+        },
+        {
+          "Name": "Microsoft.Owin.Host.SystemWeb",
+          "Version": "4.0.0"
+        },
+        {
+          "Name": "System.Diagnostics.DiagnosticSource",
+          "Version": "4.5.0"
+        }
+      ],
+      "Children": []
+    }
+  ]
+}

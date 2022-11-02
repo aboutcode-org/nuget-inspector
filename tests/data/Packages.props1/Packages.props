@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ItemGroup>
+    <GlobalPackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.321" /> <!-- Missing in analysis -->
+    <PackageReference Update="System.Composition" Version="1.4.1" />
+    <PackageReference Update="Bar.UI" Version="1.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <SourceCustomFilesEmailXml Include="$(MSBuildThisFileDirectory)..\content\*.xml" />
+  </ItemGroup>
+  <Target Name="EmailCopyFilesToProject" BeforeTargets="Build">
+    <Copy SourceFiles="@(SourceCustomFilesEmailXml)" DestinationFolder="$(ProjectDir)\Docs" />
+  </Target>
+</Project>

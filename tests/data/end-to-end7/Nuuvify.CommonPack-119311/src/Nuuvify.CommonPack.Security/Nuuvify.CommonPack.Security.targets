@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <SourceCustomFilesSecurityXml Include="$(MSBuildThisFileDirectory)..\content\*.xml" />
+  </ItemGroup>
+  <Target Name="SecurityCopyFilesToProject" BeforeTargets="Build">
+    <Copy SourceFiles="@(SourceCustomFilesSecurityXml)" DestinationFolder="$(ProjectDir)\Docs" />
+  </Target>
+</Project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>$(DefaultTestFrameworks)</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Remove="obj\**" />
+      <EmbeddedResource Remove="obj\**" />
+      <None Remove="obj\**" />
+      <Content Include="wwwroot\**" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Owin.Cors" Version="$(MicrosoftOwinCorsPackageVersion)" />
+        <PackageReference Include="Microsoft.Owin.SelfHost" Version="$(MicrosoftOwinSelfHostPackageVersion)" />
+        <PackageReference Include="Microsoft.Owin.StaticFiles" Version="$(MicrosoftOwinStaticFilesPackageVersion)" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Microsoft.AspNet.SignalR.Core\Microsoft.AspNet.SignalR.Core.csproj" />
+        <ProjectReference Include="..\Microsoft.AspNet.SignalR.Tests.Common\Microsoft.AspNet.SignalR.Tests.Common.csproj" />
+
+        <!-- Pull JSON.NET up to avoid downgrade warnings -->
+        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonPackageVersion)" />
+
+        <!-- Order-only dependencies -->
+        <ProjectReference Include="..\..\src\Microsoft.AspNet.SignalR.JS\Microsoft.AspNet.SignalR.JS.csproj" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+  <Target Name="CopyJs" AfterTargets="Build">
+    <Copy SourceFiles="$(ArtifactsBinDir)\Microsoft.AspNet.SignalR.JS\netstandard1.0\jquery.signalR.js" DestinationFiles="wwwroot/lib/signalr/jquery.signalR.js" />
+    <Copy SourceFiles="$(ArtifactsBinDir)\Microsoft.AspNet.SignalR.JS\netstandard1.0\jquery.signalR.min.js" DestinationFiles="wwwroot/lib/signalr/jquery.signalR.min.js" />
+  </Target>
+
+    <Target Name="CalculateNetworkMockInputs">
+        <ItemGroup>
+            <_NetMockOutput Include="wwwroot\lib\networkmock\jquery.network.mock.js" />
+
+            <!-- The order in this list is the order in which the files are combined -->
+            <_NetMockInput Include="NetworkMock/jquery.network.mock.core.js" />
+            <_NetMockInput Include="NetworkMock/jquery.network.mock.ajax.js" />
+            <_NetMockInput Include="NetworkMock/jquery.network.mock.websocket.js" />
+            <_NetMockInput Include="NetworkMock/jquery.network.mock.mask.js" />
+            <_NetMockInput Include="NetworkMock/jquery.network.mock.eventsource.js" />
+
+            <_BuildNetMockScript Include="Build/buildNetworkMock.ps1" />
+        </ItemGroup>
+    </Target>
+    <Target Name="BuildNetworkMock" AfterTargets="Build" DependsOnTargets="CalculateNetworkMockInputs" Inputs="@(_NetMockInput);@(_BuildNetMockScript)" Outputs="@(_NetMockOutput)">
+        <Exec Command="powershell -ExecutionPolicy Bypass -NoProfile -NoLogo &quot;%(_BuildNetMockScript.FullPath)&quot; -InputFiles &quot;@(_NetMockInput->'%(FullPath)','!')&quot; -OutputFile &quot;@(_NetMockOutput->'%(FullPath)')&quot;" />
+        <Message Text="Generated network mock script %(_NetMockOutput.FullPath)" Importance="high" />
+    </Target>
+
+    <Target Name="CalculateTestInputs">
+        <ItemGroup>
+            <_TestJsFile Include="wwwroot\Tests\**\*.js" />
+            <_InputTemplate Include="default.template.html" />
+            <_OutputHtml Include="wwwroot\default.html" />
+            <_BuildHtmlScript Include="Build\buildHtml.ps1" />
+        </ItemGroup>
+    </Target>
+    <Target Name="WriteTestList" AfterTargets="Build" DependsOnTargets="CalculateTestInputs" Inputs="@(_TestJsFile);@(_InputTemplate);@(_BuildHtmlScript)" Outputs="@(_OutputHtml)">
+        <Exec Command="powershell -ExecutionPolicy Bypass -NoProfile -NoLogo &quot;%(_BuildHtmlScript.FullPath)&quot; -InputTemplate &quot;@(_InputTemplate->'%(FullPath)')&quot; -OutputFile &quot;@(_OutputHtml->'%(FullPath)')&quot; -TestFiles &quot;@(_TestJsFile->'%(RecursiveDir)%(Filename)%(Extension)','!')&quot;" />
+        <Message Text="Generated HTML page %(_OutputHtml.FullPath)" Importance="high" />
+    </Target>
+
+    <ItemGroup>
+      <NpmModuleFile Include="node_modules/qunit/qunit/qunit.js" Module="qunit" />
+      <NpmModuleFile Include="node_modules/qunit/qunit/qunit.css" Module="qunit" />
+      <NpmModuleFile Include="node_modules/jquery/dist/jquery.js" Module="jquery" />
+      <NpmModuleFile Include="node_modules/jquery/dist/jquery.min.js" Module="jquery" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+
+    <Target Name="ComputeNpmModulePaths">
+      <ItemGroup>
+        <_ResolvedNpmModuleFile Include="%(NpmModuleFile.FullPath)">
+          <OutputPath>wwwroot/lib/%(NpmModuleFile.Module)/%(NpmModuleFile.Filename)%(NpmModuleFile.Extension)</OutputPath>
+        </_ResolvedNpmModuleFile>
+      </ItemGroup>
+    </Target>
+
+    <Target Name="CopyNpmModules" AfterTargets="Build" DependsOnTargets="ComputeNpmModulePaths" Inputs="@(_ResolvedNpmModuleFile)" Outputs="@(_ResolvedNpmModuleFile->'%(OutputPath)')">
+        <Copy SourceFiles="@(_ResolvedNpmModuleFile)" DestinationFiles="@(_ResolvedNpmModuleFile->'%(OutputPath)')" />
+    </Target>
+</Project>

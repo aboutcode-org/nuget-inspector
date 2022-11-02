@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <OsPlatform Condition="$(OsPlatform) == '' AND '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">Windows</OsPlatform>
+    <OsPlatform Condition="$(OsPlatform) == '' AND '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">Linux</OsPlatform>
+    <OsPlatform Condition="$(OsPlatform) == '' AND '$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">OSX</OsPlatform>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>true</IsPackable>
+    <Authors>Lincoln Zocateli</Authors>
+    <Company>Lincoln Zocateli</Company>
+    <Copyright>Copyright ©2022 $(Company)</Copyright>
+    <Product>Libraries with common implementations, with separation of responsibilities between their projects using Abstractions.</Product>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/lzocateli00/Nuuvify.CommonPack</PackageProjectUrl>
+    <PackageIcon>logonuuvify.jpg</PackageIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <!-- Utilise esse padrão para versionamento: 
+      1.54.18-preview.123
+      ou
+      1.54.18 (para versão definitiva)
+      -->
+    <Version>1.0.5-preview.1</Version>
+    <FileVersion>22.05.18.1520</FileVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <DocumentationFile>Docs\$(MSBuildProjectName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(OsPlatform) == 'Linux'">
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(OsPlatform) == 'Windows'">
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../LICENSE" Pack="true" PackagePath="" />
+    <None Include="../../Images/logonuuvify.jpg" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup Label="Packaging">
+    <Content Include="./$(MSBuildProjectName).targets" PackagePath="build\$(MSBuildProjectName).targets" />
+
+    <Content Include="./Docs/$(MSBuildProjectName).xml">
+      <Pack>true</Pack>
+      <PackagePath>$(ContentTargetFolders)</PackagePath>
+      <flatten>false</flatten>
+    </Content>
+  </ItemGroup>
+
+</Project>

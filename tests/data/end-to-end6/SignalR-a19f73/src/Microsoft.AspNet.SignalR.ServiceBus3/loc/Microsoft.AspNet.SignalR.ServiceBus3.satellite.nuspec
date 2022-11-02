@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Microsoft.AspNet.SignalR.ServiceBus3.$Locale$</id>
+        <title>Microsoft ASP.NET SignalR ServiceBus3 Libraries {Language} Resources</title>
+        <summary>{Language} resources for the Microsoft.AspNet.SignalR.ServiceBus3 package</summary>
+        <version>$PackageVersion$</version>
+        <authors>$Authors$</authors>
+        <owners>$Owners$</owners>
+        <license type="file">LICENSE.txt</license>
+        <icon>packageIcon.png</icon>
+        <copyright>$CopyrightNotice$</copyright>
+        <projectUrl>$ProjectSiteUrl$</projectUrl>
+        <requireLicenseAcceptance>$RequireLicenseAcceptance$</requireLicenseAcceptance>
+        <description>This package contains the {Language} satellite assemblies for ASP.NET SignalR ServiceBus3.</description>
+        <language>$Locale$</language>
+        <tags>Microsoft AspNet SignalR AspNetSignalR ServiceBus</tags>
+        <dependencies>
+            <dependency id="Microsoft.AspNet.SignalR.ServiceBus3" version="[$PackageVersion$]" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="net45\$Locale$\Microsoft.AspNet.SignalR.ServiceBus3.resources.dll" target="lib\net45\$Locale$" />
+        <file src="$PackageIcon$" target="" />
+        <file src="$License$" target="" />
+    </files>
+</package>

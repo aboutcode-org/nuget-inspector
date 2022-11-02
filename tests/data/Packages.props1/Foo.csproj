@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+<ItemGroup>
+  <PackageReference Include="DotNet.Testcontainers" Version="1.4.0" />
+  <PackageReference Include="System.Composition" /> <!-- Missing in analysis -->
+  <PackageReference Include="Bar.UI" /> <!-- Missing in analysis -->
+</ItemGroup>
+</Project>

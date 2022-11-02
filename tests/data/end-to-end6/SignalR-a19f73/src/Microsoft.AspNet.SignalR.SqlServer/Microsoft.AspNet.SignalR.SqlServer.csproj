@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Title>Microsoft ASP.NET SignalR SQL Server Messaging Backplane</Title>
+    <Description>SQL Server messaging backplane for scaling out of ASP.NET SignalR applications in a web-farm.</Description>
+    <PackageTags>Microsoft AspNet SignalR AspNetSignalR SqlServer</PackageTags>
+    <DefineConstants>$(DefineConstants);SERVER</DefineConstants>
+
+    <!-- For the loc stuff to work right now, this needs to do the outer build/inner build phases even though it's only one TFM, so leave this as the plural TargetFrameworks -->
+    <TargetFrameworks>net45</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\TaskAsyncHelper.cs">
+      <Link>TaskAsyncHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Microsoft.AspNet.SignalR.Core\Infrastructure\DispatchingTaskCompletionSource.cs">
+      <Link>Infrastructure\DispatchingTaskCompletionSource.cs</Link>
+    </Compile>
+    <EmbeddedResource Include="install.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="send.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.AspNet.SignalR.Core\Microsoft.AspNet.SignalR.Core.csproj" />
+  </ItemGroup>
+</Project>

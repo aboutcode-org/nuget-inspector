@@ -1,0 +1,86 @@
+<Project>
+  <UsingTask AssemblyFile="$(LocToolsPath)\Microsoft.Web.MsBuildTasks2.dll" TaskName="Microsoft.Web.MsBuildTasks.CreateLSBuildMetadata"/>
+
+  <PropertyGroup>
+    <LocRoot>$(MSBuildProjectDirectory)\loc</LocRoot>
+  </PropertyGroup>
+
+  <Target Name="CalculateLocalizationItems">
+    <ItemGroup>
+      <TfmTranslate Include="$(TargetDir)$(TargetFileName)" Condition="Exists('$(LocRoot)\lcl\%(TranslationLanguage.Identity)\lib\$(TargetFramework)\$(TargetName).resources.dll.lcl')">
+        <LocaleName>%(TranslationLanguage.LocaleName)</LocaleName>
+        <TranslationInput>$(LocRoot)\lcl\%(TranslationLanguage.Identity)\lib\$(TargetFramework)\$(TargetName).resources.dll.lcl</TranslationInput>
+        <OutputFile>$(TargetDir)%(TranslationLanguage.PackageLocaleName)\$(TargetName).resources.dll</OutputFile>
+        <Parser>211</Parser>
+
+        <SettingsFiles>$/default.lss</SettingsFiles>
+        <SettingsFiles Condition="'%(TranslationLanguage.Identity)' == 'CHS' Or '%(TranslationLanguage.Identity)' == 'CHT'">%(TfmTranslate.SettingsFiles)|$\INI_For_CHx_PTx.lss</SettingsFiles>
+        <SettingsFiles Condition="'%(TranslationLanguage.Identity)' == 'PTB'">%(TfmTranslate.SettingsFiles)|$\MCP_For_SpecificCulture.lss</SettingsFiles>
+      </TfmTranslate>
+
+      <!-- Now convert all these to Items that reference lsbuild.proj for parallelization -->
+      <TfmTranslateProjects Include="$(MSBuildThisFileDirectory)lsbuild.proj" Condition="'@(TfmTranslate)' != ''">
+        <AdditionalProperties>
+          MicroBuildPluginDirectory=$(MicroBuildPluginDirectory);
+          TranslationInput=%(TfmTranslate.TranslationInput);
+          OutputFile=%(TfmTranslate.OutputFile);
+          InputFile=%(TfmTranslate.FullPath);
+          Locale=%(TfmTranslate.LocaleName);
+          Parser=%(TfmTranslate.Parser);
+          SettingsFiles=%(TfmTranslate.SettingsFiles)
+        </AdditionalProperties>
+      </TfmTranslateProjects>
+    </ItemGroup>
+  </Target>
+
+  <!-- Localization Clean-up -->
+  <Target Name="InnerLocalizeClean" AfterTargets="Clean" Condition="'$(TargetFramework)' != ''">
+    <RemoveDir Directories="$(TargetDir)%(TranslationLanguage.Identity)" Condition="Exists('$(TargetDir)%(TranslationLanguage.Identity)')" />
+  </Target>
+
+  <!-- Localize TFM-specific content -->
+  <Target Name="InnerLocalize" AfterTargets="CoreBuild" BeforeTargets="AfterBuild" Condition="'$(TargetFramework)' != ''" DependsOnTargets="CoreBuild;CalculateLocalizationItems" Inputs="@(TfmTranslate);@(TfmTranslate->'%(TranslationInput)')" Outputs="@(TfmTranslate->'%(OutputFile)')">
+    <Warning Text="No translation content for '$(TargetFramework)' output" Condition="'@(TfmTranslate)' == ''" />
+
+    <MSBuild Projects="@(TfmTranslateProjects)" Targets="Generate" BuildInParallel="true" />
+  </Target>
+
+  <!-- Localize TFM-non-specific content -->
+  <Target Name="OuterLocalize" AfterTargets="Build" Condition="'$(TargetFramework)' == ''">
+    <ItemGroup>
+      <NoTfmTranslate Include="$(MSBuildProjectDirectory)\loc\$(PackageId).satellite.nuspec" Condition="Exists('$(MSBuildProjectDirectory)\loc\$(PackageId).satellite.nuspec')">
+          <LocaleName>%(TranslationLanguage.LocaleName)</LocaleName>
+          <TranslationInput>$(LocRoot)\lcl\%(TranslationLanguage.Identity)\$(PackageId).nuspec.lcl</TranslationInput>
+          <OutputFile>$(OutputPath)%(TranslationLanguage.PackageLocaleName)\$(PackageId).%(TranslationLanguage.PackageLocaleName).nuspec</OutputFile>
+
+          <!-- REVIEW: These are based on what the MSBuild task specified -->
+          <SettingsFiles>$/default.lss|$/locxml_OfficeTools_nuspec.lss</SettingsFiles>
+          <SettingsFiles Condition="'%(TranslationLanguage.Identity)' == 'CHS' Or '%(TranslationLanguage.Identity)' == 'CHT'">%(TfmTranslate.SettingsFiles)|$\INI_For_CHx_PTx.lss</SettingsFiles>
+          <SettingsFiles Condition="'%(TranslationLanguage.Identity)' == 'PTB'">%(TfmTranslate.SettingsFiles)|$\MCP_For_SpecificCulture.lss</SettingsFiles>
+      </NoTfmTranslate>
+
+      <!-- Now convert all these to Items that reference lsbuild.proj for parallelization -->
+      <NoTfmTranslateProjects Include="$(MSBuildThisFileDirectory)lsbuild.proj" Condition="'@(NoTfmTranslate)' != ''">
+        <AdditionalProperties>
+          MicroBuildPluginDirectory=$(MicroBuildPluginDirectory);
+          TranslationInput=%(NoTfmTranslate.TranslationInput);
+          OutputFile=%(NoTfmTranslate.OutputFile);
+          InputFile=%(NoTfmTranslate.FullPath);
+          Locale=%(NoTfmTranslate.LocaleName);
+          Parser=%(NoTfmTranslate.Parser);
+          SettingsFiles=%(NoTfmTranslate.SettingsFiles)
+        </AdditionalProperties>
+      </NoTfmTranslateProjects>
+    </ItemGroup>
+
+    <MSBuild Projects="@(NoTfmTranslateProjects)" Targets="Generate" BuildInParallel="true" />
+
+    <!-- Copy Intellisense files -->
+    <ItemGroup>
+      <IntellisenseFile Include="$(LocRoot)\intellisense\%(TranslationLanguage.Identity)\$(PackageId).xml" Condition="Exists('$(LocRoot)\intellisense\%(TranslationLanguage.Identity)\$(PackageId).xml')">
+        <OutputFile>$(OutputPath)%(TranslationLanguage.PackageLocaleName)\$(PackageId).xml</OutputFile>
+      </IntellisenseFile>
+    </ItemGroup>
+    <Copy SourceFiles="@(IntellisenseFile)" DestinationFiles="@(IntellisenseFile->'%(OutputFile)')" />
+  </Target>
+</Project>

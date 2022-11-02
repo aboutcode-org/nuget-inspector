@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Description>
+      Implementa Autorização e Autenticação com OAuth2, JWT - deve ser baixado no projeto IoC, aqui não contempla OpenId
+      que esta em outra Lib
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="3.1.26" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.26" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.26" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.26" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nuuvify.CommonPack.Security.Abstraction\Nuuvify.CommonPack.Security.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\MsgSecurityJwt.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MsgSecurityJwt.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\MsgSecurityJwt.pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\MsgSecurityJwt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MsgSecurityJwt.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
