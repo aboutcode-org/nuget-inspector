@@ -1,59 +1,49 @@
-A Simple Python Project Skeleton
 ================================
-This repo attempts to standardize the structure of the Python-based project's
-repositories using modern Python packaging and configuration techniques. 
-Using this `blog post`_ as inspiration, this repository serves as the base for
-all new Python projects and is mergeable in existing repositories as well.
+nuget-inspector - inspect nuget and .NET projects packages dependencies and metadata
+================================
 
-.. _blog post: https://blog.jaraco.com/a-project-skeleton-for-python-projects/
+
+Copyright (c) nexB Inc. and others.
+SPDX-License-Identifier: Apache-2.0 AND MIT
+Homepage: https://github.com/nexB/nuget-inspector and https://www.aboutcode.org/
+
+
+``nuget-inspector`` is a collection of utilities to:
+
+- resolve .NET project nuget packages dependencies
+
+- parse various project and package manifests and lockfiles such as .csproj files,
+  and several related formats
+  
+- query NuGet.org APIs for package information to support dependency resolution
+
+It grew out of the need to have a reliable way to analyze .NET code projects and
+their dependencies independently of the availability of a dotnet SDK installed
+on the machine that runs the analysis; and that could run on Linux, Windows and
+macOS.
+
+The goal of nuget-inspector is to be a comprehensive tool that can handle every
+style of .NET and NuGet projects and package layouts, manifests and lockfiles.
 
 
 Usage
-=====
+--------
 
-A brand new project
--------------------
-.. code-block:: bash
+- Install pre-built binaries from the release page https://github.com/nexB/nuget-inspector
+  for your operating system.
 
-    git init my-new-repo
-    cd my-new-repo
-    git pull git@github.com:nexB/skeleton
+- Run the command line utility with::
 
-    # Create the new repo on GitHub, then update your remote
-    git remote set-url origin git@github.com:nexB/your-new-repo.git
-
-From here, you can make the appropriate changes to the files for your specific project.
-
-Update an existing project
----------------------------
-.. code-block:: bash
-
-    cd my-existing-project
-    git remote add skeleton git@github.com:nexB/skeleton
-    git fetch skeleton
-    git merge skeleton/main --allow-unrelated-histories
-
-This is also the workflow to use when updating the skeleton files in any given repository.
-
-More usage instructions can be found in ``docs/skeleton-usage.rst``.
+    nuget-inspector --help
 
 
-Release Notes
-=============
+Its companion libraries are:
 
-- 2022-03-04:
-    - Synchronize configure and configure.bat scripts for sanity
-    - Update CI operating system support with latest Azure OS images
-    - Streamline utility scripts in etc/scripts/ to create, fetch and manage third-party dependencies
-      There are now fewer scripts. See etc/scripts/README.rst for details
+- ``.NET`` proper. This is based on the latest .NET 6.
 
-- 2021-09-03:
-    - ``configure`` now requires pinned dependencies via the use of ``requirements.txt`` and ``requirements-dev.txt``
-    - ``configure`` can now accept multiple options at once
-    - Add utility scripts from scancode-toolkit/etc/release/ for use in generating project files
-    - Rename virtual environment directory from ``tmp`` to ``venv``
-    - Update README.rst with instructions for generating ``requirements.txt`` and ``requirements-dev.txt``,
-      as well as collecting dependencies as wheels and generating ABOUT files for them.
+- ``NuGet.Client``, which is the core library and command tool for NuGet proper.
 
-- 2021-05-11:
-    - Adopt new configure scripts from ScanCode TK that allows correct configuration of which Python version is used.
+- ``MSBuild``, the .NET tools and libraries for building .NET and NuGet projects.
+
+These are included in the built executables that are designed to be self-contained
+standalone exes that do not require additional libraries on the target system.
