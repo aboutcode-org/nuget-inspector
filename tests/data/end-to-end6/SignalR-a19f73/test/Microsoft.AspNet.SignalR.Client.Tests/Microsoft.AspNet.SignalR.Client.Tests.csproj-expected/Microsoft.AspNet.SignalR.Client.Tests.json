@@ -1,0 +1,189 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Client.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.Tests/Microsoft.AspNet.SignalR.Client.Tests.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Castle.Core",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/Castle.Core@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.7.8",
+            "purl": "pkg:nuget/Moq@4.7.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "11.0.2",
+            "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.core",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/xunit.core@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.assert",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/xunit.assert@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.analyzers",
+              "version": "0.9.0",
+              "purl": "pkg:nuget/xunit.analyzers@0.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.9.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.core",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit.core@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.execution",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.core",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.execution",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.assert",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit.assert@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.analyzers",
+            "version": "0.9.0",
+            "purl": "pkg:nuget/xunit.analyzers@0.9.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.9.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.abstractions",
+            "version": "2.0.1",
+            "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Castle.Core",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/Castle.Core@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.7.8",
+          "purl": "pkg:nuget/Moq@4.7.8",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "11.0.2",
+          "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/xunit@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.abstractions",
+          "version": "2.0.1",
+          "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

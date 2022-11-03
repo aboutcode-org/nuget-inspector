@@ -1,0 +1,15 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "GenericHostConsoleApp",
+      "project_datafile_type": "solution-file",
+      "project_file": "/packages.lock.json1/GenericHostConsoleApp.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}
