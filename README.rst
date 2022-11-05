@@ -37,13 +37,44 @@ Usage
     nuget-inspector --help
 
 
-Its companion libraries are:
+This project is based on, depends on or embeds several fine libraries and tools.
+Here are the some of the key libraries used::
 
-- ``.NET`` proper. This is based on the latest .NET 6.
+- ``NuGet.Client`` by the .NET Foundation which is the core library and command
+  tool for NuGet proper.
+  https://github.com/NuGet/NuGet.Client/
 
-- ``NuGet.Client``, which is the core library and command tool for NuGet proper.
+- ``MSBuild`` and ``upgrade-assistant`` by the .NET Foundation which are the
+  .NET tools and libraries for building .NET and NuGet projects and tools to
+  upgrade them
+  https://github.com/dotnet/msbuild/
+  https://github.com/dotnet/upgrade-assistant
 
-- ``MSBuild``, the .NET tools and libraries for building .NET and NuGet projects.
+- ``nuget-dotnet5-inspector`` by Synopsys as forked by Mario Rivis 
+  https://github.com/dxworks/nuget-dotnet5-inspector
 
-These are included in the built executables that are designed to be self-contained
-standalone exes that do not require additional libraries on the target system.
+- ``snyk-nuget-plugin`` and ``dotnet-deps-parser`` by Snyk which are NuGet
+  manifests parsing libraries and tools.
+  https://github.com/snyk/snyk-nuget-plugin
+  https://github.com/snyk/dotnet-deps-parser
+  
+- ``dotnet-oudated`` by Jerrie Pelser and contributors
+  https://github.com/dotnet-outdated/dotnet-outdated
+
+- ``DependencyChecker`` by Fabrice Andréïs
+  https://github.com/chwebdude/DependencyChecker
+
+- ``build-info`` and ``nuget-deps-tree`` by JFrog
+  https://github.com/jfrog/build-info
+  https://github.com/jfrog/nuget-deps-tree/
+
+- ``cyclonedx-dotnet`` by the OWASP Foundation
+  https://github.com/CycloneDX/cyclonedx-dotnet
+  
+- ``DependencyCheck`` by Jeremy Long
+  https://github.com/jeremylong/DependencyCheck
+
+
+These are used either in the built executables, at build time or for testing.
+The built executables are designed to be self-contained standalone exes that do
+not require additional libraries on the target system.
