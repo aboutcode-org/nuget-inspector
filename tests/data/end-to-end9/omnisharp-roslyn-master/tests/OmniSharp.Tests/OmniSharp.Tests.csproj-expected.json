@@ -1,0 +1,309 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "OmniSharp.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Tests/OmniSharp.Tests.csproj",
+      "outputs": [
+        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Tests/",
+        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Tests/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "17.3.0",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.3",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": "4.5.5",
+            "purl": "pkg:nuget/System.Memory@4.5.5",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Configuration.ConfigurationManager",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Common",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Common@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Configuration",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Configuration@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.DependencyResolver.Core",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Frameworks",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Frameworks@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.LibraryModel",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Packaging@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.ProjectModel",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Protocol",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Protocol@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Versioning",
+            "version": "6.4.0-preview.1.53",
+            "purl": "pkg:nuget/NuGet.Versioning@6.4.0-preview.1.53",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0-preview.1.53"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.3.0",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.3",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Memory",
+          "version": "4.5.5",
+          "purl": "pkg:nuget/System.Memory@4.5.5",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.5"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Configuration.ConfigurationManager",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Common",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Common@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Configuration",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Configuration@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.DependencyResolver.Core",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Frameworks",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Frameworks@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.LibraryModel",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging.Core",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Packaging@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.ProjectModel",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Protocol",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Protocol@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Versioning",
+          "version": "6.4.0-preview.1.53",
+          "purl": "pkg:nuget/NuGet.Versioning@6.4.0-preview.1.53",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0-preview.1.53"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

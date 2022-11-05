@@ -1,0 +1,190 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "project",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/project.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/bin/Debug/net471/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/bin/Release/net471/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Azure.WebJobs.ServiceBus",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Microsoft.Azure.WebJobs.ServiceBus@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.ServiceBus/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.OData",
+            "version": "5.8.4",
+            "purl": "pkg:nuget/Microsoft.Data.OData@5.8.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.Services.Client",
+            "version": "5.8.4",
+            "purl": "pkg:nuget/Microsoft.Data.Services.Client@5.8.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.8.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Sdk.Functions",
+            "version": "1.0.26",
+            "purl": "pkg:nuget/Microsoft.NET.Sdk.Functions@1.0.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Sdk.Functions/1.0.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NetTopologySuite",
+            "version": "1.15.0",
+            "purl": "pkg:nuget/NetTopologySuite@1.15.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite/1.15.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NetTopologySuite.IO.GeoJSON",
+            "version": "1.15.0",
+            "purl": "pkg:nuget/NetTopologySuite.IO.GeoJSON@1.15.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.IO.GeoJSON/1.15.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Npgsql",
+            "version": "4.0.5",
+            "purl": "pkg:nuget/Npgsql@4.0.5",
+            "download_url": "https://www.nuget.org/api/v2/package/Npgsql/4.0.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Polly",
+            "version": "6.0.1",
+            "purl": "pkg:nuget/Polly@6.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Polly/6.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.4",
+            "purl": "pkg:nuget/System.Net.Http@4.3.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.Azure.WebJobs.ServiceBus",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/Microsoft.Azure.WebJobs.ServiceBus@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.ServiceBus/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Data.OData",
+          "version": "5.8.4",
+          "purl": "pkg:nuget/Microsoft.Data.OData@5.8.4",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Data.Services.Client",
+          "version": "5.8.4",
+          "purl": "pkg:nuget/Microsoft.Data.Services.Client@5.8.4",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.8.4"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Sdk.Functions",
+          "version": "1.0.26",
+          "purl": "pkg:nuget/Microsoft.NET.Sdk.Functions@1.0.26",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Sdk.Functions/1.0.26"
+        },
+        {
+          "type": "nuget",
+          "name": "NetTopologySuite",
+          "version": "1.15.0",
+          "purl": "pkg:nuget/NetTopologySuite@1.15.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite/1.15.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NetTopologySuite.IO.GeoJSON",
+          "version": "1.15.0",
+          "purl": "pkg:nuget/NetTopologySuite.IO.GeoJSON@1.15.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.IO.GeoJSON/1.15.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "9.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Npgsql",
+          "version": "4.0.5",
+          "purl": "pkg:nuget/Npgsql@4.0.5",
+          "download_url": "https://www.nuget.org/api/v2/package/Npgsql/4.0.5"
+        },
+        {
+          "type": "nuget",
+          "name": "Polly",
+          "version": "6.0.1",
+          "purl": "pkg:nuget/Polly@6.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Polly/6.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.4",
+          "purl": "pkg:nuget/System.Net.Http@4.3.4",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

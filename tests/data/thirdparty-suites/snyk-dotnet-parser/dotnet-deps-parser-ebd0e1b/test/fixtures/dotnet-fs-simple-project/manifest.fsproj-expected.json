@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "manifest",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-simple-project/manifest.fsproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-simple-project/bin/Debug/netcoreapp2.1/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-simple-project/bin/Release/netcoreapp2.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ValueTuple",
+            "version": "4.4.0",
+            "purl": "pkg:nuget/System.ValueTuple@4.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FSharp.Core",
+            "version": "6.0.5",
+            "purl": "pkg:nuget/FSharp.Core@6.0.5",
+            "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/6.0.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "log4net",
+            "version": "2.0.8",
+            "purl": "pkg:nuget/log4net@2.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MySql.Data",
+            "version": "8.0.12",
+            "purl": "pkg:nuget/MySql.Data@8.0.12",
+            "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "System.ValueTuple",
+          "version": "4.4.0",
+          "purl": "pkg:nuget/System.ValueTuple@4.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "FSharp.Core",
+          "version": "6.0.5",
+          "purl": "pkg:nuget/FSharp.Core@6.0.5",
+          "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/6.0.5"
+        },
+        {
+          "type": "nuget",
+          "name": "log4net",
+          "version": "2.0.8",
+          "purl": "pkg:nuget/log4net@2.0.8",
+          "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "MySql.Data",
+          "version": "8.0.12",
+          "purl": "pkg:nuget/MySql.Data@8.0.12",
+          "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

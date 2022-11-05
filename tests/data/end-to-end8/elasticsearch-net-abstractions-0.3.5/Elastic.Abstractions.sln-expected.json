@@ -1,0 +1,1026 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Elastic.Abstractions",
+      "project_datafile_type": "solution-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/Elastic.Abstractions.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "ScratchPad",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/ScratchPad.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Debug/net5.0/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Release/net5.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Proc",
+                "version": "0.6.1",
+                "purl": "pkg:nuget/Proc@0.6.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NEST",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/NEST@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Proc",
+              "version": "0.6.1",
+              "purl": "pkg:nuget/Proc@0.6.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NEST",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/NEST@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Elasticsearch.Managed",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/Elastic.Elasticsearch.Managed.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ConfigureAwaitChecker.Analyzer",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Proc",
+                "version": "0.6.1",
+                "purl": "pkg:nuget/Proc@0.6.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Net.Http",
+                "version": "4.3.1",
+                "purl": "pkg:nuget/System.Net.Http@4.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "ConfigureAwaitChecker.Analyzer",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Proc",
+              "version": "0.6.1",
+              "purl": "pkg:nuget/Proc@0.6.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Net.Http",
+              "version": "4.3.1",
+              "purl": "pkg:nuget/System.Net.Http@4.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Elasticsearch.Ephemeral",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/Elastic.Elasticsearch.Ephemeral.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ConfigureAwaitChecker.Analyzer",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "SharpZipLib.NETStandard",
+                "version": "1.0.7",
+                "purl": "pkg:nuget/SharpZipLib.NETStandard@1.0.7",
+                "download_url": "https://www.nuget.org/api/v2/package/SharpZipLib.NETStandard/1.0.7"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.InteropServices.RuntimeInformation",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.3.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "ConfigureAwaitChecker.Analyzer",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "SharpZipLib.NETStandard",
+              "version": "1.0.7",
+              "purl": "pkg:nuget/SharpZipLib.NETStandard@1.0.7",
+              "download_url": "https://www.nuget.org/api/v2/package/SharpZipLib.NETStandard/1.0.7"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices.RuntimeInformation",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.3.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Elasticsearch.Xunit",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/Elastic.Elasticsearch.Xunit.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ConfigureAwaitChecker.Analyzer",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "ConfigureAwaitChecker.Analyzer",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Xunit.Example",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/Elastic.Xunit.ExampleComplex.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.3",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "17.0.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NEST",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/NEST@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "FluentAssertions",
+                "version": "5.1.2",
+                "purl": "pkg:nuget/FluentAssertions@5.1.2",
+                "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/5.1.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.3",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "17.0.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NEST",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/NEST@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "FluentAssertions",
+              "version": "5.1.2",
+              "purl": "pkg:nuget/FluentAssertions@5.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/5.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Xunit.ExampleMinimal",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleMinimal/Elastic.Xunit.ExampleMinimal.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleMinimal/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleMinimal/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.3",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "17.0.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NEST",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/NEST@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "FluentAssertions",
+                "version": "5.1.2",
+                "purl": "pkg:nuget/FluentAssertions@5.1.2",
+                "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/5.1.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.3",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "17.0.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NEST",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/NEST@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "FluentAssertions",
+              "version": "5.1.2",
+              "purl": "pkg:nuget/FluentAssertions@5.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/5.1.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Managed.Example",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/Elastic.Managed.Example.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/bin/Debug/net5.0/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/bin/Release/net5.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Nest.TypescriptExporter",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/Nest.TypescriptExporter.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Debug/net5.0/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Release/net5.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ConfigureAwaitChecker.Analyzer",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.CSharp",
+                "version": "2.8.2",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.8.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.8.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ShellProgressBar",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/ShellProgressBar@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ShellProgressBar/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NEST",
+                "version": "7.7.1",
+                "purl": "pkg:nuget/NEST@7.7.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NEST/7.7.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "ConfigureAwaitChecker.Analyzer",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CodeAnalysis.CSharp",
+              "version": "2.8.2",
+              "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.8.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.8.2"
+            },
+            {
+              "type": "nuget",
+              "name": "ShellProgressBar",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/ShellProgressBar@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ShellProgressBar/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NEST",
+              "version": "7.7.1",
+              "purl": "pkg:nuget/NEST@7.7.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NEST/7.7.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Elastic.Stack.ArtifactsApi",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/Elastic.Stack.ArtifactsApi.csproj",
+          "outputs": [
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Debug/",
+            "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MinVer",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/MinVer@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ConfigureAwaitChecker.Analyzer",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "SemanticVersioning",
+                "version": "0.8.0",
+                "purl": "pkg:nuget/SemanticVersioning@0.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/0.8.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Json",
+                "version": "4.6.0",
+                "purl": "pkg:nuget/System.Text.Json@4.6.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.6.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MinVer",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/MinVer@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "ConfigureAwaitChecker.Analyzer",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "SemanticVersioning",
+              "version": "0.8.0",
+              "purl": "pkg:nuget/SemanticVersioning@0.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/0.8.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Json",
+              "version": "4.6.0",
+              "purl": "pkg:nuget/System.Text.Json@4.6.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.6.0"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

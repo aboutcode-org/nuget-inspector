@@ -1,0 +1,112 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "TwoProjectsWithAnalyzerSuppressor",
+      "project_datafile_type": "solution-file",
+      "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/TwoProjectsWithAnalyzerSuppressor.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "Lib",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/Lib/Lib.csproj",
+          "outputs": [
+            "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/Lib/bin/Debug/netstandard2.0/",
+            "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/Lib/bin/Release/netstandard2.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NETStandard.Library",
+                "version": "2.0.3",
+                "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+                "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.CSharp",
+                "version": "3.3.1",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NETStandard.Library",
+              "version": "2.0.3",
+              "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+              "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CodeAnalysis.CSharp",
+              "version": "3.3.1",
+              "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "App",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/App.csproj",
+          "outputs": [
+            "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/bin/Debug/netcoreapp3.1/",
+            "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/bin/Release/netcoreapp3.1/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.CSharp",
+                "version": "3.3.1",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "StyleCop.Analyzers",
+                "version": "1.1.118",
+                "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+                "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.CodeAnalysis.CSharp",
+              "version": "3.3.1",
+              "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "StyleCop.Analyzers",
+              "version": "1.1.118",
+              "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
+              "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

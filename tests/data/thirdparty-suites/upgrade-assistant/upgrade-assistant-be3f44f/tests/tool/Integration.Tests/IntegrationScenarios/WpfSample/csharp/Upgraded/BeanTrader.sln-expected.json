@@ -1,0 +1,384 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "BeanTrader",
+      "project_datafile_type": "solution-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTrader.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "BeanTraderClient",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/BeanTraderClient.csproj",
+          "outputs": [
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/bin/Debug/net6.0-windows/",
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/bin/Release/net6.0-windows/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Windsor",
+                "version": "4.1.1",
+                "purl": "pkg:nuget/Castle.Windsor@4.1.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.FxCopAnalyzers",
+                "version": "2.6.3",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzers@2.6.3",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CSharp",
+                "version": "4.7.0",
+                "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Rest.ClientRuntime.Azure",
+                "version": "3.3.7",
+                "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime.Azure@3.3.7",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Net.Http",
+                "version": "4.3.4",
+                "purl": "pkg:nuget/System.Net.Http@4.3.4",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.Duplex",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.NetTcp",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.Federation",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+                "version": "0.2.222702",
+                "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Hyak.Common",
+                "version": "1.2.2",
+                "purl": "pkg:nuget/Hyak.Common@1.2.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.2.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MahApps.Metro",
+                "version": "2.4.4",
+                "purl": "pkg:nuget/MahApps.Metro@2.4.4",
+                "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/2.4.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nito.AsyncEx",
+                "version": "5.1.0",
+                "purl": "pkg:nuget/Nito.AsyncEx@5.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/5.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Windows.Compatibility",
+                "version": "5.0.2",
+                "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Windsor",
+              "version": "4.1.1",
+              "purl": "pkg:nuget/Castle.Windsor@4.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CodeAnalysis.FxCopAnalyzers",
+              "version": "2.6.3",
+              "purl": "pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzers@2.6.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.7.0",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Rest.ClientRuntime.Azure",
+              "version": "3.3.7",
+              "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime.Azure@3.3.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Net.Http",
+              "version": "4.3.4",
+              "purl": "pkg:nuget/System.Net.Http@4.3.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.Duplex",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.NetTcp",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.Federation",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+              "version": "0.2.222702",
+              "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+            },
+            {
+              "type": "nuget",
+              "name": "Hyak.Common",
+              "version": "1.2.2",
+              "purl": "pkg:nuget/Hyak.Common@1.2.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.2.2"
+            },
+            {
+              "type": "nuget",
+              "name": "MahApps.Metro",
+              "version": "2.4.4",
+              "purl": "pkg:nuget/MahApps.Metro@2.4.4",
+              "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/2.4.4"
+            },
+            {
+              "type": "nuget",
+              "name": "Nito.AsyncEx",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/Nito.AsyncEx@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/5.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Windows.Compatibility",
+              "version": "5.0.2",
+              "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "BeanTraderCommon",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/BeanTraderCommon.csproj",
+          "outputs": [
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/bin/Debug/netstandard2.0/",
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/bin/Release/netstandard2.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NETStandard.Library",
+                "version": "2.0.3",
+                "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+                "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CSharp",
+                "version": "4.7.0",
+                "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Data.DataSetExtensions",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.Duplex",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.NetTcp",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ServiceModel.Federation",
+                "version": "4.8.1",
+                "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+                "version": "0.2.222702",
+                "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NETStandard.Library",
+              "version": "2.0.3",
+              "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+              "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.7.0",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Data.DataSetExtensions",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.Duplex",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.NetTcp",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ServiceModel.Federation",
+              "version": "4.8.1",
+              "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+              "version": "0.2.222702",
+              "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

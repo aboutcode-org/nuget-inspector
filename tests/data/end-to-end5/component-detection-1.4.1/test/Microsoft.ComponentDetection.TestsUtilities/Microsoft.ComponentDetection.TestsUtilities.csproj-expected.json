@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.ComponentDetection.TestsUtilities",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end5/component-detection-1.4.1/test/Microsoft.ComponentDetection.TestsUtilities/Microsoft.ComponentDetection.TestsUtilities.csproj",
+      "outputs": [
+        "/end-to-end5/component-detection-1.4.1/test/Microsoft.ComponentDetection.TestsUtilities/bin/Debug/netcoreapp3.1/",
+        "/end-to-end5/component-detection-1.4.1/test/Microsoft.ComponentDetection.TestsUtilities/bin/Release/netcoreapp3.1/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

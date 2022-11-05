@@ -1,0 +1,139 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "EwDavidForms",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/EwDavidForms.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/bin/Debug/netstandard2.0/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter.Analytics",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/Microsoft.AppCenter.Analytics@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter.Crashes",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/Microsoft.AppCenter.Crashes@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Xamarin.CommunityToolkit",
+            "version": "2.0.2",
+            "purl": "pkg:nuget/Xamarin.CommunityToolkit@2.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Xamarin.CommunityToolkit/2.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Xamarin.Forms",
+            "version": "5.0.0.2401",
+            "purl": "pkg:nuget/Xamarin.Forms@5.0.0.2401",
+            "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2401"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Xamarin.Essentials",
+            "version": "1.7.3",
+            "purl": "pkg:nuget/Xamarin.Essentials@1.7.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AppCenter.Analytics",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/Microsoft.AppCenter.Analytics@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AppCenter.Crashes",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/Microsoft.AppCenter.Crashes@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Xamarin.CommunityToolkit",
+          "version": "2.0.2",
+          "purl": "pkg:nuget/Xamarin.CommunityToolkit@2.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Xamarin.CommunityToolkit/2.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Xamarin.Forms",
+          "version": "5.0.0.2401",
+          "purl": "pkg:nuget/Xamarin.Forms@5.0.0.2401",
+          "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2401"
+        },
+        {
+          "type": "nuget",
+          "name": "Xamarin.Essentials",
+          "version": "1.7.3",
+          "purl": "pkg:nuget/Xamarin.Essentials@1.7.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

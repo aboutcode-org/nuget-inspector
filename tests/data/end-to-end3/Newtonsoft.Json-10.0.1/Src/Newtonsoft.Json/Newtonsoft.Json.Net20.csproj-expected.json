@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Newtonsoft.Json.Net20",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Net20.csproj",
+      "outputs": [
+        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/bin/Debug/Net20/",
+        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/bin/Release/Net20/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

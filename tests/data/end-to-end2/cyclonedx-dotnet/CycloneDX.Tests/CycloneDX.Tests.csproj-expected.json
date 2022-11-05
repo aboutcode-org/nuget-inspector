@@ -1,0 +1,173 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "CycloneDX.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end2/cyclonedx-dotnet/CycloneDX.Tests/CycloneDX.Tests.csproj",
+      "outputs": [
+        "/end-to-end2/cyclonedx-dotnet/CycloneDX.Tests/bin/Debug/",
+        "/end-to-end2/cyclonedx-dotnet/CycloneDX.Tests/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "coverlet.msbuild",
+            "version": "3.1.2",
+            "purl": "pkg:nuget/coverlet.msbuild@3.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/coverlet.msbuild/3.1.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.PlatformAbstractions",
+            "version": "3.1.6",
+            "purl": "pkg:nuget/Microsoft.DotNet.PlatformAbstractions@3.1.6",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.PlatformAbstractions/3.1.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "17.1.0",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.18.1",
+            "purl": "pkg:nuget/Moq@4.18.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "RichardSzalay.MockHttp",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.Abstractions.TestingHelpers",
+            "version": "17.0.24",
+            "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@17.0.24",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/17.0.24"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.5",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "coverlet.collector",
+            "version": "3.1.2",
+            "purl": "pkg:nuget/coverlet.collector@3.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "coverlet.msbuild",
+          "version": "3.1.2",
+          "purl": "pkg:nuget/coverlet.msbuild@3.1.2",
+          "download_url": "https://www.nuget.org/api/v2/package/coverlet.msbuild/3.1.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.DotNet.PlatformAbstractions",
+          "version": "3.1.6",
+          "purl": "pkg:nuget/Microsoft.DotNet.PlatformAbstractions@3.1.6",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.PlatformAbstractions/3.1.6"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.1.0",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.18.1",
+          "purl": "pkg:nuget/Moq@4.18.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.1"
+        },
+        {
+          "type": "nuget",
+          "name": "RichardSzalay.MockHttp",
+          "version": "6.0.0",
+          "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.IO.Abstractions.TestingHelpers",
+          "version": "17.0.24",
+          "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@17.0.24",
+          "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/17.0.24"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.5",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+        },
+        {
+          "type": "nuget",
+          "name": "coverlet.collector",
+          "version": "3.1.2",
+          "purl": "pkg:nuget/coverlet.collector@3.1.2",
+          "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

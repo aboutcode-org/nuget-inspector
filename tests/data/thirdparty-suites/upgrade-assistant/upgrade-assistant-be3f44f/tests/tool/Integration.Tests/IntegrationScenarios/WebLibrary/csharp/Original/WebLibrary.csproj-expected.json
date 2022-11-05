@@ -1,0 +1,114 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "WebLibrary",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Original/WebLibrary.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Original/bin/Debug/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Original/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Mvc",
+            "version": "5.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.WebPages",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.WebPages",
+            "version": "3.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Infrastructure",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Razor",
+            "version": "3.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "7.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@7.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.Mvc",
+          "version": "5.2.7",
+          "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.7",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "7.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@7.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

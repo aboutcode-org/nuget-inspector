@@ -1,0 +1,190 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "example",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/example.fsproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/bin/Debug/netcoreapp2.0/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/bin/Release/netcoreapp2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ValueTuple",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.ValueTuple@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FSharp.Core",
+            "version": "4.6.2",
+            "purl": "pkg:nuget/FSharp.Core@4.6.2",
+            "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.6.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "BestEx.Framework",
+            "version": "4.10.6",
+            "purl": "pkg:nuget/BestEx.Framework@4.10.6",
+            "download_url": "https://www.nuget.org/api/v2/package/BestEx.Framework/4.10.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "BestEx.InRule",
+            "version": "5.0.1",
+            "purl": "pkg:nuget/BestEx.InRule@5.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/BestEx.InRule/5.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FsCheck",
+            "version": "2.14.0",
+            "purl": "pkg:nuget/FsCheck@2.14.0",
+            "download_url": "https://www.nuget.org/api/v2/package/FsCheck/2.14.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FsCheck.Xunit",
+            "version": "2.14.0",
+            "purl": "pkg:nuget/FsCheck.Xunit@2.14.0",
+            "download_url": "https://www.nuget.org/api/v2/package/FsCheck.Xunit/2.14.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "16.0.1",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@16.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/16.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.10.1",
+            "purl": "pkg:nuget/Moq@4.10.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.10.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "System.ValueTuple",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.ValueTuple@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "FSharp.Core",
+          "version": "4.6.2",
+          "purl": "pkg:nuget/FSharp.Core@4.6.2",
+          "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.6.2"
+        },
+        {
+          "type": "nuget",
+          "name": "BestEx.Framework",
+          "version": "4.10.6",
+          "purl": "pkg:nuget/BestEx.Framework@4.10.6",
+          "download_url": "https://www.nuget.org/api/v2/package/BestEx.Framework/4.10.6"
+        },
+        {
+          "type": "nuget",
+          "name": "BestEx.InRule",
+          "version": "5.0.1",
+          "purl": "pkg:nuget/BestEx.InRule@5.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/BestEx.InRule/5.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "FsCheck",
+          "version": "2.14.0",
+          "purl": "pkg:nuget/FsCheck@2.14.0",
+          "download_url": "https://www.nuget.org/api/v2/package/FsCheck/2.14.0"
+        },
+        {
+          "type": "nuget",
+          "name": "FsCheck.Xunit",
+          "version": "2.14.0",
+          "purl": "pkg:nuget/FsCheck.Xunit@2.14.0",
+          "download_url": "https://www.nuget.org/api/v2/package/FsCheck.Xunit/2.14.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "16.0.1",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@16.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/16.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.10.1",
+          "purl": "pkg:nuget/Moq@4.10.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.10.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

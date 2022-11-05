@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "foobar-star-ver",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/foobar-star-ver.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/bin/Debug/netcoreapp2.2/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/bin/Release/netcoreapp2.2/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.App",
+            "version": "2.2.8",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.App@2.2.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/2.2.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+            "version": "2.2.3",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@2.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/2.2.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "WindowsAzure.Storage",
+            "version": "9.3.3",
+            "purl": "pkg:nuget/WindowsAzure.Storage@9.3.3",
+            "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/9.3.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.App",
+          "version": "2.2.8",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.App@2.2.8",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/2.2.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+          "version": "2.2.3",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@2.2.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/2.2.3"
+        },
+        {
+          "type": "nuget",
+          "name": "WindowsAzure.Storage",
+          "version": "9.3.3",
+          "purl": "pkg:nuget/WindowsAzure.Storage@9.3.3",
+          "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/9.3.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

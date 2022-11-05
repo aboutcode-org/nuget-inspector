@@ -1,0 +1,166 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.LoadTestHarness",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/",
+        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery",
+            "version": "1.8.2",
+            "purl": "pkg:nuget/jQuery@1.8.2",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery.Color",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/jQuery.Color@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "1.8.2",
+              "purl": "pkg:nuget/jQuery@1.8.2",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery.UI.Combined",
+            "version": "1.9.0",
+            "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "1.8.2",
+              "purl": "pkg:nuget/jQuery@1.8.2",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "knockoutjs",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/knockoutjs@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Owin",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Owin@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin.Host.SystemWeb",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "6.0.4",
+            "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "jQuery.Color",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/jQuery.Color@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "jQuery.UI.Combined",
+          "version": "1.9.0",
+          "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+          "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+        },
+        {
+          "type": "nuget",
+          "name": "knockoutjs",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/knockoutjs@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Owin",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Owin.Host.SystemWeb",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "6.0.4",
+          "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DependencyChecker",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/DependencyChecker.csproj",
+      "outputs": [
+        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/bin/Debug/",
+        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CommandLine",
+            "version": "2.4.3",
+            "purl": "pkg:nuget/CommandLine@2.4.3",
+            "download_url": "https://www.nuget.org/api/v2/package/CommandLine/2.4.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "12.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@12.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Common",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Common@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Configuration",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Configuration@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Frameworks",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Frameworks@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Packaging@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core.Types",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Packaging.Core.Types@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Protocol.Core.Types",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Protocol.Core.Types@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Protocol.Core.v3",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Protocol.Core.v3@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Versioning",
+            "version": "4.9.3",
+            "purl": "pkg:nuget/NuGet.Versioning@4.9.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "CommandLine",
+          "version": "2.4.3",
+          "purl": "pkg:nuget/CommandLine@2.4.3",
+          "download_url": "https://www.nuget.org/api/v2/package/CommandLine/2.4.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "12.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@12.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Common",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Common@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Configuration",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Configuration@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Frameworks",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Frameworks@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging.Core",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging.Core.Types",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Packaging.Core.Types@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Protocol.Core.Types",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Protocol.Core.Types@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Protocol.Core.v3",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Protocol.Core.v3@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Versioning",
+          "version": "4.9.3",
+          "purl": "pkg:nuget/NuGet.Versioning@4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

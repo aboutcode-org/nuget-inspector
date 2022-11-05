@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "WpfApp1",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Original/WpfApp1/WpfApp1.vbproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Original/WpfApp1/bin/Debug/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Original/WpfApp1/bin/Release/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

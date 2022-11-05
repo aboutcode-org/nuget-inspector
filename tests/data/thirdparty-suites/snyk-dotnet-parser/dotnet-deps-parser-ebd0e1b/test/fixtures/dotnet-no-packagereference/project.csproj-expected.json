@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "project",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/bin/Debug/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Console",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Console@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "10.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "nunit.framework",
+            "version": "3.8.1",
+            "purl": "pkg:nuget/nunit.framework@3.8.1",
+            "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Orleans",
+            "version": "1.4.0",
+            "purl": "pkg:nuget/Orleans@1.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "System.Console",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Console@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "10.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "nunit.framework",
+          "version": "3.8.1",
+          "purl": "pkg:nuget/nunit.framework@3.8.1",
+          "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Orleans",
+          "version": "1.4.0",
+          "purl": "pkg:nuget/Orleans@1.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

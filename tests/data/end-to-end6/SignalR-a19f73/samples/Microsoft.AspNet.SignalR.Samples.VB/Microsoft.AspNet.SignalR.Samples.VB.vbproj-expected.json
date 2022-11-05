@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Samples.VB",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/Microsoft.AspNet.SignalR.Samples.VB.vbproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/bin/Debug/",
+        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/bin/Release/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

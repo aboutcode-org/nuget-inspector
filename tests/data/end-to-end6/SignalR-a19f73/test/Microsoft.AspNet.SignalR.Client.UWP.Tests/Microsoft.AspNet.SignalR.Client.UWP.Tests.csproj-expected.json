@@ -1,0 +1,72 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Client.UWP.Tests",
+      "project_version": "1.0.0.0",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.UWP.Tests/Microsoft.AspNet.SignalR.Client.UWP.Tests.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.Tests//",
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.Tests//"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.UniversalWindowsPlatform",
+            "version": "6.1.5",
+            "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.1.5",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.1.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.3.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.UniversalWindowsPlatform",
+          "version": "6.1.5",
+          "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.1.5",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.1.5"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/xunit@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.3.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

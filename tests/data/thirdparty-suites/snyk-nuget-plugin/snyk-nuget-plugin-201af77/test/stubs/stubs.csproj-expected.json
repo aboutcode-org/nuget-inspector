@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "stubs",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/stubs.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/bin/Debug/",
+        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.ApplicationInsights.AspNetCore",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.ApplicationInsights.AspNetCore@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.AspNetCore/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.All",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.SQLite",
+            "version": "1.0.108",
+            "purl": "pkg:nuget/System.Data.SQLite@1.0.108",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.108"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.ApplicationInsights.AspNetCore",
+          "version": "2.1.1",
+          "purl": "pkg:nuget/Microsoft.ApplicationInsights.AspNetCore@2.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.AspNetCore/2.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.All",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.SQLite",
+          "version": "1.0.108",
+          "purl": "pkg:nuget/System.Data.SQLite@1.0.108",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.108"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

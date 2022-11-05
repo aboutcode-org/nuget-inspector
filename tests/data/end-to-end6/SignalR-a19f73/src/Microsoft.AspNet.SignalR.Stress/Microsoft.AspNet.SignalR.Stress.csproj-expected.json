@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Stress",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//",
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CmdLine",
+            "version": "1.0.7.509",
+            "purl": "pkg:nuget/CmdLine@1.0.7.509",
+            "download_url": "https://www.nuget.org/api/v2/package/CmdLine/1.0.7.509"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "11.0.2",
+            "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "CmdLine",
+          "version": "1.0.7.509",
+          "purl": "pkg:nuget/CmdLine@1.0.7.509",
+          "download_url": "https://www.nuget.org/api/v2/package/CmdLine/1.0.7.509"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "11.0.2",
+          "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

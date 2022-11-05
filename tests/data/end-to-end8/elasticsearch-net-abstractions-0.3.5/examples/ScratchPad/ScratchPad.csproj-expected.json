@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "ScratchPad",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/ScratchPad.csproj",
+      "outputs": [
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Debug/net5.0/",
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Release/net5.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/MinVer@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Proc",
+            "version": "0.6.1",
+            "purl": "pkg:nuget/Proc@0.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NEST",
+            "version": "6.0.1",
+            "purl": "pkg:nuget/NEST@6.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/MinVer@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Proc",
+          "version": "0.6.1",
+          "purl": "pkg:nuget/Proc@0.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "NEST",
+          "version": "6.0.1",
+          "purl": "pkg:nuget/NEST@6.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

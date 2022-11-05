@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Foo",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/project-with-packages.props1/Foo.csproj",
+      "outputs": [
+        "/project-with-packages.props1/bin/Debug/netstandard2.0/",
+        "/project-with-packages.props1/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "DotNet.Testcontainers",
+            "version": "1.4.0",
+            "purl": "pkg:nuget/DotNet.Testcontainers@1.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/DotNet.Testcontainers/1.4.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "DotNet.Testcontainers",
+          "version": "1.4.0",
+          "purl": "pkg:nuget/DotNet.Testcontainers@1.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/DotNet.Testcontainers/1.4.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "SampleProject",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/project-with-packages.props3/SampleProject.csproj",
+      "outputs": [
+        "/project-with-packages.props3/bin/Debug/netstandard2.0/",
+        "/project-with-packages.props3/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "10.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "10.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

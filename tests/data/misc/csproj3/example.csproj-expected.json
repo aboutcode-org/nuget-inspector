@@ -1,0 +1,343 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "example",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/misc/csproj3/example.csproj",
+      "outputs": [
+        "/misc/csproj3/bin/Debug/netcoreapp2.2/",
+        "/misc/csproj3/bin/Release/netcoreapp2.2/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AspNetCore.HealthChecks.MySql",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/AspNetCore.HealthChecks.MySql@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.MySql/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AspNetCore.HealthChecks.SqlServer",
+            "version": "2.2.1",
+            "purl": "pkg:nuget/AspNetCore.HealthChecks.SqlServer@2.2.1",
+            "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.SqlServer/2.2.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AspNetCore.HealthChecks.Uris",
+            "version": "2.2.3",
+            "purl": "pkg:nuget/AspNetCore.HealthChecks.Uris@2.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.Uris/2.2.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWS.Logger.AspNetCore",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/AWS.Logger.AspNetCore@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/AWS.Logger.AspNetCore/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSSDK.Core",
+            "version": "3.3.104.32",
+            "purl": "pkg:nuget/AWSSDK.Core@3.3.104.32",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.Core/3.3.104.32"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSSDK.Extensions.NETCore.Setup",
+            "version": "3.3.100.1",
+            "purl": "pkg:nuget/AWSSDK.Extensions.NETCore.Setup@3.3.100.1",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.Extensions.NETCore.Setup/3.3.100.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSSDK.SecurityToken",
+            "version": "3.3.104.38",
+            "purl": "pkg:nuget/AWSSDK.SecurityToken@3.3.104.38",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.SecurityToken/3.3.104.38"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSSDK.SQS",
+            "version": "3.3.102.65",
+            "purl": "pkg:nuget/AWSSDK.SQS@3.3.102.65",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.SQS/3.3.102.65"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSXRayRecorder.Core",
+            "version": "2.6.1",
+            "purl": "pkg:nuget/AWSXRayRecorder.Core@2.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Core/2.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSXRayRecorder.Handlers.AspNetCore",
+            "version": "2.6.1",
+            "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AspNetCore@2.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Handlers.AspNetCore/2.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "AWSXRayRecorder.Handlers.AwsSdk",
+            "version": "2.7.1",
+            "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.1",
+            "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Handlers.AwsSdk/2.7.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CacheCow.Server.Core.Mvc",
+            "version": "2.4.4",
+            "purl": "pkg:nuget/CacheCow.Server.Core.Mvc@2.4.4",
+            "download_url": "https://www.nuget.org/api/v2/package/CacheCow.Server.Core.Mvc/2.4.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FeatureFlagService.Core",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/FeatureFlagService.Core@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/FeatureFlagService.Core/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "log4net",
+            "version": "2.0.8",
+            "purl": "pkg:nuget/log4net@2.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Mvc.Versioning",
+            "version": "3.1.6",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc.Versioning@3.1.6",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc.Versioning/3.1.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+            "version": "3.2.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer@3.2.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/3.2.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Razor.Design",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Razor.Design@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Razor.Design/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets",
+            "version": "1.9.5",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.9.5",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+            "version": "2.2.4",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@2.2.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/2.2.4"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "AspNetCore.HealthChecks.MySql",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/AspNetCore.HealthChecks.MySql@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.MySql/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "AspNetCore.HealthChecks.SqlServer",
+          "version": "2.2.1",
+          "purl": "pkg:nuget/AspNetCore.HealthChecks.SqlServer@2.2.1",
+          "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.SqlServer/2.2.1"
+        },
+        {
+          "type": "nuget",
+          "name": "AspNetCore.HealthChecks.Uris",
+          "version": "2.2.3",
+          "purl": "pkg:nuget/AspNetCore.HealthChecks.Uris@2.2.3",
+          "download_url": "https://www.nuget.org/api/v2/package/AspNetCore.HealthChecks.Uris/2.2.3"
+        },
+        {
+          "type": "nuget",
+          "name": "AWS.Logger.AspNetCore",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/AWS.Logger.AspNetCore@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/AWS.Logger.AspNetCore/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSSDK.Core",
+          "version": "3.3.104.32",
+          "purl": "pkg:nuget/AWSSDK.Core@3.3.104.32",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.Core/3.3.104.32"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSSDK.Extensions.NETCore.Setup",
+          "version": "3.3.100.1",
+          "purl": "pkg:nuget/AWSSDK.Extensions.NETCore.Setup@3.3.100.1",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.Extensions.NETCore.Setup/3.3.100.1"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSSDK.SecurityToken",
+          "version": "3.3.104.38",
+          "purl": "pkg:nuget/AWSSDK.SecurityToken@3.3.104.38",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.SecurityToken/3.3.104.38"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSSDK.SQS",
+          "version": "3.3.102.65",
+          "purl": "pkg:nuget/AWSSDK.SQS@3.3.102.65",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSSDK.SQS/3.3.102.65"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSXRayRecorder.Core",
+          "version": "2.6.1",
+          "purl": "pkg:nuget/AWSXRayRecorder.Core@2.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Core/2.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSXRayRecorder.Handlers.AspNetCore",
+          "version": "2.6.1",
+          "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AspNetCore@2.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Handlers.AspNetCore/2.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "AWSXRayRecorder.Handlers.AwsSdk",
+          "version": "2.7.1",
+          "purl": "pkg:nuget/AWSXRayRecorder.Handlers.AwsSdk@2.7.1",
+          "download_url": "https://www.nuget.org/api/v2/package/AWSXRayRecorder.Handlers.AwsSdk/2.7.1"
+        },
+        {
+          "type": "nuget",
+          "name": "CacheCow.Server.Core.Mvc",
+          "version": "2.4.4",
+          "purl": "pkg:nuget/CacheCow.Server.Core.Mvc@2.4.4",
+          "download_url": "https://www.nuget.org/api/v2/package/CacheCow.Server.Core.Mvc/2.4.4"
+        },
+        {
+          "type": "nuget",
+          "name": "FeatureFlagService.Core",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/FeatureFlagService.Core@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/FeatureFlagService.Core/1.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "log4net",
+          "version": "2.0.8",
+          "purl": "pkg:nuget/log4net@2.0.8",
+          "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Mvc.Versioning",
+          "version": "3.1.6",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc.Versioning@3.1.6",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc.Versioning/3.1.6"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+          "version": "3.2.1",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer@3.2.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer/3.2.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Razor.Design",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Razor.Design@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Razor.Design/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets",
+          "version": "1.9.5",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.9.5",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.9.5"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+          "version": "2.2.4",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@2.2.4",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/2.2.4"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

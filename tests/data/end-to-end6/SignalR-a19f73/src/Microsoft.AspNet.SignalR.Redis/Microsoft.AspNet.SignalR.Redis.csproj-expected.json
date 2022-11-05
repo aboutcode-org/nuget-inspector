@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Redis",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis//",
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis//"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Internal.AspNetCore.Sdk",
+            "version": "3.0.0-alpha1-20180907.9",
+            "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+            "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StackExchange.Redis.StrongName",
+            "version": "1.1.608",
+            "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
+            "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Internal.AspNetCore.Sdk",
+          "version": "3.0.0-alpha1-20180907.9",
+          "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+          "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+        },
+        {
+          "type": "nuget",
+          "name": "StackExchange.Redis.StrongName",
+          "version": "1.1.608",
+          "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
+          "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

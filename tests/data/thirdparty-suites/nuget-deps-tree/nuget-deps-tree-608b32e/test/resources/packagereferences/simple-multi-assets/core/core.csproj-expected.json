@@ -1,0 +1,41 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "core",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/simple-multi-assets/core/core.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MyLogger",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/MyLogger@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MyLogger",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/MyLogger@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "MyLogger",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/MyLogger@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

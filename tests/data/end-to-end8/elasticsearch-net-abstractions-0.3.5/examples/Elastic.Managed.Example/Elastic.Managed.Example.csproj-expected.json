@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Elastic.Managed.Example",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/Elastic.Managed.Example.csproj",
+      "outputs": [
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/bin/Debug/net5.0/",
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/bin/Release/net5.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/MinVer@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/MinVer@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

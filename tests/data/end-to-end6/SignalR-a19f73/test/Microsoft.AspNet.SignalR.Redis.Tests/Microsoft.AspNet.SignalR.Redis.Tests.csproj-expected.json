@@ -1,0 +1,105 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.Redis.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Redis.Tests/Microsoft.AspNet.SignalR.Redis.Tests.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis.Tests//",
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis.Tests//"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Castle.Core",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/Castle.Core@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.7.8",
+            "purl": "pkg:nuget/Moq@4.7.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "15.8.0",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Castle.Core",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/Castle.Core@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.7.8",
+          "purl": "pkg:nuget/Moq@4.7.8",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.0",
+          "purl": "pkg:nuget/xunit@2.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.0",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "15.8.0",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

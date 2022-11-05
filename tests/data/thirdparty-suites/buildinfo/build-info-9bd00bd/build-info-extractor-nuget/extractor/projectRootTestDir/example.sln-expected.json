@@ -1,0 +1,15 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "example",
+      "project_datafile_type": "solution-file",
+      "project_file": "/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/example.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

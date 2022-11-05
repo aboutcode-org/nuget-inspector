@@ -1,0 +1,72 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR.SystemWeb",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SystemWeb/Microsoft.AspNet.SignalR.SystemWeb.csproj",
+      "outputs": [
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SystemWeb//",
+        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SystemWeb//"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Owin",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Owin@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin.Host.SystemWeb",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.Owin",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Owin.Host.SystemWeb",
+          "version": "2.1.0",
+          "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

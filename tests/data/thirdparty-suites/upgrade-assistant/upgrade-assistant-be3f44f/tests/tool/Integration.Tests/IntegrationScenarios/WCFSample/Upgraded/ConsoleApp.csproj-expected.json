@@ -1,0 +1,156 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "ConsoleApp",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/ConsoleApp.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/bin/Debug/net6.0/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CSharp",
+            "version": "4.7.0",
+            "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.DataSetExtensions",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+            "version": "0.2.222702",
+            "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.NetTcp",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.Primitives",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.ConfigurationManager",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.ConfigurationManager@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.ConfigurationManager/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.Http",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.WebHttp",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.WebHttp@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.WebHttp/1.1.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.CSharp",
+          "version": "4.7.0",
+          "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.DataSetExtensions",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+          "version": "0.2.222702",
+          "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+        },
+        {
+          "type": "nuget",
+          "name": "CoreWCF.NetTcp",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "CoreWCF.Primitives",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "CoreWCF.ConfigurationManager",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/CoreWCF.ConfigurationManager@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.ConfigurationManager/1.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "CoreWCF.Http",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "CoreWCF.WebHttp",
+          "version": "1.1.0",
+          "purl": "pkg:nuget/CoreWCF.WebHttp@1.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.WebHttp/1.1.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

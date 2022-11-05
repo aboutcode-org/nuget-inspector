@@ -1,0 +1,238 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "project",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies/project.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ClientDependency.Core",
+            "version": "1.7.0.1",
+            "purl": "pkg:nuget/ClientDependency.Core@1.7.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/ClientDependency.Core/1.7.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "6.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@6.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.SqlServerCe",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Data.SqlServerCe@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlServerCe/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.SqlServerCe.Entity",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Data.SqlServerCe.Entity@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlServerCe.Entity/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http.Formatting",
+            "version": "4.0.20126.16343",
+            "purl": "pkg:nuget/System.Net.Http.Formatting@4.0.20126.16343",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http.Formatting/4.0.20126.16343"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.Helpers",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/System.Web.Helpers@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.Helpers/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.Http",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Web.Http@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.Http/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.Mvc",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Web.Mvc@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.Mvc/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.Razor",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/System.Web.Razor@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.Razor/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.WebPages",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/System.Web.WebPages@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.WebPages.Deployment",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/System.Web.WebPages.Deployment@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages.Deployment/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.WebPages.Razor",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/System.Web.WebPages.Razor@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages.Razor/2.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "ClientDependency.Core",
+          "version": "1.7.0.1",
+          "purl": "pkg:nuget/ClientDependency.Core@1.7.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/ClientDependency.Core/1.7.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Web.Infrastructure",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "6.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@6.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.SqlServerCe",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Data.SqlServerCe@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlServerCe/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.SqlServerCe.Entity",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Data.SqlServerCe.Entity@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlServerCe.Entity/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http.Formatting",
+          "version": "4.0.20126.16343",
+          "purl": "pkg:nuget/System.Net.Http.Formatting@4.0.20126.16343",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http.Formatting/4.0.20126.16343"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.Helpers",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/System.Web.Helpers@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.Helpers/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.Http",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Web.Http@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.Http/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.Mvc",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Web.Mvc@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.Mvc/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.Razor",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/System.Web.Razor@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.Razor/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.WebPages",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/System.Web.WebPages@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.WebPages.Deployment",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/System.Web.WebPages.Deployment@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages.Deployment/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Web.WebPages.Razor",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/System.Web.WebPages.Razor@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Web.WebPages.Razor/2.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "UWPMigrationSample2",
+      "project_datafile_type": "solution-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/UWPMigrationSample2.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "UWPMigrationSample2",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/UWPMigrationSample2.csproj",
+          "outputs": [
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/bin/Debug/net6.0-windows10.0.19041.0/",
+            "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/bin/Release/net6.0-windows10.0.19041.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.WindowsAppSDK",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.WindowsAppSDK@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAppSDK/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Graphics.Win2D",
+                "version": "1.0.0.30",
+                "purl": "pkg:nuget/Microsoft.Graphics.Win2D@1.0.0.30",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Graphics.Win2D/1.0.0.30"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+                "version": "0.2.222702",
+                "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Windows.Compatibility",
+                "version": "5.0.2",
+                "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.WindowsAppSDK",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.WindowsAppSDK@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAppSDK/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Graphics.Win2D",
+              "version": "1.0.0.30",
+              "purl": "pkg:nuget/Microsoft.Graphics.Win2D@1.0.0.30",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Graphics.Win2D/1.0.0.30"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+              "version": "0.2.222702",
+              "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Windows.Compatibility",
+              "version": "5.0.2",
+              "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

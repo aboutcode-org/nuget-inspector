@@ -1,0 +1,139 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DotNetOutdated.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/DotNetOutdated.Tests.csproj",
+      "outputs": [
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/bin/Debug/",
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "McMaster.Extensions.CommandLineUtils",
+            "version": "4.0.1",
+            "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "17.0.0",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.18.2",
+            "purl": "pkg:nuget/Moq@4.18.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.Abstractions.TestingHelpers",
+            "version": "14.0.13",
+            "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.3",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "McMaster.Extensions.CommandLineUtils",
+          "version": "4.0.1",
+          "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.0.0",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.18.2",
+          "purl": "pkg:nuget/Moq@4.18.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.IO.Abstractions.TestingHelpers",
+          "version": "14.0.13",
+          "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
+          "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.3",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

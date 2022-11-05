@@ -1,0 +1,122 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Elastic.Elasticsearch.Managed",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/Elastic.Elasticsearch.Managed.csproj",
+      "outputs": [
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/bin/Debug/",
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Managed/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/MinVer@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ConfigureAwaitChecker.Analyzer",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Proc",
+            "version": "0.6.1",
+            "purl": "pkg:nuget/Proc@0.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.1",
+            "purl": "pkg:nuget/System.Net.Http@4.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/MinVer@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "ConfigureAwaitChecker.Analyzer",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Proc",
+          "version": "0.6.1",
+          "purl": "pkg:nuget/Proc@0.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Proc/0.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.1",
+          "purl": "pkg:nuget/System.Net.Http@4.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DotNetOutdated",
+      "project_datafile_type": "solution-file",
+      "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/DotNetOutdated.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "DotNetOutdated",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/DotNetOutdated.csproj",
+          "outputs": [
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Debug/",
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "CsvHelper",
+                "version": "27.2.1",
+                "purl": "pkg:nuget/CsvHelper@27.2.1",
+                "download_url": "https://www.nuget.org/api/v2/package/CsvHelper/27.2.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.DependencyInjection",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "13.0.1",
+                "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CsvHelper",
+              "version": "27.2.1",
+              "purl": "pkg:nuget/CsvHelper@27.2.1",
+              "download_url": "https://www.nuget.org/api/v2/package/CsvHelper/27.2.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "13.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "DotNetOutdated.Core",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/DotNetOutdated.Core.csproj",
+          "outputs": [
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/bin/Debug/netstandard2.0/",
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/bin/Release/netstandard2.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NETStandard.Library",
+                "version": "2.0.3",
+                "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+                "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "McMaster.Extensions.CommandLineUtils",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Configuration",
+                "version": "6.3.1",
+                "purl": "pkg:nuget/NuGet.Configuration@6.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Credentials",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/NuGet.Credentials@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.ProjectModel",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/NuGet.ProjectModel@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Protocol",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/NuGet.Protocol@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Versioning",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/NuGet.Versioning@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.Abstractions",
+                "version": "14.0.13",
+                "purl": "pkg:nuget/System.IO.Abstractions@14.0.13",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/14.0.13"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NETStandard.Library",
+              "version": "2.0.3",
+              "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+              "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+            },
+            {
+              "type": "nuget",
+              "name": "McMaster.Extensions.CommandLineUtils",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Configuration",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Configuration@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Credentials",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/NuGet.Credentials@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.ProjectModel",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/NuGet.ProjectModel@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Protocol",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/NuGet.Protocol@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/NuGet.Versioning@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.Abstractions",
+              "version": "14.0.13",
+              "purl": "pkg:nuget/System.IO.Abstractions@14.0.13",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/14.0.13"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "DotNetOutdated.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/DotNetOutdated.Tests.csproj",
+          "outputs": [
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/bin/Debug/",
+            "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/bin/Release/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "McMaster.Extensions.CommandLineUtils",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "17.0.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.18.2",
+                "purl": "pkg:nuget/Moq@4.18.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "13.0.1",
+                "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.Abstractions.TestingHelpers",
+                "version": "14.0.13",
+                "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.3",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "McMaster.Extensions.CommandLineUtils",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "17.0.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.18.2",
+              "purl": "pkg:nuget/Moq@4.18.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "13.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.Abstractions.TestingHelpers",
+              "version": "14.0.13",
+              "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.3",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

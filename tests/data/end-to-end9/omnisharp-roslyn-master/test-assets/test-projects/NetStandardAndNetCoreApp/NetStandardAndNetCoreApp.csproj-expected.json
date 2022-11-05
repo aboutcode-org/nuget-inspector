@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NetStandardAndNetCoreApp",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NetStandardAndNetCoreApp/NetStandardAndNetCoreApp.csproj",
+      "outputs": [
+        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NetStandardAndNetCoreApp/bin/Debug/",
+        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NetStandardAndNetCoreApp/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "1.6.0",
+            "purl": "pkg:nuget/NETStandard.Library@1.6.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "1.6.0",
+          "purl": "pkg:nuget/NETStandard.Library@1.6.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

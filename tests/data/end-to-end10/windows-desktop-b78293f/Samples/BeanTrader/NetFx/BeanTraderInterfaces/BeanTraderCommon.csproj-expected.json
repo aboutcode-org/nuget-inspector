@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "BeanTraderCommon",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderInterfaces/BeanTraderCommon.csproj",
+      "outputs": [
+        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderInterfaces/bin/Debug/",
+        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderInterfaces/bin/Release/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

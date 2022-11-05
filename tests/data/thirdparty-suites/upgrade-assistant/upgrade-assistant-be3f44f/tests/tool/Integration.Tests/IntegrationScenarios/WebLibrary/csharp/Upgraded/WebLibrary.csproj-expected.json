@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "WebLibrary",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/WebLibrary.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/bin/Debug/net6.0/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CSharp",
+            "version": "4.7.0",
+            "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.DataSetExtensions",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+            "version": "0.2.222702",
+            "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.CSharp",
+          "version": "4.7.0",
+          "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.DataSetExtensions",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+          "version": "0.2.222702",
+          "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "9.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

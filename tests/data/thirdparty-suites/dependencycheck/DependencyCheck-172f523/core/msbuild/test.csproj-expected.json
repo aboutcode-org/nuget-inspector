@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "test",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/test.csproj",
+      "outputs": [
+        "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/bin/Debug/net471/",
+        "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/bin/Release/net471/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Humanizer",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Humanizer@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Humanizer/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "JetBrains.Annotations",
+            "version": "11.1.0",
+            "purl": "pkg:nuget/JetBrains.Annotations@11.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.All",
+            "version": "2.0.5",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.5",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Humanizer",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/Humanizer@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Humanizer/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "JetBrains.Annotations",
+          "version": "11.1.0",
+          "purl": "pkg:nuget/JetBrains.Annotations@11.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.All",
+          "version": "2.0.5",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.5",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.Logging",
+          "version": "6.0.0",
+          "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Newtonsoft.Json.Tests.Portable",
+      "project_version": "10.0.0.0",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/Newtonsoft.Json.Tests.Portable.csproj",
+      "outputs": [
+        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/bin/Debug/Portable/",
+        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/bin/Release/Portable/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

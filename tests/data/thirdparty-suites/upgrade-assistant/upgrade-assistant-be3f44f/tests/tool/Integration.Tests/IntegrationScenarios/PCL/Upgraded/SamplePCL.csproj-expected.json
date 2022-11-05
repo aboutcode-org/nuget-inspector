@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "SamplePCL",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/SamplePCL.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/bin/Debug/netstandard1.1/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/bin/Release/netstandard1.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "1.6.1",
+            "purl": "pkg:nuget/NETStandard.Library@1.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.4",
+            "purl": "pkg:nuget/System.Net.Http@4.3.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+            "version": "0.2.222702",
+            "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "1.6.1",
+          "purl": "pkg:nuget/NETStandard.Library@1.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.4",
+          "purl": "pkg:nuget/System.Net.Http@4.3.4",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "9.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+          "version": "0.2.222702",
+          "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

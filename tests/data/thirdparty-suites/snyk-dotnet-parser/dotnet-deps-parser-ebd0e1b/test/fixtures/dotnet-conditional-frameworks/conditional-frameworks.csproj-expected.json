@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "conditional-frameworks",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-frameworks/conditional-frameworks.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-frameworks/bin/Debug/",
+        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-frameworks/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.TypeExtensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "System.Reflection",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Reflection@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Reflection.TypeExtensions",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

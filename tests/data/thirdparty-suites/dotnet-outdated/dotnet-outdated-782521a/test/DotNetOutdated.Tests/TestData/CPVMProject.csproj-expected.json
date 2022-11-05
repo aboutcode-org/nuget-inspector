@@ -1,0 +1,18 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "CPVMProject",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/TestData/CPVMProject.csproj",
+      "outputs": [
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/TestData/bin/Debug/netcoreapp2.1/",
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/TestData/bin/Release/netcoreapp2.1/"
+      ],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

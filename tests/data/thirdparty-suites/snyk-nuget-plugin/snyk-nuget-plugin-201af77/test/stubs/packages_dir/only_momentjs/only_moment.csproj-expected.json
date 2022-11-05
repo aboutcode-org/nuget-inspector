@@ -1,0 +1,37 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "only_moment",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/only_moment.csproj",
+      "outputs": [
+        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/bin/Debug/netcoreapp2.0/",
+        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/bin/Release/netcoreapp2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moment.js",
+            "version": "2.20.1",
+            "purl": "pkg:nuget/Moment.js@2.20.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Moment.js",
+          "version": "2.20.1",
+          "purl": "pkg:nuget/Moment.js@2.20.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

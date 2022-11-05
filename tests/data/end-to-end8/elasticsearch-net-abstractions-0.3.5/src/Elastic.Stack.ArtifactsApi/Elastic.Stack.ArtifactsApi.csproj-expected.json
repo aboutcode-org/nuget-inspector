@@ -1,0 +1,122 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Elastic.Stack.ArtifactsApi",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/Elastic.Stack.ArtifactsApi.csproj",
+      "outputs": [
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Debug/",
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/MinVer@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ConfigureAwaitChecker.Analyzer",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SemanticVersioning",
+            "version": "0.8.0",
+            "purl": "pkg:nuget/SemanticVersioning@0.8.0",
+            "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/0.8.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Json",
+            "version": "4.6.0",
+            "purl": "pkg:nuget/System.Text.Json@4.6.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.6.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/MinVer@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "ConfigureAwaitChecker.Analyzer",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "SemanticVersioning",
+          "version": "0.8.0",
+          "purl": "pkg:nuget/SemanticVersioning@0.8.0",
+          "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/0.8.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Text.Json",
+          "version": "4.6.0",
+          "purl": "pkg:nuget/System.Text.Json@4.6.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.6.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

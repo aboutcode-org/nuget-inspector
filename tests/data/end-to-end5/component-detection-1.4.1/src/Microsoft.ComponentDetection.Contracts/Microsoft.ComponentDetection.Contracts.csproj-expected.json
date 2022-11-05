@@ -1,0 +1,37 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.ComponentDetection.Contracts",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj",
+      "outputs": [
+        "/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/bin/Debug/netstandard2.0/",
+        "/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

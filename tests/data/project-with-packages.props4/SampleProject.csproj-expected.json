@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "SampleProject",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/project-with-packages.props4/SampleProject.csproj",
+      "outputs": [
+        "/project-with-packages.props4/bin/Debug/netstandard2.0/",
+        "/project-with-packages.props4/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Nerdbank.GitVersioning",
+            "version": "2.1.16",
+            "purl": "pkg:nuget/Nerdbank.GitVersioning@2.1.16",
+            "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/2.1.16"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Nerdbank.GitVersioning",
+          "version": "2.1.16",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@2.1.16",
+          "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/2.1.16"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

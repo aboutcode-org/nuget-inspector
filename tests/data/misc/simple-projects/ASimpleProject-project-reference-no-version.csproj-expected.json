@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "ASimpleProject-project-reference-no-version",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/misc/simple-projects/ASimpleProject-project-reference-no-version.csproj",
+      "outputs": [
+        "/misc/simple-projects/bin/Debug/net5.0/",
+        "/misc/simple-projects/bin/Release/net5.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Contoso.Utility.UsefulStuff",
+            "version": "3.6.0",
+            "purl": "pkg:nuget/Contoso.Utility.UsefulStuff@3.6.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Contoso.Utility.UsefulStuff/3.6.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "9.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Contoso.Utility.UsefulStuff",
+          "version": "3.6.0",
+          "purl": "pkg:nuget/Contoso.Utility.UsefulStuff@3.6.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Contoso.Utility.UsefulStuff/3.6.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

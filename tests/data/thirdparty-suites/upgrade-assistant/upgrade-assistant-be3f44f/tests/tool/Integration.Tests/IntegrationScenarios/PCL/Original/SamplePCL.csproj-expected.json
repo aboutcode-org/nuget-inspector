@@ -1,0 +1,94 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "SamplePCL",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Original/SamplePCL.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl",
+            "version": "1.1.10",
+            "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.Build",
+              "version": "1.0.14",
+              "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.14",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.14"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.Build",
+            "version": "1.0.14",
+            "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.14",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.14"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Net.Http",
+            "version": "2.2.29",
+            "purl": "pkg:nuget/Microsoft.Net.Http@2.2.29",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.29"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl",
+              "version": "1.1.10",
+              "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.Build",
+              "version": "1.0.14",
+              "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.14",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.14"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "8.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@8.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/8.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.Net.Http",
+          "version": "2.2.29",
+          "purl": "pkg:nuget/Microsoft.Net.Http@2.2.29",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.29"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "8.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@8.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/8.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

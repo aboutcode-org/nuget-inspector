@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Nuuvify.CommonPack.Security",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/Nuuvify.CommonPack.Security.csproj",
+      "outputs": [
+        "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/bin/Debug/netcoreapp3.1/linux-x64/",
+        "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/bin/Release/netcoreapp3.1/linux-x64/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Caching.SqlServer",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Caching.SqlServer@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.SqlServer/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.ConfigurationExtensions/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Authorization",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Authorization@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authorization/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.26"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.Caching.SqlServer",
+          "version": "3.1.26",
+          "purl": "pkg:nuget/Microsoft.Extensions.Caching.SqlServer@3.1.26",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.SqlServer/3.1.26"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+          "version": "3.1.26",
+          "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@3.1.26",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.ConfigurationExtensions/3.1.26"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Authorization",
+          "version": "3.1.26",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Authorization@3.1.26",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authorization/3.1.26"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+          "version": "3.1.26",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@3.1.26",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.26"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

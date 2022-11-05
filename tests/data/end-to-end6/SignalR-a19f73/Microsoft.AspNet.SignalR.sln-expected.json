@@ -1,0 +1,2414 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Microsoft.AspNet.SignalR",
+      "project_datafile_type": "solution-file",
+      "project_file": "/end-to-end6/SignalR-a19f73/Microsoft.AspNet.SignalR.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Core",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Core/Microsoft.AspNet.SignalR.Core.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Core//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Core//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Security",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Security",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Client",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Client/Microsoft.AspNet.SignalR.Client.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "9.0.1",
+                "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Stress",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "CmdLine",
+                "version": "1.0.7.509",
+                "purl": "pkg:nuget/CmdLine@1.0.7.509",
+                "download_url": "https://www.nuget.org/api/v2/package/CmdLine/1.0.7.509"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CmdLine",
+              "version": "1.0.7.509",
+              "purl": "pkg:nuget/CmdLine@1.0.7.509",
+              "download_url": "https://www.nuget.org/api/v2/package/CmdLine/1.0.7.509"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Client.Samples",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Client.Samples/Microsoft.AspNet.SignalR.Client.Samples.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Samples//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Samples//"
+          ],
+          "packages": [],
+          "dependencies": [],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Client.JS.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.JS.Tests/Microsoft.AspNet.SignalR.Client.JS.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.JS.Tests//net472/",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.JS.Tests//net472/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Cors",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.SelfHost",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.StaticFiles",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.StaticFiles@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.StaticFiles/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Cors",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.SelfHost",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.StaticFiles",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.StaticFiles@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.StaticFiles/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Redis",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "StackExchange.Redis.StrongName",
+                "version": "1.1.608",
+                "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
+                "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "StackExchange.Redis.StrongName",
+              "version": "1.1.608",
+              "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
+              "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.SqlServer",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SqlServer/Microsoft.AspNet.SignalR.SqlServer.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.ServiceBus",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus/Microsoft.AspNet.SignalR.ServiceBus.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "WindowsAzure.ServiceBus",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/WindowsAzure.ServiceBus@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/2.1.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "WindowsAzure.ServiceBus",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/WindowsAzure.ServiceBus@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/2.1.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.LoadTestHarness",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/",
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery",
+                "version": "1.8.2",
+                "purl": "pkg:nuget/jQuery@1.8.2",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery.Color",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/jQuery.Color@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery.UI.Combined",
+                "version": "1.9.0",
+                "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "knockoutjs",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/knockoutjs@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.SystemWeb",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery.Color",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/jQuery.Color@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery.UI.Combined",
+              "version": "1.9.0",
+              "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+            },
+            {
+              "type": "nuget",
+              "name": "knockoutjs",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/knockoutjs@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.SystemWeb",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Tests.Common",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests.Common//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests.Common//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Azure.SignalR.AspNet",
+                "version": "1.0.0-preview1-10233",
+                "purl": "pkg:nuget/Microsoft.Azure.SignalR.AspNet@1.0.0-preview1-10233",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.SignalR.AspNet/1.0.0-preview1-10233"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Cors",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Hosting",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Security.Cookies",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Testing",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Testing@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Testing/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.abstractions",
+                "version": "2.0.2",
+                "purl": "pkg:nuget/xunit.abstractions@2.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Azure.SignalR.AspNet",
+              "version": "1.0.0-preview1-10233",
+              "purl": "pkg:nuget/Microsoft.Azure.SignalR.AspNet@1.0.0-preview1-10233",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.SignalR.AspNet/1.0.0-preview1-10233"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Cors",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Hosting",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Security.Cookies",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Testing",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Testing@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Testing/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.abstractions",
+              "version": "2.0.2",
+              "purl": "pkg:nuget/xunit.abstractions@2.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.assert",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.assert@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.execution",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.SqlServer.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.SqlServer.Tests/Microsoft.AspNet.SignalR.SqlServer.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer.Tests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer.Tests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "15.8.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "15.8.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.StressServer",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.StressServer/Microsoft.AspNet.SignalR.StressServer.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StressServer//net45/",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StressServer//net45/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Samples",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/Microsoft.AspNet.SignalR.Samples.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/bin/",
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/bin/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery",
+                "version": "1.8.2",
+                "purl": "pkg:nuget/jQuery@1.8.2",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery.Color",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/jQuery.Color@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jquery.cookie",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/jquery.cookie@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jquery.cookie/1.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jquery.mobile",
+                "version": "1.2.0",
+                "purl": "pkg:nuget/jquery.mobile@1.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jquery.mobile/1.2.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery.Templates",
+                "version": "0.1.0",
+                "purl": "pkg:nuget/jQuery.Templates@0.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery.Templates/0.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery.UI.Combined",
+                "version": "1.9.0",
+                "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "jQuery",
+                  "version": "1.8.2",
+                  "purl": "pkg:nuget/jQuery@1.8.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "json2",
+                "version": "1.0.2",
+                "purl": "pkg:nuget/json2@1.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/json2/1.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.AspNet.Cors",
+                "version": "5.2.2",
+                "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.2.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.2.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "3.0.0",
+                "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Cors",
+                "version": "3.0.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Cors@3.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/3.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "3.0.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.AspNet.Cors",
+                  "version": "5.2.2",
+                  "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.2.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.2.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.SystemWeb",
+                "version": "3.0.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "3.0.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Security",
+                "version": "3.0.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "3.0.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Security.Cookies",
+                "version": "3.0.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "3.0.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Security",
+                  "version": "3.0.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Twitter.Bootstrap",
+                "version": "2.1.1",
+                "purl": "pkg:nuget/Twitter.Bootstrap@2.1.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Twitter.Bootstrap/2.1.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery.Color",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/jQuery.Color@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "jquery.cookie",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/jquery.cookie@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jquery.cookie/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "jquery.mobile",
+              "version": "1.2.0",
+              "purl": "pkg:nuget/jquery.mobile@1.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jquery.mobile/1.2.0"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery.Templates",
+              "version": "0.1.0",
+              "purl": "pkg:nuget/jQuery.Templates@0.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.Templates/0.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery.UI.Combined",
+              "version": "1.9.0",
+              "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
+            },
+            {
+              "type": "nuget",
+              "name": "json2",
+              "version": "1.0.2",
+              "purl": "pkg:nuget/json2@1.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/json2/1.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Cors",
+              "version": "3.0.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Cors@3.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/3.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.SystemWeb",
+              "version": "3.0.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Security.Cookies",
+              "version": "3.0.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Twitter.Bootstrap",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Twitter.Bootstrap@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Twitter.Bootstrap/2.1.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SelfHost.Samples",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SelfHost.Samples/Microsoft.AspNet.SelfHost.Samples.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SelfHost.Samples//net45/",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SelfHost.Samples//net45/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Cors",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Diagnostics",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.HttpListener",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Hosting",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "6.0.4",
+                "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Cors",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Diagnostics",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.HttpListener",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Hosting",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests/Microsoft.AspNet.SignalR.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "15.8.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "15.8.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Client.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.Tests/Microsoft.AspNet.SignalR.Client.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Tests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Tests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/xunit@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.3.1",
+                  "purl": "pkg:nuget/xunit.core@2.3.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.3.1",
+                  "purl": "pkg:nuget/xunit.assert@2.3.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.9.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.9.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.9.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/xunit.core@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.3.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.3.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.3.1",
+                "purl": "pkg:nuget/xunit.assert@2.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.9.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.9.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.9.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.abstractions",
+                "version": "2.0.1",
+                "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.3.1",
+              "purl": "pkg:nuget/xunit@2.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.abstractions",
+              "version": "2.0.1",
+              "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.SystemWeb",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SystemWeb/Microsoft.AspNet.SignalR.SystemWeb.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SystemWeb//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SystemWeb//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.SystemWeb",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.SystemWeb",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Samples.VB",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/Microsoft.AspNet.SignalR.Samples.VB.vbproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/bin/Debug/",
+            "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/bin/Release/"
+          ],
+          "packages": [],
+          "dependencies": [],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.Redis.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Redis.Tests/Microsoft.AspNet.SignalR.Redis.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis.Tests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis.Tests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "15.8.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "15.8.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.ServiceBus3",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus3/Microsoft.AspNet.SignalR.ServiceBus3.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus3//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus3//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "WindowsAzure.ServiceBus",
+                "version": "3.4.5",
+                "purl": "pkg:nuget/WindowsAzure.ServiceBus@3.4.5",
+                "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "WindowsAzure.ServiceBus",
+              "version": "3.4.5",
+              "purl": "pkg:nuget/WindowsAzure.ServiceBus@3.4.5",
+              "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.JS",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.JS/Microsoft.AspNet.SignalR.JS.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.JS//netstandard1.0/",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.JS//netstandard1.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NETStandard.Library",
+                "version": "1.6.1",
+                "purl": "pkg:nuget/NETStandard.Library@1.6.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "jQuery",
+                "version": "1.12.4",
+                "purl": "pkg:nuget/jQuery@1.12.4",
+                "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.12.4"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "NETStandard.Library",
+              "version": "1.6.1",
+              "purl": "pkg:nuget/NETStandard.Library@1.6.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "1.12.4",
+              "purl": "pkg:nuget/jQuery@1.12.4",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.12.4"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR/Microsoft.AspNet.SignalR.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.SelfHost",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SelfHost/Microsoft.AspNet.SignalR.SelfHost.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SelfHost//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SelfHost//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.SelfHost",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.SelfHost",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.FunctionalTests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.HttpListener",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.SystemWeb",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "11.0.2",
+                "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.InteropServices.RuntimeInformation",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "15.8.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Channels",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.HttpListener",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Host.SystemWeb",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices.RuntimeInformation",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "15.8.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Channels",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.StackExchangeRedis",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.StackExchangeRedis/Microsoft.AspNet.SignalR.StackExchangeRedis.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Internal.AspNetCore.Sdk",
+                "version": "3.0.0-alpha1-20180907.9",
+                "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+                "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "StackExchange.Redis",
+                "version": "2.0.513",
+                "purl": "pkg:nuget/StackExchange.Redis@2.0.513",
+                "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis/2.0.513"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Internal.AspNetCore.Sdk",
+              "version": "3.0.0-alpha1-20180907.9",
+              "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
+              "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
+            },
+            {
+              "type": "nuget",
+              "name": "StackExchange.Redis",
+              "version": "2.0.513",
+              "purl": "pkg:nuget/StackExchange.Redis@2.0.513",
+              "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis/2.0.513"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Microsoft.AspNet.SignalR.StackExchangeRedis.Tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests.csproj",
+          "outputs": [
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests//",
+            "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests//"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Castle.Core",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/Castle.Core@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.7.8",
+                "purl": "pkg:nuget/Moq@4.7.8",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "15.8.0",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "4.0.0",
+              "purl": "pkg:nuget/Castle.Core@4.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.7.8",
+              "purl": "pkg:nuget/Moq@4.7.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "15.8.0",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "UWPMigrationSample2",
+      "project_datafile_type": "solution-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "UWPMigrationSample2",
+          "project_version": "6.2.13",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.csproj",
+          "outputs": [],
+          "packages": [],
+          "dependencies": [],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

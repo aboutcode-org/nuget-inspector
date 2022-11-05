@@ -1,0 +1,292 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DependencyChecker.Test",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/DependencyChecker.Test.csproj",
+      "outputs": [
+        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/bin/Debug/",
+        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestAdapter",
+            "version": "1.4.0",
+            "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/1.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestFramework",
+            "version": "1.4.0",
+            "purl": "pkg:nuget/MSTest.TestFramework@1.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/1.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "12.0.2",
+            "purl": "pkg:nuget/Newtonsoft.Json@12.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Common",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Common@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Configuration",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Configuration@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Frameworks",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Frameworks@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Packaging@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Packaging.Core@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core.Types",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Packaging.Core.Types@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Protocol.Core.Types",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Protocol.Core.Types@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Protocol.Core.v3",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Protocol.Core.v3@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Versioning",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/NuGet.Versioning@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Process",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Diagnostics.Process@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Process/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Dynamic.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.ProtectedData",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Thread",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Thread@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Thread/4.3.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MSTest.TestAdapter",
+          "version": "1.4.0",
+          "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/1.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestFramework",
+          "version": "1.4.0",
+          "purl": "pkg:nuget/MSTest.TestFramework@1.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/1.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "12.0.2",
+          "purl": "pkg:nuget/Newtonsoft.Json@12.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Common",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Common@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Configuration",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Configuration@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Frameworks",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Frameworks@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Packaging@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging.Core",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Packaging.Core.Types",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Packaging.Core.Types@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Protocol.Core.Types",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Protocol.Core.Types@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Protocol.Core.v3",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Protocol.Core.v3@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.Versioning",
+          "version": "5.1.0",
+          "purl": "pkg:nuget/NuGet.Versioning@5.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Diagnostics.Process",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Diagnostics.Process@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Process/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Dynamic.Runtime",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Security.Cryptography.ProtectedData",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Threading.Thread",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Threading.Thread@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Thread/4.3.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

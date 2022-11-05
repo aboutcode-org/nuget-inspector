@@ -1,0 +1,139 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "BeanTraderCommon",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/BeanTraderCommon.csproj",
+      "outputs": [
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/bin/Debug/netstandard2.0/",
+        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderInterfaces/bin/Release/netstandard2.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CSharp",
+            "version": "4.7.0",
+            "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.DataSetExtensions",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ServiceModel.Duplex",
+            "version": "4.8.1",
+            "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ServiceModel.NetTcp",
+            "version": "4.8.1",
+            "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ServiceModel.Federation",
+            "version": "4.8.1",
+            "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+            "version": "0.2.222702",
+            "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CSharp",
+          "version": "4.7.0",
+          "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.DataSetExtensions",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.ServiceModel.Duplex",
+          "version": "4.8.1",
+          "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.ServiceModel.NetTcp",
+          "version": "4.8.1",
+          "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.ServiceModel.Federation",
+          "version": "4.8.1",
+          "purl": "pkg:nuget/System.ServiceModel.Federation@4.8.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Federation/4.8.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
+          "version": "0.2.222702",
+          "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DotNetOutdated",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/DotNetOutdated.csproj",
+      "outputs": [
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Debug/",
+        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CsvHelper",
+            "version": "27.2.1",
+            "purl": "pkg:nuget/CsvHelper@27.2.1",
+            "download_url": "https://www.nuget.org/api/v2/package/CsvHelper/27.2.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "CsvHelper",
+          "version": "27.2.1",
+          "purl": "pkg:nuget/CsvHelper@27.2.1",
+          "download_url": "https://www.nuget.org/api/v2/package/CsvHelper/27.2.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.DependencyInjection",
+          "version": "6.0.0",
+          "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

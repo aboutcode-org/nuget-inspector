@@ -1,0 +1,81 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "GenericHostConsoleApp",
+      "project_datafile_type": "solution-file",
+      "project_file": "/packages.lock.json1/GenericHostConsoleApp.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "GenericHostConsoleApp",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/packages.lock.json1/GenericHostConsoleApp/GenericHostConsoleApp.csproj",
+          "outputs": [
+            "/packages.lock.json1/GenericHostConsoleApp/bin/Debug/net6.0/",
+            "/packages.lock.json1/GenericHostConsoleApp/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "McMaster.Extensions.Hosting.CommandLine",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/McMaster.Extensions.Hosting.CommandLine@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.Hosting.CommandLine/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Hosting",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/Microsoft.Extensions.Hosting@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Options.DataAnnotations",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/Microsoft.Extensions.Options.DataAnnotations@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.DataAnnotations/6.0.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "McMaster.Extensions.Hosting.CommandLine",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/McMaster.Extensions.Hosting.CommandLine@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.Hosting.CommandLine/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Hosting",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Hosting@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options.DataAnnotations",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options.DataAnnotations@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.DataAnnotations/6.0.0"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

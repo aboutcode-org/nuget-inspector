@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "MSTestProject",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/MSTestProject.csproj",
+      "outputs": [
+        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/bin/Debug/netcoreapp3.1/",
+        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/bin/Release/netcoreapp3.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "16.6.1",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@16.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/16.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestAdapter",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/MSTest.TestAdapter@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestFramework",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/MSTest.TestFramework@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.1.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "16.6.1",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@16.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/16.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestAdapter",
+          "version": "2.1.1",
+          "purl": "pkg:nuget/MSTest.TestAdapter@2.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestFramework",
+          "version": "2.1.1",
+          "purl": "pkg:nuget/MSTest.TestFramework@2.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.1.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

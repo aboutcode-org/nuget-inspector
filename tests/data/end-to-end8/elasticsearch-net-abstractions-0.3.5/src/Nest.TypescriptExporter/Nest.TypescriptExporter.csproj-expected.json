@@ -1,0 +1,156 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Nest.TypescriptExporter",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/Nest.TypescriptExporter.csproj",
+      "outputs": [
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Debug/net5.0/",
+        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Release/net5.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": "2.3.1",
+            "purl": "pkg:nuget/MinVer@2.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ConfigureAwaitChecker.Analyzer",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeAnalysis.CSharp",
+            "version": "2.8.2",
+            "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.8.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.8.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ShellProgressBar",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/ShellProgressBar@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/ShellProgressBar/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NEST",
+            "version": "7.7.1",
+            "purl": "pkg:nuget/NEST@7.7.1",
+            "download_url": "https://www.nuget.org/api/v2/package/NEST/7.7.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "11.0.2",
+            "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": "2.3.1",
+          "purl": "pkg:nuget/MinVer@2.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "ConfigureAwaitChecker.Analyzer",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeAnalysis.CSharp",
+          "version": "2.8.2",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.8.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.8.2"
+        },
+        {
+          "type": "nuget",
+          "name": "ShellProgressBar",
+          "version": "5.0.0",
+          "purl": "pkg:nuget/ShellProgressBar@5.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/ShellProgressBar/5.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NEST",
+          "version": "7.7.1",
+          "purl": "pkg:nuget/NEST@7.7.1",
+          "download_url": "https://www.nuget.org/api/v2/package/NEST/7.7.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "11.0.2",
+          "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}
