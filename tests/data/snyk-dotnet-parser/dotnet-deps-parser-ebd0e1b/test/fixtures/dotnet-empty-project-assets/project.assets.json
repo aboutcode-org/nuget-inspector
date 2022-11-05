@@ -1,0 +1,370 @@
+{
+    "version": 3,
+    "targets": {},
+    "libraries": {
+      "Microsoft.CSharp/4.0.1": {
+        "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
+        "type": "package",
+        "path": "microsoft.csharp/4.0.1"
+      },
+      "Microsoft.NETCore.App/2.0.0": {
+        "sha512": "/mzXF+UtZef+VpzzN88EpvFq5U6z4rj54ZMq/J968H6pcvyLOmcupmTRpJ3CJm8ILoCGh9WI7qpDdiKtuzswrQ==",
+        "type": "package",
+        "path": "microsoft.netcore.app/2.0.0"
+      },
+      "Microsoft.NETCore.DotNetAppHost/2.0.0": {
+        "sha512": "L4GGkcI/Mxl8PKLRpFdGmLb5oI8sGIR05bDTGkzCoamAjdUl1Zhkov2swjEsZvKYT8kkdiz39LtwyGYuCJxm1A==",
+        "type": "package",
+        "path": "microsoft.netcore.dotnetapphost/2.0.0"
+      },
+      "Microsoft.NETCore.DotNetHostPolicy/2.0.0": {
+        "sha512": "rm7mMn0A93fwyAwVhbyOCcPuu2hZNL0A0dAur9sNG9pEkONPfCEQeF7m2mC8KpqZO0Ol6tpV5J0AF3HTXT3GXA==",
+        "type": "package",
+        "path": "microsoft.netcore.dotnethostpolicy/2.0.0"
+      },
+      "Microsoft.NETCore.DotNetHostResolver/2.0.0": {
+        "sha512": "uBbjpeSrwsaTCADZCzRk+3aBzNnMqkC4zftJWBsL+Zk+8u+W+/lMb2thM5Y4hiVrv1YQg9t6dKldXzOKkY+pQw==",
+        "type": "package",
+        "path": "microsoft.netcore.dotnethostresolver/2.0.0"
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {
+        "sha512": "oXsuQ90nW4RPsHzEVxkTIqGcIWQ45y9wBkGiYA/TCxKsDmsh/NLE7160jNUDOUd2MDQziSOs9MUzZRkhtJWS9w==",
+        "type": "package",
+        "path": "microsoft.netcore.platforms/2.0.0"
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
+        "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+        "type": "package",
+        "path": "microsoft.netcore.targets/1.1.0"
+      },
+      "Microsoft.Win32.Primitives/4.0.1": {
+        "sha512": "fQnBHO9DgcmkC9dYSJoBqo6sH1VJwJprUHh8F3hbcRlxiQiBUuTntdk8tUwV490OqC2kQUrinGwZyQHTieuXRA==",
+        "type": "package",
+        "path": "microsoft.win32.primitives/4.0.1"
+      },
+      "Microsoft.Win32.Registry/4.0.0": {
+        "sha512": "q+eLtROUAQ3OxYA5mpQrgyFgzLQxIyrfT2eLpYX5IEPlHmIio2nh4F5bgOaQoGOV865kFKZZso9Oq9RlazvXtg==",
+        "type": "package",
+        "path": "microsoft.win32.registry/4.0.0"
+      },
+      "NETStandard.Library/2.0.0": {
+        "sha512": "qNtS1hbVQPko9Dll8esQ/8JpQv+cJgUGrJVHjTD6zBsaXM2u4I3acDsLF8iaP/3fHHu5eQW0Vv8SJe7gUEW/ug==",
+        "type": "package",
+        "path": "netstandard.library/2.0.0"
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+        "type": "package",
+        "path": "newtonsoft.json/9.0.1"
+      },
+      "NuGet.Common/4.4.0": {
+        "sha512": "GIL189R9hv3c6Dc/1kbiTdXt9jrMoVH4BdN5z5di0mv6CqeLW3jGvwz/tRFDmjO3X1ZWzuocKFRoeBcxS5Lgnw==",
+        "type": "package",
+        "path": "nuget.common/4.4.0"
+      },
+      "NuGet.Configuration/4.4.0": {
+        "sha512": "FpJ1IG/riUbEk7ogxSFXXsqyKHeAyGPPYv6oN6VrIlTPHl6GIYpm4B/iWvpD5q8y/52j7JYr50N1WEiZwoFScg==",
+        "type": "package",
+        "path": "nuget.configuration/4.4.0"
+      },
+      "NuGet.Frameworks/4.4.0": {
+        "sha512": "9cMgbt8phK7AIiQtLHWdPWzABVEkiBECGlxdDBx9hV+k0Pju+Jdjc9G1aposSvUb0Yf3/3qblLrYtFsYsin3fA==",
+        "type": "package",
+        "path": "nuget.frameworks/4.4.0"
+      },
+      "NuGet.Packaging/4.4.0": {
+        "sha512": "zlPrwMNZjGtzqB+Ym2loEHVoxKJUYqYf3hSap5xHK7XO8Z2DK+pY2tUkehse1QaeLxGbUHKcpVeurgCJEEEO1g==",
+        "type": "package",
+        "path": "nuget.packaging/4.4.0"
+      },
+      "NuGet.Packaging.Core/4.4.0": {
+        "sha512": "Wg2/rtPv7CFVgy+JUYMccmwol3YW144BE5dTgUyUDXRP8nFq0/mgkVlsoICG4hjnxoW2WNte2wxDlwKn3T9pbQ==",
+        "type": "package",
+        "path": "nuget.packaging.core/4.4.0"
+      },
+      "NuGet.Protocol/4.4.0": {
+        "sha512": "pPMJ0KpEnMHFyYn62plRri390GZb6przjw0R+E01pHuiFzcFyq0zRr6DQKpfU1BO2xe2ZXbld3Yzy6qpFsitFg==",
+        "type": "package",
+        "path": "nuget.protocol/4.4.0"
+      },
+      "NuGet.Versioning/4.4.0": {
+        "sha512": "NzqYmryKbYIFtH6DXY274Qj4Nu7z00AVKYeRR1WW20QoCiY7uv/gcwEjgcOnAX3BAvlSpQpYnAV6oivoM08E1w==",
+        "type": "package",
+        "path": "nuget.versioning/4.4.0"
+      },
+      "runtime.native.System/4.0.0": {
+        "sha512": "QfS/nQI7k/BLgmLrw7qm7YBoULEvgWnPI+cYsbfCVFTW8Aj+i8JhccxcFMu1RWms0YZzF+UHguNBK4Qn89e2Sg==",
+        "type": "package",
+        "path": "runtime.native.system/4.0.0"
+      },
+      "runtime.native.System.IO.Compression/4.1.0": {
+        "sha512": "Ob7nvnJBox1aaB222zSVZSkf4WrebPG4qFscfK7vmD7P7NxoSxACQLtO7ytWpqXDn2wcd/+45+EAZ7xjaPip8A==",
+        "type": "package",
+        "path": "runtime.native.system.io.compression/4.1.0"
+      },
+      "runtime.native.System.Security.Cryptography/4.0.0": {
+        "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
+        "type": "package",
+        "path": "runtime.native.system.security.cryptography/4.0.0"
+      },
+      "System.Collections/4.0.11": {
+        "sha512": "YUJGz6eFKqS0V//mLt25vFGrrCvOnsXjlvFQs+KimpwNxug9x0Pzy4PlFMU3Q2IzqAa9G2L4LsK3+9vCBK7oTg==",
+        "type": "package",
+        "path": "system.collections/4.0.11"
+      },
+      "System.Collections.Concurrent/4.0.12": {
+        "sha512": "2gBcbb3drMLgxlI0fBfxMA31ec6AEyYCHygGse4vxceJan8mRIWeKJ24BFzN7+bi/NFTgdIgufzb94LWO5EERQ==",
+        "type": "package",
+        "path": "system.collections.concurrent/4.0.12"
+      },
+      "System.Diagnostics.Debug/4.0.11": {
+        "sha512": "w5U95fVKHY4G8ASs/K5iK3J5LY+/dLFd4vKejsnI/ZhBsWS9hQakfx3Zr7lRWKg4tAw9r4iktyvsTagWkqYCiw==",
+        "type": "package",
+        "path": "system.diagnostics.debug/4.0.11"
+      },
+      "System.Diagnostics.Process/4.1.0": {
+        "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+        "type": "package",
+        "path": "system.diagnostics.process/4.1.0"
+      },
+      "System.Diagnostics.Tools/4.0.1": {
+        "sha512": "xBfJ8pnd4C17dWaC9FM6aShzbJcRNMChUMD42I6772KGGrqaFdumwhn9OdM68erj1ueNo3xdQ1EwiFjK5k8p0g==",
+        "type": "package",
+        "path": "system.diagnostics.tools/4.0.1"
+      },
+      "System.Diagnostics.Tracing/4.1.0": {
+        "sha512": "vDN1PoMZCkkdNjvZLql592oYJZgS7URcJzJ7bxeBgGtx5UtR5leNm49VmfHGqIffX4FKacHbI3H6UyNSHQknBg==",
+        "type": "package",
+        "path": "system.diagnostics.tracing/4.1.0"
+      },
+      "System.Dynamic.Runtime/4.0.11": {
+        "sha512": "db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A==",
+        "type": "package",
+        "path": "system.dynamic.runtime/4.0.11"
+      },
+      "System.Globalization/4.0.11": {
+        "sha512": "B95h0YLEL2oSnwF/XjqSWKnwKOy/01VWkNlsCeMTFJLLabflpGV26nK164eRs5GiaRSBGpOxQ3pKoSnnyZN5pg==",
+        "type": "package",
+        "path": "system.globalization/4.0.11"
+      },
+      "System.IO/4.3.0": {
+        "sha512": "ry4qJwzrAcEEoYqzwX7+yLgHkchj24M7oMYBx4tRwCw1A4QAcJt+TkghvFgTEgvbKJNxwQthntC31RbvQ7mbWQ==",
+        "type": "package",
+        "path": "system.io/4.3.0"
+      },
+      "System.IO.Compression/4.1.0": {
+        "sha512": "TjnBS6eztThSzeSib+WyVbLzEdLKUcEHN69VtS3u8aAsSc18FU6xCZlNWWsEd8SKcXAE+y1sOu7VbU8sUeM0sg==",
+        "type": "package",
+        "path": "system.io.compression/4.1.0"
+      },
+      "System.IO.FileSystem/4.0.1": {
+        "sha512": "IBErlVq5jOggAD69bg1t0pJcHaDbJbWNUZTPI96fkYWzwYbN6D9wRHMULLDd9dHsl7C2YsxXL31LMfPI1SWt8w==",
+        "type": "package",
+        "path": "system.io.filesystem/4.0.1"
+      },
+      "System.IO.FileSystem.Primitives/4.0.1": {
+        "sha512": "kWkKD203JJKxJeE74p8aF8y4Qc9r9WQx4C0cHzHPrY3fv/L/IhWnyCHaFJ3H1QPOH6A93whlQ2vG5nHlBDvzWQ==",
+        "type": "package",
+        "path": "system.io.filesystem.primitives/4.0.1"
+      },
+      "System.Linq/4.1.0": {
+        "sha512": "bQ0iYFOQI0nuTnt+NQADns6ucV4DUvMdwN6CbkB1yj8i7arTGiTN5eok1kQwdnnNWSDZfIUySQY+J3d5KjWn0g==",
+        "type": "package",
+        "path": "system.linq/4.1.0"
+      },
+      "System.Linq.Expressions/4.1.0": {
+        "sha512": "I+y02iqkgmCAyfbqOmSDOgqdZQ5tTj80Akm5BPSS8EeB0VGWdy6X1KCoYe8Pk6pwDoAKZUOdLVxnTJcExiv5zw==",
+        "type": "package",
+        "path": "system.linq.expressions/4.1.0"
+      },
+      "System.ObjectModel/4.0.12": {
+        "sha512": "tAgJM1xt3ytyMoW4qn4wIqgJYm7L7TShRZG4+Q4Qsi2PCcj96pXN7nRywS9KkB3p/xDUjc2HSwP9SROyPYDYKQ==",
+        "type": "package",
+        "path": "system.objectmodel/4.0.12"
+      },
+      "System.Reflection/4.3.0": {
+        "sha512": "69SuP6M0xCiJgFuzVd2f1PIDItMIH17QaT4C6zMXxhfVre3hTKj/AogoSpZQAp8XNz7zhuA4BljxOmcyz5ii7g==",
+        "type": "package",
+        "path": "system.reflection/4.3.0"
+      },
+      "System.Reflection.Emit/4.0.1": {
+        "sha512": "P2wqAj72fFjpP6wb9nSfDqNBMab+2ovzSDzUZK7MVIm54tBJEPr9jWfSjjoTpPwj1LeKcmX3vr0ttyjSSFM47g==",
+        "type": "package",
+        "path": "system.reflection.emit/4.0.1"
+      },
+      "System.Reflection.Emit.ILGeneration/4.0.1": {
+        "sha512": "Ov6dU8Bu15Bc7zuqttgHF12J5lwSWyTf1S+FJouUXVMSqImLZzYaQ+vRr1rQ0OZ0HqsrwWl4dsKHELckQkVpgA==",
+        "type": "package",
+        "path": "system.reflection.emit.ilgeneration/4.0.1"
+      },
+      "System.Reflection.Emit.Lightweight/4.0.1": {
+        "sha512": "sSzHHXueZ5Uh0OLpUQprhr+ZYJrLPA2Cmr4gn0wj9+FftNKXx8RIMKvO9qnjk2ebPYUjZ+F2ulGdPOsvj+MEjA==",
+        "type": "package",
+        "path": "system.reflection.emit.lightweight/4.0.1"
+      },
+      "System.Reflection.Extensions/4.0.1": {
+        "sha512": "GYrtRsZcMuHF3sbmRHfMYpvxZoIN2bQGrYGerUiWLEkqdEUQZhH3TRSaC/oI4wO0II1RKBPlpIa1TOMxIcOOzQ==",
+        "type": "package",
+        "path": "system.reflection.extensions/4.0.1"
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "sha512": "0ZY/WKPbUlfUgGbbm0ktwooKLUCrz59oitgBL02HWnUAuOTXGpPh4YJECUXIdxOM815onh/bS988qaIJJRr6Sg==",
+        "type": "package",
+        "path": "system.reflection.primitives/4.3.0"
+      },
+      "System.Reflection.TypeExtensions/4.1.0": {
+        "sha512": "tsQ/ptQ3H5FYfON8lL4MxRk/8kFyE0A+tGPXmVP967cT/gzLHYxIejIYSxp4JmIeFHVP78g/F2FE1mUUTbDtrg==",
+        "type": "package",
+        "path": "system.reflection.typeextensions/4.1.0"
+      },
+      "System.Resources.ResourceManager/4.0.1": {
+        "sha512": "TxwVeUNoTgUOdQ09gfTjvW411MF+w9MBYL7AtNVc+HtBCFlutPLhUCdZjNkjbhj3bNQWMdHboF0KIWEOjJssbA==",
+        "type": "package",
+        "path": "system.resources.resourcemanager/4.0.1"
+      },
+      "System.Runtime/4.3.0": {
+        "sha512": "HfqwvHvkypIeom+R9qUDakMuxW23T6Meq0r4NuhtgZ5jtjAa8bmF4/Ge3B0MiYJqAMdoNu6WjdYUTCdIYAj6lw==",
+        "type": "package",
+        "path": "system.runtime/4.3.0"
+      },
+      "System.Runtime.Extensions/4.1.0": {
+        "sha512": "CUOHjTT/vgP0qGW22U4/hDlOqXmcPq5YicBaXdUR2UiUoLwBT+olO6we4DVbq57jeX5uXH2uerVZhf0qGj+sVQ==",
+        "type": "package",
+        "path": "system.runtime.extensions/4.1.0"
+      },
+      "System.Runtime.Handles/4.3.0": {
+        "sha512": "rV1yHjHcALIAzWPVxOfkx+2MG2sUYXYYuYtCRCa837Yb28Gjeiy7SJKBugFspTmt/lOZtsC+2CNJCF8zTJM8cA==",
+        "type": "package",
+        "path": "system.runtime.handles/4.3.0"
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "sha512": "ZXpoVspaJhwYVc8+2g6NWqqgUYLjzT8xMbQo6YGV1bwzdoY36fqVJTYXKq/rbr29Ij7Se1AmmHRLnz+U0bGLTQ==",
+        "type": "package",
+        "path": "system.runtime.interopservices/4.3.0"
+      },
+      "System.Runtime.Numerics/4.0.1": {
+        "sha512": "+XbKFuzdmLP3d1o9pdHu2nxjNr2OEPqGzKeegPLCUMM71a0t50A/rOcIRmGs9wR7a8KuHX6hYs/7/TymIGLNqg==",
+        "type": "package",
+        "path": "system.runtime.numerics/4.0.1"
+      },
+      "System.Runtime.Serialization.Primitives/4.1.1": {
+        "sha512": "HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
+        "type": "package",
+        "path": "system.runtime.serialization.primitives/4.1.1"
+      },
+      "System.Security.Cryptography.Algorithms/4.2.0": {
+        "sha512": "8JQFxbLVdrtIOKMDN38Fn0GWnqYZw/oMlwOUG/qz1jqChvyZlnUmu+0s7wLx7JYua/nAXoESpHA3iw11QFWhXg==",
+        "type": "package",
+        "path": "system.security.cryptography.algorithms/4.2.0"
+      },
+      "System.Security.Cryptography.Encoding/4.0.0": {
+        "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
+        "type": "package",
+        "path": "system.security.cryptography.encoding/4.0.0"
+      },
+      "System.Security.Cryptography.Primitives/4.0.0": {
+        "sha512": "Wkd7QryWYjkQclX0bngpntW5HSlMzeJU24UaLJQ7YTfI8ydAVAaU2J+HXLLABOVJlKTVvAeL0Aj39VeTe7L+oA==",
+        "type": "package",
+        "path": "system.security.cryptography.primitives/4.0.0"
+      },
+      "System.Security.Cryptography.ProtectedData/4.0.0": {
+        "sha512": "tCm6YIExUBE5ksyJXOPgrMG5SZp87s3igXBvjfwMUSLBk9KEi1sM1DfUfdlTY1vKX1DGoVeQbHkXjtBCJzycWA==",
+        "type": "package",
+        "path": "system.security.cryptography.protecteddata/4.0.0"
+      },
+      "System.Text.Encoding/4.3.0": {
+        "sha512": "s5KSBa//8BBaz2dFB/xLYNF7FAJfQ/91KqkaQk1/BSMnX46BnKRpT5wMNrbyHhYq27Ap05CwBO0cGqSZpm65MQ==",
+        "type": "package",
+        "path": "system.text.encoding/4.3.0"
+      },
+      "System.Text.Encoding.Extensions/4.0.11": {
+        "sha512": "jtbiTDtvfLYgXn8PTfWI+SiBs51rrmO4AAckx4KR6vFK9Wzf6tI8kcRdsYQNwriUeQ1+CtQbM1W4cMbLXnj/OQ==",
+        "type": "package",
+        "path": "system.text.encoding.extensions/4.0.11"
+      },
+      "System.Text.RegularExpressions/4.1.0": {
+        "sha512": "i88YCXpRTjCnoSQZtdlHkAOx4KNNik4hMy83n0+Ftlb7jvV6ZiZWMpnEZHhjBp6hQVh8gWd/iKNPzlPF7iyA2g==",
+        "type": "package",
+        "path": "system.text.regularexpressions/4.1.0"
+      },
+      "System.Threading/4.0.11": {
+        "sha512": "N+3xqIcg3VDKyjwwCGaZ9HawG9aC6cSDI+s7ROma310GQo8vilFZa86hqKppwTHleR/G0sfOzhvgnUxWCR/DrQ==",
+        "type": "package",
+        "path": "system.threading/4.0.11"
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "sha512": "DAEoMrpKdVnUbHu8fgZC2CehoQqgrY65TgQnDV3/bj64ssxA+At+FmGkZoQAVWoFEYofPGVNL7tO8OA77wGhuw==",
+        "type": "package",
+        "path": "system.threading.tasks/4.3.0"
+      },
+      "System.Threading.Tasks.Extensions/4.0.0": {
+        "sha512": "pH4FZDsZQ/WmgJtN4LWYmRdJAEeVkyriSwrv2Teoe5FOU0Yxlb6II6GL8dBPOfRmutHGATduj3ooMt7dJ2+i+w==",
+        "type": "package",
+        "path": "system.threading.tasks.extensions/4.0.0"
+      },
+      "System.Threading.Thread/4.0.0": {
+        "sha512": "gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+        "type": "package",
+        "path": "system.threading.thread/4.0.0"
+      },
+      "System.Threading.ThreadPool/4.0.10": {
+        "sha512": "IMXgB5Vf/5Qw1kpoVgJMOvUO1l32aC+qC3OaIZjWJOjvcxuxNWOK2ZTWWYXfij22NHxT2j1yWX5vlAeQWld9vA==",
+        "type": "package",
+        "path": "system.threading.threadpool/4.0.10"
+      },
+      "System.Xml.ReaderWriter/4.0.11": {
+        "sha512": "ZIiLPsf67YZ9zgr31vzrFaYQqxRPX9cVHjtPSnmx4eN6lbS/yEyYNr2vs1doGDEscF0tjCZFsk9yUg1sC9e8tg==",
+        "type": "package",
+        "path": "system.xml.readerwriter/4.0.11"
+      },
+      "System.Xml.XDocument/4.0.11": {
+        "sha512": "Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
+        "type": "package",
+        "path": "system.xml.xdocument/4.0.11"
+      }
+    },
+    "projectFileDependencyGroups": {
+      ".NETCoreApp,Version=v2.0": [
+        "Microsoft.NETCore.App >= 2.0.0",
+        "Newtonsoft.Json >= 9.0.1",
+        "NuGet.Protocol >= 4.4.0"
+      ]
+    },
+    "packageFolders": {
+      "/Users/orsagie/.nuget/packages/": {},
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    },
+    "project": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/orsagie/snyk/Samples/CatalogReaderExample/CatalogReaderExample/CatalogReaderExample.csproj",
+        "projectPath": "/Users/orsagie/snyk/Samples/CatalogReaderExample/CatalogReaderExample/CatalogReaderExample.csproj",
+        "projectName": "SomeProjectName",
+        "packagesPath": "/Users/orsagie/.nuget/packages/",
+        "outputPath": "/Users/orsagie/snyk/Samples/CatalogReaderExample/CatalogReaderExample/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/orsagie/snyk/Samples/CatalogReaderExample/NuGet.Config",
+          "/Users/orsagie/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/nuget-build/api/v3/index.json": {}
+        },
+        "frameworks": {},
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {}
+    }
+  }
+  
