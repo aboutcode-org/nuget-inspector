@@ -1,0 +1,49 @@
+{
+  "authors": [
+    "Microsoft"
+  ],
+  "description": "Music store application on ASP.NET 5",
+  "version": "1.0.0-beta4",
+  "compilationOptions": { "warningsAsErrors": true, "define": [ "DEMO", "TESTING" ] },
+  "compile": [
+    "**/*.cs",
+    "../../test/E2ETests/compiler/shared/**/*.cs" // This code is for testing only.
+  ],
+  "publishExclude": "*.cmd",
+  "webroot": "wwwroot",
+  "dependencies": {
+    "EntityFramework.SqlServer": "7.0.0-beta4",
+    "EntityFramework.InMemory": "7.0.0-beta4", // For Mono.
+    "Kestrel": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.Cookies": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.Facebook": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.Google": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.MicrosoftAccount": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.OpenIdConnect": "1.0.0-beta4",
+    "Microsoft.AspNet.Authentication.Twitter": "1.0.0-beta4",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-beta4",
+    "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-beta4",
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta4",
+    "Microsoft.AspNet.Mvc": "6.0.0-beta4",
+    "Microsoft.AspNet.Server.IIS": "1.0.0-beta4",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta4",
+    "Microsoft.AspNet.Session": "1.0.0-beta4",
+    "Microsoft.AspNet.SignalR.Server": "3.0.0-beta4",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
+    "Microsoft.Framework.Caching.Distributed": "1.0.0-beta4", // For Session.
+    "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta4",
+    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta4"
+
+  },
+  "commands": {
+    "gen": "Microsoft.Framework.CodeGeneration",
+    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004",
+    "run": "run server.urls=http://localhost:5003",
+    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5002"
+  },
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  }
+}

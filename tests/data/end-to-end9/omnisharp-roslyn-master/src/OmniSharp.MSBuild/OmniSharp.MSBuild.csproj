@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net472</TargetFrameworks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <IsPackable>true</IsPackable>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OmniSharp.Abstractions\OmniSharp.Abstractions.csproj" />
+    <ProjectReference Include="..\OmniSharp.Roslyn.CSharp\OmniSharp.Roslyn.CSharp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Microsoft.Build" ExcludeAssets="Runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Framework" ExcludeAssets="Runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" ExcludeAssets="Runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" ExcludeAssets="Runtime" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="NuGet.Packaging.Core" />
+    <PackageReference Include="NuGet.ProjectModel" />
+    <PackageReference Include="NuGet.Versioning" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" />
+  </ItemGroup>
+
+</Project>

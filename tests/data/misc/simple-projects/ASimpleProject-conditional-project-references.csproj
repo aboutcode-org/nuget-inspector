@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- See https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" Condition="'$(TargetFramework)' == 'net452'" />
+  </ItemGroup>
+
+  <ItemGroup Condition = "'$(TargetFramework)' == 'net461'">
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.0" />
+    <PackageReference Include="Contoso.Utility.UsefulStuff" Version="3.6.0" />
+  </ItemGroup>
+
+</Project>
