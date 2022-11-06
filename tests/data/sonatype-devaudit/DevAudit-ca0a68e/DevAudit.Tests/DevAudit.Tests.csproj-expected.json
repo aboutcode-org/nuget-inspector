@@ -1,0 +1,209 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "DevAudit.Tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/DevAudit.Tests.csproj",
+      "outputs": [
+        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/bin/Debug/",
+        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Sprache",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Sprache@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Sprache/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Versatile",
+            "version": "0.2.6",
+            "purl": "pkg:nuget/Versatile@0.2.6",
+            "download_url": "https://www.nuget.org/api/v2/package/Versatile/0.2.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.core",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit.core@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.assert",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit.assert@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.analyzers",
+              "version": "0.10.0",
+              "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.core",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.core@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.execution",
+              "version": "2.4.1",
+              "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.core",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.execution",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.assert",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.assert@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.analyzers",
+            "version": "0.10.0",
+            "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.abstractions",
+            "version": "2.0.3",
+            "purl": "pkg:nuget/xunit.abstractions@2.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.console",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.runner.console@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.console/2.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.1",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Sprache",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/Sprache@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Sprache/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Versatile",
+          "version": "0.2.6",
+          "purl": "pkg:nuget/Versatile@0.2.6",
+          "download_url": "https://www.nuget.org/api/v2/package/Versatile/0.2.6"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.abstractions",
+          "version": "2.0.3",
+          "purl": "pkg:nuget/xunit.abstractions@2.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.console",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit.runner.console@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.console/2.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.1",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

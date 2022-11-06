@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<!--Defining custom Targets to execute before project compilation starts.-->
+<PropertyGroup>
+<CompileDependsOn>
+        CommonBuildDefineModifiedAssemblyVersion;
+        $(CompileDependsOn);
+    </CompileDependsOn>
+</PropertyGroup>
+ <Target Name="CommonBuildDefineModifiedAssemblyVersion" Condition="'$(VersionAssembly)' != ''">
+        <!-- Find AssemblyInfo.cs or AssemblyInfo.vb in the "Compile" Items. Remove it from "Compile" Items because we will use a modified version instead. -->
+        <ItemGroup>
+            <OriginalAssemblyInfo Include="@(Compile)" Condition="%(Filename) == 'AssemblyInfo' And (%(Extension) == '.vb' Or %(Extension) == '.cs')" />
+            <Compile Remove="**/AssemblyInfo.vb" />
+            <Compile Remove="**/AssemblyInfo.cs" />
+        </ItemGroup>
+        <!-- Copy the original AssemblyInfo.cs/.vb to obj\ folder, i.e. $(IntermediateOutputPath). The copied filepath is saved into @(ModifiedAssemblyInfo) Item. -->
+        <Copy SourceFiles="@(OriginalAssemblyInfo)"
+              DestinationFiles="@(OriginalAssemblyInfo->'$(IntermediateOutputPath)%(Identity)')">
+            <Output TaskParameter="DestinationFiles" ItemName="ModifiedAssemblyInfo"/>
+        </Copy>
+        <!-- Replace the version bit (in AssemblyVersion and AssemblyFileVersion attributes) using regular expression. Use the defined property: $(VersionAssembly). -->
+        <Message Text="Setting AssemblyVersion to $(VersionAssembly)" />
+        <Exec Command="$(SolutionDir)BuildCommon\devaudit-linux-replace-assembly-version.sh @(ModifiedAssemblyInfo) $(VersionAssembly)" />
+        <!-- Include the modified AssemblyInfo.cs/.vb file in "Compile" items (instead of the original). -->
+        <ItemGroup>
+            <Compile Include="@(ModifiedAssemblyInfo)" />
+        </ItemGroup>
+    </Target>
+
+</Project>

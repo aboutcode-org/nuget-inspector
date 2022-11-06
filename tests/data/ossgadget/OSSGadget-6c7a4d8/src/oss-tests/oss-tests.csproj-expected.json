@@ -1,0 +1,190 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "oss-tests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/oss-tests.csproj",
+      "outputs": [
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Debug/net6.0/",
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Nerdbank.GitVersioning",
+            "version": "3.5.119",
+            "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+            "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FluentAssertions",
+            "version": "6.8.0",
+            "purl": "pkg:nuget/FluentAssertions@6.8.0",
+            "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "JmesPath.Net",
+            "version": "1.0.205",
+            "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+            "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "17.3.2",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "coverlet.collector",
+            "version": "3.1.2",
+            "purl": "pkg:nuget/coverlet.collector@3.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.18.2",
+            "purl": "pkg:nuget/Moq@4.18.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestAdapter",
+            "version": "2.2.10",
+            "purl": "pkg:nuget/MSTest.TestAdapter@2.2.10",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestFramework",
+            "version": "2.2.10",
+            "purl": "pkg:nuget/MSTest.TestFramework@2.2.10",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "RichardSzalay.MockHttp",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Nerdbank.GitVersioning",
+          "version": "3.5.119",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+          "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+        },
+        {
+          "type": "nuget",
+          "name": "FluentAssertions",
+          "version": "6.8.0",
+          "purl": "pkg:nuget/FluentAssertions@6.8.0",
+          "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0"
+        },
+        {
+          "type": "nuget",
+          "name": "JmesPath.Net",
+          "version": "1.0.205",
+          "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+          "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.3.2",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+        },
+        {
+          "type": "nuget",
+          "name": "coverlet.collector",
+          "version": "3.1.2",
+          "purl": "pkg:nuget/coverlet.collector@3.1.2",
+          "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.18.2",
+          "purl": "pkg:nuget/Moq@4.18.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestAdapter",
+          "version": "2.2.10",
+          "purl": "pkg:nuget/MSTest.TestAdapter@2.2.10",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestFramework",
+          "version": "2.2.10",
+          "purl": "pkg:nuget/MSTest.TestFramework@2.2.10",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "RichardSzalay.MockHttp",
+          "version": "6.0.0",
+          "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

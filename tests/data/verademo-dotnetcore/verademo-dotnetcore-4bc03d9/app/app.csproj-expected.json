@@ -1,0 +1,173 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "app",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/verademo-dotnetcore/verademo-dotnetcore-4bc03d9/app/app.csproj",
+      "outputs": [
+        "/verademo-dotnetcore/verademo-dotnetcore-4bc03d9/app/bin/Debug/netcoreapp3.1/",
+        "/verademo-dotnetcore/verademo-dotnetcore-4bc03d9/app/bin/Release/netcoreapp3.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "EntityFramework",
+            "version": "6.4.4",
+            "purl": "pkg:nuget/EntityFramework@6.4.4",
+            "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.4.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "log4net",
+            "version": "2.0.12",
+            "purl": "pkg:nuget/log4net@2.0.12",
+            "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.12"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore",
+            "version": "3.1.10",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore@3.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+            "version": "3.1.10",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.EntityFrameworkCore@3.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Identity.UI",
+            "version": "3.1.10",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.UI@3.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.UI/3.1.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.EntityFrameworkCore.Tools",
+            "version": "3.1.10",
+            "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Tools@3.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Tools/3.1.10"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging.Log4Net.AspNetCore",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Log4Net.AspNetCore@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Log4Net.AspNetCore/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "newtonsoft.json",
+            "version": "12.0.3",
+            "purl": "pkg:nuget/newtonsoft.json@12.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/newtonsoft.json/12.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Data.SqlClient",
+            "version": "4.8.2",
+            "purl": "pkg:nuget/System.Data.SqlClient@4.8.2",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlClient/4.8.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "EntityFramework",
+          "version": "6.4.4",
+          "purl": "pkg:nuget/EntityFramework@6.4.4",
+          "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.4.4"
+        },
+        {
+          "type": "nuget",
+          "name": "log4net",
+          "version": "2.0.12",
+          "purl": "pkg:nuget/log4net@2.0.12",
+          "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.12"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore",
+          "version": "3.1.10",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore@3.1.10",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/3.1.10"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+          "version": "3.1.10",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.EntityFrameworkCore@3.1.10",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.EntityFrameworkCore/3.1.10"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.Identity.UI",
+          "version": "3.1.10",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.UI@3.1.10",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.UI/3.1.10"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.EntityFrameworkCore.Tools",
+          "version": "3.1.10",
+          "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Tools@3.1.10",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Tools/3.1.10"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.Logging.Log4Net.AspNetCore",
+          "version": "5.0.0",
+          "purl": "pkg:nuget/Microsoft.Extensions.Logging.Log4Net.AspNetCore@5.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Log4Net.AspNetCore/5.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "newtonsoft.json",
+          "version": "12.0.3",
+          "purl": "pkg:nuget/newtonsoft.json@12.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/newtonsoft.json/12.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Data.SqlClient",
+          "version": "4.8.2",
+          "purl": "pkg:nuget/System.Data.SqlClient@4.8.2",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlClient/4.8.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

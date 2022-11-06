@@ -38,41 +38,52 @@ Usage
 
 
 This project is based on, depends on or embeds several fine libraries and tools.
-Here are the some of the key libraries used::
+Here are credits for some of these key projects::
 
-- ``NuGet.Client`` by the .NET Foundation which is the core library and command
-  tool for NuGet proper.
+- ``NuGet.Client``, ``MSBuild`` and ``upgrade-assistant`` from the .NET
+  Foundation which are the core .NET tools and libraries to handled .NET and
+  NuGet projects.
   https://github.com/NuGet/NuGet.Client/
-
-- ``MSBuild`` and ``upgrade-assistant`` by the .NET Foundation which are the
-  .NET tools and libraries for building .NET and NuGet projects and tools to
-  upgrade them
   https://github.com/dotnet/msbuild/
   https://github.com/dotnet/upgrade-assistant
 
-- ``nuget-dotnet5-inspector`` by Synopsys as forked by Mario Rivis 
-  https://github.com/dxworks/nuget-dotnet5-inspector
+- ``audit.net`` ``NugetAuditor`` and ``DevAudit`` from Sonatype
+  https://github.com/sonatype-nexus-community/DevAudit/
+  https://github.com/sonatype-nexus-community/audit.net
 
-- ``snyk-nuget-plugin`` and ``dotnet-deps-parser`` by Snyk which are NuGet
-  manifests parsing libraries and tools.
-  https://github.com/snyk/snyk-nuget-plugin
-  https://github.com/snyk/dotnet-deps-parser
-  
-- ``dotnet-oudated`` by Jerrie Pelser and contributors
-  https://github.com/dotnet-outdated/dotnet-outdated
-
-- ``DependencyChecker`` by Fabrice Andréïs
-  https://github.com/chwebdude/DependencyChecker
-
-- ``build-info`` and ``nuget-deps-tree`` by JFrog
+- ``build-info`` and ``nuget-deps-tree`` from JFrog
   https://github.com/jfrog/build-info
   https://github.com/jfrog/nuget-deps-tree/
 
-- ``cyclonedx-dotnet`` by the OWASP Foundation
+- ``Component Detection`` and ``OSSGadget`` from Microsoft
+  https://github.com/microsoft/component-detection/
+  https://github.com/microsoft/OSSGadget
+
+- ``cyclonedx-dotnet`` from the OWASP Foundation
   https://github.com/CycloneDX/cyclonedx-dotnet
-  
-- ``DependencyCheck`` by Jeremy Long
+
+- ``DependencyCheck`` from Jeremy Long
   https://github.com/jeremylong/DependencyCheck
+
+- ``DependencyChecker`` from Fabrice Andréïs
+  https://github.com/chwebdude/DependencyChecker
+
+- ``dotnet-oudated`` from Jerrie Pelser and contributors
+  https://github.com/dotnet-outdated/dotnet-outdated
+
+- ``NugetDefense`` from Curtis Carter
+  https://github.com/digitalcoyote/NuGetDefense
+
+- ``nuget-dotnet5-inspector`` from Synopsys as forked by Mario Rivis 
+  https://github.com/dxworks/nuget-dotnet5-inspector
+
+- ``snyk-nuget-plugin`` and ``dotnet-deps-parser`` from Snyk
+  https://github.com/snyk/snyk-nuget-plugin
+  https://github.com/snyk/dotnet-deps-parser
+
+- ``verademo-dotnet`` and ``verademo-dotnetcore`` and from Veracode
+  https://github.com/veracode/verademo-dotnet
+  https://github.com/veracode/verademo-dotnetcore
 
 
 These are used either in the built executables, at build time or for testing.

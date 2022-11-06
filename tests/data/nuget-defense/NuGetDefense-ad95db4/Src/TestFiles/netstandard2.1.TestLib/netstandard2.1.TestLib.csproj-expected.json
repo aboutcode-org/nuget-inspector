@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "netstandard2.1.TestLib",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/netstandard2.1.TestLib.csproj",
+      "outputs": [
+        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/bin/Debug/netstandard2.1/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/bin/Release/netstandard2.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bogus",
+            "version": "33.0.2",
+            "purl": "pkg:nuget/Bogus@33.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Bogus/33.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGetDefense",
+            "version": "2.1.2",
+            "purl": "pkg:nuget/NuGetDefense@2.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/2.1.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bootstrap",
+            "version": "4.0.0-beta",
+            "purl": "pkg:nuget/Bootstrap@4.0.0-beta",
+            "download_url": "https://www.nuget.org/api/v2/package/Bootstrap/4.0.0-beta"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.4",
+            "purl": "pkg:nuget/System.Net.Http@4.3.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Bogus",
+          "version": "33.0.2",
+          "purl": "pkg:nuget/Bogus@33.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Bogus/33.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGetDefense",
+          "version": "2.1.2",
+          "purl": "pkg:nuget/NuGetDefense@2.1.2",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/2.1.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Bootstrap",
+          "version": "4.0.0-beta",
+          "purl": "pkg:nuget/Bootstrap@4.0.0-beta",
+          "download_url": "https://www.nuget.org/api/v2/package/Bootstrap/4.0.0-beta"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.4",
+          "purl": "pkg:nuget/System.Net.Http@4.3.4",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

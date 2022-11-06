@@ -1,0 +1,360 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "example",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/misc/csproj4/example.csproj",
+      "outputs": [
+        "/misc/csproj4/bin/Debug/netstandard2.1/",
+        "/misc/csproj4/bin/Release/netstandard2.1/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bond.Core.CSharp",
+            "version": "5.3.1",
+            "purl": "pkg:nuget/Bond.Core.CSharp@5.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Bond.Core.CSharp/5.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Google.Protobuf",
+            "version": "3.3.0",
+            "purl": "pkg:nuget/Google.Protobuf@3.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeAnalysis.Analyzers",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeAnalysis.Common",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeAnalysis.CSharp",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "1.0.0-rc1-final",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@1.0.0-rc1-final",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "1.0.0-rc1-final",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@1.0.0-rc1-final",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.Core",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/Microsoft.Orleans.Core@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.Core/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.OrleansCodeGenerator",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/Microsoft.Orleans.OrleansCodeGenerator@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansCodeGenerator/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.OrleansGCPUtils",
+            "version": "2.0.0-rc2",
+            "purl": "pkg:nuget/Microsoft.Orleans.OrleansGCPUtils@2.0.0-rc2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansGCPUtils/2.0.0-rc2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.OrleansHost",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/Microsoft.Orleans.OrleansHost@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansHost/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.OrleansRuntime",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/Microsoft.Orleans.OrleansRuntime@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansRuntime/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Orleans.Serialization.Bond",
+            "version": "3.0.2",
+            "purl": "pkg:nuget/Microsoft.Orleans.Serialization.Bond@3.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.Serialization.Bond/3.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "7.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@7.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections.Immutable",
+            "version": "1.1.36",
+            "purl": "pkg:nuget/System.Collections.Immutable@1.1.36",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.1.36"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "2.0.20710",
+            "purl": "pkg:nuget/System.Net.Http@2.0.20710",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/2.0.20710"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.3",
+            "purl": "pkg:nuget/System.Net.Http@4.3.3",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Metadata",
+            "version": "1.0.21",
+            "purl": "pkg:nuget/System.Reflection.Metadata@1.0.21",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.0.21"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.RegularExpressions",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/System.Text.RegularExpressions@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.RegularExpressions",
+            "version": "4.1.0",
+            "purl": "pkg:nuget/System.Text.RegularExpressions@4.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.1.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Bond.Core.CSharp",
+          "version": "5.3.1",
+          "purl": "pkg:nuget/Bond.Core.CSharp@5.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Bond.Core.CSharp/5.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Google.Protobuf",
+          "version": "3.3.0",
+          "purl": "pkg:nuget/Google.Protobuf@3.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeAnalysis.Analyzers",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeAnalysis.Common",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeAnalysis.CSharp",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "version": "1.0.0-rc1-final",
+          "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@1.0.0-rc1-final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc1-final"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Extensions.DependencyInjection",
+          "version": "1.0.0-rc1-final",
+          "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@1.0.0-rc1-final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/1.0.0-rc1-final"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.Core",
+          "version": "1.2.0",
+          "purl": "pkg:nuget/Microsoft.Orleans.Core@1.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.Core/1.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.OrleansCodeGenerator",
+          "version": "1.2.0",
+          "purl": "pkg:nuget/Microsoft.Orleans.OrleansCodeGenerator@1.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansCodeGenerator/1.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.OrleansGCPUtils",
+          "version": "2.0.0-rc2",
+          "purl": "pkg:nuget/Microsoft.Orleans.OrleansGCPUtils@2.0.0-rc2",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansGCPUtils/2.0.0-rc2"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.OrleansHost",
+          "version": "1.2.0",
+          "purl": "pkg:nuget/Microsoft.Orleans.OrleansHost@1.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansHost/1.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.OrleansRuntime",
+          "version": "1.2.0",
+          "purl": "pkg:nuget/Microsoft.Orleans.OrleansRuntime@1.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.OrleansRuntime/1.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Orleans.Serialization.Bond",
+          "version": "3.0.2",
+          "purl": "pkg:nuget/Microsoft.Orleans.Serialization.Bond@3.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Orleans.Serialization.Bond/3.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "7.0.1",
+          "purl": "pkg:nuget/Newtonsoft.Json@7.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Collections.Immutable",
+          "version": "1.1.36",
+          "purl": "pkg:nuget/System.Collections.Immutable@1.1.36",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.1.36"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "2.0.20710",
+          "purl": "pkg:nuget/System.Net.Http@2.0.20710",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/2.0.20710"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.3",
+          "purl": "pkg:nuget/System.Net.Http@4.3.3",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.3"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Reflection.Metadata",
+          "version": "1.0.21",
+          "purl": "pkg:nuget/System.Reflection.Metadata@1.0.21",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.0.21"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Text.RegularExpressions",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.Text.RegularExpressions@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Text.RegularExpressions",
+          "version": "4.1.0",
+          "purl": "pkg:nuget/System.Text.RegularExpressions@4.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.1.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

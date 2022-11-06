@@ -1,0 +1,359 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "Verademo-dotnet",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/verademo-dotnet/verademo-dotnet-12f2bd1/Verademo-Dotnet/Verademo-dotnet.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Antlr",
+            "version": "3.4.1.9004",
+            "purl": "pkg:nuget/Antlr@3.4.1.9004",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "bootstrap",
+            "version": "3.0.0",
+            "purl": "pkg:nuget/bootstrap@3.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jquery",
+              "version": "1.10.2",
+              "purl": "pkg:nuget/jquery@1.10.2",
+              "download_url": "https://www.nuget.org/api/v2/package/jquery/1.10.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jquery",
+            "version": "1.10.2",
+            "purl": "pkg:nuget/jquery@1.10.2",
+            "download_url": "https://www.nuget.org/api/v2/package/jquery/1.10.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery.Validation",
+            "version": "1.11.1",
+            "purl": "pkg:nuget/jQuery.Validation@1.11.1",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.11.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jquery",
+              "version": "1.10.2",
+              "purl": "pkg:nuget/jquery@1.10.2",
+              "download_url": "https://www.nuget.org/api/v2/package/jquery/1.10.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "log4net",
+            "version": "2.0.8",
+            "purl": "pkg:nuget/log4net@2.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Mvc",
+            "version": "5.2.3",
+            "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.WebPages",
+              "version": "3.2.3",
+              "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.3",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.WebPages",
+            "version": "3.2.3",
+            "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Infrastructure",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.3",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Razor",
+            "version": "3.2.3",
+            "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Web.Optimization",
+            "version": "1.1.3",
+            "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Infrastructure",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "WebGrease",
+              "version": "1.5.2",
+              "purl": "pkg:nuget/WebGrease@1.5.2",
+              "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "WebGrease",
+            "version": "1.5.2",
+            "purl": "pkg:nuget/WebGrease@1.5.2",
+            "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Antlr",
+              "version": "3.4.1.9004",
+              "purl": "pkg:nuget/Antlr@3.4.1.9004",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "6.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "6.0.4",
+            "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Compilers",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Net.Compilers@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Net.Compilers",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Net.Compilers@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.jQuery.Unobtrusive.Validation",
+            "version": "3.2.3",
+            "purl": "pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jquery",
+              "version": "1.10.2",
+              "purl": "pkg:nuget/jquery@1.10.2",
+              "download_url": "https://www.nuget.org/api/v2/package/jquery/1.10.2"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery.Validation",
+              "version": "1.11.1",
+              "purl": "pkg:nuget/jQuery.Validation@1.11.1",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.11.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Modernizr",
+            "version": "2.6.2",
+            "purl": "pkg:nuget/Modernizr@2.6.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Respond",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/Respond@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VeracodeAttributes",
+            "version": "1.2.1",
+            "purl": "pkg:nuget/VeracodeAttributes@1.2.1",
+            "download_url": "https://www.nuget.org/api/v2/package/VeracodeAttributes/1.2.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "bootstrap",
+          "version": "3.0.0",
+          "purl": "pkg:nuget/bootstrap@3.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "log4net",
+          "version": "2.0.8",
+          "purl": "pkg:nuget/log4net@2.0.8",
+          "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.Mvc",
+          "version": "5.2.3",
+          "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.Web.Optimization",
+          "version": "1.1.3",
+          "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.jQuery.Unobtrusive.Validation",
+          "version": "3.2.3",
+          "purl": "pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Modernizr",
+          "version": "2.6.2",
+          "purl": "pkg:nuget/Modernizr@2.6.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Respond",
+          "version": "1.2.0",
+          "purl": "pkg:nuget/Respond@1.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "VeracodeAttributes",
+          "version": "1.2.1",
+          "purl": "pkg:nuget/VeracodeAttributes@1.2.1",
+          "download_url": "https://www.nuget.org/api/v2/package/VeracodeAttributes/1.2.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

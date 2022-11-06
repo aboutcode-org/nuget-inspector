@@ -1,0 +1,88 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NuGetDefenseTests",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/NuGetDefenseTests.csproj",
+      "outputs": [
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/bin/Debug/net6.0/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": "17.3.2",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.4.2",
+            "purl": "pkg:nuget/xunit@2.4.2",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.visualstudio",
+            "version": "2.4.5",
+            "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "coverlet.collector",
+            "version": "3.2.0",
+            "purl": "pkg:nuget/coverlet.collector@3.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.2.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": "17.3.2",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.4.2",
+          "purl": "pkg:nuget/xunit@2.4.2",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.2"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit.runner.visualstudio",
+          "version": "2.4.5",
+          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+        },
+        {
+          "type": "nuget",
+          "name": "coverlet.collector",
+          "version": "3.2.0",
+          "purl": "pkg:nuget/coverlet.collector@3.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.2.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

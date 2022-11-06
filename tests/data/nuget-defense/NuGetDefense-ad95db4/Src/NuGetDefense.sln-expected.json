@@ -1,0 +1,367 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NuGetDefense",
+      "project_datafile_type": "solution-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "NuGetDefense",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
+          "outputs": [
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Debug/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Release/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/RELEASE/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/DOTNETTOOL/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.1.1",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.CommandLine",
+                "version": "2.0.0-beta4.22272.1",
+                "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.CommandLine.NamingConventionBinder",
+                "version": "2.0.0-beta4.22272.1",
+                "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.1.1",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.CommandLine",
+              "version": "2.0.0-beta4.22272.1",
+              "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.CommandLine.NamingConventionBinder",
+              "version": "2.0.0-beta4.22272.1",
+              "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "NuGetDefenseTests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/NuGetDefenseTests.csproj",
+          "outputs": [
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/bin/Debug/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefenseTests/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "17.3.2",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.2",
+                "purl": "pkg:nuget/xunit@2.4.2",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.runner.visualstudio",
+                "version": "2.4.5",
+                "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "coverlet.collector",
+                "version": "3.2.0",
+                "purl": "pkg:nuget/coverlet.collector@3.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.2.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "17.3.2",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit",
+              "version": "2.4.2",
+              "purl": "pkg:nuget/xunit@2.4.2",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.2"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.visualstudio",
+              "version": "2.4.5",
+              "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.5"
+            },
+            {
+              "type": "nuget",
+              "name": "coverlet.collector",
+              "version": "3.2.0",
+              "purl": "pkg:nuget/coverlet.collector@3.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.2.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "NuGetDefense.Lib",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/NuGetDefense.Lib.csproj",
+          "outputs": [
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/Debug/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/Release/net6.0/",
+            "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/RELEASE/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "ByteDev.DotNet",
+                "version": "7.2.0",
+                "purl": "pkg:nuget/ByteDev.DotNet@7.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/ByteDev.DotNet/7.2.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Data.Sqlite",
+                "version": "6.0.10",
+                "purl": "pkg:nuget/Microsoft.Data.Sqlite@6.0.10",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Sqlite/6.0.10"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.SourceLink.GitHub",
+                "version": "1.1.1",
+                "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Versioning",
+                "version": "6.3.1",
+                "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGetDefense.Core",
+                "version": "2.0.4",
+                "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGetDefense.GitHubAdvisoryDatabase",
+                "version": "2.0.2",
+                "purl": "pkg:nuget/NuGetDefense.GitHubAdvisoryDatabase@2.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.GitHubAdvisoryDatabase/2.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGetDefense.NVD",
+                "version": "2.0.8",
+                "purl": "pkg:nuget/NuGetDefense.NVD@2.0.8",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.NVD/2.0.8"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGetDefense.OSSIndex",
+                "version": "2.0.5",
+                "purl": "pkg:nuget/NuGetDefense.OSSIndex@2.0.5",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.OSSIndex/2.0.5"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Serilog.Sinks.Console",
+                "version": "4.1.0",
+                "purl": "pkg:nuget/Serilog.Sinks.Console@4.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/4.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Serilog.Sinks.File",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Json",
+                "version": "6.0.6",
+                "purl": "pkg:nuget/System.Text.Json@6.0.6",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "ByteDev.DotNet",
+              "version": "7.2.0",
+              "purl": "pkg:nuget/ByteDev.DotNet@7.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ByteDev.DotNet/7.2.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Data.Sqlite",
+              "version": "6.0.10",
+              "purl": "pkg:nuget/Microsoft.Data.Sqlite@6.0.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Sqlite/6.0.10"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.GitHub",
+              "version": "1.1.1",
+              "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.Core",
+              "version": "2.0.4",
+              "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.GitHubAdvisoryDatabase",
+              "version": "2.0.2",
+              "purl": "pkg:nuget/NuGetDefense.GitHubAdvisoryDatabase@2.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.GitHubAdvisoryDatabase/2.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.NVD",
+              "version": "2.0.8",
+              "purl": "pkg:nuget/NuGetDefense.NVD@2.0.8",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.NVD/2.0.8"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.OSSIndex",
+              "version": "2.0.5",
+              "purl": "pkg:nuget/NuGetDefense.OSSIndex@2.0.5",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.OSSIndex/2.0.5"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.Console",
+              "version": "4.1.0",
+              "purl": "pkg:nuget/Serilog.Sinks.Console@4.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/4.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.File",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Json",
+              "version": "6.0.6",
+              "purl": "pkg:nuget/System.Text.Json@6.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1216 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "OSSGadget",
+      "project_datafile_type": "solution-file",
+      "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/OSSGadget.sln",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": [
+        {
+          "project_name": "oss-defog",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-defog/oss-defog.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-defog/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-defog/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MediaTypeMap.Core",
+                "version": "2.3.3",
+                "purl": "pkg:nuget/MediaTypeMap.Core@2.3.3",
+                "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap.Core/2.3.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Console",
+                "version": "4.3.1",
+                "purl": "pkg:nuget/System.Console@4.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "MediaTypeMap.Core",
+              "version": "2.3.3",
+              "purl": "pkg:nuget/MediaTypeMap.Core@2.3.3",
+              "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap.Core/2.3.3"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Console",
+              "version": "4.3.1",
+              "purl": "pkg:nuget/System.Console@4.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "oss-health",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/oss-health.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Octokit",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/Octokit@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Console",
+                "version": "4.3.1",
+                "purl": "pkg:nuget/System.Console@4.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "Octokit",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/Octokit@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Console",
+              "version": "4.3.1",
+              "purl": "pkg:nuget/System.Console@4.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "oss-characteristic",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/oss-characteristic.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CST.ApplicationInspector.Commands",
+                "version": "1.6.24",
+                "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.Commands@1.6.24",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.ApplicationInspector.Commands/1.6.24"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CST.ApplicationInspector.Commands",
+              "version": "1.6.24",
+              "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.Commands@1.6.24",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.ApplicationInspector.Commands/1.6.24"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "oss-tests",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/oss-tests.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "FluentAssertions",
+                "version": "6.8.0",
+                "purl": "pkg:nuget/FluentAssertions@6.8.0",
+                "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "JmesPath.Net",
+                "version": "1.0.205",
+                "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+                "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NET.Test.Sdk",
+                "version": "17.3.2",
+                "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "coverlet.collector",
+                "version": "3.1.2",
+                "purl": "pkg:nuget/coverlet.collector@3.1.2",
+                "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Moq",
+                "version": "4.18.2",
+                "purl": "pkg:nuget/Moq@4.18.2",
+                "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MSTest.TestAdapter",
+                "version": "2.2.10",
+                "purl": "pkg:nuget/MSTest.TestAdapter@2.2.10",
+                "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "MSTest.TestFramework",
+                "version": "2.2.10",
+                "purl": "pkg:nuget/MSTest.TestFramework@2.2.10",
+                "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "13.0.1",
+                "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "RichardSzalay.MockHttp",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "FluentAssertions",
+              "version": "6.8.0",
+              "purl": "pkg:nuget/FluentAssertions@6.8.0",
+              "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0"
+            },
+            {
+              "type": "nuget",
+              "name": "JmesPath.Net",
+              "version": "1.0.205",
+              "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+              "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.Test.Sdk",
+              "version": "17.3.2",
+              "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.3.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2"
+            },
+            {
+              "type": "nuget",
+              "name": "coverlet.collector",
+              "version": "3.1.2",
+              "purl": "pkg:nuget/coverlet.collector@3.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Moq",
+              "version": "4.18.2",
+              "purl": "pkg:nuget/Moq@4.18.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
+            },
+            {
+              "type": "nuget",
+              "name": "MSTest.TestAdapter",
+              "version": "2.2.10",
+              "purl": "pkg:nuget/MSTest.TestAdapter@2.2.10",
+              "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10"
+            },
+            {
+              "type": "nuget",
+              "name": "MSTest.TestFramework",
+              "version": "2.2.10",
+              "purl": "pkg:nuget/MSTest.TestFramework@2.2.10",
+              "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "13.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "RichardSzalay.MockHttp",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "oss-metadata",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/oss-metadata.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "JmesPath.Net",
+                "version": "1.0.205",
+                "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+                "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "JmesPath.Net",
+              "version": "1.0.205",
+              "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+              "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "oss-reproducible",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/oss-reproducible.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "DiffPlex",
+                "version": "1.7.1",
+                "purl": "pkg:nuget/DiffPlex@1.7.1",
+                "download_url": "https://www.nuget.org/api/v2/package/DiffPlex/1.7.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Newtonsoft.Json",
+                "version": "13.0.1",
+                "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "SharpCompress",
+                "version": "0.32.2",
+                "purl": "pkg:nuget/SharpCompress@0.32.2",
+                "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.32.2"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "DiffPlex",
+              "version": "1.7.1",
+              "purl": "pkg:nuget/DiffPlex@1.7.1",
+              "download_url": "https://www.nuget.org/api/v2/package/DiffPlex/1.7.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "13.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "SharpCompress",
+              "version": "0.32.2",
+              "purl": "pkg:nuget/SharpCompress@0.32.2",
+              "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.32.2"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Shared.Lib",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/Shared/Shared.Lib.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/Shared/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/Shared/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "AngleSharp",
+                "version": "1.0.0-alpha-844",
+                "purl": "pkg:nuget/AngleSharp@1.0.0-alpha-844",
+                "download_url": "https://www.nuget.org/api/v2/package/AngleSharp/1.0.0-alpha-844"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "CommandLineParser",
+                "version": "2.9.1",
+                "purl": "pkg:nuget/CommandLineParser@2.9.1",
+                "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.9.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Crayon",
+                "version": "2.0.69",
+                "purl": "pkg:nuget/Crayon@2.0.69",
+                "download_url": "https://www.nuget.org/api/v2/package/Crayon/2.0.69"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "F23.StringSimilarity",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/F23.StringSimilarity@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/F23.StringSimilarity/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "HtmlAgilityPack",
+                "version": "1.11.46",
+                "purl": "pkg:nuget/HtmlAgilityPack@1.11.46",
+                "download_url": "https://www.nuget.org/api/v2/package/HtmlAgilityPack/1.11.46"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CST.RecursiveExtractor",
+                "version": "1.1.18",
+                "purl": "pkg:nuget/Microsoft.CST.RecursiveExtractor@1.1.18",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.RecursiveExtractor/1.1.18"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Caching.Memory",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.DependencyInjection",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Http",
+                "version": "6.0.0",
+                "purl": "pkg:nuget/Microsoft.Extensions.Http@6.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Http/6.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Http.Polly",
+                "version": "6.0.10",
+                "purl": "pkg:nuget/Microsoft.Extensions.Http.Polly@6.0.10",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Http.Polly/6.0.10"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NLog",
+                "version": "5.0.4",
+                "purl": "pkg:nuget/NLog@5.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/NLog/5.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NLog.Schema",
+                "version": "5.0.4",
+                "purl": "pkg:nuget/NLog.Schema@5.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/NLog.Schema/5.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Packaging",
+                "version": "6.3.1",
+                "purl": "pkg:nuget/NuGet.Packaging@6.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Protocol",
+                "version": "6.3.1",
+                "purl": "pkg:nuget/NuGet.Protocol@6.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Octokit",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/Octokit@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "packageurl-dotnet",
+                "version": "1.1.0",
+                "purl": "pkg:nuget/packageurl-dotnet@1.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/1.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Polly.Contrib.WaitAndRetry",
+                "version": "1.1.1",
+                "purl": "pkg:nuget/Polly.Contrib.WaitAndRetry@1.1.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Polly.Contrib.WaitAndRetry/1.1.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Sarif.Sdk",
+                "version": "3.1.0",
+                "purl": "pkg:nuget/Sarif.Sdk@3.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Sarif.Sdk/3.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "SemanticVersioning",
+                "version": "2.0.2",
+                "purl": "pkg:nuget/SemanticVersioning@2.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/2.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Console",
+                "version": "4.3.1",
+                "purl": "pkg:nuget/System.Console@4.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.4.240",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.4.240",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.4.240"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Linq.Async",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/System.Linq.Async@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Async/6.0.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "AngleSharp",
+              "version": "1.0.0-alpha-844",
+              "purl": "pkg:nuget/AngleSharp@1.0.0-alpha-844",
+              "download_url": "https://www.nuget.org/api/v2/package/AngleSharp/1.0.0-alpha-844"
+            },
+            {
+              "type": "nuget",
+              "name": "CommandLineParser",
+              "version": "2.9.1",
+              "purl": "pkg:nuget/CommandLineParser@2.9.1",
+              "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.9.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Crayon",
+              "version": "2.0.69",
+              "purl": "pkg:nuget/Crayon@2.0.69",
+              "download_url": "https://www.nuget.org/api/v2/package/Crayon/2.0.69"
+            },
+            {
+              "type": "nuget",
+              "name": "F23.StringSimilarity",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/F23.StringSimilarity@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/F23.StringSimilarity/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "HtmlAgilityPack",
+              "version": "1.11.46",
+              "purl": "pkg:nuget/HtmlAgilityPack@1.11.46",
+              "download_url": "https://www.nuget.org/api/v2/package/HtmlAgilityPack/1.11.46"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CST.RecursiveExtractor",
+              "version": "1.1.18",
+              "purl": "pkg:nuget/Microsoft.CST.RecursiveExtractor@1.1.18",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.RecursiveExtractor/1.1.18"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Caching.Memory",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Http",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Http@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Http/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Http.Polly",
+              "version": "6.0.10",
+              "purl": "pkg:nuget/Microsoft.Extensions.Http.Polly@6.0.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Http.Polly/6.0.10"
+            },
+            {
+              "type": "nuget",
+              "name": "NLog",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/NLog@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NLog/5.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "NLog.Schema",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/NLog.Schema@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NLog.Schema/5.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Packaging",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Packaging@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Protocol",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Protocol@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Octokit",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/Octokit@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "packageurl-dotnet",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/packageurl-dotnet@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Polly.Contrib.WaitAndRetry",
+              "version": "1.1.1",
+              "purl": "pkg:nuget/Polly.Contrib.WaitAndRetry@1.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Polly.Contrib.WaitAndRetry/1.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Sarif.Sdk",
+              "version": "3.1.0",
+              "purl": "pkg:nuget/Sarif.Sdk@3.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Sarif.Sdk/3.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "SemanticVersioning",
+              "version": "2.0.2",
+              "purl": "pkg:nuget/SemanticVersioning@2.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/2.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Console",
+              "version": "4.3.1",
+              "purl": "pkg:nuget/System.Console@4.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.4.240",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.4.240",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.4.240"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq.Async",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/System.Linq.Async@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Async/6.0.1"
+            }
+          ],
+          "children": []
+        },
+        {
+          "project_name": "Shared.CLI",
+          "project_datafile_type": "xproj-file",
+          "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/Shared.CLI.csproj",
+          "outputs": [
+            "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/bin/Debug/net6.0/",
+            "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/bin/Release/net6.0/"
+          ],
+          "packages": [
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Nerdbank.GitVersioning",
+                "version": "3.5.119",
+                "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+                "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "AngleSharp",
+                "version": "1.0.0-alpha-844",
+                "purl": "pkg:nuget/AngleSharp@1.0.0-alpha-844",
+                "download_url": "https://www.nuget.org/api/v2/package/AngleSharp/1.0.0-alpha-844"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "CommandLineParser",
+                "version": "2.9.1",
+                "purl": "pkg:nuget/CommandLineParser@2.9.1",
+                "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.9.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Crayon",
+                "version": "2.0.69",
+                "purl": "pkg:nuget/Crayon@2.0.69",
+                "download_url": "https://www.nuget.org/api/v2/package/Crayon/2.0.69"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "F23.StringSimilarity",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/F23.StringSimilarity@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/F23.StringSimilarity/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "McMaster.Extensions.CommandLineUtils",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "HtmlAgilityPack",
+                "version": "1.11.46",
+                "purl": "pkg:nuget/HtmlAgilityPack@1.11.46",
+                "download_url": "https://www.nuget.org/api/v2/package/HtmlAgilityPack/1.11.46"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CST.RecursiveExtractor",
+                "version": "1.1.18",
+                "purl": "pkg:nuget/Microsoft.CST.RecursiveExtractor@1.1.18",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.RecursiveExtractor/1.1.18"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Extensions.Caching.Memory",
+                "version": "6.0.1",
+                "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@6.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/6.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NLog",
+                "version": "5.0.4",
+                "purl": "pkg:nuget/NLog@5.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/NLog/5.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NLog.Schema",
+                "version": "5.0.4",
+                "purl": "pkg:nuget/NLog.Schema@5.0.4",
+                "download_url": "https://www.nuget.org/api/v2/package/NLog.Schema/5.0.4"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "NuGet.Versioning",
+                "version": "6.3.1",
+                "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Octokit",
+                "version": "4.0.1",
+                "purl": "pkg:nuget/Octokit@4.0.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Sarif.Sdk",
+                "version": "3.1.0",
+                "purl": "pkg:nuget/Sarif.Sdk@3.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Sarif.Sdk/3.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "SemanticVersioning",
+                "version": "2.0.2",
+                "purl": "pkg:nuget/SemanticVersioning@2.0.2",
+                "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/2.0.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Console",
+                "version": "4.3.1",
+                "purl": "pkg:nuget/System.Console@4.3.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+              },
+              "dependencies": []
+            }
+          ],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Nerdbank.GitVersioning",
+              "version": "3.5.119",
+              "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+              "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+            },
+            {
+              "type": "nuget",
+              "name": "AngleSharp",
+              "version": "1.0.0-alpha-844",
+              "purl": "pkg:nuget/AngleSharp@1.0.0-alpha-844",
+              "download_url": "https://www.nuget.org/api/v2/package/AngleSharp/1.0.0-alpha-844"
+            },
+            {
+              "type": "nuget",
+              "name": "CommandLineParser",
+              "version": "2.9.1",
+              "purl": "pkg:nuget/CommandLineParser@2.9.1",
+              "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.9.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Crayon",
+              "version": "2.0.69",
+              "purl": "pkg:nuget/Crayon@2.0.69",
+              "download_url": "https://www.nuget.org/api/v2/package/Crayon/2.0.69"
+            },
+            {
+              "type": "nuget",
+              "name": "F23.StringSimilarity",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/F23.StringSimilarity@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/F23.StringSimilarity/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "McMaster.Extensions.CommandLineUtils",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "HtmlAgilityPack",
+              "version": "1.11.46",
+              "purl": "pkg:nuget/HtmlAgilityPack@1.11.46",
+              "download_url": "https://www.nuget.org/api/v2/package/HtmlAgilityPack/1.11.46"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CST.RecursiveExtractor",
+              "version": "1.1.18",
+              "purl": "pkg:nuget/Microsoft.CST.RecursiveExtractor@1.1.18",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.RecursiveExtractor/1.1.18"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Caching.Memory",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NLog",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/NLog@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NLog/5.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "NLog.Schema",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/NLog.Schema@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NLog.Schema/5.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Octokit",
+              "version": "4.0.1",
+              "purl": "pkg:nuget/Octokit@4.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Sarif.Sdk",
+              "version": "3.1.0",
+              "purl": "pkg:nuget/Sarif.Sdk@3.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Sarif.Sdk/3.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "SemanticVersioning",
+              "version": "2.0.2",
+              "purl": "pkg:nuget/SemanticVersioning@2.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/2.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Console",
+              "version": "4.3.1",
+              "purl": "pkg:nuget/System.Console@4.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "oss-health",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/oss-health.csproj",
+      "outputs": [
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/bin/Debug/net6.0/",
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-health/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Nerdbank.GitVersioning",
+            "version": "3.5.119",
+            "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+            "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Octokit",
+            "version": "4.0.1",
+            "purl": "pkg:nuget/Octokit@4.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Console",
+            "version": "4.3.1",
+            "purl": "pkg:nuget/System.Console@4.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Nerdbank.GitVersioning",
+          "version": "3.5.119",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+          "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+        },
+        {
+          "type": "nuget",
+          "name": "Octokit",
+          "version": "4.0.1",
+          "purl": "pkg:nuget/Octokit@4.0.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Octokit/4.0.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Console",
+          "version": "4.3.1",
+          "purl": "pkg:nuget/System.Console@4.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "oss-metadata",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/oss-metadata.csproj",
+      "outputs": [
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/bin/Debug/net6.0/",
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-metadata/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Nerdbank.GitVersioning",
+            "version": "3.5.119",
+            "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+            "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "JmesPath.Net",
+            "version": "1.0.205",
+            "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+            "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Nerdbank.GitVersioning",
+          "version": "3.5.119",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+          "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+        },
+        {
+          "type": "nuget",
+          "name": "JmesPath.Net",
+          "version": "1.0.205",
+          "purl": "pkg:nuget/JmesPath.Net@1.0.205",
+          "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

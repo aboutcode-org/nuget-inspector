@@ -1,0 +1,660 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "test",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/test.csproj",
+      "outputs": [
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/bin/Debug/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Antlr",
+            "version": "3.5.0.2",
+            "purl": "pkg:nuget/Antlr@3.5.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.5.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "bootstrap",
+            "version": "4.4.1",
+            "purl": "pkg:nuget/bootstrap@4.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.4.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "3.3.1",
+              "purl": "pkg:nuget/jQuery@3.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "popper.js",
+              "version": "1.16.0",
+              "purl": "pkg:nuget/popper.js@1.16.0",
+              "download_url": "https://www.nuget.org/api/v2/package/popper.js/1.16.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery",
+            "version": "3.3.1",
+            "purl": "pkg:nuget/jQuery@3.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "popper.js",
+            "version": "1.16.0",
+            "purl": "pkg:nuget/popper.js@1.16.0",
+            "download_url": "https://www.nuget.org/api/v2/package/popper.js/1.16.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Effort.EF6",
+            "version": "2.2.2",
+            "purl": "pkg:nuget/Effort.EF6@2.2.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Effort.EF6/2.2.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Elasticsearch.Net",
+            "version": "7.0.0",
+            "purl": "pkg:nuget/Elasticsearch.Net@7.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/7.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "EntityFramework",
+            "version": "6.2.0",
+            "purl": "pkg:nuget/EntityFramework@6.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery.Validation",
+            "version": "1.17.0",
+            "purl": "pkg:nuget/jQuery.Validation@1.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "3.3.1",
+              "purl": "pkg:nuget/jQuery@3.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Mvc",
+            "version": "5.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.WebPages",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.WebPages",
+            "version": "3.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Infrastructure",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Razor",
+              "version": "3.2.7",
+              "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Web.Infrastructure",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Razor",
+            "version": "3.2.7",
+            "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Web.Optimization",
+            "version": "1.1.3",
+            "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Infrastructure",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "WebGrease",
+              "version": "1.6.0",
+              "purl": "pkg:nuget/WebGrease@1.6.0",
+              "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.6.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "WebGrease",
+            "version": "1.6.0",
+            "purl": "pkg:nuget/WebGrease@1.6.0",
+            "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.6.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Antlr",
+              "version": "3.5.0.2",
+              "purl": "pkg:nuget/Antlr@3.5.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.5.0.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "13.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "13.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.Edm",
+            "version": "5.8.4",
+            "purl": "pkg:nuget/Microsoft.Data.Edm@5.8.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.OData",
+            "version": "5.8.4",
+            "purl": "pkg:nuget/Microsoft.Data.OData@5.8.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Spatial",
+              "version": "5.8.4",
+              "purl": "pkg:nuget/System.Spatial@5.8.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Data.Edm",
+              "version": "5.8.4",
+              "purl": "pkg:nuget/Microsoft.Data.Edm@5.8.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Spatial",
+            "version": "5.8.4",
+            "purl": "pkg:nuget/System.Spatial@5.8.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.jQuery.Unobtrusive.Validation",
+            "version": "3.2.11",
+            "purl": "pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.11",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "3.3.1",
+              "purl": "pkg:nuget/jQuery@3.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "jQuery.Validation",
+              "version": "1.17.0",
+              "purl": "pkg:nuget/jQuery.Validation@1.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Modernizr",
+            "version": "2.8.3",
+            "purl": "pkg:nuget/Modernizr@2.8.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NMemory",
+            "version": "3.1.0",
+            "purl": "pkg:nuget/NMemory@3.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NMemory/3.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGetDefense",
+            "version": "1.0.6",
+            "purl": "pkg:nuget/NuGetDefense@1.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/1.0.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SecurityCodeScan",
+            "version": "3.5.0",
+            "purl": "pkg:nuget/SecurityCodeScan@3.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/SecurityCodeScan/3.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog",
+            "version": "2.9.0",
+            "purl": "pkg:nuget/Serilog@2.9.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Enrichers.HttpContextData",
+            "version": "0.1.3",
+            "purl": "pkg:nuget/Serilog.Enrichers.HttpContextData@0.1.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Enrichers.HttpContextData/0.1.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.9.0",
+              "purl": "pkg:nuget/Serilog@2.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Formatting.Compact",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Serilog.Formatting.Compact@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Compact/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Formatting.Elasticsearch",
+            "version": "8.0.0",
+            "purl": "pkg:nuget/Serilog.Formatting.Elasticsearch@8.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Elasticsearch/8.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.Console",
+            "version": "3.1.1",
+            "purl": "pkg:nuget/Serilog.Sinks.Console@3.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.Elasticsearch",
+            "version": "8.0.0",
+            "purl": "pkg:nuget/Serilog.Sinks.Elasticsearch@8.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/8.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.File",
+            "version": "4.0.0",
+            "purl": "pkg:nuget/Serilog.Sinks.File@4.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/4.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.PeriodicBatching",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Serilog.Sinks.PeriodicBatching@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SerilogWeb.Classic",
+            "version": "5.0.52",
+            "purl": "pkg:nuget/SerilogWeb.Classic@5.0.52",
+            "download_url": "https://www.nuget.org/api/v2/package/SerilogWeb.Classic/5.0.52"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.9.0",
+              "purl": "pkg:nuget/Serilog@2.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Buffers",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Buffers@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "4.5.1",
+            "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "bootstrap",
+          "version": "4.4.1",
+          "purl": "pkg:nuget/bootstrap@4.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Effort.EF6",
+          "version": "2.2.2",
+          "purl": "pkg:nuget/Effort.EF6@2.2.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Effort.EF6/2.2.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Elasticsearch.Net",
+          "version": "7.0.0",
+          "purl": "pkg:nuget/Elasticsearch.Net@7.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/7.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "EntityFramework",
+          "version": "6.2.0",
+          "purl": "pkg:nuget/EntityFramework@6.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.Mvc",
+          "version": "5.2.7",
+          "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.7",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.Web.Optimization",
+          "version": "1.1.3",
+          "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.Data.OData",
+          "version": "5.8.4",
+          "purl": "pkg:nuget/Microsoft.Data.OData@5.8.4",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.jQuery.Unobtrusive.Validation",
+          "version": "3.2.11",
+          "purl": "pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.11",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11"
+        },
+        {
+          "type": "nuget",
+          "name": "Modernizr",
+          "version": "2.8.3",
+          "purl": "pkg:nuget/Modernizr@2.8.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NMemory",
+          "version": "3.1.0",
+          "purl": "pkg:nuget/NMemory@3.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NMemory/3.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGetDefense",
+          "version": "1.0.6",
+          "purl": "pkg:nuget/NuGetDefense@1.0.6",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/1.0.6"
+        },
+        {
+          "type": "nuget",
+          "name": "SecurityCodeScan",
+          "version": "3.5.0",
+          "purl": "pkg:nuget/SecurityCodeScan@3.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/SecurityCodeScan/3.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Enrichers.HttpContextData",
+          "version": "0.1.3",
+          "purl": "pkg:nuget/Serilog.Enrichers.HttpContextData@0.1.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Enrichers.HttpContextData/0.1.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Formatting.Compact",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/Serilog.Formatting.Compact@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Compact/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Formatting.Elasticsearch",
+          "version": "8.0.0",
+          "purl": "pkg:nuget/Serilog.Formatting.Elasticsearch@8.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Elasticsearch/8.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.Console",
+          "version": "3.1.1",
+          "purl": "pkg:nuget/Serilog.Sinks.Console@3.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.Elasticsearch",
+          "version": "8.0.0",
+          "purl": "pkg:nuget/Serilog.Sinks.Elasticsearch@8.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/8.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.File",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/Serilog.Sinks.File@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.PeriodicBatching",
+          "version": "2.1.1",
+          "purl": "pkg:nuget/Serilog.Sinks.PeriodicBatching@2.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "SerilogWeb.Classic",
+          "version": "5.0.52",
+          "purl": "pkg:nuget/SerilogWeb.Classic@5.0.52",
+          "download_url": "https://www.nuget.org/api/v2/package/SerilogWeb.Classic/5.0.52"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Buffers",
+          "version": "4.5.0",
+          "purl": "pkg:nuget/System.Buffers@4.5.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Diagnostics.DiagnosticSource",
+          "version": "4.5.1",
+          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

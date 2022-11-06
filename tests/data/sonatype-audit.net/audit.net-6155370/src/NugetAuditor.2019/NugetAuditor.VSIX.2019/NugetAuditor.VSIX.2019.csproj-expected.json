@@ -1,0 +1,623 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NugetAuditor.VSIX.2019",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor.2019/NugetAuditor.VSIX.2019/NugetAuditor.VSIX.2019.csproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Common",
+            "version": "4.2.0",
+            "purl": "pkg:nuget/NuGet.Common@4.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.VisualStudio",
+            "version": "3.3.0",
+            "purl": "pkg:nuget/NuGet.VisualStudio@3.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.VisualStudio/3.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.ComponentModelHost",
+            "version": "10.0.4",
+            "purl": "pkg:nuget/VSSDK.ComponentModelHost@10.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.ComponentModelHost/10.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.10/10.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.IDE.10",
+            "version": "10.0.4",
+            "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.10/10.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.ComponentModelHost.10",
+            "version": "10.0.4",
+            "purl": "pkg:nuget/VSSDK.ComponentModelHost.10@10.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.ComponentModelHost.10/10.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.10/10.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.ComponentModelHost",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.ComponentModelHost@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.ComponentModelHost/10.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.DTE",
+            "version": "7.0.4",
+            "purl": "pkg:nuget/VSSDK.DTE@7.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.DTE/7.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.IDE",
+            "version": "7.0.4",
+            "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE/7.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.GraphModel",
+            "version": "11.0.4",
+            "purl": "pkg:nuget/VSSDK.GraphModel@11.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.GraphModel/11.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.11/11.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.IDE.11",
+            "version": "11.0.4",
+            "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.11/11.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.IDE.8",
+            "version": "8.0.4",
+            "purl": "pkg:nuget/VSSDK.IDE.8@8.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.8/8.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.IDE.9",
+            "version": "9.0.4",
+            "purl": "pkg:nuget/VSSDK.IDE.9@9.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.9/9.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.OLE.Interop",
+            "version": "7.0.4",
+            "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.11",
+            "version": "11.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.11@11.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.11/11.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.11/11.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.DTE",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.DTE@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.DTE/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Immutable.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Immutable.10/10.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Immutable.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Immutable.11/11.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.9",
+              "version": "9.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.9/9.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.11/11.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Immutable.10",
+            "version": "10.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Immutable.10@10.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Immutable.10/10.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.10/10.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Immutable.11",
+            "version": "11.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Immutable.11@11.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Immutable.11/11.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.11/11.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.GraphModel",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.GraphModel@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.GraphModel/11.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Interop",
+            "version": "7.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.TextManager.Interop",
+            "version": "7.0.4",
+            "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Interop.8",
+            "version": "8.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.8/8.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop.8/8.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.TextManager.Interop.8",
+            "version": "8.0.4",
+            "purl": "pkg:nuget/VSSDK.TextManager.Interop.8@8.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop.8/8.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Interop.9",
+            "version": "9.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.9/9.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.9",
+              "version": "9.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.9@9.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.9/9.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.TextManager.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.TextManager.Interop/7.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Interop.11",
+            "version": "11.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Interop.11@11.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.11/11.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.11",
+              "version": "11.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.11/11.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.10/10.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.9",
+              "version": "9.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.9/9.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "VSSDK.Shell.Interop.10",
+            "version": "10.0.4",
+            "purl": "pkg:nuget/VSSDK.Shell.Interop.10@10.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.10/10.0.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "VSSDK.IDE.10",
+              "version": "10.0.4",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.IDE.10/10.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.OLE.Interop",
+              "version": "7.0.4",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.OLE.Interop/7.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.8",
+              "version": "8.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.8/8.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "VSSDK.Shell.Interop.9",
+              "version": "9.0.4",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.Interop.9/9.0.4"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NuGet.Common",
+          "version": "4.2.0",
+          "purl": "pkg:nuget/NuGet.Common@4.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.VisualStudio",
+          "version": "3.3.0",
+          "purl": "pkg:nuget/NuGet.VisualStudio@3.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.VisualStudio/3.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "VSSDK.ComponentModelHost.10",
+          "version": "10.0.4",
+          "purl": "pkg:nuget/VSSDK.ComponentModelHost.10@10.0.4",
+          "download_url": "https://www.nuget.org/api/v2/package/VSSDK.ComponentModelHost.10/10.0.4"
+        },
+        {
+          "type": "nuget",
+          "name": "VSSDK.Shell.11",
+          "version": "11.0.4",
+          "purl": "pkg:nuget/VSSDK.Shell.11@11.0.4",
+          "download_url": "https://www.nuget.org/api/v2/package/VSSDK.Shell.11/11.0.4"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

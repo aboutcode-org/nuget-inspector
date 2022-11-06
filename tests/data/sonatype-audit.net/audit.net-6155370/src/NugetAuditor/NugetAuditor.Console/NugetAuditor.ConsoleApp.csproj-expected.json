@@ -1,0 +1,71 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NugetAuditor.ConsoleApp",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/NugetAuditor.ConsoleApp.csproj",
+      "outputs": [
+        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/bin/Debug/",
+        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CommandLineParser",
+            "version": "1.9.71",
+            "purl": "pkg:nuget/CommandLineParser@1.9.71",
+            "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ILMerge",
+            "version": "2.14.1208",
+            "purl": "pkg:nuget/ILMerge@2.14.1208",
+            "download_url": "https://www.nuget.org/api/v2/package/ILMerge/2.14.1208"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "ILMerge.MSBuild.Tasks",
+            "version": "1.0.0.3",
+            "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/ILMerge.MSBuild.Tasks/1.0.0.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "CommandLineParser",
+          "version": "1.9.71",
+          "purl": "pkg:nuget/CommandLineParser@1.9.71",
+          "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
+        },
+        {
+          "type": "nuget",
+          "name": "ILMerge",
+          "version": "2.14.1208",
+          "purl": "pkg:nuget/ILMerge@2.14.1208",
+          "download_url": "https://www.nuget.org/api/v2/package/ILMerge/2.14.1208"
+        },
+        {
+          "type": "nuget",
+          "name": "ILMerge.MSBuild.Tasks",
+          "version": "1.0.0.3",
+          "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/ILMerge.MSBuild.Tasks/1.0.0.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

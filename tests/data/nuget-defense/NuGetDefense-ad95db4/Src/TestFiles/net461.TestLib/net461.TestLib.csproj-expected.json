@@ -1,0 +1,175 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "net461.TestLib",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/net461.TestLib/net461.TestLib.csproj",
+      "outputs": [
+        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/net461.TestLib/bin/Debug/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/net461.TestLib/bin/Release/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/net461.TestLib/bin/Linux/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bogus",
+            "version": "33.0.2",
+            "purl": "pkg:nuget/Bogus@33.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Bogus/33.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGetDefense",
+            "version": "2.1.2",
+            "purl": "pkg:nuget/NuGetDefense@2.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/2.1.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bootstrap",
+            "version": "3.4.0",
+            "purl": "pkg:nuget/Bootstrap@3.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Bootstrap/3.4.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "1.9.1",
+              "purl": "pkg:nuget/jQuery@1.9.1",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.9.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery",
+            "version": "1.9.1",
+            "purl": "pkg:nuget/jQuery@1.9.1",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.9.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "4.3.4",
+            "purl": "pkg:nuget/System.Net.Http@4.3.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Algorithms",
+            "version": "4.3.1",
+            "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Encoding",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.X509Certificates",
+            "version": "4.3.2",
+            "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.2",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Bogus",
+          "version": "33.0.2",
+          "purl": "pkg:nuget/Bogus@33.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Bogus/33.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGetDefense",
+          "version": "2.1.2",
+          "purl": "pkg:nuget/NuGetDefense@2.1.2",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/2.1.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Bootstrap",
+          "version": "3.4.0",
+          "purl": "pkg:nuget/Bootstrap@3.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Bootstrap/3.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Net.Http",
+          "version": "4.3.4",
+          "purl": "pkg:nuget/System.Net.Http@4.3.4",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Security.Cryptography.Algorithms",
+          "version": "4.3.1",
+          "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Security.Cryptography.Encoding",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Security.Cryptography.Primitives",
+          "version": "4.3.0",
+          "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Security.Cryptography.X509Certificates",
+          "version": "4.3.2",
+          "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.2",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

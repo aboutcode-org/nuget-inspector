@@ -1,0 +1,54 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "oss-characteristic",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/oss-characteristic.csproj",
+      "outputs": [
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/bin/Debug/net6.0/",
+        "/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/bin/Release/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Nerdbank.GitVersioning",
+            "version": "3.5.119",
+            "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+            "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CST.ApplicationInspector.Commands",
+            "version": "1.6.24",
+            "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.Commands@1.6.24",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.ApplicationInspector.Commands/1.6.24"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Nerdbank.GitVersioning",
+          "version": "3.5.119",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+          "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.CST.ApplicationInspector.Commands",
+          "version": "1.6.24",
+          "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.Commands@1.6.24",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CST.ApplicationInspector.Commands/1.6.24"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

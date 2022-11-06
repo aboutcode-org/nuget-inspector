@@ -1,0 +1,73 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "NuGetDefense",
+      "project_datafile_type": "xproj-file",
+      "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
+      "outputs": [
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Debug/net6.0/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Release/net6.0/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/RELEASE/net6.0/",
+        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/DOTNETTOOL/net6.0/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": "1.1.1",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.CommandLine",
+            "version": "2.0.0-beta4.22272.1",
+            "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.CommandLine.NamingConventionBinder",
+            "version": "2.0.0-beta4.22272.1",
+            "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": "1.1.1",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.CommandLine",
+          "version": "2.0.0-beta4.22272.1",
+          "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.CommandLine.NamingConventionBinder",
+          "version": "2.0.0-beta4.22272.1",
+          "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
+        }
+      ],
+      "children": []
+    }
+  ]
+}
