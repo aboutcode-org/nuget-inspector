@@ -5,6 +5,7 @@
     {
       "project_name": "Nuuvify.CommonPack.EF.Exceptions.Db2",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.EF.Exceptions.Db2/Nuuvify.CommonPack.EF.Exceptions.Db2.csproj",
       "outputs": [
         "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.EF.Exceptions.Db2/bin/Debug/netstandard2.1/linux-x64/",
@@ -24,12 +25,285 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Targets",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Loader",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Loader@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Loader/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "IBM.Data.DB2.Core-lnx",
             "version": "3.1.0.500",
             "purl": "pkg:nuget/IBM.Data.DB2.Core-lnx@3.1.0.500",
             "download_url": "https://www.nuget.org/api/v2/package/IBM.Data.DB2.Core-lnx/3.1.0.500"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Loader",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Loader@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Loader/4.3.0"
+            }
+          ]
         }
       ],
       "dependencies": [

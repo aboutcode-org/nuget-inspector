@@ -5,6 +5,7 @@
     {
       "project_name": "DependencyChecker",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "DependencyChecker",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker/DependencyChecker.csproj",
           "outputs": [
             "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker/bin/Debug/",
@@ -384,6 +386,7 @@
         {
           "project_name": "DependencyChecker.Test",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/DependencyChecker.Test.csproj",
           "outputs": [
             "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/bin/Debug/",

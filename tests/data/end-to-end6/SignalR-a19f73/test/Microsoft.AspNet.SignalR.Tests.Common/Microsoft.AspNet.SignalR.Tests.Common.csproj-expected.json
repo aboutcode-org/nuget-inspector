@@ -5,6 +5,7 @@
     {
       "project_name": "Microsoft.AspNet.SignalR.Tests.Common",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj",
       "outputs": [
         "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests.Common//",
@@ -24,12 +25,72 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Owin",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Owin@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.Cors",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.Owin.Cors",
             "version": "2.1.0",
             "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNet.Cors",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+            }
+          ]
         },
         {
           "package": {
@@ -39,7 +100,47 @@
             "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Owin.Security",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            }
+          ]
         },
         {
           "package": {
@@ -49,7 +150,29 @@
             "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Owin",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Owin.Security",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+            }
+          ]
         },
         {
           "package": {

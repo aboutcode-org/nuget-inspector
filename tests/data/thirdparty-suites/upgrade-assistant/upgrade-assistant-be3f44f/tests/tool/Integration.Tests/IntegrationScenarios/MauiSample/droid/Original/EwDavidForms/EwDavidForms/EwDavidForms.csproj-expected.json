@@ -5,6 +5,7 @@
     {
       "project_name": "EwDavidForms",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Original/EwDavidForms/EwDavidForms/EwDavidForms.csproj",
       "outputs": [
         "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Original/EwDavidForms/EwDavidForms/bin/Debug/netstandard2.0/",
@@ -14,10 +15,38 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "NETStandard.Library",
             "version": "2.0.3",
             "purl": "pkg:nuget/NETStandard.Library@2.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
           },
           "dependencies": []
         },
@@ -29,7 +58,15 @@
             "purl": "pkg:nuget/Microsoft.AppCenter.Analytics@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AppCenter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
+            }
+          ]
         },
         {
           "package": {
@@ -39,7 +76,15 @@
             "purl": "pkg:nuget/Microsoft.AppCenter.Crashes@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AppCenter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
+            }
+          ]
         },
         {
           "package": {
@@ -54,12 +99,100 @@
         {
           "package": {
             "type": "nuget",
+            "name": "System.Reflection.Emit.ILGeneration",
+            "version": "4.7.0",
+            "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.7.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.7.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Emit.Lightweight",
+            "version": "4.7.0",
+            "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.7.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.7.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.7.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.7.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.7.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.5.3",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "4.5.4",
+            "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.3",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Xamarin.Forms",
+            "version": "5.0.0.2291",
+            "purl": "pkg:nuget/Xamarin.Forms@5.0.0.2291",
+            "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2291"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Xamarin.CommunityToolkit",
             "version": "2.0.2",
             "purl": "pkg:nuget/Xamarin.CommunityToolkit@2.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Xamarin.CommunityToolkit/2.0.2"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.Lightweight",
+              "version": "4.7.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.7.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.7.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks.Extensions",
+              "version": "4.5.4",
+              "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
+            },
+            {
+              "type": "nuget",
+              "name": "Xamarin.Forms",
+              "version": "5.0.0.2291",
+              "purl": "pkg:nuget/Xamarin.Forms@5.0.0.2291",
+              "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2291"
+            }
+          ]
         },
         {
           "package": {
@@ -74,12 +207,30 @@
         {
           "package": {
             "type": "nuget",
+            "name": "System.Numerics.Vectors",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Xamarin.Essentials",
             "version": "1.7.3",
             "purl": "pkg:nuget/Xamarin.Essentials@1.7.3",
             "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Numerics.Vectors",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+            }
+          ]
         }
       ],
       "dependencies": [

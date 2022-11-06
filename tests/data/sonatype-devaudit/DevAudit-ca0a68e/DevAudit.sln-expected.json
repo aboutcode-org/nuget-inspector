@@ -5,6 +5,7 @@
     {
       "project_name": "DevAudit",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.sln",
       "outputs": [],
       "packages": [],
@@ -14,6 +15,7 @@
           "project_name": "DevAudit.AuditLibrary",
           "project_version": "3.5.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/DevAudit.AuditLibrary.csproj",
           "outputs": [
             "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/bin/Debug/",
@@ -1716,6 +1718,7 @@
         {
           "project_name": "DevAudit.CommandLine",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/DevAudit.CommandLine.csproj",
           "outputs": [
             "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/bin/Debug/",
@@ -1850,6 +1853,7 @@
         {
           "project_name": "DevAudit.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/DevAudit.Tests.csproj",
           "outputs": [
             "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/bin/Debug/",
@@ -2053,6 +2057,7 @@
         {
           "project_name": "DevAudit.Tests.VMRequired",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/DevAudit.Tests.VMRequired.csproj",
           "outputs": [
             "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/bin/Debug/",

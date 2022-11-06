@@ -5,6 +5,7 @@
     {
       "project_name": "SomeProjectName",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreNoProjectNameInAssets/SomeProjectName.csproj",
       "outputs": [
         "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreNoProjectNameInAssets/bin/Debug/",

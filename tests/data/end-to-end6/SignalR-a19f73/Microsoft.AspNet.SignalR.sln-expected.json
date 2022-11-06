@@ -5,6 +5,7 @@
     {
       "project_name": "Microsoft.AspNet.SignalR",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/end-to-end6/SignalR-a19f73/Microsoft.AspNet.SignalR.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Core",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Core/Microsoft.AspNet.SignalR.Core.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Core//",
@@ -32,12 +34,55 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.Owin.Security",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -78,6 +123,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Client",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Client/Microsoft.AspNet.SignalR.Client.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client//",
@@ -160,6 +206,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Stress",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//",
@@ -208,6 +255,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Client.Samples",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Client.Samples/Microsoft.AspNet.SignalR.Client.Samples.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Samples//",
@@ -220,6 +268,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Client.JS.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.JS.Tests/Microsoft.AspNet.SignalR.Client.JS.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.JS.Tests//net472/",
@@ -229,10 +278,130 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.AspNet.Cors",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.Owin.Cors",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.AspNet.Cors",
+                  "version": "5.0.0",
+                  "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Diagnostics",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Hosting",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.HttpListener",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
               },
               "dependencies": []
             },
@@ -244,6 +413,52 @@
                 "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
               },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Diagnostics",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Hosting",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Host.HttpListener",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.FileSystems",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.FileSystems@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.FileSystems/2.1.0"
+              },
               "dependencies": []
             },
             {
@@ -254,7 +469,29 @@
                 "purl": "pkg:nuget/Microsoft.Owin.StaticFiles@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.StaticFiles/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.FileSystems",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.FileSystems@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.FileSystems/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -302,6 +539,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Redis",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis//",
@@ -350,6 +588,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.SqlServer",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SqlServer/Microsoft.AspNet.SignalR.SqlServer.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer//",
@@ -381,6 +620,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.ServiceBus",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus/Microsoft.AspNet.SignalR.ServiceBus.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//",
@@ -400,12 +640,30 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.WindowsAzure.ConfigurationManager",
+                "version": "2.0.0",
+                "purl": "pkg:nuget/Microsoft.WindowsAzure.ConfigurationManager@2.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAzure.ConfigurationManager/2.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "WindowsAzure.ServiceBus",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/WindowsAzure.ServiceBus@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.WindowsAzure.ConfigurationManager",
+                  "version": "2.0.0",
+                  "purl": "pkg:nuget/Microsoft.WindowsAzure.ConfigurationManager@2.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAzure.ConfigurationManager/2.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -429,6 +687,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.LoadTestHarness",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/",
@@ -589,6 +848,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Tests.Common",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests.Common//",
@@ -608,12 +868,72 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.AspNet.Cors",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.Owin.Cors",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.AspNet.Cors",
+                  "version": "5.0.0",
+                  "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+                }
+              ]
             },
             {
               "package": {
@@ -623,7 +943,47 @@
                 "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Security",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -633,7 +993,29 @@
                 "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Security",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -773,6 +1155,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.SqlServer.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.SqlServer.Tests/Microsoft.AspNet.SignalR.SqlServer.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer.Tests//",
@@ -802,12 +1185,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.0",
                 "purl": "pkg:nuget/xunit@2.4.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.assert@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -889,6 +1359,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.StressServer",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.StressServer/Microsoft.AspNet.SignalR.StressServer.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StressServer//net45/",
@@ -920,6 +1391,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Samples",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/Microsoft.AspNet.SignalR.Samples.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/bin/",
@@ -1293,6 +1765,7 @@
         {
           "project_name": "Microsoft.AspNet.SelfHost.Samples",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SelfHost.Samples/Microsoft.AspNet.SelfHost.Samples.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SelfHost.Samples//net45/",
@@ -1302,10 +1775,38 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.Owin",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.AspNet.Cors",
+                "version": "5.0.0",
+                "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
               },
               "dependencies": []
             },
@@ -1317,7 +1818,29 @@
                 "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.AspNet.Cors",
+                  "version": "5.0.0",
+                  "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
+                }
+              ]
             },
             {
               "package": {
@@ -1327,7 +1850,22 @@
                 "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -1347,7 +1885,22 @@
                 "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
             },
             {
               "package": {
@@ -1361,13 +1914,6 @@
             }
           ],
           "dependencies": [
-            {
-              "type": "nuget",
-              "name": "Microsoft.Owin",
-              "version": "2.1.0",
-              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
-              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
-            },
             {
               "type": "nuget",
               "name": "Microsoft.Owin.Cors",
@@ -1409,6 +1955,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests/Microsoft.AspNet.SignalR.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Tests//",
@@ -1438,12 +1985,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.0",
                 "purl": "pkg:nuget/xunit@2.4.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.assert@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -1525,6 +2159,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Client.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.Tests/Microsoft.AspNet.SignalR.Client.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Tests//",
@@ -1711,6 +2346,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.SystemWeb",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SystemWeb/Microsoft.AspNet.SignalR.SystemWeb.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SystemWeb//",
@@ -1777,6 +2413,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Samples.VB",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/Microsoft.AspNet.SignalR.Samples.VB.vbproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples.VB/bin/Debug/",
@@ -1789,6 +2426,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.Redis.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Redis.Tests/Microsoft.AspNet.SignalR.Redis.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Redis.Tests//",
@@ -1818,12 +2456,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.0",
                 "purl": "pkg:nuget/xunit@2.4.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.assert@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -1888,6 +2613,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.ServiceBus3",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus3/Microsoft.AspNet.SignalR.ServiceBus3.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus3//",
@@ -1936,6 +2662,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.JS",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.JS/Microsoft.AspNet.SignalR.JS.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.JS//netstandard1.0/",
@@ -1955,12 +2682,905 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.NETCore.Platforms",
+                "version": "1.1.0",
+                "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.NETCore.Targets",
+                "version": "1.1.0",
+                "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Collections",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Collections@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.Debug",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.Tools",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Globalization",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Globalization@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Encoding",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.IO@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Linq",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Linq@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Collections",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Collections@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection.Primitives",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Linq.Expressions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Net.Primitives",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Net.Primitives@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Net.Primitives/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ObjectModel",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Resources.ResourceManager",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Globalization",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Globalization@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Encoding.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Targets",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.RegularExpressions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.ReaderWriter",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.IO",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.XDocument",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.IO",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.ReaderWriter",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "NETStandard.Library",
                 "version": "1.6.1",
                 "purl": "pkg:nuget/NETStandard.Library@1.6.1",
                 "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.NETCore.Platforms",
+                  "version": "1.1.0",
+                  "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Collections",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Collections@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.Debug",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.Tools",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Globalization",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Globalization@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Linq",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Linq@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Linq.Expressions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Net.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Net.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Net.Primitives/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.ObjectModel",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Resources.ResourceManager",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.RegularExpressions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.ReaderWriter",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.XDocument",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+                }
+              ]
             },
             {
               "package": {
@@ -2001,6 +3621,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR/Microsoft.AspNet.SignalR.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR//",
@@ -2032,6 +3653,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.SelfHost",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SelfHost/Microsoft.AspNet.SignalR.SelfHost.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SelfHost//",
@@ -2051,12 +3673,136 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Owin",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Owin@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Diagnostics",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Hosting",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Owin.Host.HttpListener",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.Owin.SelfHost",
                 "version": "2.1.0",
                 "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Owin",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Owin@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Diagnostics",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Hosting",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Owin.Host.HttpListener",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -2080,6 +3826,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.FunctionalTests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//",
@@ -2149,12 +3896,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.0",
                 "purl": "pkg:nuget/xunit@2.4.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.assert@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -2264,6 +4098,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.StackExchangeRedis",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.StackExchangeRedis/Microsoft.AspNet.SignalR.StackExchangeRedis.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis//",
@@ -2283,12 +4118,206 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "System.Buffers",
+                "version": "4.4.0",
+                "purl": "pkg:nuget/System.Buffers@4.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Numerics.Vectors",
+                "version": "4.4.0",
+                "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.CompilerServices.Unsafe",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Memory",
+                "version": "4.5.1",
+                "purl": "pkg:nuget/System.Memory@4.5.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Buffers",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Buffers@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Numerics.Vectors",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.CompilerServices.Unsafe",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks.Extensions",
+                "version": "4.5.1",
+                "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.CompilerServices.Unsafe",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.Pipelines",
+                "version": "4.5.1",
+                "purl": "pkg:nuget/System.IO.Pipelines@4.5.1",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/4.5.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Buffers",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Buffers@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Memory",
+                  "version": "4.5.1",
+                  "purl": "pkg:nuget/System.Memory@4.5.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks.Extensions",
+                  "version": "4.5.1",
+                  "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Pipelines.Sockets.Unofficial",
+                "version": "1.0.7",
+                "purl": "pkg:nuget/Pipelines.Sockets.Unofficial@1.0.7",
+                "download_url": "https://www.nuget.org/api/v2/package/Pipelines.Sockets.Unofficial/1.0.7"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Buffers",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Buffers@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO.Pipelines",
+                  "version": "4.5.1",
+                  "purl": "pkg:nuget/System.IO.Pipelines@4.5.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/4.5.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.PerformanceCounter",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Channels",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks.Extensions",
+                  "version": "4.5.1",
+                  "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "StackExchange.Redis",
                 "version": "2.0.513",
                 "purl": "pkg:nuget/StackExchange.Redis@2.0.513",
                 "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis/2.0.513"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Pipelines.Sockets.Unofficial",
+                  "version": "1.0.7",
+                  "purl": "pkg:nuget/Pipelines.Sockets.Unofficial@1.0.7",
+                  "download_url": "https://www.nuget.org/api/v2/package/Pipelines.Sockets.Unofficial/1.0.7"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.PerformanceCounter",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/4.5.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO.Pipelines",
+                  "version": "4.5.1",
+                  "purl": "pkg:nuget/System.IO.Pipelines@4.5.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/4.5.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Channels",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -2312,6 +4341,7 @@
         {
           "project_name": "Microsoft.AspNet.SignalR.StackExchangeRedis.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests.csproj",
           "outputs": [
             "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests//",
@@ -2341,12 +4371,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.core@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.0",
+                "purl": "pkg:nuget/xunit.assert@2.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.0",
                 "purl": "pkg:nuget/xunit@2.4.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.core@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.0",
+                  "purl": "pkg:nuget/xunit.assert@2.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {

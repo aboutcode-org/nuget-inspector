@@ -5,6 +5,7 @@
     {
       "project_name": "NuGetDefense.Lib",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/NuGetDefense.Lib.csproj",
       "outputs": [
         "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/Debug/net6.0/",
@@ -15,12 +16,136 @@
         {
           "package": {
             "type": "nuget",
+            "name": "ByteDev.Xml",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/ByteDev.Xml@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/ByteDev.Xml/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "ByteDev.DotNet",
             "version": "7.2.0",
             "purl": "pkg:nuget/ByteDev.DotNet@7.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/ByteDev.DotNet/7.2.0"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "ByteDev.Xml",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/ByteDev.Xml@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/ByteDev.Xml/2.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": "4.5.3",
+            "purl": "pkg:nuget/System.Memory@4.5.3",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SQLitePCLRaw.core",
+            "version": "2.0.6",
+            "purl": "pkg:nuget/SQLitePCLRaw.core@2.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.core/2.0.6"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.3",
+              "purl": "pkg:nuget/System.Memory@4.5.3",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.Sqlite.Core",
+            "version": "6.0.10",
+            "purl": "pkg:nuget/Microsoft.Data.Sqlite.Core@6.0.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Sqlite.Core/6.0.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.core",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.core@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.core/2.0.6"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SQLitePCLRaw.provider.e_sqlite3",
+            "version": "2.0.6",
+            "purl": "pkg:nuget/SQLitePCLRaw.provider.e_sqlite3@2.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.provider.e_sqlite3/2.0.6"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.core",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.core@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.core/2.0.6"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SQLitePCLRaw.lib.e_sqlite3",
+            "version": "2.0.6",
+            "purl": "pkg:nuget/SQLitePCLRaw.lib.e_sqlite3@2.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.lib.e_sqlite3/2.0.6"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "SQLitePCLRaw.bundle_e_sqlite3",
+            "version": "2.0.6",
+            "purl": "pkg:nuget/SQLitePCLRaw.bundle_e_sqlite3@2.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.bundle_e_sqlite3/2.0.6"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.core",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.core@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.core/2.0.6"
+            },
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.provider.e_sqlite3",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.provider.e_sqlite3@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.provider.e_sqlite3/2.0.6"
+            },
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.lib.e_sqlite3",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.lib.e_sqlite3@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.lib.e_sqlite3/2.0.6"
+            }
+          ]
         },
         {
           "package": {
@@ -29,6 +154,41 @@
             "version": "6.0.10",
             "purl": "pkg:nuget/Microsoft.Data.Sqlite@6.0.10",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Sqlite/6.0.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Data.Sqlite.Core",
+              "version": "6.0.10",
+              "purl": "pkg:nuget/Microsoft.Data.Sqlite.Core@6.0.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Sqlite.Core/6.0.10"
+            },
+            {
+              "type": "nuget",
+              "name": "SQLitePCLRaw.bundle_e_sqlite3",
+              "version": "2.0.6",
+              "purl": "pkg:nuget/SQLitePCLRaw.bundle_e_sqlite3@2.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/SQLitePCLRaw.bundle_e_sqlite3/2.0.6"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.Common",
+            "version": "1.1.1",
+            "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Build.Tasks.Git",
+            "version": "1.1.1",
+            "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1"
           },
           "dependencies": []
         },
@@ -40,7 +200,22 @@
             "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.Common",
+              "version": "1.1.1",
+              "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Build.Tasks.Git",
+              "version": "1.1.1",
+              "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1"
+            }
+          ]
         },
         {
           "package": {
@@ -55,12 +230,230 @@
         {
           "package": {
             "type": "nuget",
+            "name": "MessagePack.Annotations",
+            "version": "2.4.35",
+            "purl": "pkg:nuget/MessagePack.Annotations@2.4.35",
+            "download_url": "https://www.nuget.org/api/v2/package/MessagePack.Annotations/2.4.35"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": "4.5.4",
+            "purl": "pkg:nuget/System.Memory@4.5.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.StringTools",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.NET.StringTools@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.StringTools/1.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.4",
+              "purl": "pkg:nuget/System.Memory@4.5.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MessagePack",
+            "version": "2.4.35",
+            "purl": "pkg:nuget/MessagePack@2.4.35",
+            "download_url": "https://www.nuget.org/api/v2/package/MessagePack/2.4.35"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MessagePack.Annotations",
+              "version": "2.4.35",
+              "purl": "pkg:nuget/MessagePack.Annotations@2.4.35",
+              "download_url": "https://www.nuget.org/api/v2/package/MessagePack.Annotations/2.4.35"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NET.StringTools",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.NET.StringTools@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.StringTools/1.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.AsyncInterfaces",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "NuGetDefense.Core",
             "version": "2.0.4",
             "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
             "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MessagePack",
+              "version": "2.4.35",
+              "purl": "pkg:nuget/MessagePack@2.4.35",
+              "download_url": "https://www.nuget.org/api/v2/package/MessagePack/2.4.35"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "GraphQL.Primitives",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/GraphQL.Primitives@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Primitives/5.1.0"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "GraphQL.Client.Abstractions",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/GraphQL.Client.Abstractions@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions/5.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "GraphQL.Primitives",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Primitives@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Primitives/5.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "GraphQL.Client.Abstractions.Websocket",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/GraphQL.Client.Abstractions.Websocket@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions.Websocket/5.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client.Abstractions",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client.Abstractions@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions/5.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reactive",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Reactive@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "GraphQL.Client",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/GraphQL.Client@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client/5.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client.Abstractions.Websocket",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client.Abstractions.Websocket@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions.Websocket/5.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client.Abstractions",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client.Abstractions@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions/5.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reactive",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Reactive@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "GraphQL.Client.Serializer.SystemTextJson",
+            "version": "5.1.0",
+            "purl": "pkg:nuget/GraphQL.Client.Serializer.SystemTextJson@5.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Serializer.SystemTextJson/5.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client.Abstractions.Websocket",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client.Abstractions.Websocket@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Abstractions.Websocket/5.1.0"
+            }
+          ]
         },
         {
           "package": {
@@ -70,7 +463,82 @@
             "purl": "pkg:nuget/NuGetDefense.GitHubAdvisoryDatabase@2.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.GitHubAdvisoryDatabase/2.0.2"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client/5.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "GraphQL.Client.Serializer.SystemTextJson",
+              "version": "5.1.0",
+              "purl": "pkg:nuget/GraphQL.Client.Serializer.SystemTextJson@5.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/GraphQL.Client.Serializer.SystemTextJson/5.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.Core",
+              "version": "2.0.4",
+              "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encodings.Web",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/System.Text.Encodings.Web@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Json",
+            "version": "6.0.6",
+            "purl": "pkg:nuget/System.Text.Json@6.0.6",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encodings.Web",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Text.Encodings.Web@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/6.0.0"
+            }
+          ]
         },
         {
           "package": {
@@ -80,7 +548,36 @@
             "purl": "pkg:nuget/NuGetDefense.NVD@2.0.8",
             "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.NVD/2.0.8"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "MessagePack",
+              "version": "2.4.35",
+              "purl": "pkg:nuget/MessagePack@2.4.35",
+              "download_url": "https://www.nuget.org/api/v2/package/MessagePack/2.4.35"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "6.3.1",
+              "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.Core",
+              "version": "2.0.4",
+              "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Json",
+              "version": "6.0.6",
+              "purl": "pkg:nuget/System.Text.Json@6.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
+            }
+          ]
         },
         {
           "package": {
@@ -89,6 +586,31 @@
             "version": "2.0.5",
             "purl": "pkg:nuget/NuGetDefense.OSSIndex@2.0.5",
             "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.OSSIndex/2.0.5"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NuGetDefense.Core",
+              "version": "2.0.4",
+              "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Json",
+              "version": "6.0.6",
+              "purl": "pkg:nuget/System.Text.Json@6.0.6",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog",
+            "version": "2.10.0",
+            "purl": "pkg:nuget/Serilog@2.10.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.10.0"
           },
           "dependencies": []
         },
@@ -100,7 +622,15 @@
             "purl": "pkg:nuget/Serilog.Sinks.Console@4.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/4.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.10.0",
+              "purl": "pkg:nuget/Serilog@2.10.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.10.0"
+            }
+          ]
         },
         {
           "package": {
@@ -110,17 +640,15 @@
             "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/5.0.0"
           },
-          "dependencies": []
-        },
-        {
-          "package": {
-            "type": "nuget",
-            "name": "System.Text.Json",
-            "version": "6.0.6",
-            "purl": "pkg:nuget/System.Text.Json@6.0.6",
-            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
-          },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.10.0",
+              "purl": "pkg:nuget/Serilog@2.10.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.10.0"
+            }
+          ]
         }
       ],
       "dependencies": [
@@ -144,20 +672,6 @@
           "version": "1.1.1",
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
-        },
-        {
-          "type": "nuget",
-          "name": "NuGet.Versioning",
-          "version": "6.3.1",
-          "purl": "pkg:nuget/NuGet.Versioning@6.3.1",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.3.1"
-        },
-        {
-          "type": "nuget",
-          "name": "NuGetDefense.Core",
-          "version": "2.0.4",
-          "purl": "pkg:nuget/NuGetDefense.Core@2.0.4",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense.Core/2.0.4"
         },
         {
           "type": "nuget",
@@ -193,13 +707,6 @@
           "version": "5.0.0",
           "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/5.0.0"
-        },
-        {
-          "type": "nuget",
-          "name": "System.Text.Json",
-          "version": "6.0.6",
-          "purl": "pkg:nuget/System.Text.Json@6.0.6",
-          "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.6"
         }
       ],
       "children": []

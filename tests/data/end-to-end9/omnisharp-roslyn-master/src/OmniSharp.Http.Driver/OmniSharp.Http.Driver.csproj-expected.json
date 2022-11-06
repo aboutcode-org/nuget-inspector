@@ -5,6 +5,7 @@
     {
       "project_name": "OmniSharp.Http.Driver",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Http.Driver/OmniSharp.Http.Driver.csproj",
       "outputs": [
         "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Http.Driver/",
@@ -144,12 +145,47 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.SourceLink.Common",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Build.Tasks.Git",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.SourceLink.GitHub",
             "version": "1.0.0",
             "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.SourceLink.Common",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Build.Tasks.Git",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+            }
+          ]
         }
       ],
       "dependencies": [

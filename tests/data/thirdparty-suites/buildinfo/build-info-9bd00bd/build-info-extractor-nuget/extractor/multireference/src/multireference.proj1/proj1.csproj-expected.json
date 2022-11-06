@@ -5,9 +5,30 @@
     {
       "project_name": "proj1",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multireference/src/multireference.proj1/proj1.csproj",
       "outputs": [],
       "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "jQuery",
+            "version": "3.0.0",
+            "purl": "pkg:nuget/jQuery@3.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "popper.js",
+            "version": "1.12.9",
+            "purl": "pkg:nuget/popper.js@1.12.9",
+            "download_url": "https://www.nuget.org/api/v2/package/popper.js/1.12.9"
+          },
+          "dependencies": []
+        },
         {
           "package": {
             "type": "nuget",
@@ -15,6 +36,31 @@
             "version": "4.0.0",
             "purl": "pkg:nuget/bootstrap@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "jQuery",
+              "version": "3.0.0",
+              "purl": "pkg:nuget/jQuery@3.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "popper.js",
+              "version": "1.12.9",
+              "purl": "pkg:nuget/popper.js@1.12.9",
+              "download_url": "https://www.nuget.org/api/v2/package/popper.js/1.12.9"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Web.Xdt",
+            "version": "2.1.0",
+            "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Xdt/2.1.0"
           },
           "dependencies": []
         },
@@ -26,7 +72,15 @@
             "purl": "pkg:nuget/NuGet.Core@2.14.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.14.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Web.Xdt",
+              "version": "2.1.0",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Xdt/2.1.0"
+            }
+          ]
         }
       ],
       "dependencies": [

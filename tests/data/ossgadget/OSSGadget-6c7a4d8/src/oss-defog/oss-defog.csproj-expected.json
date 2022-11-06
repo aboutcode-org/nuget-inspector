@@ -5,6 +5,7 @@
     {
       "project_name": "oss-defog",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-defog/oss-defog.csproj",
       "outputs": [
         "/ossgadget/OSSGadget-6c7a4d8/src/oss-defog/bin/Debug/net6.0/",
@@ -34,12 +35,203 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Targets",
+            "version": "1.1.2",
+            "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.2",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.2",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.2",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.2",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "System.Console",
             "version": "4.3.1",
             "purl": "pkg:nuget/System.Console@4.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.2",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            }
+          ]
         }
       ],
       "dependencies": [

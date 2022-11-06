@@ -5,6 +5,7 @@
     {
       "project_name": "Microsoft.DotNet.UpgradeAssistant",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/Microsoft.DotNet.UpgradeAssistant.sln",
       "outputs": [],
       "packages": [],
@@ -14,6 +15,7 @@
           "project_name": "Integration.Tests",
           "project_version": "1.0.0-",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-xml",
           "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
           "outputs": [],
           "packages": [

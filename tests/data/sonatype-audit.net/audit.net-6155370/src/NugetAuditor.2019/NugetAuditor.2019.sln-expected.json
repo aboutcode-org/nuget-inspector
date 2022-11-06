@@ -5,6 +5,7 @@
     {
       "project_name": "NugetAuditor.2019",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor.2019/NugetAuditor.2019.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "NugetAuditor.VSIX.2019",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor.2019/NugetAuditor.VSIX.2019/NugetAuditor.VSIX.2019.csproj",
           "outputs": [],
           "packages": [
@@ -630,6 +632,7 @@
         {
           "project_name": "NugetAuditor.Lib",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor.2019/NugetAuditor.Lib/NugetAuditor.Lib.csproj",
           "outputs": [
             "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor.2019/NugetAuditor.Lib/bin/Debug/",

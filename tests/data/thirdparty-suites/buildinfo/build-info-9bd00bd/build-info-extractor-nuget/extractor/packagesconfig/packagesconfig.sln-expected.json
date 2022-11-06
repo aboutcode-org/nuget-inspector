@@ -5,6 +5,7 @@
     {
       "project_name": "packagesconfig",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/packagesconfig/packagesconfig.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "packagesconfig",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/packagesconfig/packagesconfig.csproj",
           "outputs": [],
           "packages": [

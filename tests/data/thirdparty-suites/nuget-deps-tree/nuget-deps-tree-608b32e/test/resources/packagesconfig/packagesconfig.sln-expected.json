@@ -5,6 +5,7 @@
     {
       "project_name": "packagesconfig",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "packagesconfig",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.csproj",
           "outputs": [],
           "packages": [

@@ -5,6 +5,7 @@
     {
       "project_name": "EwDavidForms.iOS",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
       "outputs": [
         "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.iOS/bin/Debug/net6.0-ios/",
@@ -14,12 +15,359 @@
         {
           "package": {
             "type": "nuget",
+            "name": "System.Numerics.Vectors",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Maui.Graphics",
+            "version": "6.0.300-rc.2.1310",
+            "purl": "pkg:nuget/Microsoft.Maui.Graphics@6.0.300-rc.2.1310",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Graphics/6.0.300-rc.2.1310"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Numerics.Vectors",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Maui.Dependencies",
+            "version": "6.0.300-rc.2.5513",
+            "purl": "pkg:nuget/Microsoft.Maui.Dependencies@6.0.300-rc.2.5513",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Dependencies/6.0.300-rc.2.5513"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Maui.Graphics",
+              "version": "6.0.300-rc.2.1310",
+              "purl": "pkg:nuget/Microsoft.Maui.Graphics@6.0.300-rc.2.1310",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Graphics/6.0.300-rc.2.1310"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Abstractions",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration",
+            "version": "6.0.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Options",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging",
+            "version": "6.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "6.0.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Maui.Extensions",
+            "version": "6.0.300-rc.2.5513",
+            "purl": "pkg:nuget/Microsoft.Maui.Extensions@6.0.300-rc.2.5513",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Extensions/6.0.300-rc.2.5513"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging",
+              "version": "6.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "6.0.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CommunityToolkit.Maui.Core",
+            "version": "1.0.0-rc2",
+            "purl": "pkg:nuget/CommunityToolkit.Maui.Core@1.0.0-rc2",
+            "download_url": "https://www.nuget.org/api/v2/package/CommunityToolkit.Maui.Core/1.0.0-rc2"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Maui.Dependencies",
+              "version": "6.0.300-rc.2.5513",
+              "purl": "pkg:nuget/Microsoft.Maui.Dependencies@6.0.300-rc.2.5513",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Dependencies/6.0.300-rc.2.5513"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Maui.Extensions",
+              "version": "6.0.300-rc.2.5513",
+              "purl": "pkg:nuget/Microsoft.Maui.Extensions@6.0.300-rc.2.5513",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Extensions/6.0.300-rc.2.5513"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "CommunityToolkit.Maui",
             "version": "1.0.0-rc2",
             "purl": "pkg:nuget/CommunityToolkit.Maui@1.0.0-rc2",
             "download_url": "https://www.nuget.org/api/v2/package/CommunityToolkit.Maui/1.0.0-rc2"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CommunityToolkit.Maui.Core",
+              "version": "1.0.0-rc2",
+              "purl": "pkg:nuget/CommunityToolkit.Maui.Core@1.0.0-rc2",
+              "download_url": "https://www.nuget.org/api/v2/package/CommunityToolkit.Maui.Core/1.0.0-rc2"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Maui.Dependencies",
+              "version": "6.0.300-rc.2.5513",
+              "purl": "pkg:nuget/Microsoft.Maui.Dependencies@6.0.300-rc.2.5513",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Dependencies/6.0.300-rc.2.5513"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Maui.Extensions",
+              "version": "6.0.300-rc.2.5513",
+              "purl": "pkg:nuget/Microsoft.Maui.Extensions@6.0.300-rc.2.5513",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Maui.Extensions/6.0.300-rc.2.5513"
+            }
+          ]
         },
         {
           "package": {

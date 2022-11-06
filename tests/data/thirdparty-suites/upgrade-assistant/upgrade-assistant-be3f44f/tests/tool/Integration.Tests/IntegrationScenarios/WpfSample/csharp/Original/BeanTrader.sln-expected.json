@@ -5,6 +5,7 @@
     {
       "project_name": "BeanTrader",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTrader.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "BeanTraderClient",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderClient/BeanTraderClient.csproj",
           "outputs": [
             "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderClient/bin/Debug/",
@@ -384,6 +386,7 @@
         {
           "project_name": "BeanTraderCommon",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderInterfaces/BeanTraderCommon.csproj",
           "outputs": [
             "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderInterfaces/bin/Debug/",

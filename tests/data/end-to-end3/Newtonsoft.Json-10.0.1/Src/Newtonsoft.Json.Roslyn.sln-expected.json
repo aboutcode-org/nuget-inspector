@@ -5,6 +5,7 @@
     {
       "project_name": "Newtonsoft.Json.Roslyn",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Roslyn.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "Newtonsoft.Json.Roslyn",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Roslyn.csproj",
           "outputs": [
             "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/bin/Debug/",
@@ -470,6 +472,7 @@
           "project_name": "Newtonsoft.Json.Tests.Roslyn",
           "project_version": "10.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/Newtonsoft.Json.Tests.Roslyn.csproj",
           "outputs": [
             "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/bin/Debug/",
@@ -564,7 +567,15 @@
                 "purl": "pkg:nuget/FSharp.Core@4.1.0",
                 "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.1.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.ValueTuple",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.ValueTuple@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
+                }
+              ]
             },
             {
               "package": {
@@ -619,12 +630,82 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.2.0",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.2.0",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.2.0",
+                "purl": "pkg:nuget/xunit.core@2.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.2.0",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.2.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.2.0",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.2.0",
+                "purl": "pkg:nuget/xunit.assert@2.2.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.2.0",
                 "purl": "pkg:nuget/xunit@2.2.0",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.2.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.2.0",
+                  "purl": "pkg:nuget/xunit.core@2.2.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.2.0",
+                  "purl": "pkg:nuget/xunit.assert@2.2.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0"
+                }
+              ]
             },
             {
               "package": {
@@ -639,12 +720,30 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.TestPlatform.TestHost",
+                "version": "15.0.0",
+                "purl": "pkg:nuget/Microsoft.TestPlatform.TestHost@15.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/15.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.NET.Test.Sdk",
                 "version": "15.0.0",
                 "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.TestPlatform.TestHost",
+                  "version": "15.0.0",
+                  "purl": "pkg:nuget/Microsoft.TestPlatform.TestHost@15.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/15.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -696,13 +795,6 @@
               "version": "1.3.1",
               "purl": "pkg:nuget/System.Collections.Immutable@1.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.3.1"
-            },
-            {
-              "type": "nuget",
-              "name": "System.ValueTuple",
-              "version": "4.3.0",
-              "purl": "pkg:nuget/System.ValueTuple@4.3.0",
-              "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
             },
             {
               "type": "nuget",

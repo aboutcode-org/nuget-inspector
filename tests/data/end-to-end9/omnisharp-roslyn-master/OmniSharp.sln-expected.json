@@ -5,6 +5,7 @@
     {
       "project_name": "OmniSharp",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/OmniSharp.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "OmniSharp.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Tests/OmniSharp.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Tests/",
@@ -52,12 +54,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -182,12 +271,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -316,6 +440,7 @@
         {
           "project_name": "OmniSharp.Stdio",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Stdio/OmniSharp.Stdio.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Stdio/",
@@ -445,12 +570,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -551,6 +711,7 @@
         {
           "project_name": "OmniSharp.Stdio.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Stdio.Tests/OmniSharp.Stdio.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Stdio.Tests/",
@@ -590,12 +751,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -730,12 +978,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -871,6 +1154,7 @@
         {
           "project_name": "OmniSharp.Abstractions",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Abstractions/OmniSharp.Abstractions.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Abstractions/",
@@ -1070,12 +1354,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -1225,6 +1544,7 @@
         {
           "project_name": "OmniSharp.Roslyn.CSharp",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Roslyn.CSharp/OmniSharp.Roslyn.CSharp.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Roslyn.CSharp/",
@@ -1414,12 +1734,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -1562,6 +1917,7 @@
         {
           "project_name": "OmniSharp.Roslyn",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Roslyn/OmniSharp.Roslyn.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Roslyn/",
@@ -1751,12 +2107,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -1899,6 +2290,7 @@
         {
           "project_name": "OmniSharp.MSBuild",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.MSBuild/OmniSharp.MSBuild.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.MSBuild/",
@@ -2098,12 +2490,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -2253,6 +2680,7 @@
         {
           "project_name": "OmniSharp.Script",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Script/OmniSharp.Script.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Script/",
@@ -2422,12 +2850,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -2556,6 +3019,7 @@
         {
           "project_name": "OmniSharp.MSBuild.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.MSBuild.Tests/OmniSharp.MSBuild.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.MSBuild.Tests/",
@@ -2595,12 +3059,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -2755,12 +3306,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -2910,6 +3496,7 @@
         {
           "project_name": "OmniSharp.Roslyn.CSharp.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Roslyn.CSharp.Tests/OmniSharp.Roslyn.CSharp.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Roslyn.CSharp.Tests/",
@@ -2949,12 +3536,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -3089,12 +3763,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -3230,6 +3939,7 @@
         {
           "project_name": "OmniSharp.Host",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Host/OmniSharp.Host.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Host/",
@@ -3509,12 +4219,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -3720,6 +4465,7 @@
         {
           "project_name": "TestUtility",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/TestUtility/TestUtility.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/TestUtility/",
@@ -3769,12 +4515,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -3889,12 +4722,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -4023,6 +4891,7 @@
         {
           "project_name": "OmniSharp.DotNetTest",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.DotNetTest/OmniSharp.DotNetTest.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.DotNetTest/",
@@ -4192,12 +5061,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -4326,6 +5230,7 @@
         {
           "project_name": "OmniSharp.DotNetTest.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.DotNetTest.Tests/OmniSharp.DotNetTest.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.DotNetTest.Tests/",
@@ -4365,12 +5270,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -4505,12 +5497,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -4646,6 +5673,7 @@
         {
           "project_name": "OmniSharp.Http",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Http/OmniSharp.Http.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Http/",
@@ -4775,12 +5803,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -4881,6 +5944,7 @@
         {
           "project_name": "OmniSharp.Http.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Http.Tests/OmniSharp.Http.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Http.Tests/",
@@ -4920,12 +5984,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -5050,12 +6201,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -5184,6 +6370,7 @@
         {
           "project_name": "OmniSharp.LanguageServerProtocol",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.LanguageServerProtocol/OmniSharp.LanguageServerProtocol.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.LanguageServerProtocol/",
@@ -5323,12 +6510,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -5436,6 +6658,7 @@
         {
           "project_name": "OmniSharp.Cake",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Cake/OmniSharp.Cake.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Cake/",
@@ -5595,12 +6818,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -5722,6 +6980,7 @@
         {
           "project_name": "OmniSharp.Cake.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Cake.Tests/OmniSharp.Cake.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Cake.Tests/",
@@ -5761,12 +7020,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -5891,12 +7237,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -6025,6 +7406,7 @@
         {
           "project_name": "OmniSharp.Http.Driver",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Http.Driver/OmniSharp.Http.Driver.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Http.Driver/",
@@ -6164,12 +7546,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -6277,6 +7694,7 @@
         {
           "project_name": "OmniSharp.Stdio.Driver",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Stdio.Driver/OmniSharp.Stdio.Driver.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Stdio.Driver/",
@@ -6416,12 +7834,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -6529,6 +7982,7 @@
         {
           "project_name": "OmniSharp.Script.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Script.Tests/OmniSharp.Script.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Script.Tests/",
@@ -6568,12 +8022,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -6698,12 +8239,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -6832,6 +8408,7 @@
         {
           "project_name": "OmniSharp.Shared",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Shared/OmniSharp.Shared.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Shared/",
@@ -7031,12 +8608,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -7186,6 +8798,7 @@
         {
           "project_name": "OmniSharp.Lsp.Tests",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.Lsp.Tests/OmniSharp.Lsp.Tests.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Lsp.Tests/",
@@ -7235,12 +8848,99 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "xunit",
                 "version": "2.4.1",
                 "purl": "pkg:nuget/xunit@2.4.1",
                 "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
             },
             {
               "package": {
@@ -7375,12 +9075,47 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
@@ -7523,6 +9258,7 @@
         {
           "project_name": "OmniSharp.Benchmarks",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Benchmarks/OmniSharp.Benchmarks.csproj",
           "outputs": [
             "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Benchmarks/net472/",
@@ -7532,12 +9268,1212 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "BenchmarkDotNet.Annotations",
+                "version": "0.12.1",
+                "purl": "pkg:nuget/BenchmarkDotNet.Annotations@0.12.1",
+                "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Annotations/0.12.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "CommandLineParser",
+                "version": "2.4.3",
+                "purl": "pkg:nuget/CommandLineParser@2.4.3",
+                "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.4.3"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Iced",
+                "version": "1.4.0",
+                "purl": "pkg:nuget/Iced@1.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Iced/1.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.Analyzers",
+                "version": "2.6.1",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@2.6.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.AppContext",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.AppContext@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.AppContext/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Collections",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Collections@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Collections.Concurrent",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Collections.Concurrent@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Concurrent/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Collections.Immutable",
+                "version": "1.5.0",
+                "purl": "pkg:nuget/System.Collections.Immutable@1.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Console",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Console@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.Debug",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.FileVersionInfo",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.FileVersionInfo@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.FileVersionInfo/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.StackTrace",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.StackTrace@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.StackTrace/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Diagnostics.Tools",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Dynamic.Runtime",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Globalization",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Globalization@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.Compression",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.IO.Compression@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.Compression/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.FileSystem.Primitives",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO.FileSystem",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.IO.FileSystem.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Linq",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Linq@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Linq.Expressions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection.Metadata",
+                "version": "1.6.0",
+                "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Collections.Immutable",
+                  "version": "1.5.0",
+                  "purl": "pkg:nuget/System.Collections.Immutable@1.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Resources.ResourceManager",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.InteropServices",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.Numerics",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.IO",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.IO@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Cryptography.Encoding",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Cryptography.Primitives",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Cryptography.Algorithms",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.IO",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Cryptography.X509Certificates",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Algorithms",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Encoding",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Encoding.CodePages",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Text.Encoding.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks.Extensions",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks.Parallel",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading.Tasks.Parallel@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Parallel/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Thread",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Threading.Thread@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Thread/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ValueTuple",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.ValueTuple@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.ReaderWriter",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.XDocument",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.XmlDocument",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.XPath",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.XPath@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XPath/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Xml.XPath.XDocument",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Xml.XPath.XDocument@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XPath.XDocument/4.3.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.XPath",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.XPath@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XPath/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.Common",
+                "version": "2.10.0",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@2.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/2.10.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.CodeAnalysis.Analyzers",
+                  "version": "2.6.1",
+                  "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@2.6.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.AppContext",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.AppContext@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.AppContext/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Collections",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Collections@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Collections.Concurrent",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Collections.Concurrent@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Concurrent/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Collections.Immutable",
+                  "version": "1.5.0",
+                  "purl": "pkg:nuget/System.Collections.Immutable@1.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.5.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Console",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Console@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.Debug",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.FileVersionInfo",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.FileVersionInfo@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.FileVersionInfo/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.StackTrace",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.StackTrace@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.StackTrace/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Diagnostics.Tools",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Dynamic.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Globalization",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Globalization@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO.Compression",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO.Compression@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.Compression/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO.FileSystem",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.IO.FileSystem.Primitives",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Linq",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Linq@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Linq.Expressions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Metadata",
+                  "version": "1.6.0",
+                  "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Resources.ResourceManager",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.InteropServices",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.Numerics",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Algorithms",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Cryptography.X509Certificates",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding.CodePages",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Text.Encoding.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks.Extensions",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks.Parallel",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Tasks.Parallel@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Parallel/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Thread",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Threading.Thread@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Thread/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.ValueTuple",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.ValueTuple@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.ReaderWriter",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.XDocument",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.XmlDocument",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Xml.XPath.XDocument",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Xml.XPath.XDocument@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XPath.XDocument/4.3.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.CodeAnalysis.CSharp",
+                "version": "2.10.0",
+                "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.10.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.CodeAnalysis.Common",
+                  "version": "2.10.0",
+                  "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@2.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/2.10.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Diagnostics.NETCore.Client",
+                "version": "0.2.61701",
+                "purl": "pkg:nuget/Microsoft.Diagnostics.NETCore.Client@0.2.61701",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.NETCore.Client/0.2.61701"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Diagnostics.Runtime",
+                "version": "1.1.57604",
+                "purl": "pkg:nuget/Microsoft.Diagnostics.Runtime@1.1.57604",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Runtime/1.1.57604"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Diagnostics.Tracing.TraceEvent",
+                "version": "2.0.49",
+                "purl": "pkg:nuget/Microsoft.Diagnostics.Tracing.TraceEvent@2.0.49",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.InteropServices.RuntimeInformation",
+                "version": "4.0.0",
+                "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.DotNet.PlatformAbstractions",
+                "version": "2.1.0",
+                "purl": "pkg:nuget/Microsoft.DotNet.PlatformAbstractions@2.1.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.PlatformAbstractions/2.1.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.InteropServices.RuntimeInformation",
+                  "version": "4.0.0",
+                  "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Principal.Windows",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.AccessControl",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Principal.Windows",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Win32.Registry",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Security.AccessControl",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Principal.Windows",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Buffers",
+                "version": "4.4.0",
+                "purl": "pkg:nuget/System.Buffers@4.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Numerics.Vectors",
+                "version": "4.4.0",
+                "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Runtime.CompilerServices.Unsafe",
+                "version": "4.5.2",
+                "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Memory",
+                "version": "4.5.3",
+                "purl": "pkg:nuget/System.Memory@4.5.3",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Buffers",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Buffers@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Numerics.Vectors",
+                  "version": "4.4.0",
+                  "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.CompilerServices.Unsafe",
+                  "version": "4.5.2",
+                  "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Perfolizer",
+                "version": "0.2.1",
+                "purl": "pkg:nuget/Perfolizer@0.2.1",
+                "download_url": "https://www.nuget.org/api/v2/package/Perfolizer/0.2.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Memory",
+                  "version": "4.5.3",
+                  "purl": "pkg:nuget/System.Memory@4.5.3",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Management",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Management@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Management/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection.Emit",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Reflection.Emit.Lightweight",
+                "version": "4.3.0",
+                "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.3.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Threading.Tasks.Extensions",
+                "version": "4.5.2",
+                "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.2",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.2"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Runtime.CompilerServices.Unsafe",
+                  "version": "4.5.2",
+                  "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.ValueTuple",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.ValueTuple@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "BenchmarkDotNet",
                 "version": "0.12.1",
                 "purl": "pkg:nuget/BenchmarkDotNet@0.12.1",
                 "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "BenchmarkDotNet.Annotations",
+                  "version": "0.12.1",
+                  "purl": "pkg:nuget/BenchmarkDotNet.Annotations@0.12.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Annotations/0.12.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "CommandLineParser",
+                  "version": "2.4.3",
+                  "purl": "pkg:nuget/CommandLineParser@2.4.3",
+                  "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.4.3"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Iced",
+                  "version": "1.4.0",
+                  "purl": "pkg:nuget/Iced@1.4.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Iced/1.4.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.CodeAnalysis.CSharp",
+                  "version": "2.10.0",
+                  "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@2.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.10.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Diagnostics.NETCore.Client",
+                  "version": "0.2.61701",
+                  "purl": "pkg:nuget/Microsoft.Diagnostics.NETCore.Client@0.2.61701",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.NETCore.Client/0.2.61701"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Diagnostics.Runtime",
+                  "version": "1.1.57604",
+                  "purl": "pkg:nuget/Microsoft.Diagnostics.Runtime@1.1.57604",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Runtime/1.1.57604"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Diagnostics.Tracing.TraceEvent",
+                  "version": "2.0.49",
+                  "purl": "pkg:nuget/Microsoft.Diagnostics.Tracing.TraceEvent@2.0.49",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.DotNet.PlatformAbstractions",
+                  "version": "2.1.0",
+                  "purl": "pkg:nuget/Microsoft.DotNet.PlatformAbstractions@2.1.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.PlatformAbstractions/2.1.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Win32.Registry",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Perfolizer",
+                  "version": "0.2.1",
+                  "purl": "pkg:nuget/Perfolizer@0.2.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/Perfolizer/0.2.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Management",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Management@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Management/4.5.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Emit",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Reflection.Emit.Lightweight",
+                  "version": "4.3.0",
+                  "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.3.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.Threading.Tasks.Extensions",
+                  "version": "4.5.2",
+                  "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.2",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.2"
+                },
+                {
+                  "type": "nuget",
+                  "name": "System.ValueTuple",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.ValueTuple@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
+                }
+              ]
             },
             {
               "package": {
@@ -7547,17 +10483,22 @@
                 "purl": "pkg:nuget/BenchmarkDotNet.Diagnostics.Windows@0.12.1",
                 "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Diagnostics.Windows/0.12.1"
               },
-              "dependencies": []
-            },
-            {
-              "package": {
-                "type": "nuget",
-                "name": "xunit",
-                "version": "2.4.1",
-                "purl": "pkg:nuget/xunit@2.4.1",
-                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
-              },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "BenchmarkDotNet",
+                  "version": "0.12.1",
+                  "purl": "pkg:nuget/BenchmarkDotNet@0.12.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Diagnostics.Tracing.TraceEvent",
+                  "version": "2.0.49",
+                  "purl": "pkg:nuget/Microsoft.Diagnostics.Tracing.TraceEvent@2.0.49",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49"
+                }
+              ]
             },
             {
               "package": {
@@ -7572,12 +10513,151 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "xunit.extensibility.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.abstractions",
+                  "version": "2.0.3",
+                  "purl": "pkg:nuget/xunit.abstractions@2.0.3",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.extensibility.execution",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.core",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.core@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.extensibility.execution",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.assert",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit.assert@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit.analyzers",
+                "version": "0.10.0",
+                "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "xunit",
+                "version": "2.4.1",
+                "purl": "pkg:nuget/xunit@2.4.1",
+                "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "xunit.core",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.core@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.assert",
+                  "version": "2.4.1",
+                  "purl": "pkg:nuget/xunit.assert@2.4.1",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
+                },
+                {
+                  "type": "nuget",
+                  "name": "xunit.analyzers",
+                  "version": "0.10.0",
+                  "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "System.Security.Permissions",
+                "version": "4.5.0",
+                "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+                "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+              },
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Security.AccessControl",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+                }
+              ]
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "System.Configuration.ConfigurationManager",
                 "version": "4.5.0",
                 "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
                 "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "System.Security.Permissions",
+                  "version": "4.5.0",
+                  "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+                }
+              ]
             },
             {
               "package": {
@@ -7682,22 +10762,50 @@
             {
               "package": {
                 "type": "nuget",
+                "name": "Microsoft.SourceLink.Common",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
+                "name": "Microsoft.Build.Tasks.Git",
+                "version": "1.0.0",
+                "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+              },
+              "dependencies": []
+            },
+            {
+              "package": {
+                "type": "nuget",
                 "name": "Microsoft.SourceLink.GitHub",
                 "version": "1.0.0",
                 "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
                 "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
               },
-              "dependencies": []
+              "dependencies": [
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.SourceLink.Common",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
+                },
+                {
+                  "type": "nuget",
+                  "name": "Microsoft.Build.Tasks.Git",
+                  "version": "1.0.0",
+                  "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+                  "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
+                }
+              ]
             }
           ],
           "dependencies": [
-            {
-              "type": "nuget",
-              "name": "BenchmarkDotNet",
-              "version": "0.12.1",
-              "purl": "pkg:nuget/BenchmarkDotNet@0.12.1",
-              "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1"
-            },
             {
               "type": "nuget",
               "name": "BenchmarkDotNet.Diagnostics.Windows",
@@ -7711,13 +10819,6 @@
               "version": "2.4.1",
               "purl": "pkg:nuget/xunit@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
-            },
-            {
-              "type": "nuget",
-              "name": "xunit.abstractions",
-              "version": "2.0.3",
-              "purl": "pkg:nuget/xunit.abstractions@2.0.3",
-              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
             },
             {
               "type": "nuget",

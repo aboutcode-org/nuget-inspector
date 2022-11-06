@@ -5,6 +5,7 @@
     {
       "project_name": "BeanTraderClient",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.csproj",
       "outputs": [
         "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient//Debug/",
@@ -24,10 +25,68 @@
         {
           "package": {
             "type": "nuget",
+            "name": "ControlzEx",
+            "version": "3.0.2.4",
+            "purl": "pkg:nuget/ControlzEx@3.0.2.4",
+            "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "MahApps.Metro",
             "version": "1.6.5",
             "purl": "pkg:nuget/MahApps.Metro@1.6.5",
             "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/1.6.5"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "ControlzEx",
+              "version": "3.0.2.4",
+              "purl": "pkg:nuget/ControlzEx@3.0.2.4",
+              "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CodeQuality.Analyzers",
+            "version": "2.6.3",
+            "purl": "pkg:nuget/Microsoft.CodeQuality.Analyzers@2.6.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NetCore.Analyzers",
+            "version": "2.6.3",
+            "purl": "pkg:nuget/Microsoft.NetCore.Analyzers@2.6.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NetFramework.Analyzers",
+            "version": "2.6.3",
+            "purl": "pkg:nuget/Microsoft.NetFramework.Analyzers@2.6.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Text.Analyzers",
+            "version": "2.6.3",
+            "purl": "pkg:nuget/Text.Analyzers@2.6.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3"
           },
           "dependencies": []
         },
@@ -39,7 +98,92 @@
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.CodeQuality.Analyzers",
+              "version": "2.6.3",
+              "purl": "pkg:nuget/Microsoft.CodeQuality.Analyzers@2.6.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NetCore.Analyzers",
+              "version": "2.6.3",
+              "purl": "pkg:nuget/Microsoft.NetCore.Analyzers@2.6.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NetFramework.Analyzers",
+              "version": "2.6.3",
+              "purl": "pkg:nuget/Microsoft.NetFramework.Analyzers@2.6.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Text.Analyzers",
+              "version": "2.6.3",
+              "purl": "pkg:nuget/Text.Analyzers@2.6.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.Build",
+            "version": "1.0.14",
+            "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.14",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.14"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl",
+            "version": "1.1.10",
+            "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.Build",
+              "version": "1.0.14",
+              "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.14",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.14"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.Build",
+            "version": "1.0.21",
+            "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.Async",
+            "version": "1.0.168",
+            "purl": "pkg:nuget/Microsoft.Bcl.Async@1.0.168",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl",
+              "version": "1.1.10",
+              "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
+            }
+          ]
         },
         {
           "package": {
@@ -49,7 +193,29 @@
             "purl": "pkg:nuget/Nito.AsyncEx@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl",
+              "version": "1.1.10",
+              "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.Build",
+              "version": "1.0.21",
+              "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.Async",
+              "version": "1.0.168",
+              "purl": "pkg:nuget/Microsoft.Bcl.Async@1.0.168",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168"
+            }
+          ]
         }
       ],
       "dependencies": [

@@ -5,6 +5,7 @@
     {
       "project_name": "test",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/ort-tests/dotnet/subProjectTestWithNuspec/test.csproj",
       "outputs": [
         "/thirdparty-suites/ort-tests/dotnet/subProjectTestWithNuspec/bin/Debug/",
@@ -34,12 +35,47 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Antlr",
+            "version": "3.4.1.9004",
+            "purl": "pkg:nuget/Antlr@3.4.1.9004",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "5.0.4",
+            "purl": "pkg:nuget/Newtonsoft.Json@5.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/5.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "WebGrease",
             "version": "1.5.2",
             "purl": "pkg:nuget/WebGrease@1.5.2",
             "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Antlr",
+              "version": "3.4.1.9004",
+              "purl": "pkg:nuget/Antlr@3.4.1.9004",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/Newtonsoft.Json@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/5.0.4"
+            }
+          ]
         },
         {
           "package": {

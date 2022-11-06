@@ -5,6 +5,7 @@
     {
       "project_name": "Nuuvify.CommonPack.Security",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/Nuuvify.CommonPack.Security.csproj",
       "outputs": [
         "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/bin/Debug/netcoreapp3.1/linux-x64/",
@@ -14,12 +15,2937 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Primitives@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Caching.Abstractions",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Abstractions/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Options",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Options@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Principal.Windows",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.AccessControl",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Win32.Registry",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni",
+            "version": "4.4.0",
+            "purl": "pkg:nuget/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni@4.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
+            "version": "4.4.0",
+            "purl": "pkg:nuget/runtime.win-x64.runtime.native.System.Data.SqlClient.sni@4.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "runtime.win-x86.runtime.native.System.Data.SqlClient.sni",
+            "version": "4.4.0",
+            "purl": "pkg:nuget/runtime.win-x86.runtime.native.System.Data.SqlClient.sni@4.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "runtime.native.System.Data.SqlClient.sni",
+            "version": "4.4.0",
+            "purl": "pkg:nuget/runtime.native.System.Data.SqlClient.sni@4.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.Data.SqlClient.sni/4.4.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni",
+              "version": "4.4.0",
+              "purl": "pkg:nuget/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni@4.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
+              "version": "4.4.0",
+              "purl": "pkg:nuget/runtime.win-x64.runtime.native.System.Data.SqlClient.sni@4.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "runtime.win-x86.runtime.native.System.Data.SqlClient.sni",
+              "version": "4.4.0",
+              "purl": "pkg:nuget/runtime.win-x86.runtime.native.System.Data.SqlClient.sni@4.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding.CodePages",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.ProtectedData",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Permissions",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Configuration.ConfigurationManager",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.ProtectedData",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Permissions",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Caching",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Runtime.Caching@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Caching/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Configuration.ConfigurationManager",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CSharp",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/Microsoft.CSharp@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Targets",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Collections@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Debug",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Globalization",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Globalization@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Resources.ResourceManager",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections.NonGeneric",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Collections.NonGeneric@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections.NonGeneric/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Handles",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.InteropServices",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Globalization.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Globalization.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Globalization.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections.Specialized",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Collections.Specialized@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Specialized/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections.NonGeneric",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections.NonGeneric@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections.NonGeneric/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ComponentModel",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.ComponentModel@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ComponentModel.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.ComponentModel.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.ComponentModel",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ComponentModel@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Linq",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Linq@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.TypeExtensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ComponentModel.TypeConverter",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.ComponentModel.TypeConverter@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.TypeConverter/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Collections.NonGeneric",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections.NonGeneric@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections.NonGeneric/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Collections.Specialized",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections.Specialized@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Specialized/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ComponentModel",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ComponentModel@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ComponentModel.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ComponentModel.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.TypeExtensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "runtime.native.System",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/runtime.native.System@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Tracing",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Diagnostics.Tracing@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tracing/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Net.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.NameResolution",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Net.NameResolution@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.NameResolution/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "runtime.native.System",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/runtime.native.System@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Tracing",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Tracing@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tracing/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Net.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Net.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Serialization.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Serialization.Formatters",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections.Concurrent",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Collections.Concurrent@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Concurrent/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Tracing",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Tracing@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tracing/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Emit.ILGeneration",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Emit.Lightweight",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.RegularExpressions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.FileSystem.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.FileSystem",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.ReaderWriter",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.RegularExpressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Tools",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.XDocument",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Tools",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Tools@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Tools/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.XmlDocument",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Emit",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.XmlSerializer",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.XmlSerializer@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlSerializer/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.TypeExtensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.RegularExpressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XmlDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Private.DataContractSerialization",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Private.DataContractSerialization@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Private.DataContractSerialization/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Collections.Concurrent",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections.Concurrent@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Concurrent/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.Lightweight",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.TypeExtensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.RegularExpressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XmlDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XmlSerializer",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XmlSerializer@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlSerializer/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Serialization.Json",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Serialization.Json@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Json/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Private.DataContractSerialization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Private.DataContractSerialization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Private.DataContractSerialization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.SecureString",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Security.SecureString@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.SecureString/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Identity.Client",
+            "version": "3.0.8",
+            "purl": "pkg:nuget/Microsoft.Identity.Client@3.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Identity.Client/3.0.8"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ComponentModel.TypeConverter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ComponentModel.TypeConverter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.TypeConverter/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Net.NameResolution",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Net.NameResolution@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.NameResolution/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Formatters",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Json",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Json@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Json/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.SecureString",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Security.SecureString@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.SecureString/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Data.SqlClient",
+            "version": "1.0.19239.1",
+            "purl": "pkg:nuget/Microsoft.Data.SqlClient@1.0.19239.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.SqlClient/1.0.19239.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Win32.Registry",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "runtime.native.System.Data.SqlClient.sni",
+              "version": "4.4.0",
+              "purl": "pkg:nuget/runtime.native.System.Data.SqlClient.sni@4.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.Data.SqlClient.sni/4.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding.CodePages",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Configuration.ConfigurationManager",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Caching",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Runtime.Caching@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Caching/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Identity.Client",
+              "version": "3.0.8",
+              "purl": "pkg:nuget/Microsoft.Identity.Client@3.0.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Identity.Client/3.0.8"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.Extensions.Caching.SqlServer",
             "version": "3.1.26",
             "purl": "pkg:nuget/Microsoft.Extensions.Caching.SqlServer@3.1.26",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.SqlServer/3.1.26"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Abstractions/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Data.SqlClient",
+              "version": "1.0.19239.1",
+              "purl": "pkg:nuget/Microsoft.Data.SqlClient@1.0.19239.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.SqlClient/1.0.19239.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Abstractions",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Binder",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/3.1.26"
+            }
+          ]
         },
         {
           "package": {
@@ -28,6 +2954,55 @@
             "version": "3.1.26",
             "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@3.1.26",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.ConfigurationExtensions/3.1.26"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Binder",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Metadata",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Metadata@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Metadata/3.1.26"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "3.1.26",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@3.1.26",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/3.1.26"
           },
           "dependencies": []
         },
@@ -39,7 +3014,712 @@
             "purl": "pkg:nuget/Microsoft.AspNetCore.Authorization@3.1.26",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authorization/3.1.26"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Metadata",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Metadata@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Metadata/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/3.1.26"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "3.1.26",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@3.1.26",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/3.1.26"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Logging",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/5.5.0"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.ObjectModel",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Linq.Expressions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ObjectModel",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.Lightweight",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.TypeExtensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Dynamic.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq.Expressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ObjectModel",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Emit.ILGeneration",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.TypeExtensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Numerics",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "10.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ComponentModel.TypeConverter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ComponentModel.TypeConverter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.TypeConverter/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Dynamic.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Linq.Expressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.ObjectModel",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.ObjectModel@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Numerics",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Formatters",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Serialization.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.RegularExpressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XmlDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Cng",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Tokens",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "10.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Cng",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Protocols",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols/5.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.JsonWebTokens",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.JsonWebTokens/5.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "10.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IdentityModel.Tokens.Jwt",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/5.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.JsonWebTokens",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.JsonWebTokens/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "10.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+            "version": "5.5.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@5.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Protocols",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IdentityModel.Tokens.Jwt",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/5.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "10.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
+            }
+          ]
         },
         {
           "package": {
@@ -49,7 +3729,15 @@
             "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@3.1.26",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.26"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+              "version": "5.5.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@5.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.OpenIdConnect/5.5.0"
+            }
+          ]
         }
       ],
       "dependencies": [

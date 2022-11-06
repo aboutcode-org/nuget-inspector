@@ -5,6 +5,7 @@
     {
       "project_name": "ConsoleApp",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/ConsoleApp.csproj",
       "outputs": [
         "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/bin/Debug/net6.0/",
@@ -44,10 +45,1963 @@
         {
           "package": {
             "type": "nuget",
-            "name": "CoreWCF.NetTcp",
+            "name": "Microsoft.AspNetCore.Cryptography.Internal",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Cryptography.Internal@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Cryptography.Internal/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.DataProtection.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection.Abstractions/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": "4.5.1",
+            "purl": "pkg:nuget/System.Memory@4.5.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.5.1",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.1",
+              "purl": "pkg:nuget/System.Memory@4.5.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.1",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Http.Features",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Features@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Features/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Server.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Server.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Features",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Features@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Features/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.FileProviders.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Hosting.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileProviders.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encodings.Web",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Http.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Features",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Features@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Features/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encodings.Web",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Server.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Server.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Options",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Principal.Windows",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.AccessControl",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Win32.Registry",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Cng",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Pkcs",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Cng",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Permissions",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Xml",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Xml@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/4.5.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Pkcs",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Permissions",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Permissions@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.DataProtection",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Cryptography.Internal",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Cryptography.Internal@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Cryptography.Internal/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.DataProtection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Win32.Registry",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/Microsoft.Win32.Registry@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Xml",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Xml@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Bcl.AsyncInterfaces",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Caching.Abstractions",
+            "version": "2.1.2",
+            "purl": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@2.1.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Abstractions/2.1.2"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Caching.Memory",
+            "version": "2.1.23",
+            "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@2.1.23",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/2.1.23"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Caching.Abstractions",
+              "version": "2.1.2",
+              "purl": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@2.1.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Abstractions/2.1.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.ObjectPool",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.ObjectPool@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.ObjectPool/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Logging",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.17.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Tokens",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.7.0",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Cng",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Protocols",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols/6.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.17.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Xml",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Xml@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.17.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Tokens.Saml",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens.Saml@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Xml",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Xml@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.17.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Targets",
             "version": "1.1.0",
-            "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
-            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
+            "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Collections@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Debug",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Globalization",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Globalization@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Reflection@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Resources.ResourceManager",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.FileSystem.Primitives",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.Handles",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.FileSystem",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.InteropServices",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Handles",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Handles@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Handles/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Encoding.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Targets",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.RegularExpressions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.ReaderWriter",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem.Primitives",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO.FileSystem.Primitives@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.Primitives/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.RegularExpressions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Xml.XmlDocument",
+            "version": "4.3.0",
+            "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Collections@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Globalization",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Globalization@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.IO@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Resources.ResourceManager",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.Extensions",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encoding",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Threading@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.ReaderWriter",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.IdentityModel.Protocols.WsFederation",
+            "version": "6.17.0",
+            "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.WsFederation@6.17.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsFederation/6.17.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Protocols",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens.Saml",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens.Saml@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Xml",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Xml@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Xml.XmlDocument",
+              "version": "4.3.0",
+              "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Principal.Windows",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.AccessControl",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.FileSystem.AccessControl",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Win32.SystemEvents",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/Microsoft.Win32.SystemEvents@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.SystemEvents/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Drawing.Common",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Drawing.Common@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Drawing.Common/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Win32.SystemEvents",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.Win32.SystemEvents@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.SystemEvents/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Windows.Extensions",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Windows.Extensions@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Windows.Extensions/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Drawing.Common",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Drawing.Common@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Drawing.Common/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Permissions",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Windows.Extensions",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Windows.Extensions@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Windows.Extensions/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.DirectoryServices",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.DirectoryServices@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.FileSystem.AccessControl",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.AccessControl",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Permissions",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "5.0.4",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.4",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.DirectoryServices.Protocols",
+            "version": "5.0.1",
+            "purl": "pkg:nuget/System.DirectoryServices.Protocols@5.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.Protocols/5.0.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "5.0.4",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.4",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.DispatchProxy",
+            "version": "4.7.1",
+            "purl": "pkg:nuget/System.Reflection.DispatchProxy@4.7.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.DispatchProxy/4.7.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.ProtectedData",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Formats.Asn1",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Cng",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Formats.Asn1",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Pkcs",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Formats.Asn1",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Cng",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Security.Cryptography.Xml",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Security.Cryptography.Xml@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Pkcs",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Permissions",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "4.5.4",
+            "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Web.Services.Description",
+            "version": "4.9.0",
+            "purl": "pkg:nuget/System.Web.Services.Description@4.9.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Web.Services.Description/4.9.0"
           },
           "dependencies": []
         },
@@ -59,7 +2013,1135 @@
             "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.DataProtection",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.DataProtection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Server.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Server.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Caching.Memory",
+              "version": "2.1.23",
+              "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@2.1.23",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Caching.Memory/2.1.23"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.ObjectPool",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.ObjectPool@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.ObjectPool/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Protocols.WsFederation",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.WsFederation@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsFederation/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.IdentityModel.Tokens.Saml",
+              "version": "6.17.0",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens.Saml@6.17.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.17.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.DirectoryServices",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.DirectoryServices@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.DirectoryServices.Protocols",
+              "version": "5.0.1",
+              "purl": "pkg:nuget/System.DirectoryServices.Protocols@5.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.Protocols/5.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.DispatchProxy",
+              "version": "4.7.1",
+              "purl": "pkg:nuget/System.Reflection.DispatchProxy@4.7.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.DispatchProxy/4.7.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.ProtectedData",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Xml",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Xml@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Principal.Windows",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks.Extensions",
+              "version": "4.5.4",
+              "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Web.Services.Description",
+              "version": "4.9.0",
+              "purl": "pkg:nuget/System.Web.Services.Description@4.9.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Web.Services.Description/4.9.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.Pipelines",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.IO.Pipelines@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/4.5.0"
+          },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Connections.Abstractions",
+            "version": "2.1.3",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Connections.Abstractions@2.1.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Connections.Abstractions/2.1.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Features",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Features@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Features/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.Pipelines",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.IO.Pipelines@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Buffers",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Buffers@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Net.Http.Headers",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Buffers",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Buffers@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.WebUtilities",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.WebUtilities@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebUtilities/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Http.Headers",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encodings.Web",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Http",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Http@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.WebUtilities",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.WebUtilities@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebUtilities/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Http.Headers",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.ObjectPool",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.ObjectPool@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.ObjectPool/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Http.Extensions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Http.Headers",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileProviders.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Buffers",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Buffers@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.EnvironmentVariables@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.FileSystemGlobbing",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.FileSystemGlobbing@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileSystemGlobbing/2.1.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.FileProviders.Physical",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileProviders.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileSystemGlobbing",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileSystemGlobbing@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileSystemGlobbing/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.FileExtensions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.FileExtensions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileProviders.Physical",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Binder",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Logging",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.Logging@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Binder",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Metadata",
+            "version": "1.6.0",
+            "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Hosting",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Extensions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.EnvironmentVariables@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.EnvironmentVariables/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.FileExtensions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.FileExtensions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.FileProviders.Physical",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Metadata",
+              "version": "1.6.0",
+              "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions",
+            "version": "2.1.3",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions@2.1.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions/2.1.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Connections.Abstractions",
+              "version": "2.1.3",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Connections.Abstractions@2.1.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Connections.Abstractions/2.1.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Configuration.Binder",
+            "version": "2.1.10",
+            "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@2.1.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/2.1.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": "4.5.4",
+            "purl": "pkg:nuget/System.Memory@4.5.4",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Numerics.Vectors",
+            "version": "4.5.0",
+            "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.5.3",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Server.Kestrel.Core",
+            "version": "2.1.25",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Server.Kestrel.Core@2.1.25",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Server.Kestrel.Core/2.1.25"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions",
+              "version": "2.1.3",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions@2.1.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions/2.1.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.WebUtilities",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.WebUtilities@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebUtilities/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Configuration.Binder",
+              "version": "2.1.10",
+              "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@2.1.10",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/2.1.10"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Http.Headers",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.4",
+              "purl": "pkg:nuget/System.Memory@4.5.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Numerics.Vectors",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.3",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.Cng",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Threading.Tasks.Extensions",
+              "version": "4.5.4",
+              "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.IO.Pipelines",
+            "version": "5.0.1",
+            "purl": "pkg:nuget/System.IO.Pipelines@5.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/5.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.NetTcp",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CoreWCF.Primitives",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Connections.Abstractions",
+              "version": "2.1.3",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Connections.Abstractions@2.1.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Connections.Abstractions/2.1.3"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Hosting",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Hosting@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Hosting/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Server.Kestrel.Core",
+              "version": "2.1.25",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Server.Kestrel.Core@2.1.25",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Server.Kestrel.Core/2.1.25"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Bcl.AsyncInterfaces",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.IO.Pipelines",
+              "version": "5.0.1",
+              "purl": "pkg:nuget/System.IO.Pipelines@5.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipelines/5.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Authentication.Abstractions",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Abstractions@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Abstractions/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Authentication.Core",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Core@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Core/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Authentication.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Extensions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.WebEncoders",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.Extensions.WebEncoders@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.WebEncoders/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encodings.Web",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.Authentication",
+            "version": "2.1.1",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication@2.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication/2.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Authentication.Core",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Core@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Core/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.DataProtection",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.DataProtection@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.DataProtection/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Extensions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.WebEncoders",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.WebEncoders@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.WebEncoders/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Net.WebSockets.WebSocketProtocol",
+            "version": "4.5.3",
+            "purl": "pkg:nuget/System.Net.WebSockets.WebSocketProtocol@4.5.3",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.WebSockets.WebSocketProtocol/4.5.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.WebSockets",
+            "version": "2.1.7",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.WebSockets@2.1.7",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebSockets/2.1.7"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Http.Extensions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Net.WebSockets.WebSocketProtocol",
+              "version": "4.5.3",
+              "purl": "pkg:nuget/System.Net.WebSockets.WebSocketProtocol@4.5.3",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.WebSockets.WebSocketProtocol/4.5.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "CoreWCF.Http",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CoreWCF.Primitives",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.Authentication",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.WebSockets",
+              "version": "2.1.7",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.WebSockets@2.1.7",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebSockets/2.1.7"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Logging.Abstractions",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/2.1.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Configuration.ConfigurationManager",
+            "version": "5.0.0",
+            "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Security.Cryptography.ProtectedData",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Security.Permissions",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
+            }
+          ]
         },
         {
           "package": {
@@ -69,15 +3151,154 @@
             "purl": "pkg:nuget/CoreWCF.ConfigurationManager@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.ConfigurationManager/1.1.0"
           },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CoreWCF.Http",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "CoreWCF.NetTcp",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "CoreWCF.Primitives",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Options",
+              "version": "2.1.1",
+              "purl": "pkg:nuget/Microsoft.Extensions.Options@2.1.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/2.1.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Configuration.ConfigurationManager",
+              "version": "5.0.0",
+              "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.2.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.1",
+              "purl": "pkg:nuget/System.Memory@4.5.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.1",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.1",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Net.Http.Headers",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.2.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Primitives",
+              "version": "2.2.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.Primitives@2.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/2.2.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Buffers",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Buffers@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.WebUtilities",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.WebUtilities@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebUtilities/2.2.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Net.Http.Headers",
+              "version": "2.2.0",
+              "purl": "pkg:nuget/Microsoft.Net.Http.Headers@2.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http.Headers/2.2.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Encodings.Web",
+              "version": "4.5.0",
+              "purl": "pkg:nuget/System.Text.Encodings.Web@4.5.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.5.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.OpenApi",
+            "version": "1.2.3",
+            "purl": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.OpenApi/1.2.3"
+          },
           "dependencies": []
         },
         {
           "package": {
             "type": "nuget",
-            "name": "CoreWCF.Http",
-            "version": "1.1.0",
-            "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
-            "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+            "name": "Swashbuckle.AspNetCore.Swagger",
+            "version": "6.3.0",
+            "purl": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Swashbuckle.AspNetCore.Swagger/6.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.OpenApi",
+              "version": "1.2.3",
+              "purl": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.OpenApi/1.2.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Text.Json",
+            "version": "5.0.2",
+            "purl": "pkg:nuget/System.Text.Json@5.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/5.0.2"
           },
           "dependencies": []
         },
@@ -89,17 +3310,39 @@
             "purl": "pkg:nuget/CoreWCF.WebHttp@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.WebHttp/1.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "CoreWCF.Http",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.AspNetCore.WebUtilities",
+              "version": "2.2.0",
+              "purl": "pkg:nuget/Microsoft.AspNetCore.WebUtilities@2.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.WebUtilities/2.2.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Swashbuckle.AspNetCore.Swagger",
+              "version": "6.3.0",
+              "purl": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Swashbuckle.AspNetCore.Swagger/6.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Text.Json",
+              "version": "5.0.2",
+              "purl": "pkg:nuget/System.Text.Json@5.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/5.0.2"
+            }
+          ]
         }
       ],
       "dependencies": [
-        {
-          "type": "nuget",
-          "name": "Microsoft.CSharp",
-          "version": "4.7.0",
-          "purl": "pkg:nuget/Microsoft.CSharp@4.7.0",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.7.0"
-        },
         {
           "type": "nuget",
           "name": "System.Data.DataSetExtensions",
@@ -116,31 +3359,10 @@
         },
         {
           "type": "nuget",
-          "name": "CoreWCF.NetTcp",
-          "version": "1.1.0",
-          "purl": "pkg:nuget/CoreWCF.NetTcp@1.1.0",
-          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.NetTcp/1.1.0"
-        },
-        {
-          "type": "nuget",
-          "name": "CoreWCF.Primitives",
-          "version": "1.1.0",
-          "purl": "pkg:nuget/CoreWCF.Primitives@1.1.0",
-          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Primitives/1.1.0"
-        },
-        {
-          "type": "nuget",
           "name": "CoreWCF.ConfigurationManager",
           "version": "1.1.0",
           "purl": "pkg:nuget/CoreWCF.ConfigurationManager@1.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.ConfigurationManager/1.1.0"
-        },
-        {
-          "type": "nuget",
-          "name": "CoreWCF.Http",
-          "version": "1.1.0",
-          "purl": "pkg:nuget/CoreWCF.Http@1.1.0",
-          "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.Http/1.1.0"
         },
         {
           "type": "nuget",

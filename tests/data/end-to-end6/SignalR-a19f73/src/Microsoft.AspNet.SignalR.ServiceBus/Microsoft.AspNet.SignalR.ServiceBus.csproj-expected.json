@@ -5,6 +5,7 @@
     {
       "project_name": "Microsoft.AspNet.SignalR.ServiceBus",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus/Microsoft.AspNet.SignalR.ServiceBus.csproj",
       "outputs": [
         "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//",
@@ -24,12 +25,30 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.WindowsAzure.ConfigurationManager",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Microsoft.WindowsAzure.ConfigurationManager@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAzure.ConfigurationManager/2.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "WindowsAzure.ServiceBus",
             "version": "2.1.0",
             "purl": "pkg:nuget/WindowsAzure.ServiceBus@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/2.1.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.WindowsAzure.ConfigurationManager",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Microsoft.WindowsAzure.ConfigurationManager@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAzure.ConfigurationManager/2.0.0"
+            }
+          ]
         }
       ],
       "dependencies": [

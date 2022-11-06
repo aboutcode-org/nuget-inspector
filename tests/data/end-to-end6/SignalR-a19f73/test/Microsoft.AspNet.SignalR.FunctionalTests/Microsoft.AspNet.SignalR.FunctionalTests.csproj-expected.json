@@ -5,6 +5,7 @@
     {
       "project_name": "Microsoft.AspNet.SignalR.FunctionalTests",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj",
       "outputs": [
         "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//",
@@ -74,12 +75,99 @@
         {
           "package": {
             "type": "nuget",
+            "name": "xunit.extensibility.core",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.execution",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.core",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit.core@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.execution",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.assert",
+            "version": "2.4.0",
+            "purl": "pkg:nuget/xunit.assert@2.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.analyzers",
+            "version": "0.10.0",
+            "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "xunit",
             "version": "2.4.0",
             "purl": "pkg:nuget/xunit@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.core",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.core@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.assert",
+              "version": "2.4.0",
+              "purl": "pkg:nuget/xunit.assert@2.4.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.analyzers",
+              "version": "0.10.0",
+              "purl": "pkg:nuget/xunit.analyzers@0.10.0",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
+            }
+          ]
         },
         {
           "package": {

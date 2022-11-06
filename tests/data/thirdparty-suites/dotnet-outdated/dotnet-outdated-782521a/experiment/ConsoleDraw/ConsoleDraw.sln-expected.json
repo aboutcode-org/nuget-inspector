@@ -5,6 +5,7 @@
     {
       "project_name": "ConsoleDraw",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/experiment/ConsoleDraw/ConsoleDraw.sln",
       "outputs": [],
       "packages": [],
@@ -13,6 +14,7 @@
         {
           "project_name": "ConsoleDraw",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "dotnet-project-reference",
           "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/experiment/ConsoleDraw/ConsoleDraw.csproj",
           "outputs": [
             "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/experiment/ConsoleDraw/bin/Debug/netcoreapp2.1/",

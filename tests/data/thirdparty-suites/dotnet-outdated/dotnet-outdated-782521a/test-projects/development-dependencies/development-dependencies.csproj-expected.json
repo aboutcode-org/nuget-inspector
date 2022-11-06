@@ -5,6 +5,7 @@
     {
       "project_name": "development-dependencies",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/development-dependencies/development-dependencies.csproj",
       "outputs": [
         "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/development-dependencies/bin/Debug/netstandard2.0/",
@@ -14,12 +15,30 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "1.1.0",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "NETStandard.Library",
             "version": "2.0.3",
             "purl": "pkg:nuget/NETStandard.Library@2.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.1.0",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
+            }
+          ]
         },
         {
           "package": {

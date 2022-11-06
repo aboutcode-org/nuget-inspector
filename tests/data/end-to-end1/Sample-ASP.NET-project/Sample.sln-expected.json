@@ -5,6 +5,7 @@
     {
       "project_name": "Sample",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.sln",
       "outputs": [],
       "packages": [],
@@ -14,6 +15,7 @@
           "project_name": "Sample.Web",
           "project_version": "1.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.Web/Sample.Web.csproj",
           "outputs": [],
           "packages": [
@@ -462,6 +464,7 @@
           "project_name": "Sample.Application",
           "project_version": "1.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.Application/Sample.Application.csproj",
           "outputs": [
             "/end-to-end1/Sample-ASP.NET-project/Sample.Application/bin/Debug/",
@@ -623,6 +626,7 @@
           "project_name": "Sample.Core",
           "project_version": "1.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.Core/Sample.Core.csproj",
           "outputs": [
             "/end-to-end1/Sample-ASP.NET-project/Sample.Core/bin/Debug/",
@@ -955,6 +959,7 @@
           "project_name": "Sample.WebApi",
           "project_version": "1.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.WebApi/Sample.WebApi.csproj",
           "outputs": [],
           "packages": [

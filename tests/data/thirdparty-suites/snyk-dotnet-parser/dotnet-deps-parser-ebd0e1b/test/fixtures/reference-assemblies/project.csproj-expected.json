@@ -5,6 +5,7 @@
     {
       "project_name": "project",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies/project.csproj",
       "outputs": [],
       "packages": [
@@ -61,12 +62,47 @@
         {
           "package": {
             "type": "nuget",
+            "name": "System.Net.Http",
+            "version": "2.0.20126.16343",
+            "purl": "pkg:nuget/System.Net.Http@2.0.20126.16343",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/2.0.20126.16343"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Json",
+            "version": "4.0.20126.16343",
+            "purl": "pkg:nuget/System.Json@4.0.20126.16343",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Json/4.0.20126.16343"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "System.Net.Http.Formatting",
             "version": "4.0.20126.16343",
             "purl": "pkg:nuget/System.Net.Http.Formatting@4.0.20126.16343",
             "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http.Formatting/4.0.20126.16343"
           },
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Net.Http",
+              "version": "2.0.20126.16343",
+              "purl": "pkg:nuget/System.Net.Http@2.0.20126.16343",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/2.0.20126.16343"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Json",
+              "version": "4.0.20126.16343",
+              "purl": "pkg:nuget/System.Json@4.0.20126.16343",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Json/4.0.20126.16343"
+            }
+          ]
         },
         {
           "package": {

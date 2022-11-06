@@ -5,6 +5,7 @@
     {
       "project_name": "Bonobo.Git.Server",
       "project_datafile_type": "solution-file",
+      "datasource_id": "dotnet-solution-file",
       "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.sln",
       "outputs": [],
       "packages": [],
@@ -14,6 +15,7 @@
           "project_name": "Bonobo.Git.Server",
           "project_version": "6.2.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server/Bonobo.Git.Server.csproj",
           "outputs": [],
           "packages": [
@@ -828,6 +830,7 @@
           "project_name": "Bonobo.Git.Server.Test",
           "project_version": "1.0.0.0",
           "project_datafile_type": "xproj-file",
+          "datasource_id": "nuget-packages.config",
           "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/Bonobo.Git.Server.Test.csproj",
           "outputs": [
             "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/bin/Debug/",

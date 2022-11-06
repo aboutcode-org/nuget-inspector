@@ -5,6 +5,7 @@
     {
       "project_name": "simple-project-with-dev",
       "project_datafile_type": "xproj-file",
+      "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/simple-project-with-dev.csproj",
       "outputs": [
         "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/bin/Debug/",
