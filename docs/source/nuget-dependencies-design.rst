@@ -82,7 +82,7 @@ There are multiple manifest file formats:
 
 - "<ProjectName>.deps.json" files contain details for resolved package and framework
   dependencies. This is machine-generated during the build and these files may
-  exist only with the "PreserveCompilationContext" property set.
+  exist only with the "PreserveCompilationContext" project property set.
 
 
 NuGet has complex version notations and semantics and mixed dependency resolution strategies:
@@ -186,6 +186,7 @@ provided .NET target framework and OS/architecture as an argument
 will be a JSON file listing the resolved dependencies in two ways:
 
 1. as a flat list of unique name/versions (using Package URLs)
+
 2. as a nested dependency tree, with possible duplicates because a given
    name/version may be the dependency of more than one packages
 
@@ -252,15 +253,16 @@ Processing outline
 
 The outline of the processing is to:
 
--  Parse and validate the project files as inputs
+- Parse and validate a project or solution file as input. For a solution file
+  collect all referenced projects.
 
--  For each top-level requirement (e.g. name/version or range):
+- For each project file:
 
-   -  Fetch all the corresponding versions metadata using the NuGet API(s)
-   -  Fetch the packages as needed to further obtain the next-level
-      dependencies, and this recursively
+  - Determine the best strategy to collect dependdencies based on available
+    manifests and lockfiles.
 
--  Resolve a correct dependency version for each name.
+  - Used either locked versions or resolve versions using the NuGet API
+
 -  Dump the results as JSON
 
 
@@ -276,13 +278,9 @@ Create a new CLI with these key options:
 Inputs:
 ~~~~~~~~~
 
-Two options determine what are the input packages to resolve:
+We use one option to determine what are the input projects to resolve:
 
--  ``--solution <.sln solution file>``: a path to a .sln solution file.
-
--  ``--specifier <name==version>``: a single NuGet package name==version
-   specification as in Newtonsoft.Json==13.0.2-beta1. Can be repeated to combine
-   multiple inputs.
+-  ``--project-file <.sln solution or .csproj project file>``: a path to a .sln solution or project file.
 
 
 Environment:
@@ -291,14 +289,14 @@ Environment:
 Two options to select the target .NET Framework and OS/architecture to use for
 dependency resolution:
 
--  ``--target-framework <framework short codename>``: the .NET framework to use
-   for dependency resolution.
--  ``--operating-system <os>`` : The OS(ses) and architecture to use using short
-   codenames.
+- ``--target-framework <framework short codename>``: the .NET framework to use
+  for dependency resolution.
 
-Notes: the assumption is that we will only support Windows on X86/64 by default
-as an OS and architecture for now. We could refine this later with support for
-passing other OS and architectures.
+- ``--runtime <os>`` : The target runtime id (e.g. OS and architecture) to use
+  using short codenames.
+
+Notes: the assumption is that we will only support X86/64 architectures on
+Linux for now. We will refine this later with support for other OS and architectures.
 
 
 Configuration:
@@ -307,10 +305,9 @@ Configuration:
 One option to point to alternative, local or private NuGet indexes and
 repositories.
 
--  ``--gallery-url URL``: NuGet repository "Gallery" URL(s) to use for packages
-   data and files, in order of preference. The default is to use only the public
-   NuGet Gallery repository. When multiple URLs are provided, each is tried in
-   sequence. A Gallery must support at nuget V3 API protocol.
+-  ``--repository-url URL``: NuGet source repository API URL to use for packages
+   data and files. The default is to use the public
+   NuGet Gallery repository.A source must support the V3 API protocol.
 
 
 Strategy and error processing:
