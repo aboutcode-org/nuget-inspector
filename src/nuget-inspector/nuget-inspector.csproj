@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+
+        <SelfContained>true</SelfContained>
+        <PublishReadyToRun>true</PublishReadyToRun>
+        <!--
+        <PublishSingleFile>true</PublishSingleFile>
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+        <PublishTrimmed>True</PublishTrimmed>
+        -->
+
+        <RootNamespace>NugetInspector</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DisableMSBuildAssemblyCopyCheck>true</DisableMSBuildAssemblyCopyCheck>
+
+        <PackageId>nuget-inspector</PackageId>
+        <Product>nuget-inspector</Product>
+        <AssemblyName>nuget-inspector</AssemblyName>
+        <Version>0.5.0</Version>
+        <Authors>nexB Inc.</Authors>
+        <Company>nexB Inc</Company>
+        <AssemblyVersion>0.5.0.0</AssemblyVersion>
+        <FileVersion>0.5.0.0</FileVersion>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Build" Version="17.1.0" />
+        <PackageReference Include="Microsoft.Build.Locator" Version="1.4.1" />
+        <PackageReference Include="Mono.Options" Version="6.12.0.148" />
+        <PackageReference Include="NuGet.Client" Version="4.2.0" />
+        <PackageReference Include="NuGet.ProjectModel" Version="6.1.0" />
+        <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    </ItemGroup>
+
+</Project>

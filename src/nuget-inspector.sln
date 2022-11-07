@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuget-inspector", "nuget-inspector\nuget-inspector.csproj", "{12C8B8AB-5476-42CD-961A-4DACD9C8C0FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C8B8AB-5476-42CD-961A-4DDCD9C9C0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C8B8AB-5476-42CD-961A-4DDCD9C9C0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C8B8AB-5476-42CD-961A-4DDCD9C9C0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C8B8AB-5476-42CD-961A-4DDCD9C9C0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9509BDFF-269B-42C6-A9B4-CF19751AB76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9509BDFF-269B-42C6-A9B4-CF19751AB76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9509BDFF-269B-42C6-A9B4-CF19751AB76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9509BDFF-269B-42C6-A9B4-CF19751AB76D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B81C40A9-6510-4181-A94F-95FD0219DA10}
+	EndGlobalSection
+EndGlobal

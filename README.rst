@@ -1,6 +1,6 @@
-================================
-nuget-inspector - inspect nuget and .NET projects packages dependencies and metadata
-================================
+========================================================================
+nuget-inspector - inspect nuget and .NET projects packages dependencies
+========================================================================
 
 
 Copyright (c) nexB Inc. and others.
