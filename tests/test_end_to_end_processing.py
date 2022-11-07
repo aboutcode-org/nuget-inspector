@@ -3,11 +3,10 @@
 # ScanCode is a trademark of nexB Inc.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/skeleton for support or download.
+# See https://github.com/nexB/nuget-inspector for support or download.
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
 
-import os
 import json
 import subprocess
 from pathlib import Path
@@ -117,14 +116,14 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
         f"--json \"{result_file}\" "
     ]
 
-    output = None
     try:
-        output = subprocess.check_output(cmd, shell=True)
+        subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError as e:
+        out = e.output.decode("utf-8")
+        print(out)
         raise Exception(
             "Failed to run", " ".join(cmd),
-            "with output:", str(output),
-            e.output,
+            "with output:", e.output.decode("utf-8"),
         ) from e
 
     expected_path = test_path + "-expected.json"
