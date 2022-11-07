@@ -109,13 +109,14 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
     expected ``test_path``-expected.json file.
     """
     test_loc = test_env.get_test_loc(test_path)
-    result_loc = test_env.get_temp_dir()
+    result_file = test_env.get_temp_file(extension=".json")
 
     cmd = [
         f"{NUGET_INSPECTOR} "
         f"--project-file \"{test_loc}\" "
-        f"--json \"{result_loc}\" "
+        f"--json \"{result_file}\" "
     ]
+
     output = None
     try:
         output = subprocess.check_output(cmd, shell=True)
@@ -125,11 +126,6 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
             "with output:", str(output),
             e.output,
         ) from e
-
-    result_files = sorted(os.listdir(result_loc))
-    assert len(result_files) == 1
-    result_file = result_files[0]
-    result_file = os.path.join(result_loc, result_file)
 
     expected_path = test_path + "-expected.json"
     expected_file = test_env.get_test_loc(expected_path, must_exist=False)
