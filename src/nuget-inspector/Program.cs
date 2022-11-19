@@ -125,6 +125,10 @@ internal static class Program
                 ProjectFilePath = parsedOptions.ProjectFilePath,
                 Verbose = parsedOptions.Verbose
             };
+            if (parsedOptions.Verbose)
+            {
+                Config.TRACE=true;
+            }
 
             return ParsedOptions.Succeeded(options);
         }
