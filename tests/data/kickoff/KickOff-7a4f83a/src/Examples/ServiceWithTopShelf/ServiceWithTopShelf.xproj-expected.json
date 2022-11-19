@@ -1,0 +1,36 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.5.0",
+  "packages": [
+    {
+      "project_name": "ServiceWithTopShelf",
+      "project_version": "1.0.0.0",
+      "project_datafile_type": "xproj-file",
+      "datasource_id": "nuget-packages.config",
+      "project_file": "/kickoff/KickOff-7a4f83a/src/Examples/ServiceWithTopShelf/ServiceWithTopShelf.xproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Topshelf",
+            "version": "4.0.3",
+            "purl": "pkg:nuget/Topshelf@4.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Topshelf/4.0.3"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Topshelf",
+          "version": "4.0.3",
+          "purl": "pkg:nuget/Topshelf@4.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Topshelf/4.0.3"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

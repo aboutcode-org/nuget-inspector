@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  "frameworks": {
+    "net452": {
+      "frameworkAssemblies": {
+        "System.ServiceProcess": "4.0.0.0"
+      }
+    }
+  },
+  "dependencies": {
+    "Consul": "0.7.0.3",
+    "KickOff": "1.*",
+    "KickOff.Host.Windows": "1.*",
+    "Serilog": "2.3.0",
+    "Serilog.Sinks.ColoredConsole": "2.0.0",
+    "Serilog.Sinks.Elasticsearch": "4.1.1",
+    "StructureMap": "4.4.1"
+  }
+}
