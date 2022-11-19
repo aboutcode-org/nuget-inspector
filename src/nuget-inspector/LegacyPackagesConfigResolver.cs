@@ -5,7 +5,7 @@ using NuGet.Versioning;
 namespace NugetInspector;
 
 /// <summary>
-/// Handles legacy packages.config format originally for NuGet project
+/// Handles legacy packages.config format originally designed for NuGet projects
 /// See https://learn.microsoft.com/en-us/nuget/reference/packages-config
 /// https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
 /// and https://learn.microsoft.com/en-us/nuget/consume-packages/migrate-packages-config-to-package-reference
