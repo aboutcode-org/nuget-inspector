@@ -10,7 +10,7 @@ public class Scan
 
     public Exception? Exception;
     public string? OutputFilePath;
-    public List<Package?> Packages = new();
+    public List<Package> Packages = new();
     public string? ResultName;
     public ResultStatus Status;
 }
