@@ -46,9 +46,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Common",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Common@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Common@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0"
           },
           "dependencies": []
         },
@@ -56,9 +56,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Configuration",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Configuration@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Configuration@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0"
           },
           "dependencies": []
         },
@@ -66,9 +66,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.DependencyResolver.Core",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0"
           },
           "dependencies": []
         },
@@ -76,9 +76,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Frameworks",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Frameworks@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Frameworks@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0"
           },
           "dependencies": []
         },
@@ -86,9 +86,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.LibraryModel",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0"
           },
           "dependencies": []
         },
@@ -96,9 +96,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Packaging.Core",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0"
           },
           "dependencies": []
         },
@@ -106,9 +106,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Packaging",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Packaging@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Packaging@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0"
           },
           "dependencies": []
         },
@@ -116,9 +116,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.ProjectModel",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0"
           },
           "dependencies": []
         },
@@ -126,9 +126,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Protocol",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Protocol@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Protocol@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0"
           },
           "dependencies": []
         },
@@ -136,9 +136,9 @@
           "package": {
             "type": "nuget",
             "name": "NuGet.Versioning",
-            "version": "6.4.0-preview.1.53",
-            "purl": "pkg:nuget/NuGet.Versioning@6.4.0-preview.1.53",
-            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0-preview.1.53"
+            "version": "6.4.0",
+            "purl": "pkg:nuget/NuGet.Versioning@6.4.0",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0"
           },
           "dependencies": []
         },
@@ -213,72 +213,72 @@
         {
           "type": "nuget",
           "name": "NuGet.Common",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Common@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Common@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Configuration",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Configuration@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Configuration@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.DependencyResolver.Core",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Frameworks",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Frameworks@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Frameworks@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.LibraryModel",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Packaging.Core",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Packaging",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Packaging@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Packaging@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.ProjectModel",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Protocol",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Protocol@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Protocol@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0"
         },
         {
           "type": "nuget",
           "name": "NuGet.Versioning",
-          "version": "6.4.0-preview.1.53",
-          "purl": "pkg:nuget/NuGet.Versioning@6.4.0-preview.1.53",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0-preview.1.53"
+          "version": "6.4.0",
+          "purl": "pkg:nuget/NuGet.Versioning@6.4.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0"
         },
         {
           "type": "nuget",

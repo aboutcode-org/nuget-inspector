@@ -1,0 +1,35 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "KickOff/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "compile": {
+          "net452/KickOff.dll": {}
+        },
+        "runtime": {
+          "net452/KickOff.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KickOff/1.0.0": {
+      "type": "project",
+      "path": "../KickOff/project.json",
+      "msbuildProject": "../KickOff/KickOff.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "KickOff >= 1.*"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System.ServiceProcess >= 4.0.0"
+    ]
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

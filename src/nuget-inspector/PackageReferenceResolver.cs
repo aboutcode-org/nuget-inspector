@@ -16,7 +16,9 @@ internal class PackageReferenceResolver : IDependencyResolver
 
     private readonly string ProjectPath;
 
-    public PackageReferenceResolver(string projectPath, NugetApi nugetApi,
+    public PackageReferenceResolver(
+        string projectPath,
+        NugetApi nugetApi,
         NuGetFramework? projectTargetFramework)
     {
         ProjectPath = projectPath;
@@ -90,8 +92,10 @@ internal class PackageReferenceResolver : IDependencyResolver
             foreach (var package in result.Packages)
             {
                 var anyPackageReferences =
-                    result.Packages.Where(pkg => pkg.Dependencies.Contains(package.PackageId)).Any();
-                if (!anyPackageReferences) result.Dependencies.Add(package.PackageId);
+                    result.Packages.Any(pkg => pkg.Dependencies.Contains(package.PackageId));
+                if (!anyPackageReferences)
+                    if (package.PackageId != null)
+                        result.Dependencies.Add(package.PackageId);
             }
 
             return result;

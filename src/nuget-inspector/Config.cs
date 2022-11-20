@@ -2,5 +2,5 @@ namespace NugetInspector;
 
 public static class Config
 {
-    public const bool TRACE = false;
+    public static bool TRACE = false;
 }

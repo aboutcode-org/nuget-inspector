@@ -29,7 +29,7 @@ test_env.test_data_dir = str(TEST_DATA_DIR)
 
 NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
-failing_paths = [
+failing_paths = (
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables-resolved/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
@@ -44,7 +44,15 @@ failing_paths = [
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
-]
+    "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.AnsiSql.Tests/DataTables.AspNet.Extensions.AnsiSql.Tests.xproj",
+    "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
+    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
+    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj",
+    "kickoff/KickOff-7a4f83a/src/KickOff.Host.Windows/KickOff.Host.Windows.xproj",
+    "kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj",
+    "kickoff/KickOff-7a4f83a/src/Examples/InternalPreconfiguredPipeline/InternalPreconfiguredPipeline.xproj",
+
+)
 
 
 def get_test_file_paths(base_dir, pattern, excludes=failing_paths):
@@ -54,7 +62,7 @@ def get_test_file_paths(base_dir, pattern, excludes=failing_paths):
     """
     paths = (str(p.relative_to(base_dir)) for p in Path(base_dir).glob(pattern))
     if excludes:
-        paths = [p for p in paths if p not in excludes]
+        paths = [p for p in paths if not p.endswith(excludes)]
     return paths
 
 
@@ -66,7 +74,7 @@ def test_nuget_inspector_end_to_end_with_solutions(test_path, regen=REGEN_TEST_F
     check_nuget_inspector_end_to_end(test_path, regen)
 
 
-project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.??proj")
+project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj")
 
 
 @pytest.mark.parametrize("test_path", project_tests)
@@ -74,7 +82,7 @@ def test_nuget_inspector_end_to_end_with_projects(test_path, regen=REGEN_TEST_FI
     check_nuget_inspector_end_to_end(test_path, regen)
 
 
-@pytest.mark.xfail(reason="Failng tests to review")
+@pytest.mark.xfail(reason="Failing tests to review")
 @pytest.mark.parametrize("test_path", failing_paths)
 def test_nuget_inspector_end_to_end_with_failing(test_path, regen=REGEN_TEST_FIXTURES):
     check_nuget_inspector_end_to_end(test_path, regen)
