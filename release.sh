@@ -15,7 +15,7 @@
 
 rm -rf release/
 
-TARGET=nuget-inspector-0.5.0-linux-x64
+TARGET=nuget-inspector-0.6.0-linux-x64
 RELEASE_DIR=release/$TARGET
 
 mkdir -p $RELEASE_DIR
@@ -24,7 +24,7 @@ dotnet publish \
   --runtime linux-x64 \
   --self-contained true \
   --configuration Release \
-  -p:Version=0.5.0 \
+  -p:Version=0.6.0 \
   --output $RELEASE_DIR \
   src/nuget-inspector/nuget-inspector.csproj
 
