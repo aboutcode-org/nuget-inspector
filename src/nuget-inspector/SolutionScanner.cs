@@ -61,7 +61,7 @@ public class SolutionProjectReference
 }
 
 /// <summary>
-/// Scan a Solution file input (a .sln file)
+/// Scan the projects of an input Solution file (a .sln file)
 /// </summary>
 internal class SolutionFileScanner : IScanner
 {
@@ -90,12 +90,19 @@ internal class SolutionFileScanner : IScanner
     {
         try
         {
+            var package = GetPackage();
+            var packages = new List<Package> { };
+            if (package != null)
+            {
+                packages.Add(package);
+            }
+
             return new Scan
             {
                 Status = Scan.ResultStatus.Success,
                 ResultName = Options.SolutionName,
                 OutputFilePath = Options.OutputFilePath,
-                Packages = new List<Package> { GetPackage() }
+                Packages = packages
             };
         }
         catch (Exception ex)
@@ -111,7 +118,7 @@ internal class SolutionFileScanner : IScanner
 
     public Package? GetPackage()
     {
-        if (Config.TRACE) Console.WriteLine("Processing Solution: " + Options.ProjectFilePath);
+        if (Config.TRACE) Console.WriteLine($"Processing Solution: {Options.ProjectFilePath}");
         var stopwatch = Stopwatch.StartNew();
         var solution = new Package
         {
@@ -138,7 +145,9 @@ internal class SolutionFileScanner : IScanner
                     try
                     {
                         var projectRelativePath = project.Path;
-                        var projectPath = Path.Combine(solutionDirectory ?? string.Empty, projectRelativePath ?? string.Empty).Replace("\\", "/");
+                        var projectPath = Path
+                            .Combine(solutionDirectory ?? string.Empty, projectRelativePath ?? string.Empty)
+                            .Replace("\\", "/");
                         var projectName = project.Name;
                         var projectId = projectName;
                         if (duplicateNames.Contains(projectId))

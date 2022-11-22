@@ -4,29 +4,30 @@ using NuGet.Frameworks;
 using NuGet.Versioning;
 
 namespace NugetInspector;
+
 /// <summary>
 /// Read the .*proj file directly as XML to extract PackageReference as a last resort
 /// </summary>
-internal class ProjectXmlFallBackResolver : IDependencyResolver
+internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
 {
     public const string DatasourceId = "dotnet-project-xml";
     private readonly NuGetFramework? ProjectTargetFramework;
-    private readonly NugetApi nugetApi;
+    private readonly NugetApi NugetApi;
 
     private readonly string ProjectPath;
 
-    public ProjectXmlFallBackResolver(string projectPath, NugetApi nugetApi,
+    public ProjFileXmlParserPackageReferenceHandler(string projectPath, NugetApi nugetApi,
         NuGetFramework? projectTargetFramework)
     {
         ProjectPath = projectPath;
-        this.nugetApi = nugetApi;
+        NugetApi = nugetApi;
         ProjectTargetFramework = projectTargetFramework;
     }
 
     public DependencyResolution Process()
     {
         var result = new DependencyResolution();
-        var tree = new NugetApiResolver(nugetApi);
+        var tree = new NugetApiResolver(NugetApi);
 
         // This is the .NET core default version
         result.ProjectVersion = "1.0.0";
@@ -78,18 +79,23 @@ internal class ProjectXmlFallBackResolver : IDependencyResolver
             }
 
         result.Packages = tree.GetPackageList();
-        result.Dependencies = new List<PackageId?>();
+        result.Dependencies = new List<BasePackage>();
         foreach (var package in result.Packages)
         {
-            var anyPackageReferences = false;
+            var has_references = false;
             foreach (var pkg in result.Packages)
             {
                 if (!pkg.Dependencies.Contains(package.PackageId)) continue;
-                anyPackageReferences = true;
+                has_references = true;
                 break;
             }
-            if (!anyPackageReferences) result.Dependencies.Add(package.PackageId);
+
+            if (!has_references && package.PackageId != null)
+            {
+                result.Dependencies.Add(package.PackageId);
+            }
         }
+
         return result;
     }
 }

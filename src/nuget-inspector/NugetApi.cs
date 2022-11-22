@@ -8,7 +8,6 @@ using NuGet.Versioning;
 
 namespace NugetInspector;
 
-
 /// <summary>
 /// See https://learn.microsoft.com/en-us/nuget/api/overview
 /// </summary>
@@ -57,6 +56,11 @@ public class NugetApi
         return lookupCache[id];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     private List<IPackageSearchMetadata> FindPackagesOnline(string? id)
     {
         var matchingPackages = new List<IPackageSearchMetadata>();
@@ -70,8 +74,8 @@ public class NugetApi
                 var metaResult = metadataResource
                     .GetMetadataAsync(id, true, true, context, new NugetLogger(), CancellationToken.None).Result;
                 if (Config.TRACE)
-                    Console.WriteLine("Took " + stopWatch.ElapsedMilliseconds +
-                                      " ms to communicate with metadata resource about '" + id + "'");
+                    Console.WriteLine(
+                        $"Took {stopWatch.ElapsedMilliseconds} ms to communicate with metadata resource about '{id}'");
                 if (metaResult.Any()) matchingPackages.AddRange(metaResult);
             }
             catch (Exception ex)
@@ -89,23 +93,23 @@ public class NugetApi
                     $"No packages were found for {id}, and an exception occured in one or more meta data resources.");
                 foreach (var ex in exceptions)
                 {
-                    Console.WriteLine("A meta data resource was unable to load it's packages: " + ex.Message);
+                    Console.WriteLine($"A meta data resource was unable to load packages: {ex.Message}");
                     if (ex.InnerException != null)
                     {
-                        Console.WriteLine("The reason: " + ex.InnerException.Message);
+                        Console.WriteLine($"The reason: {ex.InnerException.Message}");
                     }
                 }
             }
 
-            return null;
+            return new List<IPackageSearchMetadata>();
         }
 
-        if (Config.TRACE) Console.WriteLine($"No packages were found for {id} in any meta data resources.");
-        return null;
+        if (Config.TRACE) Console.WriteLine($"No package found for {id} in any meta data resources.");
+        return new List<IPackageSearchMetadata>();
     }
 
     private void CreateResourceLists(
-        List<Lazy<INuGetResourceProvider>> providers, 
+        List<Lazy<INuGetResourceProvider>> providers,
         string nugetApiFeedUrl,
         string nugetConfig)
     {
@@ -113,7 +117,7 @@ public class NugetApi
         {
             if (File.Exists(nugetConfig))
             {
-                var parent = Directory.GetParent(nugetConfig).FullName;
+                var parent = Directory.GetParent(nugetConfig)!.FullName;
                 var nugetFile = Path.GetFileName(nugetConfig);
 
                 if (Config.TRACE) Console.WriteLine($"Loading nuget config {nugetFile} at {parent}.");
@@ -170,13 +174,15 @@ public class NugetApi
             var dependencyInfoResource = sourceRepository.GetResource<DependencyInfoResource>();
             DependencyInfoResourceList.Add(dependencyInfoResource);
             if (Config.TRACE)
-                Console.WriteLine($"Successfully added dependency info resource: {sourceRepository.PackageSource.SourceUri}");
+                Console.WriteLine(
+                    $"Successfully added dependency info resource: {sourceRepository.PackageSource.SourceUri}");
         }
         catch (Exception e)
         {
             if (Config.TRACE)
             {
-                Console.WriteLine($"Error loading NuGet Dependency Resource resource from url: {packageSource.SourceUri}");
+                Console.WriteLine(
+                    $"Error loading NuGet Dependency Resource resource from url: {packageSource.SourceUri}");
                 if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
             }
         }
@@ -197,7 +203,7 @@ public class NugetApi
             {
                 if (Config.TRACE)
                 {
-                    Console.WriteLine("A dependency resource was unable to load for package: " + identity);
+                    Console.WriteLine($"A dependency resource was unable to load for package: {identity}");
                     if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
                 }
             }
@@ -205,7 +211,7 @@ public class NugetApi
         return new List<PackageDependency>();
     }
 
-    private bool FrameworksMatch(PackageDependencyGroup framework1, NugetFramework framework2)
+    private bool FrameworksMatch(PackageDependencyGroup framework1, DotNetFramework framework2)
     {
         if (framework1.TargetFramework.IsAny) return true;
 
@@ -224,13 +230,13 @@ public class NugetApi
     }
 }
 
-public class NugetFramework
+public class DotNetFramework
 {
     public string Identifier;
     public int Major;
     public int Minor;
 
-    public NugetFramework(string id, int major, int minor)
+    public DotNetFramework(string id, int major, int minor)
     {
         Identifier = id;
         Major = major;

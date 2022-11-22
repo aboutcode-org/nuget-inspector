@@ -28,7 +28,7 @@ internal class LegacyProjectJsonHandler : IDependencyResolver
         {
             var set = new PackageSet
             {
-                PackageId = new PackageId(package.Name, package.LibraryRange.VersionRange.OriginalString)
+                PackageId = new BasePackage(package.Name, package.LibraryRange.VersionRange.OriginalString)
             };
             result.Packages.Add(set);
             result.Dependencies.Add(set.PackageId);

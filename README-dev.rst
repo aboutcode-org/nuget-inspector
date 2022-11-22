@@ -8,8 +8,8 @@
 
 To run the tests:
 
-- Run build.sh to create a Linux build
-- Run ./configure once to setup the Python evnvironment used for testing
+- Run ./build.sh to create a Linux build
+- Run ./configure --dev once to setup the Python evnvironment used for testing
 - Run pytest with::
 
      venv/bin/pytest -vvs

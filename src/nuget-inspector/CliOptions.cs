@@ -3,7 +3,6 @@ using Mono.Options;
 
 namespace NugetInspector;
 
-
 public class CliOptions
 {
     [CommandLineArg(key: "project-file", description: "Path to a .NET solution or project file.")]
@@ -64,7 +63,7 @@ public class CliOptions
         optionSet.WriteOptionDescriptions(Console.Error);
     }
 
-    private static  T? GetAttr<T>(FieldInfo field) where T : class
+    private static T? GetAttr<T>(FieldInfo field) where T : class
     {
         var attrs = field.GetCustomAttributes(typeof(T), false);
         if (attrs.Length > 0) return attrs[0] as T;

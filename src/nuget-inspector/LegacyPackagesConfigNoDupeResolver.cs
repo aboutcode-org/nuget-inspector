@@ -3,7 +3,6 @@ using NuGet.Versioning;
 
 namespace NugetInspector;
 
-
 /// <summary>
 /// Resolve using packages.config strategy from: 
 /// See https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
@@ -21,7 +20,7 @@ public class LegacyPackagesConfigNoDupeResolver
         nuget = service;
     }
 
-    private List<VersionRange?> FindAllVersionRangesFor(string? id)
+    private List<VersionRange?> FindAllVersionRangesFor(string id)
     {
         id = id.ToLower();
         var result = new List<VersionRange?>();
@@ -39,26 +38,26 @@ public class LegacyPackagesConfigNoDupeResolver
         var builder = new PackageSetBuilder();
         foreach (var data in resolutionData.Values)
         {
-            var deps = new HashSet<PackageId?>();
+            var deps = new HashSet<BasePackage?>();
             foreach (var dep in data.Dependencies.Keys)
                 if (!resolutionData.ContainsKey(dep))
                     throw new Exception($"Encountered a dependency but was unable to resolve a package for it: {dep}");
                 else
-                    deps.Add(new PackageId(resolutionData[dep].Name,
+                    deps.Add(new BasePackage(resolutionData[dep].Name,
                         resolutionData[dep].CurrentVersion.ToNormalizedString()));
-            builder.AddOrUpdatePackage(new PackageId(data.Name, data.CurrentVersion.ToNormalizedString()), deps);
+            builder.AddOrUpdatePackage(new BasePackage(data.Name, data.CurrentVersion.ToNormalizedString()), deps);
         }
 
         return builder.GetPackageList();
     }
 
-    public void Add(string? id, string? name, VersionRange? range, NuGetFramework? framework)
+    public void Add(string id, string? name, VersionRange? range, NuGetFramework? framework)
     {
         id = id.ToLower();
-        Resolve(id, name, framework, range);
+        Resolve(id: id, name: name, framework: framework, overrideRange: range);
     }
 
-    private void Resolve(string? id, string? name, NuGetFramework? framework = null, VersionRange? overrideRange = null)
+    private void Resolve(string id, string? name, NuGetFramework? framework = null, VersionRange? overrideRange = null)
     {
         id = id.ToLower();
         ResolutionData data;
@@ -88,8 +87,9 @@ public class LegacyPackagesConfigNoDupeResolver
 
         if (best == null)
         {
-            if (Config.TRACE) Console.WriteLine(
-                $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
+            if (Config.TRACE)
+                Console.WriteLine(
+                    $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
             if (data.CurrentVersion == null) data.CurrentVersion = combo.MinVersion;
             return;
         }

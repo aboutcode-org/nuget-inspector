@@ -8,7 +8,7 @@ namespace NugetInspector;
 /// <summary>
 /// See https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files
 /// </summary>
-internal class PackageReferenceResolver : IDependencyResolver
+internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
 {
     public const string DatasourceId = "dotnet-project-reference";
     private readonly NuGetFramework? ProjectTargetFramework;
@@ -16,7 +16,7 @@ internal class PackageReferenceResolver : IDependencyResolver
 
     private readonly string ProjectPath;
 
-    public PackageReferenceResolver(
+    public ProjFileStandardPackageReferenceHandler(
         string projectPath,
         NugetApi nugetApi,
         NuGetFramework? projectTargetFramework)
@@ -44,8 +44,9 @@ internal class PackageReferenceResolver : IDependencyResolver
                 }
                 else
                 {
-                    if (Config.TRACE) Console.WriteLine("Framework dependency had no version, will not be included: " +
-                                                        reference.EvaluatedInclude);
+                    if (Config.TRACE)
+                        Console.WriteLine("Framework dependency had no version, will not be included: " +
+                                          reference.EvaluatedInclude);
                 }
             }
 
@@ -86,7 +87,7 @@ internal class PackageReferenceResolver : IDependencyResolver
             {
                 Success = true,
                 Packages = tree.GetPackageList(),
-                Dependencies = new List<PackageId>()
+                Dependencies = new List<BasePackage>()
             };
 
             foreach (var package in result.Packages)

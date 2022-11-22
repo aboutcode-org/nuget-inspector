@@ -19,6 +19,7 @@ internal static class Program
         {
             exitCode = options.ExitCode;
         }
+
         Environment.Exit(exitCode);
     }
 
@@ -55,6 +56,7 @@ internal static class Program
                         {
                             Console.WriteLine("Scan: " + result.ResultName);
                         }
+
                         if (result.Status == Scan.ResultStatus.Success)
                         {
                             if (Config.TRACE) Console.WriteLine("Scan Result: Success");
@@ -67,10 +69,12 @@ internal static class Program
                             Console.WriteLine("Scan Result: Error");
                             if (result.Exception != null)
                             {
-                                if (Config.TRACE) {
+                                if (Config.TRACE)
+                                {
                                     Console.WriteLine("Exception:");
                                     Console.WriteLine(result.Exception);
                                 }
+
                                 anyFailed = true;
                             }
                         }
@@ -83,6 +87,7 @@ internal static class Program
                             Console.WriteLine(e.Message);
                             Console.WriteLine(e.StackTrace);
                         }
+
                         anyFailed = true;
                     }
         }
@@ -93,7 +98,8 @@ internal static class Program
                 Console.WriteLine("Error iterating inspection results.");
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
-            } 
+            }
+
             anyFailed = true;
         }
 
@@ -104,7 +110,6 @@ internal static class Program
 
     private static ParsedOptions ParseOptions(string[] args)
     {
-        ScanOptions options = null;
         try
         {
             var parsedOptions = CliOptions.ParseArguments(args);
@@ -117,7 +122,7 @@ internal static class Program
             if (string.IsNullOrWhiteSpace(parsedOptions.ProjectFilePath))
                 parsedOptions.ProjectFilePath = Directory.GetCurrentDirectory();
 
-            options = new ScanOptions
+            ScanOptions options = new ScanOptions
             {
                 OutputFilePath = parsedOptions.OutputFilePath,
                 NugetApiFeedUrl = parsedOptions.NugetApiFeedUrl,
@@ -127,7 +132,7 @@ internal static class Program
             };
             if (parsedOptions.Verbose)
             {
-                Config.TRACE=true;
+                Config.TRACE = true;
             }
 
             return ParsedOptions.Succeeded(options);
@@ -140,6 +145,7 @@ internal static class Program
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }
+
             return ParsedOptions.Failed();
         }
     }
@@ -147,15 +153,16 @@ internal static class Program
     private class ParsedOptions
     {
         public int ExitCode;
-        public ScanOptions Options;
+        public ScanOptions Options = null!;
         public bool Success;
 
         public static ParsedOptions Failed(int exitCode = -1)
         {
             return new ParsedOptions
             {
-                Success = false,
-                ExitCode = exitCode
+                ExitCode = exitCode,
+                Options = new ScanOptions(),
+                Success = false
             };
         }
 
@@ -163,8 +170,8 @@ internal static class Program
         {
             return new ParsedOptions
             {
-                Success = true,
-                Options = options
+                Options = options,
+                Success = true
             };
         }
     }

@@ -34,10 +34,7 @@ internal class InputScanner
             else
             {
                 if (Config.TRACE) Console.WriteLine("No Solution file found.  Searching for a project file...");
-                var projectPaths = (ProjectFileScanner.SupportedProjectGlobs
-                    .SelectMany(pattern =>
-                        Directory.GetFiles(options.ProjectFilePath, pattern, SearchOption.AllDirectories))
-                    .Distinct().ToArray());
+                var projectPaths = Directory.GetFiles(options.ProjectFilePath, "*.*proj", SearchOption.AllDirectories);
                 if (projectPaths.Length > 0)
                     foreach (var projectPath in projectPaths)
                     {

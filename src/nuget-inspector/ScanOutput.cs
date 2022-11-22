@@ -7,7 +7,6 @@ public class ScanOutput
     public string tool_name = "nuget-inspector";
     public string tool_version = "0.5.0";
     [JsonProperty("packages")] public List<Package?> Packages = new();
-
 }
 
 internal class OutputFormatJson
@@ -18,8 +17,10 @@ internal class OutputFormatJson
     public OutputFormatJson(Scan result)
     {
         Result = result;
-        scanOutput = new ScanOutput();
-        scanOutput.Packages = result.Packages;
+        scanOutput = new ScanOutput
+        {
+            Packages = result.Packages!
+        };
     }
 
     public string? OutputFilePath()
@@ -35,7 +36,7 @@ internal class OutputFormatJson
     public void Write(string? outputFilePath)
     {
         if (Config.TRACE) Console.WriteLine("Creating output file path: " + outputFilePath);
-        using (var fs = new FileStream(outputFilePath, FileMode.Create))
+        using (var fs = new FileStream(outputFilePath!, FileMode.Create))
         {
             using (var sw = new StreamWriter(fs))
             {

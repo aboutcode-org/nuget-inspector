@@ -24,20 +24,22 @@ public class NugetApiResolver
 
     public void Add(Dependency packageDependency)
     {
-        IPackageSearchMetadata? package = nugetApi.FindPackageVersion(packageDependency.Name, packageDependency.VersionRange);
+        IPackageSearchMetadata? package =
+            nugetApi.FindPackageVersion(packageDependency.Name, packageDependency.VersionRange);
         if (package == null)
         {
             var version = packageDependency.VersionRange?.MinVersion.ToNormalizedString();
-            if (Config.TRACE) Console.WriteLine(
-                $"Nuget failed to find package: '{packageDependency.Name}' " 
-                + $"with version range: '{packageDependency.VersionRange}', "
-                + $"assuming instead version: '{version}'");
-            builder.AddOrUpdatePackage(id: new PackageId(packageDependency.Name, version));
+            if (Config.TRACE)
+                Console.WriteLine(
+                    $"Nuget failed to find package: '{packageDependency.Name}' "
+                    + $"with version range: '{packageDependency.VersionRange}', "
+                    + $"assuming instead version: '{version}'");
+            builder.AddOrUpdatePackage(id: new BasePackage(packageDependency.Name, version));
             return;
         }
 
-        var packageId = new PackageId(packageDependency.Name, package.Identity.Version.ToNormalizedString());
-        var dependencies = new HashSet<PackageId?>();
+        var packageId = new BasePackage(packageDependency.Name, package.Identity.Version.ToNormalizedString());
+        var dependencies = new HashSet<BasePackage?>();
 
         var packages = nugetApi.DependenciesForPackage(package.Identity, packageDependency.Framework);
 
@@ -46,7 +48,7 @@ public class NugetApiResolver
             var bestExisting = builder.GetResolvedVersion(dependency.Id, dependency.VersionRange);
             if (bestExisting != null)
             {
-                var id = new PackageId(dependency.Id, bestExisting);
+                var id = new BasePackage(dependency.Id, bestExisting);
                 dependencies.Add(id);
             }
             else
@@ -54,12 +56,13 @@ public class NugetApiResolver
                 var depPackage = nugetApi.FindPackageVersion(dependency.Id, dependency.VersionRange);
                 if (depPackage == null)
                 {
-                    if (Config.TRACE) Console.WriteLine(
-                        $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                    if (Config.TRACE)
+                        Console.WriteLine(
+                            $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
                     continue;
                 }
 
-                var id = new PackageId(depPackage.Identity.Id, depPackage.Identity.Version.ToNormalizedString());
+                var id = new BasePackage(depPackage.Identity.Id, depPackage.Identity.Version.ToNormalizedString());
                 dependencies.Add(id);
 
                 if (!builder.DoesPackageExist(id))

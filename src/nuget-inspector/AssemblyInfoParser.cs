@@ -1,6 +1,5 @@
 ﻿namespace NugetInspector;
 
-
 /// <summary>
 /// Extract version from an AssemblyInfo.cs file
 /// https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/general/assembly-version-assembly-file-version
@@ -85,7 +84,9 @@ public class AssemblyInfoParser
         }
         catch (Exception e)
         {
-            if (Config.TRACE) Console.WriteLine("Failed to collect AssemblyInfo version for project: " + projectDirectory + e.Message);
+            if (Config.TRACE)
+                Console.WriteLine("Failed to collect AssemblyInfo version for project: " + projectDirectory +
+                                  e.Message);
         }
 
         return null;

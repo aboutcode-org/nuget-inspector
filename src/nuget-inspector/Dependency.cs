@@ -31,7 +31,7 @@ public class Dependency
     {
         var packageSet = new PackageSet
         {
-            PackageId = new PackageId(Name, VersionRange?.MinVersion.ToNormalizedString(), Framework?.ToString())
+            PackageId = new BasePackage(Name, VersionRange?.MinVersion.ToNormalizedString(), Framework?.ToString())
         };
         return packageSet;
     }
