@@ -51,7 +51,6 @@ failing_paths = (
     "kickoff/KickOff-7a4f83a/src/KickOff.Host.Windows/KickOff.Host.Windows.xproj",
     "kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj",
     "kickoff/KickOff-7a4f83a/src/Examples/InternalPreconfiguredPipeline/InternalPreconfiguredPipeline.xproj",
-
 )
 
 
