@@ -17,10 +17,10 @@ internal class PackagesConfigHandler : IDependencyResolver
 
     private readonly string PackagesConfigPath;
 
-    public PackagesConfigHandler(string packagesConfigPath, NugetApi nugetApi)
+    public PackagesConfigHandler(string packages_config_path, NugetApi nuget_api)
     {
-        PackagesConfigPath = packagesConfigPath;
-        this.nugetApi = nugetApi;
+        PackagesConfigPath = packages_config_path;
+        this.nugetApi = nuget_api;
     }
 
     public DependencyResolution Process()
@@ -33,11 +33,10 @@ internal class PackagesConfigHandler : IDependencyResolver
         result.Dependencies = new List<BasePackage?>();
         foreach (var package in result.Packages)
         {
-            var anyPackageReferences = result.Packages.Where(predicate: pkg => pkg.Dependencies.Contains(item: package.PackageId)).Any();
-            if (!anyPackageReferences && package.PackageId != null)
+            var has_package_references = result.Packages.Where(predicate: pkg => pkg.Dependencies.Contains(item: package.PackageId)).Any();
+            if (!has_package_references && package.PackageId != null)
                 result.Dependencies.Add(item: package.PackageId);
         }
-
         return result;
     }
 
@@ -61,10 +60,9 @@ internal class PackagesConfigHandler : IDependencyResolver
             );
             var framework = NuGetFramework.Parse(folderName: packageRef.TargetFramework.Framework);
 
-            var dep = new Dependency(name: name, versionRange: range, framework: framework);
+            var dep = new Dependency(name: name, version_range: range, framework: framework);
             dependencies.Add(item: dep);
         }
-
         return dependencies;
     }
 
@@ -79,18 +77,19 @@ internal class PackagesConfigHandler : IDependencyResolver
         catch (Exception flatException)
         {
             if (Config.TRACE)
-                Console.WriteLine(value: "There was an issue processing packages.config as flat: " + flatException.Message);
+                Console.WriteLine(value:
+                    $"There was an issue processing packages.config as flat: {flatException.Message}");
             try
             {
-                var treeResolver = new NugetApiResolver(nugetApi: nugetApi);
-                treeResolver.AddAll(packages: dependencies);
-                return treeResolver.GetPackageList();
+                var resolver = new NugetApiResolver(nugetApi: nugetApi);
+                resolver.AddAll(packages: dependencies);
+                return resolver.GetPackageList();
             }
             catch (Exception treeException)
             {
                 if (Config.TRACE)
-                    Console.WriteLine(value: "There was an issue processing packages.config as a tree: " +
-                                             treeException.Message);
+                    Console.WriteLine(value:
+                        $"There was an issue processing packages.config as a tree: {treeException.Message}");
                 var packages = new List<PackageSet>(collection: dependencies.Select(selector: dependency => dependency.ToEmptyPackageSet()));
                 return packages;
             }

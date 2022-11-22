@@ -27,25 +27,25 @@ public class LegacyPackagesConfigNoDupeResolver
         foreach (var pkg in resolutionData.Values)
         foreach (var depPair in pkg.Dependencies)
             if (depPair.Key == id)
-                result.Add(depPair.Value);
+                result.Add(item: depPair.Value);
         return result;
     }
 
     public List<PackageSet> ProcessAll(List<Dependency> packages)
     {
-        foreach (var package in packages) Add(package.Name, package.Name, package.VersionRange, package.Framework);
+        foreach (var package in packages) Add(id: package.Name, name: package.Name, range: package.VersionRange, framework: package.Framework);
 
         var builder = new PackageSetBuilder();
         foreach (var data in resolutionData.Values)
         {
             var deps = new HashSet<BasePackage?>();
             foreach (var dep in data.Dependencies.Keys)
-                if (!resolutionData.ContainsKey(dep))
-                    throw new Exception($"Encountered a dependency but was unable to resolve a package for it: {dep}");
+                if (!resolutionData.ContainsKey(key: dep))
+                    throw new Exception(message: $"Encountered a dependency but was unable to resolve a package for it: {dep}");
                 else
-                    deps.Add(new BasePackage(resolutionData[dep].Name,
-                        resolutionData[dep].CurrentVersion.ToNormalizedString()));
-            builder.AddOrUpdatePackage(new BasePackage(data.Name, data.CurrentVersion.ToNormalizedString()), deps);
+                    deps.Add(item: new BasePackage(name: resolutionData[key: dep].Name,
+                        version: resolutionData[key: dep].CurrentVersion.ToNormalizedString()));
+            builder.AddOrUpdatePackage(id: new BasePackage(name: data.Name, version: data.CurrentVersion.ToNormalizedString()), dependencies: deps);
         }
 
         return builder.GetPackageList();
@@ -61,15 +61,15 @@ public class LegacyPackagesConfigNoDupeResolver
     {
         id = id.ToLower();
         ResolutionData data;
-        if (resolutionData.ContainsKey(id))
+        if (resolutionData.ContainsKey(key: id))
         {
-            data = resolutionData[id];
+            data = resolutionData[key: id];
             if (overrideRange != null)
             {
                 if (data.ExternalVersionRange == null)
                     data.ExternalVersionRange = overrideRange;
                 else
-                    throw new Exception("Can't set more than one external version range.");
+                    throw new Exception(message: "Can't set more than one external version range.");
             }
         }
         else
@@ -77,19 +77,19 @@ public class LegacyPackagesConfigNoDupeResolver
             data = new ResolutionData();
             data.ExternalVersionRange = overrideRange;
             data.Name = name;
-            resolutionData[id] = data;
+            resolutionData[key: id] = data;
         }
 
-        var allVersions = FindAllVersionRangesFor(id);
-        if (data.ExternalVersionRange != null) allVersions.Add(data.ExternalVersionRange);
-        var combo = VersionRange.CommonSubSet(allVersions);
-        var best = nuget.FindPackageVersion(id, combo);
+        var allVersions = FindAllVersionRangesFor(id: id);
+        if (data.ExternalVersionRange != null) allVersions.Add(item: data.ExternalVersionRange);
+        var combo = VersionRange.CommonSubSet(ranges: allVersions);
+        var best = nuget.FindPackageVersion(id: id, versionRange: combo);
 
         if (best == null)
         {
             if (Config.TRACE)
                 Console.WriteLine(
-                    $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
+                    value: $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
             if (data.CurrentVersion == null) data.CurrentVersion = combo.MinVersion;
             return;
         }
@@ -99,12 +99,12 @@ public class LegacyPackagesConfigNoDupeResolver
         data.CurrentVersion = best.Identity.Version;
         data.Dependencies.Clear();
 
-        var packages = nuget.DependenciesForPackage(best.Identity, framework);
+        var packages = nuget.DependenciesForPackage(identity: best.Identity, framework: framework);
         foreach (var dependency in packages)
-            if (!data.Dependencies.ContainsKey(dependency.Id.ToLower()))
+            if (!data.Dependencies.ContainsKey(key: dependency.Id.ToLower()))
             {
-                data.Dependencies.Add(dependency.Id.ToLower(), dependency.VersionRange);
-                Resolve(dependency.Id.ToLower(), dependency.Id, framework);
+                data.Dependencies.Add(key: dependency.Id.ToLower(), value: dependency.VersionRange);
+                Resolve(id: dependency.Id.ToLower(), name: dependency.Id, framework: framework);
             }
     }
 

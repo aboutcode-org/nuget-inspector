@@ -19,58 +19,57 @@ public class NugetApiResolver
 
     public void AddAll(List<Dependency> packages)
     {
-        foreach (var package in packages) Add(package);
+        foreach (var package in packages) Add(packageDependency: package);
     }
 
     public void Add(Dependency packageDependency)
     {
         IPackageSearchMetadata? package =
-            nugetApi.FindPackageVersion(packageDependency.Name, packageDependency.VersionRange);
+            nugetApi.FindPackageVersion(id: packageDependency.Name, versionRange: packageDependency.VersionRange);
         if (package == null)
         {
             var version = packageDependency.VersionRange?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
                 Console.WriteLine(
-                    $"Nuget failed to find package: '{packageDependency.Name}' "
-                    + $"with version range: '{packageDependency.VersionRange}', "
-                    + $"assuming instead version: '{version}'");
-            builder.AddOrUpdatePackage(id: new BasePackage(packageDependency.Name, version));
+                    value:
+                    $"Nuget failed to find package: '{packageDependency.Name}' with version range: '{packageDependency.VersionRange}', assuming instead version: '{version}'");
+            builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.Name, version: version));
             return;
         }
 
-        var packageId = new BasePackage(packageDependency.Name, package.Identity.Version.ToNormalizedString());
+        var packageId = new BasePackage(name: packageDependency.Name, version: package.Identity.Version.ToNormalizedString());
         var dependencies = new HashSet<BasePackage?>();
 
-        var packages = nugetApi.DependenciesForPackage(package.Identity, packageDependency.Framework);
+        var packages = nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.Framework);
 
         foreach (var dependency in packages)
         {
-            var bestExisting = builder.GetResolvedVersion(dependency.Id, dependency.VersionRange);
+            var bestExisting = builder.GetResolvedVersion(name: dependency.Id, range: dependency.VersionRange);
             if (bestExisting != null)
             {
-                var id = new BasePackage(dependency.Id, bestExisting);
-                dependencies.Add(id);
+                var id = new BasePackage(name: dependency.Id, version: bestExisting);
+                dependencies.Add(item: id);
             }
             else
             {
-                var depPackage = nugetApi.FindPackageVersion(dependency.Id, dependency.VersionRange);
+                var depPackage = nugetApi.FindPackageVersion(id: dependency.Id, versionRange: dependency.VersionRange);
                 if (depPackage == null)
                 {
                     if (Config.TRACE)
                         Console.WriteLine(
-                            $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                            value: $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
                     continue;
                 }
 
-                var id = new BasePackage(depPackage.Identity.Id, depPackage.Identity.Version.ToNormalizedString());
-                dependencies.Add(id);
+                var id = new BasePackage(name: depPackage.Identity.Id, version: depPackage.Identity.Version.ToNormalizedString());
+                dependencies.Add(item: id);
 
-                if (!builder.DoesPackageExist(id))
-                    Add(new Dependency(dependency.Id, dependency.VersionRange, packageDependency.Framework));
+                if (!builder.DoesPackageExist(id: id))
+                    Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange, framework: packageDependency.Framework));
             }
         }
 
 
-        builder.AddOrUpdatePackage(packageId, dependencies);
+        builder.AddOrUpdatePackage(id: packageId, dependencies: dependencies);
     }
 }

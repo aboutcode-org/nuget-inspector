@@ -6,7 +6,7 @@ public class ScanOutput
 {
     public string tool_name = "nuget-inspector";
     public string tool_version = "0.5.0";
-    [JsonProperty("packages")] public List<Package?> Packages = new();
+    [JsonProperty(propertyName: "packages")] public List<Package?> Packages = new();
 }
 
 internal class OutputFormatJson
@@ -30,21 +30,21 @@ internal class OutputFormatJson
 
     public void Write()
     {
-        Write(Result.OutputFilePath);
+        Write(outputFilePath: Result.OutputFilePath);
     }
 
     public void Write(string? outputFilePath)
     {
-        if (Config.TRACE) Console.WriteLine("Creating output file path: " + outputFilePath);
-        using (var fs = new FileStream(outputFilePath!, FileMode.Create))
+        if (Config.TRACE) Console.WriteLine(value: $"Creating output file path: {outputFilePath}");
+        using (var fs = new FileStream(path: outputFilePath!, mode: FileMode.Create))
         {
-            using (var sw = new StreamWriter(fs))
+            using (var sw = new StreamWriter(stream: fs))
             {
                 var serializer = new JsonSerializer();
                 serializer.NullValueHandling = NullValueHandling.Ignore;
-                var writer = new JsonTextWriter(sw);
+                var writer = new JsonTextWriter(textWriter: sw);
                 serializer.Formatting = Formatting.Indented;
-                serializer.Serialize(writer, scanOutput);
+                serializer.Serialize(jsonWriter: writer, value: scanOutput);
             }
         }
     }

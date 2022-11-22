@@ -11,14 +11,15 @@ public class AssemblyInfoParser
 {
     public class AssemblyVersion
     {
+
+        public string? Version { get; }
+        public string Path { get; }
+
         public AssemblyVersion(string? version, string path)
         {
             this.Version = version;
             this.Path = path;
         }
-
-        public string? Version { get; }
-        public string Path { get; }
 
         /// <summary>
         /// Return an AssemblyVersion from an AssemblyInfo.cs
@@ -28,67 +29,65 @@ public class AssemblyInfoParser
         /// <returns></returns>
         public static AssemblyVersion? ParseVersion(string path)
         {
-            var lines = new List<string>(File.ReadAllLines(path));
-            lines = lines.FindAll(text => !text.Contains("//"));
+            var lines = new List<string>(collection: File.ReadAllLines(path: path));
+            lines = lines.FindAll(match: text => !text.Contains(value: "//"));
             // Search first for AssemblyFileVersion
-            var versionLines = lines.FindAll(text => text.Contains("AssemblyFileVersion"));
+            var version_lines = lines.FindAll(match: text => text.Contains(value: "AssemblyFileVersion"));
             // The fallback to AssemblyVersion
-            if (versionLines.Count == 0)
-                versionLines = lines.FindAll(text => text.Contains("AssemblyVersion"));
+            if (version_lines.Count == 0)
+                version_lines = lines.FindAll(match: text => text.Contains(value: "AssemblyVersion"));
 
-            foreach (var text in versionLines)
+            foreach (var text in version_lines)
             {
-                var versionLine = text.Trim();
+                var version_line = text.Trim();
                 // the form is [assembly: AssemblyVersion("1.0.0.0")]
-                var start = versionLine.IndexOf("(", StringComparison.Ordinal) + 2;
-                var end = versionLine.LastIndexOf(")", StringComparison.Ordinal) - 1 - start;
-                var version = versionLine.Substring(start, end);
-                if (Config.TRACE) Console.WriteLine($"Assembly version '{version}' in '{path}'.");
-                return new AssemblyVersion(version, path);
+                var start = version_line.IndexOf(value: "(", comparisonType: StringComparison.Ordinal) + 2;
+                var end = version_line.LastIndexOf(value: ")", comparisonType: StringComparison.Ordinal) - 1 - start;
+                var version = version_line.Substring(startIndex: start, length: end);
+                if (Config.TRACE) Console.WriteLine(value: $"Assembly version '{version}' in '{path}'.");
+                return new AssemblyVersion(version: version, path: path);
             }
-
             return null;
         }
     }
 
     /// <summary>
-    /// Return a version string or nul.
+    /// Return a version string or nul from reading an AssemblyInfo file somewhere in the project tree. 
     /// </summary>
-    /// <param name="projectDirectory"></param>
+    /// <param name="project_directory"></param>
     /// <returns></returns>
-    public static string? GetProjectAssemblyVersion(string? projectDirectory)
+    public static string? GetProjectAssemblyVersion(string? project_directory)
     {
         try
         {
             List<AssemblyVersion?> results = Directory
-                .GetFiles(projectDirectory, "*AssemblyInfo.*", SearchOption.AllDirectories).ToList()
-                .Select(path =>
+                .GetFiles(path: project_directory, searchPattern: "*AssemblyInfo.*", searchOption: SearchOption.AllDirectories).ToList()
+                .Select(selector: path =>
                 {
-                    if (!path.EndsWith(".obj") && File.Exists(path))
+                    if (!path.EndsWith(value: ".obj") && File.Exists(path: path))
                     {
-                        return AssemblyVersion.ParseVersion(path);
+                        return AssemblyVersion.ParseVersion(path: path);
                     }
 
                     return null;
                 })
-                .Where(it => it != null)
+                .Where(predicate: it => it != null)
                 .ToList();
 
             if (results.Count > 0)
             {
                 var selected = results.First();
                 if (selected is null) return null;
-                if (Config.TRACE) Console.WriteLine($"Selected version '{selected.Version}' from '{selected.Path}'.");
+                if (Config.TRACE) Console.WriteLine(value: $"Selected version '{selected.Version}' from '{selected.Path}'.");
                 return selected.Version;
             }
         }
         catch (Exception e)
         {
             if (Config.TRACE)
-                Console.WriteLine("Failed to collect AssemblyInfo version for project: " + projectDirectory +
-                                  e.Message);
+                Console.WriteLine(value:
+                    $"Failed to collect AssemblyInfo version for project: {project_directory}{e.Message}");
         }
-
         return null;
     }
 }

@@ -29,28 +29,28 @@ public class CliOptions
 
         foreach (var field in typeof(CliOptions).GetFields())
         {
-            var attr = GetAttr<CommandLineArgAttribute>(field);
+            var attr = GetAttr<CommandLineArgAttribute>(field: field);
             if (attr != null)
-                commandOptions.Add($"{attr.Key}=", attr.Description, value => { field.SetValue(result, value); });
+                commandOptions.Add(prototype: $"{attr.Key}=", description: attr.Description, action: value => { field.SetValue(obj: result, value: value); });
         }
 
-        commandOptions.Add("h|help", "Show this message and exit.", value => result.ShowHelp = value != null);
-        commandOptions.Add("v|verbose", "Display more verbose output.", value => result.Verbose = value != null);
+        commandOptions.Add(prototype: "h|help", description: "Show this message and exit.", action: value => result.ShowHelp = value != null);
+        commandOptions.Add(prototype: "v|verbose", description: "Display more verbose output.", action: value => result.Verbose = value != null);
 
         try
         {
-            commandOptions.Parse(args);
+            commandOptions.Parse(arguments: args);
         }
         catch (OptionException)
         {
-            ShowHelpMessage("Error: Unexpected extra argument or option. usage is: nuget-inspector [OPTIONS]",
-                commandOptions);
+            ShowHelpMessage(message: "Error: Unexpected extra argument or option. usage is: nuget-inspector [OPTIONS]",
+                optionSet: commandOptions);
             return null;
         }
 
         if (result.ShowHelp)
         {
-            ShowHelpMessage("Usage: nuget-inspector [OPTIONS]", commandOptions);
+            ShowHelpMessage(message: "Usage: nuget-inspector [OPTIONS]", optionSet: commandOptions);
             return null;
         }
 
@@ -59,13 +59,13 @@ public class CliOptions
 
     private static void ShowHelpMessage(string message, OptionSet optionSet)
     {
-        Console.Error.WriteLine(message);
-        optionSet.WriteOptionDescriptions(Console.Error);
+        Console.Error.WriteLine(value: message);
+        optionSet.WriteOptionDescriptions(o: Console.Error);
     }
 
     private static T? GetAttr<T>(FieldInfo field) where T : class
     {
-        var attrs = field.GetCustomAttributes(typeof(T), false);
+        var attrs = field.GetCustomAttributes(attributeType: typeof(T), inherit: false);
         if (attrs.Length > 0) return attrs[0] as T;
         return null;
     }

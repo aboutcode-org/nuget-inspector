@@ -36,27 +36,27 @@ public class SolutionProjectReference
     /// <returns></returns>
     public static SolutionProjectReference? Parse(string projectLine)
     {
-        var equalSplit = projectLine.Split('=').Select(s => s.Trim()).ToList();
+        var equalSplit = projectLine.Split(separator: '=').Select(selector: s => s.Trim()).ToList();
         if (equalSplit.Count() < 2) return null;
 
         var file = new SolutionProjectReference();
-        var leftSide = equalSplit[0];
-        var rightSide = equalSplit[1];
-        if (leftSide.StartsWith("Project(\"") && leftSide.EndsWith("\")"))
-            file.TypeGUID = MiddleOfString(leftSide, "Project(\"".Length, "\")".Length);
-        var opts = rightSide.Split(',').Select(s => s.Trim()).ToList();
+        var leftSide = equalSplit[index: 0];
+        var rightSide = equalSplit[index: 1];
+        if (leftSide.StartsWith(value: "Project(\"") && leftSide.EndsWith(value: "\")"))
+            file.TypeGUID = MiddleOfString(source: leftSide, fromLeft: "Project(\"".Length, fromRight: "\")".Length);
+        var opts = rightSide.Split(separator: ',').Select(selector: s => s.Trim()).ToList();
         //strip quotes
-        if (opts.Any()) file.Name = MiddleOfString(opts[0], 1, 1);
-        if (opts.Count() >= 2) file.Path = MiddleOfString(opts[1], 1, 1);
-        if (opts.Count() >= 3) file.GUID = MiddleOfString(opts[2], 1, 1);
+        if (opts.Any()) file.Name = MiddleOfString(source: opts[index: 0], fromLeft: 1, fromRight: 1);
+        if (opts.Count() >= 2) file.Path = MiddleOfString(source: opts[index: 1], fromLeft: 1, fromRight: 1);
+        if (opts.Count() >= 3) file.GUID = MiddleOfString(source: opts[index: 2], fromLeft: 1, fromRight: 1);
 
         return file;
     }
 
     private static string MiddleOfString(string source, int fromLeft, int fromRight)
     {
-        var left = source.Substring(fromLeft);
-        return left.Substring(0, left.Length - fromRight);
+        var left = source.Substring(startIndex: fromLeft);
+        return left.Substring(startIndex: 0, length: left.Length - fromRight);
     }
 }
 
@@ -74,16 +74,16 @@ internal class SolutionFileScanner : IScanner
     {
         Options = options;
         NugetService = nugetService;
-        if (Options == null) throw new Exception("Must provide a valid options object.");
+        if (Options == null) throw new Exception(message: "Must provide a valid options object.");
 
-        if (string.IsNullOrWhiteSpace(Options.OutputFilePath))
+        if (string.IsNullOrWhiteSpace(value: Options.OutputFilePath))
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            Options.OutputFilePath = Path.Combine(currentDirectory, "nuget-inpector-results.json").Replace("\\", "/");
+            Options.OutputFilePath = Path.Combine(path1: currentDirectory, path2: "nuget-inpector-results.json").Replace(oldValue: "\\", newValue: "/");
         }
 
-        if (string.IsNullOrWhiteSpace(Options.SolutionName))
-            Options.SolutionName = Path.GetFileNameWithoutExtension(Options.ProjectFilePath);
+        if (string.IsNullOrWhiteSpace(value: Options.SolutionName))
+            Options.SolutionName = Path.GetFileNameWithoutExtension(path: Options.ProjectFilePath);
     }
 
     public Scan RunScan()
@@ -94,7 +94,7 @@ internal class SolutionFileScanner : IScanner
             var packages = new List<Package> { };
             if (package != null)
             {
-                packages.Add(package);
+                packages.Add(item: package);
             }
 
             return new Scan
@@ -107,7 +107,7 @@ internal class SolutionFileScanner : IScanner
         }
         catch (Exception ex)
         {
-            if (Config.TRACE) Console.WriteLine("{0}", ex);
+            if (Config.TRACE) Console.WriteLine(format: "{0}", arg0: ex);
             return new Scan
             {
                 Status = Scan.ResultStatus.Error,
@@ -118,7 +118,7 @@ internal class SolutionFileScanner : IScanner
 
     public Package? GetPackage()
     {
-        if (Config.TRACE) Console.WriteLine($"Processing Solution: {Options.ProjectFilePath}");
+        if (Config.TRACE) Console.WriteLine(value: $"Processing Solution: {Options.ProjectFilePath}");
         var stopwatch = Stopwatch.StartNew();
         var solution = new Package
         {
@@ -129,85 +129,85 @@ internal class SolutionFileScanner : IScanner
         };
         try
         {
-            var projectFiles = FindProjectFilesFromSolutionFile(Options.ProjectFilePath);
-            if (Config.TRACE) Console.WriteLine("Parsed Solution File");
+            var projectFiles = FindProjectFilesFromSolutionFile(solutionPath: Options.ProjectFilePath);
+            if (Config.TRACE) Console.WriteLine(value: "Parsed Solution File");
             if (projectFiles.Count > 0)
             {
-                var solutionDirectory = Path.GetDirectoryName(Options.ProjectFilePath);
-                if (Config.TRACE) Console.WriteLine("Solution directory: {0}", solutionDirectory);
+                var solutionDirectory = Path.GetDirectoryName(path: Options.ProjectFilePath);
+                if (Config.TRACE) Console.WriteLine(format: "Solution directory: {0}", arg0: solutionDirectory);
 
                 var duplicateNames = projectFiles
-                    .GroupBy(project => project.Name)
-                    .Where(group => group.Count() > 1)
-                    .Select(group => group.Key);
+                    .GroupBy(keySelector: project => project.Name)
+                    .Where(predicate: group => group.Count() > 1)
+                    .Select(selector: group => group.Key);
 
                 foreach (var project in projectFiles)
                     try
                     {
                         var projectRelativePath = project.Path;
                         var projectPath = Path
-                            .Combine(solutionDirectory ?? string.Empty, projectRelativePath ?? string.Empty)
-                            .Replace("\\", "/");
+                            .Combine(path1: solutionDirectory ?? string.Empty, path2: projectRelativePath ?? string.Empty)
+                            .Replace(oldValue: "\\", newValue: "/");
                         var projectName = project.Name;
                         var projectId = projectName;
-                        if (duplicateNames.Contains(projectId))
+                        if (duplicateNames.Contains(value: projectId))
                         {
                             if (Config.TRACE)
-                                Console.WriteLine($"Duplicate project name '{projectId}' found. Using GUID instead.");
+                                Console.WriteLine(value: $"Duplicate project name '{projectId}' found. Using GUID instead.");
                             projectId = project.GUID;
                         }
 
                         bool projectFileExists;
                         try
                         {
-                            projectFileExists = File.Exists(projectPath);
+                            projectFileExists = File.Exists(path: projectPath);
                         }
                         catch (Exception)
                         {
                             // TODO: this should reported in the scan output
-                            if (Config.TRACE) Console.WriteLine($"Skipping missing project file: {projectPath}");
+                            if (Config.TRACE) Console.WriteLine(value: $"Skipping missing project file: {projectPath}");
                             continue;
                         }
 
                         if (!projectFileExists)
                         {
-                            if (Config.TRACE) Console.WriteLine($"Skipping non-existent project path: {projectPath}");
+                            if (Config.TRACE) Console.WriteLine(value: $"Skipping non-existent project path: {projectPath}");
                             continue;
                         }
 
-                        var projectScanner = new ProjectFileScanner(new ProjectScannerOptions(Options)
+                        var projectScanner = new ProjectFileScanner(options: new ProjectScannerOptions(old: Options)
                         {
                             ProjectName = projectName,
                             ProjectUniqueId = projectId,
                             ProjectFilePath = projectPath
-                        }, NugetService);
+                        }, nugetApiService: NugetService);
 
                         var scan = projectScanner.RunScan();
                         if (scan.Packages != null)
-                            solution.Children.AddRange(scan.Packages);
+                            solution.Children.AddRange(collection: scan.Packages);
                     }
                     catch (Exception ex)
                     {
-                        if (Config.TRACE) Console.WriteLine(ex.ToString());
+                        if (Config.TRACE) Console.WriteLine(value: ex.ToString());
                         throw;
                     }
             }
             else
             {
-                if (Config.TRACE) Console.WriteLine("No project data found for solution {0}", Options.ProjectFilePath);
+                if (Config.TRACE) Console.WriteLine(format: "No project data found for solution {0}", arg0: Options.ProjectFilePath);
             }
         }
         catch (Exception ex)
         {
-            if (Config.TRACE) Console.WriteLine(ex.ToString());
+            if (Config.TRACE) Console.WriteLine(value: ex.ToString());
             throw;
         }
 
         if (solution.Children.Any())
             if (Config.TRACE)
-                Console.WriteLine("Found " + solution.Children.Count + " children.");
-        if (Config.TRACE) Console.WriteLine("Finished processing solution: " + Options.ProjectFilePath);
-        if (Config.TRACE) Console.WriteLine("Took " + stopwatch.ElapsedMilliseconds + " ms to process.");
+                Console.WriteLine(value: $"Found {solution.Children.Count} children.");
+        if (Config.TRACE) Console.WriteLine(value: $"Finished processing solution: {Options.ProjectFilePath}");
+        if (Config.TRACE) Console.WriteLine(value: $"Took {stopwatch.ElapsedMilliseconds} ms to process.");
         return solution;
     }
 
@@ -216,23 +216,23 @@ internal class SolutionFileScanner : IScanner
         var projects = new List<SolutionProjectReference>();
         // Visual Studio right now is not resolving the Microsoft.Build.Construction.SolutionFile type
         // parsing the solution file manually for now.
-        if (File.Exists(solutionPath))
+        if (File.Exists(path: solutionPath))
         {
-            var contents = new List<string>(File.ReadAllLines(solutionPath));
-            var projectLines = contents.FindAll(text => text.StartsWith("Project("));
+            var contents = new List<string>(collection: File.ReadAllLines(path: solutionPath));
+            var projectLines = contents.FindAll(match: text => text.StartsWith(value: "Project("));
             foreach (var projectText in projectLines)
             {
-                var file = SolutionProjectReference.Parse(projectText);
-                if (file != null) projects.Add(file);
+                var file = SolutionProjectReference.Parse(projectLine: projectText);
+                if (file != null) projects.Add(item: file);
             }
 
             if (Config.TRACE)
-                Console.WriteLine("Nuget Inspector found {0} project elements, processed {1} project elements for data",
-                    projectLines.Count(), projects.Count());
+                Console.WriteLine(format: "Nuget Inspector found {0} project elements, processed {1} project elements for data",
+                    arg0: projectLines.Count(), arg1: projects.Count());
         }
         else
         {
-            throw new Exception("Solution File " + solutionPath + " not found");
+            throw new Exception(message: $"Solution File {solutionPath} not found");
         }
 
         return projects;

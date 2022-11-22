@@ -8,11 +8,11 @@ internal static class Program
     {
         RegisterMSBuild();
         var exitCode = 0;
-        var options = ParseOptions(args);
+        var options = ParseOptions(args: args);
 
         if (options.Success && options.Options is not null)
         {
-            var execution = ExecuteInspectors(options.Options);
+            var execution = ExecuteInspectors(options: options.Options);
             if (execution.ExitCode != 0) exitCode = execution.ExitCode;
         }
         else
@@ -20,22 +20,22 @@ internal static class Program
             exitCode = options.ExitCode;
         }
 
-        Environment.Exit(exitCode);
+        Environment.Exit(exitCode: exitCode);
     }
 
     private static void RegisterMSBuild()
     {
         try
         {
-            if (Config.TRACE) Console.WriteLine("Registering MSBuild defaults.");
+            if (Config.TRACE) Console.WriteLine(value: "Registering MSBuild defaults.");
             MSBuildLocator.RegisterDefaults();
         }
         catch (Exception e)
         {
             if (Config.TRACE)
             {
-                Console.WriteLine("Failed to register defaults.");
-                Console.Write(e);
+                Console.WriteLine(value: "Failed to register defaults.");
+                Console.Write(value: e);
             }
         }
     }
@@ -46,33 +46,33 @@ internal static class Program
         try
         {
             var dispatch = new InputScanner();
-            var searchService = new NugetApi(options.NugetApiFeedUrl, options.NugetConfigPath);
-            var inspectionResults = dispatch.Inspect(options, searchService);
+            var searchService = new NugetApi(nugetApiFeedUrl: options.NugetApiFeedUrl, nugetConfig: options.NugetConfigPath);
+            var inspectionResults = dispatch.Inspect(options: options, nugetService: searchService);
             if (inspectionResults != null)
                 foreach (var result in inspectionResults)
                     try
                     {
                         if (result.ResultName != null && Config.TRACE)
                         {
-                            Console.WriteLine("Scan: " + result.ResultName);
+                            Console.WriteLine(value: $"Scan: {result.ResultName}");
                         }
 
                         if (result.Status == Scan.ResultStatus.Success)
                         {
-                            if (Config.TRACE) Console.WriteLine("Scan Result: Success");
-                            var writer = new OutputFormatJson(result);
+                            if (Config.TRACE) Console.WriteLine(value: "Scan Result: Success");
+                            var writer = new OutputFormatJson(result: result);
                             writer.Write();
-                            if (Config.TRACE) Console.WriteLine("Info file created at {0}", writer.OutputFilePath());
+                            if (Config.TRACE) Console.WriteLine(format: "Info file created at {0}", arg0: writer.OutputFilePath());
                         }
                         else
                         {
-                            Console.WriteLine("Scan Result: Error");
+                            Console.WriteLine(value: "Scan Result: Error");
                             if (result.Exception != null)
                             {
                                 if (Config.TRACE)
                                 {
-                                    Console.WriteLine("Exception:");
-                                    Console.WriteLine(result.Exception);
+                                    Console.WriteLine(value: "Exception:");
+                                    Console.WriteLine(value: result.Exception);
                                 }
 
                                 anyFailed = true;
@@ -83,9 +83,9 @@ internal static class Program
                     {
                         if (Config.TRACE)
                         {
-                            Console.WriteLine("Error processing inspection result.");
-                            Console.WriteLine(e.Message);
-                            Console.WriteLine(e.StackTrace);
+                            Console.WriteLine(value: "Error processing inspection result.");
+                            Console.WriteLine(value: e.Message);
+                            Console.WriteLine(value: e.StackTrace);
                         }
 
                         anyFailed = true;
@@ -95,9 +95,9 @@ internal static class Program
         {
             if (Config.TRACE)
             {
-                Console.WriteLine("Error iterating inspection results.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(value: "Error iterating inspection results.");
+                Console.WriteLine(value: e.Message);
+                Console.WriteLine(value: e.StackTrace);
             }
 
             anyFailed = true;
@@ -112,14 +112,14 @@ internal static class Program
     {
         try
         {
-            var parsedOptions = CliOptions.ParseArguments(args);
+            var parsedOptions = CliOptions.ParseArguments(args: args);
 
             if (parsedOptions == null)
             {
                 return ParsedOptions.Failed();
             }
 
-            if (string.IsNullOrWhiteSpace(parsedOptions.ProjectFilePath))
+            if (string.IsNullOrWhiteSpace(value: parsedOptions.ProjectFilePath))
                 parsedOptions.ProjectFilePath = Directory.GetCurrentDirectory();
 
             ScanOptions options = new ScanOptions
@@ -135,15 +135,15 @@ internal static class Program
                 Config.TRACE = true;
             }
 
-            return ParsedOptions.Succeeded(options);
+            return ParsedOptions.Succeeded(options: options);
         }
         catch (Exception e)
         {
             if (Config.TRACE)
             {
-                Console.WriteLine("Failed to parse options.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
+                Console.WriteLine(value: "Failed to parse options.");
+                Console.WriteLine(value: e.Message);
+                Console.WriteLine(value: e.StackTrace);
             }
 
             return ParsedOptions.Failed();

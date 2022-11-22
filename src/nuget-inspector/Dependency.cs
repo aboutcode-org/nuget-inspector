@@ -9,11 +9,11 @@ public class Dependency
     public string? Name;
     public VersionRange? VersionRange;
 
-    public Dependency(string? name, VersionRange? versionRange, NuGetFramework? framework = null)
+    public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null)
     {
         Framework = framework;
         Name = name;
-        VersionRange = versionRange;
+        VersionRange = version_range;
     }
 
     public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework)
@@ -24,15 +24,19 @@ public class Dependency
     }
 
     /// <summary>
-    /// Return an PackageSet using this package.
+    /// Return an empty PackageSet using this package.
     /// </summary>
     /// <returns></returns>
     public PackageSet ToEmptyPackageSet()
     {
-        var packageSet = new PackageSet
+        var package_set = new PackageSet
         {
-            PackageId = new BasePackage(Name, VersionRange?.MinVersion.ToNormalizedString(), Framework?.ToString())
+            PackageId = new BasePackage(
+                name: Name, 
+                version: VersionRange?.MinVersion.ToNormalizedString(), 
+                framework: Framework?.ToString()
+            )
         };
-        return packageSet;
+        return package_set;
     }
 }

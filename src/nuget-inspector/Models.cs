@@ -11,12 +11,12 @@ namespace NugetInspector
 
         public bool DoesPackageExist(BasePackage id)
         {
-            return packageSets.ContainsKey(id);
+            return packageSets.ContainsKey(key: id);
         }
 
         public PackageSet GetOrCreatePackageSet(BasePackage package)
         {
-            if (packageSets.TryGetValue(package, out var packageSet))
+            if (packageSets.TryGetValue(key: package, value: out var packageSet))
             {
                 return packageSet;
             }
@@ -26,12 +26,12 @@ namespace NugetInspector
                 PackageId = package,
                 Dependencies = new HashSet<BasePackage?>()
             };
-            packageSets[package] = packageSet;
+            packageSets[key: package] = packageSet;
 
             NuGetVersion.TryParse(value: package.Version, version: out var version);
             if (package.Version != null)
             {
-                versions[package] = new VersionPair(package.Version, version);
+                versions[key: package] = new VersionPair(rawVersion: package.Version, version: version);
             }
 
             return packageSet;
@@ -43,7 +43,7 @@ namespace NugetInspector
         /// <param name="id"></param>
         public void AddOrUpdatePackage(BasePackage id)
         {
-            GetOrCreatePackageSet(id);
+            GetOrCreatePackageSet(package: id);
         }
 
         /// <summary>
@@ -53,8 +53,8 @@ namespace NugetInspector
         /// <param name="dependency"></param>
         public void AddOrUpdatePackage(BasePackage id, BasePackage dependency)
         {
-            var packageSet = GetOrCreatePackageSet(id);
-            packageSet.Dependencies.Add(dependency);
+            var packageSet = GetOrCreatePackageSet(package: id);
+            packageSet.Dependencies.Add(item: dependency);
         }
 
         /// <summary>
@@ -64,8 +64,8 @@ namespace NugetInspector
         /// <param name="dependencies"></param>
         public void AddOrUpdatePackage(BasePackage id, HashSet<BasePackage> dependencies)
         {
-            var packageSet = GetOrCreatePackageSet(id);
-            packageSet.Dependencies.UnionWith(dependencies);
+            var packageSet = GetOrCreatePackageSet(package: id);
+            packageSet.Dependencies.UnionWith(other: dependencies);
         }
 
         public List<PackageSet> GetPackageList()
@@ -75,8 +75,8 @@ namespace NugetInspector
 
         public string? GetResolvedVersion(string name, VersionRange range)
         {
-            var allVersions = versions.Keys.Where(key => key.Name == name).Select(key => versions[key]);
-            var best = range.FindBestMatch(allVersions.Select(ver => ver.Version));
+            var allVersions = versions.Keys.Where(predicate: key => key.Name == name).Select(selector: key => versions[key: key]);
+            var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.Version));
             foreach (var pair in versions)
                 if (pair.Key.Name == name && pair.Value.Version == best)
                     return pair.Key.Version;
@@ -99,18 +99,18 @@ namespace NugetInspector
 
     public class PackageSet
     {
-        [JsonProperty("package")] public BasePackage? PackageId;
-        [JsonProperty("dependencies")] public HashSet<BasePackage?> Dependencies = new();
+        [JsonProperty(propertyName: "package")] public BasePackage? PackageId;
+        [JsonProperty(propertyName: "dependencies")] public HashSet<BasePackage?> Dependencies = new();
     }
 
     public class BasePackage
     {
-        [JsonProperty("type")] public string Type = "nuget";
-        [JsonProperty("name")] public string? Name { get; set; }
-        [JsonProperty("version")] public string? Version { get; set; }
-        [JsonProperty("framework")] public string? Framework { get; set; }
-        [JsonProperty("purl")] public string Purl { get; set; }
-        [JsonProperty("download_url")] public string DownloadUrl { get; set; }
+        [JsonProperty(propertyName: "type")] public string Type = "nuget";
+        [JsonProperty(propertyName: "name")] public string? Name { get; set; }
+        [JsonProperty(propertyName: "version")] public string? Version { get; set; }
+        [JsonProperty(propertyName: "framework")] public string? Framework { get; set; }
+        [JsonProperty(propertyName: "purl")] public string Purl { get; set; }
+        [JsonProperty(propertyName: "download_url")] public string DownloadUrl { get; set; }
 
         public BasePackage(string? name, string? version, string? framework)
         {
@@ -119,8 +119,8 @@ namespace NugetInspector
             Framework = framework;
 
             // FIXME: support having no version
-            Purl = "pkg:nuget/" + name + "@" + version;
-            DownloadUrl = "https://www.nuget.org/api/v2/package/" + name + "/" + version;
+            Purl = $"pkg:nuget/{name}@{version}";
+            DownloadUrl = $"https://www.nuget.org/api/v2/package/{name}/{version}";
         }
 
         public BasePackage(string? name, string? version)
@@ -128,8 +128,8 @@ namespace NugetInspector
             Name = name;
             Version = version;
             // FIXME: support having no version
-            Purl = "pkg:nuget/" + name + "@" + version;
-            DownloadUrl = "https://www.nuget.org/api/v2/package/" + name + "/" + version;
+            Purl = $"pkg:nuget/{name}@{version}";
+            DownloadUrl = $"https://www.nuget.org/api/v2/package/{name}/{version}";
         }
 
         public override int GetHashCode()
@@ -156,7 +156,7 @@ namespace NugetInspector
             {
                 if (other.Name != null) return false;
             }
-            else if (!Name.Equals(other.Name))
+            else if (!Name.Equals(value: other.Name))
             {
                 return false;
             }
@@ -165,7 +165,7 @@ namespace NugetInspector
             {
                 if (other.Version != null) return false;
             }
-            else if (!Version.Equals(other.Version))
+            else if (!Version.Equals(value: other.Version))
             {
                 return false;
             }
@@ -174,7 +174,7 @@ namespace NugetInspector
             {
                 if (other.Framework != null) return false;
             }
-            else if (!Framework.Equals(other.Framework))
+            else if (!Framework.Equals(value: other.Framework))
             {
                 return false;
             }
@@ -188,17 +188,17 @@ namespace NugetInspector
     /// </summary>
     public class Package
     {
-        [JsonProperty("project_name")] public string? Name { get; set; }
-        [JsonProperty("project_version")] public string? Version { get; set; }
+        [JsonProperty(propertyName: "project_name")] public string? Name { get; set; }
+        [JsonProperty(propertyName: "project_version")] public string? Version { get; set; }
 
-        [JsonProperty("project_datafile_type")]
+        [JsonProperty(propertyName: "project_datafile_type")]
         public string Type { get; set; } = "solution-file";
 
-        [JsonProperty("datasource_id")] public string DatasourceId { get; set; }
-        [JsonProperty("project_file")] public string SourcePath { get; set; }
-        [JsonProperty("outputs")] public List<string> OutputPaths { get; set; } = new();
-        [JsonProperty("packages")] public List<PackageSet> Packages { get; set; } = new();
-        [JsonProperty("dependencies")] public List<BasePackage> Dependencies { get; set; } = new();
-        [JsonProperty("children")] public List<Package?> Children { get; set; } = new();
+        [JsonProperty(propertyName: "datasource_id")] public string DatasourceId { get; set; }
+        [JsonProperty(propertyName: "project_file")] public string SourcePath { get; set; }
+        [JsonProperty(propertyName: "outputs")] public List<string> OutputPaths { get; set; } = new();
+        [JsonProperty(propertyName: "packages")] public List<PackageSet> Packages { get; set; } = new();
+        [JsonProperty(propertyName: "dependencies")] public List<BasePackage> Dependencies { get; set; } = new();
+        [JsonProperty(propertyName: "children")] public List<Package?> Children { get; set; } = new();
     }
 }
