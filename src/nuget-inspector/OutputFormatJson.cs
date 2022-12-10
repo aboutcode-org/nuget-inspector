@@ -14,9 +14,9 @@ public class ScanOutput
 internal class OutputFormatJson
 {
     private readonly ScanOutput scanOutput;
-    private readonly Scan Result;
+    private readonly ScanResult Result;
 
-    public OutputFormatJson(Scan result)
+    public OutputFormatJson(ScanResult result)
     {
         Result = result;
         scanOutput = new ScanOutput
@@ -37,7 +37,7 @@ internal class OutputFormatJson
 
     public void Write(string? outputFilePath)
     {
-        if (Config.TRACE) Console.WriteLine(value: $"Creating output file path: {outputFilePath}");
+        if (Config.TRACE) Console.WriteLine($"Creating output file path: {outputFilePath}");
         using (var fs = new FileStream(path: outputFilePath!, mode: FileMode.Create))
         {
             using (var sw = new StreamWriter(stream: fs))

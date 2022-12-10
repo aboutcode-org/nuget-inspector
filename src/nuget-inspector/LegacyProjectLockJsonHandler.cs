@@ -26,7 +26,7 @@ internal class LegacyProjectLockJsonHandler : IDependencyResolver
         var resolver = new LockFileHandler(lockFile: lockFile);
         if (Config.TRACE)
         {
-            Console.WriteLine(value: $"resolver: {resolver}");
+            Console.WriteLine($"resolver: {resolver}");
         }
 
         return resolver.Process();

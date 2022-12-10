@@ -5,18 +5,33 @@ using NuGet.Frameworks;
 
 namespace NugetInspector;
 
-internal class ProjectScannerOptions : ScanOptions
+public class ScanResult
 {
-    public ProjectScannerOptions(ScanOptions old)
+    public enum ResultStatus
     {
-        ProjectFilePath = old.ProjectFilePath;
-        ProjectDirectory = Directory.GetParent(path: ProjectFilePath)?.FullName ?? string.Empty;
-        Verbose = old.Verbose;
-        NugetApiFeedUrl = old.NugetApiFeedUrl;
-        NugetConfigPath = old.NugetConfigPath;
-        OutputFilePath = old.OutputFilePath;
-        
+        Success,
+        Error
     }
+
+    public Exception? Exception;
+    public string? OutputFilePath;
+    public List<Package> Packages = new();
+    public string? ResultName;
+    public ResultStatus Status;
+}
+
+internal class ProjectScannerOptions : Options
+{
+    public ProjectScannerOptions(Options options)
+    {
+        ProjectFilePath = options.ProjectFilePath;
+        ProjectDirectory = Directory.GetParent(path: ProjectFilePath)?.FullName ?? string.Empty;
+        Verbose = options.Verbose;
+        NugetApiFeedUrl = options.NugetApiFeedUrl;
+        NugetConfigPath = options.NugetConfigPath;
+        OutputFilePath = options.OutputFilePath;
+    }
+
     public string? ProjectName { get; set; }
     public string? ProjectUniqueId { get; set; }
     public string? ProjectDirectory { get; set; }
@@ -27,7 +42,7 @@ internal class ProjectScannerOptions : ScanOptions
     public string? ProjectAssetsJsonPath { get; set; }
 }
 
-internal class ProjectFileScanner : IScanner
+internal class ProjectScanner
 {
     public NugetApi NugetApiService;
     public ProjectScannerOptions Options;
@@ -38,7 +53,7 @@ internal class ProjectFileScanner : IScanner
     /// <param name="options"></param>
     /// <param name="nuget_api_service"></param>
     /// <exception cref="Exception"></exception>
-    public ProjectFileScanner(ProjectScannerOptions options, NugetApi nuget_api_service)
+    public ProjectScanner(ProjectScannerOptions options, NugetApi nuget_api_service)
     {
         string combine_paths(string? project_directory, string file_name)
         {
@@ -52,7 +67,7 @@ internal class ProjectFileScanner : IScanner
 
         if (string.IsNullOrWhiteSpace(value: Options.OutputFilePath))
         {
-            throw new Exception(message: "Missing required JSON output file path.");
+            throw new Exception(message: "Missing required output JSON file path.");
         }
 
         if (string.IsNullOrWhiteSpace(value: Options.ProjectDirectory))
@@ -80,10 +95,9 @@ internal class ProjectFileScanner : IScanner
 
         if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
             Options.ProjectVersion = AssemblyInfoParser.GetProjectAssemblyVersion(project_directory);
-
     }
 
-    public Scan RunScan()
+    public ScanResult RunScan()
     {
         try
         {
@@ -94,9 +108,9 @@ internal class ProjectFileScanner : IScanner
                 packages.Add(item: package);
             }
 
-            return new Scan
+            return new ScanResult
             {
-                Status = Scan.ResultStatus.Success,
+                Status = ScanResult.ResultStatus.Success,
                 ResultName = Options.ProjectUniqueId,
                 OutputFilePath = Options.OutputFilePath,
                 Packages = packages
@@ -104,10 +118,10 @@ internal class ProjectFileScanner : IScanner
         }
         catch (Exception ex)
         {
-            if (Config.TRACE) Console.WriteLine(value: $"{ex}");
-            return new Scan
+            if (Config.TRACE) Console.WriteLine($"{ex}");
+            return new ScanResult
             {
-                Status = Scan.ResultStatus.Error,
+                Status = ScanResult.ResultStatus.Error,
                 Exception = ex
             };
         }
@@ -137,7 +151,7 @@ internal class ProjectFileScanner : IScanner
         }
         catch (Exception)
         {
-            if (Config.TRACE) Console.WriteLine(value: "Unable to determine output paths for this project.");
+            if (Config.TRACE) Console.WriteLine("Unable to determine output paths for this project.");
         }
 
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
@@ -156,7 +170,7 @@ internal class ProjectFileScanner : IScanner
         {
             // project.assets.json is the gold standard when available
             if (Config.TRACE)
-                Console.WriteLine(value: $"Using project.assets.json file: {Options.ProjectAssetsJsonPath}");
+                Console.WriteLine($"Using project.assets.json file: {Options.ProjectAssetsJsonPath}");
             var projectAssetsJsonResolver =
                 new ProjectAssetsJsonHandler(projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Process();
@@ -168,7 +182,7 @@ internal class ProjectFileScanner : IScanner
         {
             // projects.json.lock is legacy but should be used if present
             if (Config.TRACE)
-                Console.WriteLine(value: $"Using legacy projects.json.lock: {Options.ProjectJsonLockPath}");
+                Console.WriteLine($"Using legacy projects.json.lock: {Options.ProjectJsonLockPath}");
             var projectJsonLockResolver =
                 new LegacyProjectLockJsonHandler(projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Process();
@@ -179,7 +193,7 @@ internal class ProjectFileScanner : IScanner
         else if (hasPackagesConfig)
         {
             // packages.config is legacy but should be used if present
-            if (Config.TRACE) Console.WriteLine(value: $"Using packages.config: {Options.PackagesConfigPath}");
+            if (Config.TRACE) Console.WriteLine($"Using packages.config: {Options.PackagesConfigPath}");
             var packagesConfigResolver = new PackagesConfigHandler(
                 packages_config_path: Options.PackagesConfigPath!, nuget_api: NugetApiService);
             var packagesConfigResult = packagesConfigResolver.Process();
@@ -190,7 +204,7 @@ internal class ProjectFileScanner : IScanner
         else if (hasProjectJson)
         {
             // project.json is legacy but should be used if present
-            if (Config.TRACE) Console.WriteLine(value: $"Using legacy project.json: {Options.ProjectJsonPath}");
+            if (Config.TRACE) Console.WriteLine($"Using legacy project.json: {Options.ProjectJsonPath}");
             var projectJsonResolver = new LegacyProjectJsonHandler(projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Process();
@@ -202,7 +216,7 @@ internal class ProjectFileScanner : IScanner
         {
             // In the most common case we use the *proj file and its PackageReference
             if (Config.TRACE)
-                Console.WriteLine(value: $"Attempting package-reference resolver: {Options.ProjectFilePath}");
+                Console.WriteLine($"Attempting package-reference resolver: {Options.ProjectFilePath}");
             var pkgRefResolver = new ProjFileStandardPackageReferenceHandler(
                 projectPath: Options.ProjectFilePath,
                 nugetApi: NugetApiService,
@@ -212,14 +226,14 @@ internal class ProjectFileScanner : IScanner
 
             if (projectReferencesResult.Success)
             {
-                if (Config.TRACE) Console.WriteLine(value: "ProjFileStandardPackageReferenceHandler success.");
+                if (Config.TRACE) Console.WriteLine("ProjFileStandardPackageReferenceHandler success.");
                 package.Packages = projectReferencesResult.Packages;
                 package.Dependencies = projectReferencesResult.Dependencies;
                 package.DatasourceId = ProjFileStandardPackageReferenceHandler.DatasourceId;
             }
             else
             {
-                if (Config.TRACE) Console.WriteLine(value: "Using Fallback XML project file reader and resolver.");
+                if (Config.TRACE) Console.WriteLine("Using Fallback XML project file reader and resolver.");
                 var xmlResolver =
                     new ProjFileXmlParserPackageReferenceHandler(projectPath: Options.ProjectFilePath,
                         nugetApi: NugetApiService, projectTargetFramework: projectTargetFramework);
@@ -235,7 +249,7 @@ internal class ProjectFileScanner : IScanner
         {
             Console.WriteLine(
                 value: $"Found #{package.Dependencies.Count} dependencies for #{package.Packages.Count} packages.");
-            Console.WriteLine(value: $"Project resolved: {Options.ProjectName} in {stopWatch.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch.ElapsedMilliseconds} ms.");
         }
 
         return package;
@@ -300,8 +314,8 @@ internal class ProjectFileScanner : IScanner
     {
         if (Config.TRACE)
         {
-            Console.WriteLine(value: "Attempting to parse configuration output paths.");
-            Console.WriteLine(value: $"Project File: {Options.ProjectFilePath}");
+            Console.WriteLine("Attempting to parse configuration output paths.");
+            Console.WriteLine($"Project File: {Options.ProjectFilePath}");
         }
 
         try
@@ -319,16 +333,16 @@ internal class ProjectFileScanner : IScanner
                 var fullPath = Path.Combine(path1: proj.DirectoryPath, path2: path)
                     .Replace(oldValue: "\\", newValue: "/");
                 outputPaths.Add(item: fullPath);
-                if (Config.TRACE) Console.WriteLine(value: $"Found path: {fullPath}");
+                if (Config.TRACE) Console.WriteLine($"Found path: {fullPath}");
             }
 
             ProjectCollection.GlobalProjectCollection.UnloadProject(project: proj);
-            if (Config.TRACE) Console.WriteLine(value: $"Found {outputPaths.Count} paths.");
+            if (Config.TRACE) Console.WriteLine($"Found {outputPaths.Count} paths.");
             return outputPaths;
         }
         catch (Exception)
         {
-            if (Config.TRACE) Console.WriteLine(value: "Skipping configuration output paths.");
+            if (Config.TRACE) Console.WriteLine("Skipping configuration output paths.");
             return new List<string>();
         }
     }

@@ -43,7 +43,7 @@ public class AssemblyInfoParser
                 var start = version_line.IndexOf(value: "(", comparisonType: StringComparison.Ordinal) + 2;
                 var end = version_line.LastIndexOf(value: ")", comparisonType: StringComparison.Ordinal) - 1 - start;
                 var version = version_line.Substring(startIndex: start, length: end);
-                if (Config.TRACE) Console.WriteLine(value: $"Assembly version '{version}' in '{path}'.");
+                if (Config.TRACE) Console.WriteLine($"Assembly version '{version}' in '{path}'.");
                 return new AssemblyVersion(version: version, path: path);
             }
 
@@ -80,7 +80,7 @@ public class AssemblyInfoParser
                 var selected = results.First();
                 if (selected is null) return null;
                 if (Config.TRACE)
-                    Console.WriteLine(value: $"Selected version '{selected.Version}' from '{selected.Path}'.");
+                    Console.WriteLine($"Selected version '{selected.Version}' from '{selected.Path}'.");
                 return selected.Version;
             }
         }

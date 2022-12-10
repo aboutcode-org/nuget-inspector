@@ -36,7 +36,8 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             var deps = new List<Dependency>();
             foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "PackageReference"))
             {
-                var versionMetaData = reference.Metadata.Where(predicate: meta => meta.Name == "Version")
+                var versionMetaData = reference.Metadata
+                    .Where(predicate: meta => meta.Name == "Version")
                     .FirstOrDefault();
                 VersionRange? version;
                 if (versionMetaData is not null &&

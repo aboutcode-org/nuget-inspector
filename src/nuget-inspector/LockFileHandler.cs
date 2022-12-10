@@ -93,7 +93,7 @@ public class LockFileHandler
                     var bs = BestVersion(name: dep_id, range: vr, libraries: lb);
                     if (bs == null)
                     {
-                        if (Config.TRACE) Console.WriteLine(value: dependency.Id);
+                        if (Config.TRACE) Console.WriteLine(dependency.Id);
                         bs = BestVersion(name: dep_id, range: vr, libraries: lb);
                     }
                     else
@@ -109,8 +109,8 @@ public class LockFileHandler
 
         if (Config.TRACE)
         {
-            Console.WriteLine(value: $"LockFile: {LockFile}");
-            Console.WriteLine(value: $"LockFile.Path: {LockFile.Path}");
+            Console.WriteLine($"LockFile: {LockFile}");
+            Console.WriteLine($"LockFile.Path: {LockFile.Path}");
         }
 
         if (LockFile != null
@@ -128,7 +128,7 @@ public class LockFileHandler
         {
             if (Config.TRACE)
             {
-                Console.WriteLine(value: $"LockFile.PackageSpec: {LockFile?.PackageSpec}");
+                Console.WriteLine($"LockFile.PackageSpec: {LockFile?.PackageSpec}");
                 Console.WriteLine(
                     value: $"LockFile.PackageSpec.TargetFrameworks: {LockFile?.PackageSpec?.TargetFrameworks}");
             }
@@ -169,7 +169,7 @@ public class LockFileHandler
 
             if (result.Dependencies.Count == 0 && Config.TRACE)
             {
-                Console.WriteLine(value: $"Found no dependencies fo r lock file: {LockFile.Path}");
+                Console.WriteLine($"Found no dependencies fo r lock file: {LockFile.Path}");
             }
         }
 

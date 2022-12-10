@@ -1,5 +1,14 @@
 ﻿namespace NugetInspector;
 
+internal interface IDependencyResolver
+{
+    /// <summary>
+    /// Resolve dependencies and return a DependencyResolution
+    /// </summary>
+    /// <returns>DependencyResolution</returns>
+    DependencyResolution Process();
+}
+
 public class DependencyResolution
 {
     public bool Success { get; set; } = true;
