@@ -37,17 +37,19 @@ public class NugetApiResolver
             return;
         }
 
-        var packageId = new BasePackage(name: packageDependency.Name, version: package.Identity.Version.ToNormalizedString());
+        var package_id = new BasePackage(name: packageDependency.Name,
+            version: package.Identity.Version.ToNormalizedString());
         var dependencies = new HashSet<BasePackage?>();
 
-        var packages = nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.Framework);
+        var packages =
+            nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.Framework);
 
         foreach (var dependency in packages)
         {
-            var bestExisting = builder.GetResolvedVersion(name: dependency.Id, range: dependency.VersionRange);
-            if (bestExisting != null)
+            var resolved_version = builder.GetResolvedVersion(name: dependency.Id, range: dependency.VersionRange);
+            if (resolved_version != null)
             {
-                var id = new BasePackage(name: dependency.Id, version: bestExisting);
+                var id = new BasePackage(name: dependency.Id, version: resolved_version);
                 dependencies.Add(item: id);
             }
             else
@@ -61,15 +63,17 @@ public class NugetApiResolver
                     continue;
                 }
 
-                var id = new BasePackage(name: depPackage.Identity.Id, version: depPackage.Identity.Version.ToNormalizedString());
+                var id = new BasePackage(name: depPackage.Identity.Id,
+                    version: depPackage.Identity.Version.ToNormalizedString());
                 dependencies.Add(item: id);
 
                 if (!builder.DoesPackageExist(id: id))
-                    Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange, framework: packageDependency.Framework));
+                    Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange,
+                        framework: packageDependency.Framework));
             }
         }
 
 
-        builder.AddOrUpdatePackage(id: packageId, dependencies: dependencies);
+        builder.AddOrUpdatePackage(id: package_id, dependencies: dependencies!);
     }
 }

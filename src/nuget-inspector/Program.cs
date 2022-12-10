@@ -46,7 +46,8 @@ internal static class Program
         try
         {
             var dispatch = new InputScanner();
-            var searchService = new NugetApi(nugetApiFeedUrl: options.NugetApiFeedUrl, nugetConfig: options.NugetConfigPath);
+            var searchService = new NugetApi(nugetApiFeedUrl: options.NugetApiFeedUrl,
+                nugetConfig: options.NugetConfigPath);
             var inspectionResults = dispatch.Inspect(options: options, nugetService: searchService);
             if (inspectionResults != null)
                 foreach (var result in inspectionResults)
@@ -62,7 +63,8 @@ internal static class Program
                             if (Config.TRACE) Console.WriteLine(value: "Scan Result: Success");
                             var writer = new OutputFormatJson(result: result);
                             writer.Write();
-                            if (Config.TRACE) Console.WriteLine(format: "Info file created at {0}", arg0: writer.OutputFilePath());
+                            if (Config.TRACE)
+                                Console.WriteLine(format: "Info file created at {0}", arg0: writer.OutputFilePath());
                         }
                         else
                         {

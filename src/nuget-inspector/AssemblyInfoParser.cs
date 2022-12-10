@@ -11,7 +11,6 @@ public class AssemblyInfoParser
 {
     public class AssemblyVersion
     {
-
         public string? Version { get; }
         public string Path { get; }
 
@@ -47,6 +46,7 @@ public class AssemblyInfoParser
                 if (Config.TRACE) Console.WriteLine(value: $"Assembly version '{version}' in '{path}'.");
                 return new AssemblyVersion(version: version, path: path);
             }
+
             return null;
         }
     }
@@ -61,7 +61,8 @@ public class AssemblyInfoParser
         try
         {
             List<AssemblyVersion?> results = Directory
-                .GetFiles(path: project_directory, searchPattern: "*AssemblyInfo.*", searchOption: SearchOption.AllDirectories).ToList()
+                .GetFiles(path: project_directory!, searchPattern: "*AssemblyInfo.*",
+                    searchOption: SearchOption.AllDirectories).ToList()
                 .Select(selector: path =>
                 {
                     if (!path.EndsWith(value: ".obj") && File.Exists(path: path))
@@ -78,7 +79,8 @@ public class AssemblyInfoParser
             {
                 var selected = results.First();
                 if (selected is null) return null;
-                if (Config.TRACE) Console.WriteLine(value: $"Selected version '{selected.Version}' from '{selected.Path}'.");
+                if (Config.TRACE)
+                    Console.WriteLine(value: $"Selected version '{selected.Version}' from '{selected.Path}'.");
                 return selected.Version;
             }
         }
@@ -88,6 +90,7 @@ public class AssemblyInfoParser
                 Console.WriteLine(value:
                     $"Failed to collect AssemblyInfo version for project: {project_directory}{e.Message}");
         }
+
         return null;
     }
 }

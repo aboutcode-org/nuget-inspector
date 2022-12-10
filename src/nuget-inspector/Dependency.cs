@@ -5,8 +5,8 @@ namespace NugetInspector;
 
 public class Dependency
 {
-    public NuGetFramework? Framework;
     public string? Name;
+    public NuGetFramework? Framework;
     public VersionRange? VersionRange;
 
     public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null)
@@ -32,8 +32,8 @@ public class Dependency
         var package_set = new PackageSet
         {
             PackageId = new BasePackage(
-                name: Name, 
-                version: VersionRange?.MinVersion.ToNormalizedString(), 
+                name: Name,
+                version: VersionRange?.MinVersion.ToNormalizedString(),
                 framework: Framework?.ToString()
             )
         };

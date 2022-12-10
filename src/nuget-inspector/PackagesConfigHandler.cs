@@ -30,13 +30,14 @@ internal class PackagesConfigHandler : IDependencyResolver
         var result = new DependencyResolution();
         result.Packages = CreatePackageSets(dependencies: dependencies);
 
-        result.Dependencies = new List<BasePackage?>();
+        result.Dependencies = new List<BasePackage>();
         foreach (var package in result.Packages)
         {
-            var has_package_references = result.Packages.Where(predicate: pkg => pkg.Dependencies.Contains(item: package.PackageId)).Any();
+            var has_package_references = result.Packages.Any(pkg => pkg.Dependencies.Contains(item: package.PackageId));
             if (!has_package_references && package.PackageId != null)
                 result.Dependencies.Add(item: package.PackageId);
         }
+
         return result;
     }
 
@@ -63,6 +64,7 @@ internal class PackagesConfigHandler : IDependencyResolver
             var dep = new Dependency(name: name, version_range: range, framework: framework);
             dependencies.Add(item: dep);
         }
+
         return dependencies;
     }
 
@@ -90,7 +92,9 @@ internal class PackagesConfigHandler : IDependencyResolver
                 if (Config.TRACE)
                     Console.WriteLine(value:
                         $"There was an issue processing packages.config as a tree: {treeException.Message}");
-                var packages = new List<PackageSet>(collection: dependencies.Select(selector: dependency => dependency.ToEmptyPackageSet()));
+                var packages =
+                    new List<PackageSet>(
+                        collection: dependencies.Select(selector: dependency => dependency.ToEmptyPackageSet()));
                 return packages;
             }
         }

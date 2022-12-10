@@ -36,11 +36,14 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             var deps = new List<Dependency>();
             foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "PackageReference"))
             {
-                var versionMetaData = reference.Metadata.Where(predicate: meta => meta.Name == "Version").FirstOrDefault();
+                var versionMetaData = reference.Metadata.Where(predicate: meta => meta.Name == "Version")
+                    .FirstOrDefault();
                 VersionRange? version;
-                if (versionMetaData is not null && VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version))
+                if (versionMetaData is not null &&
+                    VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version))
                 {
-                    var dep = new Dependency(name: reference.EvaluatedInclude, version_range: version, framework: ProjectTargetFramework);
+                    var dep = new Dependency(name: reference.EvaluatedInclude, version_range: version,
+                        framework: ProjectTargetFramework);
                     deps.Add(item: dep);
                 }
                 else
@@ -61,14 +64,16 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
                     var artifact = packageInfo.Substring(startIndex: 0, length: comma);
 
                     var versionKey = "Version=";
-                    var versionKeyIndex = packageInfo.IndexOf(value: versionKey, comparisonType: StringComparison.Ordinal);
+                    var versionKeyIndex =
+                        packageInfo.IndexOf(value: versionKey, comparisonType: StringComparison.Ordinal);
                     var versionStartIndex = versionKeyIndex + versionKey.Length;
                     var packageInfoAfterVersionKey = packageInfo.Substring(startIndex: versionStartIndex);
 
                     string version;
                     if (packageInfoAfterVersionKey.Contains(value: ","))
                     {
-                        var firstSep = packageInfoAfterVersionKey.IndexOf(value: ",", comparisonType: StringComparison.Ordinal);
+                        var firstSep =
+                            packageInfoAfterVersionKey.IndexOf(value: ",", comparisonType: StringComparison.Ordinal);
                         version = packageInfoAfterVersionKey.Substring(startIndex: 0, length: firstSep);
                     }
                     else
@@ -76,7 +81,8 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
                         version = packageInfoAfterVersionKey;
                     }
 
-                    var dep = new Dependency(name: artifact, version_range: VersionRange.Parse(value: version), framework: ProjectTargetFramework);
+                    var dep = new Dependency(name: artifact, version_range: VersionRange.Parse(value: version),
+                        framework: ProjectTargetFramework);
                     deps.Add(item: dep);
                 }
 

@@ -62,7 +62,7 @@ namespace NugetInspector
         /// </summary>
         /// <param name="id"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage id, HashSet<BasePackage> dependencies)
+        public void AddOrUpdatePackage(BasePackage id, HashSet<BasePackage?> dependencies)
         {
             var packageSet = GetOrCreatePackageSet(package: id);
             packageSet.Dependencies.UnionWith(other: dependencies);
@@ -75,7 +75,8 @@ namespace NugetInspector
 
         public string? GetResolvedVersion(string name, VersionRange range)
         {
-            var allVersions = versions.Keys.Where(predicate: key => key.Name == name).Select(selector: key => versions[key: key]);
+            var allVersions = versions.Keys.Where(predicate: key => key.Name == name)
+                .Select(selector: key => versions[key: key]);
             var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.Version));
             foreach (var pair in versions)
                 if (pair.Key.Name == name && pair.Value.Version == best)
@@ -99,18 +100,28 @@ namespace NugetInspector
 
     public class PackageSet
     {
-        [JsonProperty(propertyName: "package")] public BasePackage? PackageId;
-        [JsonProperty(propertyName: "dependencies")] public HashSet<BasePackage?> Dependencies = new();
+        [JsonProperty(propertyName: "package")]
+        public BasePackage? PackageId;
+
+        [JsonProperty(propertyName: "dependencies")]
+        public HashSet<BasePackage?> Dependencies = new();
     }
 
     public class BasePackage
     {
         [JsonProperty(propertyName: "type")] public string Type = "nuget";
         [JsonProperty(propertyName: "name")] public string? Name { get; set; }
-        [JsonProperty(propertyName: "version")] public string? Version { get; set; }
-        [JsonProperty(propertyName: "framework")] public string? Framework { get; set; }
+
+        [JsonProperty(propertyName: "version")]
+        public string? Version { get; set; }
+
+        [JsonProperty(propertyName: "framework")]
+        public string? Framework { get; set; }
+
         [JsonProperty(propertyName: "purl")] public string Purl { get; set; }
-        [JsonProperty(propertyName: "download_url")] public string DownloadUrl { get; set; }
+
+        [JsonProperty(propertyName: "download_url")]
+        public string DownloadUrl { get; set; }
 
         public BasePackage(string? name, string? version, string? framework)
         {
@@ -188,17 +199,28 @@ namespace NugetInspector
     /// </summary>
     public class Package
     {
-        [JsonProperty(propertyName: "project_name")] public string? Name { get; set; }
-        [JsonProperty(propertyName: "project_version")] public string? Version { get; set; }
+        [JsonProperty(propertyName: "project_name")]
+        public string? Name { get; set; }
 
-        [JsonProperty(propertyName: "project_datafile_type")]
-        public string Type { get; set; } = "solution-file";
+        [JsonProperty(propertyName: "project_version")]
+        public string? Version { get; set; }
 
-        [JsonProperty(propertyName: "datasource_id")] public string DatasourceId { get; set; }
-        [JsonProperty(propertyName: "project_file")] public string SourcePath { get; set; }
-        [JsonProperty(propertyName: "outputs")] public List<string> OutputPaths { get; set; } = new();
-        [JsonProperty(propertyName: "packages")] public List<PackageSet> Packages { get; set; } = new();
-        [JsonProperty(propertyName: "dependencies")] public List<BasePackage> Dependencies { get; set; } = new();
-        [JsonProperty(propertyName: "children")] public List<Package?> Children { get; set; } = new();
+        [JsonProperty(propertyName: "datasource_id")]
+        public string DatasourceId { get; set; } = null!;
+
+        [JsonProperty(propertyName: "project_file")]
+        public string SourcePath { get; set; } = null!;
+
+        [JsonProperty(propertyName: "outputs")]
+        public List<string> OutputPaths { get; set; } = new();
+
+        [JsonProperty(propertyName: "packages")]
+        public List<PackageSet> Packages { get; set; } = new();
+
+        [JsonProperty(propertyName: "dependencies")]
+        public List<BasePackage> Dependencies { get; set; } = new();
+
+        [JsonProperty(propertyName: "children")]
+        public List<Package?> Children { get; set; } = new();
     }
 }

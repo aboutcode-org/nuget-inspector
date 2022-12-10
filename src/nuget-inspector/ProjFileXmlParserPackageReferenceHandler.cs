@@ -72,7 +72,8 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                     var version = attributes[name: "Version"];
                     if (include != null && version != null)
                     {
-                        var dep = new Dependency(name: include.Value, version_range: VersionRange.Parse(value: version.Value),
+                        var dep = new Dependency(name: include.Value,
+                            version_range: VersionRange.Parse(value: version.Value),
                             framework: ProjectTargetFramework);
                         tree.Add(packageDependency: dep);
                     }

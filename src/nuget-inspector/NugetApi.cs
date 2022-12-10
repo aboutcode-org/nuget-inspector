@@ -43,17 +43,17 @@ public class NugetApi
 
     private List<IPackageSearchMetadata> FindPackages(string? id)
     {
-        if (lookupCache.ContainsKey(key: id))
+        if (id != null && lookupCache.ContainsKey(key: id))
         {
             if (Config.TRACE) Console.WriteLine(value: $"Already looked up package '{id}', using the cache.");
         }
         else
         {
             if (Config.TRACE) Console.WriteLine(value: $"Have not looked up package '{id}', using metadata resources.");
-            lookupCache[key: id] = FindPackagesOnline(id: id);
+            if (id != null) lookupCache[key: id] = FindPackagesOnline(id: id);
         }
 
-        return lookupCache[key: id];
+        return lookupCache[key: id!];
     }
 
     /// <summary>
@@ -72,10 +72,12 @@ public class NugetApi
                 var stopWatch = Stopwatch.StartNew();
                 var context = new SourceCacheContext();
                 var metaResult = metadataResource
-                    .GetMetadataAsync(packageId: id, includePrerelease: true, includeUnlisted: true, sourceCacheContext: context, log: new NugetLogger(), token: CancellationToken.None).Result;
+                    .GetMetadataAsync(packageId: id, includePrerelease: true, includeUnlisted: true,
+                        sourceCacheContext: context, log: new NugetLogger(), token: CancellationToken.None).Result;
                 if (Config.TRACE)
                     Console.WriteLine(
-                        value: $"Took {stopWatch.ElapsedMilliseconds} ms to communicate with metadata resource about '{id}'");
+                        value:
+                        $"Took {stopWatch.ElapsedMilliseconds} ms to communicate with metadata resource about '{id}'");
                 if (metaResult.Any()) matchingPackages.AddRange(collection: metaResult);
             }
             catch (Exception ex)
@@ -90,7 +92,8 @@ public class NugetApi
             if (Config.TRACE)
             {
                 Console.WriteLine(
-                    value: $"No packages were found for {id}, and an exception occured in one or more meta data resources.");
+                    value:
+                    $"No packages were found for {id}, and an exception occured in one or more meta data resources.");
                 foreach (var ex in exceptions)
                 {
                     Console.WriteLine(value: $"A meta data resource was unable to load packages: {ex.Message}");
@@ -125,7 +128,8 @@ public class NugetApi
 
                 var packageSourceProvider = new PackageSourceProvider(settings: setting);
                 var sources = packageSourceProvider.LoadPackageSources();
-                if (Config.TRACE) Console.WriteLine(value: $"Loaded {sources.Count()} package sources from nuget config.");
+                if (Config.TRACE)
+                    Console.WriteLine(value: $"Loaded {sources.Count()} package sources from nuget config.");
                 foreach (var source in sources)
                 {
                     if (Config.TRACE) Console.WriteLine(value: $"Found package source: {source.Source}");
@@ -164,7 +168,8 @@ public class NugetApi
             if (Config.TRACE)
             {
                 Console.WriteLine(
-                    value: $"Error loading NuGet PackageMetadataResource resource from url: {package_source.SourceUri}");
+                    value:
+                    $"Error loading NuGet PackageMetadataResource resource from url: {package_source.SourceUri}");
                 if (e.InnerException != null) Console.WriteLine(value: e.InnerException.Message);
             }
         }
@@ -194,7 +199,8 @@ public class NugetApi
             try
             {
                 var context = new SourceCacheContext();
-                var infoTask = dependencyInfoResource.ResolvePackage(package: identity, projectFramework: framework, cacheContext: context, log: new NugetLogger(),
+                var infoTask = dependencyInfoResource.ResolvePackage(package: identity, projectFramework: framework,
+                    cacheContext: context, log: new NugetLogger(),
                     token: CancellationToken.None);
                 var result = infoTask.Result;
                 return result.Dependencies;

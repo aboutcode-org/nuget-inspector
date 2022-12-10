@@ -6,7 +6,9 @@ public class ScanOutput
 {
     public string tool_name = "nuget-inspector";
     public string tool_version = "0.6.0";
-    [JsonProperty(propertyName: "packages")] public List<Package?> Packages = new();
+
+    [JsonProperty(propertyName: "packages")]
+    public List<Package?> Packages = new();
 }
 
 internal class OutputFormatJson

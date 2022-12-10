@@ -5,7 +5,7 @@ namespace NugetInspector;
 
 public class CliOptions
 {
-    [CommandLineArg(key: "project-file", description: "Path to a .NET solution or project file.")]
+    [CommandLineArg(key: "project-file", description: "Path to a .NET project file.")]
     public string ProjectFilePath = "";
 
     [CommandLineArg(key: "json", description: "JSON output file path.")]
@@ -31,11 +31,14 @@ public class CliOptions
         {
             var attr = GetAttr<CommandLineArgAttribute>(field: field);
             if (attr != null)
-                commandOptions.Add(prototype: $"{attr.Key}=", description: attr.Description, action: value => { field.SetValue(obj: result, value: value); });
+                commandOptions.Add(prototype: $"{attr.Key}=", description: attr.Description,
+                    action: value => { field.SetValue(obj: result, value: value); });
         }
 
-        commandOptions.Add(prototype: "h|help", description: "Show this message and exit.", action: value => result.ShowHelp = value != null);
-        commandOptions.Add(prototype: "v|verbose", description: "Display more verbose output.", action: value => result.Verbose = value != null);
+        commandOptions.Add(prototype: "h|help", description: "Show this message and exit.",
+            action: value => result.ShowHelp = value != null);
+        commandOptions.Add(prototype: "v|verbose", description: "Display more verbose output.",
+            action: value => result.Verbose = value != null);
 
         try
         {
