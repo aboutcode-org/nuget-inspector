@@ -65,14 +65,6 @@ def get_test_file_paths(base_dir, pattern, excludes=failing_paths):
     return paths
 
 
-solution_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.sln")
-
-
-@pytest.mark.parametrize("test_path", solution_tests)
-def test_nuget_inspector_end_to_end_with_solutions(test_path, regen=REGEN_TEST_FIXTURES):
-    check_nuget_inspector_end_to_end(test_path, regen)
-
-
 project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj")
 
 
