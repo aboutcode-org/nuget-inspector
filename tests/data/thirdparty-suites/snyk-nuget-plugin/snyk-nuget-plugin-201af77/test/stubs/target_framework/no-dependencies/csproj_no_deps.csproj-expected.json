@@ -4,7 +4,6 @@
   "packages": [
     {
       "project_name": "csproj_no_deps",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no-dependencies/csproj_no_deps.csproj",
       "outputs": [
