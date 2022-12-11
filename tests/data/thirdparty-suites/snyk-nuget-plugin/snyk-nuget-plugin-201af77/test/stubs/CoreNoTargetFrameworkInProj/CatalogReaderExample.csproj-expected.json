@@ -1,10 +1,9 @@
 {
   "tool_name": "nuget-inspector",
-  "tool_version": "0.5.0",
+  "tool_version": "0.6.0",
   "packages": [
     {
       "project_name": "CatalogReaderExample",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreNoTargetFrameworkInProj/CatalogReaderExample.csproj",
       "outputs": [

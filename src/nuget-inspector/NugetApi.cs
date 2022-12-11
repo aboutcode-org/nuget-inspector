@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using NuGet.Common;
 using NuGet.Configuration;
 using NuGet.Frameworks;
 using NuGet.Packaging;
@@ -8,7 +7,6 @@ using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
 namespace NugetInspector;
-
 
 /// <summary>
 /// See https://learn.microsoft.com/en-us/nuget/api/overview
@@ -22,10 +20,10 @@ public class NugetApi
     public NugetApi(string nugetApiFeedUrl, string nugetConfig)
     {
         var providers = new List<Lazy<INuGetResourceProvider>>();
-        providers.AddRange(Repository.Provider.GetCoreV3()); // Add v3 API support
+        providers.AddRange(collection: Repository.Provider.GetCoreV3()); // Add v3 API support
         //TODO:
         // providers.AddRange(Repository.Provider.GetCoreV2());  // Add v2 API support
-        CreateResourceLists(providers, nugetApiFeedUrl, nugetConfig);
+        CreateResourceLists(providers: providers, nuget_api_feed_url: nugetApiFeedUrl, nuget_config: nugetConfig);
     }
 
     /// <summary>
@@ -36,97 +34,116 @@ public class NugetApi
     /// <returns></returns>
     public IPackageSearchMetadata? FindPackageVersion(string? id, VersionRange? versionRange)
     {
-        var matchingPackages = FindPackages(id);
-        if (matchingPackages == null) return null;
-        var versions = matchingPackages.Select(package => package.Identity.Version);
-        var bestVersion = versionRange?.FindBestMatch(versions);
-        return matchingPackages.FirstOrDefault(package => package.Identity.Version == bestVersion);
+        var matching_packages = FindPackages(id: id);
+        if (matching_packages == null) return null;
+        var versions = matching_packages.Select(selector: package => package.Identity.Version);
+        var best_version = versionRange?.FindBestMatch(versions: versions);
+        return matching_packages.FirstOrDefault(predicate: package => package.Identity.Version == best_version);
     }
 
     private List<IPackageSearchMetadata> FindPackages(string? id)
     {
-        if (lookupCache.ContainsKey(id))
+        if (id != null && lookupCache.ContainsKey(key: id))
         {
-            if (Config.TRACE) Console.WriteLine("Already looked up package '" + id + "', using the cache.");
+            if (Config.TRACE)
+            {
+                Console.WriteLine($"Already looked up package '{id}', using the cache.");
+            }
         }
         else
         {
-            if (Config.TRACE) Console.WriteLine("Have not looked up package '" + id + "', using metadata resources.");
-            lookupCache[id] = FindPackagesOnline(id);
+            if (Config.TRACE)
+            {
+                Console.WriteLine($"Have not looked up package '{id}', using metadata resources.");
+            }
+
+            if (id != null)
+            {
+                lookupCache[key: id] = FindPackagesOnline(id: id);
+            }
         }
 
-        return lookupCache[id];
+        return lookupCache[key: id!];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     private List<IPackageSearchMetadata> FindPackagesOnline(string? id)
     {
-        var matchingPackages = new List<IPackageSearchMetadata>();
+        var matching_packages = new List<IPackageSearchMetadata>();
         var exceptions = new List<Exception>();
 
         foreach (var metadataResource in MetadataResourceList)
             try
             {
-                var stopWatch = Stopwatch.StartNew();
+                var stop_watch = Stopwatch.StartNew();
                 var context = new SourceCacheContext();
-                var metaResult = metadataResource
-                    .GetMetadataAsync(id, true, true, context, new ApiLogger(), CancellationToken.None).Result;
+                var meta_result = metadataResource
+                    .GetMetadataAsync(packageId: id, includePrerelease: true, includeUnlisted: true,
+                        sourceCacheContext: context, log: new NugetLogger(), token: CancellationToken.None).Result;
                 if (Config.TRACE)
-                    Console.WriteLine("Took " + stopWatch.ElapsedMilliseconds +
-                                      " ms to communicate with metadata resource about '" + id + "'");
-                if (metaResult.Any()) matchingPackages.AddRange(metaResult);
+                    Console.WriteLine(
+                        value:
+                        $"Took {stop_watch.ElapsedMilliseconds} ms to communicate with metadata resource about '{id}'");
+                if (meta_result.Any()) matching_packages.AddRange(collection: meta_result);
             }
             catch (Exception ex)
             {
-                exceptions.Add(ex);
+                exceptions.Add(item: ex);
             }
 
-        if (matchingPackages.Count > 0) return matchingPackages;
+        if (matching_packages.Count > 0) return matching_packages;
 
         if (exceptions.Count > 0)
         {
             if (Config.TRACE)
             {
                 Console.WriteLine(
+                    value:
                     $"No packages were found for {id}, and an exception occured in one or more meta data resources.");
                 foreach (var ex in exceptions)
                 {
-                    Console.WriteLine("A meta data resource was unable to load it's packages: " + ex.Message);
+                    Console.WriteLine($"A meta data resource was unable to load packages: {ex.Message}");
                     if (ex.InnerException != null)
                     {
-                        Console.WriteLine("The reason: " + ex.InnerException.Message);
+                        Console.WriteLine($"The reason: {ex.InnerException.Message}");
                     }
                 }
             }
 
-            return null;
+            return new List<IPackageSearchMetadata>();
         }
 
-        if (Config.TRACE) Console.WriteLine($"No packages were found for {id} in any meta data resources.");
-        return null;
+        if (Config.TRACE) Console.WriteLine($"No package found for {id} in any meta data resources.");
+        return new List<IPackageSearchMetadata>();
     }
 
     private void CreateResourceLists(
-        List<Lazy<INuGetResourceProvider>> providers, 
-        string nugetApiFeedUrl,
-        string nugetConfig)
+        List<Lazy<INuGetResourceProvider>> providers,
+        string nuget_api_feed_url,
+        string nuget_config)
     {
-        if (!string.IsNullOrWhiteSpace(nugetConfig))
+        if (!string.IsNullOrWhiteSpace(value: nuget_config))
         {
-            if (File.Exists(nugetConfig))
+            if (File.Exists(path: nuget_config))
             {
-                var parent = Directory.GetParent(nugetConfig).FullName;
-                var nugetFile = Path.GetFileName(nugetConfig);
+                var parent = Directory.GetParent(path: nuget_config)!.FullName;
+                var nugetFile = Path.GetFileName(path: nuget_config);
 
                 if (Config.TRACE) Console.WriteLine($"Loading nuget config {nugetFile} at {parent}.");
-                var setting = Settings.LoadSpecificSettings(parent, nugetFile);
+                var setting = Settings.LoadSpecificSettings(root: parent, configFileName: nugetFile);
 
-                var packageSourceProvider = new PackageSourceProvider(setting);
-                var sources = packageSourceProvider.LoadPackageSources();
-                if (Config.TRACE) Console.WriteLine($"Loaded {sources.Count()} package sources from nuget config.");
+                var package_source_provider = new PackageSourceProvider(settings: setting);
+                var sources = package_source_provider.LoadPackageSources();
+                if (Config.TRACE)
+                    Console.WriteLine($"Loaded {sources.Count()} package sources from nuget config.");
                 foreach (var source in sources)
                 {
                     if (Config.TRACE) Console.WriteLine($"Found package source: {source.Source}");
-                    AddPackageSource(providers, source);
+                    AddPackageSource(providers: providers, package_source: source);
                 }
             }
             else
@@ -136,32 +153,33 @@ public class NugetApi
         }
 
 
-        var splitRepoUrls = nugetApiFeedUrl.Split(new[] { ',' });
+        var splitRepoUrls = nuget_api_feed_url.Split(separator: new[] { ',' });
         foreach (var repoUrl in splitRepoUrls)
         {
             var url = repoUrl.Trim();
-            if (!string.IsNullOrWhiteSpace(url))
+            if (!string.IsNullOrWhiteSpace(value: url))
             {
-                var packageSource = new PackageSource(url);
-                AddPackageSource(providers, packageSource);
+                var packageSource = new PackageSource(source: url);
+                AddPackageSource(providers: providers, package_source: packageSource);
             }
         }
     }
 
-    private void AddPackageSource(List<Lazy<INuGetResourceProvider>> providers, PackageSource packageSource)
+    private void AddPackageSource(List<Lazy<INuGetResourceProvider>> providers, PackageSource package_source)
     {
-        var sourceRepository = new SourceRepository(packageSource, providers);
+        var sourceRepository = new SourceRepository(source: package_source, providers: providers);
         try
         {
             var packageMetadataResource = sourceRepository.GetResource<PackageMetadataResource>();
-            MetadataResourceList.Add(packageMetadataResource);
+            MetadataResourceList.Add(item: packageMetadataResource);
         }
         catch (Exception e)
         {
             if (Config.TRACE)
             {
                 Console.WriteLine(
-                    $"Error loading NuGet PackageMetadataResource resource from url: {packageSource.SourceUri}");
+                    value:
+                    $"Error loading NuGet PackageMetadataResource resource from url: {package_source.SourceUri}");
                 if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
             }
         }
@@ -169,15 +187,17 @@ public class NugetApi
         try
         {
             var dependencyInfoResource = sourceRepository.GetResource<DependencyInfoResource>();
-            DependencyInfoResourceList.Add(dependencyInfoResource);
+            DependencyInfoResourceList.Add(item: dependencyInfoResource);
             if (Config.TRACE)
-                Console.WriteLine($"Successfully added dependency info resource: {sourceRepository.PackageSource.SourceUri}");
+                Console.WriteLine(
+                    value: $"Successfully added dependency info resource: {sourceRepository.PackageSource.SourceUri}");
         }
         catch (Exception e)
         {
             if (Config.TRACE)
             {
-                Console.WriteLine($"Error loading NuGet Dependency Resource resource from url: {packageSource.SourceUri}");
+                Console.WriteLine(
+                    value: $"Error loading NuGet Dependency Resource resource from url: {package_source.SourceUri}");
                 if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
             }
         }
@@ -189,8 +209,9 @@ public class NugetApi
             try
             {
                 var context = new SourceCacheContext();
-                var infoTask = dependencyInfoResource.ResolvePackage(identity, framework, context, new ApiLogger(),
-                    CancellationToken.None);
+                var infoTask = dependencyInfoResource.ResolvePackage(package: identity, projectFramework: framework,
+                    cacheContext: context, log: new NugetLogger(),
+                    token: CancellationToken.None);
                 var result = infoTask.Result;
                 return result.Dependencies;
             }
@@ -198,7 +219,7 @@ public class NugetApi
             {
                 if (Config.TRACE)
                 {
-                    Console.WriteLine("A dependency resource was unable to load for package: " + identity);
+                    Console.WriteLine($"A dependency resource was unable to load for package: {identity}");
                     if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
                 }
             }
@@ -206,104 +227,35 @@ public class NugetApi
         return new List<PackageDependency>();
     }
 
-    private bool FrameworksMatch(PackageDependencyGroup framework1, NugetFramework framework2)
+    private bool FrameworksMatch(PackageDependencyGroup dependency_group, DotNetFramework framework)
     {
-        if (framework1.TargetFramework.IsAny) return true;
+        if (dependency_group.TargetFramework.IsAny) return true;
 
-        if (framework1.TargetFramework.IsAgnostic) return true;
+        if (dependency_group.TargetFramework.IsAgnostic) return true;
 
-        if (framework1.TargetFramework.IsSpecificFramework)
+        if (dependency_group.TargetFramework.IsSpecificFramework)
         {
-            var majorMatch = framework1.TargetFramework.Version.Major == framework2.Major;
-            var minorMatch = framework1.TargetFramework.Version.Minor == framework2.Minor;
-            return majorMatch && minorMatch;
+            var same_major_version = dependency_group.TargetFramework.Version.Major == framework.Major;
+            var same_minor_version = dependency_group.TargetFramework.Version.Minor == framework.Minor;
+            return same_major_version && same_minor_version;
         }
 
-        if (framework1.TargetFramework.IsUnsupported)
+        if (dependency_group.TargetFramework.IsUnsupported)
             return false;
         return true;
     }
 }
 
-public class NugetFramework
+public class DotNetFramework
 {
     public string Identifier;
     public int Major;
     public int Minor;
 
-    public NugetFramework(string id, int major, int minor)
+    public DotNetFramework(string id, int major, int minor)
     {
         Identifier = id;
         Major = major;
         Minor = minor;
-    }
-}
-
-
-public class ApiLogger : ILogger
-{
-    public void LogDebug(string data)
-    {
-        Trace.WriteLine($"DEBUG: {data}");
-    }
-
-    public void LogVerbose(string data)
-    {
-        Trace.WriteLine($"VERBOSE: {data}");
-    }
-
-    public void LogInformation(string data)
-    {
-        Trace.WriteLine($"INFORMATION: {data}");
-    }
-
-    public void LogMinimal(string data)
-    {
-        Trace.WriteLine($"MINIMAL: {data}");
-    }
-
-    public void LogWarning(string data)
-    {
-        Trace.WriteLine($"WARNING: {data}");
-    }
-
-    public void LogError(string data)
-    {
-        Trace.WriteLine($"ERROR: {data}");
-    }
-
-    public void LogInformationSummary(string data)
-    {
-        Trace.WriteLine($"INFORMATION SUMMARY: {data}");
-    }
-
-    public void Log(LogLevel level, string data)
-    {
-        Trace.WriteLine($"{level.ToString()}: {data}");
-    }
-
-    public Task LogAsync(LogLevel level, string data)
-    {
-        return Task.Run(() => Trace.WriteLine($"{level.ToString()}: {data}"));
-    }
-
-    public void Log(ILogMessage message)
-    {
-        Trace.WriteLine($"{message.Level.ToString()}: {message.Message}");
-    }
-
-    public Task LogAsync(ILogMessage message)
-    {
-        return Task.Run(() => Trace.WriteLine($"{message.Level.ToString()}: {message.Message}"));
-    }
-
-    public void LogSummary(string data)
-    {
-        Trace.WriteLine($"SUMMARY: {data}");
-    }
-
-    public void LogErrorSummary(string data)
-    {
-        Trace.WriteLine($"ERROR SUMMARY: {data}");
     }
 }

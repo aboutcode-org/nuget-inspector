@@ -1,10 +1,9 @@
 {
   "tool_name": "nuget-inspector",
-  "tool_version": "0.5.0",
+  "tool_version": "0.6.0",
   "packages": [
     {
       "project_name": "DevAudit.Tests",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/DevAudit.Tests.csproj",
       "outputs": [

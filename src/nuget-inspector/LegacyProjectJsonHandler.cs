@@ -22,16 +22,16 @@ internal class LegacyProjectJsonHandler : IDependencyResolver
     public DependencyResolution Process()
     {
         var result = new DependencyResolution();
-        var model = JsonPackageSpecReader.GetPackageSpec(ProjectName, ProjectJsonPath);
+        var model = JsonPackageSpecReader.GetPackageSpec(name: ProjectName, packageSpecPath: ProjectJsonPath);
         IList<LibraryDependency> packages = model.Dependencies;
         foreach (var package in packages)
         {
             var set = new PackageSet
             {
-                PackageId = new PackageId(package.Name, package.LibraryRange.VersionRange.OriginalString)
+                PackageId = new BasePackage(name: package.Name, version: package.LibraryRange.VersionRange.OriginalString)
             };
-            result.Packages.Add(set);
-            result.Dependencies.Add(set.PackageId);
+            result.Packages.Add(item: set);
+            result.Dependencies.Add(item: set.PackageId);
         }
 
         return result;

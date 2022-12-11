@@ -1,10 +1,9 @@
 {
   "tool_name": "nuget-inspector",
-  "tool_version": "0.5.0",
+  "tool_version": "0.6.0",
   "packages": [
     {
       "project_name": "GenericHostConsoleApp",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/packages.lock.json1/GenericHostConsoleApp/GenericHostConsoleApp.csproj",
       "outputs": [

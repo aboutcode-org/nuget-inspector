@@ -1,0 +1,124 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.6.0",
+  "packages": [
+    {
+      "project_name": "xxx",
+      "datasource_id": "nuget-packages.config",
+      "project_file": "/ort-4522/xxx.csproj",
+      "outputs": [
+        "/ort-4522/bin/Debug/",
+        "/ort-4522/bin/Release/",
+        "/ort-4522/bin/x86/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Antlr4",
+            "version": "4.6.1",
+            "purl": "pkg:nuget/Antlr4@4.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr4/4.6.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Antlr4.CodeGenerator",
+              "version": "4.6.1",
+              "purl": "pkg:nuget/Antlr4.CodeGenerator@4.6.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr4.CodeGenerator/4.6.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Antlr4.Runtime",
+              "version": "4.6.1",
+              "purl": "pkg:nuget/Antlr4.Runtime@4.6.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr4.Runtime/4.6.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Antlr4.CodeGenerator",
+            "version": "4.6.1",
+            "purl": "pkg:nuget/Antlr4.CodeGenerator@4.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr4.CodeGenerator/4.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Antlr4.Runtime",
+            "version": "4.6.1",
+            "purl": "pkg:nuget/Antlr4.Runtime@4.6.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Antlr4.Runtime/4.6.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Common.Logging.Core",
+            "version": "2.2.0",
+            "purl": "pkg:nuget/Common.Logging.Core@2.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Common.Logging.Core/2.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "6.0.8",
+            "purl": "pkg:nuget/Newtonsoft.Json@6.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Softwarehelden.NuGet.Deploy",
+            "version": "1.0.32",
+            "purl": "pkg:nuget/Softwarehelden.NuGet.Deploy@1.0.32",
+            "download_url": "https://www.nuget.org/api/v2/package/Softwarehelden.NuGet.Deploy/1.0.32"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Antlr4",
+          "version": "4.6.1",
+          "purl": "pkg:nuget/Antlr4@4.6.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Antlr4/4.6.1"
+        },
+        {
+          "type": "nuget",
+          "name": "Common.Logging.Core",
+          "version": "2.2.0",
+          "purl": "pkg:nuget/Common.Logging.Core@2.2.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Common.Logging.Core/2.2.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": "6.0.8",
+          "purl": "pkg:nuget/Newtonsoft.Json@6.0.8",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Softwarehelden.NuGet.Deploy",
+          "version": "1.0.32",
+          "purl": "pkg:nuget/Softwarehelden.NuGet.Deploy@1.0.32",
+          "download_url": "https://www.nuget.org/api/v2/package/Softwarehelden.NuGet.Deploy/1.0.32"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 {
   "tool_name": "nuget-inspector",
-  "tool_version": "0.5.0",
+  "tool_version": "0.6.0",
   "packages": [
     {
       "project_name": "DependencyChecker",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/net462/DependencyChecker.csproj",
       "outputs": [

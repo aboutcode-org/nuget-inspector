@@ -8,18 +8,19 @@ internal static class Program
     {
         RegisterMSBuild();
         var exitCode = 0;
-        var options = ParseOptions(args);
+        var options = ParseCliArgs(args: args);
 
-        if (options.Success && options.Options is not null)
+        if (options.Success)
         {
-            var execution = ExecuteInspectors(options.Options);
+            var execution = ExecuteInspector(options: options.Options);
             if (execution.ExitCode != 0) exitCode = execution.ExitCode;
         }
         else
         {
             exitCode = options.ExitCode;
         }
-        Environment.Exit(exitCode);
+
+        Environment.Exit(exitCode: exitCode);
     }
 
     private static void RegisterMSBuild()
@@ -34,57 +35,69 @@ internal static class Program
             if (Config.TRACE)
             {
                 Console.WriteLine("Failed to register defaults.");
-                Console.Write(e);
+                Console.Write(value: e);
             }
         }
     }
 
-    private static ExecutionResult ExecuteInspectors(ScanOptions options)
+    private static ExecutionResult ExecuteInspector(Options options)
     {
-        var anyFailed = false;
+        if (Config.TRACE)
+        {
+            Console.WriteLine("ExecuteInspector: options");
+            options.Print();
+        }
+        var has_failed = false;
         try
         {
-            var dispatch = new InputScanner();
-            var searchService = new NugetApi(options.NugetApiFeedUrl, options.NugetConfigPath);
-            var inspectionResults = dispatch.Inspect(options, searchService);
-            if (inspectionResults != null)
-                foreach (var result in inspectionResults)
-                    try
-                    {
-                        if (result.ResultName != null && Config.TRACE)
-                        {
-                            Console.WriteLine("Scan: " + result.ResultName);
-                        }
-                        if (result.Status == Scan.ResultStatus.Success)
-                        {
-                            if (Config.TRACE) Console.WriteLine("Scan Result: Success");
-                            var writer = new OutputFormatJson(result);
-                            writer.Write();
-                            if (Config.TRACE) Console.WriteLine("Info file created at {0}", writer.OutputFilePath());
-                        }
-                        else
-                        {
-                            Console.WriteLine("Scan Result: Error");
-                            if (result.Exception != null)
-                            {
-                                if (Config.TRACE) {
-                                    Console.WriteLine("Exception:");
-                                    Console.WriteLine(result.Exception);
-                                }
-                                anyFailed = true;
-                            }
-                        }
-                    }
-                    catch (Exception e)
+            var nuget_api_service = new NugetApi(
+                nugetApiFeedUrl: options.NugetApiFeedUrl,
+                nugetConfig: options.NugetConfigPath);
+                
+            var project_options = new ProjectScannerOptions(options: options);
+            var inspector = new ProjectScanner(options: project_options, nuget_api_service: nuget_api_service);
+            var scan = inspector.RunScan();
+            try
+            {
+                if (Config.TRACE && scan.ResultName != null)
+                {
+                    Console.WriteLine($"Scan: {scan.ResultName}");
+                }
+
+                if (scan.Status == ScanResult.ResultStatus.Success)
+                {
+                    if (Config.TRACE) Console.WriteLine("Scan Result: Success");
+                    var writer = new OutputFormatJson(result: scan);
+                    writer.Write();
+                    if (Config.TRACE)
+                        Console.WriteLine(format: "Info file created at {0}", arg0: writer.OutputFilePath());
+                }
+                else
+                {
+                    Console.WriteLine("Scan Result: Error");
+                    if (scan.Exception != null)
                     {
                         if (Config.TRACE)
                         {
-                            Console.WriteLine("Error processing inspection result.");
-                            Console.WriteLine(e.Message);
-                            Console.WriteLine(e.StackTrace);
+                            Console.WriteLine("Exception:");
+                            Console.WriteLine(scan.Exception);
                         }
-                        anyFailed = true;
+
+                        has_failed = true;
                     }
+                }
+            }
+            catch (Exception e)
+            {
+                if (Config.TRACE)
+                {
+                    Console.WriteLine("Error processing inspection result.");
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine(e.StackTrace);
+                }
+
+                has_failed = true;
+            }
         }
         catch (Exception e)
         {
@@ -93,40 +106,42 @@ internal static class Program
                 Console.WriteLine("Error iterating inspection results.");
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
-            } 
-            anyFailed = true;
+            }
+
+            has_failed = true;
         }
 
-        if (anyFailed)
+        if (has_failed)
             return ExecutionResult.Failed();
         return ExecutionResult.Succeeded();
     }
 
-    private static ParsedOptions ParseOptions(string[] args)
+    private static ParsedOptions ParseCliArgs(string[] args)
     {
-        ScanOptions options = null;
         try
         {
-            var parsedOptions = CliOptions.ParseArguments(args);
+            var options = Options.ParseArguments(args: args);
 
-            if (parsedOptions == null)
+            if (options == null)
             {
                 return ParsedOptions.Failed();
             }
 
-            if (string.IsNullOrWhiteSpace(parsedOptions.ProjectFilePath))
-                parsedOptions.ProjectFilePath = Directory.GetCurrentDirectory();
-
-            options = new ScanOptions
+            if (string.IsNullOrWhiteSpace(value: options.ProjectFilePath))
             {
-                OutputFilePath = parsedOptions.OutputFilePath,
-                NugetApiFeedUrl = parsedOptions.NugetApiFeedUrl,
-                NugetConfigPath = parsedOptions.NugetConfigPath,
-                ProjectFilePath = parsedOptions.ProjectFilePath,
-                Verbose = parsedOptions.Verbose
-            };
+                if (Config.TRACE)
+                {
+                    Console.WriteLine("Failed to parse options: missing ProjectFilePath");
+                }
+                return ParsedOptions.Failed();
+            }
 
-            return ParsedOptions.Succeeded(options);
+            if (options.Verbose)
+            {
+                Config.TRACE = true;
+            }
+
+            return ParsedOptions.Succeeded(options: options);
         }
         catch (Exception e)
         {
@@ -136,6 +151,7 @@ internal static class Program
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }
+
             return ParsedOptions.Failed();
         }
     }
@@ -143,24 +159,25 @@ internal static class Program
     private class ParsedOptions
     {
         public int ExitCode;
-        public ScanOptions Options;
+        public Options Options = null!;
         public bool Success;
 
         public static ParsedOptions Failed(int exitCode = -1)
         {
             return new ParsedOptions
             {
-                Success = false,
-                ExitCode = exitCode
+                ExitCode = exitCode,
+                Options = new Options(),
+                Success = false
             };
         }
 
-        public static ParsedOptions Succeeded(ScanOptions options)
+        public static ParsedOptions Succeeded(Options options)
         {
             return new ParsedOptions
             {
-                Success = true,
-                Options = options
+                Options = options,
+                Success = true
             };
         }
     }

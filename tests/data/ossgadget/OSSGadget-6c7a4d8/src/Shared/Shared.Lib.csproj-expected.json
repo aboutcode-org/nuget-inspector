@@ -1,10 +1,9 @@
 {
   "tool_name": "nuget-inspector",
-  "tool_version": "0.5.0",
+  "tool_version": "0.6.0",
   "packages": [
     {
       "project_name": "Shared.Lib",
-      "project_datafile_type": "xproj-file",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/Shared/Shared.Lib.csproj",
       "outputs": [

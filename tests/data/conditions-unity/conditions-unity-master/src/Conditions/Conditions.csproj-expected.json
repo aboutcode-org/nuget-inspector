@@ -1,0 +1,44 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.6.0",
+  "packages": [
+    {
+      "project_name": "Conditions",
+      "datasource_id": "dotnet-project.lock.json",
+      "project_file": "/conditions-unity/conditions-unity-master/src/Conditions/Conditions.csproj",
+      "outputs": [
+        "/conditions-unity/conditions-unity-master/src/Conditions/bin/Debug/",
+        "/conditions-unity/conditions-unity-master/src/Conditions/bin/Release/"
+      ],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.CommandLine",
+            "version": "4.6.2",
+            "purl": "pkg:nuget/NuGet.CommandLine@4.6.2",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.CommandLine/4.6.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NuGet.CommandLine",
+          "version": "4.6.2",
+          "purl": "pkg:nuget/NuGet.CommandLine@4.6.2",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.CommandLine/4.6.2"
+        },
+        {
+          "type": "nuget",
+          "name": "NuGet.CommandLine",
+          "version": "4.6.2",
+          "purl": "pkg:nuget/NuGet.CommandLine@4.6.2",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.CommandLine/4.6.2"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

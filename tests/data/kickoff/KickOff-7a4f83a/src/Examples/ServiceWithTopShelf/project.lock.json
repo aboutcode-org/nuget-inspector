@@ -1,0 +1,290 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "Consul/0.7.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Net.Http",
+          "System.Net.Http.WebRequest"
+        ],
+        "compile": {
+          "lib/net45/Consul.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Consul.dll": {}
+        }
+      },
+      "Elasticsearch.Net/2.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Elasticsearch.Net.dll": {}
+        }
+      },
+      "Serilog/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.dll": {}
+        }
+      },
+      "Serilog.Sinks.ColoredConsole/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.ColoredConsole.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.ColoredConsole.dll": {}
+        }
+      },
+      "Serilog.Sinks.Elasticsearch/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "2.4.2",
+          "Serilog": "2.2.1",
+          "Serilog.Sinks.File": "3.0.1",
+          "Serilog.Sinks.PeriodicBatching": "2.0.0",
+          "Serilog.Sinks.RollingFile": "3.0.1"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.Elasticsearch.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.Elasticsearch.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.2.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.PeriodicBatching.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.PeriodicBatching.dll": {}
+        }
+      },
+      "Serilog.Sinks.RollingFile/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog.Sinks.File": "3.0.1"
+        },
+        "compile": {
+          "lib/net45/Serilog.Sinks.RollingFile.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Serilog.Sinks.RollingFile.dll": {}
+        }
+      },
+      "StructureMap/4.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/StructureMap.dll": {}
+        },
+        "runtime": {
+          "lib/net45/StructureMap.dll": {}
+        }
+      },
+      "Topshelf/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net452/Topshelf.dll": {}
+        },
+        "runtime": {
+          "lib/net452/Topshelf.dll": {}
+        }
+      },
+      "KickOff/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "compile": {
+          "net452/KickOff.dll": {}
+        },
+        "runtime": {
+          "net452/KickOff.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Consul/0.7.0.3": {
+      "sha512": "Ss6Q2dpCXEPnoLIuSZeR3DdG+RiZOikckbmnPibyOsDUNXaJe4rk/LnfGp5sWBvdfm2dAXfIa9e32wAXpvya4A==",
+      "type": "package",
+      "path": "Consul/0.7.0.3",
+      "files": [
+        "Consul.0.7.0.3.nupkg.sha512",
+        "Consul.nuspec",
+        "lib/net45/Consul.dll",
+        "lib/netstandard1.3/Consul.dll"
+      ]
+    },
+    "Elasticsearch.Net/2.4.2": {
+      "sha512": "4quf+2Px/2iu7Y1ekdG1Cv4f66toIQseuEsrCmoyAHPPOM8s32mp4TFhjj8VbtWxauB5MMsoH4izFeOkrjl75w==",
+      "type": "package",
+      "path": "Elasticsearch.Net/2.4.2",
+      "files": [
+        "Elasticsearch.Net.2.4.2.nupkg.sha512",
+        "Elasticsearch.Net.nuspec",
+        "lib/net45/Elasticsearch.Net.XML",
+        "lib/net45/Elasticsearch.Net.dll",
+        "lib/net45/Elasticsearch.Net.pdb",
+        "lib/net45/Elasticsearch.Net.pdb.srcsrv",
+        "lib/net46/Elasticsearch.Net.XML",
+        "lib/net46/Elasticsearch.Net.dll",
+        "lib/net46/Elasticsearch.Net.pdb",
+        "lib/net46/Elasticsearch.Net.pdb.srcsrv",
+        "lib/netstandard1.3/Elasticsearch.Net.dll",
+        "lib/netstandard1.3/Elasticsearch.Net.pdb",
+        "lib/netstandard1.3/Elasticsearch.Net.pdb.srcsrv"
+      ]
+    },
+    "Serilog/2.3.0": {
+      "sha512": "JJMEqTUGe/bA4OEMefGd8W6si9oStSa3CF47dIHzkRKJHqFWFOW8D2aZTOW6VIgNLY2hzruQXhvp2tX0NVkgsw==",
+      "type": "package",
+      "path": "Serilog/2.3.0",
+      "files": [
+        "Serilog.2.3.0.nupkg.sha512",
+        "Serilog.nuspec",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml"
+      ]
+    },
+    "Serilog.Sinks.ColoredConsole/2.0.0": {
+      "sha512": "pAH8MO/6oPPToCnwKpSAszIVF0tPpYjKLNhAJlTxAinpcRjPrKT/1bGTW/ZqoCluVyZQl5eg1gIxEkhHEd6Uww==",
+      "type": "package",
+      "path": "Serilog.Sinks.ColoredConsole/2.0.0",
+      "files": [
+        "Serilog.Sinks.ColoredConsole.2.0.0.nupkg.sha512",
+        "Serilog.Sinks.ColoredConsole.nuspec",
+        "lib/net45/Serilog.Sinks.ColoredConsole.dll",
+        "lib/netstandard1.3/Serilog.Sinks.ColoredConsole.dll"
+      ]
+    },
+    "Serilog.Sinks.Elasticsearch/4.1.1": {
+      "sha512": "+EnPr4B1LfVEHMrfyvSbMdwRenQuo1zPJSwxXPRMHpvW1yXLC7rZg81YO1q84ZB+sankKJZ0ZaddX/yfPCORxQ==",
+      "type": "package",
+      "path": "Serilog.Sinks.Elasticsearch/4.1.1",
+      "files": [
+        "Serilog.Sinks.ElasticSearch.4.1.1.nupkg.sha512",
+        "Serilog.Sinks.ElasticSearch.nuspec",
+        "lib/net45/Serilog.Sinks.Elasticsearch.dll",
+        "lib/net45/Serilog.Sinks.Elasticsearch.xml",
+        "lib/netstandard1.3/Serilog.Sinks.Elasticsearch.dll",
+        "lib/netstandard1.3/Serilog.Sinks.Elasticsearch.xml"
+      ]
+    },
+    "Serilog.Sinks.File/3.0.1": {
+      "sha512": "9eCg2aGA9gSU2H3AeKcefXcEeHLpmvR3gMxiLqXRvqBNozZOd8Kdng24r7erEkC6E3FD7mCroUHclvDwdycc4A==",
+      "type": "package",
+      "path": "Serilog.Sinks.File/3.0.1",
+      "files": [
+        "Serilog.Sinks.File.3.0.1.nupkg.sha512",
+        "Serilog.Sinks.File.nuspec",
+        "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.xml",
+        "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.xml"
+      ]
+    },
+    "Serilog.Sinks.PeriodicBatching/2.0.0": {
+      "sha512": "gfG5MaAKdGw0CFPdoXV9I0m+s5CbUxihFeiRMD/nSPzP/S8Lmop0McQhz8o1tKBU/7SkM1UOjWsBdv5LObDBOg==",
+      "type": "package",
+      "path": "Serilog.Sinks.PeriodicBatching/2.0.0",
+      "files": [
+        "Serilog.Sinks.PeriodicBatching.2.0.0.nupkg.sha512",
+        "Serilog.Sinks.PeriodicBatching.nuspec",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.3/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.3/Serilog.Sinks.PeriodicBatching.xml"
+      ]
+    },
+    "Serilog.Sinks.RollingFile/3.0.1": {
+      "sha512": "l4Ei4+YmMGF3RoWYu8TanMPFdwd6hywYtNDv+PCG84sUxoba377B6YVSJJx/yaGuDRcH48ZhfLjITT7pJUqGrQ==",
+      "type": "package",
+      "path": "Serilog.Sinks.RollingFile/3.0.1",
+      "files": [
+        "Serilog.Sinks.RollingFile.3.0.1.nupkg.sha512",
+        "Serilog.Sinks.RollingFile.nuspec",
+        "lib/net45/Serilog.Sinks.RollingFile.dll",
+        "lib/net45/Serilog.Sinks.RollingFile.xml",
+        "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll",
+        "lib/netstandard1.3/Serilog.Sinks.RollingFile.xml"
+      ]
+    },
+    "StructureMap/4.4.1": {
+      "sha512": "h4UjGZdPDdWYXAD3bEeMYEqkXChbTH6WW3CYXzdP0n6AtnsuL2vsLBHs8hLWlrUKPmCYLoSTP96E0VLYjrN5vg==",
+      "type": "package",
+      "path": "StructureMap/4.4.1",
+      "files": [
+        "lib/net45/StructureMap.dll",
+        "lib/netstandard1.3/StructureMap.dll",
+        "lib/netstandard1.5/StructureMap.dll",
+        "structuremap.4.4.1.nupkg.sha512",
+        "structuremap.nuspec"
+      ]
+    },
+    "Topshelf/4.0.3": {
+      "sha512": "uUFSsAqtYzA5uaMI3pHiAvX5USsjyk2M4UcWSPW/jKPKbQrJp8+IunYHcg0TuAQP5D8wh1AEv3zHp1cG78XvbA==",
+      "type": "package",
+      "path": "Topshelf/4.0.3",
+      "files": [
+        "Topshelf.4.0.3.nupkg.sha512",
+        "Topshelf.nuspec",
+        "lib/net452/Topshelf.XML",
+        "lib/net452/Topshelf.dll"
+      ]
+    },
+    "KickOff/1.0.0": {
+      "type": "project",
+      "path": "../../KickOff/project.json",
+      "msbuildProject": "../../KickOff/KickOff.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Consul >= 0.7.0.3",
+      "KickOff >= 1.*",
+      "Serilog >= 2.3.0",
+      "Serilog.Sinks.ColoredConsole >= 2.0.0",
+      "Serilog.Sinks.Elasticsearch >= 4.1.1",
+      "StructureMap >= 4.4.1",
+      "Topshelf >= 4.0.3"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System.ServiceProcess >= 4.0.0"
+    ]
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

@@ -1,0 +1,260 @@
+{
+  "tool_name": "nuget-inspector",
+  "tool_version": "0.6.0",
+  "packages": [
+    {
+      "project_name": "TestService",
+      "project_version": "1.0.0.0",
+      "datasource_id": "dotnet-project.lock.json",
+      "project_file": "/kickoff/KickOff-7a4f83a/src/Examples/TestService/TestService.xproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Consul",
+            "version": "0.7.0.3",
+            "purl": "pkg:nuget/Consul@0.7.0.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Consul/0.7.0.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Elasticsearch.Net",
+            "version": "2.4.2",
+            "purl": "pkg:nuget/Elasticsearch.Net@2.4.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/2.4.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog",
+            "version": "2.3.0",
+            "purl": "pkg:nuget/Serilog@2.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.ColoredConsole",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Serilog.Sinks.ColoredConsole@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.ColoredConsole/2.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.3.0",
+              "purl": "pkg:nuget/Serilog@2.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.Elasticsearch",
+            "version": "4.1.1",
+            "purl": "pkg:nuget/Serilog.Sinks.Elasticsearch@4.1.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/4.1.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Elasticsearch.Net",
+              "version": "2.4.2",
+              "purl": "pkg:nuget/Elasticsearch.Net@2.4.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/2.4.2"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.3.0",
+              "purl": "pkg:nuget/Serilog@2.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.File",
+              "version": "3.0.1",
+              "purl": "pkg:nuget/Serilog.Sinks.File@3.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.PeriodicBatching",
+              "version": "2.0.0",
+              "purl": "pkg:nuget/Serilog.Sinks.PeriodicBatching@2.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.RollingFile",
+              "version": "3.0.1",
+              "purl": "pkg:nuget/Serilog.Sinks.RollingFile@3.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.File",
+            "version": "3.0.1",
+            "purl": "pkg:nuget/Serilog.Sinks.File@3.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.3.0",
+              "purl": "pkg:nuget/Serilog@2.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.PeriodicBatching",
+            "version": "2.0.0",
+            "purl": "pkg:nuget/Serilog.Sinks.PeriodicBatching@2.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog",
+              "version": "2.3.0",
+              "purl": "pkg:nuget/Serilog@2.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Serilog.Sinks.RollingFile",
+            "version": "3.0.1",
+            "purl": "pkg:nuget/Serilog.Sinks.RollingFile@3.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.0.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Serilog.Sinks.File",
+              "version": "3.0.1",
+              "purl": "pkg:nuget/Serilog.Sinks.File@3.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StructureMap",
+            "version": "4.4.1",
+            "purl": "pkg:nuget/StructureMap@4.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/StructureMap/4.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "KickOff",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/KickOff@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "KickOff.Host.Windows",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/KickOff.Host.Windows@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/KickOff.Host.Windows/1.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "KickOff",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/KickOff@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Consul",
+          "version": "0.7.0.3",
+          "purl": "pkg:nuget/Consul@0.7.0.3",
+          "download_url": "https://www.nuget.org/api/v2/package/Consul/0.7.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "KickOff",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/KickOff@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "KickOff.Host.Windows",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/KickOff.Host.Windows@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/KickOff.Host.Windows/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog",
+          "version": "2.3.0",
+          "purl": "pkg:nuget/Serilog@2.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.ColoredConsole",
+          "version": "2.0.0",
+          "purl": "pkg:nuget/Serilog.Sinks.ColoredConsole@2.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.ColoredConsole/2.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Serilog.Sinks.Elasticsearch",
+          "version": "4.1.1",
+          "purl": "pkg:nuget/Serilog.Sinks.Elasticsearch@4.1.1",
+          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/4.1.1"
+        },
+        {
+          "type": "nuget",
+          "name": "StructureMap",
+          "version": "4.4.1",
+          "purl": "pkg:nuget/StructureMap@4.4.1",
+          "download_url": "https://www.nuget.org/api/v2/package/StructureMap/4.4.1"
+        },
+        {
+          "type": "nuget",
+          "name": "System.ServiceProcess",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.ServiceProcess@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ServiceProcess/4.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}
