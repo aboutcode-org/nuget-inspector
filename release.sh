@@ -14,26 +14,33 @@
 #  -p:PublishSingleFile=true \
 
 rm -rf release/
+mkdir release
 
-TARGET=nuget-inspector-0.6.0-linux-x64
-RELEASE_DIR=release/$TARGET
+VERSION=0.6.0
 
-mkdir -p $RELEASE_DIR
+TARGET_BASE=nuget-inspector-$(git describe)
 
-dotnet publish \
-  --runtime linux-x64 \
-  --self-contained true \
-  --configuration Release \
-  -p:Version=0.6.0 \
-  --output $RELEASE_DIR \
-  src/nuget-inspector/nuget-inspector.csproj
-
-cp apache-2.0.LICENSE \
-   AUTHORS.rst        \
-   CHANGELOG.rst      \
-   mit.LICENSE        \
-   NOTICE             \
-   README.rst         \
-   $RELEASE_DIR
-
-tar -czf release/$TARGET.tar.gz $RELEASE_DIR
+# see https://learn.microsoft.com/en-us/dotnet/core/rid-catalog
+for platform in "linux-x64" "win-x64" "osx-x64"
+do
+    TARGET=$TARGET_BASE-$platform
+    RELEASE_DIR=release/$TARGET
+    mkdir -p $RELEASE_DIR
+    dotnet publish \
+      --runtime linux-x64 \
+      --self-contained true \
+      --configuration Release \
+      -p:Version=$VERSION \
+      --output $RELEASE_DIR \
+      src/nuget-inspector/nuget-inspector.csproj ;
+    
+    cp apache-2.0.LICENSE \
+       mit.LICENSE        \
+       AUTHORS.rst        \
+       CHANGELOG.rst      \
+       NOTICE             \
+       README.rst         \
+       $RELEASE_DIR
+    
+    tar -czf release/$TARGET.tar.gz $RELEASE_DIR
+done

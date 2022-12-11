@@ -6,10 +6,13 @@
 
         <SelfContained>true</SelfContained>
         <PublishReadyToRun>true</PublishReadyToRun>
+
         <!--
         <PublishSingleFile>true</PublishSingleFile>
+        <PublishTrimmed>true</PublishTrimmed>
         <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
-        <PublishTrimmed>True</PublishTrimmed>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
         -->
 
         <RootNamespace>NugetInspector</RootNamespace>
@@ -25,14 +28,17 @@
         <Company>nexB Inc</Company>
         <AssemblyVersion>0.6.0.0</AssemblyVersion>
         <FileVersion>0.6.0.0</FileVersion>
-
+        <Description>A NuGet and Dotnet package dependency resolver</Description>
+        <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
+        <PackageLicenseUrl>Apache-2.0</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Build" Version="17.1.0" />
-        <PackageReference Include="Microsoft.Build.Locator" Version="1.4.1" />
+        <PackageReference Include="Microsoft.Build" Version="17.3.2" />
+        <PackageReference Include="Microsoft.Build.Locator" Version="1.4.10-g38d95f4814" />
         <PackageReference Include="Mono.Options" Version="6.12.0.148" />
-        <PackageReference Include="NuGet.Client" Version="4.2.0" />
+        <PackageReference Include="NuGet.Client" Version="4.3.0-beta1-2418" />
         <PackageReference Include="NuGet.ProjectModel" Version="6.1.0" />
         <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all" />
         <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
