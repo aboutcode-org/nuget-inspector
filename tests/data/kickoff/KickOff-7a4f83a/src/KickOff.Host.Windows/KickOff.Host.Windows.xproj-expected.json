@@ -1,0 +1,46 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.7.0"
+    }
+  ],
+  "packages": [
+    {
+      "project_name": "KickOff.Host.Windows",
+      "datasource_id": "dotnet-project.lock.json",
+      "project_file": "/kickoff/KickOff-7a4f83a/src/KickOff.Host.Windows/KickOff.Host.Windows.xproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "KickOff",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/KickOff@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "KickOff",
+          "version": "1.0.0",
+          "purl": "pkg:nuget/KickOff@1.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.ServiceProcess",
+          "version": "4.0.0",
+          "purl": "pkg:nuget/System.ServiceProcess@4.0.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.ServiceProcess/4.0.0"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

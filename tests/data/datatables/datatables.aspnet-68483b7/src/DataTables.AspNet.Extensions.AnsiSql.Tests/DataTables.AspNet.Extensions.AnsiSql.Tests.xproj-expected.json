@@ -1,0 +1,639 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.7.0"
+    }
+  ],
+  "packages": [
+    {
+      "project_name": "DataTables.AspNet.Extensions.AnsiSql.Tests",
+      "datasource_id": "dotnet-project.lock.json",
+      "project_file": "/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.AnsiSql.Tests/DataTables.AspNet.Extensions.AnsiSql.Tests.xproj",
+      "outputs": [],
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Castle.Core",
+            "version": "3.3.3",
+            "purl": "pkg:nuget/Castle.Core@3.3.3",
+            "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/3.3.3"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "dotnet-test-xunit",
+            "version": "2.2.0-preview2-build1029",
+            "purl": "pkg:nuget/dotnet-test-xunit@2.2.0-preview2-build1029",
+            "download_url": "https://www.nuget.org/api/v2/package/dotnet-test-xunit/2.2.0-preview2-build1029"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.Testing.Abstractions",
+              "version": "1.0.0-preview2-003121",
+              "purl": "pkg:nuget/Microsoft.Extensions.Testing.Abstractions@1.0.0-preview2-003121",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.NETCore.Platforms",
+              "version": "1.0.1",
+              "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.runner.reporters",
+              "version": "2.2.0-beta2-build3300",
+              "purl": "pkg:nuget/xunit.runner.reporters@2.2.0-beta2-build3300",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.reporters/2.2.0-beta2-build3300"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DiaSymReader",
+            "version": "1.0.8",
+            "purl": "pkg:nuget/Microsoft.DiaSymReader@1.0.8",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader/1.0.8"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Diagnostics.Debug",
+              "version": "4.0.11",
+              "purl": "pkg:nuget/System.Diagnostics.Debug@4.0.11",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.0.11"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime",
+              "version": "4.1.0",
+              "purl": "pkg:nuget/System.Runtime@4.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.1.0"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Runtime.InteropServices",
+              "version": "4.1.0",
+              "purl": "pkg:nuget/System.Runtime.InteropServices@4.1.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.1.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DiaSymReader.Native",
+            "version": "1.4.0-rc2",
+            "purl": "pkg:nuget/Microsoft.DiaSymReader.Native@1.4.0-rc2",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader.Native/1.4.0-rc2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.InternalAbstractions",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.DotNet.InternalAbstractions@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.DotNet.ProjectModel",
+            "version": "1.0.0-rc3-003121",
+            "purl": "pkg:nuget/Microsoft.DotNet.ProjectModel@1.0.0-rc3-003121",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.Extensions.DependencyModel",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.Extensions.DependencyModel@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Packaging",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Packaging@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.RuntimeModel",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.RuntimeModel@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.RuntimeModel/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Reflection.Metadata",
+              "version": "1.3.0",
+              "purl": "pkg:nuget/System.Reflection.Metadata@1.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.DependencyModel",
+            "version": "1.0.0",
+            "purl": "pkg:nuget/Microsoft.Extensions.DependencyModel@1.0.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.DotNet.InternalAbstractions",
+              "version": "1.0.0",
+              "purl": "pkg:nuget/Microsoft.DotNet.InternalAbstractions@1.0.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.Extensions.Testing.Abstractions",
+            "version": "1.0.0-preview2-003121",
+            "purl": "pkg:nuget/Microsoft.Extensions.Testing.Abstractions@1.0.0-preview2-003121",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.DiaSymReader",
+              "version": "1.0.8",
+              "purl": "pkg:nuget/Microsoft.DiaSymReader@1.0.8",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader/1.0.8"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.DiaSymReader.Native",
+              "version": "1.4.0-rc2",
+              "purl": "pkg:nuget/Microsoft.DiaSymReader.Native@1.4.0-rc2",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader.Native/1.4.0-rc2"
+            },
+            {
+              "type": "nuget",
+              "name": "Microsoft.DotNet.ProjectModel",
+              "version": "1.0.0-rc3-003121",
+              "purl": "pkg:nuget/Microsoft.DotNet.ProjectModel@1.0.0-rc3-003121",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121"
+            },
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.Platforms",
+            "version": "1.0.1",
+            "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": "4.6.38-alpha",
+            "purl": "pkg:nuget/Moq@4.6.38-alpha",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/4.6.38-alpha"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Castle.Core",
+              "version": "3.3.3",
+              "purl": "pkg:nuget/Castle.Core@3.3.3",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/3.3.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "9.0.1",
+            "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Common",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Common@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/3.5.0-beta2-1484"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Frameworks",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Frameworks@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/3.5.0-beta2-1484"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Packaging@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/3.5.0-beta2-1484"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NuGet.Common",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Common@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Packaging.Core",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Packaging.Core@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/3.5.0-beta2-1484"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Packaging.Core@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/3.5.0-beta2-1484"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NuGet.Common",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Common@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Packaging.Core.Types",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Packaging.Core.Types@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/3.5.0-beta2-1484"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Packaging.Core.Types",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Packaging.Core.Types@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core.Types/3.5.0-beta2-1484"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "NuGet.Frameworks",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Frameworks@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Versioning@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.RuntimeModel",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.RuntimeModel@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.RuntimeModel/3.5.0-beta2-1484"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Frameworks",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Frameworks@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/3.5.0-beta2-1484"
+            },
+            {
+              "type": "nuget",
+              "name": "NuGet.Versioning",
+              "version": "3.5.0-beta2-1484",
+              "purl": "pkg:nuget/NuGet.Versioning@3.5.0-beta2-1484",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NuGet.Versioning",
+            "version": "3.5.0-beta2-1484",
+            "purl": "pkg:nuget/NuGet.Versioning@3.5.0-beta2-1484",
+            "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Collections.Immutable",
+            "version": "1.2.0",
+            "purl": "pkg:nuget/System.Collections.Immutable@1.2.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.2.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Diagnostics.Debug",
+            "version": "4.0.11",
+            "purl": "pkg:nuget/System.Diagnostics.Debug@4.0.11",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.0.11"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reflection.Metadata",
+            "version": "1.3.0",
+            "purl": "pkg:nuget/System.Reflection.Metadata@1.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Collections.Immutable",
+              "version": "1.2.0",
+              "purl": "pkg:nuget/System.Collections.Immutable@1.2.0",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.2.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime",
+            "version": "4.1.0",
+            "purl": "pkg:nuget/System.Runtime@4.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.InteropServices",
+            "version": "4.1.0",
+            "purl": "pkg:nuget/System.Runtime.InteropServices@4.1.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices/4.1.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit",
+            "version": "2.2.0-beta5-build3474",
+            "purl": "pkg:nuget/xunit@2.2.0-beta5-build3474",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit/2.2.0-beta5-build3474"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.assert",
+              "version": "2.2.0-beta5-build3474",
+              "purl": "pkg:nuget/xunit.assert@2.2.0-beta5-build3474",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0-beta5-build3474"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.core",
+              "version": "2.2.0-beta5-build3474",
+              "purl": "pkg:nuget/xunit.core@2.2.0-beta5-build3474",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0-beta5-build3474"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.abstractions",
+            "version": "2.0.1",
+            "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.assert",
+            "version": "2.2.0-beta5-build3474",
+            "purl": "pkg:nuget/xunit.assert@2.2.0-beta5-build3474",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0-beta5-build3474"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.core",
+            "version": "2.2.0-beta5-build3474",
+            "purl": "pkg:nuget/xunit.core@2.2.0-beta5-build3474",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0-beta5-build3474"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.2.0-beta5-build3474",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.2.0-beta5-build3474",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0-beta5-build3474"
+            },
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.execution",
+              "version": "2.2.0-beta5-build3474",
+              "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0-beta5-build3474",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0-beta5-build3474"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.core",
+            "version": "2.2.0-beta5-build3474",
+            "purl": "pkg:nuget/xunit.extensibility.core@2.2.0-beta5-build3474",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0-beta5-build3474"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.abstractions",
+              "version": "2.0.1",
+              "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.extensibility.execution",
+            "version": "2.2.0-beta5-build3474",
+            "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0-beta5-build3474",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0-beta5-build3474"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.extensibility.core",
+              "version": "2.2.0-beta5-build3474",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.2.0-beta5-build3474",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0-beta5-build3474"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.reporters",
+            "version": "2.2.0-beta2-build3300",
+            "purl": "pkg:nuget/xunit.runner.reporters@2.2.0-beta2-build3300",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.reporters/2.2.0-beta2-build3300"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.runner.utility",
+              "version": "2.2.0-beta2-build3300",
+              "purl": "pkg:nuget/xunit.runner.utility@2.2.0-beta2-build3300",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.utility/2.2.0-beta2-build3300"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "xunit.runner.utility",
+            "version": "2.2.0-beta2-build3300",
+            "purl": "pkg:nuget/xunit.runner.utility@2.2.0-beta2-build3300",
+            "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.utility/2.2.0-beta2-build3300"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "xunit.abstractions",
+              "version": "2.0.1",
+              "purl": "pkg:nuget/xunit.abstractions@2.0.1",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "DataTables.AspNet.Core",
+            "version": "2.0.2",
+            "purl": "pkg:nuget/DataTables.AspNet.Core@2.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/DataTables.AspNet.Core/2.0.2"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "DataTables.AspNet.Core",
+          "version": "2.0.2",
+          "purl": "pkg:nuget/DataTables.AspNet.Core@2.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/DataTables.AspNet.Core/2.0.2"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": "4.6.38-alpha",
+          "purl": "pkg:nuget/Moq@4.6.38-alpha",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/4.6.38-alpha"
+        },
+        {
+          "type": "nuget",
+          "name": "dotnet-test-xunit",
+          "version": "2.2.0-preview2-build1029",
+          "purl": "pkg:nuget/dotnet-test-xunit@2.2.0-preview2-build1029",
+          "download_url": "https://www.nuget.org/api/v2/package/dotnet-test-xunit/2.2.0-preview2-build1029"
+        },
+        {
+          "type": "nuget",
+          "name": "xunit",
+          "version": "2.2.0-beta5-build3474",
+          "purl": "pkg:nuget/xunit@2.2.0-beta5-build3474",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit/2.2.0-beta5-build3474"
+        }
+      ],
+      "children": []
+    }
+  ]
+}

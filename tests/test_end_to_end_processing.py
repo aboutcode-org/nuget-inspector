@@ -33,7 +33,6 @@ failing_paths = (
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables-resolved/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
-    "thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/noproject/noproject.csproj",
     "thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
     "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
     "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
@@ -44,13 +43,8 @@ failing_paths = (
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
-    "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.AnsiSql.Tests/DataTables.AspNet.Extensions.AnsiSql.Tests.xproj",
     "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
-    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
-    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj",
-    "kickoff/KickOff-7a4f83a/src/KickOff.Host.Windows/KickOff.Host.Windows.xproj",
-    "kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj",
-    "kickoff/KickOff-7a4f83a/src/Examples/InternalPreconfiguredPipeline/InternalPreconfiguredPipeline.xproj",
+
 )
 
 
@@ -98,7 +92,9 @@ def load_cleaned_json(location):
     Clean a JSON results file at ``location`` from harcoded ``path`` and
     """
     text = clean_text_file(location)
-    return json.loads(text)
+    data = json.loads(text)
+    data["headers"][0]["tool_version"] = "0.0.0"
+    return data
 
 
 def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
@@ -133,8 +129,8 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
         fileutils.copyfile(src=result_file, dst=expected_file)
     else:
         result = load_cleaned_json(result_file)
-        with open(expected_file) as ef:
-            expected = json.load(ef)
+        expected = load_cleaned_json(expected_file)
+
         try:
             assert result == expected
         except:

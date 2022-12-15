@@ -1,0 +1,20 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.7.0"
+    }
+  ],
+  "packages": [
+    {
+      "project_name": "noproject",
+      "datasource_id": "dotnet-project.assets.json",
+      "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/noproject/noproject.csproj",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.7.0"
+    }
+  ],
+  "packages": [
+    {
+      "project_name": "MusicStore.Spa",
+      "datasource_id": "dotnet-project.lock.json",
+      "project_file": "/legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj",
+      "outputs": [],
+      "packages": [],
+      "dependencies": [],
+      "children": []
+    }
+  ]
+}

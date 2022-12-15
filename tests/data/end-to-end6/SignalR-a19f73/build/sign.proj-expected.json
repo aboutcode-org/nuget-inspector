@@ -1,6 +1,11 @@
 {
-  "tool_name": "nuget-inspector",
-  "tool_version": "0.6.0",
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.7.0"
+    }
+  ],
   "packages": [
     {
       "project_name": "sign",
