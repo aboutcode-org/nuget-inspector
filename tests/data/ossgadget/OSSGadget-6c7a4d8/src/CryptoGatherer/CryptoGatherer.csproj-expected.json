@@ -11,10 +11,6 @@
       "project_name": "CryptoGatherer",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/CryptoGatherer/CryptoGatherer.csproj",
-      "outputs": [
-        "/ossgadget/OSSGadget-6c7a4d8/src/CryptoGatherer/bin/Debug/",
-        "/ossgadget/OSSGadget-6c7a4d8/src/CryptoGatherer/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

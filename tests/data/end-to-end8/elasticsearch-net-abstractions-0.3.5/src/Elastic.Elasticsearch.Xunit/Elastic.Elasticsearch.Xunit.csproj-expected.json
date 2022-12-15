@@ -11,10 +11,6 @@
       "project_name": "Elastic.Elasticsearch.Xunit",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/Elastic.Elasticsearch.Xunit.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/bin/Debug/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Xunit/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -225,8 +221,7 @@
           "purl": "pkg:nuget/xunit@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

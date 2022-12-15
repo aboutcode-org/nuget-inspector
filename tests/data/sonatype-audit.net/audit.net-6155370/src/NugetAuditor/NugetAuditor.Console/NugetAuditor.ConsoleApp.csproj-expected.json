@@ -11,10 +11,6 @@
       "project_name": "NugetAuditor.ConsoleApp",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/NugetAuditor.ConsoleApp.csproj",
-      "outputs": [
-        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/bin/Debug/",
-        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -69,8 +65,7 @@
           "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/ILMerge.MSBuild.Tasks/1.0.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

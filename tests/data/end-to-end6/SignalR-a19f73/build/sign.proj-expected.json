@@ -11,10 +11,6 @@
       "project_name": "sign",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/build/sign.proj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/sign//net452/",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/sign//net452/"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/RoslynTools.SignTool@1.0.0-beta2-63206-01",
           "download_url": "https://www.nuget.org/api/v2/package/RoslynTools.SignTool/1.0.0-beta2-63206-01"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

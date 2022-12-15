@@ -11,7 +11,6 @@
       "project_name": "proj2",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj2/proj2.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -84,8 +83,7 @@
           "purl": "pkg:nuget/popper.js@1.12.9",
           "download_url": "https://www.nuget.org/api/v2/package/popper.js/1.12.9"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

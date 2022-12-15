@@ -11,10 +11,6 @@
       "project_name": "netstandard2.1.TestLib",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/netstandard2.1.TestLib.csproj",
-      "outputs": [
-        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/bin/Debug/netstandard2.1/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/bin/Release/netstandard2.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -2282,8 +2278,7 @@
           "purl": "pkg:nuget/System.Net.Http@4.3.4",
           "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "UWPMigrationSample2",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/UWPMigrationSample2.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/bin/Debug/net6.0-windows10.0.19041.0/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/bin/Release/net6.0-windows10.0.19041.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -1684,8 +1680,7 @@
           "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

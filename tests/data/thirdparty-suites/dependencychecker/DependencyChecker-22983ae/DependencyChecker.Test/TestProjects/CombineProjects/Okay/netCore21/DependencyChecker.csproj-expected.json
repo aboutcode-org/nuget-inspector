@@ -11,10 +11,6 @@
       "project_name": "DependencyChecker",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/netCore21/DependencyChecker.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/netCore21/bin/Debug/netcoreapp2.1/",
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/netCore21/bin/Release/netcoreapp2.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -1879,8 +1875,7 @@
           "purl": "pkg:nuget/NUnit@3.12.0",
           "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.12.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

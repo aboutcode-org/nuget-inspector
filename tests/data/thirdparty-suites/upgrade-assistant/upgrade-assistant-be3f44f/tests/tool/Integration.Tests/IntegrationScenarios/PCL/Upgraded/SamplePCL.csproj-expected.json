@@ -11,10 +11,6 @@
       "project_name": "SamplePCL",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/SamplePCL.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/bin/Debug/netstandard1.1/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Upgraded/bin/Release/netstandard1.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -1592,8 +1588,7 @@
           "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

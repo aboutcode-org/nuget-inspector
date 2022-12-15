@@ -11,10 +11,6 @@
       "project_name": "EwDavidForms",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/EwDavidForms.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/bin/Debug/netstandard2.0/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -287,8 +283,7 @@
           "purl": "pkg:nuget/Xamarin.Essentials@1.7.3",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

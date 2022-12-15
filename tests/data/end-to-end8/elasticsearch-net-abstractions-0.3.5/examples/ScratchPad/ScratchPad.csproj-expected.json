@@ -11,10 +11,6 @@
       "project_name": "ScratchPad",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/ScratchPad.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Debug/net5.0/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/bin/Release/net5.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -5363,8 +5359,7 @@
           "purl": "pkg:nuget/NEST@6.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/NEST/6.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

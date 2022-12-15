@@ -11,10 +11,6 @@
       "project_name": "NetStandard",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/NetStandard.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/bin/Debug/netstandard2.0/",
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -87,8 +83,7 @@
           "purl": "pkg:nuget/NotFound@2.4.3",
           "download_url": "https://www.nuget.org/api/v2/package/NotFound/2.4.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,11 +11,6 @@
       "project_name": "DevAudit.CommandLine",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/DevAudit.CommandLine.csproj",
-      "outputs": [
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/bin/Debug/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/bin/Release/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/bin/Build/"
-      ],
       "packages": [
         {
           "package": {
@@ -138,8 +133,7 @@
           "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.2",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

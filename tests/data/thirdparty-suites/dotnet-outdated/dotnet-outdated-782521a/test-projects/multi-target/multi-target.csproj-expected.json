@@ -11,10 +11,6 @@
       "project_name": "multi-target",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/multi-target.csproj",
-      "outputs": [
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/bin/Debug/",
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -12,7 +12,6 @@
       "project_version": "6.2.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server/Bonobo.Git.Server.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -818,8 +817,7 @@
           "purl": "pkg:nuget/Unity.Mvc@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Unity.Mvc/4.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

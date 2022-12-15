@@ -11,10 +11,6 @@
       "project_name": "WpfApp1",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/WpfApp1.vbproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/bin/Debug/net6.0-windows/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/bin/Release/net6.0-windows/"
-      ],
       "packages": [
         {
           "package": {
@@ -1632,8 +1628,7 @@
           "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

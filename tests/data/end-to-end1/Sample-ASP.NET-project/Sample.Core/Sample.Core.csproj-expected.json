@@ -12,10 +12,6 @@
       "project_version": "1.0.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.Core/Sample.Core.csproj",
-      "outputs": [
-        "/end-to-end1/Sample-ASP.NET-project/Sample.Core/bin/Debug/",
-        "/end-to-end1/Sample-ASP.NET-project/Sample.Core/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -336,8 +332,7 @@
           "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

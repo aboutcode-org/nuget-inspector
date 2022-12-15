@@ -11,10 +11,6 @@
       "project_name": "Nuuvify.CommonPack.Security",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/Nuuvify.CommonPack.Security.csproj",
-      "outputs": [
-        "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/bin/Debug/netcoreapp3.1/linux-x64/",
-        "/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/bin/Release/netcoreapp3.1/linux-x64/"
-      ],
       "packages": [
         {
           "package": {
@@ -3773,8 +3769,7 @@
           "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@3.1.26",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.JwtBearer/3.1.26"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

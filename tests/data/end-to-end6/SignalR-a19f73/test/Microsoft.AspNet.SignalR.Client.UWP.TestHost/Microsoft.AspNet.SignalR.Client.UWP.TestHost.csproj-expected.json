@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.Client.UWP.TestHost",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.UWP.TestHost/Microsoft.AspNet.SignalR.Client.UWP.TestHost.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.TestHost//net452/",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.TestHost//net452/"
-      ],
       "packages": [
         {
           "package": {
@@ -95,8 +91,7 @@
           "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

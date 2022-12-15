@@ -12,11 +12,6 @@
       "project_version": "3.5.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/DevAudit.AuditLibrary.csproj",
-      "outputs": [
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/bin/Debug/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/bin/Release/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.AuditLibrary/bin/Build/"
-      ],
       "packages": [
         {
           "package": {
@@ -1707,8 +1702,7 @@
           "purl": "pkg:nuget/YamlDotNet@6.1.2",
           "download_url": "https://www.nuget.org/api/v2/package/YamlDotNet/6.1.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

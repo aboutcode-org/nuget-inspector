@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.FunctionalTests",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.FunctionalTests//"
-      ],
       "packages": [
         {
           "package": {
@@ -275,8 +271,7 @@
           "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.Stress",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Stress//"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "EwDavidForms",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms/EwDavidForms.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms/bin/Debug/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -69,8 +65,7 @@
           "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

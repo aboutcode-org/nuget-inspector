@@ -11,10 +11,6 @@
       "project_name": "DependencyChecker",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/DependencyChecker.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/bin/Debug/",
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -205,8 +201,7 @@
           "purl": "pkg:nuget/NuGet.Versioning@4.9.3",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

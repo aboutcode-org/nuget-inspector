@@ -11,10 +11,6 @@
       "project_name": "only_jquery",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_jquery/only_jquery.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_jquery/bin/Debug/netcoreapp2.0/",
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_jquery/bin/Release/netcoreapp2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/jQuery@3.2.1",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.2.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

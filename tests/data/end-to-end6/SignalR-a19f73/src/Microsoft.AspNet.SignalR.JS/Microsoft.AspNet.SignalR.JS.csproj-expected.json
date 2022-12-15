@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.JS",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.JS/Microsoft.AspNet.SignalR.JS.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.JS//netstandard1.0/",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.JS//netstandard1.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -962,8 +958,7 @@
           "purl": "pkg:nuget/jQuery@1.12.4",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.12.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

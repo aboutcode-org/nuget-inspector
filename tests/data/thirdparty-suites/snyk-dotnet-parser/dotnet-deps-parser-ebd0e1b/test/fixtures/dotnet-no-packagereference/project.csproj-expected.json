@@ -11,10 +11,6 @@
       "project_name": "project",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/bin/Debug/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -86,8 +82,7 @@
           "purl": "pkg:nuget/Orleans@1.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

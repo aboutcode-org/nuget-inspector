@@ -11,10 +11,6 @@
       "project_name": "NugetAuditor.Lib",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Lib/NugetAuditor.Lib.csproj",
-      "outputs": [
-        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Lib/bin/Debug/",
-        "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Lib/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -461,8 +457,7 @@
           "purl": "pkg:nuget/SemanticVersioning@0.6.9",
           "download_url": "https://www.nuget.org/api/v2/package/SemanticVersioning/0.6.9"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

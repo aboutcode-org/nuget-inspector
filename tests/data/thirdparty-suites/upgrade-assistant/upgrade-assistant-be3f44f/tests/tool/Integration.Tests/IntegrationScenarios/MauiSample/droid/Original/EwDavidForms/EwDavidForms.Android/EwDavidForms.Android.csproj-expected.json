@@ -12,7 +12,6 @@
       "project_version": "2.0.2",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Original/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -101,8 +100,7 @@
           "purl": "pkg:nuget/Xamarin.Android.Support.v4@28.0.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Android.Support.v4/28.0.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

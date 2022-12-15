@@ -11,10 +11,6 @@
       "project_name": "OmniSharp.Stdio.Driver",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Stdio.Driver/OmniSharp.Stdio.Driver.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Stdio.Driver/",
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.Stdio.Driver/"
-      ],
       "packages": [
         {
           "package": {
@@ -291,8 +287,7 @@
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

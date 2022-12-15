@@ -11,10 +11,6 @@
       "project_name": "DevAudit.Tests",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/DevAudit.Tests.csproj",
-      "outputs": [
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/bin/Debug/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -207,8 +203,7 @@
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

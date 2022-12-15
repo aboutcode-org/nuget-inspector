@@ -11,10 +11,6 @@
       "project_name": "NUnitTestProject",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NUnitTestProject/NUnitTestProject.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NUnitTestProject/bin/Debug/netcoreapp3.1/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/NUnitTestProject/bin/Release/netcoreapp3.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -3750,8 +3746,7 @@
           "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@16.6.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/16.6.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

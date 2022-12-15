@@ -11,10 +11,6 @@
       "project_name": "ASimpleProject-conditional-project-references",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/misc/simple-projects/ASimpleProject-conditional-project-references.csproj",
-      "outputs": [
-        "/misc/simple-projects/bin/Debug/netcoreapp1.1/linux-x64/",
-        "/misc/simple-projects/bin/Release/netcoreapp1.1/linux-x64/"
-      ],
       "packages": [
         {
           "package": {
@@ -1843,8 +1839,7 @@
           "purl": "pkg:nuget/Contoso.Utility.UsefulStuff@3.6.0",
           "download_url": "https://www.nuget.org/api/v2/package/Contoso.Utility.UsefulStuff/3.6.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

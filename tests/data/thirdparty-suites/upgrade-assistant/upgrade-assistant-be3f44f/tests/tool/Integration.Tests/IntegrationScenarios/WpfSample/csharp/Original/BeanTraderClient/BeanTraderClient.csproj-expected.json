@@ -11,10 +11,6 @@
       "project_name": "BeanTraderClient",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderClient/BeanTraderClient.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderClient/bin/Debug/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Original/BeanTraderClient/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -375,8 +371,7 @@
           "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.1.2",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.1.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

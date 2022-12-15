@@ -11,10 +11,6 @@
       "project_name": "test",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj",
-      "outputs": [
-        "/thirdparty-suites/ort-tests/dotnet/subProjectTest/bin/Debug/",
-        "/thirdparty-suites/ort-tests/dotnet/subProjectTest/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -138,8 +134,7 @@
           "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

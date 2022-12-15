@@ -11,10 +11,6 @@
       "project_name": "SampleProject",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/project-with-packages.props3/SampleProject.csproj",
-      "outputs": [
-        "/project-with-packages.props3/bin/Debug/netstandard2.0/",
-        "/project-with-packages.props3/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -2370,8 +2366,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

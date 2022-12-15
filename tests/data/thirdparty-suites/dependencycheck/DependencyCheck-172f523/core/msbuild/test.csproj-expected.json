@@ -11,10 +11,6 @@
       "project_name": "test",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/test.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/bin/Debug/net471/",
-        "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/bin/Release/net471/"
-      ],
       "packages": [
         {
           "package": {
@@ -1429,8 +1425,7 @@
           "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

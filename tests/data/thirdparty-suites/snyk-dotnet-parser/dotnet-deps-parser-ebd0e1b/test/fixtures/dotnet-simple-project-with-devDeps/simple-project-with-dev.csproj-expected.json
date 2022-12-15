@@ -11,10 +11,6 @@
       "project_name": "simple-project-with-dev",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/simple-project-with-dev.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/bin/Debug/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/NLog@4.3.10",
           "download_url": "https://www.nuget.org/api/v2/package/NLog/4.3.10"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

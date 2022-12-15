@@ -11,7 +11,6 @@
       "project_name": "api",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/simple-multi-assets/api/api.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -39,8 +38,7 @@
           "purl": "pkg:nuget/MyLogger@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "WebLibrary",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/WebLibrary.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/bin/Debug/net6.0/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WebLibrary/csharp/Upgraded/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -1747,8 +1743,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

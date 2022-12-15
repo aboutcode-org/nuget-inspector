@@ -11,10 +11,6 @@
       "project_name": "DotNetOutdated.Core",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/DotNetOutdated.Core.csproj",
-      "outputs": [
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/bin/Debug/netstandard2.0/",
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -570,8 +566,7 @@
           "purl": "pkg:nuget/System.IO.Abstractions@14.0.13",
           "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/14.0.13"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

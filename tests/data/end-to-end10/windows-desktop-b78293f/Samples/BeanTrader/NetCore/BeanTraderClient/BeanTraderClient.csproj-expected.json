@@ -11,10 +11,6 @@
       "project_name": "BeanTraderClient",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.csproj",
-      "outputs": [
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient//Debug/",
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient//Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -251,8 +247,7 @@
           "purl": "pkg:nuget/Nito.AsyncEx@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "example",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/misc/csproj2/example.csproj",
-      "outputs": [
-        "/misc/csproj2/bin/Debug/",
-        "/misc/csproj2/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/iTextSharp@5.5.13.1",
           "download_url": "https://www.nuget.org/api/v2/package/iTextSharp/5.5.13.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

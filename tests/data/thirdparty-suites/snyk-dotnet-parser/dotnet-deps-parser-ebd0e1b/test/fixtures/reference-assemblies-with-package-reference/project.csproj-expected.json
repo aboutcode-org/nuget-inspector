@@ -11,7 +11,6 @@
       "project_name": "project",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies-with-package-reference/project.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -83,8 +82,7 @@
           "purl": "pkg:nuget/System.Web.Razor@2.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Web.Razor/2.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

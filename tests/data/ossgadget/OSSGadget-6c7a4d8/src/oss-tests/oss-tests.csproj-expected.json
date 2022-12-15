@@ -11,10 +11,6 @@
       "project_name": "oss-tests",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/oss-tests.csproj",
-      "outputs": [
-        "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Debug/net6.0/",
-        "/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -4228,8 +4224,7 @@
           "purl": "pkg:nuget/RichardSzalay.MockHttp@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

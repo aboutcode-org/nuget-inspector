@@ -11,10 +11,6 @@
       "project_name": "Elastic.Stack.ArtifactsApi",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/Elastic.Stack.ArtifactsApi.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Debug/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Stack.ArtifactsApi/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -155,8 +151,7 @@
           "purl": "pkg:nuget/System.Text.Json@4.6.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.6.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

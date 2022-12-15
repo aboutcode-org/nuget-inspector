@@ -11,10 +11,6 @@
       "project_name": "DependencyChecker",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/net462/DependencyChecker.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/net462/bin/Debug/",
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/net462/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/NUnit@3.12.0",
           "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.12.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

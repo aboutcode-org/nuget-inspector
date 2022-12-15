@@ -11,10 +11,6 @@
       "project_name": "DotNetOutdated",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/DotNetOutdated.csproj",
-      "outputs": [
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Debug/",
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -69,8 +65,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

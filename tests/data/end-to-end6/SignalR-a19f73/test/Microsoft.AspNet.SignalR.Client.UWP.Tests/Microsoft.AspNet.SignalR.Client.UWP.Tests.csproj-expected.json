@@ -12,10 +12,6 @@
       "project_version": "1.0.0.0",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.UWP.Tests/Microsoft.AspNet.SignalR.Client.UWP.Tests.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.Tests//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.UWP.Tests//"
-      ],
       "packages": [
         {
           "package": {
@@ -157,8 +153,7 @@
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.3.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

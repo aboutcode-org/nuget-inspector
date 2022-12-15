@@ -12,7 +12,6 @@
       "project_version": "1.0.0-",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -33,8 +32,7 @@
           "purl": "pkg:nuget/NuGet.Frameworks@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

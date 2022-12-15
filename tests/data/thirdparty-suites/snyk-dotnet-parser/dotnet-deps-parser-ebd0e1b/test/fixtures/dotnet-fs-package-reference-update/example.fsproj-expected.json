@@ -11,10 +11,6 @@
       "project_name": "example",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/example.fsproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/bin/Debug/netcoreapp2.0/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/bin/Release/netcoreapp2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -10585,8 +10581,7 @@
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

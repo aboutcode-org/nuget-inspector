@@ -11,10 +11,6 @@
       "project_name": "GenericHostConsoleApp",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/packages.lock.json1/GenericHostConsoleApp/GenericHostConsoleApp.csproj",
-      "outputs": [
-        "/packages.lock.json1/GenericHostConsoleApp/bin/Debug/net6.0/",
-        "/packages.lock.json1/GenericHostConsoleApp/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -1142,8 +1138,7 @@
           "purl": "pkg:nuget/Microsoft.Extensions.Options.DataAnnotations@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.DataAnnotations/6.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

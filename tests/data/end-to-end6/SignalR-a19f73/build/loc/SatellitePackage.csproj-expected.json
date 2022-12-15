@@ -11,10 +11,6 @@
       "project_name": "SatellitePackage",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/build/loc/SatellitePackage.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/SatellitePackage//netstandard2.0/",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/SatellitePackage//netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -53,8 +49,7 @@
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

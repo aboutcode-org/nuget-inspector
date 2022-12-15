@@ -11,10 +11,6 @@
       "project_name": "Shared.CLI",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/Shared.CLI.csproj",
-      "outputs": [
-        "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/bin/Debug/net6.0/",
-        "/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -5147,8 +5143,7 @@
           "purl": "pkg:nuget/System.Console@4.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.3.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

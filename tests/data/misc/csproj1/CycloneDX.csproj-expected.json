@@ -11,10 +11,6 @@
       "project_name": "CycloneDX",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/misc/csproj1/CycloneDX.csproj",
-      "outputs": [
-        "/misc/csproj1/bin/Debug/",
-        "/misc/csproj1/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -120,8 +116,7 @@
           "purl": "pkg:nuget/nuget.projectmodel@6.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/nuget.projectmodel/6.1.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

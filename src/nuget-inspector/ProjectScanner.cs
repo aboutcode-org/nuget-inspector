@@ -145,19 +145,11 @@ internal class ProjectScanner
         };
 
         var projectTargetFramework = ParseTargetFramework();
-        try
-        {
-            package.OutputPaths = FindOutputPaths();
-        }
-        catch (Exception)
-        {
-            if (Config.TRACE) Console.WriteLine("Unable to determine output paths for this project.");
-        }
-
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
+        bool hasProjectAssetsJson = FileExists(path: Options.ProjectAssetsJsonPath!);
+        // legacy formats
         bool hasProjectJson = FileExists(path: Options.ProjectJsonPath!);
         bool hasProjectJsonLock = FileExists(path: Options.ProjectJsonLockPath!);
-        bool hasProjectAssetsJson = FileExists(path: Options.ProjectAssetsJsonPath!);
 
         /*
          * Try each data file in sequence to resolve packages for a project:
@@ -310,40 +302,4 @@ internal class ProjectScanner
         return targetFrameworks.First().Value;
     }
 
-    public List<string> FindOutputPaths()
-    {
-        if (Config.TRACE)
-        {
-            Console.WriteLine("Attempting to parse configuration output paths.");
-            Console.WriteLine($"Project File: {Options.ProjectFilePath}");
-        }
-
-        try
-        {
-            var proj = new Microsoft.Build.Evaluation.Project(projectFile: Options.ProjectFilePath);
-            var outputPaths = new List<string>();
-            List<string>? configurations;
-            proj.ConditionedProperties.TryGetValue(key: "Configuration", value: out configurations);
-            if (configurations == null) configurations = new List<string>();
-            foreach (var config in configurations)
-            {
-                proj.SetProperty(name: "Configuration", unevaluatedValue: config);
-                proj.ReevaluateIfNecessary();
-                var path = proj.GetPropertyValue(name: "OutputPath");
-                var fullPath = Path.Combine(path1: proj.DirectoryPath, path2: path)
-                    .Replace(oldValue: "\\", newValue: "/");
-                outputPaths.Add(item: fullPath);
-                if (Config.TRACE) Console.WriteLine($"Found path: {fullPath}");
-            }
-
-            ProjectCollection.GlobalProjectCollection.UnloadProject(project: proj);
-            if (Config.TRACE) Console.WriteLine($"Found {outputPaths.Count} paths.");
-            return outputPaths;
-        }
-        catch (Exception)
-        {
-            if (Config.TRACE) Console.WriteLine("Skipping configuration output paths.");
-            return new List<string>();
-        }
-    }
 }

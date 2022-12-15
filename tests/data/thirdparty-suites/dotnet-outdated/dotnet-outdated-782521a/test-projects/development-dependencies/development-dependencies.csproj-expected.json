@@ -11,10 +11,6 @@
       "project_name": "development-dependencies",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/development-dependencies/development-dependencies.csproj",
-      "outputs": [
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/development-dependencies/bin/Debug/netstandard2.0/",
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/development-dependencies/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -138,8 +134,7 @@
           "purl": "pkg:nuget/Microsoft.CodeQuality.Analyzers@2.6.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

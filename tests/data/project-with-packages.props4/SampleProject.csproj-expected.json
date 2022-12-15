@@ -11,10 +11,6 @@
       "project_name": "SampleProject",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/project-with-packages.props4/SampleProject.csproj",
-      "outputs": [
-        "/project-with-packages.props4/bin/Debug/netstandard2.0/",
-        "/project-with-packages.props4/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -70,8 +66,7 @@
           "purl": "pkg:nuget/Nerdbank.GitVersioning@2.1.16",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/2.1.16"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

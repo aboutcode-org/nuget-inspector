@@ -11,10 +11,6 @@
       "project_name": "Elastic.Elasticsearch.Ephemeral",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/Elastic.Elasticsearch.Ephemeral.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/bin/Debug/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Elastic.Elasticsearch.Ephemeral/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -155,8 +151,7 @@
           "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.3.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

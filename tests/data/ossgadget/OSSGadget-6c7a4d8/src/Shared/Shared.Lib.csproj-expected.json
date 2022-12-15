@@ -11,10 +11,6 @@
       "project_name": "Shared.Lib",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/Shared/Shared.Lib.csproj",
-      "outputs": [
-        "/ossgadget/OSSGadget-6c7a4d8/src/Shared/bin/Debug/net6.0/",
-        "/ossgadget/OSSGadget-6c7a4d8/src/Shared/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -5119,8 +5115,7 @@
           "purl": "pkg:nuget/Nerdbank.GitVersioning@3.4.240",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.4.240"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

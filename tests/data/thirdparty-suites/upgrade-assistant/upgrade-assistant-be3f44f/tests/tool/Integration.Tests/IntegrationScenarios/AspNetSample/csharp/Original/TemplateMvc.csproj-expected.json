@@ -11,7 +11,6 @@
       "project_name": "TemplateMvc",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/AspNetSample/csharp/Original/TemplateMvc.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -288,8 +287,7 @@
           "purl": "pkg:nuget/Modernizr@2.8.3",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

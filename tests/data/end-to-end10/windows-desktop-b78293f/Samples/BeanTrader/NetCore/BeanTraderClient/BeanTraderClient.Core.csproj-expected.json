@@ -11,10 +11,6 @@
       "project_name": "BeanTraderClient.Core",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.Core.csproj",
-      "outputs": [
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/bin/Debug/netcoreapp3.0/",
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/bin/Release/netcoreapp3.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -6642,8 +6638,7 @@
           "purl": "pkg:nuget/System.ServiceModel.Primitives@4.5.3",
           "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.5.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

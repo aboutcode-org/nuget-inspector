@@ -11,10 +11,6 @@
       "project_name": "SomeProjectName",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreProjectNameInAssets/SomeProjectName.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreProjectNameInAssets/bin/Debug/",
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreProjectNameInAssets/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -3176,8 +3172,7 @@
           "purl": "pkg:nuget/NuGet.Protocol@4.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/4.4.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

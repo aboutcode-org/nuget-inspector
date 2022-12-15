@@ -11,10 +11,6 @@
       "project_name": "ConsoleApp",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/ConsoleApp.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/bin/Debug/net6.0/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WCFSample/Upgraded/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -3375,8 +3371,7 @@
           "purl": "pkg:nuget/CoreWCF.WebHttp@1.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/CoreWCF.WebHttp/1.1.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

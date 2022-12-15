@@ -12,7 +12,6 @@
       "project_version": "2.0.2",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -50,8 +49,7 @@
           "purl": "pkg:nuget/Xamarin.Essentials@1.7.3",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

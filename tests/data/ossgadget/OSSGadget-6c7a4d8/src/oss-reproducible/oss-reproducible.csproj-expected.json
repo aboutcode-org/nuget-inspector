@@ -11,10 +11,6 @@
       "project_name": "oss-reproducible",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/oss-reproducible.csproj",
-      "outputs": [
-        "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/bin/Debug/net6.0/",
-        "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -86,8 +82,7 @@
           "purl": "pkg:nuget/SharpCompress@0.32.2",
           "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.32.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

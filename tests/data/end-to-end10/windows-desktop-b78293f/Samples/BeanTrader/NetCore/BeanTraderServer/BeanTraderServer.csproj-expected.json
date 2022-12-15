@@ -11,10 +11,6 @@
       "project_name": "BeanTraderServer",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderServer/BeanTraderServer.csproj",
-      "outputs": [
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderServer/bin/Debug/",
-        "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderServer/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -52,8 +48,7 @@
           "purl": "pkg:nuget/Serilog.Sinks.Console@3.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

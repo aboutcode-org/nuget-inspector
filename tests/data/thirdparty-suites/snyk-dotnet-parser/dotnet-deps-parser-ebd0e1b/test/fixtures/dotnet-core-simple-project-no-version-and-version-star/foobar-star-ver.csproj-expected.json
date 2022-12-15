@@ -11,10 +11,6 @@
       "project_name": "foobar-star-ver",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/foobar-star-ver.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/bin/Debug/netcoreapp2.2/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/bin/Release/netcoreapp2.2/"
-      ],
       "packages": [
         {
           "package": {
@@ -14474,8 +14470,7 @@
           "purl": "pkg:nuget/WindowsAzure.Storage@9.3.3",
           "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/9.3.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

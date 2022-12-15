@@ -11,10 +11,6 @@
       "project_name": "DevAudit.Tests.VMRequired",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/DevAudit.Tests.VMRequired.csproj",
-      "outputs": [
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/bin/Debug/",
-        "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -139,8 +135,7 @@
           "purl": "pkg:nuget/xunit.abstractions@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

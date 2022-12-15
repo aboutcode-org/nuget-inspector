@@ -11,10 +11,6 @@
       "project_name": "Nest.TypescriptExporter",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/Nest.TypescriptExporter.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Debug/net5.0/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/src/Nest.TypescriptExporter/bin/Release/net5.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -4325,8 +4321,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

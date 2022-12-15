@@ -11,10 +11,6 @@
       "project_name": "test",
       "datasource_id": "nuget-packages.config",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/test.csproj",
-      "outputs": [
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/bin/Debug/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/TestFiles/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -658,8 +654,7 @@
           "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

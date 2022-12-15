@@ -11,10 +11,6 @@
       "project_name": "no_csproj",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/no_csproj.vbproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/bin/Debug/netcoreapp2.0/",
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/bin/Release/netcoreapp2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -316,8 +312,7 @@
           "purl": "pkg:nuget/jquery@1.10.2",
           "download_url": "https://www.nuget.org/api/v2/package/jquery/1.10.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

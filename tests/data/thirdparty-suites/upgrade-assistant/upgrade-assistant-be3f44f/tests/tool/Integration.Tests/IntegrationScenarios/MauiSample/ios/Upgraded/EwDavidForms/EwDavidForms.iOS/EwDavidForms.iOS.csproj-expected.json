@@ -11,10 +11,6 @@
       "project_name": "EwDavidForms.iOS",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
-      "outputs": [
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.iOS/bin/Debug/net6.0-ios/",
-        "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.iOS/bin/Release/net6.0-ios/"
-      ],
       "packages": [
         {
           "package": {
@@ -399,8 +395,7 @@
           "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

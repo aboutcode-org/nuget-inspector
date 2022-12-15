@@ -12,10 +12,6 @@
       "project_version": "1.0.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/NugetAuditor.Tests.csproj",
-      "outputs": [
-        "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/bin/Debug/",
-        "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -70,8 +66,7 @@
           "purl": "pkg:nuget/NuGet.Common@4.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.2.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

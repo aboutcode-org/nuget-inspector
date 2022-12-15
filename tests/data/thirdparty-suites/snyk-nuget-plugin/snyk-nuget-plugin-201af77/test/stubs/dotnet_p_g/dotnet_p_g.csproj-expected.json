@@ -11,10 +11,6 @@
       "project_name": "dotnet_p_g",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_p_g/dotnet_p_g.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_p_g/bin/Debug/netcoreapp2.0/",
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_p_g/bin/Release/netcoreapp2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -12833,8 +12829,7 @@
           "purl": "pkg:nuget/System.Net.Security@4.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.Net.Security/4.3.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

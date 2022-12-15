@@ -11,11 +11,6 @@
       "project_name": "xxx",
       "datasource_id": "nuget-packages.config",
       "project_file": "/ort-4522/xxx.csproj",
-      "outputs": [
-        "/ort-4522/bin/Debug/",
-        "/ort-4522/bin/Release/",
-        "/ort-4522/bin/x86/"
-      ],
       "packages": [
         {
           "package": {
@@ -122,8 +117,7 @@
           "purl": "pkg:nuget/Softwarehelden.NuGet.Deploy@1.0.32",
           "download_url": "https://www.nuget.org/api/v2/package/Softwarehelden.NuGet.Deploy/1.0.32"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

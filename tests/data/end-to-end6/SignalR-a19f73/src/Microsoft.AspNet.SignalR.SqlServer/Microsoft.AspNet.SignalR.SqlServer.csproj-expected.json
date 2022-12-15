@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.SqlServer",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SqlServer/Microsoft.AspNet.SignalR.SqlServer.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.SqlServer//"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
           "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

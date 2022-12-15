@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.Core",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Core/Microsoft.AspNet.SignalR.Core.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Core//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Core//"
-      ],
       "packages": [
         {
           "package": {
@@ -112,8 +108,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

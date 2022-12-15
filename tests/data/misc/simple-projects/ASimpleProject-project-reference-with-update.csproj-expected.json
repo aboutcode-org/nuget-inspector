@@ -11,7 +11,6 @@
       "project_name": "ASimpleProject-project-reference-with-update",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/misc/simple-projects/ASimpleProject-project-reference-with-update.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -4419,8 +4418,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

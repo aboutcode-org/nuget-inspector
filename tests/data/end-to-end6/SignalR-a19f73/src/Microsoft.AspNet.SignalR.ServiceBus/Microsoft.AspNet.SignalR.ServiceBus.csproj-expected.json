@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.ServiceBus",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.ServiceBus/Microsoft.AspNet.SignalR.ServiceBus.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.ServiceBus//"
-      ],
       "packages": [
         {
           "package": {
@@ -70,8 +66,7 @@
           "purl": "pkg:nuget/WindowsAzure.ServiceBus@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/2.1.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

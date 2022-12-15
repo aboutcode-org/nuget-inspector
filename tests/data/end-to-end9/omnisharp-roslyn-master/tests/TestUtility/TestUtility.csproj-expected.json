@@ -11,10 +11,6 @@
       "project_name": "TestUtility",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/TestUtility/TestUtility.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/TestUtility/",
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/TestUtility/"
-      ],
       "packages": [
         {
           "package": {
@@ -429,8 +425,7 @@
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

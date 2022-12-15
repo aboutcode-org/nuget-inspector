@@ -12,7 +12,6 @@
       "project_version": "1.0.0.0",
       "datasource_id": "dotnet-project.lock.json",
       "project_file": "/kickoff/KickOff-7a4f83a/src/Examples/ServiceWithTopShelf/ServiceWithTopShelf.xproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -250,8 +249,7 @@
           "purl": "pkg:nuget/System.ServiceProcess@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ServiceProcess/4.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

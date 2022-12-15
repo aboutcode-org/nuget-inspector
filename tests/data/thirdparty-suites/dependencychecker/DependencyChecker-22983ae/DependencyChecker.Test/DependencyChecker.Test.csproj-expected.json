@@ -11,10 +11,6 @@
       "project_name": "DependencyChecker.Test",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/DependencyChecker.Test.csproj",
-      "outputs": [
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/bin/Debug/",
-        "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -290,8 +286,7 @@
           "purl": "pkg:nuget/System.Threading.Thread@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Thread/4.3.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "OmniSharp.MSBuild.Tests",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/tests/OmniSharp.MSBuild.Tests/OmniSharp.MSBuild.Tests.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.MSBuild.Tests/",
-        "/end-to-end9/omnisharp-roslyn-master/bin/Debug/OmniSharp.MSBuild.Tests/"
-      ],
       "packages": [
         {
           "package": {
@@ -480,8 +476,7 @@
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

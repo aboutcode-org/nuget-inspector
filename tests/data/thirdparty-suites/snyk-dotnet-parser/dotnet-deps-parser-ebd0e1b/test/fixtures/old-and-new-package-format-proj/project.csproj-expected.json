@@ -11,10 +11,6 @@
       "project_name": "project",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/project.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/bin/Debug/net471/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/old-and-new-package-format-proj/bin/Release/net471/"
-      ],
       "packages": [
         {
           "package": {
@@ -1741,8 +1737,7 @@
           "purl": "pkg:nuget/System.Net.Http@4.3.4",
           "download_url": "https://www.nuget.org/api/v2/package/System.Net.Http/4.3.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

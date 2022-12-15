@@ -11,10 +11,6 @@
       "project_name": "project.1",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/TestFiles/project.1.csproj",
-      "outputs": [
-        "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/TestFiles/bin/Debug/netcoreapp2.1/",
-        "/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/TestFiles/bin/Release/netcoreapp2.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/MediatR@5.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/MediatR/5.1.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

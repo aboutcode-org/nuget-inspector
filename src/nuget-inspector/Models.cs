@@ -250,16 +250,10 @@ namespace NugetInspector
         [JsonProperty(propertyName: "project_file")]
         public string SourcePath { get; set; } = null!;
 
-        [JsonProperty(propertyName: "outputs")]
-        public List<string> OutputPaths { get; set; } = new();
-
         [JsonProperty(propertyName: "packages")]
         public List<PackageSet> Packages { get; set; } = new();
 
         [JsonProperty(propertyName: "dependencies")]
         public List<BasePackage> Dependencies { get; set; } = new();
-
-        [JsonProperty(propertyName: "children")]
-        public List<Package?> Children { get; set; } = new();
     }
 }

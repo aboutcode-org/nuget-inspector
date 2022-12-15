@@ -11,11 +11,6 @@
       "project_name": "NuGetDefense.Lib",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/NuGetDefense.Lib.csproj",
-      "outputs": [
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/Debug/net6.0/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/Release/net6.0/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/bin/RELEASE/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -712,8 +707,7 @@
           "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/5.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

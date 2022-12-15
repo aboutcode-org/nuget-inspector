@@ -11,10 +11,6 @@
       "project_name": "XunitTestProject",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/XunitTestProject/XunitTestProject.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/XunitTestProject/bin/Debug/netcoreapp3.1/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/XunitTestProject/bin/Release/netcoreapp3.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -5765,8 +5761,7 @@
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

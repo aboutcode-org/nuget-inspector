@@ -12,11 +12,6 @@
       "project_version": "1.0.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/Bonobo.Git.Server.Test.csproj",
-      "outputs": [
-        "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/bin/Debug/",
-        "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/bin/Release/",
-        "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/bin/Test/"
-      ],
       "packages": [
         {
           "package": {
@@ -320,8 +315,7 @@
           "purl": "pkg:nuget/System.Data.SQLite.Linq@1.0.104",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

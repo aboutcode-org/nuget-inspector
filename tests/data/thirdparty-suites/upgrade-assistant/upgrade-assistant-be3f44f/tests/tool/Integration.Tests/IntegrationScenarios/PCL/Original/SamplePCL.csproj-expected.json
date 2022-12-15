@@ -11,7 +11,6 @@
       "project_name": "SamplePCL",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/PCL/Original/SamplePCL.csproj",
-      "outputs": [],
       "packages": [
         {
           "package": {
@@ -92,8 +91,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@8.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/8.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

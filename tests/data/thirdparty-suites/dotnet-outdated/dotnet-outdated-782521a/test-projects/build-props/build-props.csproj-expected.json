@@ -11,10 +11,6 @@
       "project_name": "build-props",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/build-props/build-props.csproj",
-      "outputs": [
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/build-props/bin/Debug/",
-        "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/build-props/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

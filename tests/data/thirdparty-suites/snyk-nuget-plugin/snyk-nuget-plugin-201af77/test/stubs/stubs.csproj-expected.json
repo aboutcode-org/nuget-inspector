@@ -11,10 +11,6 @@
       "project_name": "stubs",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/stubs.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/bin/Debug/",
-        "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -69,8 +65,7 @@
           "purl": "pkg:nuget/System.Data.SQLite@1.0.108",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.108"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

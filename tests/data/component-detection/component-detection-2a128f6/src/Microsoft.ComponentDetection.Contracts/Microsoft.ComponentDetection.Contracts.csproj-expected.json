@@ -11,10 +11,6 @@
       "project_name": "Microsoft.ComponentDetection.Contracts",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj",
-      "outputs": [
-        "/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Contracts/bin/Debug/netstandard2.0/",
-        "/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Contracts/bin/Release/netstandard2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -53,8 +49,7 @@
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

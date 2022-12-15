@@ -11,10 +11,6 @@
       "project_name": "ProjectWithWildcardPackageReference",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithWildcardPackageReference/ProjectWithWildcardPackageReference.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithWildcardPackageReference/bin/Debug/netcoreapp3.1/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithWildcardPackageReference/bin/Release/netcoreapp3.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -35,8 +31,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@12.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

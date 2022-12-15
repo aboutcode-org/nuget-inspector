@@ -11,10 +11,6 @@
       "project_name": "multi-target",
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/multi-target.csproj",
-      "outputs": [
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/bin/Debug/",
-        "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -70,8 +66,7 @@
           "purl": "pkg:nuget/bootstrap@3.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

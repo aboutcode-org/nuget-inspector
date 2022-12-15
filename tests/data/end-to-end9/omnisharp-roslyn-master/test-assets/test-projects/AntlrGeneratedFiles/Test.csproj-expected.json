@@ -11,10 +11,6 @@
       "project_name": "Test",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/AntlrGeneratedFiles/Test.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/AntlrGeneratedFiles/bin/Debug/netcoreapp2.0/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/AntlrGeneratedFiles/bin/Release/netcoreapp2.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -3578,8 +3574,7 @@
           "purl": "pkg:nuget/Antlr4.Runtime@4.6.4",
           "download_url": "https://www.nuget.org/api/v2/package/Antlr4.Runtime/4.6.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

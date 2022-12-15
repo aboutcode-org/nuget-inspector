@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.LoadTestHarness",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/",
-        "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/bin/"
-      ],
       "packages": [
         {
           "package": {
@@ -164,8 +160,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

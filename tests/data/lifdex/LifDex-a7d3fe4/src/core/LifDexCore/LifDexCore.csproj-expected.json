@@ -11,10 +11,6 @@
       "project_name": "LifDexCore",
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/lifdex/LifDex-a7d3fe4/src/core/LifDexCore/LifDexCore.csproj",
-      "outputs": [
-        "/lifdex/LifDex-a7d3fe4/src/core/LifDexCore/bin/Debug/netcoreapp2.2/",
-        "/lifdex/LifDex-a7d3fe4/src/core/LifDexCore/bin/Release/netcoreapp2.2/"
-      ],
       "packages": [
         {
           "package": {
@@ -155,8 +151,7 @@
           "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

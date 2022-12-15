@@ -11,12 +11,6 @@
       "project_name": "NuGetDefense",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
-      "outputs": [
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Debug/net6.0/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/Release/net6.0/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/RELEASE/net6.0/",
-        "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/bin/DOTNETTOOL/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -107,8 +101,7 @@
           "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

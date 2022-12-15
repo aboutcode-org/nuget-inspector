@@ -11,10 +11,6 @@
       "project_name": "Elastic.Xunit.ExampleComplex",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/Elastic.Xunit.ExampleComplex.csproj",
-      "outputs": [
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/bin/Debug/",
-        "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Xunit.ExampleComplex/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -241,8 +237,7 @@
           "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

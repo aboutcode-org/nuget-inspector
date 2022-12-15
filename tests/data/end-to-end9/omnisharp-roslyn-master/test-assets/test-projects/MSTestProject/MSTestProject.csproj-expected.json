@@ -11,10 +11,6 @@
       "project_name": "MSTestProject",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/MSTestProject.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/bin/Debug/netcoreapp3.1/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/MSTestProject/bin/Release/netcoreapp3.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -5771,8 +5767,7 @@
           "purl": "pkg:nuget/MSTest.TestFramework@2.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.1.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "App",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/App.csproj",
-      "outputs": [
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/bin/Debug/netcoreapp3.1/",
-        "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/bin/Release/netcoreapp3.1/"
-      ],
       "packages": [
         {
           "package": {
@@ -215,8 +211,7 @@
           "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

@@ -11,10 +11,6 @@
       "project_name": "Microsoft.AspNet.SignalR.Client.Tests",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.Tests/Microsoft.AspNet.SignalR.Client.Tests.csproj",
-      "outputs": [
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Tests//",
-        "/end-to-end6/SignalR-a19f73/artifacts/Debug/bin/Microsoft.AspNet.SignalR.Client.Tests//"
-      ],
       "packages": [
         {
           "package": {
@@ -190,8 +186,7 @@
           "purl": "pkg:nuget/xunit.abstractions@2.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

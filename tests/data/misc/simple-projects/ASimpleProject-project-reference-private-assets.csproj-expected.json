@@ -11,10 +11,6 @@
       "project_name": "ASimpleProject-project-reference-private-assets",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/misc/simple-projects/ASimpleProject-project-reference-private-assets.csproj",
-      "outputs": [
-        "/misc/simple-projects/bin/Debug/net6.0/",
-        "/misc/simple-projects/bin/Release/net6.0/"
-      ],
       "packages": [
         {
           "package": {
@@ -1826,8 +1822,7 @@
           "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }

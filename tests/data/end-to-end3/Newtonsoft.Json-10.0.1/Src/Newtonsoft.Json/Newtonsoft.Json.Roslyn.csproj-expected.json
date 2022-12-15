@@ -11,10 +11,6 @@
       "project_name": "Newtonsoft.Json.Roslyn",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Roslyn.csproj",
-      "outputs": [
-        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/bin/Debug/",
-        "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/bin/Release/"
-      ],
       "packages": [
         {
           "package": {
@@ -460,8 +456,7 @@
           "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
         }
-      ],
-      "children": []
+      ]
     }
   ]
 }
