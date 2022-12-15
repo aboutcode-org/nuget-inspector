@@ -5,7 +5,7 @@ namespace NugetInspector;
 public class ScanOutput
 {
     public string tool_name = "nuget-inspector";
-    public string tool_version = "0.6.0";
+    public string tool_version = "0.7.0";
 
     [JsonProperty(propertyName: "packages")]
     public List<Package?> Packages = new();
