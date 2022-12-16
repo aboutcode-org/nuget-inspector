@@ -35,7 +35,7 @@ public class LegacyPackagesConfigNoDupeResolver
     {
         foreach (var package in packages)
         {
-            Add(id: package.Name!, name: package.Name, range: package.VersionRange, framework: package.Framework);
+            Add(id: package.name!, name: package.name, range: package.version_range, framework: package.framework);
         }
 
         var builder = new PackageSetBuilder();

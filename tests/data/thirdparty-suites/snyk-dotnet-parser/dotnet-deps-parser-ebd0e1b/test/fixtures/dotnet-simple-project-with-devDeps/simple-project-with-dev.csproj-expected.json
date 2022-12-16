@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/simple-project-with-dev.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "simple-project-with-dev",
+      "name": "simple-project-with-dev",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/simple-project-with-dev.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "jQuery",
             "version": "3.1.1",
+            "framework": "",
             "purl": "pkg:nuget/jQuery@3.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "NLog",
             "version": "4.3.10",
+            "framework": "",
             "purl": "pkg:nuget/NLog@4.3.10",
             "download_url": "https://www.nuget.org/api/v2/package/NLog/4.3.10"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "jQuery",
           "version": "3.1.1",
+          "framework": "",
           "purl": "pkg:nuget/jQuery@3.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "NLog",
           "version": "4.3.10",
+          "framework": "",
           "purl": "pkg:nuget/NLog@4.3.10",
           "download_url": "https://www.nuget.org/api/v2/package/NLog/4.3.10"
         }

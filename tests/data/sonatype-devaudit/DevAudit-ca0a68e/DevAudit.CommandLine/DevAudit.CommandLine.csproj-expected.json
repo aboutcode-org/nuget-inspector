@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/DevAudit.CommandLine.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "DevAudit.CommandLine",
+      "name": "DevAudit.CommandLine",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.CommandLine/DevAudit.CommandLine.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Colorful.Console",
             "version": "2.0.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Colorful.Console@2.0.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Colorful.Console/2.0.0.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "CommandLineParser",
             "version": "1.9.71",
+            "framework": "",
             "purl": "pkg:nuget/CommandLineParser@1.9.71",
             "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "12.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@12.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Algorithms",
             "version": "4.3.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.1"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Encoding",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Primitives",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.X509Certificates",
             "version": "4.3.2",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.2",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2"
           },
@@ -88,6 +103,7 @@
           "type": "nuget",
           "name": "Colorful.Console",
           "version": "2.0.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Colorful.Console@2.0.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Colorful.Console/2.0.0.1"
         },
@@ -95,6 +111,7 @@
           "type": "nuget",
           "name": "CommandLineParser",
           "version": "1.9.71",
+          "framework": "",
           "purl": "pkg:nuget/CommandLineParser@1.9.71",
           "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
         },
@@ -102,6 +119,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "12.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@12.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2"
         },
@@ -109,6 +127,7 @@
           "type": "nuget",
           "name": "System.Security.Cryptography.Algorithms",
           "version": "4.3.1",
+          "framework": "",
           "purl": "pkg:nuget/System.Security.Cryptography.Algorithms@4.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Algorithms/4.3.1"
         },
@@ -116,6 +135,7 @@
           "type": "nuget",
           "name": "System.Security.Cryptography.Encoding",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Security.Cryptography.Encoding@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Encoding/4.3.0"
         },
@@ -123,6 +143,7 @@
           "type": "nuget",
           "name": "System.Security.Cryptography.Primitives",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Security.Cryptography.Primitives@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Primitives/4.3.0"
         },
@@ -130,6 +151,7 @@
           "type": "nuget",
           "name": "System.Security.Cryptography.X509Certificates",
           "version": "4.3.2",
+          "framework": "",
           "purl": "pkg:nuget/System.Security.Cryptography.X509Certificates@4.3.2",
           "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2"
         }

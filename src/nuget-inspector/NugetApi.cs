@@ -20,9 +20,8 @@ public class NugetApi
     public NugetApi(string nugetApiFeedUrl, string nugetConfig)
     {
         var providers = new List<Lazy<INuGetResourceProvider>>();
-        providers.AddRange(collection: Repository.Provider.GetCoreV3()); // Add v3 API support
-        //TODO:
-        // providers.AddRange(Repository.Provider.GetCoreV2());  // Add v2 API support
+        providers.AddRange(collection: Repository.Provider.GetCoreV3());
+        // TODO: providers.AddRange(Repository.Provider.GetCoreV2());
         CreateResourceLists(providers: providers, nuget_api_feed_url: nugetApiFeedUrl, nuget_config: nugetConfig);
     }
 

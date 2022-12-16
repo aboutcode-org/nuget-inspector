@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreDifferentTargetMonikers/CoreDifferentTargetMonikers.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "CoreDifferentTargetMonikers",
+      "name": "CoreDifferentTargetMonikers",
+      "version": null,
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/CoreDifferentTargetMonikers/CoreDifferentTargetMonikers.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.Bcl.AsyncInterfaces",
             "version": "1.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/1.1.0"
           },
@@ -25,6 +34,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
             }
@@ -35,6 +45,7 @@
             "type": "nuget",
             "name": "System.Buffers",
             "version": "4.5.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Buffers@4.5.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
           },
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "System.Memory",
             "version": "4.5.4",
+            "framework": "",
             "purl": "pkg:nuget/System.Memory@4.5.4",
             "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
           },
@@ -53,6 +65,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -60,6 +73,7 @@
               "type": "nuget",
               "name": "System.Numerics.Vectors",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
             },
@@ -67,6 +81,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.7.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.7.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.7.1"
             }
@@ -77,6 +92,7 @@
             "type": "nuget",
             "name": "System.Numerics.Vectors",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
           },
@@ -87,6 +103,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "4.7.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.7.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.7.1"
           },
@@ -97,6 +114,7 @@
             "type": "nuget",
             "name": "System.Text.Encodings.Web",
             "version": "4.7.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encodings.Web@4.7.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.7.1"
           },
@@ -107,6 +125,7 @@
             "type": "nuget",
             "name": "System.Text.Json",
             "version": "4.7.2",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Json@4.7.2",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.7.2"
           },
@@ -115,6 +134,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.AsyncInterfaces",
               "version": "1.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@1.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/1.1.0"
             },
@@ -122,6 +142,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -129,6 +150,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             },
@@ -136,6 +158,7 @@
               "type": "nuget",
               "name": "System.Numerics.Vectors",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
             },
@@ -143,6 +166,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.7.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.7.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.7.1"
             },
@@ -150,6 +174,7 @@
               "type": "nuget",
               "name": "System.Text.Encodings.Web",
               "version": "4.7.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Encodings.Web@4.7.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/4.7.1"
             },
@@ -157,6 +182,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
             }
@@ -167,6 +193,7 @@
             "type": "nuget",
             "name": "System.Threading.Tasks.Extensions",
             "version": "4.5.4",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
           },
@@ -175,6 +202,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.7.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.7.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.7.1"
             }
@@ -186,6 +214,7 @@
           "type": "nuget",
           "name": "System.Text.Json",
           "version": "4.7.2",
+          "framework": "",
           "purl": "pkg:nuget/System.Text.Json@4.7.2",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.7.2"
         },
@@ -193,6 +222,7 @@
           "type": "nuget",
           "name": "System.Text.Json",
           "version": "4.7.2",
+          "framework": "",
           "purl": "pkg:nuget/System.Text.Json@4.7.2",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/4.7.2"
         }

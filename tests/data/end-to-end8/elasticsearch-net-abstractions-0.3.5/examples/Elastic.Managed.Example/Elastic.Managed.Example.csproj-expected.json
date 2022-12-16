@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/Elastic.Managed.Example.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Elastic.Managed.Example",
+      "name": "Elastic.Managed.Example",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/Elastic.Managed.Example/Elastic.Managed.Example.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "MinVer",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/MinVer@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "MinVer",
           "version": "2.3.1",
+          "framework": "",
           "purl": "pkg:nuget/MinVer@2.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/MinVer/2.3.1"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0"
         }

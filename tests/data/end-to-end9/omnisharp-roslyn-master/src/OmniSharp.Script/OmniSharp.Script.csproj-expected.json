@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Script/OmniSharp.Script.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "OmniSharp.Script",
+      "name": "OmniSharp.Script",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Script/OmniSharp.Script.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.NETFramework.ReferenceAssemblies",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Dotnet.Script.DependencyModel",
             "version": "1.3.1",
+            "framework": "",
             "purl": "pkg:nuget/Dotnet.Script.DependencyModel@1.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/Dotnet.Script.DependencyModel/1.3.1"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Dotnet.Script.DependencyModel.NuGet",
             "version": "1.3.1",
+            "framework": "",
             "purl": "pkg:nuget/Dotnet.Script.DependencyModel.NuGet@1.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/Dotnet.Script.DependencyModel.NuGet/1.3.1"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.CSharp.Scripting",
             "version": "4.4.0-4.final",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0-4.final",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "System.ValueTuple",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ValueTuple@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "System.Configuration.ConfigurationManager",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "NuGet.Common",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Common@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0"
           },
@@ -87,6 +102,7 @@
             "type": "nuget",
             "name": "NuGet.Configuration",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Configuration@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0"
           },
@@ -97,6 +113,7 @@
             "type": "nuget",
             "name": "NuGet.DependencyResolver.Core",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0"
           },
@@ -107,6 +124,7 @@
             "type": "nuget",
             "name": "NuGet.Frameworks",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Frameworks@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0"
           },
@@ -117,6 +135,7 @@
             "type": "nuget",
             "name": "NuGet.LibraryModel",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0"
           },
@@ -127,6 +146,7 @@
             "type": "nuget",
             "name": "NuGet.Packaging.Core",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0"
           },
@@ -137,6 +157,7 @@
             "type": "nuget",
             "name": "NuGet.Packaging",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Packaging@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0"
           },
@@ -147,6 +168,7 @@
             "type": "nuget",
             "name": "NuGet.ProjectModel",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0"
           },
@@ -157,6 +179,7 @@
             "type": "nuget",
             "name": "NuGet.Protocol",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Protocol@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0"
           },
@@ -167,6 +190,7 @@
             "type": "nuget",
             "name": "NuGet.Versioning",
             "version": "6.4.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Versioning@6.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0"
           },
@@ -177,6 +201,7 @@
             "type": "nuget",
             "name": "Microsoft.SourceLink.Common",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
           },
@@ -187,6 +212,7 @@
             "type": "nuget",
             "name": "Microsoft.Build.Tasks.Git",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
           },
@@ -197,6 +223,7 @@
             "type": "nuget",
             "name": "Microsoft.SourceLink.GitHub",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
           },
@@ -205,6 +232,7 @@
               "type": "nuget",
               "name": "Microsoft.SourceLink.Common",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0"
             },
@@ -212,6 +240,7 @@
               "type": "nuget",
               "name": "Microsoft.Build.Tasks.Git",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0"
             }
@@ -223,6 +252,7 @@
           "type": "nuget",
           "name": "Microsoft.NETFramework.ReferenceAssemblies",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETFramework.ReferenceAssemblies/1.0.0"
         },
@@ -230,6 +260,7 @@
           "type": "nuget",
           "name": "Dotnet.Script.DependencyModel",
           "version": "1.3.1",
+          "framework": "",
           "purl": "pkg:nuget/Dotnet.Script.DependencyModel@1.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/Dotnet.Script.DependencyModel/1.3.1"
         },
@@ -237,6 +268,7 @@
           "type": "nuget",
           "name": "Dotnet.Script.DependencyModel.NuGet",
           "version": "1.3.1",
+          "framework": "",
           "purl": "pkg:nuget/Dotnet.Script.DependencyModel.NuGet@1.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/Dotnet.Script.DependencyModel.NuGet/1.3.1"
         },
@@ -244,6 +276,7 @@
           "type": "nuget",
           "name": "Microsoft.CodeAnalysis.CSharp.Scripting",
           "version": "4.4.0-4.final",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0-4.final",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final"
         },
@@ -251,6 +284,7 @@
           "type": "nuget",
           "name": "System.ValueTuple",
           "version": "4.5.0",
+          "framework": "",
           "purl": "pkg:nuget/System.ValueTuple@4.5.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
         },
@@ -258,6 +292,7 @@
           "type": "nuget",
           "name": "System.Configuration.ConfigurationManager",
           "version": "4.5.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Configuration.ConfigurationManager@4.5.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/4.5.0"
         },
@@ -265,6 +300,7 @@
           "type": "nuget",
           "name": "NuGet.Common",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Common@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0"
         },
@@ -272,6 +308,7 @@
           "type": "nuget",
           "name": "NuGet.Configuration",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Configuration@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0"
         },
@@ -279,6 +316,7 @@
           "type": "nuget",
           "name": "NuGet.DependencyResolver.Core",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0"
         },
@@ -286,6 +324,7 @@
           "type": "nuget",
           "name": "NuGet.Frameworks",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Frameworks@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0"
         },
@@ -293,6 +332,7 @@
           "type": "nuget",
           "name": "NuGet.LibraryModel",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.LibraryModel@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0"
         },
@@ -300,6 +340,7 @@
           "type": "nuget",
           "name": "NuGet.Packaging.Core",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Packaging.Core@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0"
         },
@@ -307,6 +348,7 @@
           "type": "nuget",
           "name": "NuGet.Packaging",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Packaging@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0"
         },
@@ -314,6 +356,7 @@
           "type": "nuget",
           "name": "NuGet.ProjectModel",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.ProjectModel@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0"
         },
@@ -321,6 +364,7 @@
           "type": "nuget",
           "name": "NuGet.Protocol",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Protocol@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0"
         },
@@ -328,6 +372,7 @@
           "type": "nuget",
           "name": "NuGet.Versioning",
           "version": "6.4.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Versioning@6.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0"
         },
@@ -335,6 +380,7 @@
           "type": "nuget",
           "name": "Microsoft.SourceLink.GitHub",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0"
         }

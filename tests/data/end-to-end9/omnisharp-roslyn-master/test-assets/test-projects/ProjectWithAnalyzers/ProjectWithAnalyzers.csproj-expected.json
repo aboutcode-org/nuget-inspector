@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithAnalyzers/ProjectWithAnalyzers.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "ProjectWithAnalyzers",
+      "name": "ProjectWithAnalyzers",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithAnalyzers/ProjectWithAnalyzers.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "StyleCop.Analyzers",
             "version": "1.0.2",
+            "framework": "",
             "purl": "pkg:nuget/StyleCop.Analyzers@1.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.2"
           },
@@ -28,6 +37,7 @@
           "type": "nuget",
           "name": "StyleCop.Analyzers",
           "version": "1.0.2",
+          "framework": "",
           "purl": "pkg:nuget/StyleCop.Analyzers@1.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.2"
         }

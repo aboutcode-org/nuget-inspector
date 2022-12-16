@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end2/cyclonedx-dotnet/CycloneDX/CycloneDX.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "CycloneDX",
+      "name": "CycloneDX",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end2/cyclonedx-dotnet/CycloneDX/CycloneDX.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "McMaster.Extensions.CommandLineUtils",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.NetAnalyzers",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.NetAnalyzers@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.NetAnalyzers/6.0.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "NuGet.Protocol",
             "version": "6.2.1",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Protocol@6.2.1",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.2.1"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "System.IO.Abstractions",
             "version": "17.0.24",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Abstractions@17.0.24",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/17.0.24"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "CycloneDX.Core",
             "version": "5.2.0",
+            "framework": "",
             "purl": "pkg:nuget/CycloneDX.Core@5.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/CycloneDX.Core/5.2.0"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "nuget.projectmodel",
             "version": "6.1.0",
+            "framework": "",
             "purl": "pkg:nuget/nuget.projectmodel@6.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/nuget.projectmodel/6.1.0"
           },
@@ -78,6 +92,7 @@
           "type": "nuget",
           "name": "McMaster.Extensions.CommandLineUtils",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
         },
@@ -85,6 +100,7 @@
           "type": "nuget",
           "name": "Microsoft.CodeAnalysis.NetAnalyzers",
           "version": "6.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CodeAnalysis.NetAnalyzers@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.NetAnalyzers/6.0.0"
         },
@@ -92,6 +108,7 @@
           "type": "nuget",
           "name": "NuGet.Protocol",
           "version": "6.2.1",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Protocol@6.2.1",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.2.1"
         },
@@ -99,6 +116,7 @@
           "type": "nuget",
           "name": "System.IO.Abstractions",
           "version": "17.0.24",
+          "framework": "",
           "purl": "pkg:nuget/System.IO.Abstractions@17.0.24",
           "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/17.0.24"
         },
@@ -106,6 +124,7 @@
           "type": "nuget",
           "name": "CycloneDX.Core",
           "version": "5.2.0",
+          "framework": "",
           "purl": "pkg:nuget/CycloneDX.Core@5.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/CycloneDX.Core/5.2.0"
         },
@@ -113,6 +132,7 @@
           "type": "nuget",
           "name": "nuget.projectmodel",
           "version": "6.1.0",
+          "framework": "",
           "purl": "pkg:nuget/nuget.projectmodel@6.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/nuget.projectmodel/6.1.0"
         }

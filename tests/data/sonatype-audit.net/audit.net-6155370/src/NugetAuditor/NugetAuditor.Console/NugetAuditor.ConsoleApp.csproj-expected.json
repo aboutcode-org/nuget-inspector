@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/NugetAuditor.ConsoleApp.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "NugetAuditor.ConsoleApp",
+      "name": "NugetAuditor.ConsoleApp",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/NugetAuditor.ConsoleApp.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "CommandLineParser",
             "version": "1.9.71",
+            "framework": "",
             "purl": "pkg:nuget/CommandLineParser@1.9.71",
             "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "ILMerge",
             "version": "2.14.1208",
+            "framework": "",
             "purl": "pkg:nuget/ILMerge@2.14.1208",
             "download_url": "https://www.nuget.org/api/v2/package/ILMerge/2.14.1208"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "ILMerge.MSBuild.Tasks",
             "version": "1.0.0.3",
+            "framework": "",
             "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/ILMerge.MSBuild.Tasks/1.0.0.3"
           },
@@ -48,6 +59,7 @@
           "type": "nuget",
           "name": "CommandLineParser",
           "version": "1.9.71",
+          "framework": "",
           "purl": "pkg:nuget/CommandLineParser@1.9.71",
           "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/1.9.71"
         },
@@ -55,6 +67,7 @@
           "type": "nuget",
           "name": "ILMerge",
           "version": "2.14.1208",
+          "framework": "",
           "purl": "pkg:nuget/ILMerge@2.14.1208",
           "download_url": "https://www.nuget.org/api/v2/package/ILMerge/2.14.1208"
         },
@@ -62,6 +75,7 @@
           "type": "nuget",
           "name": "ILMerge.MSBuild.Tasks",
           "version": "1.0.0.3",
+          "framework": "",
           "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/ILMerge.MSBuild.Tasks/1.0.0.3"
         }

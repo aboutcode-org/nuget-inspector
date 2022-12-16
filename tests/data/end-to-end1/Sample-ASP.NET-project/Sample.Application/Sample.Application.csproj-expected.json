@@ -3,13 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end1/Sample-ASP.NET-project/Sample.Application/Sample.Application.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Sample.Application",
-      "project_version": "1.0.0.0",
+      "name": "Sample.Application",
+      "version": "1.0.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end1/Sample-ASP.NET-project/Sample.Application/Sample.Application.csproj",
       "packages": [
@@ -18,6 +25,7 @@
             "type": "nuget",
             "name": "Autofac",
             "version": "4.8.1",
+            "framework": "",
             "purl": "pkg:nuget/Autofac@4.8.1",
             "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.8.1"
           },
@@ -28,6 +36,7 @@
             "type": "nuget",
             "name": "Autofac.Mvc5",
             "version": "4.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Autofac.Mvc5@4.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Autofac.Mvc5/4.0.2"
           },
@@ -36,6 +45,7 @@
               "type": "nuget",
               "name": "Autofac",
               "version": "4.8.1",
+              "framework": "",
               "purl": "pkg:nuget/Autofac@4.8.1",
               "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.8.1"
             },
@@ -43,6 +53,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Mvc",
               "version": "5.2.4",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.4",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.4"
             }
@@ -53,6 +64,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Mvc",
             "version": "5.2.4",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.4",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.4"
           },
@@ -61,6 +73,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.WebPages",
               "version": "3.2.4",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.4",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.4"
             },
@@ -68,6 +81,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Razor",
               "version": "3.2.4",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.4",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4"
             }
@@ -78,6 +92,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.WebPages",
             "version": "3.2.4",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.4",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.4"
           },
@@ -86,6 +101,7 @@
               "type": "nuget",
               "name": "Microsoft.Web.Infrastructure",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
             },
@@ -93,6 +109,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Razor",
               "version": "3.2.4",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.4",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4"
             }
@@ -103,6 +120,7 @@
             "type": "nuget",
             "name": "Microsoft.Web.Infrastructure",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
           },
@@ -113,6 +131,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Razor",
             "version": "3.2.4",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.4",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4"
           },
@@ -123,6 +142,7 @@
             "type": "nuget",
             "name": "EntityFramework",
             "version": "6.2.0",
+            "framework": "",
             "purl": "pkg:nuget/EntityFramework@6.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0"
           },
@@ -133,6 +153,7 @@
             "type": "nuget",
             "name": "LinqKit",
             "version": "1.1.15",
+            "framework": "",
             "purl": "pkg:nuget/LinqKit@1.1.15",
             "download_url": "https://www.nuget.org/api/v2/package/LinqKit/1.1.15"
           },
@@ -144,6 +165,7 @@
           "type": "nuget",
           "name": "Autofac.Mvc5",
           "version": "4.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Autofac.Mvc5@4.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Autofac.Mvc5/4.0.2"
         },
@@ -151,6 +173,7 @@
           "type": "nuget",
           "name": "EntityFramework",
           "version": "6.2.0",
+          "framework": "",
           "purl": "pkg:nuget/EntityFramework@6.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0"
         },
@@ -158,6 +181,7 @@
           "type": "nuget",
           "name": "LinqKit",
           "version": "1.1.15",
+          "framework": "",
           "purl": "pkg:nuget/LinqKit@1.1.15",
           "download_url": "https://www.nuget.org/api/v2/package/LinqKit/1.1.15"
         }

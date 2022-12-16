@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderServer/BeanTraderServer.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "BeanTraderServer",
+      "name": "BeanTraderServer",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderServer/BeanTraderServer.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Serilog",
             "version": "2.8.0",
+            "framework": "",
             "purl": "pkg:nuget/Serilog@2.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.8.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Serilog.Sinks.Console",
             "version": "3.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Serilog.Sinks.Console@3.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "Serilog",
           "version": "2.8.0",
+          "framework": "",
           "purl": "pkg:nuget/Serilog@2.8.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.8.0"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "Serilog.Sinks.Console",
           "version": "3.1.1",
+          "framework": "",
           "purl": "pkg:nuget/Serilog.Sinks.Console@3.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1"
         }

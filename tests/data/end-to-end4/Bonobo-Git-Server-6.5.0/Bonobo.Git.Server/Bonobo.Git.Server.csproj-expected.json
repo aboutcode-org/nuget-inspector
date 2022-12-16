@@ -3,13 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server/Bonobo.Git.Server.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Bonobo.Git.Server",
-      "project_version": "6.2.0.0",
+      "name": "Bonobo.Git.Server",
+      "version": "6.2.0.0",
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server/Bonobo.Git.Server.csproj",
       "packages": [
@@ -18,6 +25,7 @@
             "type": "nuget",
             "name": "AnonymousComparer",
             "version": "1.3.0",
+            "framework": "",
             "purl": "pkg:nuget/AnonymousComparer@1.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/AnonymousComparer/1.3.0"
           },
@@ -28,6 +36,7 @@
             "type": "nuget",
             "name": "Antlr",
             "version": "3.5.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Antlr@3.5.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.5.0.2"
           },
@@ -38,6 +47,7 @@
             "type": "nuget",
             "name": "CommonMark.NET",
             "version": "0.15.1",
+            "framework": "",
             "purl": "pkg:nuget/CommonMark.NET@0.15.1",
             "download_url": "https://www.nuget.org/api/v2/package/CommonMark.NET/0.15.1"
           },
@@ -48,6 +58,7 @@
             "type": "nuget",
             "name": "CommonServiceLocator",
             "version": "1.3.0",
+            "framework": "",
             "purl": "pkg:nuget/CommonServiceLocator@1.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/CommonServiceLocator/1.3.0"
           },
@@ -58,6 +69,7 @@
             "type": "nuget",
             "name": "DotNetZip",
             "version": "1.10.1",
+            "framework": "",
             "purl": "pkg:nuget/DotNetZip@1.10.1",
             "download_url": "https://www.nuget.org/api/v2/package/DotNetZip/1.10.1"
           },
@@ -68,6 +80,7 @@
             "type": "nuget",
             "name": "EntityFramework",
             "version": "6.1.3",
+            "framework": "",
             "purl": "pkg:nuget/EntityFramework@6.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3"
           },
@@ -78,6 +91,7 @@
             "type": "nuget",
             "name": "LibGit2Sharp",
             "version": "0.23.1",
+            "framework": "",
             "purl": "pkg:nuget/LibGit2Sharp@0.23.1",
             "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp/0.23.1"
           },
@@ -86,6 +100,7 @@
               "type": "nuget",
               "name": "LibGit2Sharp.NativeBinaries",
               "version": "1.0.164",
+              "framework": "",
               "purl": "pkg:nuget/LibGit2Sharp.NativeBinaries@1.0.164",
               "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp.NativeBinaries/1.0.164"
             }
@@ -96,6 +111,7 @@
             "type": "nuget",
             "name": "LibGit2Sharp.NativeBinaries",
             "version": "1.0.164",
+            "framework": "",
             "purl": "pkg:nuget/LibGit2Sharp.NativeBinaries@1.0.164",
             "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp.NativeBinaries/1.0.164"
           },
@@ -106,6 +122,7 @@
             "type": "nuget",
             "name": "MediaTypeMap",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/MediaTypeMap@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap/2.1.0"
           },
@@ -116,6 +133,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Mvc",
             "version": "5.2.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3"
           },
@@ -124,6 +142,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.WebPages",
               "version": "3.2.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3"
             },
@@ -131,6 +150,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Razor",
               "version": "3.2.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
             }
@@ -141,6 +161,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.WebPages",
             "version": "3.2.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.WebPages@3.2.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3"
           },
@@ -149,6 +170,7 @@
               "type": "nuget",
               "name": "Microsoft.Web.Infrastructure",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
             },
@@ -156,6 +178,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Razor",
               "version": "3.2.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
             }
@@ -166,6 +189,7 @@
             "type": "nuget",
             "name": "Microsoft.Web.Infrastructure",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
           },
@@ -176,6 +200,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Razor",
             "version": "3.2.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Razor@3.2.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3"
           },
@@ -186,6 +211,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Web.Optimization",
             "version": "1.1.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
           },
@@ -194,6 +220,7 @@
               "type": "nuget",
               "name": "Microsoft.Web.Infrastructure",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
             },
@@ -201,6 +228,7 @@
               "type": "nuget",
               "name": "WebGrease",
               "version": "1.6.0",
+              "framework": "",
               "purl": "pkg:nuget/WebGrease@1.6.0",
               "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.6.0"
             }
@@ -211,6 +239,7 @@
             "type": "nuget",
             "name": "WebGrease",
             "version": "1.6.0",
+            "framework": "",
             "purl": "pkg:nuget/WebGrease@1.6.0",
             "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.6.0"
           },
@@ -219,6 +248,7 @@
               "type": "nuget",
               "name": "Antlr",
               "version": "3.5.0.2",
+              "framework": "",
               "purl": "pkg:nuget/Antlr@3.5.0.2",
               "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.5.0.2"
             },
@@ -226,6 +256,7 @@
               "type": "nuget",
               "name": "Newtonsoft.Json",
               "version": "9.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
             }
@@ -236,6 +267,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "9.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
           },
@@ -246,6 +278,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
             "version": "1.0.5",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.5",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5"
           },
@@ -256,6 +289,7 @@
             "type": "nuget",
             "name": "Microsoft.IdentityModel.Logging",
             "version": "1.1.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@1.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3"
           },
@@ -266,6 +300,7 @@
             "type": "nuget",
             "name": "Microsoft.IdentityModel.Protocol.Extensions",
             "version": "1.0.4.403061554",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.IdentityModel.Protocol.Extensions@1.0.4.403061554",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocol.Extensions/1.0.4.403061554"
           },
@@ -274,6 +309,7 @@
               "type": "nuget",
               "name": "System.IdentityModel.Tokens.Jwt",
               "version": "4.0.4.403061554",
+              "framework": "",
               "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@4.0.4.403061554",
               "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554"
             }
@@ -284,6 +320,7 @@
             "type": "nuget",
             "name": "System.IdentityModel.Tokens.Jwt",
             "version": "4.0.4.403061554",
+            "framework": "",
             "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@4.0.4.403061554",
             "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554"
           },
@@ -294,6 +331,7 @@
             "type": "nuget",
             "name": "Microsoft.IdentityModel.Tokens",
             "version": "5.1.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3"
           },
@@ -304,6 +342,7 @@
             "type": "nuget",
             "name": "Microsoft.Net.Compilers",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0"
           },
@@ -314,6 +353,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin",
             "version": "3.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin@3.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1"
           },
@@ -322,6 +362,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             }
@@ -332,6 +373,7 @@
             "type": "nuget",
             "name": "Owin",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Owin@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
           },
@@ -342,6 +384,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.SystemWeb",
             "version": "3.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1"
           },
@@ -350,6 +393,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -357,6 +401,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1"
             }
@@ -367,6 +412,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security",
             "version": "3.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1"
           },
@@ -375,6 +421,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -382,6 +429,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1"
             }
@@ -392,6 +440,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security.Cookies",
             "version": "3.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1"
           },
@@ -400,6 +449,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -407,6 +457,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1"
             },
@@ -414,6 +465,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Security",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1"
             }
@@ -424,6 +476,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security.WsFederation",
             "version": "3.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security.WsFederation@3.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.WsFederation/3.0.1"
           },
@@ -432,6 +485,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -439,6 +493,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1"
             },
@@ -446,6 +501,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Security",
               "version": "3.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1"
             },
@@ -453,6 +509,7 @@
               "type": "nuget",
               "name": "System.IdentityModel.Tokens.Jwt",
               "version": "4.0.4.403061554",
+              "framework": "",
               "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@4.0.4.403061554",
               "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554"
             },
@@ -460,6 +517,7 @@
               "type": "nuget",
               "name": "Microsoft.IdentityModel.Protocol.Extensions",
               "version": "1.0.4.403061554",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.IdentityModel.Protocol.Extensions@1.0.4.403061554",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocol.Extensions/1.0.4.403061554"
             }
@@ -470,6 +528,7 @@
             "type": "nuget",
             "name": "MvcCheckBoxList",
             "version": "1.4.5",
+            "framework": "",
             "purl": "pkg:nuget/MvcCheckBoxList@1.4.5",
             "download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5"
           },
@@ -480,6 +539,7 @@
             "type": "nuget",
             "name": "Serilog",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/Serilog@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0"
           },
@@ -490,6 +550,7 @@
             "type": "nuget",
             "name": "Serilog.Settings.AppSettings",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Serilog.Settings.AppSettings@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Settings.AppSettings/2.1.0"
           },
@@ -500,6 +561,7 @@
             "type": "nuget",
             "name": "Serilog.Sinks.File",
             "version": "3.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Serilog.Sinks.File@3.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0"
           },
@@ -510,6 +572,7 @@
             "type": "nuget",
             "name": "Serilog.Sinks.RollingFile",
             "version": "3.3.0",
+            "framework": "",
             "purl": "pkg:nuget/Serilog.Sinks.RollingFile@3.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.3.0"
           },
@@ -520,6 +583,7 @@
             "type": "nuget",
             "name": "System.Data.SQLite",
             "version": "1.0.104",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SQLite@1.0.104",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104"
           },
@@ -530,6 +594,7 @@
             "type": "nuget",
             "name": "System.Data.SQLite.Core",
             "version": "1.0.104",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SQLite.Core@1.0.104",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104"
           },
@@ -540,6 +605,7 @@
             "type": "nuget",
             "name": "System.Data.SQLite.EF6",
             "version": "1.0.104",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SQLite.EF6@1.0.104",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104"
           },
@@ -550,6 +616,7 @@
             "type": "nuget",
             "name": "System.Data.SQLite.Linq",
             "version": "1.0.104",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SQLite.Linq@1.0.104",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104"
           },
@@ -560,6 +627,7 @@
             "type": "nuget",
             "name": "UDE.CSharp",
             "version": "1.1.0",
+            "framework": "",
             "purl": "pkg:nuget/UDE.CSharp@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/UDE.CSharp/1.1.0"
           },
@@ -570,6 +638,7 @@
             "type": "nuget",
             "name": "Unity",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Unity@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Unity/4.0.1"
           },
@@ -578,6 +647,7 @@
               "type": "nuget",
               "name": "CommonServiceLocator",
               "version": "1.3.0",
+              "framework": "",
               "purl": "pkg:nuget/CommonServiceLocator@1.3.0",
               "download_url": "https://www.nuget.org/api/v2/package/CommonServiceLocator/1.3.0"
             }
@@ -588,6 +658,7 @@
             "type": "nuget",
             "name": "Unity.Mvc",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Unity.Mvc@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Unity.Mvc/4.0.1"
           },
@@ -596,6 +667,7 @@
               "type": "nuget",
               "name": "Unity",
               "version": "4.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Unity@4.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Unity/4.0.1"
             },
@@ -603,6 +675,7 @@
               "type": "nuget",
               "name": "WebActivatorEx",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/WebActivatorEx@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/WebActivatorEx/2.2.0"
             },
@@ -610,6 +683,7 @@
               "type": "nuget",
               "name": "CommonServiceLocator",
               "version": "1.3.0",
+              "framework": "",
               "purl": "pkg:nuget/CommonServiceLocator@1.3.0",
               "download_url": "https://www.nuget.org/api/v2/package/CommonServiceLocator/1.3.0"
             },
@@ -617,6 +691,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Mvc",
               "version": "5.2.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Mvc@5.2.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3"
             }
@@ -627,6 +702,7 @@
             "type": "nuget",
             "name": "WebActivatorEx",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/WebActivatorEx@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/WebActivatorEx/2.2.0"
           },
@@ -635,6 +711,7 @@
               "type": "nuget",
               "name": "Microsoft.Web.Infrastructure",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0"
             }
@@ -646,6 +723,7 @@
           "type": "nuget",
           "name": "AnonymousComparer",
           "version": "1.3.0",
+          "framework": "",
           "purl": "pkg:nuget/AnonymousComparer@1.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/AnonymousComparer/1.3.0"
         },
@@ -653,6 +731,7 @@
           "type": "nuget",
           "name": "CommonMark.NET",
           "version": "0.15.1",
+          "framework": "",
           "purl": "pkg:nuget/CommonMark.NET@0.15.1",
           "download_url": "https://www.nuget.org/api/v2/package/CommonMark.NET/0.15.1"
         },
@@ -660,6 +739,7 @@
           "type": "nuget",
           "name": "DotNetZip",
           "version": "1.10.1",
+          "framework": "",
           "purl": "pkg:nuget/DotNetZip@1.10.1",
           "download_url": "https://www.nuget.org/api/v2/package/DotNetZip/1.10.1"
         },
@@ -667,6 +747,7 @@
           "type": "nuget",
           "name": "EntityFramework",
           "version": "6.1.3",
+          "framework": "",
           "purl": "pkg:nuget/EntityFramework@6.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3"
         },
@@ -674,6 +755,7 @@
           "type": "nuget",
           "name": "LibGit2Sharp",
           "version": "0.23.1",
+          "framework": "",
           "purl": "pkg:nuget/LibGit2Sharp@0.23.1",
           "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp/0.23.1"
         },
@@ -681,6 +763,7 @@
           "type": "nuget",
           "name": "MediaTypeMap",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/MediaTypeMap@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap/2.1.0"
         },
@@ -688,6 +771,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNet.Web.Optimization",
           "version": "1.1.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNet.Web.Optimization@1.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3"
         },
@@ -695,6 +779,7 @@
           "type": "nuget",
           "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
           "version": "1.0.5",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CodeDom.Providers.DotNetCompilerPlatform@1.0.5",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5"
         },
@@ -702,6 +787,7 @@
           "type": "nuget",
           "name": "Microsoft.IdentityModel.Logging",
           "version": "1.1.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@1.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3"
         },
@@ -709,6 +795,7 @@
           "type": "nuget",
           "name": "Microsoft.IdentityModel.Tokens",
           "version": "5.1.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@5.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3"
         },
@@ -716,6 +803,7 @@
           "type": "nuget",
           "name": "Microsoft.Net.Compilers",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0"
         },
@@ -723,6 +811,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Host.SystemWeb",
           "version": "3.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1"
         },
@@ -730,6 +819,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Security.Cookies",
           "version": "3.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1"
         },
@@ -737,6 +827,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Security.WsFederation",
           "version": "3.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Security.WsFederation@3.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.WsFederation/3.0.1"
         },
@@ -744,6 +835,7 @@
           "type": "nuget",
           "name": "MvcCheckBoxList",
           "version": "1.4.5",
+          "framework": "",
           "purl": "pkg:nuget/MvcCheckBoxList@1.4.5",
           "download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5"
         },
@@ -751,6 +843,7 @@
           "type": "nuget",
           "name": "Serilog",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/Serilog@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0"
         },
@@ -758,6 +851,7 @@
           "type": "nuget",
           "name": "Serilog.Settings.AppSettings",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Serilog.Settings.AppSettings@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Settings.AppSettings/2.1.0"
         },
@@ -765,6 +859,7 @@
           "type": "nuget",
           "name": "Serilog.Sinks.File",
           "version": "3.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Serilog.Sinks.File@3.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0"
         },
@@ -772,6 +867,7 @@
           "type": "nuget",
           "name": "Serilog.Sinks.RollingFile",
           "version": "3.3.0",
+          "framework": "",
           "purl": "pkg:nuget/Serilog.Sinks.RollingFile@3.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.3.0"
         },
@@ -779,6 +875,7 @@
           "type": "nuget",
           "name": "System.Data.SQLite",
           "version": "1.0.104",
+          "framework": "",
           "purl": "pkg:nuget/System.Data.SQLite@1.0.104",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104"
         },
@@ -786,6 +883,7 @@
           "type": "nuget",
           "name": "System.Data.SQLite.Core",
           "version": "1.0.104",
+          "framework": "",
           "purl": "pkg:nuget/System.Data.SQLite.Core@1.0.104",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104"
         },
@@ -793,6 +891,7 @@
           "type": "nuget",
           "name": "System.Data.SQLite.EF6",
           "version": "1.0.104",
+          "framework": "",
           "purl": "pkg:nuget/System.Data.SQLite.EF6@1.0.104",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104"
         },
@@ -800,6 +899,7 @@
           "type": "nuget",
           "name": "System.Data.SQLite.Linq",
           "version": "1.0.104",
+          "framework": "",
           "purl": "pkg:nuget/System.Data.SQLite.Linq@1.0.104",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104"
         },
@@ -807,6 +907,7 @@
           "type": "nuget",
           "name": "UDE.CSharp",
           "version": "1.1.0",
+          "framework": "",
           "purl": "pkg:nuget/UDE.CSharp@1.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/UDE.CSharp/1.1.0"
         },
@@ -814,6 +915,7 @@
           "type": "nuget",
           "name": "Unity.Mvc",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Unity.Mvc@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Unity.Mvc/4.0.1"
         }

@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.fsproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "project",
+      "name": "project",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.fsproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "System.ValueTuple",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ValueTuple@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "FSharp.Core",
             "version": "6.0.5",
+            "framework": "",
             "purl": "pkg:nuget/FSharp.Core@6.0.5",
             "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/6.0.5"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "System.ValueTuple",
           "version": "4.4.0",
+          "framework": "",
           "purl": "pkg:nuget/System.ValueTuple@4.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "FSharp.Core",
           "version": "6.0.5",
+          "framework": "",
           "purl": "pkg:nuget/FSharp.Core@6.0.5",
           "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/6.0.5"
         }

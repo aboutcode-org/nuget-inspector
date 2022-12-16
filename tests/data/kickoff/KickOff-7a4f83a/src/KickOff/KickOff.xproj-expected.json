@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "KickOff",
+      "name": "KickOff",
+      "version": null,
       "datasource_id": "dotnet-project.lock.json",
       "project_file": "/kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj",
       "packages": [],

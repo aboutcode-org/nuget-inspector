@@ -12,7 +12,6 @@ import subprocess
 from pathlib import Path
 
 import pytest
-from commoncode import fileutils
 from commoncode.testcase import FileDrivenTesting
 
 from testing_utils import REGEN_TEST_FIXTURES
@@ -87,13 +86,19 @@ def clean_text_file(location, path=test_env.test_data_dir):
     return text
 
 
-def load_cleaned_json(location):
+def load_and_clean_json(location):
     """
     Clean a JSON results file at ``location`` from harcoded ``path`` and
     """
     text = clean_text_file(location)
     data = json.loads(text)
-    data["headers"][0]["tool_version"] = "0.0.0"
+    header = data["headers"][0]
+    
+    # this can change on each version
+    header["tool_version"] = "0.0.0"
+    # this can change on each run
+    options = [h for h in header["options"] if not h.startswith("--json")]
+    header["options"] = options
     return data
 
 
@@ -124,12 +129,13 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
     expected_path = test_path + "-expected.json"
     expected_file = test_env.get_test_loc(expected_path, must_exist=False)
 
+    clean_text_file(location=result_file)
+    result = load_and_clean_json(result_file)
     if regen:
-        clean_text_file(location=result_file)
-        fileutils.copyfile(src=result_file, dst=expected_file)
+        with open(expected_file, "w") as o:
+            o.write(json.dumps(result, indent=2))
     else:
-        result = load_cleaned_json(result_file)
-        expected = load_cleaned_json(expected_file)
+        expected = load_and_clean_json(expected_file)
 
         try:
             assert result == expected

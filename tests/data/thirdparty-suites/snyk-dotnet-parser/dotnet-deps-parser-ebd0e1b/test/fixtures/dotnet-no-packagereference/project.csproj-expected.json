@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "project",
+      "name": "project",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "System.Console",
             "version": "4.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Console@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "10.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "nunit.framework",
             "version": "3.8.1",
+            "framework": "",
             "purl": "pkg:nuget/nunit.framework@3.8.1",
             "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Orleans",
             "version": "1.4.0",
+            "framework": "",
             "purl": "pkg:nuget/Orleans@1.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
           },
@@ -58,6 +70,7 @@
           "type": "nuget",
           "name": "System.Console",
           "version": "4.0.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Console@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
         },
@@ -65,6 +78,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "10.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
         },
@@ -72,6 +86,7 @@
           "type": "nuget",
           "name": "nunit.framework",
           "version": "3.8.1",
+          "framework": "",
           "purl": "pkg:nuget/nunit.framework@3.8.1",
           "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
         },
@@ -79,6 +94,7 @@
           "type": "nuget",
           "name": "Orleans",
           "version": "1.4.0",
+          "framework": "",
           "purl": "pkg:nuget/Orleans@1.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
         }

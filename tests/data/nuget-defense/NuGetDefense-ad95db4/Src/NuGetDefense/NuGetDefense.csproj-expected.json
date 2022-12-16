@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "NuGetDefense",
+      "name": "NuGetDefense",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.SourceLink.Common",
             "version": "1.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.Build.Tasks.Git",
             "version": "1.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.SourceLink.GitHub",
             "version": "1.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
           },
@@ -45,6 +56,7 @@
               "type": "nuget",
               "name": "Microsoft.SourceLink.Common",
               "version": "1.1.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.1.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1"
             },
@@ -52,6 +64,7 @@
               "type": "nuget",
               "name": "Microsoft.Build.Tasks.Git",
               "version": "1.1.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.1.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1"
             }
@@ -62,6 +75,7 @@
             "type": "nuget",
             "name": "System.CommandLine",
             "version": "2.0.0-beta4.22272.1",
+            "framework": "",
             "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
           },
@@ -72,6 +86,7 @@
             "type": "nuget",
             "name": "System.CommandLine.NamingConventionBinder",
             "version": "2.0.0-beta4.22272.1",
+            "framework": "",
             "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
           },
@@ -80,6 +95,7 @@
               "type": "nuget",
               "name": "System.CommandLine",
               "version": "2.0.0-beta4.22272.1",
+              "framework": "",
               "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1"
             }
@@ -91,6 +107,7 @@
           "type": "nuget",
           "name": "Microsoft.SourceLink.GitHub",
           "version": "1.1.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1"
         },
@@ -98,6 +115,7 @@
           "type": "nuget",
           "name": "System.CommandLine.NamingConventionBinder",
           "version": "2.0.0-beta4.22272.1",
+          "framework": "",
           "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1"
         }

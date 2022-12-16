@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/simple-multi-assets/api/api.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "api",
+      "name": "api",
+      "version": null,
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/simple-multi-assets/api/api.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "MyLogger",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/MyLogger@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
           },
@@ -28,6 +37,7 @@
           "type": "nuget",
           "name": "MyLogger",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/MyLogger@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
         },
@@ -35,6 +45,7 @@
           "type": "nuget",
           "name": "MyLogger",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/MyLogger@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/MyLogger/1.0.0"
         }

@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/test.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "test",
+      "name": "test",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dependencycheck/DependencyCheck-172f523/core/msbuild/test.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Humanizer.Core",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.af",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.af@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.af/2.2.0"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.ar",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.ar@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ar/2.2.0"
           },
@@ -53,6 +65,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -63,6 +76,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.bg",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.bg@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.bg/2.2.0"
           },
@@ -71,6 +85,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -81,6 +96,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.bn-BD",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.bn-BD@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.bn-BD/2.2.0"
           },
@@ -89,6 +105,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -99,6 +116,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.cs",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.cs@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.cs/2.2.0"
           },
@@ -107,6 +125,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -117,6 +136,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.da",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.da@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.da/2.2.0"
           },
@@ -125,6 +145,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -135,6 +156,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.de",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.de@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.de/2.2.0"
           },
@@ -143,6 +165,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -153,6 +176,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.el",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.el@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.el/2.2.0"
           },
@@ -161,6 +185,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -171,6 +196,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.es",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.es@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.es/2.2.0"
           },
@@ -179,6 +205,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -189,6 +216,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.fa",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.fa@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fa/2.2.0"
           },
@@ -197,6 +225,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -207,6 +236,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.fi-FI",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.fi-FI@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fi-FI/2.2.0"
           },
@@ -215,6 +245,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -225,6 +256,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.fr",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.fr@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fr/2.2.0"
           },
@@ -233,6 +265,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -243,6 +276,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.fr-BE",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.fr-BE@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fr-BE/2.2.0"
           },
@@ -251,6 +285,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -261,6 +296,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.he",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.he@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.he/2.2.0"
           },
@@ -269,6 +305,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -279,6 +316,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.hr",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.hr@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.hr/2.2.0"
           },
@@ -287,6 +325,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -297,6 +336,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.hu",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.hu@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.hu/2.2.0"
           },
@@ -305,6 +345,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -315,6 +356,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.id",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.id@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.id/2.2.0"
           },
@@ -323,6 +365,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -333,6 +376,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.it",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.it@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.it/2.2.0"
           },
@@ -341,6 +385,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -351,6 +396,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.ja",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.ja@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ja/2.2.0"
           },
@@ -359,6 +405,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -369,6 +416,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.lv",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.lv@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.lv/2.2.0"
           },
@@ -377,6 +425,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -387,6 +436,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.nb",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.nb@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nb/2.2.0"
           },
@@ -395,6 +445,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -405,6 +456,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.nb-NO",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.nb-NO@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nb-NO/2.2.0"
           },
@@ -413,6 +465,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -423,6 +476,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.nl",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.nl@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nl/2.2.0"
           },
@@ -431,6 +485,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -441,6 +496,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.pl",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.pl@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.pl/2.2.0"
           },
@@ -449,6 +505,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -459,6 +516,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.pt",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.pt@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.pt/2.2.0"
           },
@@ -467,6 +525,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -477,6 +536,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.ro",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.ro@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ro/2.2.0"
           },
@@ -485,6 +545,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -495,6 +556,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.ru",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.ru@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ru/2.2.0"
           },
@@ -503,6 +565,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -513,6 +576,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.sk",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.sk@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sk/2.2.0"
           },
@@ -521,6 +585,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -531,6 +596,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.sl",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.sl@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sl/2.2.0"
           },
@@ -539,6 +605,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -549,6 +616,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.sr",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.sr@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sr/2.2.0"
           },
@@ -557,6 +625,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -567,6 +636,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.sr-Latn",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.sr-Latn@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sr-Latn/2.2.0"
           },
@@ -575,6 +645,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -585,6 +656,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.sv",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.sv@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sv/2.2.0"
           },
@@ -593,6 +665,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -603,6 +676,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.tr",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.tr@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.tr/2.2.0"
           },
@@ -611,6 +685,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -621,6 +696,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.uk",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.uk@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uk/2.2.0"
           },
@@ -629,6 +705,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -639,6 +716,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.uz-Cyrl-UZ",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.uz-Cyrl-UZ@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uz-Cyrl-UZ/2.2.0"
           },
@@ -647,6 +725,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -657,6 +736,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.uz-Latn-UZ",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.uz-Latn-UZ@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uz-Latn-UZ/2.2.0"
           },
@@ -665,6 +745,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -675,6 +756,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.vi",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.vi@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.vi/2.2.0"
           },
@@ -683,6 +765,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -693,6 +776,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.zh-CN",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.zh-CN@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-CN/2.2.0"
           },
@@ -701,6 +785,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -711,6 +796,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.zh-Hans",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.zh-Hans@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-Hans/2.2.0"
           },
@@ -719,6 +805,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -729,6 +816,7 @@
             "type": "nuget",
             "name": "Humanizer.Core.zh-Hant",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer.Core.zh-Hant@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-Hant/2.2.0"
           },
@@ -737,6 +825,7 @@
               "type": "nuget",
               "name": "Humanizer.Core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core/2.2.0"
             }
@@ -747,6 +836,7 @@
             "type": "nuget",
             "name": "Humanizer",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Humanizer@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Humanizer/2.2.0"
           },
@@ -755,6 +845,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.af",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.af@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.af/2.2.0"
             },
@@ -762,6 +853,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.ar",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.ar@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ar/2.2.0"
             },
@@ -769,6 +861,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.bg",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.bg@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.bg/2.2.0"
             },
@@ -776,6 +869,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.bn-BD",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.bn-BD@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.bn-BD/2.2.0"
             },
@@ -783,6 +877,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.cs",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.cs@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.cs/2.2.0"
             },
@@ -790,6 +885,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.da",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.da@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.da/2.2.0"
             },
@@ -797,6 +893,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.de",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.de@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.de/2.2.0"
             },
@@ -804,6 +901,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.el",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.el@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.el/2.2.0"
             },
@@ -811,6 +909,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.es",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.es@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.es/2.2.0"
             },
@@ -818,6 +917,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.fa",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.fa@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fa/2.2.0"
             },
@@ -825,6 +925,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.fi-FI",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.fi-FI@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fi-FI/2.2.0"
             },
@@ -832,6 +933,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.fr",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.fr@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fr/2.2.0"
             },
@@ -839,6 +941,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.fr-BE",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.fr-BE@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.fr-BE/2.2.0"
             },
@@ -846,6 +949,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.he",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.he@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.he/2.2.0"
             },
@@ -853,6 +957,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.hr",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.hr@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.hr/2.2.0"
             },
@@ -860,6 +965,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.hu",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.hu@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.hu/2.2.0"
             },
@@ -867,6 +973,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.id",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.id@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.id/2.2.0"
             },
@@ -874,6 +981,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.it",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.it@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.it/2.2.0"
             },
@@ -881,6 +989,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.ja",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.ja@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ja/2.2.0"
             },
@@ -888,6 +997,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.lv",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.lv@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.lv/2.2.0"
             },
@@ -895,6 +1005,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.nb",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.nb@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nb/2.2.0"
             },
@@ -902,6 +1013,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.nb-NO",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.nb-NO@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nb-NO/2.2.0"
             },
@@ -909,6 +1021,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.nl",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.nl@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.nl/2.2.0"
             },
@@ -916,6 +1029,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.pl",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.pl@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.pl/2.2.0"
             },
@@ -923,6 +1037,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.pt",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.pt@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.pt/2.2.0"
             },
@@ -930,6 +1045,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.ro",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.ro@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ro/2.2.0"
             },
@@ -937,6 +1053,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.ru",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.ru@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.ru/2.2.0"
             },
@@ -944,6 +1061,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.sk",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.sk@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sk/2.2.0"
             },
@@ -951,6 +1069,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.sl",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.sl@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sl/2.2.0"
             },
@@ -958,6 +1077,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.sr",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.sr@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sr/2.2.0"
             },
@@ -965,6 +1085,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.sr-Latn",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.sr-Latn@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sr-Latn/2.2.0"
             },
@@ -972,6 +1093,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.sv",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.sv@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.sv/2.2.0"
             },
@@ -979,6 +1101,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.tr",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.tr@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.tr/2.2.0"
             },
@@ -986,6 +1109,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.uk",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.uk@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uk/2.2.0"
             },
@@ -993,6 +1117,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.uz-Cyrl-UZ",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.uz-Cyrl-UZ@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uz-Cyrl-UZ/2.2.0"
             },
@@ -1000,6 +1125,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.uz-Latn-UZ",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.uz-Latn-UZ@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.uz-Latn-UZ/2.2.0"
             },
@@ -1007,6 +1133,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.vi",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.vi@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.vi/2.2.0"
             },
@@ -1014,6 +1141,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.zh-CN",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.zh-CN@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-CN/2.2.0"
             },
@@ -1021,6 +1149,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.zh-Hans",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.zh-Hans@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-Hans/2.2.0"
             },
@@ -1028,6 +1157,7 @@
               "type": "nuget",
               "name": "Humanizer.Core.zh-Hant",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Humanizer.Core.zh-Hant@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Humanizer.Core.zh-Hant/2.2.0"
             }
@@ -1038,6 +1168,7 @@
             "type": "nuget",
             "name": "JetBrains.Annotations",
             "version": "11.1.0",
+            "framework": "",
             "purl": "pkg:nuget/JetBrains.Annotations@11.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0"
           },
@@ -1048,6 +1179,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.All",
             "version": "2.0.5",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.5",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5"
           },
@@ -1058,6 +1190,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "4.5.3",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
           },
@@ -1068,6 +1201,7 @@
             "type": "nuget",
             "name": "System.Threading.Tasks.Extensions",
             "version": "4.5.4",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
           },
@@ -1076,6 +1210,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.5.3",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
             }
@@ -1086,6 +1221,7 @@
             "type": "nuget",
             "name": "Microsoft.Bcl.AsyncInterfaces",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
           },
@@ -1094,6 +1230,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
             }
@@ -1104,6 +1241,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
           },
@@ -1112,6 +1250,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.AsyncInterfaces",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
             },
@@ -1119,6 +1258,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
             }
@@ -1129,6 +1269,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
           },
@@ -1139,6 +1280,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.DependencyInjection",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
           },
@@ -1147,6 +1289,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.AsyncInterfaces",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
             },
@@ -1154,6 +1297,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -1161,6 +1305,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             },
@@ -1168,6 +1313,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4"
             }
@@ -1178,6 +1324,7 @@
             "type": "nuget",
             "name": "System.Buffers",
             "version": "4.5.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Buffers@4.5.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
           },
@@ -1188,6 +1335,7 @@
             "type": "nuget",
             "name": "System.Numerics.Vectors",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
           },
@@ -1198,6 +1346,7 @@
             "type": "nuget",
             "name": "System.Memory",
             "version": "4.5.4",
+            "framework": "",
             "purl": "pkg:nuget/System.Memory@4.5.4",
             "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
           },
@@ -1206,6 +1355,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -1213,6 +1363,7 @@
               "type": "nuget",
               "name": "System.Numerics.Vectors",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
             },
@@ -1220,6 +1371,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.5.3",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
             }
@@ -1230,6 +1382,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
           },
@@ -1238,6 +1391,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -1245,6 +1399,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             }
@@ -1255,6 +1410,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Primitives",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
           },
@@ -1263,6 +1419,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             },
@@ -1270,6 +1427,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             }
@@ -1280,6 +1438,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Options",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
           },
@@ -1288,6 +1447,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -1295,6 +1455,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -1305,6 +1466,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.DiagnosticSource",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
           },
@@ -1313,6 +1475,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             },
@@ -1320,6 +1483,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             }
@@ -1330,6 +1494,7 @@
             "type": "nuget",
             "name": "System.ValueTuple",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ValueTuple@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
           },
@@ -1340,6 +1505,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
           },
@@ -1348,6 +1514,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.AsyncInterfaces",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.AsyncInterfaces/6.0.0"
             },
@@ -1355,6 +1522,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -1362,6 +1530,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
             },
@@ -1369,6 +1538,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -1376,6 +1546,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -1383,6 +1554,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.DiagnosticSource",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
             },
@@ -1390,6 +1562,7 @@
               "type": "nuget",
               "name": "System.ValueTuple",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ValueTuple@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
             }
@@ -1401,6 +1574,7 @@
           "type": "nuget",
           "name": "Humanizer",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Humanizer@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Humanizer/2.2.0"
         },
@@ -1408,6 +1582,7 @@
           "type": "nuget",
           "name": "JetBrains.Annotations",
           "version": "11.1.0",
+          "framework": "",
           "purl": "pkg:nuget/JetBrains.Annotations@11.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0"
         },
@@ -1415,6 +1590,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.All",
           "version": "2.0.5",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.5",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5"
         },
@@ -1422,6 +1598,7 @@
           "type": "nuget",
           "name": "Microsoft.Extensions.Logging",
           "version": "6.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
         }

@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies-with-package-reference/project.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "project",
+      "name": "project",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies-with-package-reference/project.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "log4net",
             "version": "2.0.8",
+            "framework": "",
             "purl": "pkg:nuget/log4net@2.0.8",
             "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "MySql.Data",
             "version": "8.0.12",
+            "framework": "",
             "purl": "pkg:nuget/MySql.Data@8.0.12",
             "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "ClientDependency.Core",
             "version": "1.7.0.1",
+            "framework": "",
             "purl": "pkg:nuget/ClientDependency.Core@1.7.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/ClientDependency.Core/1.7.0.1"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "System.Web.Razor",
             "version": "2.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Web.Razor@2.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Web.Razor/2.0.0"
           },
@@ -58,6 +70,7 @@
           "type": "nuget",
           "name": "log4net",
           "version": "2.0.8",
+          "framework": "",
           "purl": "pkg:nuget/log4net@2.0.8",
           "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
         },
@@ -65,6 +78,7 @@
           "type": "nuget",
           "name": "MySql.Data",
           "version": "8.0.12",
+          "framework": "",
           "purl": "pkg:nuget/MySql.Data@8.0.12",
           "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12"
         },
@@ -72,6 +86,7 @@
           "type": "nuget",
           "name": "ClientDependency.Core",
           "version": "1.7.0.1",
+          "framework": "",
           "purl": "pkg:nuget/ClientDependency.Core@1.7.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/ClientDependency.Core/1.7.0.1"
         },
@@ -79,6 +94,7 @@
           "type": "nuget",
           "name": "System.Web.Razor",
           "version": "2.0.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Web.Razor@2.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Web.Razor/2.0.0"
         }

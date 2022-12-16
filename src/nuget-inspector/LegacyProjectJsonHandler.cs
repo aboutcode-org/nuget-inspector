@@ -28,10 +28,11 @@ internal class LegacyProjectJsonHandler : IDependencyResolver
         {
             var set = new PackageSet
             {
-                PackageId = new BasePackage(name: package.Name, version: package.LibraryRange.VersionRange.OriginalString)
+                package = new BasePackage(name: package.Name,
+                    version: package.LibraryRange.VersionRange.OriginalString)
             };
             result.Packages.Add(item: set);
-            result.Dependencies.Add(item: set.PackageId);
+            result.Dependencies.Add(item: set.package);
         }
 
         return result;

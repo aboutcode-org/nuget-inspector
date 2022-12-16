@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.LoadTestHarness",
+      "name": "Microsoft.AspNet.SignalR.LoadTestHarness",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "jQuery",
             "version": "1.8.2",
+            "framework": "",
             "purl": "pkg:nuget/jQuery@1.8.2",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "jQuery.Color",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/jQuery.Color@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "jQuery.UI.Combined",
             "version": "1.9.0",
+            "framework": "",
             "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
           },
@@ -53,6 +65,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -63,6 +76,7 @@
             "type": "nuget",
             "name": "knockoutjs",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/knockoutjs@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
           },
@@ -73,6 +87,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
           },
@@ -81,6 +96,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             }
@@ -91,6 +107,7 @@
             "type": "nuget",
             "name": "Owin",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Owin@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
           },
@@ -101,6 +118,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.SystemWeb",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
           },
@@ -111,6 +129,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "6.0.4",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
           },
@@ -122,6 +141,7 @@
           "type": "nuget",
           "name": "jQuery.Color",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/jQuery.Color@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
         },
@@ -129,6 +149,7 @@
           "type": "nuget",
           "name": "jQuery.UI.Combined",
           "version": "1.9.0",
+          "framework": "",
           "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
         },
@@ -136,6 +157,7 @@
           "type": "nuget",
           "name": "knockoutjs",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/knockoutjs@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/knockoutjs/2.1.0"
         },
@@ -143,6 +165,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
         },
@@ -150,6 +173,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Host.SystemWeb",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
         },
@@ -157,6 +181,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "6.0.4",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4"
         }

@@ -14,18 +14,22 @@ public class ScanResult
     }
 
     public Exception? Exception;
-    public string? OutputFilePath;
+    public ProjectScannerOptions? Options;
     public List<Package> Packages = new();
     public string? ResultName;
     public ResultStatus Status;
 }
 
-internal class ProjectScannerOptions : Options
+/// <summary>
+/// An Options subclass that track project scan-specific options. 
+/// </summary>
+public class ProjectScannerOptions : Options
 {
     public ProjectScannerOptions(Options options)
     {
         ProjectFilePath = options.ProjectFilePath;
-        ProjectDirectory = Directory.GetParent(path: ProjectFilePath)?.FullName ?? string.Empty;
+        TargetFramework = options.TargetFramework;
+        ProjectDirectory = Directory.GetParent(path: options.ProjectFilePath)?.FullName ?? string.Empty;
         Verbose = options.Verbose;
         NugetApiFeedUrl = options.NugetApiFeedUrl;
         NugetConfigPath = options.NugetConfigPath;
@@ -112,7 +116,7 @@ internal class ProjectScanner
             {
                 Status = ScanResult.ResultStatus.Success,
                 ResultName = Options.ProjectUniqueId,
-                OutputFilePath = Options.OutputFilePath,
+                Options = Options,
                 Packages = packages
             };
         }
@@ -139,9 +143,9 @@ internal class ProjectScanner
 
         var package = new Package
         {
-            Name = Options.ProjectUniqueId,
-            Version = Options.ProjectVersion,
-            SourcePath = Options.ProjectFilePath,
+            name = Options.ProjectUniqueId,
+            version = Options.ProjectVersion,
+            project_file = Options.ProjectFilePath,
         };
 
         var projectTargetFramework = ParseTargetFramework();
@@ -166,9 +170,9 @@ internal class ProjectScanner
             var projectAssetsJsonResolver =
                 new ProjectAssetsJsonHandler(projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Process();
-            package.Packages = projectAssetsJsonResult.Packages;
-            package.Dependencies = projectAssetsJsonResult.Dependencies;
-            package.DatasourceId = ProjectAssetsJsonHandler.DatasourceId;
+            package.packages = projectAssetsJsonResult.Packages;
+            package.dependencies = projectAssetsJsonResult.Dependencies;
+            package.datasource_id = ProjectAssetsJsonHandler.DatasourceId;
         }
         else if (hasProjectJsonLock)
         {
@@ -178,9 +182,9 @@ internal class ProjectScanner
             var projectJsonLockResolver =
                 new LegacyProjectLockJsonHandler(projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Process();
-            package.Packages = projectJsonLockResult.Packages;
-            package.Dependencies = projectJsonLockResult.Dependencies;
-            package.DatasourceId = LegacyProjectLockJsonHandler.DatasourceId;
+            package.packages = projectJsonLockResult.Packages;
+            package.dependencies = projectJsonLockResult.Dependencies;
+            package.datasource_id = LegacyProjectLockJsonHandler.DatasourceId;
         }
         else if (hasPackagesConfig)
         {
@@ -189,9 +193,9 @@ internal class ProjectScanner
             var packagesConfigResolver = new PackagesConfigHandler(
                 packages_config_path: Options.PackagesConfigPath!, nuget_api: NugetApiService);
             var packagesConfigResult = packagesConfigResolver.Process();
-            package.Packages = packagesConfigResult.Packages;
-            package.Dependencies = packagesConfigResult.Dependencies;
-            package.DatasourceId = PackagesConfigHandler.DatasourceId;
+            package.packages = packagesConfigResult.Packages;
+            package.dependencies = packagesConfigResult.Dependencies;
+            package.datasource_id = PackagesConfigHandler.DatasourceId;
         }
         else if (hasProjectJson)
         {
@@ -200,9 +204,9 @@ internal class ProjectScanner
             var projectJsonResolver = new LegacyProjectJsonHandler(projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Process();
-            package.Packages = projectJsonResult.Packages;
-            package.Dependencies = projectJsonResult.Dependencies;
-            package.DatasourceId = LegacyProjectJsonHandler.DatasourceId;
+            package.packages = projectJsonResult.Packages;
+            package.dependencies = projectJsonResult.Dependencies;
+            package.datasource_id = LegacyProjectJsonHandler.DatasourceId;
         }
         else
         {
@@ -219,9 +223,9 @@ internal class ProjectScanner
             if (projectReferencesResult.Success)
             {
                 if (Config.TRACE) Console.WriteLine("ProjFileStandardPackageReferenceHandler success.");
-                package.Packages = projectReferencesResult.Packages;
-                package.Dependencies = projectReferencesResult.Dependencies;
-                package.DatasourceId = ProjFileStandardPackageReferenceHandler.DatasourceId;
+                package.packages = projectReferencesResult.Packages;
+                package.dependencies = projectReferencesResult.Dependencies;
+                package.datasource_id = ProjFileStandardPackageReferenceHandler.DatasourceId;
             }
             else
             {
@@ -230,17 +234,17 @@ internal class ProjectScanner
                     new ProjFileXmlParserPackageReferenceHandler(projectPath: Options.ProjectFilePath,
                         nugetApi: NugetApiService, projectTargetFramework: projectTargetFramework);
                 var xmlResult = xmlResolver.Process();
-                package.Version = xmlResult.ProjectVersion;
-                package.Packages = xmlResult.Packages;
-                package.Dependencies = xmlResult.Dependencies;
-                package.DatasourceId = ProjFileXmlParserPackageReferenceHandler.DatasourceId;
+                package.version = xmlResult.ProjectVersion;
+                package.packages = xmlResult.Packages;
+                package.dependencies = xmlResult.Dependencies;
+                package.datasource_id = ProjFileXmlParserPackageReferenceHandler.DatasourceId;
             }
         }
 
         if (Config.TRACE)
         {
             Console.WriteLine(
-                value: $"Found #{package.Dependencies.Count} dependencies for #{package.Packages.Count} packages.");
+                value: $"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
             Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch.ElapsedMilliseconds} ms.");
         }
 
@@ -265,7 +269,7 @@ internal class ProjectScanner
     }
 
     /// <summary>
-    /// Return the first TargetFramework fourn in the *.*proj XML file 
+    /// Return the first TargetFramework found in the *.*proj XML file 
     /// </summary>
     /// <param name="projectFilePath"></param>
     /// <returns></returns>
@@ -301,5 +305,4 @@ internal class ProjectScanner
 
         return targetFrameworks.First().Value;
     }
-
 }

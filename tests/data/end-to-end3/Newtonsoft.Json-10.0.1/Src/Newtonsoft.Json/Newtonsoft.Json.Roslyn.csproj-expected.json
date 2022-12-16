@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Roslyn.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Newtonsoft.Json.Roslyn",
+      "name": "Newtonsoft.Json.Roslyn",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Roslyn.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.CSharp",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CSharp@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.3.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "System.Collections",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Collections@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "System.ComponentModel.TypeConverter",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ComponentModel.TypeConverter@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.TypeConverter/4.3.0"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.Debug",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "System.Dynamic.Runtime",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "System.Globalization",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Globalization@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "System.IO",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
           },
@@ -87,6 +102,7 @@
             "type": "nuget",
             "name": "System.Linq",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Linq@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
           },
@@ -97,6 +113,7 @@
             "type": "nuget",
             "name": "System.Linq.Expressions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
           },
@@ -107,6 +124,7 @@
             "type": "nuget",
             "name": "System.ObjectModel",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ObjectModel@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
           },
@@ -117,6 +135,7 @@
             "type": "nuget",
             "name": "System.Reflection",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
           },
@@ -127,6 +146,7 @@
             "type": "nuget",
             "name": "System.Reflection.Extensions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
           },
@@ -137,6 +157,7 @@
             "type": "nuget",
             "name": "System.Resources.ResourceManager",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
           },
@@ -147,6 +168,7 @@
             "type": "nuget",
             "name": "System.Runtime",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
           },
@@ -157,6 +179,7 @@
             "type": "nuget",
             "name": "System.Runtime.Extensions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
           },
@@ -167,6 +190,7 @@
             "type": "nuget",
             "name": "System.Runtime.Serialization.Primitives",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
           },
@@ -177,6 +201,7 @@
             "type": "nuget",
             "name": "System.Text.Encoding",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
           },
@@ -187,6 +212,7 @@
             "type": "nuget",
             "name": "System.Text.Encoding.Extensions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
           },
@@ -197,6 +223,7 @@
             "type": "nuget",
             "name": "System.Text.RegularExpressions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
           },
@@ -207,6 +234,7 @@
             "type": "nuget",
             "name": "System.Threading",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
           },
@@ -217,6 +245,7 @@
             "type": "nuget",
             "name": "System.Threading.Tasks",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
           },
@@ -227,6 +256,7 @@
             "type": "nuget",
             "name": "System.Xml.ReaderWriter",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
           },
@@ -237,6 +267,7 @@
             "type": "nuget",
             "name": "System.Xml.XDocument",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
           },
@@ -247,6 +278,7 @@
             "type": "nuget",
             "name": "System.Runtime.Numerics",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
           },
@@ -257,6 +289,7 @@
             "type": "nuget",
             "name": "System.Runtime.Serialization.Formatters",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
           },
@@ -267,6 +300,7 @@
             "type": "nuget",
             "name": "System.Xml.XmlDocument",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
           },
@@ -278,6 +312,7 @@
           "type": "nuget",
           "name": "Microsoft.CSharp",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CSharp@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.3.0"
         },
@@ -285,6 +320,7 @@
           "type": "nuget",
           "name": "System.Collections",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Collections@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Collections/4.3.0"
         },
@@ -292,6 +328,7 @@
           "type": "nuget",
           "name": "System.ComponentModel.TypeConverter",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.ComponentModel.TypeConverter@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.TypeConverter/4.3.0"
         },
@@ -299,6 +336,7 @@
           "type": "nuget",
           "name": "System.Diagnostics.Debug",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Diagnostics.Debug@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.Debug/4.3.0"
         },
@@ -306,6 +344,7 @@
           "type": "nuget",
           "name": "System.Dynamic.Runtime",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Dynamic.Runtime@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Dynamic.Runtime/4.3.0"
         },
@@ -313,6 +352,7 @@
           "type": "nuget",
           "name": "System.Globalization",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Globalization@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
         },
@@ -320,6 +360,7 @@
           "type": "nuget",
           "name": "System.IO",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.IO@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.IO/4.3.0"
         },
@@ -327,6 +368,7 @@
           "type": "nuget",
           "name": "System.Linq",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Linq@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Linq/4.3.0"
         },
@@ -334,6 +376,7 @@
           "type": "nuget",
           "name": "System.Linq.Expressions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Linq.Expressions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Linq.Expressions/4.3.0"
         },
@@ -341,6 +384,7 @@
           "type": "nuget",
           "name": "System.ObjectModel",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.ObjectModel@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
         },
@@ -348,6 +392,7 @@
           "type": "nuget",
           "name": "System.Reflection",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Reflection@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
         },
@@ -355,6 +400,7 @@
           "type": "nuget",
           "name": "System.Reflection.Extensions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Reflection.Extensions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Extensions/4.3.0"
         },
@@ -362,6 +408,7 @@
           "type": "nuget",
           "name": "System.Resources.ResourceManager",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Resources.ResourceManager@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Resources.ResourceManager/4.3.0"
         },
@@ -369,6 +416,7 @@
           "type": "nuget",
           "name": "System.Runtime",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime/4.3.0"
         },
@@ -376,6 +424,7 @@
           "type": "nuget",
           "name": "System.Runtime.Extensions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Extensions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Extensions/4.3.0"
         },
@@ -383,6 +432,7 @@
           "type": "nuget",
           "name": "System.Runtime.Serialization.Primitives",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
         },
@@ -390,6 +440,7 @@
           "type": "nuget",
           "name": "System.Text.Encoding",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding/4.3.0"
         },
@@ -397,6 +448,7 @@
           "type": "nuget",
           "name": "System.Text.Encoding.Extensions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Text.Encoding.Extensions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.Extensions/4.3.0"
         },
@@ -404,6 +456,7 @@
           "type": "nuget",
           "name": "System.Text.RegularExpressions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Text.RegularExpressions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Text.RegularExpressions/4.3.0"
         },
@@ -411,6 +464,7 @@
           "type": "nuget",
           "name": "System.Threading",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Threading@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading/4.3.0"
         },
@@ -418,6 +472,7 @@
           "type": "nuget",
           "name": "System.Threading.Tasks",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks/4.3.0"
         },
@@ -425,6 +480,7 @@
           "type": "nuget",
           "name": "System.Xml.ReaderWriter",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Xml.ReaderWriter@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Xml.ReaderWriter/4.3.0"
         },
@@ -432,6 +488,7 @@
           "type": "nuget",
           "name": "System.Xml.XDocument",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Xml.XDocument@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XDocument/4.3.0"
         },
@@ -439,6 +496,7 @@
           "type": "nuget",
           "name": "System.Runtime.Numerics",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Numerics@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Numerics/4.3.0"
         },
@@ -446,6 +504,7 @@
           "type": "nuget",
           "name": "System.Runtime.Serialization.Formatters",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
         },
@@ -453,6 +512,7 @@
           "type": "nuget",
           "name": "System.Xml.XmlDocument",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Xml.XmlDocument@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlDocument/4.3.0"
         }

@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/UWPMigrationSample2.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "UWPMigrationSample2",
+      "name": "UWPMigrationSample2",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Upgraded/UWPMigrationSample2.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.Windows.SDK.BuildTools",
             "version": "10.0.22000.194",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Windows.SDK.BuildTools@10.0.22000.194",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.BuildTools/10.0.22000.194"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.WindowsAppSDK",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.WindowsAppSDK@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAppSDK/1.0.0"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "Microsoft.Windows.SDK.BuildTools",
               "version": "10.0.22000.194",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Windows.SDK.BuildTools@10.0.22000.194",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.BuildTools/10.0.22000.194"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "Microsoft.Graphics.Win2D",
             "version": "1.0.0.30",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Graphics.Win2D@1.0.0.30",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Graphics.Win2D/1.0.0.30"
           },
@@ -55,6 +67,7 @@
             "type": "nuget",
             "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
             "version": "0.2.222702",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
           },
@@ -65,6 +78,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
           },
@@ -75,6 +89,7 @@
             "type": "nuget",
             "name": "System.Security.Principal.Windows",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
           },
@@ -85,6 +100,7 @@
             "type": "nuget",
             "name": "System.Security.AccessControl",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
           },
@@ -93,6 +109,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -100,6 +117,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -110,6 +128,7 @@
             "type": "nuget",
             "name": "Microsoft.Win32.Registry",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
           },
@@ -118,6 +137,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -125,6 +145,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -135,6 +156,7 @@
             "type": "nuget",
             "name": "Microsoft.Win32.Registry.AccessControl",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Win32.Registry.AccessControl@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry.AccessControl/5.0.0"
           },
@@ -143,6 +165,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -150,6 +173,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             }
@@ -160,6 +184,7 @@
             "type": "nuget",
             "name": "Microsoft.Win32.SystemEvents",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Win32.SystemEvents@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.SystemEvents/5.0.0"
           },
@@ -168,6 +193,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             }
@@ -178,6 +204,7 @@
             "type": "nuget",
             "name": "System.CodeDom",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.CodeDom@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.CodeDom/5.0.0"
           },
@@ -188,6 +215,7 @@
             "type": "nuget",
             "name": "System.ComponentModel.Composition",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ComponentModel.Composition@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Composition/5.0.0"
           },
@@ -198,6 +226,7 @@
             "type": "nuget",
             "name": "System.Reflection.Context",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Context@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Context/5.0.0"
           },
@@ -208,6 +237,7 @@
             "type": "nuget",
             "name": "System.ComponentModel.Composition.Registration",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ComponentModel.Composition.Registration@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Composition.Registration/5.0.0"
           },
@@ -216,6 +246,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Composition",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Composition@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Composition/5.0.0"
             },
@@ -223,6 +254,7 @@
               "type": "nuget",
               "name": "System.Reflection.Context",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Context@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Context/5.0.0"
             }
@@ -233,6 +265,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.ProtectedData",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
           },
@@ -243,6 +276,7 @@
             "type": "nuget",
             "name": "System.Drawing.Common",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Drawing.Common@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Drawing.Common/5.0.0"
           },
@@ -251,6 +285,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.SystemEvents",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.SystemEvents@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.SystemEvents/5.0.0"
             }
@@ -261,6 +296,7 @@
             "type": "nuget",
             "name": "System.Windows.Extensions",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Windows.Extensions@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Windows.Extensions/5.0.0"
           },
@@ -269,6 +305,7 @@
               "type": "nuget",
               "name": "System.Drawing.Common",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Drawing.Common@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Drawing.Common/5.0.0"
             }
@@ -279,6 +316,7 @@
             "type": "nuget",
             "name": "System.Security.Permissions",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
           },
@@ -287,6 +325,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -294,6 +333,7 @@
               "type": "nuget",
               "name": "System.Windows.Extensions",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Windows.Extensions@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Windows.Extensions/5.0.0"
             }
@@ -304,6 +344,7 @@
             "type": "nuget",
             "name": "System.Configuration.ConfigurationManager",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
           },
@@ -312,6 +353,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.ProtectedData",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
             },
@@ -319,6 +361,7 @@
               "type": "nuget",
               "name": "System.Security.Permissions",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
             }
@@ -329,6 +372,7 @@
             "type": "nuget",
             "name": "System.Data.DataSetExtensions",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
           },
@@ -339,6 +383,7 @@
             "type": "nuget",
             "name": "System.Data.Odbc",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.Odbc@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.Odbc/5.0.0"
           },
@@ -347,6 +392,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             }
@@ -357,6 +403,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.PerformanceCounter",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/5.0.0"
           },
@@ -365,6 +412,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -372,6 +420,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -379,6 +428,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             },
@@ -386,6 +436,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -396,6 +447,7 @@
             "type": "nuget",
             "name": "System.Data.OleDb",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.OleDb@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.OleDb/5.0.0"
           },
@@ -404,6 +456,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -411,6 +464,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             },
@@ -418,6 +472,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.PerformanceCounter",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/5.0.0"
             },
@@ -425,6 +480,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -435,6 +491,7 @@
             "type": "nuget",
             "name": "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0"
           },
@@ -445,6 +502,7 @@
             "type": "nuget",
             "name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/runtime.win-x64.runtime.native.System.Data.SqlClient.sni@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0"
           },
@@ -455,6 +513,7 @@
             "type": "nuget",
             "name": "runtime.win-x86.runtime.native.System.Data.SqlClient.sni",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/runtime.win-x86.runtime.native.System.Data.SqlClient.sni@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0"
           },
@@ -465,6 +524,7 @@
             "type": "nuget",
             "name": "runtime.native.System.Data.SqlClient.sni",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/runtime.native.System.Data.SqlClient.sni@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.Data.SqlClient.sni/4.7.0"
           },
@@ -473,6 +533,7 @@
               "type": "nuget",
               "name": "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni",
               "version": "4.4.0",
+              "framework": "",
               "purl": "pkg:nuget/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni@4.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0"
             },
@@ -480,6 +541,7 @@
               "type": "nuget",
               "name": "runtime.win-x64.runtime.native.System.Data.SqlClient.sni",
               "version": "4.4.0",
+              "framework": "",
               "purl": "pkg:nuget/runtime.win-x64.runtime.native.System.Data.SqlClient.sni@4.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0"
             },
@@ -487,6 +549,7 @@
               "type": "nuget",
               "name": "runtime.win-x86.runtime.native.System.Data.SqlClient.sni",
               "version": "4.4.0",
+              "framework": "",
               "purl": "pkg:nuget/runtime.win-x86.runtime.native.System.Data.SqlClient.sni@4.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0"
             }
@@ -497,6 +560,7 @@
             "type": "nuget",
             "name": "System.Data.SqlClient",
             "version": "4.8.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SqlClient@4.8.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlClient/4.8.1"
           },
@@ -505,6 +569,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -512,6 +577,7 @@
               "type": "nuget",
               "name": "runtime.native.System.Data.SqlClient.sni",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/runtime.native.System.Data.SqlClient.sni@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.Data.SqlClient.sni/4.7.0"
             },
@@ -519,6 +585,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -529,6 +596,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "5.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.1"
           },
@@ -539,6 +607,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.EventLog",
             "version": "5.0.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.EventLog@5.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.EventLog/5.0.1"
           },
@@ -547,6 +616,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.1"
             },
@@ -554,6 +624,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -561,6 +632,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -571,6 +643,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.PerformanceCounter",
             "version": "5.0.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@5.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/5.0.1"
           },
@@ -579,6 +652,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.1"
             },
@@ -586,6 +660,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -593,6 +668,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             },
@@ -600,6 +676,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -610,6 +687,7 @@
             "type": "nuget",
             "name": "System.IO.FileSystem.AccessControl",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
           },
@@ -618,6 +696,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -625,6 +704,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -635,6 +715,7 @@
             "type": "nuget",
             "name": "System.DirectoryServices",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.DirectoryServices@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices/5.0.0"
           },
@@ -643,6 +724,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -650,6 +732,7 @@
               "type": "nuget",
               "name": "System.IO.FileSystem.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
             },
@@ -657,6 +740,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -664,6 +748,7 @@
               "type": "nuget",
               "name": "System.Security.Permissions",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
             },
@@ -671,6 +756,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -681,6 +767,7 @@
             "type": "nuget",
             "name": "System.DirectoryServices.Protocols",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.DirectoryServices.Protocols@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.Protocols/5.0.0"
           },
@@ -689,6 +776,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -696,6 +784,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -706,6 +795,7 @@
             "type": "nuget",
             "name": "System.DirectoryServices.AccountManagement",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.DirectoryServices.AccountManagement@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.AccountManagement/5.0.0"
           },
@@ -714,6 +804,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -721,6 +812,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             },
@@ -728,6 +820,7 @@
               "type": "nuget",
               "name": "System.DirectoryServices",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.DirectoryServices@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices/5.0.0"
             },
@@ -735,6 +828,7 @@
               "type": "nuget",
               "name": "System.DirectoryServices.Protocols",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.DirectoryServices.Protocols@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.Protocols/5.0.0"
             },
@@ -742,6 +836,7 @@
               "type": "nuget",
               "name": "System.IO.FileSystem.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
             },
@@ -749,6 +844,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -756,6 +852,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -766,6 +863,7 @@
             "type": "nuget",
             "name": "System.IO.Packaging",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Packaging@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Packaging/5.0.0"
           },
@@ -776,6 +874,7 @@
             "type": "nuget",
             "name": "System.IO.Pipes.AccessControl",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Pipes.AccessControl@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipes.AccessControl/5.0.0"
           },
@@ -784,6 +883,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -791,6 +891,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -801,6 +902,7 @@
             "type": "nuget",
             "name": "runtime.linux-arm.runtime.native.System.IO.Ports",
             "version": "5.0.0-rtm.20519.4",
+            "framework": "",
             "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
           },
@@ -811,6 +913,7 @@
             "type": "nuget",
             "name": "runtime.linux-arm64.runtime.native.System.IO.Ports",
             "version": "5.0.0-rtm.20519.4",
+            "framework": "",
             "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
           },
@@ -821,6 +924,7 @@
             "type": "nuget",
             "name": "runtime.linux-x64.runtime.native.System.IO.Ports",
             "version": "5.0.0-rtm.20519.4",
+            "framework": "",
             "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
           },
@@ -831,6 +935,7 @@
             "type": "nuget",
             "name": "runtime.osx-x64.runtime.native.System.IO.Ports",
             "version": "5.0.0-rtm.20519.4",
+            "framework": "",
             "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
           },
@@ -841,6 +946,7 @@
             "type": "nuget",
             "name": "runtime.native.System.IO.Ports",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/runtime.native.System.IO.Ports@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.IO.Ports/5.0.0"
           },
@@ -849,6 +955,7 @@
               "type": "nuget",
               "name": "runtime.linux-arm.runtime.native.System.IO.Ports",
               "version": "5.0.0-rtm.20519.4",
+              "framework": "",
               "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
             },
@@ -856,6 +963,7 @@
               "type": "nuget",
               "name": "runtime.linux-arm64.runtime.native.System.IO.Ports",
               "version": "5.0.0-rtm.20519.4",
+              "framework": "",
               "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
             },
@@ -863,6 +971,7 @@
               "type": "nuget",
               "name": "runtime.linux-x64.runtime.native.System.IO.Ports",
               "version": "5.0.0-rtm.20519.4",
+              "framework": "",
               "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
             },
@@ -870,6 +979,7 @@
               "type": "nuget",
               "name": "runtime.osx-x64.runtime.native.System.IO.Ports",
               "version": "5.0.0-rtm.20519.4",
+              "framework": "",
               "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4"
             }
@@ -880,6 +990,7 @@
             "type": "nuget",
             "name": "System.IO.Ports",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Ports@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Ports/5.0.0"
           },
@@ -888,6 +999,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -895,6 +1007,7 @@
               "type": "nuget",
               "name": "runtime.native.System.IO.Ports",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/runtime.native.System.IO.Ports@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/runtime.native.System.IO.Ports/5.0.0"
             }
@@ -905,6 +1018,7 @@
             "type": "nuget",
             "name": "System.Management",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Management@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Management/5.0.0"
           },
@@ -913,6 +1027,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             },
@@ -920,6 +1035,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -927,6 +1043,7 @@
               "type": "nuget",
               "name": "System.CodeDom",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.CodeDom@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.CodeDom/5.0.0"
             }
@@ -937,6 +1054,7 @@
             "type": "nuget",
             "name": "System.Reflection.Emit",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Emit@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.7.0"
           },
@@ -947,6 +1065,7 @@
             "type": "nuget",
             "name": "System.Reflection.Emit.ILGeneration",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.7.0"
           },
@@ -957,6 +1076,7 @@
             "type": "nuget",
             "name": "System.Reflection.Emit.Lightweight",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.7.0"
           },
@@ -967,6 +1087,7 @@
             "type": "nuget",
             "name": "System.Runtime.Caching",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Caching@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Caching/5.0.0"
           },
@@ -975,6 +1096,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             }
@@ -985,6 +1107,7 @@
             "type": "nuget",
             "name": "System.Formats.Asn1",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
           },
@@ -995,6 +1118,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Cng",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
           },
@@ -1003,6 +1127,7 @@
               "type": "nuget",
               "name": "System.Formats.Asn1",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
             }
@@ -1013,6 +1138,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Pkcs",
             "version": "5.0.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.1"
           },
@@ -1021,6 +1147,7 @@
               "type": "nuget",
               "name": "System.Formats.Asn1",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
             },
@@ -1028,6 +1155,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Cng",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
             }
@@ -1038,6 +1166,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Xml",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Xml@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/5.0.0"
           },
@@ -1046,6 +1175,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Pkcs",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.1"
             },
@@ -1053,6 +1183,7 @@
               "type": "nuget",
               "name": "System.Security.Permissions",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
             }
@@ -1063,6 +1194,7 @@
             "type": "nuget",
             "name": "System.Numerics.Vectors",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
           },
@@ -1073,6 +1205,7 @@
             "type": "nuget",
             "name": "System.Reflection.DispatchProxy",
             "version": "4.7.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.DispatchProxy@4.7.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.DispatchProxy/4.7.1"
           },
@@ -1083,6 +1216,7 @@
             "type": "nuget",
             "name": "System.Private.ServiceModel",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
           },
@@ -1091,6 +1225,7 @@
               "type": "nuget",
               "name": "System.Numerics.Vectors",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Numerics.Vectors@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.5.0"
             },
@@ -1098,6 +1233,7 @@
               "type": "nuget",
               "name": "System.Reflection.DispatchProxy",
               "version": "4.7.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.DispatchProxy@4.7.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.DispatchProxy/4.7.1"
             },
@@ -1105,6 +1241,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Xml",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Xml@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/5.0.0"
             },
@@ -1112,6 +1249,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -1122,6 +1260,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.Primitives",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
           },
@@ -1130,6 +1269,7 @@
               "type": "nuget",
               "name": "System.Private.ServiceModel",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
             }
@@ -1140,6 +1280,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.Duplex",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.0"
           },
@@ -1148,6 +1289,7 @@
               "type": "nuget",
               "name": "System.Private.ServiceModel",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
             },
@@ -1155,6 +1297,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Primitives",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
             }
@@ -1165,6 +1308,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.Http",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.Http@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Http/4.8.0"
           },
@@ -1173,6 +1317,7 @@
               "type": "nuget",
               "name": "System.Private.ServiceModel",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
             },
@@ -1180,6 +1325,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Primitives",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
             }
@@ -1190,6 +1336,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.NetTcp",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.0"
           },
@@ -1198,6 +1345,7 @@
               "type": "nuget",
               "name": "System.Private.ServiceModel",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
             },
@@ -1205,6 +1353,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Primitives",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
             }
@@ -1215,6 +1364,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.Security",
             "version": "4.8.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.Security@4.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Security/4.8.0"
           },
@@ -1223,6 +1373,7 @@
               "type": "nuget",
               "name": "System.Private.ServiceModel",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Private.ServiceModel@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Private.ServiceModel/4.8.0"
             },
@@ -1230,6 +1381,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Primitives",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
             }
@@ -1240,6 +1392,7 @@
             "type": "nuget",
             "name": "System.ServiceModel.Syndication",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceModel.Syndication@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Syndication/5.0.0"
           },
@@ -1250,6 +1403,7 @@
             "type": "nuget",
             "name": "System.ServiceProcess.ServiceController",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ServiceProcess.ServiceController@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ServiceProcess.ServiceController/5.0.0"
           },
@@ -1258,6 +1412,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.EventLog",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.EventLog@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.EventLog/5.0.1"
             }
@@ -1268,6 +1423,7 @@
             "type": "nuget",
             "name": "System.Speech",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Speech@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Speech/5.0.0"
           },
@@ -1276,6 +1432,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.1"
             },
@@ -1283,6 +1440,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             }
@@ -1293,6 +1451,7 @@
             "type": "nuget",
             "name": "System.Text.Encoding.CodePages",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encoding.CodePages@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/5.0.0"
           },
@@ -1301,6 +1460,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/5.0.0"
             }
@@ -1311,6 +1471,7 @@
             "type": "nuget",
             "name": "System.Threading.AccessControl",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.AccessControl@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.AccessControl/5.0.0"
           },
@@ -1319,6 +1480,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -1326,6 +1488,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             }
@@ -1336,6 +1499,7 @@
             "type": "nuget",
             "name": "Microsoft.Windows.Compatibility",
             "version": "5.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
           },
@@ -1344,6 +1508,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/5.0.0"
             },
@@ -1351,6 +1516,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.Registry.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.Registry.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry.AccessControl/5.0.0"
             },
@@ -1358,6 +1524,7 @@
               "type": "nuget",
               "name": "Microsoft.Win32.SystemEvents",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Win32.SystemEvents@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Win32.SystemEvents/5.0.0"
             },
@@ -1365,6 +1532,7 @@
               "type": "nuget",
               "name": "System.CodeDom",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.CodeDom@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.CodeDom/5.0.0"
             },
@@ -1372,6 +1540,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Composition",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Composition@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Composition/5.0.0"
             },
@@ -1379,6 +1548,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Composition.Registration",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Composition.Registration@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Composition.Registration/5.0.0"
             },
@@ -1386,6 +1556,7 @@
               "type": "nuget",
               "name": "System.Configuration.ConfigurationManager",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Configuration.ConfigurationManager@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Configuration.ConfigurationManager/5.0.0"
             },
@@ -1393,6 +1564,7 @@
               "type": "nuget",
               "name": "System.Data.DataSetExtensions",
               "version": "4.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Data.DataSetExtensions/4.5.0"
             },
@@ -1400,6 +1572,7 @@
               "type": "nuget",
               "name": "System.Data.Odbc",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Data.Odbc@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Data.Odbc/5.0.0"
             },
@@ -1407,6 +1580,7 @@
               "type": "nuget",
               "name": "System.Data.OleDb",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Data.OleDb@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Data.OleDb/5.0.0"
             },
@@ -1414,6 +1588,7 @@
               "type": "nuget",
               "name": "System.Data.SqlClient",
               "version": "4.8.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Data.SqlClient@4.8.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Data.SqlClient/4.8.1"
             },
@@ -1421,6 +1596,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.EventLog",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.EventLog@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.EventLog/5.0.1"
             },
@@ -1428,6 +1604,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.PerformanceCounter",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.PerformanceCounter@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.PerformanceCounter/5.0.1"
             },
@@ -1435,6 +1612,7 @@
               "type": "nuget",
               "name": "System.DirectoryServices",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.DirectoryServices@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices/5.0.0"
             },
@@ -1442,6 +1620,7 @@
               "type": "nuget",
               "name": "System.DirectoryServices.AccountManagement",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.DirectoryServices.AccountManagement@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.AccountManagement/5.0.0"
             },
@@ -1449,6 +1628,7 @@
               "type": "nuget",
               "name": "System.DirectoryServices.Protocols",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.DirectoryServices.Protocols@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.DirectoryServices.Protocols/5.0.0"
             },
@@ -1456,6 +1636,7 @@
               "type": "nuget",
               "name": "System.Drawing.Common",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Drawing.Common@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Drawing.Common/5.0.0"
             },
@@ -1463,6 +1644,7 @@
               "type": "nuget",
               "name": "System.IO.FileSystem.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/5.0.0"
             },
@@ -1470,6 +1652,7 @@
               "type": "nuget",
               "name": "System.IO.Packaging",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.Packaging@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.Packaging/5.0.0"
             },
@@ -1477,6 +1660,7 @@
               "type": "nuget",
               "name": "System.IO.Pipes.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.Pipes.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.Pipes.AccessControl/5.0.0"
             },
@@ -1484,6 +1668,7 @@
               "type": "nuget",
               "name": "System.IO.Ports",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.Ports@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.Ports/5.0.0"
             },
@@ -1491,6 +1676,7 @@
               "type": "nuget",
               "name": "System.Management",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Management@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Management/5.0.0"
             },
@@ -1498,6 +1684,7 @@
               "type": "nuget",
               "name": "System.Reflection.Context",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Context@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Context/5.0.0"
             },
@@ -1505,6 +1692,7 @@
               "type": "nuget",
               "name": "System.Reflection.Emit",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Emit@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit/4.7.0"
             },
@@ -1512,6 +1700,7 @@
               "type": "nuget",
               "name": "System.Reflection.Emit.ILGeneration",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.ILGeneration/4.7.0"
             },
@@ -1519,6 +1708,7 @@
               "type": "nuget",
               "name": "System.Reflection.Emit.Lightweight",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Emit.Lightweight/4.7.0"
             },
@@ -1526,6 +1716,7 @@
               "type": "nuget",
               "name": "System.Runtime.Caching",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.Caching@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Caching/5.0.0"
             },
@@ -1533,6 +1724,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/5.0.0"
             },
@@ -1540,6 +1732,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Cng",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
             },
@@ -1547,6 +1740,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Pkcs",
               "version": "5.0.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.1"
             },
@@ -1554,6 +1748,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.ProtectedData",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/5.0.0"
             },
@@ -1561,6 +1756,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Xml",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Xml@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Xml/5.0.0"
             },
@@ -1568,6 +1764,7 @@
               "type": "nuget",
               "name": "System.Security.Permissions",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Permissions@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Permissions/5.0.0"
             },
@@ -1575,6 +1772,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/5.0.0"
             },
@@ -1582,6 +1780,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Duplex",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Duplex@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Duplex/4.8.0"
             },
@@ -1589,6 +1788,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Http",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Http@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Http/4.8.0"
             },
@@ -1596,6 +1796,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.NetTcp",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.NetTcp@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.NetTcp/4.8.0"
             },
@@ -1603,6 +1804,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Primitives",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Primitives@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Primitives/4.8.0"
             },
@@ -1610,6 +1812,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Security",
               "version": "4.8.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Security@4.8.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Security/4.8.0"
             },
@@ -1617,6 +1820,7 @@
               "type": "nuget",
               "name": "System.ServiceModel.Syndication",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceModel.Syndication@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceModel.Syndication/5.0.0"
             },
@@ -1624,6 +1828,7 @@
               "type": "nuget",
               "name": "System.ServiceProcess.ServiceController",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ServiceProcess.ServiceController@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ServiceProcess.ServiceController/5.0.0"
             },
@@ -1631,6 +1836,7 @@
               "type": "nuget",
               "name": "System.Speech",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Speech@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Speech/5.0.0"
             },
@@ -1638,6 +1844,7 @@
               "type": "nuget",
               "name": "System.Text.Encoding.CodePages",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Encoding.CodePages@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/5.0.0"
             },
@@ -1645,6 +1852,7 @@
               "type": "nuget",
               "name": "System.Threading.AccessControl",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.AccessControl@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.AccessControl/5.0.0"
             }
@@ -1656,6 +1864,7 @@
           "type": "nuget",
           "name": "Microsoft.WindowsAppSDK",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.WindowsAppSDK@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.WindowsAppSDK/1.0.0"
         },
@@ -1663,6 +1872,7 @@
           "type": "nuget",
           "name": "Microsoft.Graphics.Win2D",
           "version": "1.0.0.30",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Graphics.Win2D@1.0.0.30",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Graphics.Win2D/1.0.0.30"
         },
@@ -1670,6 +1880,7 @@
           "type": "nuget",
           "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
           "version": "0.2.222702",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
         },
@@ -1677,6 +1888,7 @@
           "type": "nuget",
           "name": "Microsoft.Windows.Compatibility",
           "version": "5.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Windows.Compatibility@5.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Windows.Compatibility/5.0.2"
         }

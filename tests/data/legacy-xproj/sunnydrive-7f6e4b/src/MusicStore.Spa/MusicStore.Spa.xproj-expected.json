@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "MusicStore.Spa",
+      "name": "MusicStore.Spa",
+      "version": null,
       "datasource_id": "dotnet-project.lock.json",
       "project_file": "/legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj",
       "packages": [],

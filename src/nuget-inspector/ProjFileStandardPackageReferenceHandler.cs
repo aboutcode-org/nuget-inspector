@@ -101,10 +101,10 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             foreach (var package in result.Packages)
             {
                 var anyPackageReferences =
-                    result.Packages.Any(predicate: pkg => pkg.Dependencies.Contains(item: package.PackageId));
+                    result.Packages.Any(predicate: pkg => pkg.dependencies.Contains(item: package.package));
                 if (!anyPackageReferences)
-                    if (package.PackageId != null)
-                        result.Dependencies.Add(item: package.PackageId);
+                    if (package.package != null)
+                        result.Dependencies.Add(item: package.package);
             }
 
             return result;

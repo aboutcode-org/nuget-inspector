@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/Microsoft.AspNet.SignalR.Samples.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.Samples",
+      "name": "Microsoft.AspNet.SignalR.Samples",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.Samples/Microsoft.AspNet.SignalR.Samples.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "jQuery",
             "version": "1.8.2",
+            "framework": "",
             "purl": "pkg:nuget/jQuery@1.8.2",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "jQuery.Color",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/jQuery.Color@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "jquery.cookie",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/jquery.cookie@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/jquery.cookie/1.0.0"
           },
@@ -53,6 +65,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -63,6 +76,7 @@
             "type": "nuget",
             "name": "jquery.mobile",
             "version": "1.2.0",
+            "framework": "",
             "purl": "pkg:nuget/jquery.mobile@1.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/jquery.mobile/1.2.0"
           },
@@ -71,6 +85,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -81,6 +96,7 @@
             "type": "nuget",
             "name": "jQuery.Templates",
             "version": "0.1.0",
+            "framework": "",
             "purl": "pkg:nuget/jQuery.Templates@0.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery.Templates/0.1.0"
           },
@@ -89,6 +105,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -99,6 +116,7 @@
             "type": "nuget",
             "name": "jQuery.UI.Combined",
             "version": "1.9.0",
+            "framework": "",
             "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
           },
@@ -107,6 +125,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "1.8.2",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@1.8.2",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.8.2"
             }
@@ -117,6 +136,7 @@
             "type": "nuget",
             "name": "json2",
             "version": "1.0.2",
+            "framework": "",
             "purl": "pkg:nuget/json2@1.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/json2/1.0.2"
           },
@@ -127,6 +147,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Cors",
             "version": "5.2.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.2.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.2.2"
           },
@@ -137,6 +158,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
           },
@@ -145,6 +167,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             }
@@ -155,6 +178,7 @@
             "type": "nuget",
             "name": "Owin",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Owin@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
           },
@@ -165,6 +189,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Cors",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Cors@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/3.0.0"
           },
@@ -173,6 +198,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -180,6 +206,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
             },
@@ -187,6 +214,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Cors",
               "version": "5.2.2",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.2.2",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.2.2"
             }
@@ -197,6 +225,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.SystemWeb",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.0"
           },
@@ -205,6 +234,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -212,6 +242,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
             }
@@ -222,6 +253,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.0"
           },
@@ -230,6 +262,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -237,6 +270,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
             }
@@ -247,6 +281,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security.Cookies",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.0"
           },
@@ -255,6 +290,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -262,6 +298,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "3.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@3.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.0"
             },
@@ -269,6 +306,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Security",
               "version": "3.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Security@3.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.0"
             }
@@ -279,6 +317,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "11.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
           },
@@ -289,6 +328,7 @@
             "type": "nuget",
             "name": "Twitter.Bootstrap",
             "version": "2.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Twitter.Bootstrap@2.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Twitter.Bootstrap/2.1.1"
           },
@@ -300,6 +340,7 @@
           "type": "nuget",
           "name": "jQuery.Color",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/jQuery.Color@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Color/2.1.0"
         },
@@ -307,6 +348,7 @@
           "type": "nuget",
           "name": "jquery.cookie",
           "version": "1.0.0",
+          "framework": "",
           "purl": "pkg:nuget/jquery.cookie@1.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/jquery.cookie/1.0.0"
         },
@@ -314,6 +356,7 @@
           "type": "nuget",
           "name": "jquery.mobile",
           "version": "1.2.0",
+          "framework": "",
           "purl": "pkg:nuget/jquery.mobile@1.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/jquery.mobile/1.2.0"
         },
@@ -321,6 +364,7 @@
           "type": "nuget",
           "name": "jQuery.Templates",
           "version": "0.1.0",
+          "framework": "",
           "purl": "pkg:nuget/jQuery.Templates@0.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Templates/0.1.0"
         },
@@ -328,6 +372,7 @@
           "type": "nuget",
           "name": "jQuery.UI.Combined",
           "version": "1.9.0",
+          "framework": "",
           "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.UI.Combined/1.9.0"
         },
@@ -335,6 +380,7 @@
           "type": "nuget",
           "name": "json2",
           "version": "1.0.2",
+          "framework": "",
           "purl": "pkg:nuget/json2@1.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/json2/1.0.2"
         },
@@ -342,6 +388,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Cors",
           "version": "3.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Cors@3.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/3.0.0"
         },
@@ -349,6 +396,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Host.SystemWeb",
           "version": "3.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@3.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.0"
         },
@@ -356,6 +404,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Security.Cookies",
           "version": "3.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@3.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.0"
         },
@@ -363,6 +412,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "11.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         },
@@ -370,6 +420,7 @@
           "type": "nuget",
           "name": "Twitter.Bootstrap",
           "version": "2.1.1",
+          "framework": "",
           "purl": "pkg:nuget/Twitter.Bootstrap@2.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Twitter.Bootstrap/2.1.1"
         }

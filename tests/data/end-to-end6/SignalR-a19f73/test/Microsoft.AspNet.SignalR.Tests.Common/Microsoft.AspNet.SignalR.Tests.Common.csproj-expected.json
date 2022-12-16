@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.Tests.Common",
+      "name": "Microsoft.AspNet.SignalR.Tests.Common",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.Azure.SignalR.AspNet",
             "version": "1.0.0-preview1-10233",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Azure.SignalR.AspNet@1.0.0-preview1-10233",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.SignalR.AspNet/1.0.0-preview1-10233"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Owin",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Owin@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
           },
@@ -45,6 +56,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             }
@@ -55,6 +67,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNet.Cors",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
           },
@@ -65,6 +78,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Cors",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
           },
@@ -73,6 +87,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -80,6 +95,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             },
@@ -87,6 +103,7 @@
               "type": "nuget",
               "name": "Microsoft.AspNet.Cors",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.AspNet.Cors@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.0.0"
             }
@@ -97,6 +114,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Hosting",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
           },
@@ -105,6 +123,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -112,6 +131,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             }
@@ -122,6 +142,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
           },
@@ -130,6 +151,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -137,6 +159,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             }
@@ -147,6 +170,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Security.Cookies",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
           },
@@ -155,6 +179,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -162,6 +187,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             },
@@ -169,6 +195,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Security",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Security@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/2.1.0"
             }
@@ -179,6 +206,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Testing",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Testing@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Testing/2.1.0"
           },
@@ -189,6 +217,7 @@
             "type": "nuget",
             "name": "xunit.abstractions",
             "version": "2.0.2",
+            "framework": "",
             "purl": "pkg:nuget/xunit.abstractions@2.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.2"
           },
@@ -199,6 +228,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
           },
@@ -209,6 +239,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
           },
@@ -219,6 +250,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
           },
@@ -229,6 +261,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "11.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
           },
@@ -240,6 +273,7 @@
           "type": "nuget",
           "name": "Microsoft.Azure.SignalR.AspNet",
           "version": "1.0.0-preview1-10233",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Azure.SignalR.AspNet@1.0.0-preview1-10233",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.SignalR.AspNet/1.0.0-preview1-10233"
         },
@@ -247,6 +281,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Cors",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Cors@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Cors/2.1.0"
         },
@@ -254,6 +289,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Hosting",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
         },
@@ -261,6 +297,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Security.Cookies",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Security.Cookies@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/2.1.0"
         },
@@ -268,6 +305,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Testing",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Testing@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Testing/2.1.0"
         },
@@ -275,6 +313,7 @@
           "type": "nuget",
           "name": "xunit.abstractions",
           "version": "2.0.2",
+          "framework": "",
           "purl": "pkg:nuget/xunit.abstractions@2.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.2"
         },
@@ -282,6 +321,7 @@
           "type": "nuget",
           "name": "xunit.assert",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit.assert@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
         },
@@ -289,6 +329,7 @@
           "type": "nuget",
           "name": "xunit.extensibility.core",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
         },
@@ -296,6 +337,7 @@
           "type": "nuget",
           "name": "xunit.extensibility.execution",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
         },
@@ -303,6 +345,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "11.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         }

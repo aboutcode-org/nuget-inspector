@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/DevAudit.Tests.VMRequired.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "DevAudit.Tests.VMRequired",
+      "name": "DevAudit.Tests.VMRequired",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/DevAudit.Tests.VMRequired.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "xunit",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
           },
@@ -25,6 +34,7 @@
               "type": "nuget",
               "name": "xunit.core",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.core@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
             },
@@ -32,6 +42,7 @@
               "type": "nuget",
               "name": "xunit.assert",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.assert@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
             },
@@ -39,6 +50,7 @@
               "type": "nuget",
               "name": "xunit.analyzers",
               "version": "0.10.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.analyzers@0.10.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
             }
@@ -49,6 +61,7 @@
             "type": "nuget",
             "name": "xunit.core",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.core@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
           },
@@ -57,6 +70,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.core",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
             },
@@ -64,6 +78,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.execution",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
             }
@@ -74,6 +89,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
           },
@@ -84,6 +100,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
           },
@@ -94,6 +111,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
           },
@@ -104,6 +122,7 @@
             "type": "nuget",
             "name": "xunit.analyzers",
             "version": "0.10.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.analyzers@0.10.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
           },
@@ -114,6 +133,7 @@
             "type": "nuget",
             "name": "xunit.abstractions",
             "version": "2.0.3",
+            "framework": "",
             "purl": "pkg:nuget/xunit.abstractions@2.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
           },
@@ -125,6 +145,7 @@
           "type": "nuget",
           "name": "xunit",
           "version": "2.4.1",
+          "framework": "",
           "purl": "pkg:nuget/xunit@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
         },
@@ -132,6 +153,7 @@
           "type": "nuget",
           "name": "xunit.abstractions",
           "version": "2.0.3",
+          "framework": "",
           "purl": "pkg:nuget/xunit.abstractions@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3"
         }

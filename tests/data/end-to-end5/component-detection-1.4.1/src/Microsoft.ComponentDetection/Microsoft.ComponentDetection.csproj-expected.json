@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection/Microsoft.ComponentDetection.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.ComponentDetection",
+      "name": "Microsoft.ComponentDetection",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection/Microsoft.ComponentDetection.csproj",
       "packages": [],

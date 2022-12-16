@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/App.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "App",
+      "name": "App",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/App.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.Analyzers",
             "version": "2.9.4",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@2.9.4",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "System.Collections.Immutable",
             "version": "1.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Collections.Immutable@1.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.5.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "System.Memory",
             "version": "4.5.3",
+            "framework": "",
             "purl": "pkg:nuget/System.Memory@4.5.3",
             "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "System.Reflection.Metadata",
             "version": "1.6.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "4.5.2",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "2.1.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.1.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.1.2"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "System.Text.Encoding.CodePages",
             "version": "4.5.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.5.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.5.1"
           },
@@ -85,6 +100,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "2.1.2",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.1.2",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.1.2"
             },
@@ -92,6 +108,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.5.2",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
             }
@@ -102,6 +119,7 @@
             "type": "nuget",
             "name": "System.Threading.Tasks.Extensions",
             "version": "4.5.3",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.3",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.3"
           },
@@ -112,6 +130,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.Common",
             "version": "3.3.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@3.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/3.3.1"
           },
@@ -120,6 +139,7 @@
               "type": "nuget",
               "name": "Microsoft.CodeAnalysis.Analyzers",
               "version": "2.9.4",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@2.9.4",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4"
             },
@@ -127,6 +147,7 @@
               "type": "nuget",
               "name": "System.Collections.Immutable",
               "version": "1.5.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Collections.Immutable@1.5.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.5.0"
             },
@@ -134,6 +155,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.3",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.3",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
             },
@@ -141,6 +163,7 @@
               "type": "nuget",
               "name": "System.Reflection.Metadata",
               "version": "1.6.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Reflection.Metadata@1.6.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0"
             },
@@ -148,6 +171,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.5.2",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
             },
@@ -155,6 +179,7 @@
               "type": "nuget",
               "name": "System.Text.Encoding.CodePages",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Encoding.CodePages@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encoding.CodePages/4.5.1"
             },
@@ -162,6 +187,7 @@
               "type": "nuget",
               "name": "System.Threading.Tasks.Extensions",
               "version": "4.5.3",
+              "framework": "",
               "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.3",
               "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.3"
             }
@@ -172,6 +198,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.CSharp",
             "version": "3.3.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
           },
@@ -180,6 +207,7 @@
               "type": "nuget",
               "name": "Microsoft.CodeAnalysis.Common",
               "version": "3.3.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@3.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/3.3.1"
             }
@@ -190,6 +218,7 @@
             "type": "nuget",
             "name": "StyleCop.Analyzers",
             "version": "1.1.118",
+            "framework": "",
             "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
             "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118"
           },
@@ -201,6 +230,7 @@
           "type": "nuget",
           "name": "Microsoft.CodeAnalysis.CSharp",
           "version": "3.3.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@3.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1"
         },
@@ -208,6 +238,7 @@
           "type": "nuget",
           "name": "StyleCop.Analyzers",
           "version": "1.1.118",
+          "framework": "",
           "purl": "pkg:nuget/StyleCop.Analyzers@1.1.118",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118"
         }

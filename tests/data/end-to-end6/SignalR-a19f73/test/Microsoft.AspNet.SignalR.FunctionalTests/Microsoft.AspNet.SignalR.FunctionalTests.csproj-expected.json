@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.FunctionalTests",
+      "name": "Microsoft.AspNet.SignalR.FunctionalTests",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.FunctionalTests/Microsoft.AspNet.SignalR.FunctionalTests.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Castle.Core",
             "version": "4.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Castle.Core@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.HttpListener",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.SystemWeb",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Moq",
             "version": "4.7.8",
+            "framework": "",
             "purl": "pkg:nuget/Moq@4.7.8",
             "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "11.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "System.Runtime.InteropServices.RuntimeInformation",
             "version": "4.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
           },
@@ -87,6 +102,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
           },
@@ -97,6 +113,7 @@
             "type": "nuget",
             "name": "xunit.core",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.core@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
           },
@@ -105,6 +122,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.core",
               "version": "2.4.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.core@2.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.0"
             },
@@ -112,6 +130,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.execution",
               "version": "2.4.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.execution@2.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.0"
             }
@@ -122,6 +141,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
           },
@@ -132,6 +152,7 @@
             "type": "nuget",
             "name": "xunit.analyzers",
             "version": "0.10.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.analyzers@0.10.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
           },
@@ -142,6 +163,7 @@
             "type": "nuget",
             "name": "xunit",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
           },
@@ -150,6 +172,7 @@
               "type": "nuget",
               "name": "xunit.core",
               "version": "2.4.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.core@2.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.0"
             },
@@ -157,6 +180,7 @@
               "type": "nuget",
               "name": "xunit.assert",
               "version": "2.4.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.assert@2.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.0"
             },
@@ -164,6 +188,7 @@
               "type": "nuget",
               "name": "xunit.analyzers",
               "version": "0.10.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.analyzers@0.10.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
             }
@@ -174,6 +199,7 @@
             "type": "nuget",
             "name": "xunit.runner.visualstudio",
             "version": "2.4.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
           },
@@ -184,6 +210,7 @@
             "type": "nuget",
             "name": "Microsoft.NET.Test.Sdk",
             "version": "15.8.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
           },
@@ -194,6 +221,7 @@
             "type": "nuget",
             "name": "System.Threading.Channels",
             "version": "4.5.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
           },
@@ -205,6 +233,7 @@
           "type": "nuget",
           "name": "Castle.Core",
           "version": "4.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Castle.Core@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.0.0"
         },
@@ -212,6 +241,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Host.HttpListener",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
         },
@@ -219,6 +249,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.Host.SystemWeb",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0"
         },
@@ -226,6 +257,7 @@
           "type": "nuget",
           "name": "Moq",
           "version": "4.7.8",
+          "framework": "",
           "purl": "pkg:nuget/Moq@4.7.8",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.7.8"
         },
@@ -233,6 +265,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "11.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
         },
@@ -240,6 +273,7 @@
           "type": "nuget",
           "name": "System.Runtime.InteropServices.RuntimeInformation",
           "version": "4.0.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.InteropServices.RuntimeInformation@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.InteropServices.RuntimeInformation/4.0.0"
         },
@@ -247,6 +281,7 @@
           "type": "nuget",
           "name": "xunit",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.0"
         },
@@ -254,6 +289,7 @@
           "type": "nuget",
           "name": "xunit.runner.visualstudio",
           "version": "2.4.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.0"
         },
@@ -261,6 +297,7 @@
           "type": "nuget",
           "name": "Microsoft.NET.Test.Sdk",
           "version": "15.8.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.8.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.8.0"
         },
@@ -268,6 +305,7 @@
           "type": "nuget",
           "name": "System.Threading.Channels",
           "version": "4.5.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Threading.Channels@4.5.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Channels/4.5.0"
         }

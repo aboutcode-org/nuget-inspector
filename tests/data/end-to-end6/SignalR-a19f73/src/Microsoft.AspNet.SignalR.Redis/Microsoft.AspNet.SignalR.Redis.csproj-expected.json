@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.Redis",
+      "name": "Microsoft.AspNet.SignalR.Redis",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Internal.AspNetCore.Sdk",
             "version": "3.0.0-alpha1-20180907.9",
+            "framework": "",
             "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
             "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "StackExchange.Redis.StrongName",
             "version": "1.1.608",
+            "framework": "",
             "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
             "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "Internal.AspNetCore.Sdk",
           "version": "3.0.0-alpha1-20180907.9",
+          "framework": "",
           "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
           "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "StackExchange.Redis.StrongName",
           "version": "1.1.608",
+          "framework": "",
           "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
           "download_url": "https://www.nuget.org/api/v2/package/StackExchange.Redis.StrongName/1.1.608"
         }

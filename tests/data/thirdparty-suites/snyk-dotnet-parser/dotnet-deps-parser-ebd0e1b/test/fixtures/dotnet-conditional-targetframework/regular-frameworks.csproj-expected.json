@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-targetframework/regular-frameworks.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "regular-frameworks",
+      "name": "regular-frameworks",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-targetframework/regular-frameworks.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "MSTest.TestAdapter",
             "version": "1.4.0",
+            "framework": "",
             "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/1.4.0"
           },
@@ -28,6 +37,7 @@
           "type": "nuget",
           "name": "MSTest.TestAdapter",
           "version": "1.4.0",
+          "framework": "",
           "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/1.4.0"
         }

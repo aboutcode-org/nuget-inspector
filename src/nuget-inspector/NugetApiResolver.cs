@@ -25,24 +25,24 @@ public class NugetApiResolver
     public void Add(Dependency packageDependency)
     {
         IPackageSearchMetadata? package =
-            nugetApi.FindPackageVersion(id: packageDependency.Name, versionRange: packageDependency.VersionRange);
+            nugetApi.FindPackageVersion(id: packageDependency.name, versionRange: packageDependency.version_range);
         if (package == null)
         {
-            var version = packageDependency.VersionRange?.MinVersion.ToNormalizedString();
+            var version = packageDependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
                 Console.WriteLine(
                     value:
-                    $"Nuget failed to find package: '{packageDependency.Name}' with version range: '{packageDependency.VersionRange}', assuming instead version: '{version}'");
-            builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.Name, version: version));
+                    $"Nuget failed to find package: '{packageDependency.name}' with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
+            builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.name, version: version));
             return;
         }
 
-        var package_id = new BasePackage(name: packageDependency.Name,
+        var package_id = new BasePackage(name: packageDependency.name,
             version: package.Identity.Version.ToNormalizedString());
         var dependencies = new HashSet<BasePackage?>();
 
         var packages =
-            nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.Framework);
+            nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.framework);
 
         foreach (var dependency in packages)
         {
@@ -69,7 +69,7 @@ public class NugetApiResolver
 
                 if (!builder.DoesPackageExist(id: id))
                     Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange,
-                        framework: packageDependency.Framework));
+                        framework: packageDependency.framework));
             }
         }
 

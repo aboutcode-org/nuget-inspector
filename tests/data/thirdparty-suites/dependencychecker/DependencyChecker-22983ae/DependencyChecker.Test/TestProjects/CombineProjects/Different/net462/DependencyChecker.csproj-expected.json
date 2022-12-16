@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Different/net462/DependencyChecker.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "DependencyChecker",
+      "name": "DependencyChecker",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Different/net462/DependencyChecker.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "9.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "NUnit",
             "version": "3.11.0",
+            "framework": "",
             "purl": "pkg:nuget/NUnit@3.11.0",
             "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.11.0"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "9.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "NUnit",
           "version": "3.11.0",
+          "framework": "",
           "purl": "pkg:nuget/NUnit@3.11.0",
           "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.11.0"
         }

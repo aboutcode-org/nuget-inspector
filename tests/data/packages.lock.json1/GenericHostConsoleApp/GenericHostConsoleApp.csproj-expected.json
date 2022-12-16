@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /packages.lock.json1/GenericHostConsoleApp/GenericHostConsoleApp.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "GenericHostConsoleApp",
+      "name": "GenericHostConsoleApp",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/packages.lock.json1/GenericHostConsoleApp/GenericHostConsoleApp.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "System.ComponentModel.Annotations",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Annotations/5.0.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "McMaster.Extensions.CommandLineUtils",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Annotations",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Annotations/5.0.0"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
           },
@@ -55,6 +67,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Primitives",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
           },
@@ -63,6 +76,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             }
@@ -73,6 +87,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
           },
@@ -81,6 +96,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -91,6 +107,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
           },
@@ -101,6 +118,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.FileProviders.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
           },
@@ -109,6 +127,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -119,6 +138,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Hosting.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/6.0.0"
           },
@@ -127,6 +147,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -134,6 +155,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -141,6 +163,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             }
@@ -151,6 +174,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Abstractions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
           },
@@ -161,6 +185,7 @@
             "type": "nuget",
             "name": "McMaster.Extensions.Hosting.CommandLine",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/McMaster.Extensions.Hosting.CommandLine@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.Hosting.CommandLine/4.0.1"
           },
@@ -169,6 +194,7 @@
               "type": "nuget",
               "name": "McMaster.Extensions.CommandLineUtils",
               "version": "4.0.1",
+              "framework": "",
               "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
             },
@@ -176,6 +202,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Hosting.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/6.0.0"
             },
@@ -183,6 +210,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             }
@@ -193,6 +221,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.Binder",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/6.0.0"
           },
@@ -201,6 +230,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             }
@@ -211,6 +241,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
           },
@@ -219,6 +250,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -226,6 +258,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -236,6 +269,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.CommandLine",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.CommandLine@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.CommandLine/6.0.0"
           },
@@ -244,6 +278,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -251,6 +286,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             }
@@ -261,6 +297,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
             "version": "6.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.EnvironmentVariables@6.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1"
           },
@@ -269,6 +306,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -276,6 +314,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             }
@@ -286,6 +325,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.FileSystemGlobbing",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.FileSystemGlobbing@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileSystemGlobbing/6.0.0"
           },
@@ -296,6 +336,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.FileProviders.Physical",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/6.0.0"
           },
@@ -304,6 +345,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             },
@@ -311,6 +353,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileSystemGlobbing",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileSystemGlobbing@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileSystemGlobbing/6.0.0"
             },
@@ -318,6 +361,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -328,6 +372,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.FileExtensions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.FileExtensions/6.0.0"
           },
@@ -336,6 +381,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -343,6 +389,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             },
@@ -350,6 +397,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             },
@@ -357,6 +405,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Physical",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/6.0.0"
             },
@@ -364,6 +413,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -374,6 +424,7 @@
             "type": "nuget",
             "name": "System.Text.Encodings.Web",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Encodings.Web@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/6.0.0"
           },
@@ -382,6 +433,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             }
@@ -392,6 +444,7 @@
             "type": "nuget",
             "name": "System.Text.Json",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Text.Json@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.0"
           },
@@ -400,6 +453,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             },
@@ -407,6 +461,7 @@
               "type": "nuget",
               "name": "System.Text.Encodings.Web",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Encodings.Web@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Encodings.Web/6.0.0"
             }
@@ -417,6 +472,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.Json",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Json@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Json/6.0.0"
           },
@@ -425,6 +481,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -432,6 +489,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.FileExtensions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.FileExtensions/6.0.0"
             },
@@ -439,6 +497,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             },
@@ -446,6 +505,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             },
@@ -453,6 +513,7 @@
               "type": "nuget",
               "name": "System.Text.Json",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Json@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.0"
             }
@@ -463,6 +524,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.UserSecrets",
             "version": "6.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.UserSecrets@6.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.UserSecrets/6.0.1"
           },
@@ -471,6 +533,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -478,6 +541,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Json",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Json@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Json/6.0.0"
             },
@@ -485,6 +549,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             },
@@ -492,6 +557,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Physical",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/6.0.0"
             }
@@ -502,6 +568,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.DependencyInjection",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
           },
@@ -510,6 +577,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -517,6 +585,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             }
@@ -527,6 +596,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Options",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
           },
@@ -535,6 +605,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -542,6 +613,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -552,6 +624,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.DiagnosticSource",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
           },
@@ -560,6 +633,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             }
@@ -570,6 +644,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
           },
@@ -578,6 +653,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -585,6 +661,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
             },
@@ -592,6 +669,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -599,6 +677,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -606,6 +685,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.DiagnosticSource",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/6.0.0"
             }
@@ -616,6 +696,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0"
           },
@@ -624,6 +705,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -631,6 +713,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Binder",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/6.0.0"
             },
@@ -638,6 +721,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -645,6 +729,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -652,6 +737,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             }
@@ -662,6 +748,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Configuration",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Configuration@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Configuration/6.0.0"
           },
@@ -670,6 +757,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -677,6 +765,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Binder",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/6.0.0"
             },
@@ -684,6 +773,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             },
@@ -691,6 +781,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -698,6 +789,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -705,6 +797,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             },
@@ -712,6 +805,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.ConfigurationExtensions/6.0.0"
             },
@@ -719,6 +813,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             }
@@ -729,6 +824,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Console",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Console@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Console/6.0.0"
           },
@@ -737,6 +833,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -744,6 +841,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -751,6 +849,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Configuration/6.0.0"
             },
@@ -758,6 +857,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             },
@@ -765,6 +865,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -772,6 +873,7 @@
               "type": "nuget",
               "name": "System.Text.Json",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Json@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.0"
             }
@@ -782,6 +884,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Debug",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Debug@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Debug/6.0.0"
           },
@@ -790,6 +893,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -797,6 +901,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -804,6 +909,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             }
@@ -814,6 +920,7 @@
             "type": "nuget",
             "name": "System.Diagnostics.EventLog",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Diagnostics.EventLog@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.EventLog/6.0.0"
           },
@@ -824,6 +931,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.EventLog",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.EventLog@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.EventLog/6.0.0"
           },
@@ -832,6 +940,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -839,6 +948,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -846,6 +956,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             },
@@ -853,6 +964,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -860,6 +972,7 @@
               "type": "nuget",
               "name": "System.Diagnostics.EventLog",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Diagnostics.EventLog@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.EventLog/6.0.0"
             }
@@ -870,6 +983,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.EventSource",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.EventSource@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.EventSource/6.0.0"
           },
@@ -878,6 +992,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -885,6 +1000,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -892,6 +1008,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             },
@@ -899,6 +1016,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -906,6 +1024,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Primitives",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Primitives@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Primitives/6.0.0"
             },
@@ -913,6 +1032,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/6.0.0"
             },
@@ -920,6 +1040,7 @@
               "type": "nuget",
               "name": "System.Text.Json",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Text.Json@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Text.Json/6.0.0"
             }
@@ -930,6 +1051,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Hosting",
             "version": "6.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Hosting@6.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting/6.0.1"
           },
@@ -938,6 +1060,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Abstractions/6.0.0"
             },
@@ -945,6 +1068,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Binder",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Binder/6.0.0"
             },
@@ -952,6 +1076,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.CommandLine",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.CommandLine@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.CommandLine/6.0.0"
             },
@@ -959,6 +1084,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
               "version": "6.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.EnvironmentVariables@6.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.EnvironmentVariables/6.0.1"
             },
@@ -966,6 +1092,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.FileExtensions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.FileExtensions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.FileExtensions/6.0.0"
             },
@@ -973,6 +1100,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.Json",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Json@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.Json/6.0.0"
             },
@@ -980,6 +1108,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration.UserSecrets",
               "version": "6.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration.UserSecrets@6.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.UserSecrets/6.0.1"
             },
@@ -987,6 +1116,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration/6.0.0"
             },
@@ -994,6 +1124,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -1001,6 +1132,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection/6.0.0"
             },
@@ -1008,6 +1140,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Abstractions/6.0.0"
             },
@@ -1015,6 +1148,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.FileProviders.Physical",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Physical@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.FileProviders.Physical/6.0.0"
             },
@@ -1022,6 +1156,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Hosting.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting.Abstractions/6.0.0"
             },
@@ -1029,6 +1164,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/6.0.0"
             },
@@ -1036,6 +1172,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Configuration",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Configuration@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Configuration/6.0.0"
             },
@@ -1043,6 +1180,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Console",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Console@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Console/6.0.0"
             },
@@ -1050,6 +1188,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.Debug",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.Debug@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Debug/6.0.0"
             },
@@ -1057,6 +1196,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.EventLog",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.EventLog@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.EventLog/6.0.0"
             },
@@ -1064,6 +1204,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging.EventSource",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging.EventSource@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.EventSource/6.0.0"
             },
@@ -1071,6 +1212,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Logging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
             },
@@ -1078,6 +1220,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             }
@@ -1088,6 +1231,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Options.DataAnnotations",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Options.DataAnnotations@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.DataAnnotations/6.0.0"
           },
@@ -1096,6 +1240,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0"
             },
@@ -1103,6 +1248,7 @@
               "type": "nuget",
               "name": "Microsoft.Extensions.Options",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Extensions.Options@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options/6.0.0"
             },
@@ -1110,6 +1256,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Annotations",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Annotations/5.0.0"
             }
@@ -1121,6 +1268,7 @@
           "type": "nuget",
           "name": "McMaster.Extensions.Hosting.CommandLine",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/McMaster.Extensions.Hosting.CommandLine@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.Hosting.CommandLine/4.0.1"
         },
@@ -1128,6 +1276,7 @@
           "type": "nuget",
           "name": "Microsoft.Extensions.Hosting",
           "version": "6.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Hosting@6.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Hosting/6.0.1"
         },
@@ -1135,6 +1284,7 @@
           "type": "nuget",
           "name": "Microsoft.Extensions.Options.DataAnnotations",
           "version": "6.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Options.DataAnnotations@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Options.DataAnnotations/6.0.0"
         }

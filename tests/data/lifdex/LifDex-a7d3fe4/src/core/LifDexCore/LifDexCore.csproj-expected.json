@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /lifdex/LifDex-a7d3fe4/src/core/LifDexCore/LifDexCore.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "LifDexCore",
+      "name": "LifDexCore",
+      "version": null,
       "datasource_id": "dotnet-project.assets.json",
       "project_file": "/lifdex/LifDex-a7d3fe4/src/core/LifDexCore/LifDexCore.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.App",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.0"
           },
@@ -25,6 +34,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.DotNetHostPolicy",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.DotNetHostPolicy@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetHostPolicy/2.2.0"
             },
@@ -32,6 +42,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.2.0"
             },
@@ -39,6 +50,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Targets",
               "version": "2.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Targets@2.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/2.0.0"
             },
@@ -46,6 +58,7 @@
               "type": "nuget",
               "name": "NETStandard.Library",
               "version": "2.0.3",
+              "framework": "",
               "purl": "pkg:nuget/NETStandard.Library@2.0.3",
               "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
             }
@@ -56,6 +69,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.DotNetAppHost",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.DotNetAppHost@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetAppHost/2.2.0"
           },
@@ -66,6 +80,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.DotNetHostPolicy",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.DotNetHostPolicy@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetHostPolicy/2.2.0"
           },
@@ -74,6 +89,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.DotNetHostResolver",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.DotNetHostResolver@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetHostResolver/2.2.0"
             }
@@ -84,6 +100,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.DotNetHostResolver",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.DotNetHostResolver@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetHostResolver/2.2.0"
           },
@@ -92,6 +109,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.DotNetAppHost",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.DotNetAppHost@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.DotNetAppHost/2.2.0"
             }
@@ -102,6 +120,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.2.0"
           },
@@ -112,6 +131,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Targets",
             "version": "2.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Targets@2.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Targets/2.0.0"
           },
@@ -122,6 +142,7 @@
             "type": "nuget",
             "name": "NETStandard.Library",
             "version": "2.0.3",
+            "framework": "",
             "purl": "pkg:nuget/NETStandard.Library@2.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
           },
@@ -130,6 +151,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/2.2.0"
             }
@@ -141,6 +163,7 @@
           "type": "nuget",
           "name": "Microsoft.NETCore.App",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.0"
         },
@@ -148,6 +171,7 @@
           "type": "nuget",
           "name": "Microsoft.NETCore.App",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.0"
         }

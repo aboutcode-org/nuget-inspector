@@ -3,13 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/Newtonsoft.Json.Tests.Roslyn.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Newtonsoft.Json.Tests.Roslyn",
-      "project_version": "10.0.0.0",
+      "name": "Newtonsoft.Json.Tests.Roslyn",
+      "version": "10.0.0.0",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/Newtonsoft.Json.Tests.Roslyn.csproj",
       "packages": [
@@ -18,6 +25,7 @@
             "type": "nuget",
             "name": "NUnit",
             "version": "3.6.0",
+            "framework": "",
             "purl": "pkg:nuget/NUnit@3.6.0",
             "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.6.0"
           },
@@ -28,6 +36,7 @@
             "type": "nuget",
             "name": "NUnit3TestAdapter",
             "version": "3.7.0",
+            "framework": "",
             "purl": "pkg:nuget/NUnit3TestAdapter@3.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/NUnit3TestAdapter/3.7.0"
           },
@@ -38,6 +47,7 @@
             "type": "nuget",
             "name": "Autofac",
             "version": "4.0.0-rc2-240",
+            "framework": "",
             "purl": "pkg:nuget/Autofac@4.0.0-rc2-240",
             "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.0.0-rc2-240"
           },
@@ -48,6 +58,7 @@
             "type": "nuget",
             "name": "BenchmarkDotNet",
             "version": "0.10.2",
+            "framework": "",
             "purl": "pkg:nuget/BenchmarkDotNet@0.10.2",
             "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.10.2"
           },
@@ -58,6 +69,7 @@
             "type": "nuget",
             "name": "FSharp.Core",
             "version": "4.0.1.7-alpha",
+            "framework": "",
             "purl": "pkg:nuget/FSharp.Core@4.0.1.7-alpha",
             "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.0.1.7-alpha"
           },
@@ -68,6 +80,7 @@
             "type": "nuget",
             "name": "System.Buffers",
             "version": "4.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Buffers@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.0.0"
           },
@@ -78,6 +91,7 @@
             "type": "nuget",
             "name": "System.Collections.Immutable",
             "version": "1.3.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Collections.Immutable@1.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.3.1"
           },
@@ -88,6 +102,7 @@
             "type": "nuget",
             "name": "System.ValueTuple",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ValueTuple@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
           },
@@ -98,6 +113,7 @@
             "type": "nuget",
             "name": "FSharp.Core",
             "version": "4.1.0",
+            "framework": "",
             "purl": "pkg:nuget/FSharp.Core@4.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.1.0"
           },
@@ -106,6 +122,7 @@
               "type": "nuget",
               "name": "System.ValueTuple",
               "version": "4.3.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ValueTuple@4.3.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.3.0"
             }
@@ -116,6 +133,7 @@
             "type": "nuget",
             "name": "System.ObjectModel",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ObjectModel@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
           },
@@ -126,6 +144,7 @@
             "type": "nuget",
             "name": "System.Runtime.Serialization.Primitives",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
           },
@@ -136,6 +155,7 @@
             "type": "nuget",
             "name": "System.Runtime.Serialization.Xml",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Serialization.Xml@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Xml/4.3.0"
           },
@@ -146,6 +166,7 @@
             "type": "nuget",
             "name": "System.Runtime.Serialization.Formatters",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
           },
@@ -156,6 +177,7 @@
             "type": "nuget",
             "name": "System.Xml.XmlSerializer",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Xml.XmlSerializer@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlSerializer/4.3.0"
           },
@@ -166,6 +188,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0"
           },
@@ -176,6 +199,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0"
           },
@@ -186,6 +210,7 @@
             "type": "nuget",
             "name": "xunit.core",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.core@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0"
           },
@@ -194,6 +219,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.2.0"
             },
@@ -201,6 +227,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.execution",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.execution@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.2.0"
             }
@@ -211,6 +238,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0"
           },
@@ -221,6 +249,7 @@
             "type": "nuget",
             "name": "xunit",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.2.0"
           },
@@ -229,6 +258,7 @@
               "type": "nuget",
               "name": "xunit.core",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.core@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.2.0"
             },
@@ -236,6 +266,7 @@
               "type": "nuget",
               "name": "xunit.assert",
               "version": "2.2.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.assert@2.2.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.2.0"
             }
@@ -246,6 +277,7 @@
             "type": "nuget",
             "name": "xunit.runner.visualstudio",
             "version": "2.2.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.runner.visualstudio@2.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.2.0"
           },
@@ -256,6 +288,7 @@
             "type": "nuget",
             "name": "Microsoft.TestPlatform.TestHost",
             "version": "15.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.TestPlatform.TestHost@15.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/15.0.0"
           },
@@ -266,6 +299,7 @@
             "type": "nuget",
             "name": "Microsoft.NET.Test.Sdk",
             "version": "15.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.0.0"
           },
@@ -274,6 +308,7 @@
               "type": "nuget",
               "name": "Microsoft.TestPlatform.TestHost",
               "version": "15.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.TestPlatform.TestHost@15.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/15.0.0"
             }
@@ -285,6 +320,7 @@
           "type": "nuget",
           "name": "NUnit",
           "version": "3.6.0",
+          "framework": "",
           "purl": "pkg:nuget/NUnit@3.6.0",
           "download_url": "https://www.nuget.org/api/v2/package/NUnit/3.6.0"
         },
@@ -292,6 +328,7 @@
           "type": "nuget",
           "name": "NUnit3TestAdapter",
           "version": "3.7.0",
+          "framework": "",
           "purl": "pkg:nuget/NUnit3TestAdapter@3.7.0",
           "download_url": "https://www.nuget.org/api/v2/package/NUnit3TestAdapter/3.7.0"
         },
@@ -299,6 +336,7 @@
           "type": "nuget",
           "name": "Autofac",
           "version": "4.0.0-rc2-240",
+          "framework": "",
           "purl": "pkg:nuget/Autofac@4.0.0-rc2-240",
           "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.0.0-rc2-240"
         },
@@ -306,6 +344,7 @@
           "type": "nuget",
           "name": "BenchmarkDotNet",
           "version": "0.10.2",
+          "framework": "",
           "purl": "pkg:nuget/BenchmarkDotNet@0.10.2",
           "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.10.2"
         },
@@ -313,6 +352,7 @@
           "type": "nuget",
           "name": "FSharp.Core",
           "version": "4.0.1.7-alpha",
+          "framework": "",
           "purl": "pkg:nuget/FSharp.Core@4.0.1.7-alpha",
           "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.0.1.7-alpha"
         },
@@ -320,6 +360,7 @@
           "type": "nuget",
           "name": "System.Buffers",
           "version": "4.0.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Buffers@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.0.0"
         },
@@ -327,6 +368,7 @@
           "type": "nuget",
           "name": "System.Collections.Immutable",
           "version": "1.3.1",
+          "framework": "",
           "purl": "pkg:nuget/System.Collections.Immutable@1.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/System.Collections.Immutable/1.3.1"
         },
@@ -334,6 +376,7 @@
           "type": "nuget",
           "name": "FSharp.Core",
           "version": "4.1.0",
+          "framework": "",
           "purl": "pkg:nuget/FSharp.Core@4.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/4.1.0"
         },
@@ -341,6 +384,7 @@
           "type": "nuget",
           "name": "System.ObjectModel",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.ObjectModel@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ObjectModel/4.3.0"
         },
@@ -348,6 +392,7 @@
           "type": "nuget",
           "name": "System.Runtime.Serialization.Primitives",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Serialization.Primitives@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Primitives/4.3.0"
         },
@@ -355,6 +400,7 @@
           "type": "nuget",
           "name": "System.Runtime.Serialization.Xml",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Serialization.Xml@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Xml/4.3.0"
         },
@@ -362,6 +408,7 @@
           "type": "nuget",
           "name": "System.Runtime.Serialization.Formatters",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Runtime.Serialization.Formatters@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.Serialization.Formatters/4.3.0"
         },
@@ -369,6 +416,7 @@
           "type": "nuget",
           "name": "System.Xml.XmlSerializer",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Xml.XmlSerializer@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Xml.XmlSerializer/4.3.0"
         },
@@ -376,6 +424,7 @@
           "type": "nuget",
           "name": "xunit",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.2.0"
         },
@@ -383,6 +432,7 @@
           "type": "nuget",
           "name": "xunit.runner.visualstudio",
           "version": "2.2.0",
+          "framework": "",
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.2.0"
         },
@@ -390,6 +440,7 @@
           "type": "nuget",
           "name": "Microsoft.NET.Test.Sdk",
           "version": "15.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@15.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/15.0.0"
         }

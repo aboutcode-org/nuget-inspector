@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-frameworks/conditional-frameworks.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "conditional-frameworks",
+      "name": "conditional-frameworks",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-frameworks/conditional-frameworks.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "System.Reflection",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "System.Reflection.TypeExtensions",
             "version": "4.3.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "System.Reflection",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Reflection@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Reflection/4.3.0"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "System.Reflection.TypeExtensions",
           "version": "4.3.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Reflection.TypeExtensions@4.3.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Reflection.TypeExtensions/4.3.0"
         }

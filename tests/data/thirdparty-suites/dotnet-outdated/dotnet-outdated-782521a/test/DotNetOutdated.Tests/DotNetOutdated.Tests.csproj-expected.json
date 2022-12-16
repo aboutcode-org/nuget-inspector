@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/DotNetOutdated.Tests.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "DotNetOutdated.Tests",
+      "name": "DotNetOutdated.Tests",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/DotNetOutdated.Tests.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "McMaster.Extensions.CommandLineUtils",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.NET.Test.Sdk",
             "version": "17.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Moq",
             "version": "4.18.2",
+            "framework": "",
             "purl": "pkg:nuget/Moq@4.18.2",
             "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "13.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "System.IO.Abstractions.TestingHelpers",
             "version": "14.0.13",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
           },
@@ -87,6 +102,7 @@
             "type": "nuget",
             "name": "xunit.core",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.core@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
           },
@@ -95,6 +111,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.core",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1"
             },
@@ -102,6 +119,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.execution",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.execution@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.4.1"
             }
@@ -112,6 +130,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
           },
@@ -122,6 +141,7 @@
             "type": "nuget",
             "name": "xunit.analyzers",
             "version": "0.10.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.analyzers@0.10.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
           },
@@ -132,6 +152,7 @@
             "type": "nuget",
             "name": "xunit",
             "version": "2.4.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit@2.4.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
           },
@@ -140,6 +161,7 @@
               "type": "nuget",
               "name": "xunit.core",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.core@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.4.1"
             },
@@ -147,6 +169,7 @@
               "type": "nuget",
               "name": "xunit.assert",
               "version": "2.4.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.assert@2.4.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.4.1"
             },
@@ -154,6 +177,7 @@
               "type": "nuget",
               "name": "xunit.analyzers",
               "version": "0.10.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.analyzers@0.10.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0"
             }
@@ -164,6 +188,7 @@
             "type": "nuget",
             "name": "xunit.runner.visualstudio",
             "version": "2.4.3",
+            "framework": "",
             "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
           },
@@ -175,6 +200,7 @@
           "type": "nuget",
           "name": "McMaster.Extensions.CommandLineUtils",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
         },
@@ -182,6 +208,7 @@
           "type": "nuget",
           "name": "Microsoft.NET.Test.Sdk",
           "version": "17.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@17.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.0.0"
         },
@@ -189,6 +216,7 @@
           "type": "nuget",
           "name": "Moq",
           "version": "4.18.2",
+          "framework": "",
           "purl": "pkg:nuget/Moq@4.18.2",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2"
         },
@@ -196,6 +224,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "13.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
         },
@@ -203,6 +232,7 @@
           "type": "nuget",
           "name": "System.IO.Abstractions.TestingHelpers",
           "version": "14.0.13",
+          "framework": "",
           "purl": "pkg:nuget/System.IO.Abstractions.TestingHelpers@14.0.13",
           "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions.TestingHelpers/14.0.13"
         },
@@ -210,6 +240,7 @@
           "type": "nuget",
           "name": "xunit",
           "version": "2.4.1",
+          "framework": "",
           "purl": "pkg:nuget/xunit@2.4.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.4.1"
         },
@@ -217,6 +248,7 @@
           "type": "nuget",
           "name": "xunit.runner.visualstudio",
           "version": "2.4.3",
+          "framework": "",
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.4.3"
         }

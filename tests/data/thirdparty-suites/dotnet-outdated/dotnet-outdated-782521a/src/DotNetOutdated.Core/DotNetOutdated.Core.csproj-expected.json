@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/DotNetOutdated.Core.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "DotNetOutdated.Core",
+      "name": "DotNetOutdated.Core",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/DotNetOutdated.Core.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "1.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "NETStandard.Library",
             "version": "2.0.3",
+            "framework": "",
             "purl": "pkg:nuget/NETStandard.Library@2.0.3",
             "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
           },
@@ -35,6 +45,7 @@
               "type": "nuget",
               "name": "Microsoft.NETCore.Platforms",
               "version": "1.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
             }
@@ -45,6 +56,7 @@
             "type": "nuget",
             "name": "System.ComponentModel.Annotations",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Annotations/5.0.0"
           },
@@ -55,6 +67,7 @@
             "type": "nuget",
             "name": "McMaster.Extensions.CommandLineUtils",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
           },
@@ -63,6 +76,7 @@
               "type": "nuget",
               "name": "System.ComponentModel.Annotations",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.ComponentModel.Annotations@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.ComponentModel.Annotations/5.0.0"
             }
@@ -73,6 +87,7 @@
             "type": "nuget",
             "name": "NuGet.Frameworks",
             "version": "6.3.1",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Frameworks@6.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.3.1"
           },
@@ -83,6 +98,7 @@
             "type": "nuget",
             "name": "NuGet.Common",
             "version": "6.3.1",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Common@6.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.3.1"
           },
@@ -91,6 +107,7 @@
               "type": "nuget",
               "name": "NuGet.Frameworks",
               "version": "6.3.1",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Frameworks@6.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.3.1"
             }
@@ -101,6 +118,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.ProtectedData",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.4.0"
           },
@@ -111,6 +129,7 @@
             "type": "nuget",
             "name": "NuGet.Configuration",
             "version": "6.3.1",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Configuration@6.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.3.1"
           },
@@ -119,6 +138,7 @@
               "type": "nuget",
               "name": "NuGet.Common",
               "version": "6.3.1",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Common@6.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.3.1"
             },
@@ -126,6 +146,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.ProtectedData",
               "version": "4.4.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.ProtectedData@4.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.ProtectedData/4.4.0"
             }
@@ -136,6 +157,7 @@
             "type": "nuget",
             "name": "NuGet.Versioning",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Versioning@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.0.0"
           },
@@ -146,6 +168,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "13.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
           },
@@ -156,6 +179,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Cng",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
           },
@@ -166,6 +190,7 @@
             "type": "nuget",
             "name": "System.Buffers",
             "version": "4.5.1",
+            "framework": "",
             "purl": "pkg:nuget/System.Buffers@4.5.1",
             "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
           },
@@ -176,6 +201,7 @@
             "type": "nuget",
             "name": "System.Numerics.Vectors",
             "version": "4.4.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
           },
@@ -186,6 +212,7 @@
             "type": "nuget",
             "name": "System.Runtime.CompilerServices.Unsafe",
             "version": "4.5.3",
+            "framework": "",
             "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
             "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
           },
@@ -196,6 +223,7 @@
             "type": "nuget",
             "name": "System.Memory",
             "version": "4.5.4",
+            "framework": "",
             "purl": "pkg:nuget/System.Memory@4.5.4",
             "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
           },
@@ -204,6 +232,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -211,6 +240,7 @@
               "type": "nuget",
               "name": "System.Numerics.Vectors",
               "version": "4.4.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Numerics.Vectors@4.4.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Numerics.Vectors/4.4.0"
             },
@@ -218,6 +248,7 @@
               "type": "nuget",
               "name": "System.Runtime.CompilerServices.Unsafe",
               "version": "4.5.3",
+              "framework": "",
               "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
               "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.3"
             }
@@ -228,6 +259,7 @@
             "type": "nuget",
             "name": "System.Formats.Asn1",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
           },
@@ -236,6 +268,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -243,6 +276,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             }
@@ -253,6 +287,7 @@
             "type": "nuget",
             "name": "System.Security.Cryptography.Pkcs",
             "version": "5.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.0"
           },
@@ -261,6 +296,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -268,6 +304,7 @@
               "type": "nuget",
               "name": "System.Formats.Asn1",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Formats.Asn1@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Formats.Asn1/5.0.0"
             },
@@ -275,6 +312,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             },
@@ -282,6 +320,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Cng",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
             }
@@ -292,6 +331,7 @@
             "type": "nuget",
             "name": "NuGet.Packaging",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Packaging@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.0.0"
           },
@@ -300,6 +340,7 @@
               "type": "nuget",
               "name": "NuGet.Configuration",
               "version": "6.3.1",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Configuration@6.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.3.1"
             },
@@ -307,6 +348,7 @@
               "type": "nuget",
               "name": "NuGet.Versioning",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Versioning@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.0.0"
             },
@@ -314,6 +356,7 @@
               "type": "nuget",
               "name": "Newtonsoft.Json",
               "version": "13.0.1",
+              "framework": "",
               "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
             },
@@ -321,6 +364,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Cng",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Cng@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Cng/5.0.0"
             },
@@ -328,6 +372,7 @@
               "type": "nuget",
               "name": "System.Security.Cryptography.Pkcs",
               "version": "5.0.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Cryptography.Pkcs@5.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Cryptography.Pkcs/5.0.0"
             }
@@ -338,6 +383,7 @@
             "type": "nuget",
             "name": "NuGet.Protocol",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Protocol@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.0.0"
           },
@@ -346,6 +392,7 @@
               "type": "nuget",
               "name": "NuGet.Packaging",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Packaging@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.0.0"
             }
@@ -356,6 +403,7 @@
             "type": "nuget",
             "name": "NuGet.Credentials",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.Credentials@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/6.0.0"
           },
@@ -364,6 +412,7 @@
               "type": "nuget",
               "name": "NuGet.Protocol",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Protocol@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.0.0"
             }
@@ -374,6 +423,7 @@
             "type": "nuget",
             "name": "NuGet.LibraryModel",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.LibraryModel@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.0.0"
           },
@@ -382,6 +432,7 @@
               "type": "nuget",
               "name": "NuGet.Common",
               "version": "6.3.1",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Common@6.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.3.1"
             },
@@ -389,6 +440,7 @@
               "type": "nuget",
               "name": "NuGet.Versioning",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Versioning@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.0.0"
             }
@@ -399,6 +451,7 @@
             "type": "nuget",
             "name": "NuGet.DependencyResolver.Core",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.0.0"
           },
@@ -407,6 +460,7 @@
               "type": "nuget",
               "name": "NuGet.Configuration",
               "version": "6.3.1",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Configuration@6.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.3.1"
             },
@@ -414,6 +468,7 @@
               "type": "nuget",
               "name": "NuGet.LibraryModel",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.LibraryModel@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.0.0"
             },
@@ -421,6 +476,7 @@
               "type": "nuget",
               "name": "NuGet.Protocol",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.Protocol@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.0.0"
             }
@@ -431,6 +487,7 @@
             "type": "nuget",
             "name": "NuGet.ProjectModel",
             "version": "6.0.0",
+            "framework": "",
             "purl": "pkg:nuget/NuGet.ProjectModel@6.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.0.0"
           },
@@ -439,6 +496,7 @@
               "type": "nuget",
               "name": "NuGet.DependencyResolver.Core",
               "version": "6.0.0",
+              "framework": "",
               "purl": "pkg:nuget/NuGet.DependencyResolver.Core@6.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.0.0"
             }
@@ -449,6 +507,7 @@
             "type": "nuget",
             "name": "System.Security.Principal.Windows",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.Principal.Windows@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.7.0"
           },
@@ -459,6 +518,7 @@
             "type": "nuget",
             "name": "System.Security.AccessControl",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Security.AccessControl@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.7.0"
           },
@@ -467,6 +527,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.7.0"
             }
@@ -477,6 +538,7 @@
             "type": "nuget",
             "name": "System.IO.FileSystem.AccessControl",
             "version": "4.7.0",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@4.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/4.7.0"
           },
@@ -485,6 +547,7 @@
               "type": "nuget",
               "name": "System.Buffers",
               "version": "4.5.1",
+              "framework": "",
               "purl": "pkg:nuget/System.Buffers@4.5.1",
               "download_url": "https://www.nuget.org/api/v2/package/System.Buffers/4.5.1"
             },
@@ -492,6 +555,7 @@
               "type": "nuget",
               "name": "System.Memory",
               "version": "4.5.4",
+              "framework": "",
               "purl": "pkg:nuget/System.Memory@4.5.4",
               "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.4"
             },
@@ -499,6 +563,7 @@
               "type": "nuget",
               "name": "System.Security.AccessControl",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.AccessControl@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.AccessControl/4.7.0"
             },
@@ -506,6 +571,7 @@
               "type": "nuget",
               "name": "System.Security.Principal.Windows",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.Security.Principal.Windows@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.Security.Principal.Windows/4.7.0"
             }
@@ -516,6 +582,7 @@
             "type": "nuget",
             "name": "System.IO.Abstractions",
             "version": "14.0.13",
+            "framework": "",
             "purl": "pkg:nuget/System.IO.Abstractions@14.0.13",
             "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/14.0.13"
           },
@@ -524,6 +591,7 @@
               "type": "nuget",
               "name": "System.IO.FileSystem.AccessControl",
               "version": "4.7.0",
+              "framework": "",
               "purl": "pkg:nuget/System.IO.FileSystem.AccessControl@4.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/System.IO.FileSystem.AccessControl/4.7.0"
             }
@@ -535,6 +603,7 @@
           "type": "nuget",
           "name": "NETStandard.Library",
           "version": "2.0.3",
+          "framework": "",
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
         },
@@ -542,6 +611,7 @@
           "type": "nuget",
           "name": "McMaster.Extensions.CommandLineUtils",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/McMaster.Extensions.CommandLineUtils@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/McMaster.Extensions.CommandLineUtils/4.0.1"
         },
@@ -549,6 +619,7 @@
           "type": "nuget",
           "name": "NuGet.Credentials",
           "version": "6.0.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.Credentials@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/6.0.0"
         },
@@ -556,6 +627,7 @@
           "type": "nuget",
           "name": "NuGet.ProjectModel",
           "version": "6.0.0",
+          "framework": "",
           "purl": "pkg:nuget/NuGet.ProjectModel@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.0.0"
         },
@@ -563,6 +635,7 @@
           "type": "nuget",
           "name": "System.IO.Abstractions",
           "version": "14.0.13",
+          "framework": "",
           "purl": "pkg:nuget/System.IO.Abstractions@14.0.13",
           "download_url": "https://www.nuget.org/api/v2/package/System.IO.Abstractions/14.0.13"
         }

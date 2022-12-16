@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/multi-target.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "multi-target",
+      "name": "multi-target",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/multi-target.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "jQuery",
             "version": "3.1.1",
+            "framework": "",
             "purl": "pkg:nuget/jQuery@3.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "NLog",
             "version": "4.3.10",
+            "framework": "",
             "purl": "pkg:nuget/NLog@4.3.10",
             "download_url": "https://www.nuget.org/api/v2/package/NLog/4.3.10"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "bootstrap",
             "version": "3.0.0",
+            "framework": "",
             "purl": "pkg:nuget/bootstrap@3.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0"
           },
@@ -45,6 +56,7 @@
               "type": "nuget",
               "name": "jQuery",
               "version": "3.1.1",
+              "framework": "",
               "purl": "pkg:nuget/jQuery@3.1.1",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1"
             }
@@ -56,6 +68,7 @@
           "type": "nuget",
           "name": "NLog",
           "version": "4.3.10",
+          "framework": "",
           "purl": "pkg:nuget/NLog@4.3.10",
           "download_url": "https://www.nuget.org/api/v2/package/NLog/4.3.10"
         },
@@ -63,6 +76,7 @@
           "type": "nuget",
           "name": "bootstrap",
           "version": "3.0.0",
+          "framework": "",
           "purl": "pkg:nuget/bootstrap@3.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0"
         }

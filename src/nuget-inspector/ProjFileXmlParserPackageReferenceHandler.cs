@@ -87,14 +87,14 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
             var has_references = false;
             foreach (var pkg in result.Packages)
             {
-                if (!pkg.Dependencies.Contains(item: package.PackageId)) continue;
+                if (!pkg.dependencies.Contains(item: package.package)) continue;
                 has_references = true;
                 break;
             }
 
-            if (!has_references && package.PackageId != null)
+            if (!has_references && package.package != null)
             {
-                result.Dependencies.Add(item: package.PackageId);
+                result.Dependencies.Add(item: package.package);
             }
         }
 

@@ -33,9 +33,9 @@ internal class PackagesConfigHandler : IDependencyResolver
         result.Dependencies = new List<BasePackage>();
         foreach (var package in result.Packages)
         {
-            var has_package_references = result.Packages.Any(pkg => pkg.Dependencies.Contains(item: package.PackageId));
-            if (!has_package_references && package.PackageId != null)
-                result.Dependencies.Add(item: package.PackageId);
+            var has_package_references = result.Packages.Any(pkg => pkg.dependencies.Contains(item: package.package));
+            if (!has_package_references && package.package != null)
+                result.Dependencies.Add(item: package.package);
         }
 
         return result;

@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/build/sign.proj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "sign",
+      "name": "sign",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/build/sign.proj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "MicroBuild.Core",
             "version": "0.2.0",
+            "framework": "",
             "purl": "pkg:nuget/MicroBuild.Core@0.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/MicroBuild.Core/0.2.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "RoslynTools.SignTool",
             "version": "1.0.0-beta2-63206-01",
+            "framework": "",
             "purl": "pkg:nuget/RoslynTools.SignTool@1.0.0-beta2-63206-01",
             "download_url": "https://www.nuget.org/api/v2/package/RoslynTools.SignTool/1.0.0-beta2-63206-01"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "MicroBuild.Core",
           "version": "0.2.0",
+          "framework": "",
           "purl": "pkg:nuget/MicroBuild.Core@0.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/MicroBuild.Core/0.2.0"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "RoslynTools.SignTool",
           "version": "1.0.0-beta2-63206-01",
+          "framework": "",
           "purl": "pkg:nuget/RoslynTools.SignTool@1.0.0-beta2-63206-01",
           "download_url": "https://www.nuget.org/api/v2/package/RoslynTools.SignTool/1.0.0-beta2-63206-01"
         }

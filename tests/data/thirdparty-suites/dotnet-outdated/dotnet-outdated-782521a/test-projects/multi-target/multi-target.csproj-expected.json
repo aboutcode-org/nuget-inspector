@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/multi-target.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "multi-target",
+      "name": "multi-target",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/multi-target.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Http.Extensions",
             "version": "1.0.4",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@1.0.4",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/1.0.4"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Http.Extensions",
             "version": "2.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.0.2"
           },
@@ -38,6 +48,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Http.Extensions",
           "version": "1.0.4",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@1.0.4",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/1.0.4"
         },
@@ -45,6 +56,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Http.Extensions",
           "version": "2.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Http.Extensions@2.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Http.Extensions/2.0.2"
         }

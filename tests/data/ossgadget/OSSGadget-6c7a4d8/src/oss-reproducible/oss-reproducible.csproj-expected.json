@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/oss-reproducible.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "oss-reproducible",
+      "name": "oss-reproducible",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/ossgadget/OSSGadget-6c7a4d8/src/oss-reproducible/oss-reproducible.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Nerdbank.GitVersioning",
             "version": "3.5.119",
+            "framework": "",
             "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
             "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "DiffPlex",
             "version": "1.7.1",
+            "framework": "",
             "purl": "pkg:nuget/DiffPlex@1.7.1",
             "download_url": "https://www.nuget.org/api/v2/package/DiffPlex/1.7.1"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "13.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "SharpCompress",
             "version": "0.32.2",
+            "framework": "",
             "purl": "pkg:nuget/SharpCompress@0.32.2",
             "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.32.2"
           },
@@ -58,6 +70,7 @@
           "type": "nuget",
           "name": "Nerdbank.GitVersioning",
           "version": "3.5.119",
+          "framework": "",
           "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119"
         },
@@ -65,6 +78,7 @@
           "type": "nuget",
           "name": "DiffPlex",
           "version": "1.7.1",
+          "framework": "",
           "purl": "pkg:nuget/DiffPlex@1.7.1",
           "download_url": "https://www.nuget.org/api/v2/package/DiffPlex/1.7.1"
         },
@@ -72,6 +86,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "13.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
         },
@@ -79,6 +94,7 @@
           "type": "nuget",
           "name": "SharpCompress",
           "version": "0.32.2",
+          "framework": "",
           "purl": "pkg:nuget/SharpCompress@0.32.2",
           "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.32.2"
         }

@@ -3,13 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.UWP.Tests/Microsoft.AspNet.SignalR.Client.UWP.Tests.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.Client.UWP.Tests",
-      "project_version": "1.0.0.0",
+      "name": "Microsoft.AspNet.SignalR.Client.UWP.Tests",
+      "version": "1.0.0.0",
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Client.UWP.Tests/Microsoft.AspNet.SignalR.Client.UWP.Tests.csproj",
       "packages": [
@@ -18,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.NETCore.UniversalWindowsPlatform",
             "version": "6.1.5",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.1.5",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.1.5"
           },
@@ -28,6 +36,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.core",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
           },
@@ -38,6 +47,7 @@
             "type": "nuget",
             "name": "xunit.extensibility.execution",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
           },
@@ -48,6 +58,7 @@
             "type": "nuget",
             "name": "xunit.core",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.core@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
           },
@@ -56,6 +67,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.core",
               "version": "2.3.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.core@2.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.3.1"
             },
@@ -63,6 +75,7 @@
               "type": "nuget",
               "name": "xunit.extensibility.execution",
               "version": "2.3.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.extensibility.execution@2.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.execution/2.3.1"
             }
@@ -73,6 +86,7 @@
             "type": "nuget",
             "name": "xunit.assert",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.assert@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
           },
@@ -83,6 +97,7 @@
             "type": "nuget",
             "name": "xunit.analyzers",
             "version": "0.7.0",
+            "framework": "",
             "purl": "pkg:nuget/xunit.analyzers@0.7.0",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.7.0"
           },
@@ -93,6 +108,7 @@
             "type": "nuget",
             "name": "xunit",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
           },
@@ -101,6 +117,7 @@
               "type": "nuget",
               "name": "xunit.core",
               "version": "2.3.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.core@2.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.core/2.3.1"
             },
@@ -108,6 +125,7 @@
               "type": "nuget",
               "name": "xunit.assert",
               "version": "2.3.1",
+              "framework": "",
               "purl": "pkg:nuget/xunit.assert@2.3.1",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.assert/2.3.1"
             },
@@ -115,6 +133,7 @@
               "type": "nuget",
               "name": "xunit.analyzers",
               "version": "0.7.0",
+              "framework": "",
               "purl": "pkg:nuget/xunit.analyzers@0.7.0",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.7.0"
             }
@@ -125,6 +144,7 @@
             "type": "nuget",
             "name": "xunit.runner.visualstudio",
             "version": "2.3.1",
+            "framework": "",
             "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
             "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.3.1"
           },
@@ -136,6 +156,7 @@
           "type": "nuget",
           "name": "Microsoft.NETCore.UniversalWindowsPlatform",
           "version": "6.1.5",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.1.5",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.1.5"
         },
@@ -143,6 +164,7 @@
           "type": "nuget",
           "name": "xunit",
           "version": "2.3.1",
+          "framework": "",
           "purl": "pkg:nuget/xunit@2.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit/2.3.1"
         },
@@ -150,6 +172,7 @@
           "type": "nuget",
           "name": "xunit.runner.visualstudio",
           "version": "2.3.1",
+          "framework": "",
           "purl": "pkg:nuget/xunit.runner.visualstudio@2.3.1",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.runner.visualstudio/2.3.1"
         }

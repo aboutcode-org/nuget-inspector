@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/stubs.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "stubs",
+      "name": "stubs",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/stubs.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.ApplicationInsights.AspNetCore",
             "version": "2.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.ApplicationInsights.AspNetCore@2.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.AspNetCore/2.1.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.All",
             "version": "2.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "System.Data.SQLite",
             "version": "1.0.108",
+            "framework": "",
             "purl": "pkg:nuget/System.Data.SQLite@1.0.108",
             "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.108"
           },
@@ -48,6 +59,7 @@
           "type": "nuget",
           "name": "Microsoft.ApplicationInsights.AspNetCore",
           "version": "2.1.1",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.ApplicationInsights.AspNetCore@2.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.AspNetCore/2.1.1"
         },
@@ -55,6 +67,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.All",
           "version": "2.0.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.0"
         },
@@ -62,6 +75,7 @@
           "type": "nuget",
           "name": "System.Data.SQLite",
           "version": "1.0.108",
+          "framework": "",
           "purl": "pkg:nuget/System.Data.SQLite@1.0.108",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.108"
         }

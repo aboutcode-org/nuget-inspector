@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-complex-target-frameworks/simple-project.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "simple-project",
+      "name": "simple-project",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-complex-target-frameworks/simple-project.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore",
             "version": "1.1.7",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore@1.1.7",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore/1.1.7"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Authentication.Cookies",
             "version": "1.1.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Cookies@1.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Cookies/1.1.3"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/1.1.6"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.EntityFrameworkCore@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.6"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.Mvc",
             "version": "1.1.8",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc@1.1.8",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc/1.1.8"
           },
@@ -67,6 +80,7 @@
             "type": "nuget",
             "name": "Microsoft.AspNetCore.StaticFiles",
             "version": "1.1.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.AspNetCore.StaticFiles@1.1.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.StaticFiles/1.1.3"
           },
@@ -77,6 +91,7 @@
             "type": "nuget",
             "name": "Microsoft.EntityFrameworkCore.Design",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Design@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Design/1.1.6"
           },
@@ -87,6 +102,7 @@
             "type": "nuget",
             "name": "Microsoft.EntityFrameworkCore.Sqlite",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Sqlite@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Sqlite/1.1.6"
           },
@@ -97,6 +113,7 @@
             "type": "nuget",
             "name": "Microsoft.EntityFrameworkCore.Sqlite.Design",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Sqlite.Design@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.6"
           },
@@ -107,6 +124,7 @@
             "type": "nuget",
             "name": "Microsoft.EntityFrameworkCore.Tools",
             "version": "1.1.6",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Tools@1.1.6",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Tools/1.1.6"
           },
@@ -117,6 +135,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Configuration.UserSecrets",
             "version": "1.1.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Configuration.UserSecrets@1.1.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.UserSecrets/1.1.2"
           },
@@ -127,6 +146,7 @@
             "type": "nuget",
             "name": "Microsoft.Extensions.Logging.Debug",
             "version": "1.1.2",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Extensions.Logging.Debug@1.1.2",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Debug/1.1.2"
           },
@@ -137,6 +157,7 @@
             "type": "nuget",
             "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
             "version": "1.1.5",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@1.1.5",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/1.1.5"
           },
@@ -147,6 +168,7 @@
             "type": "nuget",
             "name": "newtonsoft.json",
             "version": "11.0.2",
+            "framework": "",
             "purl": "pkg:nuget/newtonsoft.json@11.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/newtonsoft.json/11.0.2"
           },
@@ -157,6 +179,7 @@
             "type": "nuget",
             "name": "System.Console",
             "version": "4.0.0",
+            "framework": "",
             "purl": "pkg:nuget/System.Console@4.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
           },
@@ -167,6 +190,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "10.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
           },
@@ -177,6 +201,7 @@
             "type": "nuget",
             "name": "nunit.framework",
             "version": "3.8.1",
+            "framework": "",
             "purl": "pkg:nuget/nunit.framework@3.8.1",
             "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
           },
@@ -187,6 +212,7 @@
             "type": "nuget",
             "name": "Orleans",
             "version": "1.4.0",
+            "framework": "",
             "purl": "pkg:nuget/Orleans@1.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
           },
@@ -198,6 +224,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore",
           "version": "1.1.7",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore@1.1.7",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore/1.1.7"
         },
@@ -205,6 +232,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Authentication.Cookies",
           "version": "1.1.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.Cookies@1.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Authentication.Cookies/1.1.3"
         },
@@ -212,6 +240,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/1.1.6"
         },
@@ -219,6 +248,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Identity.EntityFrameworkCore@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Identity.EntityFrameworkCore/1.1.6"
         },
@@ -226,6 +256,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.Mvc",
           "version": "1.1.8",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.Mvc@1.1.8",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.Mvc/1.1.8"
         },
@@ -233,6 +264,7 @@
           "type": "nuget",
           "name": "Microsoft.AspNetCore.StaticFiles",
           "version": "1.1.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.AspNetCore.StaticFiles@1.1.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.StaticFiles/1.1.3"
         },
@@ -240,6 +272,7 @@
           "type": "nuget",
           "name": "Microsoft.EntityFrameworkCore.Design",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Design@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Design/1.1.6"
         },
@@ -247,6 +280,7 @@
           "type": "nuget",
           "name": "Microsoft.EntityFrameworkCore.Sqlite",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Sqlite@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Sqlite/1.1.6"
         },
@@ -254,6 +288,7 @@
           "type": "nuget",
           "name": "Microsoft.EntityFrameworkCore.Sqlite.Design",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Sqlite.Design@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.6"
         },
@@ -261,6 +296,7 @@
           "type": "nuget",
           "name": "Microsoft.EntityFrameworkCore.Tools",
           "version": "1.1.6",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Tools@1.1.6",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.EntityFrameworkCore.Tools/1.1.6"
         },
@@ -268,6 +304,7 @@
           "type": "nuget",
           "name": "Microsoft.Extensions.Configuration.UserSecrets",
           "version": "1.1.2",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Configuration.UserSecrets@1.1.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Configuration.UserSecrets/1.1.2"
         },
@@ -275,6 +312,7 @@
           "type": "nuget",
           "name": "Microsoft.Extensions.Logging.Debug",
           "version": "1.1.2",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Logging.Debug@1.1.2",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Debug/1.1.2"
         },
@@ -282,6 +320,7 @@
           "type": "nuget",
           "name": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
           "version": "1.1.5",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.VisualStudio.Web.CodeGeneration.Design@1.1.5",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Web.CodeGeneration.Design/1.1.5"
         },
@@ -289,6 +328,7 @@
           "type": "nuget",
           "name": "newtonsoft.json",
           "version": "11.0.2",
+          "framework": "",
           "purl": "pkg:nuget/newtonsoft.json@11.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/newtonsoft.json/11.0.2"
         },
@@ -296,6 +336,7 @@
           "type": "nuget",
           "name": "System.Console",
           "version": "4.0.0",
+          "framework": "",
           "purl": "pkg:nuget/System.Console@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.Console/4.0.0"
         },
@@ -303,6 +344,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "10.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@10.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.1"
         },
@@ -310,6 +352,7 @@
           "type": "nuget",
           "name": "nunit.framework",
           "version": "3.8.1",
+          "framework": "",
           "purl": "pkg:nuget/nunit.framework@3.8.1",
           "download_url": "https://www.nuget.org/api/v2/package/nunit.framework/3.8.1"
         },
@@ -317,6 +360,7 @@
           "type": "nuget",
           "name": "Orleans",
           "version": "1.4.0",
+          "framework": "",
           "purl": "pkg:nuget/Orleans@1.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/Orleans/1.4.0"
         }

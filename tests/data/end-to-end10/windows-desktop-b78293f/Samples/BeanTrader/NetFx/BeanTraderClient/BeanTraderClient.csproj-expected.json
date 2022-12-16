@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderClient/BeanTraderClient.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "BeanTraderClient",
+      "name": "BeanTraderClient",
+      "version": null,
       "datasource_id": "nuget-packages.config",
       "project_file": "/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderClient/BeanTraderClient.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Castle.Core",
             "version": "4.2.0",
+            "framework": "",
             "purl": "pkg:nuget/Castle.Core@4.2.0",
             "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Castle.Windsor",
             "version": "4.1.1",
+            "framework": "",
             "purl": "pkg:nuget/Castle.Windsor@4.1.1",
             "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "ControlzEx",
             "version": "3.0.2.4",
+            "framework": "",
             "purl": "pkg:nuget/ControlzEx@3.0.2.4",
             "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4"
           },
@@ -47,6 +58,7 @@
             "type": "nuget",
             "name": "Hyak.Common",
             "version": "1.0.2",
+            "framework": "",
             "purl": "pkg:nuget/Hyak.Common@1.0.2",
             "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.0.2"
           },
@@ -57,6 +69,7 @@
             "type": "nuget",
             "name": "MahApps.Metro",
             "version": "1.6.5",
+            "framework": "",
             "purl": "pkg:nuget/MahApps.Metro@1.6.5",
             "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/1.6.5"
           },
@@ -65,6 +78,7 @@
               "type": "nuget",
               "name": "ControlzEx",
               "version": "3.0.2.4",
+              "framework": "",
               "purl": "pkg:nuget/ControlzEx@3.0.2.4",
               "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4"
             }
@@ -75,6 +89,7 @@
             "type": "nuget",
             "name": "Microsoft.Bcl",
             "version": "1.1.10",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
           },
@@ -83,6 +98,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.Build",
               "version": "1.0.21",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
             }
@@ -93,6 +109,7 @@
             "type": "nuget",
             "name": "Microsoft.Bcl.Build",
             "version": "1.0.21",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
           },
@@ -103,6 +120,7 @@
             "type": "nuget",
             "name": "Microsoft.Bcl.Async",
             "version": "1.0.168",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Bcl.Async@1.0.168",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168"
           },
@@ -111,6 +129,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl",
               "version": "1.1.10",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
             }
@@ -121,6 +140,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeAnalysis.FxCopAnalyzers",
             "version": "2.6.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3"
           },
@@ -129,6 +149,7 @@
               "type": "nuget",
               "name": "Microsoft.CodeQuality.Analyzers",
               "version": "2.6.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.CodeQuality.Analyzers@2.6.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3"
             },
@@ -136,6 +157,7 @@
               "type": "nuget",
               "name": "Microsoft.NetCore.Analyzers",
               "version": "2.6.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NetCore.Analyzers@2.6.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3"
             },
@@ -143,6 +165,7 @@
               "type": "nuget",
               "name": "Microsoft.NetFramework.Analyzers",
               "version": "2.6.3",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.NetFramework.Analyzers@2.6.3",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3"
             },
@@ -150,6 +173,7 @@
               "type": "nuget",
               "name": "Text.Analyzers",
               "version": "2.6.3",
+              "framework": "",
               "purl": "pkg:nuget/Text.Analyzers@2.6.3",
               "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3"
             }
@@ -160,6 +184,7 @@
             "type": "nuget",
             "name": "Microsoft.CodeQuality.Analyzers",
             "version": "2.6.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.CodeQuality.Analyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3"
           },
@@ -170,6 +195,7 @@
             "type": "nuget",
             "name": "Microsoft.NetCore.Analyzers",
             "version": "2.6.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NetCore.Analyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3"
           },
@@ -180,6 +206,7 @@
             "type": "nuget",
             "name": "Microsoft.NetFramework.Analyzers",
             "version": "2.6.3",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.NetFramework.Analyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3"
           },
@@ -190,6 +217,7 @@
             "type": "nuget",
             "name": "Text.Analyzers",
             "version": "2.6.3",
+            "framework": "",
             "purl": "pkg:nuget/Text.Analyzers@2.6.3",
             "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3"
           },
@@ -200,6 +228,7 @@
             "type": "nuget",
             "name": "Microsoft.Net.Http",
             "version": "2.2.22",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Net.Http@2.2.22",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.22"
           },
@@ -208,6 +237,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl",
               "version": "1.1.10",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
             },
@@ -215,6 +245,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.Build",
               "version": "1.0.21",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
             }
@@ -225,6 +256,7 @@
             "type": "nuget",
             "name": "Microsoft.Rest.ClientRuntime",
             "version": "2.3.8",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime@2.3.8",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8"
           },
@@ -235,6 +267,7 @@
             "type": "nuget",
             "name": "Microsoft.Rest.ClientRuntime.Azure",
             "version": "3.3.7",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime.Azure@3.3.7",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7"
           },
@@ -245,6 +278,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "6.0.8",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@6.0.8",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8"
           },
@@ -255,6 +289,7 @@
             "type": "nuget",
             "name": "Nito.AsyncEx",
             "version": "4.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Nito.AsyncEx@4.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1"
           },
@@ -263,6 +298,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl",
               "version": "1.1.10",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl@1.1.10",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10"
             },
@@ -270,6 +306,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.Build",
               "version": "1.0.21",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.Build@1.0.21",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21"
             },
@@ -277,6 +314,7 @@
               "type": "nuget",
               "name": "Microsoft.Bcl.Async",
               "version": "1.0.168",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Bcl.Async@1.0.168",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168"
             }
@@ -288,6 +326,7 @@
           "type": "nuget",
           "name": "Castle.Core",
           "version": "4.2.0",
+          "framework": "",
           "purl": "pkg:nuget/Castle.Core@4.2.0",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0"
         },
@@ -295,6 +334,7 @@
           "type": "nuget",
           "name": "Castle.Windsor",
           "version": "4.1.1",
+          "framework": "",
           "purl": "pkg:nuget/Castle.Windsor@4.1.1",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1"
         },
@@ -302,6 +342,7 @@
           "type": "nuget",
           "name": "Hyak.Common",
           "version": "1.0.2",
+          "framework": "",
           "purl": "pkg:nuget/Hyak.Common@1.0.2",
           "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.0.2"
         },
@@ -309,6 +350,7 @@
           "type": "nuget",
           "name": "MahApps.Metro",
           "version": "1.6.5",
+          "framework": "",
           "purl": "pkg:nuget/MahApps.Metro@1.6.5",
           "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/1.6.5"
         },
@@ -316,6 +358,7 @@
           "type": "nuget",
           "name": "Microsoft.CodeAnalysis.FxCopAnalyzers",
           "version": "2.6.3",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.CodeAnalysis.FxCopAnalyzers@2.6.3",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3"
         },
@@ -323,6 +366,7 @@
           "type": "nuget",
           "name": "Microsoft.Net.Http",
           "version": "2.2.22",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Net.Http@2.2.22",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.22"
         },
@@ -330,6 +374,7 @@
           "type": "nuget",
           "name": "Microsoft.Rest.ClientRuntime",
           "version": "2.3.8",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime@2.3.8",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8"
         },
@@ -337,6 +382,7 @@
           "type": "nuget",
           "name": "Microsoft.Rest.ClientRuntime.Azure",
           "version": "3.3.7",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Rest.ClientRuntime.Azure@3.3.7",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7"
         },
@@ -344,6 +390,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "6.0.8",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@6.0.8",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8"
         },
@@ -351,6 +398,7 @@
           "type": "nuget",
           "name": "Nito.AsyncEx",
           "version": "4.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Nito.AsyncEx@4.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1"
         }

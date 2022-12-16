@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Net40.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Newtonsoft.Json.Net40",
+      "name": "Newtonsoft.Json.Net40",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Net40.csproj",
       "packages": [],

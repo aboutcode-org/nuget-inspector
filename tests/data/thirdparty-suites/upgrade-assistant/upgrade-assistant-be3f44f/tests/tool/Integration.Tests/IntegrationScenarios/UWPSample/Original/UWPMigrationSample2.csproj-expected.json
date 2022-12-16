@@ -3,13 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "UWPMigrationSample2",
-      "project_version": "6.2.13",
+      "name": "UWPMigrationSample2",
+      "version": "6.2.13",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.csproj",
       "packages": [],

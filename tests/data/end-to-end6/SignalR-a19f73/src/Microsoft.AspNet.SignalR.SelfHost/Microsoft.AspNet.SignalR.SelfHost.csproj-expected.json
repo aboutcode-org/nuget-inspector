@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SelfHost/Microsoft.AspNet.SignalR.SelfHost.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "Microsoft.AspNet.SignalR.SelfHost",
+      "name": "Microsoft.AspNet.SignalR.SelfHost",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.SelfHost/Microsoft.AspNet.SignalR.SelfHost.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Internal.AspNetCore.Sdk",
             "version": "3.0.0-alpha1-20180907.9",
+            "framework": "",
             "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
             "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "Owin",
             "version": "1.0.0",
+            "framework": "",
             "purl": "pkg:nuget/Owin@1.0.0",
             "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
           },
@@ -45,6 +56,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             }
@@ -55,6 +67,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Diagnostics",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
           },
@@ -63,6 +76,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -70,6 +84,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             }
@@ -80,6 +95,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Hosting",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
           },
@@ -88,6 +104,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -95,6 +112,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             }
@@ -105,6 +123,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.Host.HttpListener",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
           },
@@ -115,6 +134,7 @@
             "type": "nuget",
             "name": "Microsoft.Owin.SelfHost",
             "version": "2.1.0",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
           },
@@ -123,6 +143,7 @@
               "type": "nuget",
               "name": "Owin",
               "version": "1.0.0",
+              "framework": "",
               "purl": "pkg:nuget/Owin@1.0.0",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0"
             },
@@ -130,6 +151,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0"
             },
@@ -137,6 +159,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Diagnostics",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Diagnostics@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Diagnostics/2.1.0"
             },
@@ -144,6 +167,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Hosting",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Hosting@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Hosting/2.1.0"
             },
@@ -151,6 +175,7 @@
               "type": "nuget",
               "name": "Microsoft.Owin.Host.HttpListener",
               "version": "2.1.0",
+              "framework": "",
               "purl": "pkg:nuget/Microsoft.Owin.Host.HttpListener@2.1.0",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.HttpListener/2.1.0"
             }
@@ -162,6 +187,7 @@
           "type": "nuget",
           "name": "Internal.AspNetCore.Sdk",
           "version": "3.0.0-alpha1-20180907.9",
+          "framework": "",
           "purl": "pkg:nuget/Internal.AspNetCore.Sdk@3.0.0-alpha1-20180907.9",
           "download_url": "https://www.nuget.org/api/v2/package/Internal.AspNetCore.Sdk/3.0.0-alpha1-20180907.9"
         },
@@ -169,6 +195,7 @@
           "type": "nuget",
           "name": "Microsoft.Owin.SelfHost",
           "version": "2.1.0",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.Owin.SelfHost@2.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.SelfHost/2.1.0"
         }

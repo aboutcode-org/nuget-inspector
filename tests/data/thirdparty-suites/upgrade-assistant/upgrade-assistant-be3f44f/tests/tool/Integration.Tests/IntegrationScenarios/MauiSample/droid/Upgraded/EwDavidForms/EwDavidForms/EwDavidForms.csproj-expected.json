@@ -3,12 +3,20 @@
     {
       "tool_name": "nuget-inspector",
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
-      "tool_version": "0.7.0"
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms/EwDavidForms.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
     }
   ],
+  "files": [],
   "packages": [
     {
-      "project_name": "EwDavidForms",
+      "name": "EwDavidForms",
+      "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms/EwDavidForms.csproj",
       "packages": [
@@ -17,6 +25,7 @@
             "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "13.0.1",
+            "framework": "",
             "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
             "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
           },
@@ -27,6 +36,7 @@
             "type": "nuget",
             "name": "CommunityToolkit.Maui",
             "version": "1.0.0-rc2",
+            "framework": "",
             "purl": "pkg:nuget/CommunityToolkit.Maui@1.0.0-rc2",
             "download_url": "https://www.nuget.org/api/v2/package/CommunityToolkit.Maui/1.0.0-rc2"
           },
@@ -37,6 +47,7 @@
             "type": "nuget",
             "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
             "version": "0.2.222702",
+            "framework": "",
             "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
             "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
           },
@@ -48,6 +59,7 @@
           "type": "nuget",
           "name": "Newtonsoft.Json",
           "version": "13.0.1",
+          "framework": "",
           "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1"
         },
@@ -55,6 +67,7 @@
           "type": "nuget",
           "name": "CommunityToolkit.Maui",
           "version": "1.0.0-rc2",
+          "framework": "",
           "purl": "pkg:nuget/CommunityToolkit.Maui@1.0.0-rc2",
           "download_url": "https://www.nuget.org/api/v2/package/CommunityToolkit.Maui/1.0.0-rc2"
         },
@@ -62,6 +75,7 @@
           "type": "nuget",
           "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
           "version": "0.2.222702",
+          "framework": "",
           "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702"
         }
