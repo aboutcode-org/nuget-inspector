@@ -98,7 +98,11 @@ internal class ProjectScanner
             Options.ProjectUniqueId = Path.GetFileNameWithoutExtension(path: Options.ProjectFilePath);
 
         if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
+        {
             Options.ProjectVersion = AssemblyInfoParser.GetProjectAssemblyVersion(project_directory);
+            if (Config.TRACE)
+                Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
+        }   
     }
 
     public ScanResult RunScan()

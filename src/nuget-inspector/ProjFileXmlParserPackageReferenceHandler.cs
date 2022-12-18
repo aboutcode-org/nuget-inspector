@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Xml;
 using NuGet.Frameworks;
+using NuGet.Protocol;
 using NuGet.Versioning;
 
 namespace NugetInspector;
@@ -14,7 +15,6 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
     public const string DatasourceId = "dotnet-project-xml";
     private readonly NuGetFramework? ProjectTargetFramework;
     private readonly NugetApi NugetApi;
-
     private readonly string ProjectPath;
 
     public ProjFileXmlParserPackageReferenceHandler(string projectPath, NugetApi nugetApi,
@@ -37,47 +37,63 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
         var doc = new XmlDocument();
         doc.Load(filename: ProjectPath);
 
-        var versionNodes = doc.GetElementsByTagName(name: "Version");
-        if (versionNodes != null && versionNodes.Count > 0)
-        {
-            foreach (XmlNode version in versionNodes)
-                if (version.NodeType != XmlNodeType.Comment)
-                    result.ProjectVersion = version.InnerText;
-        }
-        else
-        {
-            var prefix = "1.0.0";
-            var suffix = "";
-            var prefixNodes = doc.GetElementsByTagName(name: "VersionPrefix");
-            if (prefixNodes != null && prefixNodes.Count > 0)
-                foreach (XmlNode prefixNode in prefixNodes)
-                    if (prefixNode.NodeType != XmlNodeType.Comment)
-                        prefix = prefixNode.InnerText;
-            var suffixNodes = doc.GetElementsByTagName(name: "VersionSuffix");
-            if (suffixNodes != null && suffixNodes.Count > 0)
-                foreach (XmlNode suffixNode in suffixNodes)
-                    if (suffixNode.NodeType != XmlNodeType.Comment)
-                        suffix = suffixNode.InnerText;
-            result.ProjectVersion = $"{prefix}-{suffix}";
-        }
-
         var packagesNodes = doc.GetElementsByTagName(name: "PackageReference");
         if (packagesNodes.Count > 0)
             foreach (XmlNode package in packagesNodes)
             {
                 var attributes = package.Attributes;
+                string? version_value = null;
+                    
+
                 if (attributes != null)
                 {
+                    if (Config.TRACE)
+                        Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
+                        foreach (var attribute in attributes)
+                        {
+                            Console.WriteLine($" attribute: {attribute.ToJson()}");
+                        }
                     var include = attributes[name: "Include"];
-                    var version = attributes[name: "Version"];
-                    if (include != null && version != null)
+                    if (include != null)
                     {
-                        var dep = new Dependency(name: include.Value,
-                            version_range: VersionRange.Parse(value: version.Value),
+                        var version = attributes[name: "Version"];
+                        if (version != null)
+                        {
+                            version_value = version.Value;
+                        }
+                        else
+                        {
+                            //try nested element instead of attribute  
+                            foreach (XmlElement versionNode in package.ChildNodes)
+                            {
+                                if (versionNode.Name == "Version")
+                                {
+                                    if (Config.TRACE)
+                                        Console.WriteLine($"    no version attribute, using Version tag: {versionNode.InnerText}");
+                                    version_value = versionNode.InnerText;
+                                }                            }
+                        }
+                        if (Config.TRACE)
+                            Console.WriteLine($"    version_value: {version_value}");
+
+                        VersionRange? version_range = null;
+                        if (version_value != null)
+                           version_range = VersionRange.Parse(value: version_value);
+                        var dep = new Dependency(
+                            name: include.Value,
+                            version_range: version_range,
                             framework: ProjectTargetFramework);
                         tree.Add(packageDependency: dep);
                     }
                 }
+                // var versionNodes = doc.GetElementsByTagName(name: "Version");
+                // if (versionNodes != null && versionNodes.Count > 0)
+                // {
+                //     foreach (XmlNode version in versionNodes)
+                //         if (version.NodeType != XmlNodeType.Comment)
+                //             result.ProjectVersion = version.InnerText;
+                // }
+                
             }
 
         result.Packages = tree.GetPackageList();

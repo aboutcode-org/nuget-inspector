@@ -146,11 +146,11 @@ namespace NugetInspector
     public class BasePackage
     {
         public string type = "nuget";
-        public string? name = "";
-        public string? version = "";
-        public string? framework = "";
-        public string purl = "";
-        public string download_url = "";
+        public string? name { get; set; } = "";
+        public string? version { get; set; } = "";
+        public string? framework { get; set; } = "";
+        public string purl { get; set; } = "";
+        public string download_url { get; set; } = "";
 
         public BasePackage(string? name, string? version, string? framework)
         {
@@ -232,12 +232,12 @@ namespace NugetInspector
     /// </summary>
     public class Package
     {
-        public string? name = "";
-        public string? version = "";
-        public string datasource_id = null!;
-        public string project_file= null!;
-        public List<PackageSet> packages = new();
-        public List<BasePackage> dependencies = new();
+        public string? name { get; set; } = "";
+        public string? version { get; set; } = "";
+        public string datasource_id { get; set; } = null!;
+        public string project_file { get; set; } = null!;
+        public List<PackageSet> packages { get; set; } = new();
+        public List<BasePackage> dependencies { get; set; } = new();
     }
 
     /// <summary>
@@ -245,12 +245,12 @@ namespace NugetInspector
     /// </summary>
     public class PackageData
     {
-        public string? name= null;
-        public string? version = null;
-        public string datasource_id= null!;
-        public string project_file= null!;
-        public List<PackageSet> packages= new();
-        public List<BasePackage> dependencies= new();
+        public string? name { get; set; } = null;
+        public string? version { get; set; } = null;
+        public string datasource_id { get; set; } = null!;
+        public string project_file { get; set; } = null!;
+        public List<PackageSet> packages { get; set; } = new();
+        public List<BasePackage> dependencies { get; set; } = new();
     }
 
     /// <summary>
@@ -259,23 +259,23 @@ namespace NugetInspector
     public class Party
     {
         //One of  'person', 'project' or 'organization'
-        public string type = "";
-        public string role = "";
-        public string? name = "";
-        public string? email = "";
-        public string? url = "";
+        public string type { get; set; } = "";
+        public string role { get; set; } = "";
+        public string? name { get; set; } = "";
+        public string? email { get; set; } = "";
+        public string? url { get; set; } = "";
     }
 
     public class DependentPackage
     {
-        public string purl = "";
-        public string extracted_requirement = "";
-        public string scope = "";
-        public bool is_runtime;
-        public bool is_optional;
-        public bool is_resolved;
-        public ScannedPackageData? resolved_package;
-        public Dictionary<string, string> extra_data = new();
+        public string purl { get; set; }= "";
+        public string extracted_requirement { get; set; } = "";
+        public string scope { get; set; } = "";
+        public bool is_runtime { get; set;}
+        public bool is_optional { get; set; }
+        public bool is_resolved { get; set; }
+        public ScannedPackageData? resolved_package { get; set; }
+        public Dictionary<string, string> extra_data { get; set; } = new();
     }
     
 
@@ -285,39 +285,39 @@ namespace NugetInspector
     /// </summary>
     public class ScannedPackageData
     {
-        public string type = "";
+        public string type { get; set; } = "";
         [JsonProperty(propertyName: "namespace")]
-        public string name_space = "";
-        public string name = "";
-        public string version = "";
-        public string qualifiers = "";
-        public string subpath = "";
+        public string name_space { get; set; } = "";
+        public string name { get; set; } = "";
+        public string version { get; set; } = "";
+        public string qualifiers { get; set; } = "";
+        public string subpath { get; set; } = "";
 
-        public string primary_language = "C#";
-        public string description = "";
-        public string release_date = "";
-        public List<Party> parties = new();
-        public List<string> keywords = new();
-        public string homepage_url = "";
-        public string download_url = "";
-        public int size;
-        public string sha1 = "";
-        public string md5 = "";
-        public string sha256 = "";
-        public string sha512 = "";
-        public string bug_tracking_url = "";
-        public string code_view_url = "";
-        public string vcs_url = "";
-        public string copyright = "";
-        public string license_expression = "";
-        public string declared_license = "";
-        public string notice_text = "";
-        public List<string> source_packages = new();
-        public Dictionary<string, string> extra_data = new();
-        public List<DependentPackage> dependencies = new();
-        public string repository_homepage_url = "";
-        public string repository_download_url = "";
-        public string api_data_url = "";
-        public string datasource_id = "";
+        public string primary_language { get; set; } = "C#";
+        public string description { get; set; } = "";
+        public string release_date { get; set; } = "";
+        public List<Party> parties { get; set; } = new();
+        public List<string> keywords { get; set; } = new();
+        public string homepage_url { get; set; } = "";
+        public string download_url { get; set; } = "";
+        public int size { get; set; }
+        public string sha1 { get; set; } = "";
+        public string md5 { get; set; } = "";
+        public string sha256 { get; set; } = "";
+        public string sha512 { get; set; } = "";
+        public string bug_tracking_url { get; set; } = "";
+        public string code_view_url { get; set; } = "";
+        public string vcs_url { get; set; } = "";
+        public string copyright { get; set; } = "";
+        public string license_expression { get; set; } = "";
+        public string declared_license { get; set; } = "";
+        public string notice_text { get; set; } = "";
+        public List<string> source_packages { get; set; } = new();
+        public Dictionary<string, string> extra_data { get; set; } = new();
+        public List<DependentPackage> dependencies { get; set; } = new();
+        public string repository_homepage_url { get; set; } = "";
+        public string repository_download_url { get; set; } = "";
+        public string api_data_url { get; set; } = "";
+        public string datasource_id { get; set; } = "";
     }
 }

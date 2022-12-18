@@ -111,11 +111,12 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
 
             return result;
         }
-        catch (InvalidProjectFileException)
+        catch (InvalidProjectFileException ex)
         {
             return new DependencyResolution
             {
-                Success = false
+                Success = false,
+                ErrorMessage = ex.ToString()
             };
         }
     }

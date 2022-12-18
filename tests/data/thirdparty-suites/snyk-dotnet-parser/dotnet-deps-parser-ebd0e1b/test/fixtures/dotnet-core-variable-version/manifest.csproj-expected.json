@@ -16,11 +16,176 @@
   "packages": [
     {
       "name": "manifest",
-      "version": "$(SystemCommandLineVersion)",
-      "datasource_id": "dotnet-project-xml",
+      "version": null,
+      "datasource_id": "dotnet-project-reference",
       "project_file": "/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-variable-version/manifest.csproj",
-      "packages": [],
-      "dependencies": []
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": "11.0.2",
+            "framework": "",
+            "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json.Schema",
+            "version": "3.0.10",
+            "framework": "",
+            "purl": "pkg:nuget/Newtonsoft.Json.Schema@3.0.10",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json.Schema/3.0.10"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Newtonsoft.Json",
+              "version": "11.0.2",
+              "framework": "",
+              "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.CSharp",
+            "version": "4.4.1",
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.CSharp@4.4.1",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.4.1"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "4.5.2",
+            "framework": "",
+            "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "system.memory",
+            "version": "4.5.3",
+            "framework": "",
+            "purl": "pkg:nuget/system.memory@4.5.3",
+            "download_url": "https://www.nuget.org/api/v2/package/system.memory/4.5.3"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "System.Runtime.CompilerServices.Unsafe",
+              "version": "4.5.2",
+              "framework": "",
+              "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.2",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Runtime.CompilerServices.Unsafe/4.5.2"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.CommandLine",
+            "version": "0.3.0-alpha.20054.1",
+            "framework": "",
+            "purl": "pkg:nuget/System.CommandLine@0.3.0-alpha.20054.1",
+            "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/0.3.0-alpha.20054.1"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.CSharp",
+              "version": "4.4.1",
+              "framework": "",
+              "purl": "pkg:nuget/Microsoft.CSharp@4.4.1",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CSharp/4.4.1"
+            },
+            {
+              "type": "nuget",
+              "name": "System.Memory",
+              "version": "4.5.3",
+              "framework": "",
+              "purl": "pkg:nuget/System.Memory@4.5.3",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Memory/4.5.3"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json.Schema",
+          "version": "3.0.10",
+          "framework": "",
+          "purl": "pkg:nuget/Newtonsoft.Json.Schema@3.0.10",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json.Schema/3.0.10"
+        },
+        {
+          "type": "nuget",
+          "name": "system.memory",
+          "version": "4.5.3",
+          "framework": "",
+          "purl": "pkg:nuget/system.memory@4.5.3",
+          "download_url": "https://www.nuget.org/api/v2/package/system.memory/4.5.3"
+        },
+        {
+          "type": "nuget",
+          "name": "System.CommandLine",
+          "version": "0.3.0-alpha.20054.1",
+          "framework": "",
+          "purl": "pkg:nuget/System.CommandLine@0.3.0-alpha.20054.1",
+          "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/0.3.0-alpha.20054.1"
+        }
+      ]
     }
   ]
 }

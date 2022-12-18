@@ -16,10 +16,72 @@
   "packages": [
     {
       "name": "EwDavidForms.Android",
-      "version": "2.0.2",
+      "version": "1.0.0",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
       "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter",
+            "version": "4.3.0",
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter.Analytics",
+            "version": "4.3.0",
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AppCenter.Analytics@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AppCenter",
+              "version": "4.3.0",
+              "framework": "",
+              "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AppCenter.Crashes",
+            "version": "4.3.0",
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AppCenter.Crashes@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0"
+          },
+          "dependencies": [
+            {
+              "type": "nuget",
+              "name": "Microsoft.AppCenter",
+              "version": "4.3.0",
+              "framework": "",
+              "purl": "pkg:nuget/Microsoft.AppCenter@4.3.0",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Xamarin.CommunityToolkit",
+            "version": "2.0.2",
+            "framework": "",
+            "purl": "pkg:nuget/Xamarin.CommunityToolkit@2.0.2",
+            "download_url": "https://www.nuget.org/api/v2/package/Xamarin.CommunityToolkit/2.0.2"
+          },
+          "dependencies": []
+        },
         {
           "package": {
             "type": "nuget",
@@ -77,6 +139,30 @@
         }
       ],
       "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.AppCenter.Analytics",
+          "version": "4.3.0",
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AppCenter.Analytics@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AppCenter.Crashes",
+          "version": "4.3.0",
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AppCenter.Crashes@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Xamarin.CommunityToolkit",
+          "version": "2.0.2",
+          "framework": "",
+          "purl": "pkg:nuget/Xamarin.CommunityToolkit@2.0.2",
+          "download_url": "https://www.nuget.org/api/v2/package/Xamarin.CommunityToolkit/2.0.2"
+        },
         {
           "type": "nuget",
           "name": "Xamarin.Forms",

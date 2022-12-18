@@ -16,11 +16,51 @@
   "packages": [
     {
       "name": "UWPMigrationSample2",
-      "version": "6.2.13",
+      "version": "1.0.0",
       "datasource_id": "dotnet-project-xml",
       "project_file": "/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.csproj",
-      "packages": [],
-      "dependencies": []
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.UniversalWindowsPlatform",
+            "version": "6.2.13",
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.2.13",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.2.13"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Globalization",
+            "version": "4.3.0",
+            "framework": "",
+            "purl": "pkg:nuget/System.Globalization@4.3.0",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.UniversalWindowsPlatform",
+          "version": "6.2.13",
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.UniversalWindowsPlatform@6.2.13",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/6.2.13"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Globalization",
+          "version": "4.3.0",
+          "framework": "",
+          "purl": "pkg:nuget/System.Globalization@4.3.0",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Globalization/4.3.0"
+        }
+      ]
     }
   ]
 }

@@ -7,17 +7,17 @@ namespace NugetInspector;
 /// </summary>
 public class ScanHeader
 {
-    public string tool_name = "nuget-inspector";
-    public string tool_homepageurl = "https://github.com/nexB/nuget-inspector";
-    public string tool_version = "0.7.0";
-    public List<string> options;
+    public string tool_name  { get; set; }= "nuget-inspector";
+    public string tool_homepageurl  { get; set; }= "https://github.com/nexB/nuget-inspector";
+    public string tool_version  { get; set; }= "0.7.0";
+    public List<string> options { get; set; }
 
     public string notice = "Dependency tree generated with nuget-inspector.\n" +
                            "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
                            "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
 
-    public List<string> warnings = new();
-    public List<string> errors = new();
+    public List<string> warnings  { get; set; } = new();
+    public List<string> errors  { get; set; } = new();
 
     public ScanHeader(Options options)
     {
@@ -28,15 +28,15 @@ public class ScanHeader
 public class ScanOutput
 {
     [JsonProperty(propertyName: "headers")]
-    public List<ScanHeader> Headers = new();
+    public List<ScanHeader> Headers  { get; set; } = new();
 
-    // "type": "file",
-    // "path": "/home/tg1999/Desktop/python-inspector-1/tests/data/azure-devops.req.txt",
+    // "type": "file", "path": "/home/tg1999/Desktop/python-inspector-1/tests/data/azure-devops.req.txt",
     // "package_data": [
-    [JsonProperty(propertyName: "files")] public List<Package?> Files = new();
+    [JsonProperty(propertyName: "files")]
+    public List<Package?> Files  { get; set; } = new();
 
     [JsonProperty(propertyName: "packages")]
-    public List<Package?> Packages = new();
+    public List<Package?> Packages  { get; set; } = new();
 }
 
 internal class OutputFormatJson

@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <!-- Found on https://github.com/dotnet/coreclr/blob/master/tests/src/Common/CoreFX/TestFileSetup/CoreFX.TestUtils.TestFileSetup.csproj -->
-  <Import Project="..\..\..\..\..\dependencies.props" />
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyName>Project-Name</AssemblyName>
