@@ -19,8 +19,124 @@
       "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection/Microsoft.ComponentDetection.csproj",
-      "packages": [],
-      "dependencies": []
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Threading.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MinVer@",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StyleCop.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/StyleCop.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Threading.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MinVer@",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+        },
+        {
+          "type": "nuget",
+          "name": "StyleCop.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+        },
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        }
+      ]
     }
   ]
 }

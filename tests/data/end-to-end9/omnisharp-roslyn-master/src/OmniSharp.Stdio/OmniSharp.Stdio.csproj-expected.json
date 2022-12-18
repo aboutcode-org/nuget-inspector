@@ -23,6 +23,28 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.NETFramework.ReferenceAssemblies",
             "version": "1.0.0",
             "framework": "",
@@ -204,6 +226,22 @@
         }
       ],
       "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
         {
           "type": "nuget",
           "name": "Microsoft.NETFramework.ReferenceAssemblies",

@@ -23,6 +23,28 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
             "version": "2.2.0",
             "framework": "",
@@ -11556,6 +11578,17 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.AspNetCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.AspNetCore.Http.Features",
             "version": "2.2.0",
             "framework": "",
@@ -13816,6 +13849,22 @@
       "dependencies": [
         {
           "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
           "name": "AspNetCore.HealthChecks.MySql",
           "version": "2.2.0",
           "framework": "",
@@ -13909,6 +13958,14 @@
           "framework": "",
           "purl": "pkg:nuget/log4net@2.0.8",
           "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
         },
         {
           "type": "nuget",

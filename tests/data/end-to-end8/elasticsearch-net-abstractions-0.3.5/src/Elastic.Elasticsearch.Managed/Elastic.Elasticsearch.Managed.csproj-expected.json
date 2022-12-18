@@ -106,6 +106,28 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Proc",
             "version": "0.6.1",
             "framework": "",
@@ -158,6 +180,22 @@
           "framework": "",
           "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/ConfigureAwaitChecker.Analyzer/4.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
         },
         {
           "type": "nuget",

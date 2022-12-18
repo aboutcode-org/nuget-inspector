@@ -54,11 +54,44 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "DotNet.Testcontainers",
             "version": "1.4.0",
             "framework": "",
             "purl": "pkg:nuget/DotNet.Testcontainers@1.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/DotNet.Testcontainers/1.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Bar.UI",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Bar.UI@",
+            "download_url": "https://www.nuget.org/api/v2/package/Bar.UI/"
           },
           "dependencies": []
         }
@@ -74,11 +107,35 @@
         },
         {
           "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
           "name": "DotNet.Testcontainers",
           "version": "1.4.0",
           "framework": "",
           "purl": "pkg:nuget/DotNet.Testcontainers@1.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/DotNet.Testcontainers/1.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition/"
+        },
+        {
+          "type": "nuget",
+          "name": "Bar.UI",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Bar.UI@",
+          "download_url": "https://www.nuget.org/api/v2/package/Bar.UI/"
         }
       ]
     }

@@ -19,8 +19,314 @@
       "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
-      "packages": [],
-      "dependencies": []
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Threading.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MinVer@",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StyleCop.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/StyleCop.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Docker.DotNet",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Docker.DotNet@",
+            "download_url": "https://www.nuget.org/api/v2/package/Docker.DotNet/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNet.WebApi.Client",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AspNet.WebApi.Client@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Newtonsoft.Json@",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Semver",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Semver@",
+            "download_url": "https://www.nuget.org/api/v2/package/Semver/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.AttributedModel",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.AttributedModel@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.AttributedModel/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.Convention",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.Convention@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Convention/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.Hosting",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.Hosting@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Hosting/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.Runtime",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.Runtime@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Runtime/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.TypedParts",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.TypedParts@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.TypedParts/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reactive",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Reactive@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Threading.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MinVer@",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+        },
+        {
+          "type": "nuget",
+          "name": "StyleCop.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+        },
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
+          "name": "Docker.DotNet",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Docker.DotNet@",
+          "download_url": "https://www.nuget.org/api/v2/package/Docker.DotNet/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNet.WebApi.Client",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AspNet.WebApi.Client@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/"
+        },
+        {
+          "type": "nuget",
+          "name": "Semver",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Semver@",
+          "download_url": "https://www.nuget.org/api/v2/package/Semver/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.AttributedModel",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.AttributedModel@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.AttributedModel/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.Convention",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.Convention@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Convention/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.Hosting",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.Hosting@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Hosting/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.Runtime",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.Runtime@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.Runtime/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.TypedParts",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.TypedParts@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.TypedParts/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Reactive",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Reactive@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+        }
+      ]
     }
   ]
 }

@@ -23,11 +23,44 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "System.ValueTuple",
             "version": "4.4.0",
             "framework": "",
             "purl": "pkg:nuget/System.ValueTuple@4.4.0",
             "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FSharp.Core",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/FSharp.Core@",
+            "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/"
           },
           "dependencies": []
         },
@@ -5077,6 +5110,17 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.AspNetCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.Win32.Primitives",
             "version": "4.3.0",
             "framework": "",
@@ -9053,11 +9097,35 @@
       "dependencies": [
         {
           "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
           "name": "System.ValueTuple",
           "version": "4.4.0",
           "framework": "",
           "purl": "pkg:nuget/System.ValueTuple@4.4.0",
           "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.4.0"
+        },
+        {
+          "type": "nuget",
+          "name": "FSharp.Core",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/FSharp.Core@",
+          "download_url": "https://www.nuget.org/api/v2/package/FSharp.Core/"
         },
         {
           "type": "nuget",
@@ -9074,6 +9142,14 @@
           "framework": "",
           "purl": "pkg:nuget/log4net@2.0.8",
           "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.8"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
         },
         {
           "type": "nuget",

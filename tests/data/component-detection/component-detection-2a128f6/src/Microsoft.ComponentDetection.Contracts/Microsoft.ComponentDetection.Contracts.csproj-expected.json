@@ -23,6 +23,50 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.VisualStudio.Threading.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MinVer@",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StyleCop.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/StyleCop.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.SourceLink.GitHub",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Microsoft.NETCore.Platforms",
             "version": "1.1.0",
             "framework": "",
@@ -50,9 +94,118 @@
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.Platforms/1.1.0"
             }
           ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Newtonsoft.Json",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Newtonsoft.Json@",
+            "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "packageurl-dotnet",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/packageurl-dotnet@",
+            "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Composition.AttributedModel",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Composition.AttributedModel@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Composition.AttributedModel/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Memory",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Memory@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Memory/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reactive",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Reactive@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Threading.Tasks.Dataflow",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Threading.Tasks.Dataflow@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Dataflow/"
+          },
+          "dependencies": []
         }
       ],
       "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Threading.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MinVer@",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+        },
+        {
+          "type": "nuget",
+          "name": "StyleCop.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.SourceLink.GitHub",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/"
+        },
         {
           "type": "nuget",
           "name": "NETStandard.Library",
@@ -60,6 +213,62 @@
           "framework": "",
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
+          "name": "Newtonsoft.Json",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/"
+        },
+        {
+          "type": "nuget",
+          "name": "packageurl-dotnet",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/packageurl-dotnet@",
+          "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Composition.AttributedModel",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Composition.AttributedModel@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Composition.AttributedModel/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Memory",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Memory@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Memory/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Reactive",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Reactive@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Threading.Tasks.Dataflow",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Threading.Tasks.Dataflow@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Threading.Tasks.Dataflow/"
         }
       ]
     }

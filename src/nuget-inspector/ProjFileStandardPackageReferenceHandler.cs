@@ -39,20 +39,22 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
                 var versionMetaData = reference.Metadata
                     .Where(predicate: meta => meta.Name == "Version")
                     .FirstOrDefault();
-                VersionRange? version;
-                if (versionMetaData is not null &&
-                    VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version))
+                VersionRange? version_range;
+                if (versionMetaData is not null)
                 {
-                    var dep = new Dependency(name: reference.EvaluatedInclude, version_range: version,
-                        framework: ProjectTargetFramework);
-                    deps.Add(item: dep);
+                    VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version_range);
                 }
                 else
                 {
                     if (Config.TRACE)
-                        Console.WriteLine(value:
-                            $"Framework dependency had no version, will not be included: {reference.EvaluatedInclude}");
+                        Console.WriteLine($"Project reference without version: {reference.EvaluatedInclude}");
+                    version_range = null;
                 }
+                var dep = new Dependency(
+                    name: reference.EvaluatedInclude, 
+                    version_range: version_range,
+                    framework: ProjectTargetFramework);
+                deps.Add(item: dep);
             }
 
             foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "Reference"))

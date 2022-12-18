@@ -23,6 +23,28 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "MediatR",
             "version": "5.1.0",
             "framework": "",
@@ -30,9 +52,36 @@
             "download_url": "https://www.nuget.org/api/v2/package/MediatR/5.1.0"
           },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.AspNetCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
+          },
+          "dependencies": []
         }
       ],
       "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
         {
           "type": "nuget",
           "name": "MediatR",
@@ -40,6 +89,14 @@
           "framework": "",
           "purl": "pkg:nuget/MediatR@5.1.0",
           "download_url": "https://www.nuget.org/api/v2/package/MediatR/5.1.0"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.AspNetCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.AspNetCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.App/"
         }
       ]
     }

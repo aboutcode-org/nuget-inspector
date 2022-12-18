@@ -54,6 +54,17 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "3.5.8",
             "framework": "",
@@ -72,6 +83,28 @@
             "download_url": "https://www.nuget.org/api/v2/package/NotFound/2.4.3"
           },
           "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NoVersionNotFound",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NoVersionNotFound@",
+            "download_url": "https://www.nuget.org/api/v2/package/NoVersionNotFound/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NUnit",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NUnit@",
+            "download_url": "https://www.nuget.org/api/v2/package/NUnit/"
+          },
+          "dependencies": []
         }
       ],
       "dependencies": [
@@ -82,6 +115,14 @@
           "framework": "",
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
         },
         {
           "type": "nuget",
@@ -98,6 +139,22 @@
           "framework": "",
           "purl": "pkg:nuget/NotFound@2.4.3",
           "download_url": "https://www.nuget.org/api/v2/package/NotFound/2.4.3"
+        },
+        {
+          "type": "nuget",
+          "name": "NoVersionNotFound",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NoVersionNotFound@",
+          "download_url": "https://www.nuget.org/api/v2/package/NoVersionNotFound/"
+        },
+        {
+          "type": "nuget",
+          "name": "NUnit",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NUnit@",
+          "download_url": "https://www.nuget.org/api/v2/package/NUnit/"
         }
       ]
     }

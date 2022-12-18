@@ -23,6 +23,28 @@
         {
           "package": {
             "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Humanizer.Core",
             "version": "2.2.0",
             "framework": "",
@@ -1567,9 +1589,47 @@
               "download_url": "https://www.nuget.org/api/v2/package/System.ValueTuple/4.5.0"
             }
           ]
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "log4net",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/log4net@",
+            "download_url": "https://www.nuget.org/api/v2/package/log4net/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "RestSharp",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/RestSharp@",
+            "download_url": "https://www.nuget.org/api/v2/package/RestSharp/"
+          },
+          "dependencies": []
         }
       ],
       "dependencies": [
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
         {
           "type": "nuget",
           "name": "Humanizer",
@@ -1601,6 +1661,22 @@
           "framework": "",
           "purl": "pkg:nuget/Microsoft.Extensions.Logging@6.0.0",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging/6.0.0"
+        },
+        {
+          "type": "nuget",
+          "name": "log4net",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/log4net@",
+          "download_url": "https://www.nuget.org/api/v2/package/log4net/"
+        },
+        {
+          "type": "nuget",
+          "name": "RestSharp",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/RestSharp@",
+          "download_url": "https://www.nuget.org/api/v2/package/RestSharp/"
         }
       ]
     }

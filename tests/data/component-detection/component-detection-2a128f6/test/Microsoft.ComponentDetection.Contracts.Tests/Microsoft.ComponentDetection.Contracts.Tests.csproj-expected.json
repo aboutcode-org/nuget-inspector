@@ -19,8 +19,257 @@
       "version": null,
       "datasource_id": "dotnet-project-reference",
       "project_file": "/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.Contracts.Tests/Microsoft.ComponentDetection.Contracts.Tests.csproj",
-      "packages": [],
-      "dependencies": []
+      "packages": [
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.VisualStudio.Threading.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MinVer",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MinVer@",
+            "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "StyleCop.Analyzers",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/StyleCop.Analyzers@",
+            "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestAdapter",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MSTest.TestAdapter@",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "MSTest.TestFramework",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/MSTest.TestFramework@",
+            "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Moq",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Moq@",
+            "download_url": "https://www.nuget.org/api/v2/package/Moq/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "FluentAssertions",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/FluentAssertions@",
+            "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Faker.net",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Faker.net@",
+            "download_url": "https://www.nuget.org/api/v2/package/Faker.net/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "NETStandard.Library",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/NETStandard.Library@",
+            "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "Microsoft.NET.Test.Sdk",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "System.Reactive",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/System.Reactive@",
+            "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
+            "name": "packageurl-dotnet",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/packageurl-dotnet@",
+            "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/"
+          },
+          "dependencies": []
+        }
+      ],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "name": "Microsoft.VisualStudio.Threading.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.VisualStudio.Threading.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.VisualStudio.Threading.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "MinVer",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MinVer@",
+          "download_url": "https://www.nuget.org/api/v2/package/MinVer/"
+        },
+        {
+          "type": "nuget",
+          "name": "StyleCop.Analyzers",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers@",
+          "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestAdapter",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MSTest.TestAdapter@",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/"
+        },
+        {
+          "type": "nuget",
+          "name": "MSTest.TestFramework",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/MSTest.TestFramework@",
+          "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/"
+        },
+        {
+          "type": "nuget",
+          "name": "Moq",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Moq@",
+          "download_url": "https://www.nuget.org/api/v2/package/Moq/"
+        },
+        {
+          "type": "nuget",
+          "name": "FluentAssertions",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/FluentAssertions@",
+          "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/"
+        },
+        {
+          "type": "nuget",
+          "name": "Faker.net",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Faker.net@",
+          "download_url": "https://www.nuget.org/api/v2/package/Faker.net/"
+        },
+        {
+          "type": "nuget",
+          "name": "NETStandard.Library",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/NETStandard.Library@",
+          "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NET.Test.Sdk",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NET.Test.Sdk@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/"
+        },
+        {
+          "type": "nuget",
+          "name": "System.Reactive",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/System.Reactive@",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/"
+        },
+        {
+          "type": "nuget",
+          "name": "packageurl-dotnet",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/packageurl-dotnet@",
+          "download_url": "https://www.nuget.org/api/v2/package/packageurl-dotnet/"
+        }
+      ]
     }
   ]
 }

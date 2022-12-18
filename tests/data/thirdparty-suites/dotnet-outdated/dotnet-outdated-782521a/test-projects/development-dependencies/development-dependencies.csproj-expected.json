@@ -54,6 +54,17 @@
         {
           "package": {
             "type": "nuget",
+            "name": "Microsoft.NETCore.App",
+            "version": null,
+            "framework": "",
+            "purl": "pkg:nuget/Microsoft.NETCore.App@",
+            "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
+          },
+          "dependencies": []
+        },
+        {
+          "package": {
+            "type": "nuget",
             "name": "Newtonsoft.Json",
             "version": "11.0.1",
             "framework": "",
@@ -115,6 +126,14 @@
           "framework": "",
           "purl": "pkg:nuget/NETStandard.Library@2.0.3",
           "download_url": "https://www.nuget.org/api/v2/package/NETStandard.Library/2.0.3"
+        },
+        {
+          "type": "nuget",
+          "name": "Microsoft.NETCore.App",
+          "version": null,
+          "framework": "",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/"
         },
         {
           "type": "nuget",
