@@ -159,7 +159,11 @@ namespace NugetInspector
             this.framework = framework;
 
             // FIXME: support having no version
-            purl = $"pkg:nuget/{name}@{version}";
+            if (string.IsNullOrWhiteSpace(version))
+                purl = $"pkg:nuget/{name}";
+            else
+                purl = $"pkg:nuget/{name}@{version}";
+            
             download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
         }
 
