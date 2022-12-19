@@ -12,7 +12,6 @@ import subprocess
 from pathlib import Path
 
 import pytest
-from commoncode import fileutils
 from commoncode.testcase import FileDrivenTesting
 
 from testing_utils import REGEN_TEST_FIXTURES
@@ -33,7 +32,6 @@ failing_paths = (
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables-resolved/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
-    "thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/noproject/noproject.csproj",
     "thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
     "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
     "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
@@ -44,13 +42,8 @@ failing_paths = (
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
     "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
-    "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.AnsiSql.Tests/DataTables.AspNet.Extensions.AnsiSql.Tests.xproj",
     "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
-    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
-    "legacy-xproj/sunnydrive-7f6e4b/src/MusicStore.Spa/MusicStore.Spa.xproj",
-    "kickoff/KickOff-7a4f83a/src/KickOff.Host.Windows/KickOff.Host.Windows.xproj",
-    "kickoff/KickOff-7a4f83a/src/KickOff/KickOff.xproj",
-    "kickoff/KickOff-7a4f83a/src/Examples/InternalPreconfiguredPipeline/InternalPreconfiguredPipeline.xproj",
+
 )
 
 
@@ -69,14 +62,36 @@ project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj"
 
 
 @pytest.mark.parametrize("test_path", project_tests)
-def test_nuget_inspector_end_to_end_with_projects(test_path, regen=REGEN_TEST_FIXTURES):
-    check_nuget_inspector_end_to_end(test_path, regen)
+def test_nuget_inspector_end_to_end_with_projects(test_path):
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
+
+
+def test_nuget_inspector_end_to_end_with_target_framework():
+    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "netcoreapp3.1" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_with_target_framework2():
+    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net45" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
 
 
 @pytest.mark.xfail(reason="Failing tests to review")
 @pytest.mark.parametrize("test_path", failing_paths)
-def test_nuget_inspector_end_to_end_with_failing(test_path, regen=REGEN_TEST_FIXTURES):
-    check_nuget_inspector_end_to_end(test_path, regen)
+def test_nuget_inspector_end_to_end_with_failing(test_path):
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
 def clean_text_file(location, path=test_env.test_data_dir):
@@ -93,15 +108,23 @@ def clean_text_file(location, path=test_env.test_data_dir):
     return text
 
 
-def load_cleaned_json(location):
+def load_and_clean_json(location):
     """
     Clean a JSON results file at ``location`` from harcoded ``path`` and
     """
     text = clean_text_file(location)
-    return json.loads(text)
+    data = json.loads(text)
+    header = data["headers"][0]
+
+    # this can change on each version
+    header["tool_version"] = "0.0.0"
+    # this can change on each run
+    options = [h for h in header["options"] if not h.startswith("--json")]
+    header["options"] = options
+    return data
 
 
-def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
+def check_nuget_inspector_end_to_end(test_path, expected_path=None, extra_args="", regen=REGEN_TEST_FIXTURES):
     """
     Run nuget-inspector on ``test_path`` string and check that results match the
     expected ``test_path``-expected.json file.
@@ -113,8 +136,8 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
         f"{NUGET_INSPECTOR} "
         f"--project-file \"{test_loc}\" "
         f"--json \"{result_file}\" "
+        +extra_args
     ]
-
     try:
         subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError as e:
@@ -125,16 +148,19 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
             "with output:", e.output.decode("utf-8"),
         ) from e
 
-    expected_path = test_path + "-expected.json"
+    if expected_path is None:
+        expected_path = test_path + "-expected.json"
+
     expected_file = test_env.get_test_loc(expected_path, must_exist=False)
 
+    clean_text_file(location=result_file)
+    result = load_and_clean_json(result_file)
     if regen:
-        clean_text_file(location=result_file)
-        fileutils.copyfile(src=result_file, dst=expected_file)
+        with open(expected_file, "w") as o:
+            o.write(json.dumps(result, indent=2))
     else:
-        result = load_cleaned_json(result_file)
-        with open(expected_file) as ef:
-            expected = json.load(ef)
+        expected = load_and_clean_json(expected_file)
+
         try:
             assert result == expected
         except:

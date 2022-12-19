@@ -1,79 +1,73 @@
 ﻿using Newtonsoft.Json;
 using NuGet.Frameworks;
+using NuGet.Packaging;
+using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
 namespace NugetInspector
 {
     public class Dependency
     {
-        public string? Name;
-        public NuGetFramework? Framework;
-        public VersionRange? VersionRange;
+        public string? name;
+        public NuGetFramework? framework;
+        public VersionRange? version_range;
 
         public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null)
         {
-            Framework = framework;
-            Name = name;
-            VersionRange = version_range;
+            this.framework = framework;
+            this.name = name;
+            this.version_range = version_range;
         }
 
         public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework)
         {
-            Framework = framework;
-            Name = dependency.Id;
-            VersionRange = dependency.VersionRange;
+            this.framework = framework;
+            name = dependency.Id;
+            version_range = dependency.VersionRange;
         }
 
         /// <summary>
-        /// Return an empty PackageSet using this package.
+        /// Return a new empty BasePackageWithDeps using this package.
         /// </summary>
         /// <returns></returns>
-        public PackageSet ToEmptyPackageSet()
+        public BasePackage CreateEmptyBasePackage()
         {
-            var package_set = new PackageSet
-            {
-                PackageId = new BasePackage(
-                    name: Name,
-                    version: VersionRange?.MinVersion.ToNormalizedString(),
-                    framework: Framework?.ToString()
-                )
-            };
-            return package_set;
+            return new BasePackage(
+                name: name!,
+                version: version_range?.MinVersion.ToNormalizedString(),
+                framework: framework?.ToString()
+            );
         }
     }
 
-    public class PackageSetBuilder
+    public class PackageBuilder
     {
-        private readonly Dictionary<BasePackage, PackageSet> packageSets = new();
-        private readonly Dictionary<BasePackage, VersionPair> versions = new();
+        private readonly Dictionary<BasePackage, BasePackage> base_package_deps_by_base_package = new();
+        private readonly Dictionary<BasePackage, VersionPair> versions_pair_by_base_package = new();
 
 
-        public bool DoesPackageExist(BasePackage id)
+        public bool DoesPackageExist(BasePackage package)
         {
-            return packageSets.ContainsKey(key: id);
+            return base_package_deps_by_base_package.ContainsKey(key: package);
         }
 
-        public PackageSet GetOrCreatePackageSet(BasePackage package)
+        public BasePackage GetOrCreateBasePackage(BasePackage package)
         {
-            if (packageSets.TryGetValue(key: package, value: out var packageSet))
+            if (base_package_deps_by_base_package.TryGetValue(key: package, value: out var package_with_deps))
             {
-                return packageSet;
+                return package_with_deps;
             }
 
-            packageSet = new PackageSet
-            {
-                PackageId = package,
-                Dependencies = new HashSet<BasePackage?>()
-            };
-            packageSets[key: package] = packageSet;
+            package_with_deps = BasePackage.FromBasePackage(package: package, dependencies:new List<BasePackage>());
+            base_package_deps_by_base_package[key: package] = package_with_deps;
 
-            NuGetVersion.TryParse(value: package.Version, version: out var version);
-            if (package.Version != null)
+            NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
+            if (package.version != null)
             {
-                versions[key: package] = new VersionPair(rawVersion: package.Version, version: version);
+                versions_pair_by_base_package[key: package] = new VersionPair(rawVersion: package.version, version: version);
             }
 
-            return packageSet;
+            return package_with_deps;
         }
 
         /// <summary>
@@ -82,7 +76,7 @@ namespace NugetInspector
         /// <param name="id"></param>
         public void AddOrUpdatePackage(BasePackage id)
         {
-            GetOrCreatePackageSet(package: id);
+            GetOrCreateBasePackage(package: id);
         }
 
         /// <summary>
@@ -92,8 +86,8 @@ namespace NugetInspector
         /// <param name="dependency"></param>
         public void AddOrUpdatePackage(BasePackage id, BasePackage dependency)
         {
-            var packageSet = GetOrCreatePackageSet(package: id);
-            packageSet.Dependencies.Add(item: dependency);
+            var packageSet = GetOrCreateBasePackage(package: id);
+            packageSet.dependencies.Add(item: dependency);
         }
 
         /// <summary>
@@ -101,165 +95,237 @@ namespace NugetInspector
         /// </summary>
         /// <param name="id"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage id, HashSet<BasePackage?> dependencies)
+        public void AddOrUpdatePackage(BasePackage id, List<BasePackage?> dependencies)
         {
-            var packageSet = GetOrCreatePackageSet(package: id);
-            packageSet.Dependencies.UnionWith(other: dependencies);
+            var packageWithDeps = GetOrCreateBasePackage(package: id);
+            if (dependencies != null) packageWithDeps.dependencies.AddRange(dependencies!);
+            packageWithDeps.dependencies = packageWithDeps.dependencies.Distinct().ToList();
         }
 
-        public List<PackageSet> GetPackageList()
+        public List<BasePackage> GetPackageList()
         {
-            return packageSets.Values.ToList();
+            return base_package_deps_by_base_package.Values.ToList();
         }
 
         public string? GetResolvedVersion(string name, VersionRange range)
         {
-            var allVersions = versions.Keys.Where(predicate: key => key.Name == name)
-                .Select(selector: key => versions[key: key]);
-            var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.Version));
-            foreach (var pair in versions)
-                if (pair.Key.Name == name && pair.Value.Version == best)
-                    return pair.Key.Version;
+            var allVersions = versions_pair_by_base_package.Keys.Where(predicate: key => key.name == name)
+                .Select(selector: key => versions_pair_by_base_package[key: key]);
+            var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.version));
+            foreach (var pair in versions_pair_by_base_package)
+                if (pair.Key.name == name && pair.Value.version == best)
+                    return pair.Key.version;
 
             return null;
         }
 
         private class VersionPair
         {
-            public string RawVersion;
-            public NuGetVersion Version;
+            public string raw_version;
+            public NuGetVersion version;
 
             public VersionPair(string rawVersion, NuGetVersion version)
             {
-                RawVersion = rawVersion;
-                Version = version;
+                raw_version = rawVersion;
+                this.version = version;
             }
         }
     }
 
-    public class PackageSet
-    {
-        [JsonProperty(propertyName: "package")]
-        public BasePackage? PackageId;
 
-        [JsonProperty(propertyName: "dependencies")]
-        public HashSet<BasePackage?> Dependencies = new();
-    }
-
+    /// <summary>
+    /// Package data object using purl as identifying attributes as
+    /// specified here https://github.com/package-url/purl-spec
+    /// This model is essentially derived from ScanCode Toolkit Package/PackageData.
+    /// This is used to represent the top-level project.
+    /// </summary>
     public class BasePackage
     {
-        [JsonProperty(propertyName: "type")] public string Type = "nuget";
-        [JsonProperty(propertyName: "name")] public string? Name { get; set; }
+        public string type { get; set; } = "nuget";
+        [JsonProperty(propertyName: "namespace")]
+        public string name_space { get; set; } = "";
+        public string name { get; set; } = "";
+        public string? version { get; set; } = "";
+        public string qualifiers { get; set; } = "";
+        public string subpath { get; set; } = "";
+        public string purl { get; set; } = "";
 
-        [JsonProperty(propertyName: "version")]
-        public string? Version { get; set; }
+        public string primary_language { get; set; } = "C#";
+        public string description { get; set; } = "";
+        public string release_date { get; set; } = "";
+        public List<Party> parties { get; set; } = new();
+        public List<string> keywords { get; set; } = new();
+        public string homepage_url { get; set; } = "";
+        public string download_url { get; set; } = "";
+        public int size { get; set; }
+        public string sha1 { get; set; } = "";
+        public string md5 { get; set; } = "";
+        public string sha256 { get; set; } = "";
+        public string sha512 { get; set; } = "";
+        public string bug_tracking_url { get; set; } = "";
+        public string code_view_url { get; set; } = "";
+        public string vcs_url { get; set; } = "";
+        public string copyright { get; set; } = "";
+        public string license_expression { get; set; } = "";
+        public string declared_license { get; set; } = "";
+        public string notice_text { get; set; } = "";
+        public List<string> source_packages { get; set; } = new();
+        public Dictionary<string, string> extra_data { get; set; } = new();
+        public string repository_homepage_url { get; set; } = "";
+        public string repository_download_url { get; set; } = "";
+        public string api_data_url { get; set; } = "";
+        public string datasource_id { get; set; } = "";
+        public string datafile_path { get; set; } = "";
 
-        [JsonProperty(propertyName: "framework")]
-        public string? Framework { get; set; }
+        // public List<DependentPackage> dependencies { get; set; } = new();
+        public List<BasePackage> packages { get; set; } = new();
+        public List<BasePackage> dependencies { get; set; } = new();
 
-        [JsonProperty(propertyName: "purl")] public string Purl { get; set; }
-
-        [JsonProperty(propertyName: "download_url")]
-        public string DownloadUrl { get; set; }
-
-        public BasePackage(string? name, string? version, string? framework)
+        public BasePackage(string name, string? version, string? framework="", string? datafile_path="")
         {
-            Name = name;
-            Version = version;
-            Framework = framework;
-
-            // FIXME: support having no version
-            Purl = $"pkg:nuget/{name}@{version}";
-            DownloadUrl = $"https://www.nuget.org/api/v2/package/{name}/{version}";
+            this.name = name;
+            this.version = version;
+            if (!string.IsNullOrWhiteSpace(framework))
+                this.version = version;
+            if (!string.IsNullOrWhiteSpace(datafile_path))
+                this.datafile_path = datafile_path;
+            if (!string.IsNullOrWhiteSpace(framework))
+                extra_data["framework"] = framework;
         }
 
-        public BasePackage(string? name, string? version)
+        public static BasePackage FromBasePackage(BasePackage package, List<BasePackage> dependencies)
         {
-            Name = name;
-            Version = version;
-            // FIXME: support having no version
-            Purl = $"pkg:nuget/{name}@{version}";
-            DownloadUrl = $"https://www.nuget.org/api/v2/package/{name}/{version}";
+            var bpwd = new BasePackage(name: package.name, version: package.version);
+            bpwd.extra_data = package.extra_data;
+            bpwd.dependencies = dependencies;
+            return bpwd;
         }
-
-        public override int GetHashCode()
+        
+        protected bool Equals(BasePackage other)
         {
-            int hash = 37;
-            hash = (hash * 7);
-            hash += Name == null ? 0 : Name.GetHashCode();
-            hash = (hash * 7);
-            hash += Version == null ? 0 : Version.GetHashCode();
-            hash = (hash * 7);
-            hash += Framework == null ? 0 : Framework.GetHashCode();
-            return hash;
+            return (
+                type == other.type 
+                && name_space == other.name_space
+                && name == other.name 
+                && version == other.version 
+                && qualifiers == other.qualifiers 
+                && subpath == other.subpath 
+            );
         }
 
         public override bool Equals(object? obj)
         {
-            if (obj == null || GetType() != obj.GetType())
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((BasePackage)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
+        }
+
+        
+        /// <summary>
+        /// Update this Package instance using the NuGet API
+        /// </summary>
+        public void Update(NugetApi nugetApi)
+        {
+            IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
+            Update(meta);
+        }
+        
+        /// <summary>
+        /// Update this Package instance from an IPackageSearchMetadata
+        /// </summary>
+        /// <param name="metadata"></param>
+        public void Update(IPackageSearchMetadata? metadata)
+        {
+            if (metadata == null)
+                return;
+
+            // set the purl
+            string meta_name = metadata.Identity.Id;
+            string meta_version = metadata.Identity.Version.ToString();
+            if (string.IsNullOrWhiteSpace(meta_version))
+                purl = $"pkg:nuget/{meta_name}";
+            else
+                purl = $"pkg:nuget/{meta_name}@{meta_version}";
+
+            // Update the declared license
+            List<string> meta_declared_licenses = new();
+            Uri license_url = metadata.LicenseUrl;
+            if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
             {
-                return false;
+                meta_declared_licenses.Add( $"LicenseUrl: {license_url}");
+            }
+            LicenseMetadata license_meta = metadata.LicenseMetadata;
+            if (license_meta != null)
+            {
+
+                meta_declared_licenses.Add($"LicenseType: {license_meta.Type.ToString()}");
+                if (!string.IsNullOrWhiteSpace(license_meta.License))
+                    meta_declared_licenses.Add($"License: {license_meta.License}");
+                var expression = license_meta.LicenseExpression;
+                if (expression !=null)
+                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression.ToString()}");
+            }
+            declared_license = string.Join("\n", meta_declared_licenses);
+            
+            // Update the parties
+            string authors = metadata.Authors;
+            if (!string.IsNullOrWhiteSpace(authors) && parties.Count == 0)
+            {
+                Party party = new()
+                {
+                    type = "organization",
+                    role = "author",
+                    name = authors,
+                };
+                parties.Add(party);
             }
 
-            var other = (BasePackage)obj;
-            if (Name == null)
-            {
-                if (other.Name != null) return false;
-            }
-            else if (!Name.Equals(value: other.Name))
-            {
-                return false;
-            }
+            // Update misc and URLs
+            primary_language = "C#";
+            description = metadata.Description;
+            //keywords = null;
 
-            if (Version == null)
-            {
-                if (other.Version != null) return false;
-            }
-            else if (!Version.Equals(value: other.Version))
-            {
-                return false;
-            }
+            // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
+            homepage_url = metadata.ProjectUrl.ToString();
+            download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
+            repository_homepage_url = metadata.PackageDetailsUrl.ToString();
+            repository_download_url = download_url;
+            api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{meta_name.ToLower()}/{meta_version.ToLower()}.json";
 
-            if (Framework == null)
-            {
-                if (other.Framework != null) return false;
-            }
-            else if (!Framework.Equals(value: other.Framework))
-            {
-                return false;
-            }
-
-            return true;
+            // source_packages = null;
+            // dependencies = null;
         }
     }
-
+    
     /// <summary>
-    /// This is a core data structure
+    /// A party is a person, project or organization related to a package.
     /// </summary>
-    public class Package
+    public class Party
     {
-        [JsonProperty(propertyName: "project_name")]
-        public string? Name { get; set; }
-
-        [JsonProperty(propertyName: "project_version")]
-        public string? Version { get; set; }
-
-        [JsonProperty(propertyName: "datasource_id")]
-        public string DatasourceId { get; set; } = null!;
-
-        [JsonProperty(propertyName: "project_file")]
-        public string SourcePath { get; set; } = null!;
-
-        [JsonProperty(propertyName: "outputs")]
-        public List<string> OutputPaths { get; set; } = new();
-
-        [JsonProperty(propertyName: "packages")]
-        public List<PackageSet> Packages { get; set; } = new();
-
-        [JsonProperty(propertyName: "dependencies")]
-        public List<BasePackage> Dependencies { get; set; } = new();
-
-        [JsonProperty(propertyName: "children")]
-        public List<Package?> Children { get; set; } = new();
+        //One of  'person', 'project' or 'organization'
+        public string type { get; set; } = "";
+        public string role { get; set; } = "";
+        public string? name { get; set; } = "";
+        public string? email { get; set; } = "";
+        public string? url { get; set; } = "";
     }
+
+    public class DependentPackage
+    {
+        public string purl { get; set; }= "";
+        public string extracted_requirement { get; set; } = "";
+        public string scope { get; set; } = "";
+        public bool is_runtime { get; set;}
+        public bool is_optional { get; set; }
+        public bool is_resolved { get; set; }
+        public BasePackage? resolved_package { get; set; }
+        public Dictionary<string, string> extra_data { get; set; } = new();
+    }
+
 }

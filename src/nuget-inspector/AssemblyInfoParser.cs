@@ -11,8 +11,8 @@ public class AssemblyInfoParser
 {
     public class AssemblyVersion
     {
-        public string? Version { get; }
-        public string Path { get; }
+        public string? Version { get; set; }
+        public string Path { get; set; }
 
         public AssemblyVersion(string? version, string path)
         {

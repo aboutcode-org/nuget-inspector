@@ -72,7 +72,7 @@ public class LockFileHandler
 
     public DependencyResolution Process()
     {
-        var builder = new PackageSetBuilder();
+        var builder = new PackageBuilder();
         var result = new DependencyResolution();
 
         foreach (var target in LockFile.Targets)
@@ -83,7 +83,7 @@ public class LockFileHandler
                 var version = library.Version.ToNormalizedString();
                 var packageId = new BasePackage(name: name, version: version);
 
-                var dependencies = new HashSet<BasePackage?>();
+                var dependencies = new List<BasePackage?>();
                 foreach (var dependency in library.Dependencies)
                 {
                     var dep_id = dependency.Id;
@@ -161,8 +161,9 @@ public class LockFileHandler
                     {
                         version = library_version.ToNormalizedString();
                     }
+
                     result.Dependencies.Add(
-                        item: new BasePackage(name: project_dependency.GetName(), version: version));
+                        item: new BasePackage(name: project_dependency.GetName()!, version: version));
                 }
             }
 
@@ -190,11 +191,10 @@ public class LockFileHandler
     ///     ".NETFramework,Version=v4.7.2": ["FSharp.Core >= 4.3.4 < 5.0.0",]
     /// },
     /// This a case that is NOT handled yet
- 
     public ProjectFileDependency ParseProjectFileDependencyGroup(string project_file_dependency)
     {
         if (ParseProjectFileDependencyGroupTokens(
-                input: project_file_dependency, 
+                input: project_file_dependency,
                 tokens: " >= ",
                 project_name: out var project_name,
                 project_version: out var version_raw))
@@ -202,7 +202,7 @@ public class LockFileHandler
             return new ProjectFileDependency(
                 name: project_name,
                 version_range: MinVersionOrFloat(
-                    version_value_raw: version_raw, 
+                    version_value_raw: version_raw,
                     include_min: true));
         }
 
@@ -218,8 +218,9 @@ public class LockFileHandler
                     version_value_raw: version_raw2,
                     include_min: false));
         }
+
         if (ParseProjectFileDependencyGroupTokens(
-                input: project_file_dependency, 
+                input: project_file_dependency,
                 tokens: " <= ",
                 project_name: out var project_name3,
                 project_version: out var version_raw3))
@@ -235,7 +236,7 @@ public class LockFileHandler
         }
 
         if (ParseProjectFileDependencyGroupTokens(
-                input: project_file_dependency, 
+                input: project_file_dependency,
                 tokens: " < ",
                 project_name: out var project_name4,
                 project_version: out var version_raw4))
@@ -244,7 +245,7 @@ public class LockFileHandler
             return new ProjectFileDependency(
                 name: project_name4,
                 version_range: new VersionRange(
-                    minVersion: null, 
+                    minVersion: null,
                     includeMinVersion: false,
                     maxVersion: maxVersion));
         }

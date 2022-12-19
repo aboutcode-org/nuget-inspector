@@ -2,51 +2,70 @@
 
 namespace NugetInspector;
 
+/// <summary>
+/// Dump results to JSON
+/// </summary>
+public class ScanHeader
+{
+    public string tool_name  { get; set; }= "nuget-inspector";
+    public string tool_homepageurl  { get; set; }= "https://github.com/nexB/nuget-inspector";
+    public string tool_version  { get; set; }= "0.7.0";
+    public List<string> options { get; set; }
+
+    public string notice { get; set; } = "Dependency tree generated with nuget-inspector.\n" +
+                                        "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
+                                        "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
+
+    public List<string> warnings  { get; set; } = new();
+    public List<string> errors  { get; set; } = new();
+
+    public ScanHeader(Options options)
+    {
+        this.options = options.AsCliList();
+    }
+}
+
 public class ScanOutput
 {
-    public string tool_name = "nuget-inspector";
-    public string tool_version = "0.6.0";
+    [JsonProperty(propertyName: "headers")]
+    public List<ScanHeader> Headers  { get; set; } = new();
+    [JsonProperty(propertyName: "files")]
+    public List<BasePackage> Files  { get; set; } = new();
 
     [JsonProperty(propertyName: "packages")]
-    public List<Package?> Packages = new();
+    public List<BasePackage> Packages  { get; set; } = new();
 }
 
 internal class OutputFormatJson
 {
-    private readonly ScanOutput scanOutput;
+    private readonly ScanOutput scan_output;
     private readonly ScanResult Result;
 
     public OutputFormatJson(ScanResult result)
     {
         Result = result;
-        scanOutput = new ScanOutput
+        scan_output = new ScanOutput
         {
             Packages = result.Packages!
         };
-    }
-
-    public string? OutputFilePath()
-    {
-        return Result.OutputFilePath;
+        ScanHeader scan_header = new(result.Options!);
+        scan_output.Headers.Add(scan_header);
     }
 
     public void Write()
     {
-        Write(outputFilePath: Result.OutputFilePath);
-    }
-
-    public void Write(string? outputFilePath)
-    {
-        if (Config.TRACE) Console.WriteLine($"Creating output file path: {outputFilePath}");
-        using (var fs = new FileStream(path: outputFilePath!, mode: FileMode.Create))
+        var output_file_path = Result.Options!.OutputFilePath;
+        if (Config.TRACE) Console.WriteLine($"Creating output file path: {output_file_path}");
+        using (var fs = new FileStream(path: output_file_path!, mode: FileMode.Create))
         {
             using (var sw = new StreamWriter(stream: fs))
             {
-                var serializer = new JsonSerializer();
-                serializer.NullValueHandling = NullValueHandling.Ignore;
+                var serializer = new JsonSerializer
+                {
+                    Formatting = Formatting.Indented
+                };
                 var writer = new JsonTextWriter(textWriter: sw);
-                serializer.Formatting = Formatting.Indented;
-                serializer.Serialize(jsonWriter: writer, value: scanOutput);
+                serializer.Serialize(jsonWriter: writer, value: scan_output);
             }
         }
     }

@@ -47,30 +47,28 @@ internal static class Program
             Console.WriteLine("ExecuteInspector: options");
             options.Print();
         }
+
         var has_failed = false;
         try
         {
             var nuget_api_service = new NugetApi(
                 nugetApiFeedUrl: options.NugetApiFeedUrl,
                 nugetConfig: options.NugetConfigPath);
-                
+
             var project_options = new ProjectScannerOptions(options: options);
             var inspector = new ProjectScanner(options: project_options, nuget_api_service: nuget_api_service);
             var scan = inspector.RunScan();
+            inspector.FetchMetadata(scan_result: scan);
+
             try
             {
-                if (Config.TRACE && scan.ResultName != null)
-                {
-                    Console.WriteLine($"Scan: {scan.ResultName}");
-                }
-
                 if (scan.Status == ScanResult.ResultStatus.Success)
                 {
                     if (Config.TRACE) Console.WriteLine("Scan Result: Success");
                     var writer = new OutputFormatJson(result: scan);
                     writer.Write();
                     if (Config.TRACE)
-                        Console.WriteLine(format: "Info file created at {0}", arg0: writer.OutputFilePath());
+                        Console.WriteLine(format: $"JSON file created at {scan.Options!.OutputFilePath}");
                 }
                 else
                 {
@@ -133,6 +131,7 @@ internal static class Program
                 {
                     Console.WriteLine("Failed to parse options: missing ProjectFilePath");
                 }
+
                 return ParsedOptions.Failed();
             }
 

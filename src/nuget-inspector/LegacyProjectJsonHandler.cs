@@ -19,19 +19,19 @@ internal class LegacyProjectJsonHandler : IDependencyResolver
         ProjectJsonPath = projectJsonPath;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         var result = new DependencyResolution();
         var model = JsonPackageSpecReader.GetPackageSpec(name: ProjectName, packageSpecPath: ProjectJsonPath);
         IList<LibraryDependency> packages = model.Dependencies;
         foreach (var package in packages)
         {
-            var set = new PackageSet
-            {
-                PackageId = new BasePackage(name: package.Name, version: package.LibraryRange.VersionRange.OriginalString)
-            };
-            result.Packages.Add(item: set);
-            result.Dependencies.Add(item: set.PackageId);
+            var bpwd = new BasePackage(
+                name: package.Name,
+                version: package.LibraryRange.VersionRange.OriginalString
+            );
+            result.Packages.Add(item: bpwd);
+            result.Dependencies.Add(item: bpwd);
         }
 
         return result;

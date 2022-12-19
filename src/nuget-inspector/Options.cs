@@ -9,7 +9,8 @@ public class Options
     public string ProjectFilePath = "";
 
     [CommandLineArg(key: "target-framework",
-        description: ".NET Target framework. Optional, will default to to the first targeted framework from the *.*proj file if not provided. See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
+        description:
+        ".NET Target framework. Optional, will default to to the first targeted framework from the *.*proj file if not provided. See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
     public string TargetFramework = "";
 
     [CommandLineArg(key: "json", description: "JSON output file path.")]
@@ -39,6 +40,33 @@ public class Options
         Console.WriteLine($"  Verbose: {Verbose}");
     }
 
+    /// <summary>
+    /// Return a list of command line-like option values.
+    /// </summary>
+    public List<string> AsCliList()
+    {
+        List<string> options = new List<string>
+        {
+            $"--project-file {ProjectFilePath}",
+            $"--json {OutputFilePath}",
+        };
+
+        if (TargetFramework != "")
+            options.Add($"--target-framework {TargetFramework}");
+
+        if (NugetConfigPath != "")
+            options.Add($"--nuget-config {NugetConfigPath}");
+
+        if (NugetApiFeedUrl != "https://api.nuget.org/v3/index.json")
+            options.Add($"--nuget-url {NugetApiFeedUrl}");
+
+        if (Verbose)
+            options.Add($"--verbose");
+
+        return options;
+    }
+
+
     public static Options? ParseArguments(string[] args)
     {
         var options = new Options();
@@ -46,7 +74,7 @@ public class Options
 
         foreach (var field in typeof(Options).GetFields())
         {
-            if (Config.TRACE) Console.WriteLine($"ParseArguments.field: {field}"); 
+            if (Config.TRACE) Console.WriteLine($"ParseArguments.field: {field}");
             var attr = GetAttr<CommandLineArgAttribute>(field: field);
             if (attr != null)
                 command_options.Add(prototype: $"{attr.Key}=", description: attr.Description,
@@ -74,9 +102,9 @@ public class Options
             ShowHelpMessage(message: "Usage: nuget-inspector [OPTIONS]", optionSet: command_options);
             return null;
         }
-        
+
         // TODO: raise error if input or output are missing
-        
+
         return options;
     }
 
