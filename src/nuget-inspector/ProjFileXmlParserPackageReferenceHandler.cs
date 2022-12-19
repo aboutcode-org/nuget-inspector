@@ -43,16 +43,17 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
             {
                 var attributes = package.Attributes;
                 string? version_value = null;
-                    
+
 
                 if (attributes != null)
                 {
                     if (Config.TRACE)
                         Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
-                        foreach (var attribute in attributes)
-                        {
-                            Console.WriteLine($" attribute: {attribute.ToJson()}");
-                        }
+                    foreach (var attribute in attributes)
+                    {
+                        Console.WriteLine($" attribute: {attribute.ToJson()}");
+                    }
+
                     var include = attributes[name: "Include"];
                     if (include != null)
                     {
@@ -69,16 +70,19 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                                 if (versionNode.Name == "Version")
                                 {
                                     if (Config.TRACE)
-                                        Console.WriteLine($"    no version attribute, using Version tag: {versionNode.InnerText}");
+                                        Console.WriteLine(
+                                            $"    no version attribute, using Version tag: {versionNode.InnerText}");
                                     version_value = versionNode.InnerText;
-                                }                            }
+                                }
+                            }
                         }
+
                         if (Config.TRACE)
                             Console.WriteLine($"    version_value: {version_value}");
 
                         VersionRange? version_range = null;
                         if (version_value != null)
-                           version_range = VersionRange.Parse(value: version_value);
+                            version_range = VersionRange.Parse(value: version_value);
                         var dep = new Dependency(
                             name: include.Value,
                             version_range: version_range,
@@ -93,7 +97,6 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                 //         if (version.NodeType != XmlNodeType.Comment)
                 //             result.ProjectVersion = version.InnerText;
                 // }
-                
             }
 
         result.Packages = tree.GetPackageList();

@@ -58,13 +58,14 @@ namespace NugetInspector
                 return package_with_deps;
             }
 
-            package_with_deps = BasePackage.FromBasePackage(package: package, dependencies:new List<BasePackage>());
+            package_with_deps = BasePackage.FromBasePackage(package: package, dependencies: new List<BasePackage>());
             base_package_deps_by_base_package[key: package] = package_with_deps;
 
             NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
             if (package.version != null)
             {
-                versions_pair_by_base_package[key: package] = new VersionPair(rawVersion: package.version, version: version);
+                versions_pair_by_base_package[key: package] =
+                    new VersionPair(rawVersion: package.version, version: version);
             }
 
             return package_with_deps;
@@ -142,8 +143,10 @@ namespace NugetInspector
     public class BasePackage
     {
         public string type { get; set; } = "nuget";
+
         [JsonProperty(propertyName: "namespace")]
         public string name_space { get; set; } = "";
+
         public string name { get; set; } = "";
         public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
@@ -181,7 +184,7 @@ namespace NugetInspector
         public List<BasePackage> packages { get; set; } = new();
         public List<BasePackage> dependencies { get; set; } = new();
 
-        public BasePackage(string name, string? version, string? framework="", string? datafile_path="")
+        public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
         {
             this.name = name;
             this.version = version;
@@ -200,16 +203,16 @@ namespace NugetInspector
             bpwd.dependencies = dependencies;
             return bpwd;
         }
-        
+
         protected bool Equals(BasePackage other)
         {
             return (
-                type == other.type 
+                type == other.type
                 && name_space == other.name_space
-                && name == other.name 
-                && version == other.version 
-                && qualifiers == other.qualifiers 
-                && subpath == other.subpath 
+                && name == other.name
+                && version == other.version
+                && qualifiers == other.qualifiers
+                && subpath == other.subpath
             );
         }
 
@@ -226,7 +229,7 @@ namespace NugetInspector
             return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
         }
 
-        
+
         /// <summary>
         /// Update this Package instance using the NuGet API
         /// </summary>
@@ -235,7 +238,7 @@ namespace NugetInspector
             IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
             Update(meta);
         }
-        
+
         /// <summary>
         /// Update this Package instance from an IPackageSearchMetadata
         /// </summary>
@@ -258,21 +261,22 @@ namespace NugetInspector
             Uri license_url = metadata.LicenseUrl;
             if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
             {
-                meta_declared_licenses.Add( $"LicenseUrl: {license_url}");
+                meta_declared_licenses.Add($"LicenseUrl: {license_url}");
             }
+
             LicenseMetadata license_meta = metadata.LicenseMetadata;
             if (license_meta != null)
             {
-
                 meta_declared_licenses.Add($"LicenseType: {license_meta.Type.ToString()}");
                 if (!string.IsNullOrWhiteSpace(license_meta.License))
                     meta_declared_licenses.Add($"License: {license_meta.License}");
                 var expression = license_meta.LicenseExpression;
-                if (expression !=null)
+                if (expression != null)
                     meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression.ToString()}");
             }
+
             declared_license = string.Join("\n", meta_declared_licenses);
-            
+
             // Update the parties
             string authors = metadata.Authors;
             if (!string.IsNullOrWhiteSpace(authors) && parties.Count == 0)
@@ -296,13 +300,14 @@ namespace NugetInspector
             download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
             repository_homepage_url = metadata.PackageDetailsUrl.ToString();
             repository_download_url = download_url;
-            api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{meta_name.ToLower()}/{meta_version.ToLower()}.json";
+            api_data_url =
+                $"https://api.nuget.org/v3/registration5-semver1/{meta_name.ToLower()}/{meta_version.ToLower()}.json";
 
             // source_packages = null;
             // dependencies = null;
         }
     }
-    
+
     /// <summary>
     /// A party is a person, project or organization related to a package.
     /// </summary>
@@ -318,14 +323,13 @@ namespace NugetInspector
 
     public class DependentPackage
     {
-        public string purl { get; set; }= "";
+        public string purl { get; set; } = "";
         public string extracted_requirement { get; set; } = "";
         public string scope { get; set; } = "";
-        public bool is_runtime { get; set;}
+        public bool is_runtime { get; set; }
         public bool is_optional { get; set; }
         public bool is_resolved { get; set; }
         public BasePackage? resolved_package { get; set; }
         public Dictionary<string, string> extra_data { get; set; } = new();
     }
-
 }

@@ -46,7 +46,7 @@ public class NugetApiResolver
 
         var packages =
             nugetApi.DependenciesForPackage(
-                identity: package.Identity, 
+                identity: package.Identity,
                 framework: packageDependency.framework);
 
         foreach (var dependency in packages)
@@ -60,7 +60,7 @@ public class NugetApiResolver
             else
             {
                 IPackageSearchMetadata? api_package_metadata = nugetApi.FindPackageVersion(
-                    id: dependency.Id, 
+                    id: dependency.Id,
                     versionRange: dependency.VersionRange);
                 if (api_package_metadata == null)
                 {
@@ -77,6 +77,7 @@ public class NugetApiResolver
                     Console.WriteLine($"Package details");
                     Console.WriteLine($"    Description: {api_package_metadata.Description}");
                 }
+
                 dependencies.Add(item: id);
 
                 if (!builder.DoesPackageExist(package: id))

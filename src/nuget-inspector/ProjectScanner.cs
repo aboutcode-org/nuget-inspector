@@ -97,7 +97,7 @@ internal class ProjectScanner
             Options.ProjectVersion = AssemblyInfoParser.GetProjectAssemblyVersion(project_directory);
             if (Config.TRACE)
                 Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
-        }   
+        }
     }
 
     /// <summary>
@@ -161,7 +161,6 @@ internal class ProjectScanner
                 {
                     if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subpack: {subpack}: {ex}");
                 }
-
             }
 
             foreach (BasePackage dep in package.dependencies)
@@ -174,7 +173,6 @@ internal class ProjectScanner
                 {
                     if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for dep: {dep}: {ex}");
                 }
-
             }
         }
     }
@@ -185,7 +183,7 @@ internal class ProjectScanner
     /// <returns></returns>
     public BasePackage? ScanProject()
     {
-        Stopwatch? stopWatch =null;
+        Stopwatch? stopWatch = null;
         if (Config.TRACE)
         {
             stopWatch = Stopwatch.StartNew();
@@ -203,7 +201,7 @@ internal class ProjectScanner
         if (!string.IsNullOrWhiteSpace(Options.TargetFramework))
         {
             string option_target_framework = Options.TargetFramework.ToLowerInvariant();
-            project_target_framework=  NuGetFramework.ParseFolder(folderName: option_target_framework);
+            project_target_framework = NuGetFramework.ParseFolder(folderName: option_target_framework);
         }
         else
         {
@@ -305,7 +303,8 @@ internal class ProjectScanner
 
         if (Config.TRACE)
         {
-            Console.WriteLine($"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
+            Console.WriteLine(
+                $"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
             Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch!.ElapsedMilliseconds} ms.");
         }
 

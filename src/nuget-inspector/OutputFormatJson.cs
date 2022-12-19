@@ -7,17 +7,17 @@ namespace NugetInspector;
 /// </summary>
 public class ScanHeader
 {
-    public string tool_name  { get; set; }= "nuget-inspector";
-    public string tool_homepageurl  { get; set; }= "https://github.com/nexB/nuget-inspector";
-    public string tool_version  { get; set; }= "0.7.0";
+    public string tool_name { get; set; } = "nuget-inspector";
+    public string tool_homepageurl { get; set; } = "https://github.com/nexB/nuget-inspector";
+    public string tool_version { get; set; } = "0.7.0";
     public List<string> options { get; set; }
 
     public string notice { get; set; } = "Dependency tree generated with nuget-inspector.\n" +
-                                        "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
-                                        "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
+                                         "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
+                                         "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
 
-    public List<string> warnings  { get; set; } = new();
-    public List<string> errors  { get; set; } = new();
+    public List<string> warnings { get; set; } = new();
+    public List<string> errors { get; set; } = new();
 
     public ScanHeader(Options options)
     {
@@ -28,12 +28,12 @@ public class ScanHeader
 public class ScanOutput
 {
     [JsonProperty(propertyName: "headers")]
-    public List<ScanHeader> Headers  { get; set; } = new();
-    [JsonProperty(propertyName: "files")]
-    public List<BasePackage> Files  { get; set; } = new();
+    public List<ScanHeader> Headers { get; set; } = new();
+
+    [JsonProperty(propertyName: "files")] public List<BasePackage> Files { get; set; } = new();
 
     [JsonProperty(propertyName: "packages")]
-    public List<BasePackage> Packages  { get; set; } = new();
+    public List<BasePackage> Packages { get; set; } = new();
 }
 
 internal class OutputFormatJson

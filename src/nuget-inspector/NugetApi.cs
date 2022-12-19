@@ -37,7 +37,7 @@ public class NugetApi
     {
         var package_versions = FindPackages(id: id);
         // TODO: we may need to error out if version is not known/existing upstream
-        if (package_versions .Count == 0)
+        if (package_versions.Count == 0)
             return null;
         var versions = package_versions.Select(selector: package => package.Identity.Version);
         var best_version = versionRange?.FindBestMatch(versions: versions);
@@ -55,18 +55,18 @@ public class NugetApi
         IPackageSearchMetadata? last_package = null;
         foreach (var package in FindPackages(id: name))
         {
-            last_package = package;   
+            last_package = package;
             if (package.Identity.Version.ToString() == version)
                 return package;
         }
 
-        if (last_package!= null && version == null)
+        if (last_package != null && version == null)
             return last_package;
-        
+
         return null;
     }
 
-    
+
     private List<IPackageSearchMetadata> FindPackages(string? id)
     {
         if (id != null && lookupCache.ContainsKey(key: id))
@@ -136,6 +136,7 @@ public class NugetApi
 
             return matching_packages;
         }
+
         if (exceptions.Count > 0)
         {
             if (Config.TRACE)

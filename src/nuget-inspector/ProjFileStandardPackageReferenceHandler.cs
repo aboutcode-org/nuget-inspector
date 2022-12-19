@@ -50,8 +50,9 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
                         Console.WriteLine($"Project reference without version: {reference.EvaluatedInclude}");
                     version_range = null;
                 }
+
                 var dep = new Dependency(
-                    name: reference.EvaluatedInclude, 
+                    name: reference.EvaluatedInclude,
                     version_range: version_range,
                     framework: ProjectTargetFramework);
                 deps.Add(item: dep);
