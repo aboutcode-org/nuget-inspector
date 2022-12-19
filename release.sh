@@ -27,7 +27,7 @@ do
     RELEASE_DIR=release/$TARGET
     mkdir -p $RELEASE_DIR
     dotnet publish \
-      --runtime linux-x64 \
+      --runtime $platform \
       --self-contained true \
       --configuration Release \
       -p:Version=$VERSION \
