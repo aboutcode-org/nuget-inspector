@@ -147,6 +147,7 @@ namespace NugetInspector
 
     public class BasePackage
     {
+
         public string type = "nuget";
         public string? name { get; set; } = "";
         public string? version { get; set; } = "";
@@ -176,76 +177,31 @@ namespace NugetInspector
             purl = $"pkg:nuget/{name}@{version}";
             download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
         }
-
-        public override int GetHashCode()
+        protected bool Equals(BasePackage other)
         {
-            int hash = 37;
-            hash = (hash * 7);
-            hash += name == null ? 0 : name.GetHashCode();
-            hash = (hash * 7);
-            hash += version == null ? 0 : version.GetHashCode();
-            hash = (hash * 7);
-            hash += framework == null ? 0 : framework.GetHashCode();
-            return hash;
+            return name == other.name && version == other.version && framework == other.framework;
         }
 
         public override bool Equals(object? obj)
         {
-            if (obj == null || GetType() != obj.GetType())
-            {
-                return false;
-            }
-
-            var other = (BasePackage)obj;
-            if (name == null)
-            {
-                if (other.name != null) return false;
-            }
-            else if (!name.Equals(value: other.name))
-            {
-                return false;
-            }
-
-            if (version == null)
-            {
-                if (other.version != null) return false;
-            }
-            else if (!version.Equals(value: other.version))
-            {
-                return false;
-            }
-
-            if (framework == null)
-            {
-                if (other.framework != null) return false;
-            }
-            else if (!framework.Equals(value: other.framework))
-            {
-                return false;
-            }
-
-            return true;
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((BasePackage)obj);
         }
-    }
 
-    // /// <summary>
-    // /// This is a core data structure
-    // /// </summary>
-    // public class Package
-    // {
-    //     public string? type { get; set; } = "nuget";
-    //     public string? name { get; set; } = "";
-    //     public string? version { get; set; } = "";
-    //     public string datasource_id { get; set; } = null!;
-    //     public string project_file { get; set; } = null!;
-    //     public List<PackageSet> packages { get; set; } = new();
-    //     public List<BasePackage> dependencies { get; set; } = new();
-    // }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(name, version, framework);
+        }
+
+    }
 
     /// <summary>
     /// Package data object using purl as identifying attributes as
     /// specified here https://github.com/package-url/purl-spec
-    /// This model is essentially derived from ScanCode Toolkit Package/PackageData
+    /// This model is essentially derived from ScanCode Toolkit Package/PackageData.
+    /// This is used to represent the top-level project.
     /// </summary>
     public class Package
     {
