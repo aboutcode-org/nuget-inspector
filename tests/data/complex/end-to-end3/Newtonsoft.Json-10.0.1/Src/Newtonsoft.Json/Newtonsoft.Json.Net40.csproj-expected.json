@@ -1,0 +1,55 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Net40.csproj"
+      ],
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "files": [],
+  "packages": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Newtonsoft.Json.Net40",
+      "version": null,
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "",
+      "primary_language": "C#",
+      "description": "",
+      "release_date": "",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
+      "datasource_id": "dotnet-project-reference",
+      "datafile_path": "/complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Net40.csproj",
+      "packages": [],
+      "dependencies": []
+    }
+  ]
+}

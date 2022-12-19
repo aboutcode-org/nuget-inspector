@@ -29,21 +29,19 @@ test_env.test_data_dir = str(TEST_DATA_DIR)
 NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
 failing_paths = (
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables-resolved/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-variables/Steeltoe.Extensions.Configuration.CloudFoundryAutofac.Test.csproj",
-    "thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
-    "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
-    "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
-    "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/csproj_multiple/csproj_multiple.csproj",
-    "thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/projectAssetsDir/another_example.csproj",
-    "thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/packagesConfigDir/example.csproj",
-    "thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework/no_target_framework.csproj",
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
-    "thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
-    "datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
-
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
+    "complex/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.VerificationTests/resources/nuget/packages-config/Microsoft.DependencyDetective.VerificationTests2.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/csproj_multiple/csproj_multiple.csproj",
+    "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/projectAssetsDir/another_example.csproj",
+    "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/packagesConfigDir/example.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework/no_target_framework.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
+    "project-json/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
 )
 
 
@@ -65,10 +63,9 @@ project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj"
 def test_nuget_inspector_end_to_end_with_projects(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
-
 def test_nuget_inspector_end_to_end_with_target_framework():
-    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
-    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
+    test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
@@ -78,8 +75,8 @@ def test_nuget_inspector_end_to_end_with_target_framework():
 
 
 def test_nuget_inspector_end_to_end_with_target_framework2():
-    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
-    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
+    test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,

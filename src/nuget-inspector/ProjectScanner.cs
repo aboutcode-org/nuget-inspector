@@ -144,6 +144,9 @@ internal class ProjectScanner
         {
             try
             {
+                if (Config.TRACE)
+                    Console.WriteLine($"FetchMetadata AssemblyInfoParser for project version: {Options.ProjectVersion}");
+
                 package.Update(nugetApi: NugetApiService);
             }
             catch (Exception ex)

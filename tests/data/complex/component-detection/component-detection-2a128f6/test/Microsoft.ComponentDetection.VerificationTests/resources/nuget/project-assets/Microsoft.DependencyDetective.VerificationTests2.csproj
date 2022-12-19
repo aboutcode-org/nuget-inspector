@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsTestProject>true</IsTestProject>
+        <TestProjectType>UnitTest</TestProjectType>
+        <ProjectGuid>{95c8e34e-5895-4c7e-8c7e-c300a114a1e5}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <OutputPath>./bin</OutputPath>
+        <RootNamespace>Microsoft.ComponentDetection.VerificationTests</RootNamespace>
+        <AssemblyName>Microsoft.ComponentDetection.VerificationTests</AssemblyName>
+        <NoWarn>$(NoWarn);NU1504;NU1105</NoWarn>
+    </PropertyGroup>
+
+
+</Project>

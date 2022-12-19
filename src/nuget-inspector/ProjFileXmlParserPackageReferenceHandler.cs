@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using System.Xml;
 using NuGet.Frameworks;
-using NuGet.Protocol;
 using NuGet.Versioning;
 
 namespace NugetInspector;
@@ -48,10 +47,8 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                 if (attributes != null)
                 {
                     if (Config.TRACE)
-                        Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
-                    foreach (var attribute in attributes)
                     {
-                        Console.WriteLine($" attribute: {attribute.ToJson()}");
+                        Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
                     }
 
                     var include = attributes[name: "Include"];
@@ -90,13 +87,6 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                         tree.Add(packageDependency: dep);
                     }
                 }
-                // var versionNodes = doc.GetElementsByTagName(name: "Version");
-                // if (versionNodes != null && versionNodes.Count > 0)
-                // {
-                //     foreach (XmlNode version in versionNodes)
-                //         if (version.NodeType != XmlNodeType.Comment)
-                //             result.ProjectVersion = version.InnerText;
-                // }
             }
 
         result.Packages = tree.GetPackageList();
@@ -111,7 +101,7 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                 break;
             }
 
-            if (!has_references && package != null)
+            if (!has_references)
             {
                 result.Dependencies.Add(item: package);
             }
