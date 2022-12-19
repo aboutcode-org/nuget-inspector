@@ -23,19 +23,19 @@ internal class PackagesConfigHandler : IDependencyResolver
         this.nugetApi = nuget_api;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         var dependencies = GetDependencies();
 
         var result = new DependencyResolution();
-        result.Packages = CreatePackageSets(dependencies: dependencies);
+        result.Packages = CreateBasePackage(dependencies: dependencies);
 
         result.Dependencies = new List<BasePackage>();
         foreach (var package in result.Packages)
         {
-            var has_package_references = result.Packages.Any(pkg => pkg.dependencies.Contains(item: package.package));
-            if (!has_package_references && package.package != null)
-                result.Dependencies.Add(item: package.package);
+            var has_package_references = result.Packages.Any(pkg => pkg.dependencies.Contains(item: package));
+            if (!has_package_references && package != null)
+                result.Dependencies.Add(item: package);
         }
 
         return result;
@@ -68,7 +68,7 @@ internal class PackagesConfigHandler : IDependencyResolver
         return dependencies;
     }
 
-    private List<PackageSet> CreatePackageSets(List<Dependency> dependencies)
+    private List<BasePackage> CreateBasePackage(List<Dependency> dependencies)
     {
         try
         {
@@ -93,8 +93,8 @@ internal class PackagesConfigHandler : IDependencyResolver
                     Console.WriteLine(value:
                         $"There was an issue processing packages.config as a tree: {treeException.Message}");
                 var packages =
-                    new List<PackageSet>(
-                        collection: dependencies.Select(selector: dependency => dependency.ToEmptyPackageSet()));
+                    new List<BasePackage>(
+                        collection: dependencies.Select(selector: dependency => dependency.CreateEmptyBasePackage()));
                 return packages;
             }
         }

@@ -4,7 +4,7 @@ namespace NugetInspector;
 
 public class NugetApiResolver
 {
-    private readonly PackageSetBuilder builder = new();
+    private readonly PackageBuilder builder = new();
     private readonly NugetApi nugetApi;
 
     public NugetApiResolver(NugetApi nugetApi)
@@ -12,7 +12,7 @@ public class NugetApiResolver
         this.nugetApi = nugetApi;
     }
 
-    public List<PackageSet> GetPackageList()
+    public List<BasePackage> GetPackageList()
     {
         return builder.GetPackageList();
     }
@@ -31,18 +31,23 @@ public class NugetApiResolver
             var version = packageDependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
                 Console.WriteLine(
-                    value:
                     $"Nuget failed to find package: '{packageDependency.name}' with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
-            builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.name, version: version));
+
+            if (packageDependency.name != null)
+                builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.name, version: version));
             return;
         }
 
-        var package_id = new BasePackage(name: packageDependency.name,
+        var package_id = new BasePackage(
+            name: packageDependency.name!,
             version: package.Identity.Version.ToNormalizedString());
-        var dependencies = new HashSet<BasePackage?>();
+
+        var dependencies = new List<BasePackage>();
 
         var packages =
-            nugetApi.DependenciesForPackage(identity: package.Identity, framework: packageDependency.framework);
+            nugetApi.DependenciesForPackage(
+                identity: package.Identity, 
+                framework: packageDependency.framework);
 
         foreach (var dependency in packages)
         {
@@ -74,7 +79,7 @@ public class NugetApiResolver
                 }
                 dependencies.Add(item: id);
 
-                if (!builder.DoesPackageExist(id: id))
+                if (!builder.DoesPackageExist(package: id))
                     Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange,
                         framework: packageDependency.framework));
             }

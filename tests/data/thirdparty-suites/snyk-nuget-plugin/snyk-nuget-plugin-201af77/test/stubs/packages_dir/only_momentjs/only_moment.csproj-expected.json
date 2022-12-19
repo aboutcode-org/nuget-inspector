@@ -47,28 +47,99 @@
       "repository_download_url": "",
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
-      "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/only_moment.csproj",
+      "datafile_path": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/only_moment.csproj",
       "packages": [
         {
-          "package": {
-            "type": "nuget",
-            "name": "Moment.js",
-            "version": "2.20.1",
-            "framework": "",
-            "purl": "pkg:nuget/Moment.js@2.20.1",
-            "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1"
-          },
+          "type": "nuget",
+          "namespace": "",
+          "name": "Moment.js",
+          "version": "2.20.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Moment.js@2.20.1",
+          "primary_language": "C#",
+          "description": "A lightweight JavaScript date library for parsing, manipulating, and formatting dates.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Tim Wood, Iskren Chernev, Moment.js contributors",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "http://momentjs.com/",
+          "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://raw.github.com/timrwood/moment/master/LICENSE",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Moment.js/2.20.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/moment.js/2.20.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
           "dependencies": []
         }
       ],
       "dependencies": [
         {
           "type": "nuget",
+          "namespace": "",
           "name": "Moment.js",
           "version": "2.20.1",
-          "framework": "",
+          "qualifiers": "",
+          "subpath": "",
           "purl": "pkg:nuget/Moment.js@2.20.1",
-          "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1"
+          "primary_language": "C#",
+          "description": "A lightweight JavaScript date library for parsing, manipulating, and formatting dates.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Tim Wood, Iskren Chernev, Moment.js contributors",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "http://momentjs.com/",
+          "download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://raw.github.com/timrwood/moment/master/LICENSE",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Moment.js/2.20.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Moment.js/2.20.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/moment.js/2.20.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": []
         }
       ]
     }

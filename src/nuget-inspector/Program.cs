@@ -58,6 +58,8 @@ internal static class Program
             var project_options = new ProjectScannerOptions(options: options);
             var inspector = new ProjectScanner(options: project_options, nuget_api_service: nuget_api_service);
             var scan = inspector.RunScan();
+            inspector.FetchMetadata(scan_result: scan);
+
             try
             {
                 if (scan.Status == ScanResult.ResultStatus.Success)

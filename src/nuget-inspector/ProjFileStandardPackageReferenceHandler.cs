@@ -27,7 +27,7 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
         ProjectTargetFramework = projectTargetFramework;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         try
         {
@@ -103,10 +103,9 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             foreach (var package in result.Packages)
             {
                 var anyPackageReferences =
-                    result.Packages.Any(predicate: pkg => pkg.dependencies.Contains(item: package.package));
-                if (!anyPackageReferences)
-                    if (package.package != null)
-                        result.Dependencies.Add(item: package.package);
+                    result.Packages.Any(predicate: pkg => pkg.dependencies.Contains(item: package));
+                if (!anyPackageReferences && package != null)
+                    result.Dependencies.Add(item: package);
             }
 
             return result;

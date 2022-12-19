@@ -6,7 +6,7 @@ internal interface IDependencyResolver
     /// Resolve dependencies and return a DependencyResolution
     /// </summary>
     /// <returns>DependencyResolution</returns>
-    DependencyResolution Process();
+    DependencyResolution Resolve();
 }
 
 public class DependencyResolution
@@ -14,6 +14,6 @@ public class DependencyResolution
     public bool Success { get; set; } = true;
     public string? ProjectVersion { get; set; }
     public string? ErrorMessage { get; set; } = "";
-    public List<PackageSet> Packages { get; set; } = new();
+    public List<BasePackage> Packages { get; set; } = new();
     public List<BasePackage> Dependencies { get; set; } = new();
 }

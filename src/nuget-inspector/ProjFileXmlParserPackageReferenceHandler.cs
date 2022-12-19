@@ -25,7 +25,7 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
         ProjectTargetFramework = projectTargetFramework;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         var result = new DependencyResolution();
         var tree = new NugetApiResolver(nugetApi: NugetApi);
@@ -103,14 +103,14 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
             var has_references = false;
             foreach (var pkg in result.Packages)
             {
-                if (!pkg.dependencies.Contains(item: package.package)) continue;
+                if (!pkg.dependencies.Contains(item: package)) continue;
                 has_references = true;
                 break;
             }
 
-            if (!has_references && package.package != null)
+            if (!has_references && package != null)
             {
-                result.Dependencies.Add(item: package.package);
+                result.Dependencies.Add(item: package);
             }
         }
 

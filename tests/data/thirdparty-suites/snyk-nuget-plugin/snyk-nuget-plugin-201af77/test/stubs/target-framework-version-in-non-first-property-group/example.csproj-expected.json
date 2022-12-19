@@ -21,11 +21,19 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/Example@1.0.16",
       "primary_language": "C#",
-      "description": "",
+      "description": "Description",
       "release_date": "",
-      "parties": [],
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Wonka",
+          "email": "",
+          "url": ""
+        }
+      ],
       "keywords": [],
       "homepage_url": "",
       "download_url": "",
@@ -47,7 +55,7 @@
       "repository_download_url": "",
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
-      "project_file": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target-framework-version-in-non-first-property-group/example.csproj",
+      "datafile_path": "/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target-framework-version-in-non-first-property-group/example.csproj",
       "packages": [],
       "dependencies": []
     }

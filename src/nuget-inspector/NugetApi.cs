@@ -35,13 +35,38 @@ public class NugetApi
     /// <returns></returns>
     public IPackageSearchMetadata? FindPackageVersion(string? id, VersionRange? versionRange)
     {
-        var matching_packages = FindPackages(id: id);
-        if (matching_packages == null) return null;
-        var versions = matching_packages.Select(selector: package => package.Identity.Version);
+        var package_versions = FindPackages(id: id);
+        // TODO: we may need to error out if version is not known/existing upstream
+        if (package_versions .Count == 0)
+            return null;
+        var versions = package_versions.Select(selector: package => package.Identity.Version);
         var best_version = versionRange?.FindBestMatch(versions: versions);
-        return matching_packages.FirstOrDefault(predicate: package => package.Identity.Version == best_version);
+        return package_versions.FirstOrDefault(predicate: package => package.Identity.Version == best_version);
     }
 
+    /// <summary>
+    /// Return an IPackageSearchMetadata querying the API using a name and version, or null.
+    /// </summary>
+    /// <param name="name">name</param>
+    /// <param name="version"></param>
+    /// <returns></returns>
+    public IPackageSearchMetadata? FindPackageVersion(string name, string? version)
+    {
+        IPackageSearchMetadata? last_package = null;
+        foreach (var package in FindPackages(id: name))
+        {
+            last_package = package;   
+            if (package.Identity.Version.ToString() == version)
+                return package;
+        }
+
+        if (last_package!= null && version == null)
+            return last_package;
+        
+        return null;
+    }
+
+    
     private List<IPackageSearchMetadata> FindPackages(string? id)
     {
         if (id != null && lookupCache.ContainsKey(key: id))
@@ -179,8 +204,16 @@ public class NugetApi
         }
     }
 
+    /// <summary>
+    /// Add package_source (e.g., a NuGet repo API URL) to the list of known NuGet APIs
+    /// </summary>
+    /// <param name="providers">providers</param>
+    /// <param name="package_source">package_source</param>
     private void AddPackageSource(List<Lazy<INuGetResourceProvider>> providers, PackageSource package_source)
     {
+        if (Config.TRACE)
+            Console.WriteLine($"AddPackageSource: adding new {package_source.SourceUri}");
+
         var sourceRepository = new SourceRepository(source: package_source, providers: providers);
         try
         {
@@ -223,8 +256,11 @@ public class NugetApi
             try
             {
                 var context = new SourceCacheContext();
-                var infoTask = dependencyInfoResource.ResolvePackage(package: identity, projectFramework: framework,
-                    cacheContext: context, log: new NugetLogger(),
+                var infoTask = dependencyInfoResource.ResolvePackage(
+                    package: identity,
+                    projectFramework: framework,
+                    cacheContext: context,
+                    log: new NugetLogger(),
                     token: CancellationToken.None);
                 var result = infoTask.Result;
                 return result.Dependencies;
@@ -270,6 +306,9 @@ public class DotNetFramework
 
     public DotNetFramework(string id, int major, int minor)
     {
+        if (Config.TRACE)
+            Console.WriteLine($"DotNetFramework: creating  id: {id}, major: {major}, minor: {minor}");
+
         Identifier = id;
         Major = major;
         Minor = minor;

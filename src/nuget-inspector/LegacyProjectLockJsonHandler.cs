@@ -15,7 +15,7 @@ internal class LegacyProjectLockJsonHandler : IDependencyResolver
         ProjectLockJsonPath = projectLockJsonPath;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         var lockFile = LockFileUtilities.GetLockFile(lockFilePath: ProjectLockJsonPath, logger: new NugetLogger());
         if (lockFile == null)

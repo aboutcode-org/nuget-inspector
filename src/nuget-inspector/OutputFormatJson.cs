@@ -30,10 +30,10 @@ public class ScanOutput
     [JsonProperty(propertyName: "headers")]
     public List<ScanHeader> Headers  { get; set; } = new();
     [JsonProperty(propertyName: "files")]
-    public List<Package?> Files  { get; set; } = new();
+    public List<BasePackage> Files  { get; set; } = new();
 
     [JsonProperty(propertyName: "packages")]
-    public List<Package?> Packages  { get; set; } = new();
+    public List<BasePackage> Packages  { get; set; } = new();
 }
 
 internal class OutputFormatJson

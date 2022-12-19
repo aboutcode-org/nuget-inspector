@@ -72,7 +72,7 @@ public class LockFileHandler
 
     public DependencyResolution Process()
     {
-        var builder = new PackageSetBuilder();
+        var builder = new PackageBuilder();
         var result = new DependencyResolution();
 
         foreach (var target in LockFile.Targets)
@@ -83,7 +83,7 @@ public class LockFileHandler
                 var version = library.Version.ToNormalizedString();
                 var packageId = new BasePackage(name: name, version: version);
 
-                var dependencies = new HashSet<BasePackage?>();
+                var dependencies = new List<BasePackage?>();
                 foreach (var dependency in library.Dependencies)
                 {
                     var dep_id = dependency.Id;
@@ -163,7 +163,7 @@ public class LockFileHandler
                     }
 
                     result.Dependencies.Add(
-                        item: new BasePackage(name: project_dependency.GetName(), version: version));
+                        item: new BasePackage(name: project_dependency.GetName()!, version: version));
                 }
             }
 

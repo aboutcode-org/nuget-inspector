@@ -21,11 +21,19 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/MusicStore@1.0.0",
       "primary_language": "C#",
-      "description": "",
+      "description": "Description",
       "release_date": "",
-      "parties": [],
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "nitin.bourai",
+          "email": "",
+          "url": ""
+        }
+      ],
       "keywords": [],
       "homepage_url": "",
       "download_url": "",
@@ -47,7 +55,7 @@
       "repository_download_url": "",
       "api_data_url": "",
       "datasource_id": "dotnet-project.lock.json",
-      "project_file": "/legacy-xproj/sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
+      "datafile_path": "/legacy-xproj/sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
       "packages": [],
       "dependencies": []
     }

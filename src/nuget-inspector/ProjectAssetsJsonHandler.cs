@@ -12,7 +12,7 @@ internal class ProjectAssetsJsonHandler : IDependencyResolver
         ProjectAssetsJsonPath = projectAssetsJsonPath;
     }
 
-    public DependencyResolution Process()
+    public DependencyResolution Resolve()
     {
         var lockFile = LockFileUtilities.GetLockFile(lockFilePath: ProjectAssetsJsonPath, logger: null);
 

@@ -27,55 +27,47 @@ namespace NugetInspector
         }
 
         /// <summary>
-        /// Return an empty PackageSet using this package.
+        /// Return a new empty BasePackageWithDeps using this package.
         /// </summary>
         /// <returns></returns>
-        public PackageSet ToEmptyPackageSet()
+        public BasePackage CreateEmptyBasePackage()
         {
-            var package_set = new PackageSet
-            {
-                package = new BasePackage(
-                    name: name,
-                    version: version_range?.MinVersion.ToNormalizedString(),
-                    framework: framework?.ToString()
-                )
-            };
-            return package_set;
+            return new BasePackage(
+                name: name!,
+                version: version_range?.MinVersion.ToNormalizedString(),
+                framework: framework?.ToString()
+            );
         }
     }
 
-    public class PackageSetBuilder
+    public class PackageBuilder
     {
-        private readonly Dictionary<BasePackage, PackageSet> package_sets = new();
-        private readonly Dictionary<BasePackage, VersionPair> versions = new();
+        private readonly Dictionary<BasePackage, BasePackage> base_package_deps_by_base_package = new();
+        private readonly Dictionary<BasePackage, VersionPair> versions_pair_by_base_package = new();
 
 
-        public bool DoesPackageExist(BasePackage id)
+        public bool DoesPackageExist(BasePackage package)
         {
-            return package_sets.ContainsKey(key: id);
+            return base_package_deps_by_base_package.ContainsKey(key: package);
         }
 
-        public PackageSet GetOrCreatePackageSet(BasePackage package)
+        public BasePackage GetOrCreateBasePackage(BasePackage package)
         {
-            if (package_sets.TryGetValue(key: package, value: out var packageSet))
+            if (base_package_deps_by_base_package.TryGetValue(key: package, value: out var package_with_deps))
             {
-                return packageSet;
+                return package_with_deps;
             }
 
-            packageSet = new PackageSet
-            {
-                package = package,
-                dependencies = new HashSet<BasePackage?>()
-            };
-            package_sets[key: package] = packageSet;
+            package_with_deps = BasePackage.FromBasePackage(package: package, dependencies:new List<BasePackage>());
+            base_package_deps_by_base_package[key: package] = package_with_deps;
 
-            NuGetVersion.TryParse(value: package.version, version: out var version);
+            NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
             if (package.version != null)
             {
-                versions[key: package] = new VersionPair(rawVersion: package.version, version: version);
+                versions_pair_by_base_package[key: package] = new VersionPair(rawVersion: package.version, version: version);
             }
 
-            return packageSet;
+            return package_with_deps;
         }
 
         /// <summary>
@@ -84,7 +76,7 @@ namespace NugetInspector
         /// <param name="id"></param>
         public void AddOrUpdatePackage(BasePackage id)
         {
-            GetOrCreatePackageSet(package: id);
+            GetOrCreateBasePackage(package: id);
         }
 
         /// <summary>
@@ -94,7 +86,7 @@ namespace NugetInspector
         /// <param name="dependency"></param>
         public void AddOrUpdatePackage(BasePackage id, BasePackage dependency)
         {
-            var packageSet = GetOrCreatePackageSet(package: id);
+            var packageSet = GetOrCreateBasePackage(package: id);
             packageSet.dependencies.Add(item: dependency);
         }
 
@@ -103,23 +95,24 @@ namespace NugetInspector
         /// </summary>
         /// <param name="id"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage id, HashSet<BasePackage?> dependencies)
+        public void AddOrUpdatePackage(BasePackage id, List<BasePackage?> dependencies)
         {
-            var packageSet = GetOrCreatePackageSet(package: id);
-            packageSet.dependencies.UnionWith(other: dependencies);
+            var packageWithDeps = GetOrCreateBasePackage(package: id);
+            if (dependencies != null) packageWithDeps.dependencies.AddRange(dependencies!);
+            packageWithDeps.dependencies = packageWithDeps.dependencies.Distinct().ToList();
         }
 
-        public List<PackageSet> GetPackageList()
+        public List<BasePackage> GetPackageList()
         {
-            return package_sets.Values.ToList();
+            return base_package_deps_by_base_package.Values.ToList();
         }
 
         public string? GetResolvedVersion(string name, VersionRange range)
         {
-            var allVersions = versions.Keys.Where(predicate: key => key.name == name)
-                .Select(selector: key => versions[key: key]);
+            var allVersions = versions_pair_by_base_package.Keys.Where(predicate: key => key.name == name)
+                .Select(selector: key => versions_pair_by_base_package[key: key]);
             var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.version));
-            foreach (var pair in versions)
+            foreach (var pair in versions_pair_by_base_package)
                 if (pair.Key.name == name && pair.Value.version == best)
                     return pair.Key.version;
 
@@ -139,63 +132,6 @@ namespace NugetInspector
         }
     }
 
-    public class PackageSet
-    {
-        public BasePackage? package;
-        public HashSet<BasePackage?> dependencies = new();
-    }
-
-    public class BasePackage
-    {
-
-        public string type = "nuget";
-        public string? name { get; set; } = "";
-        public string? version { get; set; } = "";
-        public string? framework { get; set; } = "";
-        public string purl { get; set; } = "";
-        public string download_url { get; set; } = "";
-
-        public BasePackage(string? name, string? version, string? framework)
-        {
-            this.name = name;
-            this.version = version;
-            this.framework = framework;
-
-            if (string.IsNullOrWhiteSpace(version))
-                purl = $"pkg:nuget/{name}";
-            else
-                purl = $"pkg:nuget/{name}@{version}";
-            
-            download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
-        }
-
-        public BasePackage(string? name, string? version)
-        {
-            this.name = name;
-            this.version = version;
-            // FIXME: support having no version
-            purl = $"pkg:nuget/{name}@{version}";
-            download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
-        }
-        protected bool Equals(BasePackage other)
-        {
-            return name == other.name && version == other.version && framework == other.framework;
-        }
-
-        public override bool Equals(object? obj)
-        {
-            if (ReferenceEquals(null, obj)) return false;
-            if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
-            return Equals((BasePackage)obj);
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(name, version, framework);
-        }
-
-    }
 
     /// <summary>
     /// Package data object using purl as identifying attributes as
@@ -203,7 +139,7 @@ namespace NugetInspector
     /// This model is essentially derived from ScanCode Toolkit Package/PackageData.
     /// This is used to represent the top-level project.
     /// </summary>
-    public class Package
+    public class BasePackage
     {
         public string type { get; set; } = "nuget";
         [JsonProperty(propertyName: "namespace")]
@@ -239,50 +175,107 @@ namespace NugetInspector
         public string repository_download_url { get; set; } = "";
         public string api_data_url { get; set; } = "";
         public string datasource_id { get; set; } = "";
-        public string project_file { get; set; } = null!;
+        public string datafile_path { get; set; } = "";
 
         // public List<DependentPackage> dependencies { get; set; } = new();
-        public List<PackageSet> packages { get; set; } = new();
+        public List<BasePackage> packages { get; set; } = new();
         public List<BasePackage> dependencies { get; set; } = new();
+
+        public BasePackage(string name, string? version, string? framework="", string? datafile_path="")
+        {
+            this.name = name;
+            this.version = version;
+            if (!string.IsNullOrWhiteSpace(framework))
+                this.version = version;
+            if (!string.IsNullOrWhiteSpace(datafile_path))
+                this.datafile_path = datafile_path;
+            if (!string.IsNullOrWhiteSpace(framework))
+                extra_data["framework"] = framework;
+        }
+
+        public static BasePackage FromBasePackage(BasePackage package, List<BasePackage> dependencies)
+        {
+            var bpwd = new BasePackage(name: package.name, version: package.version);
+            bpwd.extra_data = package.extra_data;
+            bpwd.dependencies = dependencies;
+            return bpwd;
+        }
+        
+        protected bool Equals(BasePackage other)
+        {
+            return (
+                type == other.type 
+                && name_space == other.name_space
+                && name == other.name 
+                && version == other.version 
+                && qualifiers == other.qualifiers 
+                && subpath == other.subpath 
+            );
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((BasePackage)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
+        }
 
         
         /// <summary>
-        /// Create a new PackageData instance from an IPackageSearchMetadata
+        /// Update this Package instance using the NuGet API
         /// </summary>
-        /// <param metadata="metadata"></param>
-        /// <returns>PackageData</returns>
-        public static Package CreateInstance(IPackageSearchMetadata metadata)
+        public void Update(NugetApi nugetApi)
         {
-            List<string> declared_licenses = new();
+            IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
+            Update(meta);
+        }
+        
+        /// <summary>
+        /// Update this Package instance from an IPackageSearchMetadata
+        /// </summary>
+        /// <param name="metadata"></param>
+        public void Update(IPackageSearchMetadata? metadata)
+        {
+            if (metadata == null)
+                return;
+
+            // set the purl
+            string meta_name = metadata.Identity.Id;
+            string meta_version = metadata.Identity.Version.ToString();
+            if (string.IsNullOrWhiteSpace(meta_version))
+                purl = $"pkg:nuget/{meta_name}";
+            else
+                purl = $"pkg:nuget/{meta_name}@{meta_version}";
+
+            // Update the declared license
+            List<string> meta_declared_licenses = new();
             Uri license_url = metadata.LicenseUrl;
             if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
             {
-                declared_licenses.Add( $"license_url: {license_url}");
+                meta_declared_licenses.Add( $"LicenseUrl: {license_url}");
             }
             LicenseMetadata license_meta = metadata.LicenseMetadata;
-            // license_meta;
-            string? license_expression = null;
-            if (!string.IsNullOrWhiteSpace(license_expression))
+            if (license_meta != null)
             {
-                declared_licenses.Add( $"license_expression: {license_expression}");
-            }
-            string declared_license = string.Join("\n", declared_licenses);
 
-            string purl = "";
-            string version = metadata.Identity.Version.ToString();
-            string name = metadata.Identity.Id;
-            if (string.IsNullOrWhiteSpace(version))
-                purl = $"pkg:nuget/{name}";
-            else
-                purl = $"pkg:nuget/{name}@{version}";
+                meta_declared_licenses.Add($"LicenseType: {license_meta.Type.ToString()}");
+                if (!string.IsNullOrWhiteSpace(license_meta.License))
+                    meta_declared_licenses.Add($"License: {license_meta.License}");
+                var expression = license_meta.LicenseExpression;
+                if (expression !=null)
+                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression.ToString()}");
+            }
+            declared_license = string.Join("\n", meta_declared_licenses);
             
-            // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
-            string download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
-            string api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{name.ToLower()}/{version.ToLower()}.json";
-            
-            List<Party> parties = new();
+            // Update the parties
             string authors = metadata.Authors;
-            if (!string.IsNullOrWhiteSpace(authors))
+            if (!string.IsNullOrWhiteSpace(authors) && parties.Count == 0)
             {
                 Party party = new()
                 {
@@ -291,25 +284,22 @@ namespace NugetInspector
                     name = authors,
                 };
                 parties.Add(party);
-            }  
-        
-            return new Package
-            {
-                type = "nuget",
-                purl = purl,
-                primary_language = "C#",
-                description=metadata.Description,
-                parties = parties,
-                //keywords = null,
-                homepage_url = metadata.ProjectUrl.ToString(),
-                download_url = download_url,
-                declared_license = declared_license,
-                // source_packages = null,
-                // dependencies = null,
-                repository_homepage_url = metadata.PackageDetailsUrl.ToString(),
-                repository_download_url = download_url,
-                api_data_url = api_data_url
-            };
+            }
+
+            // Update misc and URLs
+            primary_language = "C#";
+            description = metadata.Description;
+            //keywords = null;
+
+            // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
+            homepage_url = metadata.ProjectUrl.ToString();
+            download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
+            repository_homepage_url = metadata.PackageDetailsUrl.ToString();
+            repository_download_url = download_url;
+            api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{meta_name.ToLower()}/{meta_version.ToLower()}.json";
+
+            // source_packages = null;
+            // dependencies = null;
         }
     }
     
@@ -334,7 +324,7 @@ namespace NugetInspector
         public bool is_runtime { get; set;}
         public bool is_optional { get; set; }
         public bool is_resolved { get; set; }
-        public Package? resolved_package { get; set; }
+        public BasePackage? resolved_package { get; set; }
         public Dictionary<string, string> extra_data { get; set; } = new();
     }
 

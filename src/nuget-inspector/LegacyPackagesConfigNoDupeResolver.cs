@@ -31,27 +31,28 @@ public class LegacyPackagesConfigNoDupeResolver
         return result;
     }
 
-    public List<PackageSet> ProcessAll(List<Dependency> packages)
+    public List<BasePackage> ProcessAll(List<Dependency> packages)
     {
         foreach (var package in packages)
         {
             Add(id: package.name!, name: package.name, range: package.version_range, framework: package.framework);
         }
 
-        var builder = new PackageSetBuilder();
+        var builder = new PackageBuilder();
         foreach (var data in ResolutionDatas.Values)
         {
-            var deps = new HashSet<BasePackage?>();
+            var deps = new List<BasePackage>();
             foreach (var dep in data.Dependencies.Keys)
                 if (!ResolutionDatas.ContainsKey(key: dep))
                     throw new Exception(
                         message: $"Encountered a dependency but was unable to resolve a package for it: {dep}");
                 else
-                    deps.Add(item: new BasePackage(name: ResolutionDatas[key: dep].Name,
+                    deps.Add(item: new BasePackage(
+                        name: ResolutionDatas[key: dep].Name!,
                         version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
             builder.AddOrUpdatePackage(
-                id: new BasePackage(name: data.Name, version: data.CurrentVersion?.ToNormalizedString()),
-                dependencies: deps);
+                id: new BasePackage(name: data.Name!, version: data.CurrentVersion?.ToNormalizedString()),
+                dependencies: deps!);
         }
 
         return builder.GetPackageList();
