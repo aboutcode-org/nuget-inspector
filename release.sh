@@ -24,7 +24,8 @@ TARGET_BASE=nuget-inspector-$(git describe)
 for platform in "linux-x64" "win-x64" "osx-x64"
 do
     TARGET=$TARGET_BASE-$platform
-    RELEASE_DIR=release/$TARGET
+    RELEASE_DIR=release/nuget-inspector
+    rm -rf $RELEASE_DIR
     mkdir -p $RELEASE_DIR
     dotnet publish \
       --runtime $platform \
@@ -42,5 +43,5 @@ do
        README.rst         \
        $RELEASE_DIR
     
-    tar -czf release/$TARGET.tar.gz $RELEASE_DIR
+    tar -czf release/$TARGET.tar.gz -C release/ nuget-inspector
 done
