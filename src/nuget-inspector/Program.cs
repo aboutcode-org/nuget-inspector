@@ -60,11 +60,6 @@ internal static class Program
             var scan = inspector.RunScan();
             try
             {
-                if (Config.TRACE && scan.ResultName != null)
-                {
-                    Console.WriteLine($"Scan: {scan.ResultName}");
-                }
-
                 if (scan.Status == ScanResult.ResultStatus.Success)
                 {
                     if (Config.TRACE) Console.WriteLine("Scan Result: Success");

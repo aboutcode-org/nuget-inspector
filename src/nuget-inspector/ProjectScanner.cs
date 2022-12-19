@@ -16,7 +16,6 @@ public class ScanResult
     public Exception? Exception;
     public ProjectScannerOptions? Options;
     public List<Package> Packages = new();
-    public string? ResultName;
     public ResultStatus Status;
 }
 
@@ -37,9 +36,8 @@ public class ProjectScannerOptions : Options
     }
 
     public string? ProjectName { get; set; }
-    public string? ProjectUniqueId { get; set; }
-    public string? ProjectDirectory { get; set; }
     public string? ProjectVersion { get; set; }
+    public string? ProjectDirectory { get; set; }
     public string? PackagesConfigPath { get; set; }
     public string? ProjectJsonPath { get; set; }
     public string? ProjectJsonLockPath { get; set; }
@@ -94,9 +92,6 @@ internal class ProjectScanner
         if (string.IsNullOrWhiteSpace(value: Options.ProjectName))
             Options.ProjectName = Path.GetFileNameWithoutExtension(path: Options.ProjectFilePath);
 
-        if (string.IsNullOrWhiteSpace(value: Options.ProjectUniqueId))
-            Options.ProjectUniqueId = Path.GetFileNameWithoutExtension(path: Options.ProjectFilePath);
-
         if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
         {
             Options.ProjectVersion = AssemblyInfoParser.GetProjectAssemblyVersion(project_directory);
@@ -105,6 +100,10 @@ internal class ProjectScanner
         }   
     }
 
+    /// <summary>
+    /// Run the scan proper
+    /// </summary>
+    /// <returns>ScanResult</returns>
     public ScanResult RunScan()
     {
         try
@@ -119,7 +118,6 @@ internal class ProjectScanner
             return new ScanResult
             {
                 Status = ScanResult.ResultStatus.Success,
-                ResultName = Options.ProjectUniqueId,
                 Options = Options,
                 Packages = packages
             };
@@ -147,7 +145,7 @@ internal class ProjectScanner
 
         var package = new Package
         {
-            name = Options.ProjectUniqueId,
+            name = Options.ProjectName!,
             version = Options.ProjectVersion,
             project_file = Options.ProjectFilePath,
         };

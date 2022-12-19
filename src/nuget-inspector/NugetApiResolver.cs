@@ -54,8 +54,10 @@ public class NugetApiResolver
             }
             else
             {
-                var depPackage = nugetApi.FindPackageVersion(id: dependency.Id, versionRange: dependency.VersionRange);
-                if (depPackage == null)
+                IPackageSearchMetadata? api_package_metadata = nugetApi.FindPackageVersion(
+                    id: dependency.Id, 
+                    versionRange: dependency.VersionRange);
+                if (api_package_metadata == null)
                 {
                     if (Config.TRACE)
                         Console.WriteLine(
@@ -63,8 +65,13 @@ public class NugetApiResolver
                     continue;
                 }
 
-                var id = new BasePackage(name: depPackage.Identity.Id,
-                    version: depPackage.Identity.Version.ToNormalizedString());
+                var id = new BasePackage(name: api_package_metadata.Identity.Id,
+                    version: api_package_metadata.Identity.Version.ToNormalizedString());
+                if (Config.TRACE)
+                {
+                    Console.WriteLine($"Package details");
+                    Console.WriteLine($"    Description: {api_package_metadata.Description}");
+                }
                 dependencies.Add(item: id);
 
                 if (!builder.DoesPackageExist(id: id))

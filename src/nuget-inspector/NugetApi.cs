@@ -1,8 +1,10 @@
 ﻿using System.Diagnostics;
+using Newtonsoft.Json;
 using NuGet.Configuration;
 using NuGet.Frameworks;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
+using NuGet.Protocol;
 using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
@@ -46,14 +48,14 @@ public class NugetApi
         {
             if (Config.TRACE)
             {
-                Console.WriteLine($"Already looked up package '{id}', using the cache.");
+                Console.WriteLine($"API Cache hit for package '{id}'");
             }
         }
         else
         {
             if (Config.TRACE)
             {
-                Console.WriteLine($"Have not looked up package '{id}', using metadata resources.");
+                Console.WriteLine($"API Cache miss package '{id}'");
             }
 
             if (id != null)
@@ -72,6 +74,9 @@ public class NugetApi
     /// <returns></returns>
     private List<IPackageSearchMetadata> FindPackagesOnline(string? id)
     {
+        if (Config.TRACE)
+            Console.WriteLine($"------> FindPackagesOnline: {id}");
+
         var matching_packages = new List<IPackageSearchMetadata>();
         var exceptions = new List<Exception>();
 
@@ -86,7 +91,7 @@ public class NugetApi
                 if (Config.TRACE)
                     Console.WriteLine(
                         value:
-                        $"Took {stop_watch.ElapsedMilliseconds} ms to communicate with metadata resource about '{id}'");
+                        $"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{id}'");
                 if (meta_result.Any()) matching_packages.AddRange(collection: meta_result);
             }
             catch (Exception ex)
@@ -94,21 +99,31 @@ public class NugetApi
                 exceptions.Add(item: ex);
             }
 
-        if (matching_packages.Count > 0) return matching_packages;
+        if (matching_packages.Count > 0)
+        {
+            if (Config.TRACE)
+                foreach (var mp in matching_packages)
+                {
+                    Console.WriteLine("========================================================");
+                    Console.WriteLine(mp.Identity);
+                    Console.WriteLine(mp.ToJson(Formatting.Indented));
+                }
 
+            return matching_packages;
+        }
         if (exceptions.Count > 0)
         {
             if (Config.TRACE)
             {
                 Console.WriteLine(
                     value:
-                    $"No packages were found for {id}, and an exception occured in one or more meta data resources.");
+                    $"No packages were found for {id}, and an exception occured in one or more metadata resources.");
                 foreach (var ex in exceptions)
                 {
-                    Console.WriteLine($"A meta data resource was unable to load packages: {ex.Message}");
+                    Console.WriteLine($"Failed to fetch metadata for packages: {ex.Message}");
                     if (ex.InnerException != null)
                     {
-                        Console.WriteLine($"The reason: {ex.InnerException.Message}");
+                        Console.WriteLine($"Error: {ex.InnerException.Message}");
                     }
                 }
             }
@@ -218,7 +233,7 @@ public class NugetApi
             {
                 if (Config.TRACE)
                 {
-                    Console.WriteLine($"A dependency resource was unable to load for package: {identity}");
+                    Console.WriteLine($"Dependency not found for package: {identity}");
                     if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
                 }
             }
@@ -228,9 +243,11 @@ public class NugetApi
 
     private bool FrameworksMatch(PackageDependencyGroup dependency_group, DotNetFramework framework)
     {
-        if (dependency_group.TargetFramework.IsAny) return true;
+        if (dependency_group.TargetFramework.IsAny)
+            return true;
 
-        if (dependency_group.TargetFramework.IsAgnostic) return true;
+        if (dependency_group.TargetFramework.IsAgnostic)
+            return true;
 
         if (dependency_group.TargetFramework.IsSpecificFramework)
         {
@@ -247,9 +264,9 @@ public class NugetApi
 
 public class DotNetFramework
 {
-    public string Identifier;
-    public int Major;
-    public int Minor;
+    public string Identifier { get; set; }
+    public int Major { get; set; }
+    public int Minor { get; set; }
 
     public DotNetFramework(string id, int major, int minor)
     {

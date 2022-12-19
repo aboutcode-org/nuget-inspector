@@ -12,9 +12,9 @@ public class ScanHeader
     public string tool_version  { get; set; }= "0.7.0";
     public List<string> options { get; set; }
 
-    public string notice = "Dependency tree generated with nuget-inspector.\n" +
-                           "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
-                           "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
+    public string notice { get; set; } = "Dependency tree generated with nuget-inspector.\n" +
+                                        "nuget-inspector is a free software tool from nexB Inc. and others.\n" +
+                                        "Visit https://github.com/nexB/nuget-inspector/ for support and download.";
 
     public List<string> warnings  { get; set; } = new();
     public List<string> errors  { get; set; } = new();
@@ -29,9 +29,6 @@ public class ScanOutput
 {
     [JsonProperty(propertyName: "headers")]
     public List<ScanHeader> Headers  { get; set; } = new();
-
-    // "type": "file", "path": "/home/tg1999/Desktop/python-inspector-1/tests/data/azure-devops.req.txt",
-    // "package_data": [
     [JsonProperty(propertyName: "files")]
     public List<Package?> Files  { get; set; } = new();
 

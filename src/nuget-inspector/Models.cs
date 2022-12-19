@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
 using NuGet.Frameworks;
+using NuGet.Packaging;
+using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
 namespace NugetInspector
@@ -158,7 +160,6 @@ namespace NugetInspector
             this.version = version;
             this.framework = framework;
 
-            // FIXME: support having no version
             if (string.IsNullOrWhiteSpace(version))
                 purl = $"pkg:nuget/{name}";
             else
@@ -227,71 +228,35 @@ namespace NugetInspector
         }
     }
 
-    /// <summary>
-    /// This is a core data structure
-    /// </summary>
-    public class Package
-    {
-        public string? name { get; set; } = "";
-        public string? version { get; set; } = "";
-        public string datasource_id { get; set; } = null!;
-        public string project_file { get; set; } = null!;
-        public List<PackageSet> packages { get; set; } = new();
-        public List<BasePackage> dependencies { get; set; } = new();
-    }
-
-    /// <summary>
-    /// This is a core data structure, modelled after ScanCode models
-    /// </summary>
-    public class PackageData
-    {
-        public string? name { get; set; } = null;
-        public string? version { get; set; } = null;
-        public string datasource_id { get; set; } = null!;
-        public string project_file { get; set; } = null!;
-        public List<PackageSet> packages { get; set; } = new();
-        public List<BasePackage> dependencies { get; set; } = new();
-    }
-
-    /// <summary>
-    /// A party is a person, project or organization related to a package.
-    /// </summary>
-    public class Party
-    {
-        //One of  'person', 'project' or 'organization'
-        public string type { get; set; } = "";
-        public string role { get; set; } = "";
-        public string? name { get; set; } = "";
-        public string? email { get; set; } = "";
-        public string? url { get; set; } = "";
-    }
-
-    public class DependentPackage
-    {
-        public string purl { get; set; }= "";
-        public string extracted_requirement { get; set; } = "";
-        public string scope { get; set; } = "";
-        public bool is_runtime { get; set;}
-        public bool is_optional { get; set; }
-        public bool is_resolved { get; set; }
-        public ScannedPackageData? resolved_package { get; set; }
-        public Dictionary<string, string> extra_data { get; set; } = new();
-    }
-    
+    // /// <summary>
+    // /// This is a core data structure
+    // /// </summary>
+    // public class Package
+    // {
+    //     public string? type { get; set; } = "nuget";
+    //     public string? name { get; set; } = "";
+    //     public string? version { get; set; } = "";
+    //     public string datasource_id { get; set; } = null!;
+    //     public string project_file { get; set; } = null!;
+    //     public List<PackageSet> packages { get; set; } = new();
+    //     public List<BasePackage> dependencies { get; set; } = new();
+    // }
 
     /// <summary>
     /// Package data object using purl as identifying attributes as
-    /// specified here https://github.com/package-url/purl-spec.
+    /// specified here https://github.com/package-url/purl-spec
+    /// This model is essentially derived from ScanCode Toolkit Package/PackageData
     /// </summary>
-    public class ScannedPackageData
+    public class Package
     {
-        public string type { get; set; } = "";
+        public string type { get; set; } = "nuget";
         [JsonProperty(propertyName: "namespace")]
         public string name_space { get; set; } = "";
         public string name { get; set; } = "";
-        public string version { get; set; } = "";
+        public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
         public string subpath { get; set; } = "";
+        public string purl { get; set; } = "";
 
         public string primary_language { get; set; } = "C#";
         public string description { get; set; } = "";
@@ -314,10 +279,107 @@ namespace NugetInspector
         public string notice_text { get; set; } = "";
         public List<string> source_packages { get; set; } = new();
         public Dictionary<string, string> extra_data { get; set; } = new();
-        public List<DependentPackage> dependencies { get; set; } = new();
         public string repository_homepage_url { get; set; } = "";
         public string repository_download_url { get; set; } = "";
         public string api_data_url { get; set; } = "";
         public string datasource_id { get; set; } = "";
+        public string project_file { get; set; } = null!;
+
+        // public List<DependentPackage> dependencies { get; set; } = new();
+        public List<PackageSet> packages { get; set; } = new();
+        public List<BasePackage> dependencies { get; set; } = new();
+
+        
+        /// <summary>
+        /// Create a new PackageData instance from an IPackageSearchMetadata
+        /// </summary>
+        /// <param metadata="metadata"></param>
+        /// <returns>PackageData</returns>
+        public static Package CreateInstance(IPackageSearchMetadata metadata)
+        {
+            List<string> declared_licenses = new();
+            Uri license_url = metadata.LicenseUrl;
+            if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
+            {
+                declared_licenses.Add( $"license_url: {license_url}");
+            }
+            LicenseMetadata license_meta = metadata.LicenseMetadata;
+            // license_meta;
+            string? license_expression = null;
+            if (!string.IsNullOrWhiteSpace(license_expression))
+            {
+                declared_licenses.Add( $"license_expression: {license_expression}");
+            }
+            string declared_license = string.Join("\n", declared_licenses);
+
+            string purl = "";
+            string version = metadata.Identity.Version.ToString();
+            string name = metadata.Identity.Id;
+            if (string.IsNullOrWhiteSpace(version))
+                purl = $"pkg:nuget/{name}";
+            else
+                purl = $"pkg:nuget/{name}@{version}";
+            
+            // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
+            string download_url = $"https://www.nuget.org/api/v2/package/{name}/{version}";
+            string api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{name.ToLower()}/{version.ToLower()}.json";
+            
+            List<Party> parties = new();
+            string authors = metadata.Authors;
+            if (!string.IsNullOrWhiteSpace(authors))
+            {
+                Party party = new()
+                {
+                    type = "organization",
+                    role = "author",
+                    name = authors,
+                };
+                parties.Add(party);
+            }  
+        
+            return new Package
+            {
+                type = "nuget",
+                purl = purl,
+                primary_language = "C#",
+                description=metadata.Description,
+                parties = parties,
+                //keywords = null,
+                homepage_url = metadata.ProjectUrl.ToString(),
+                download_url = download_url,
+                declared_license = declared_license,
+                // source_packages = null,
+                // dependencies = null,
+                repository_homepage_url = metadata.PackageDetailsUrl.ToString(),
+                repository_download_url = download_url,
+                api_data_url = api_data_url
+            };
+        }
     }
+    
+    /// <summary>
+    /// A party is a person, project or organization related to a package.
+    /// </summary>
+    public class Party
+    {
+        //One of  'person', 'project' or 'organization'
+        public string type { get; set; } = "";
+        public string role { get; set; } = "";
+        public string? name { get; set; } = "";
+        public string? email { get; set; } = "";
+        public string? url { get; set; } = "";
+    }
+
+    public class DependentPackage
+    {
+        public string purl { get; set; }= "";
+        public string extracted_requirement { get; set; } = "";
+        public string scope { get; set; } = "";
+        public bool is_runtime { get; set;}
+        public bool is_optional { get; set; }
+        public bool is_resolved { get; set; }
+        public Package? resolved_package { get; set; }
+        public Dictionary<string, string> extra_data { get; set; } = new();
+    }
+
 }
