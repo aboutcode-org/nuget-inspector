@@ -62,14 +62,36 @@ project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj"
 
 
 @pytest.mark.parametrize("test_path", project_tests)
-def test_nuget_inspector_end_to_end_with_projects(test_path, regen=REGEN_TEST_FIXTURES):
-    check_nuget_inspector_end_to_end(test_path, regen)
+def test_nuget_inspector_end_to_end_with_projects(test_path):
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
+
+
+def test_nuget_inspector_end_to_end_with_target_framework():
+    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "netcoreapp3.1" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_with_target_framework2():
+    test_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net45" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
 
 
 @pytest.mark.xfail(reason="Failing tests to review")
 @pytest.mark.parametrize("test_path", failing_paths)
-def test_nuget_inspector_end_to_end_with_failing(test_path, regen=REGEN_TEST_FIXTURES):
-    check_nuget_inspector_end_to_end(test_path, regen)
+def test_nuget_inspector_end_to_end_with_failing(test_path):
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
 def clean_text_file(location, path=test_env.test_data_dir):
@@ -93,7 +115,7 @@ def load_and_clean_json(location):
     text = clean_text_file(location)
     data = json.loads(text)
     header = data["headers"][0]
-    
+
     # this can change on each version
     header["tool_version"] = "0.0.0"
     # this can change on each run
@@ -102,7 +124,7 @@ def load_and_clean_json(location):
     return data
 
 
-def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
+def check_nuget_inspector_end_to_end(test_path, expected_path=None, extra_args="", regen=REGEN_TEST_FIXTURES):
     """
     Run nuget-inspector on ``test_path`` string and check that results match the
     expected ``test_path``-expected.json file.
@@ -114,8 +136,8 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
         f"{NUGET_INSPECTOR} "
         f"--project-file \"{test_loc}\" "
         f"--json \"{result_file}\" "
+        +extra_args
     ]
-
     try:
         subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError as e:
@@ -126,7 +148,9 @@ def check_nuget_inspector_end_to_end(test_path, regen=REGEN_TEST_FIXTURES):
             "with output:", e.output.decode("utf-8"),
         ) from e
 
-    expected_path = test_path + "-expected.json"
+    if expected_path is None:
+        expected_path = test_path + "-expected.json"
+
     expected_file = test_env.get_test_loc(expected_path, must_exist=False)
 
     clean_text_file(location=result_file)

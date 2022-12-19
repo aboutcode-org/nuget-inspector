@@ -108,7 +108,7 @@ internal class ProjectScanner
     {
         try
         {
-            var package = GetPackage();
+            var package = ScanProject();
             List<BasePackage> packages = new List<BasePackage>();
             if (package != null)
             {
@@ -179,15 +179,18 @@ internal class ProjectScanner
         }
     }
 
-
-    public BasePackage? GetPackage()
+    /// <summary>
+    /// Scan an return the root BasePackage being scanned for this project.
+    /// </summary>
+    /// <returns></returns>
+    public BasePackage? ScanProject()
     {
-        var stopWatch = Stopwatch.StartNew();
+        Stopwatch? stopWatch =null;
         if (Config.TRACE)
         {
+            stopWatch = Stopwatch.StartNew();
             Console.WriteLine(
-                value:
-                $"Processing Project: {Options.ProjectName} using Project Directory: {Options.ProjectDirectory}");
+                $"Processing Project: {Options.ProjectName} using Directory: {Options.ProjectDirectory}");
         }
 
         var package = new BasePackage(
@@ -195,8 +198,19 @@ internal class ProjectScanner
             version: Options.ProjectVersion,
             datafile_path: Options.ProjectFilePath
         );
+        // Force using the provided framework if present
+        NuGetFramework? project_target_framework = null;
+        if (!string.IsNullOrWhiteSpace(Options.TargetFramework))
+        {
+            string option_target_framework = Options.TargetFramework.ToLowerInvariant();
+            project_target_framework=  NuGetFramework.ParseFolder(folderName: option_target_framework);
+        }
+        else
+        {
+            // use the 1st framework found in the project
+            project_target_framework = ParseTargetFramework();
+        }
 
-        var projectTargetFramework = ParseTargetFramework();
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
         bool hasProjectAssetsJson = FileExists(path: Options.ProjectAssetsJsonPath!);
         // legacy formats
@@ -264,7 +278,7 @@ internal class ProjectScanner
             var pkgRefResolver = new ProjFileStandardPackageReferenceHandler(
                 projectPath: Options.ProjectFilePath,
                 nugetApi: NugetApiService,
-                projectTargetFramework: projectTargetFramework);
+                projectTargetFramework: project_target_framework);
 
             var projectReferencesResult = pkgRefResolver.Resolve();
 
@@ -280,7 +294,7 @@ internal class ProjectScanner
                 if (Config.TRACE) Console.WriteLine("Using Fallback XML project file reader and resolver.");
                 var xmlResolver =
                     new ProjFileXmlParserPackageReferenceHandler(projectPath: Options.ProjectFilePath,
-                        nugetApi: NugetApiService, projectTargetFramework: projectTargetFramework);
+                        nugetApi: NugetApiService, projectTargetFramework: project_target_framework);
                 var xmlResult = xmlResolver.Resolve();
                 package.version = xmlResult.ProjectVersion;
                 package.packages = xmlResult.Packages;
@@ -291,9 +305,8 @@ internal class ProjectScanner
 
         if (Config.TRACE)
         {
-            Console.WriteLine(
-                value: $"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
-            Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
+            Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch!.ElapsedMilliseconds} ms.");
         }
 
         return package;
@@ -311,9 +324,8 @@ internal class ProjectScanner
 
     private NuGetFramework? ParseTargetFramework()
     {
-        var targetFramework = ExtractTargetFramework(projectFilePath: Options.ProjectFilePath);
-        var projectTargetFramework = NuGetFramework.ParseFolder(folderName: targetFramework);
-        return projectTargetFramework;
+        var target_framework = ExtractTargetFramework(projectFilePath: Options.ProjectFilePath);
+        return NuGetFramework.ParseFolder(folderName: target_framework);
     }
 
     /// <summary>
