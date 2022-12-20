@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 
+
 namespace NugetInspector;
 
 /// <summary>
@@ -9,7 +10,7 @@ public class ScanHeader
 {
     public string tool_name { get; set; } = "nuget-inspector";
     public string tool_homepageurl { get; set; } = "https://github.com/nexB/nuget-inspector";
-    public string tool_version { get; set; } = "0.7.0";
+    public string tool_version { get; set; } = Config.NUGET_INSPECTOR_VERSION;
     public List<string> options { get; set; }
 
     public string notice { get; set; } = "Dependency tree generated with nuget-inspector.\n" +
