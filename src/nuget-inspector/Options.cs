@@ -10,22 +10,24 @@ public class Options
 
     [CommandLineArg(key: "target-framework",
         description:
-        ".NET Target framework. Optional, will default to to the first targeted framework from the *.*proj file if not provided. See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
+        "Optional .NET Target framework. Defaults to the first project target framework. "+
+        "See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
     public string TargetFramework = "";
 
     [CommandLineArg(key: "json", description: "JSON output file path.")]
     public string OutputFilePath = "";
 
-    [CommandLineArg(key: "nuget-config", description: "Path to NuGet config file")]
+    [CommandLineArg(key: "nuget-config", description: "Path to a NuGet.config file")]
     public string NugetConfigPath = "";
 
     [CommandLineArg(key: "nuget-url",
-        description: "NuGet API URL feed [default: https://api.nuget.org/v3/index.json]")]
+        description: "NuGet API URL. [default: https://api.nuget.org/v3/index.json]")]
     public string NugetApiFeedUrl = "https://api.nuget.org/v3/index.json";
 
     public bool ShowHelp;
-
     public bool Verbose;
+    public bool ShowVersion;
+    public bool ShowAbout;
 
     /// <summary>
     /// Print the values of this options object to the console.
@@ -38,6 +40,8 @@ public class Options
         Console.WriteLine($"  NugetConfigPath: {NugetConfigPath}");
         Console.WriteLine($"  NugetApiFeedUrl: {NugetApiFeedUrl}");
         Console.WriteLine($"  Verbose: {Verbose}");
+        Console.WriteLine($"  ShowVersion: {ShowVersion}");
+        Console.WriteLine($"  ShowAbout: {ShowAbout}");
     }
 
     /// <summary>
@@ -85,6 +89,10 @@ public class Options
             action: value => options.ShowHelp = value != null);
         command_options.Add(prototype: "v|verbose", description: "Display more verbose output.",
             action: value => options.Verbose = value != null);
+        command_options.Add(prototype: "version", description: "Display nuget-inspector version and exit.",
+            action: value => options.ShowVersion = value != null);
+        command_options.Add(prototype: "about", description: "Display information about nuget-inspector and exit.",
+            action: value => options.ShowAbout = value != null);
 
         try
         {
@@ -103,6 +111,22 @@ public class Options
             return null;
         }
 
+        if (options.ShowVersion)
+        {
+            Console.Error.WriteLine(Config.NUGET_INSPECTOR_VERSION);
+                return null;
+        }
+        if (options.ShowAbout)
+        {
+            string message = ($"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
+                              + "Inspect .NET code and NuGet package manifests. Resolve NuGet dependencies.\n"
+                              + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
+                              + "Copyright (c) nexB Inc. and others.\n"
+                              + "https://github.com/nexB/nuget-inspector");
+            Console.Error.WriteLine(message);
+            return null;
+        }
+        
         // TODO: raise error if input or output are missing
 
         return options;
