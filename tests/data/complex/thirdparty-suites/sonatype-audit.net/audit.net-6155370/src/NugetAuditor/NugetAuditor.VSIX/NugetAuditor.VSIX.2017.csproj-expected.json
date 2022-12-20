@@ -190,11 +190,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2010 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -318,11 +326,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2010 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -355,11 +371,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.ComponentModelHost@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"MEF Component Model Host\" reference assembly used by Visual Studio 2010 and newer.\n\n      Microsoft.VisualStudio.ComponentModelHost.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -438,11 +462,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio .NET 2003 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -566,11 +598,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2012 and newer.\n\n      If you find this package installed in an extension that is supposed to target Visual Studio 2010, use NuGet to uninstall the package and it will report the specific dependencies that are causing the incompatibility.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -784,11 +824,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio .NET 2003 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -867,11 +915,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2012 and newer.\n\n      If you find this package installed in an extension that is supposed to target Visual Studio 2010, use NuGet to uninstall the package and it will report the specific dependencies that are causing the incompatibility.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -904,11 +960,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.DTE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Automation and Extensibility (EnvDTE) COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      EnvDTE.dll\n      stdole.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -941,11 +1005,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -978,11 +1050,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell Immutable\" reference assembly used by Visual Studio 2010 and newer.\n\n      Microsoft.VisualStudio.Shell.Immutable.10.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1015,11 +1095,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell Immutable\" reference assembly used by Visual Studio 2012 and newer.\n\n      Microsoft.VisualStudio.Shell.Immutable.11.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1052,11 +1140,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1089,11 +1185,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1126,11 +1230,19 @@
               "version": "9.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2008 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.9.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1163,11 +1275,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1200,11 +1320,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2012 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.11.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1283,11 +1411,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2010 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1366,11 +1502,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2012 and newer.\n\n      If you find this package installed in an extension that is supposed to target Visual Studio 2010, use NuGet to uninstall the package and it will report the specific dependencies that are causing the incompatibility.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1403,11 +1547,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.GraphModel@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Graph Model\" reference assembly used by Visual Studio 2012 and newer.\n\n      Microsoft.VisualStudio.GraphModel.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1440,11 +1592,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1477,11 +1637,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1560,11 +1728,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio .NET 2003 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1597,11 +1773,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1634,11 +1818,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1717,11 +1909,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio .NET 2003 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1754,11 +1954,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1837,11 +2045,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2005 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1874,11 +2090,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1911,11 +2135,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1948,11 +2180,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -1985,11 +2225,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2068,11 +2316,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2005 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2105,11 +2361,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2142,11 +2406,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2179,11 +2451,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2262,11 +2542,19 @@
               "version": "9.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.9@9.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2008 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2299,11 +2587,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2336,11 +2632,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2373,11 +2677,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2456,11 +2768,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2012 and newer.\n\n      If you find this package installed in an extension that is supposed to target Visual Studio 2010, use NuGet to uninstall the package and it will report the specific dependencies that are causing the incompatibility.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2493,11 +2813,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2530,11 +2858,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2567,11 +2903,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2604,11 +2948,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2010 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.10.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2641,11 +2993,19 @@
               "version": "9.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2008 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.9.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2724,11 +3084,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2010 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2761,11 +3129,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2798,11 +3174,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -2835,11 +3219,19 @@
               "version": "9.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2008 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.9.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3010,11 +3402,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2010 and newer.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3047,11 +3447,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.ComponentModelHost@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"MEF Component Model Host\" reference assembly used by Visual Studio 2010 and newer.\n\n      Microsoft.VisualStudio.ComponentModelHost.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3130,11 +3538,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.IDE.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This is a metadata-only package used as a dependency for reference packages and extensions that target Visual Studio 2012 and newer.\n\n      If you find this package installed in an extension that is supposed to target Visual Studio 2010, use NuGet to uninstall the package and it will report the specific dependencies that are causing the incompatibility.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3167,11 +3583,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.DTE@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Automation and Extensibility (EnvDTE) COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      EnvDTE.dll\n      stdole.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3204,11 +3628,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.OLE.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"OLE\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.OLE.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3241,11 +3673,19 @@
               "version": "10.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.10@10.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell Immutable\" reference assembly used by Visual Studio 2010 and newer.\n\n      Microsoft.VisualStudio.Shell.Immutable.10.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3278,11 +3718,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Immutable.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell Immutable\" reference assembly used by Visual Studio 2012 and newer.\n\n      Microsoft.VisualStudio.Shell.Immutable.11.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3315,11 +3763,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3352,11 +3808,19 @@
               "version": "8.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.8@8.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2005 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.8.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3389,11 +3853,19 @@
               "version": "9.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.9@9.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2008 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.9.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3426,11 +3898,19 @@
               "version": "7.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.TextManager.Interop@7.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Text Manager\" COM-interop assemblies used by Visual Studio 2003 and newer.\n\n      Microsoft.VisualStudio.TextManager.Interop.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -3463,11 +3943,19 @@
               "version": "11.0.4",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/VSSDK.Shell.Interop.11@11.0.4",
               "primary_language": "C#",
-              "description": "",
+              "description": "This package provides the Visual Studio \"Shell\" COM-interop assemblies used by Visual Studio 2012 and newer.\n\n      Microsoft.VisualStudio.Shell.Interop.11.0.dll",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Sam Harwell",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
