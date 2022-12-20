@@ -1,10 +1,7 @@
 ﻿using System.Diagnostics;
-using Newtonsoft.Json;
 using NuGet.Configuration;
 using NuGet.Frameworks;
-using NuGet.Packaging;
 using NuGet.Packaging.Core;
-using NuGet.Protocol;
 using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
@@ -24,7 +21,7 @@ public class NugetApi
         var providers = new List<Lazy<INuGetResourceProvider>>();
         providers.AddRange(collection: Repository.Provider.GetCoreV3());
         // TODO: providers.AddRange(Repository.Provider.GetCoreV2());
-        CreateResourceLists(providers: providers, nuget_api_feed_url: nugetApiFeedUrl, nuget_config: nugetConfig);
+        CreateResourceLists(providers: providers, nuget_api_feed_url: nugetApiFeedUrl, nuget_config_path: nugetConfig);
     }
 
     /// <summary>
@@ -85,7 +82,7 @@ public class NugetApi
 
             if (id != null)
             {
-                lookupCache[key: id] = FindPackagesOnline(id: id);
+                lookupCache[key: id] = FindPackagesOnline(name: id);
             }
         }
 
@@ -93,31 +90,40 @@ public class NugetApi
     }
 
     /// <summary>
-    /// 
+    ///     Find NuGet packages online using the configured NuGet APIs 
     /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
-    private List<IPackageSearchMetadata> FindPackagesOnline(string? id)
+    /// <param name="name"></param>
+    /// <returns>List of IPackageSearchMetadata</returns>
+    private List<IPackageSearchMetadata> FindPackagesOnline(string? name)
     {
         if (Config.TRACE)
-            Console.WriteLine($"------> FindPackagesOnline: {id}");
+            Console.WriteLine($"------> FindPackagesOnline: {name}");
 
         var matching_packages = new List<IPackageSearchMetadata>();
         var exceptions = new List<Exception>();
 
-        foreach (var metadataResource in MetadataResourceList)
+        foreach (PackageMetadataResource metadata_resource in MetadataResourceList)
             try
             {
-                var stop_watch = Stopwatch.StartNew();
-                var context = new SourceCacheContext();
-                var meta_result = metadataResource
-                    .GetMetadataAsync(packageId: id, includePrerelease: true, includeUnlisted: true,
-                        sourceCacheContext: context, log: new NugetLogger(), token: CancellationToken.None).Result;
+                Stopwatch stop_watch = Stopwatch.StartNew();
+                SourceCacheContext context = new SourceCacheContext();
+                IEnumerable<IPackageSearchMetadata>? package_metadata = metadata_resource
+                    .GetMetadataAsync(
+                        packageId: name, 
+                        includePrerelease: true, 
+                        includeUnlisted: true,
+                        sourceCacheContext: context, 
+                        log: new NugetLogger(), 
+                        token: CancellationToken.None
+                    ).Result;
+
                 if (Config.TRACE)
                     Console.WriteLine(
                         value:
-                        $"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{id}'");
-                if (meta_result.Any()) matching_packages.AddRange(collection: meta_result);
+                        $"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{name}'");
+
+                List<IPackageSearchMetadata> packageSearchMetadatas = package_metadata.ToList();
+                if (packageSearchMetadatas.Any()) matching_packages.AddRange(collection: packageSearchMetadatas);
             }
             catch (Exception ex)
             {
@@ -126,13 +132,13 @@ public class NugetApi
 
         if (matching_packages.Count > 0)
         {
-            if (Config.TRACE)
-                foreach (var mp in matching_packages)
-                {
-                    Console.WriteLine("========================================================");
-                    Console.WriteLine(mp.Identity);
-                    Console.WriteLine(mp.ToJson(Formatting.Indented));
-                }
+            // if (Config.TRACE)
+            //     foreach (var mp in matching_packages)
+            //     {
+            //         Console.WriteLine("========================================================");
+            //         Console.WriteLine(mp.Identity);
+            //         Console.WriteLine(mp.ToJson(Formatting.Indented));
+            //     }
 
             return matching_packages;
         }
@@ -143,7 +149,7 @@ public class NugetApi
             {
                 Console.WriteLine(
                     value:
-                    $"No packages were found for {id}, and an exception occured in one or more metadata resources.");
+                    $"No packages were found for {name}, and an exception occured in one or more metadata resources.");
                 foreach (var ex in exceptions)
                 {
                     Console.WriteLine($"Failed to fetch metadata for packages: {ex.Message}");
@@ -157,33 +163,34 @@ public class NugetApi
             return new List<IPackageSearchMetadata>();
         }
 
-        if (Config.TRACE) Console.WriteLine($"No package found for {id} in any meta data resources.");
+        if (Config.TRACE) Console.WriteLine($"No package found for {name} in any meta data resources.");
         return new List<IPackageSearchMetadata>();
     }
 
     private void CreateResourceLists(
         List<Lazy<INuGetResourceProvider>> providers,
         string nuget_api_feed_url,
-        string nuget_config)
+        string nuget_config_path)
     {
-        if (!string.IsNullOrWhiteSpace(value: nuget_config))
+        if (!string.IsNullOrWhiteSpace(value: nuget_config_path))
         {
-            if (File.Exists(path: nuget_config))
+            if (File.Exists(path: nuget_config_path))
             {
-                var parent = Directory.GetParent(path: nuget_config)!.FullName;
-                var nugetFile = Path.GetFileName(path: nuget_config);
+                string parent = Directory.GetParent(path: nuget_config_path)!.FullName;
+                string nugetFile = Path.GetFileName(path: nuget_config_path);
 
                 if (Config.TRACE) Console.WriteLine($"Loading nuget config {nugetFile} at {parent}.");
-                var setting = Settings.LoadSpecificSettings(root: parent, configFileName: nugetFile);
+                ISettings? setting = Settings.LoadSpecificSettings(root: parent, configFileName: nugetFile);
 
-                var package_source_provider = new PackageSourceProvider(settings: setting);
-                var sources = package_source_provider.LoadPackageSources();
+                PackageSourceProvider package_source_provider = new PackageSourceProvider(settings: setting);
+                IEnumerable<PackageSource> package_sources = package_source_provider.LoadPackageSources();
+                List<PackageSource> packageSources = package_sources.ToList();
                 if (Config.TRACE)
-                    Console.WriteLine($"Loaded {sources.Count()} package sources from nuget config.");
-                foreach (var source in sources)
+                    Console.WriteLine($"Loaded {packageSources.Count()} package sources from nuget config.");
+                foreach (var package_source in packageSources)
                 {
-                    if (Config.TRACE) Console.WriteLine($"Found package source: {source.Source}");
-                    AddPackageSource(providers: providers, package_source: source);
+                    if (Config.TRACE) Console.WriteLine($"Found package source: {package_source.Source}");
+                    AddPackageSource(providers: providers, package_source: package_source);
                 }
             }
             else
@@ -206,7 +213,7 @@ public class NugetApi
     }
 
     /// <summary>
-    /// Add package_source (e.g., a NuGet repo API URL) to the list of known NuGet APIs
+    /// Add package_source (e.g., a NuGet repo API URL, aka. PackageSource) to the list of known NuGet APIs
     /// </summary>
     /// <param name="providers">providers</param>
     /// <param name="package_source">package_source</param>
@@ -256,14 +263,14 @@ public class NugetApi
         foreach (var dependencyInfoResource in DependencyInfoResourceList)
             try
             {
-                var context = new SourceCacheContext();
-                var infoTask = dependencyInfoResource.ResolvePackage(
+                SourceCacheContext context = new SourceCacheContext();
+                Task<SourcePackageDependencyInfo>? infoTask = dependencyInfoResource.ResolvePackage(
                     package: identity,
                     projectFramework: framework,
                     cacheContext: context,
                     log: new NugetLogger(),
                     token: CancellationToken.None);
-                var result = infoTask.Result;
+                SourcePackageDependencyInfo result = infoTask.Result;
                 return result.Dependencies;
             }
             catch (Exception e)
@@ -278,25 +285,6 @@ public class NugetApi
         return new List<PackageDependency>();
     }
 
-    private bool FrameworksMatch(PackageDependencyGroup dependency_group, DotNetFramework framework)
-    {
-        if (dependency_group.TargetFramework.IsAny)
-            return true;
-
-        if (dependency_group.TargetFramework.IsAgnostic)
-            return true;
-
-        if (dependency_group.TargetFramework.IsSpecificFramework)
-        {
-            var same_major_version = dependency_group.TargetFramework.Version.Major == framework.Major;
-            var same_minor_version = dependency_group.TargetFramework.Version.Minor == framework.Minor;
-            return same_major_version && same_minor_version;
-        }
-
-        if (dependency_group.TargetFramework.IsUnsupported)
-            return false;
-        return true;
-    }
 }
 
 public class DotNetFramework

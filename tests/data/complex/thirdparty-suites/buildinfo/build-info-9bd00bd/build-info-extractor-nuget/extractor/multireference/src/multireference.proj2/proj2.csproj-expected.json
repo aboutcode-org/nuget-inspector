@@ -190,11 +190,19 @@
               "version": "2.1.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
               "primary_language": "C#",
-              "description": "",
+              "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft Corporation",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -208,7 +216,7 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=273778",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
@@ -320,11 +328,19 @@
               "version": "2.1.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
               "primary_language": "C#",
-              "description": "",
+              "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",
-              "parties": [],
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft Corporation",
+                  "email": "",
+                  "url": ""
+                }
+              ],
               "keywords": [],
               "homepage_url": "",
               "download_url": "",
@@ -338,7 +354,7 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=273778",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},

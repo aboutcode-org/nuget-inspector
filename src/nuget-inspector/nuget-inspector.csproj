@@ -23,25 +23,29 @@
         <PackageId>nuget-inspector</PackageId>
         <Product>nuget-inspector</Product>
         <AssemblyName>nuget-inspector</AssemblyName>
-        <Version>0.7.0</Version>
+        <Version>0.7.2</Version>
         <Authors>nexB Inc.</Authors>
         <Company>nexB Inc</Company>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
-        <FileVersion>0.7.0.0</FileVersion>
+        <AssemblyVersion>0.7.2.0</AssemblyVersion>
+        <FileVersion>0.7.2.0</FileVersion>
         <Description>A NuGet and Dotnet package dependency resolver</Description>
         <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
-        <PackageLicenseUrl>Apache-2.0</PackageLicenseUrl>
+        <PackageLicenseUrl>Apache-2.0 AND MIT</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
+        <Copyright>Copyright (c) nexB Inc. and others.</Copyright>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>nuget dependencies</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.Build" Version="17.3.2"/>
-        <PackageReference Include="Microsoft.Build.Locator" Version="1.4.10-g38d95f4814"/>
-        <PackageReference Include="Mono.Options" Version="6.12.0.148"/>
-        <PackageReference Include="NuGet.Client" Version="4.3.0-beta1-2418"/>
-        <PackageReference Include="NuGet.ProjectModel" Version="6.1.0"/>
-        <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all"/>
-        <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Build" Version="17.3.2" />
+        <PackageReference Include="Microsoft.Build.Locator" Version="1.4.10-g38d95f4814" />
+        <PackageReference Include="Mono.Options" Version="6.12.0.148" />
+        <PackageReference Include="NuGet.Client" Version="4.3.0-beta1-2418" />
+        <PackageReference Include="NuGet.ProjectModel" Version="6.1.0" />
+        <PackageReference Include="Microsoft.NETCore.Targets" Version="3.0.0" PrivateAssets="all" />
+        <PackageReference Include="packageurl-dotnet" Version="1.1.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     </ItemGroup>
 
 </Project>
