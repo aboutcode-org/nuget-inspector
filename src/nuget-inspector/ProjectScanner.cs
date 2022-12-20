@@ -164,6 +164,20 @@ internal class ProjectScanner
                 {
                     if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subpack: {subpack}: {ex}");
                 }
+                
+                foreach (BasePackage subdep in subpack.dependencies)
+                {
+                    try
+                    {
+                        subdep.Update(nugetApi: NugetApiService);
+                    }
+                    catch (Exception ex)
+                    {
+                        if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subdep: {subdep}: {ex}");
+                    }
+                }
+
+                
             }
 
             foreach (BasePackage dep in package.dependencies)
