@@ -279,25 +279,29 @@ namespace NugetInspector
 
             // Update the parties
             string authors = metadata.Authors;
-            if (!string.IsNullOrWhiteSpace(authors) && parties.Count == 0)
+            if (!string.IsNullOrWhiteSpace(authors))
             {
-                Party party = new()
-                {
-                    type = "organization",
-                    role = "author",
-                    name = authors,
-                };
+                Party party = new() {type = "organization", role = "author", name = authors};
                 parties.Add(party);
             }
 
+            string owners = metadata.Owners;
+            if (!string.IsNullOrWhiteSpace(authors))
+            {
+                Party party = new() {type = "organization", role = "owner", name = owners};
+                parties.Add(party);
+            }
+            
             // Update misc and URLs
             primary_language = "C#";
             description = metadata.Description;
-            //keywords = null;
+            keywords = metadata.Tags.Trim().Split(separator: ",").ToList();
+
+            homepage_url = metadata.ProjectUrl.ToString();
 
             // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
-            homepage_url = metadata.ProjectUrl.ToString();
             download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
+
             repository_homepage_url = metadata.PackageDetailsUrl.ToString();
             repository_download_url = download_url;
             api_data_url =
