@@ -134,7 +134,7 @@ internal class ProjectScanner
     }
 
     /// <summary>
-    /// Enhance results with metadata.
+    /// Enhance the packages in scan results with metadata fetched from the NuGet API.
     /// </summary>
     /// <param name="scan_result"></param>
     /// <returns></returns>
@@ -363,21 +363,17 @@ internal class ProjectScanner
         if (!targetFrameworks.Any())
         {
             if (Config.TRACE)
-                Console.WriteLine(
-                    value: $"Warning - Target Framework: Could not extract a target framework for {projectFilePath}");
+                Console.WriteLine($"Warning - Target Framework: Could not extract a target framework for {projectFilePath}");
             return string.Empty;
         }
 
         if (targetFrameworks.Count > 1 && Config.TRACE)
         {
-            Console.WriteLine(
-                value: $"Warning - Target Framework: Found multiple target frameworks for {projectFilePath}");
+            Console.WriteLine($"Warning - Target Framework: Found multiple target frameworks for {projectFilePath}");
         }
 
         if (Config.TRACE)
-            Console.WriteLine(
-                value:
-                $"Found the following TargetFramework(s): {string.Join(separator: Environment.NewLine, values: targetFrameworks)}");
+            Console.WriteLine($"Found the following TargetFramework(s): {string.Join(separator: Environment.NewLine, values: targetFrameworks)}");
 
         return targetFrameworks.First().Value;
     }
