@@ -109,9 +109,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -124,7 +124,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -139,9 +139,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -5698,7 +5698,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jetbrains",
+            "resharper",
+            "annotations",
+            "canbenull",
+            "notnull"
+          ],
           "homepage_url": "https://www.jetbrains.com/help/resharper/10.0/Code_Analysis__Code_Annotations.html",
           "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0",
           "size": 0,
@@ -5743,7 +5749,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "aspnetcore"
+          ],
           "homepage_url": "https://asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5",
           "size": 0,
@@ -7643,7 +7651,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "logging",
+            "log",
+            "tracing",
+            "logfiles"
+          ],
           "homepage_url": "https://logging.apache.org/log4net/",
           "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.15",
           "size": 0,
@@ -7675,7 +7688,7 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/RestSharp@109.0.0-preview.1",
+          "purl": "pkg:nuget/RestSharp@108.0.3",
           "primary_language": "C#",
           "description": "Simple REST and HTTP API Client",
           "release_date": "",
@@ -7690,7 +7703,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://restsharp.dev/",
-          "download_url": "https://www.nuget.org/api/v2/package/RestSharp/109.0.0-preview.1",
+          "download_url": "https://www.nuget.org/api/v2/package/RestSharp/108.0.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -7701,13 +7714,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/RestSharp/109.0.0-preview.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/RestSharp/108.0.3/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/RestSharp/109.0.0-preview.1?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/RestSharp/109.0.0-preview.1",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/restsharp/109.0.0-preview.1.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/RestSharp/108.0.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/RestSharp/108.0.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/restsharp/108.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -7767,9 +7780,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -7782,7 +7795,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -7797,9 +7810,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -9671,7 +9684,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jetbrains",
+            "resharper",
+            "annotations",
+            "canbenull",
+            "notnull"
+          ],
           "homepage_url": "https://www.jetbrains.com/help/resharper/10.0/Code_Analysis__Code_Annotations.html",
           "download_url": "https://www.nuget.org/api/v2/package/JetBrains.Annotations/11.1.0",
           "size": 0,
@@ -9716,7 +9735,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "aspnetcore"
+          ],
           "homepage_url": "https://asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNetCore.All/2.0.5",
           "size": 0,
@@ -10122,7 +10143,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "logging",
+            "log",
+            "tracing",
+            "logfiles"
+          ],
           "homepage_url": "https://logging.apache.org/log4net/",
           "download_url": "https://www.nuget.org/api/v2/package/log4net/2.0.15",
           "size": 0,
@@ -10154,7 +10180,7 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/RestSharp@109.0.0-preview.1",
+          "purl": "pkg:nuget/RestSharp@108.0.3",
           "primary_language": "C#",
           "description": "Simple REST and HTTP API Client",
           "release_date": "",
@@ -10169,7 +10195,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://restsharp.dev/",
-          "download_url": "https://www.nuget.org/api/v2/package/RestSharp/109.0.0-preview.1",
+          "download_url": "https://www.nuget.org/api/v2/package/RestSharp/108.0.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -10180,13 +10206,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/RestSharp/109.0.0-preview.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/RestSharp/108.0.3/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/RestSharp/109.0.0-preview.1?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/RestSharp/109.0.0-preview.1",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/restsharp/109.0.0-preview.1.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/RestSharp/108.0.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/RestSharp/108.0.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/restsharp/108.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],

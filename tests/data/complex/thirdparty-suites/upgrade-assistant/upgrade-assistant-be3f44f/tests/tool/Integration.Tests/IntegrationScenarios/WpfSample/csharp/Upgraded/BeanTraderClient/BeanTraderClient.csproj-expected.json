@@ -101,9 +101,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -116,7 +116,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -131,9 +131,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -25382,7 +25382,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
           "size": 0,
@@ -27186,7 +27194,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -28446,7 +28456,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -29172,7 +29184,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "windsor",
+            "inversionOfControl",
+            "DependencyInjection"
+          ],
           "homepage_url": "http://www.castleproject.org/projects/windsor/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1",
           "size": 0,
@@ -29216,7 +29233,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
               "homepage_url": "http://www.castleproject.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
               "size": 0,
@@ -29488,7 +29513,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
           "size": 0,
@@ -29533,7 +29569,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
           "size": 0,
@@ -29578,7 +29625,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
           "size": 0,
@@ -29606,51 +29664,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Text.Analyzers",
-          "version": "2.6.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Text.Analyzers@2.6.3",
-          "primary_language": "C#",
-          "description": "Text Analyzers",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
-          "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529443",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Text.Analyzers/2.6.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/text.analyzers/2.6.3.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.CodeAnalysis.FxCopAnalyzers",
           "version": "2.6.3",
           "qualifiers": "",
@@ -29668,7 +29681,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3",
           "size": 0,
@@ -29712,7 +29736,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
               "size": 0,
@@ -29757,7 +29792,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
               "size": 0,
@@ -29802,7 +29848,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "size": 0,
@@ -29822,51 +29879,6 @@
               "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/2.6.3?_src=template",
               "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netframework.analyzers/2.6.3.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            },
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Text.Analyzers",
-              "version": "2.6.3",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Text.Analyzers@2.6.3",
-              "primary_language": "C#",
-              "description": "Text Analyzers",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
-              "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529443",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Text.Analyzers/2.6.3?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/text.analyzers/2.6.3.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -29939,7 +29951,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AutoRest",
+            "ClientRuntime",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8",
           "size": 0,
@@ -30028,7 +30045,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -30075,7 +30094,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "AutoRest",
+            "ClientRuntime",
+            "REST",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7",
           "size": 0,
@@ -30164,7 +30190,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AutoRest",
+                "ClientRuntime",
+                "Common"
+              ],
               "homepage_url": "https://github.com/Azure/AutoRest",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8",
               "size": 0,
@@ -30209,7 +30240,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -34366,7 +34399,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "Logging"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.8.0",
           "size": 0,
@@ -34411,7 +34450,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "SecurityTokens",
+            "Cryptographic",
+            "operations",
+            "Signing",
+            "Verifying",
+            "Signatures",
+            "Encryption"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
           "size": 0,
@@ -34455,7 +34506,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Logging"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.8.0",
               "size": 0,
@@ -34592,7 +34649,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "Reading",
+            "XML",
+            "Writing",
+            "Enveloped",
+            "Signatures"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
           "size": 0,
@@ -34636,7 +34703,19 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SecurityTokens",
+                "Cryptographic",
+                "operations",
+                "Signing",
+                "Verifying",
+                "Signatures",
+                "Encryption"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
               "size": 0,
@@ -34683,7 +34762,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "SamlTokens",
+            "Saml",
+            "Token",
+            "Saml2"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.8.0",
           "size": 0,
@@ -34727,7 +34815,19 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SecurityTokens",
+                "Cryptographic",
+                "operations",
+                "Signing",
+                "Verifying",
+                "Signatures",
+                "Encryption"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
               "size": 0,
@@ -34772,7 +34872,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Reading",
+                "XML",
+                "Writing",
+                "Enveloped",
+                "Signatures"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
               "size": 0,
@@ -34819,7 +34929,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "WsTrust"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
           "size": 0,
@@ -34863,7 +34979,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SamlTokens",
+                "Saml",
+                "Token",
+                "Saml2"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.8.0",
               "size": 0,
@@ -34908,7 +35033,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Reading",
+                "XML",
+                "Writing",
+                "Enveloped",
+                "Signatures"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
               "size": 0,
@@ -35179,7 +35314,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "WsTrust"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
               "size": 0,
@@ -35226,7 +35367,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Upgrade",
+            "analyzers"
+          ],
           "homepage_url": "https://github.com/dotnet/upgrade-assistant",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702",
           "size": 0,
@@ -35271,7 +35415,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.3",
           "size": 0,
@@ -35587,7 +35733,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "Cloud",
+            "REST",
+            "HTTP",
+            "Client",
+            "Core",
+            "Common",
+            "Hyak"
+          ],
           "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
           "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.2.2",
           "size": 0,
@@ -35676,7 +35832,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.3",
               "size": 0,
@@ -35813,7 +35971,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Behavior",
+            "Action",
+            "Behaviors",
+            "Actions",
+            "Blend",
+            "Managed",
+            "C#",
+            "Interaction",
+            "Interactivity",
+            "Interactions"
+          ],
           "homepage_url": "https://github.com/Microsoft/XamlBehaviorsWpf",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Xaml.Behaviors.Wpf/1.1.19",
           "size": 0,
@@ -35903,7 +36072,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "UI",
+            "Metro",
+            "Modern",
+            "Material",
+            "XAML",
+            "Toolkit",
+            "Library",
+            ".NET",
+            "OSS",
+            "OpenSource",
+            "WindowChrome"
+          ],
           "homepage_url": "https://github.com/ControlzEx/ControlzEx",
           "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/4.4.0",
           "size": 0,
@@ -35947,7 +36129,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Behavior",
+                "Action",
+                "Behaviors",
+                "Actions",
+                "Blend",
+                "Managed",
+                "C#",
+                "Interaction",
+                "Interactivity",
+                "Interactions"
+              ],
               "homepage_url": "https://github.com/Microsoft/XamlBehaviorsWpf",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Xaml.Behaviors.Wpf/1.1.19",
               "size": 0,
@@ -36039,7 +36232,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "UI",
+            "Metro",
+            "Modern",
+            "Material",
+            "XAML",
+            "Toolkit",
+            "Library",
+            ".NET",
+            "OSS",
+            "OpenSource"
+          ],
           "homepage_url": "https://github.com/MahApps/MahApps.Metro",
           "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/2.4.4",
           "size": 0,
@@ -36083,7 +36288,20 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "WPF",
+                "UI",
+                "Metro",
+                "Modern",
+                "Material",
+                "XAML",
+                "Toolkit",
+                "Library",
+                ".NET",
+                "OSS",
+                "OpenSource",
+                "WindowChrome"
+              ],
               "homepage_url": "https://github.com/ControlzEx/ControlzEx",
               "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/4.4.0",
               "size": 0,
@@ -36175,7 +36393,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "idisposable",
+            "iasyncdisposable",
+            "disposable"
+          ],
           "homepage_url": "https://github.com/StephenCleary/Disposables",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.Disposables/2.2.0",
           "size": 0,
@@ -36266,7 +36488,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "task",
+            "async",
+            "taskfactory",
+            "cancellationtoken",
+            "taskcompletionsource"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
           "size": 0,
@@ -36310,7 +36538,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "idisposable",
+                "iasyncdisposable",
+                "disposable"
+              ],
               "homepage_url": "https://github.com/StephenCleary/Disposables",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.Disposables/2.2.0",
               "size": 0,
@@ -36357,7 +36589,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "task",
+            "async",
+            "synchronizationcontext"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Context/5.1.0",
           "size": 0,
@@ -36401,7 +36637,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "taskfactory",
+                "cancellationtoken",
+                "taskcompletionsource"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
               "size": 0,
@@ -36448,7 +36690,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "collection",
+            "deque",
+            "dequeue"
+          ],
           "homepage_url": "https://github.com/StephenCleary/Deque",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.Collections.Deque/1.1.0",
           "size": 0,
@@ -36493,7 +36739,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "task",
+            "async",
+            "asynclock",
+            "asynclazy"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Coordination/5.1.0",
           "size": 0,
@@ -36537,7 +36788,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "taskfactory",
+                "cancellationtoken",
+                "taskcompletionsource"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
               "size": 0,
@@ -36582,7 +36839,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "collection",
+                "deque",
+                "dequeue"
+              ],
               "homepage_url": "https://github.com/StephenCleary/Deque",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.Collections.Deque/1.1.0",
               "size": 0,
@@ -36629,7 +36890,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "task",
+            "async",
+            "waithandle"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Interop.WaitHandles/5.1.0",
           "size": 0,
@@ -36673,7 +36938,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "taskfactory",
+                "cancellationtoken",
+                "taskcompletionsource"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
               "size": 0,
@@ -36720,7 +36991,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "task",
+            "async"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Oop/5.1.0",
           "size": 0,
@@ -36764,7 +37038,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "asynclock",
+                "asynclazy"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Coordination/5.1.0",
               "size": 0,
@@ -36811,7 +37090,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "cancellation",
+            "cancellationtoken"
+          ],
           "homepage_url": "https://github.com/StephenCleary/Cancellation",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.Cancellation/1.1.0",
           "size": 0,
@@ -36855,7 +37137,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "idisposable",
+                "iasyncdisposable",
+                "disposable"
+              ],
               "homepage_url": "https://github.com/StephenCleary/Disposables",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.Disposables/2.2.0",
               "size": 0,
@@ -36902,7 +37188,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "async",
+            "await",
+            "async-await",
+            "task",
+            "asynchronous",
+            "nito",
+            "nitro"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/5.1.0",
           "size": 0,
@@ -36946,7 +37240,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "synchronizationcontext"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Context/5.1.0",
               "size": 0,
@@ -36991,7 +37289,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "asynclock",
+                "asynclazy"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Coordination/5.1.0",
               "size": 0,
@@ -37036,7 +37339,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "waithandle"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Interop.WaitHandles/5.1.0",
               "size": 0,
@@ -37081,7 +37388,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Oop/5.1.0",
               "size": 0,
@@ -37126,7 +37436,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "taskfactory",
+                "cancellationtoken",
+                "taskcompletionsource"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
               "size": 0,
@@ -37171,7 +37487,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "cancellation",
+                "cancellationtoken"
+              ],
               "homepage_url": "https://github.com/StephenCleary/Cancellation",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.Cancellation/1.1.0",
               "size": 0,
@@ -41183,10 +41502,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "runtime.linux-arm.runtime.native.System.IO.Ports",
-          "version": "5.0.0-rtm.20519.4",
+          "version": "5.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+          "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0",
           "primary_language": "C#",
           "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -41201,7 +41520,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://github.com/dotnet/runtime",
-          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -41212,13 +41531,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm.runtime.native.system.io.ports/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -41228,10 +41547,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "runtime.linux-arm64.runtime.native.System.IO.Ports",
-          "version": "5.0.0-rtm.20519.4",
+          "version": "5.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+          "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0",
           "primary_language": "C#",
           "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -41246,7 +41565,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://github.com/dotnet/runtime",
-          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -41257,13 +41576,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -41273,10 +41592,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "runtime.linux-x64.runtime.native.System.IO.Ports",
-          "version": "5.0.0-rtm.20519.4",
+          "version": "5.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+          "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0",
           "primary_language": "C#",
           "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -41291,7 +41610,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://github.com/dotnet/runtime",
-          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+          "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -41302,13 +41621,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-x64.runtime.native.system.io.ports/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -41318,10 +41637,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "runtime.osx-x64.runtime.native.System.IO.Ports",
-          "version": "5.0.0-rtm.20519.4",
+          "version": "5.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+          "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0",
           "primary_language": "C#",
           "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -41336,7 +41655,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://github.com/dotnet/runtime",
-          "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+          "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -41347,13 +41666,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.osx-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.osx-x64.runtime.native.system.io.ports/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -41407,10 +41726,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "runtime.linux-arm.runtime.native.System.IO.Ports",
-              "version": "5.0.0-rtm.20519.4",
+              "version": "5.0.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+              "purl": "pkg:nuget/runtime.linux-arm.runtime.native.System.IO.Ports@5.0.0",
               "primary_language": "C#",
               "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
               "release_date": "",
@@ -41425,7 +41744,7 @@
               ],
               "keywords": [],
               "homepage_url": "https://github.com/dotnet/runtime",
-              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -41436,13 +41755,13 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm.runtime.native.system.io.ports/5.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -41452,10 +41771,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "runtime.linux-arm64.runtime.native.System.IO.Ports",
-              "version": "5.0.0-rtm.20519.4",
+              "version": "5.0.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+              "purl": "pkg:nuget/runtime.linux-arm64.runtime.native.System.IO.Ports@5.0.0",
               "primary_language": "C#",
               "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
               "release_date": "",
@@ -41470,7 +41789,7 @@
               ],
               "keywords": [],
               "homepage_url": "https://github.com/dotnet/runtime",
-              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -41481,13 +41800,13 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -41497,10 +41816,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "runtime.linux-x64.runtime.native.System.IO.Ports",
-              "version": "5.0.0-rtm.20519.4",
+              "version": "5.0.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+              "purl": "pkg:nuget/runtime.linux-x64.runtime.native.System.IO.Ports@5.0.0",
               "primary_language": "C#",
               "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
               "release_date": "",
@@ -41515,7 +41834,7 @@
               ],
               "keywords": [],
               "homepage_url": "https://github.com/dotnet/runtime",
-              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -41526,13 +41845,13 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+              "repository_homepage_url": "https://www.nuget.org/packages/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.linux-x64.runtime.native.system.io.ports/5.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -41542,10 +41861,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "runtime.osx-x64.runtime.native.System.IO.Ports",
-              "version": "5.0.0-rtm.20519.4",
+              "version": "5.0.0",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0-rtm.20519.4",
+              "purl": "pkg:nuget/runtime.osx-x64.runtime.native.System.IO.Ports@5.0.0",
               "primary_language": "C#",
               "description": "Internal implementation package not meant for direct consumption.  Please do not reference directly. \nWhen using NuGet 3.x this package requires at least version 3.4.",
               "release_date": "",
@@ -41560,7 +41879,7 @@
               ],
               "keywords": [],
               "homepage_url": "https://github.com/dotnet/runtime",
-              "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
+              "download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -41571,13 +41890,13 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0-rtm.20519.4",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.osx-x64.runtime.native.system.io.ports/5.0.0-rtm.20519.4.json",
+              "repository_homepage_url": "https://www.nuget.org/packages/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/runtime.osx-x64.runtime.native.system.io.ports/5.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -45115,9 +45434,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -45130,7 +45449,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -45145,9 +45464,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -45173,7 +45492,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "windsor",
+            "inversionOfControl",
+            "DependencyInjection"
+          ],
           "homepage_url": "http://www.castleproject.org/projects/windsor/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1",
           "size": 0,
@@ -45217,7 +45541,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
               "homepage_url": "http://www.castleproject.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
               "size": 0,
@@ -45489,7 +45821,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3",
           "size": 0,
@@ -45533,7 +45876,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
               "size": 0,
@@ -45578,7 +45932,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
               "size": 0,
@@ -45623,7 +45988,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "size": 0,
@@ -45643,51 +46019,6 @@
               "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/2.6.3?_src=template",
               "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netframework.analyzers/2.6.3.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            },
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Text.Analyzers",
-              "version": "2.6.3",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Text.Analyzers@2.6.3",
-              "primary_language": "C#",
-              "description": "Text Analyzers",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
-              "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529443",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Text.Analyzers/2.6.3?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/text.analyzers/2.6.3.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -45715,7 +46046,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "AutoRest",
+            "ClientRuntime",
+            "REST",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7",
           "size": 0,
@@ -45804,7 +46142,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AutoRest",
+                "ClientRuntime",
+                "Common"
+              ],
               "homepage_url": "https://github.com/Azure/AutoRest",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8",
               "size": 0,
@@ -45849,7 +46192,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -47291,7 +47636,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "WsTrust"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
               "size": 0,
@@ -47338,7 +47689,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Upgrade",
+            "analyzers"
+          ],
           "homepage_url": "https://github.com/dotnet/upgrade-assistant",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702",
           "size": 0,
@@ -47383,7 +47737,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "Cloud",
+            "REST",
+            "HTTP",
+            "Client",
+            "Core",
+            "Common",
+            "Hyak"
+          ],
           "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
           "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.2.2",
           "size": 0,
@@ -47472,7 +47836,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.3",
               "size": 0,
@@ -47609,7 +47975,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "UI",
+            "Metro",
+            "Modern",
+            "Material",
+            "XAML",
+            "Toolkit",
+            "Library",
+            ".NET",
+            "OSS",
+            "OpenSource"
+          ],
           "homepage_url": "https://github.com/MahApps/MahApps.Metro",
           "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/2.4.4",
           "size": 0,
@@ -47653,7 +48031,20 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "WPF",
+                "UI",
+                "Metro",
+                "Modern",
+                "Material",
+                "XAML",
+                "Toolkit",
+                "Library",
+                ".NET",
+                "OSS",
+                "OpenSource",
+                "WindowChrome"
+              ],
               "homepage_url": "https://github.com/ControlzEx/ControlzEx",
               "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/4.4.0",
               "size": 0,
@@ -47700,7 +48091,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "async",
+            "await",
+            "async-await",
+            "task",
+            "asynchronous",
+            "nito",
+            "nitro"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/5.1.0",
           "size": 0,
@@ -47744,7 +48143,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "synchronizationcontext"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Context/5.1.0",
               "size": 0,
@@ -47789,7 +48192,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "asynclock",
+                "asynclazy"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Coordination/5.1.0",
               "size": 0,
@@ -47834,7 +48242,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "waithandle"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Interop.WaitHandles/5.1.0",
               "size": 0,
@@ -47879,7 +48291,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Oop/5.1.0",
               "size": 0,
@@ -47924,7 +48339,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "task",
+                "async",
+                "taskfactory",
+                "cancellationtoken",
+                "taskcompletionsource"
+              ],
               "homepage_url": "https://github.com/StephenCleary/AsyncEx",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx.Tasks/5.1.0",
               "size": 0,
@@ -47969,7 +48390,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "cancellation",
+                "cancellationtoken"
+              ],
               "homepage_url": "https://github.com/StephenCleary/Cancellation",
               "download_url": "https://www.nuget.org/api/v2/package/Nito.Cancellation/1.1.0",
               "size": 0,

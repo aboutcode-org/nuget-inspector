@@ -69,7 +69,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,
@@ -114,7 +116,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.14.0",
           "size": 0,
@@ -142,10 +146,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "Microsoft.Web.Xdt",
-              "version": "2.1.0",
+              "version": "2.1.1",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
               "primary_language": "C#",
               "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",
@@ -189,10 +193,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.Web.Xdt",
-          "version": "2.1.0",
+          "version": "2.1.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
           "primary_language": "C#",
           "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
           "release_date": "",
@@ -297,7 +301,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,
@@ -342,7 +348,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.14.0",
           "size": 0,
@@ -370,10 +378,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "Microsoft.Web.Xdt",
-              "version": "2.1.0",
+              "version": "2.1.1",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
               "primary_language": "C#",
               "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",

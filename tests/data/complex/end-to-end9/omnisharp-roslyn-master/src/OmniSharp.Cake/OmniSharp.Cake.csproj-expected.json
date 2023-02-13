@@ -101,9 +101,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -116,7 +116,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -131,9 +131,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -188,12 +188,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.CodeAnalysis.CSharp",
-          "version": "4.4.0-4.final",
+          "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.4.0-4.final",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.4.0",
           "primary_language": "C#",
-          "description": ".NET Compiler Platform (\"Roslyn\") support for C#, Microsoft.CodeAnalysis.CSharp.dll.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/65df6b1065bae316232a6c9907a8be995302fb5e.",
+          "description": ".NET Compiler Platform (\"Roslyn\") support for C#, Microsoft.CodeAnalysis.CSharp.dll.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/1ce8866c9de4c2d67351ef6863699dee03b0804a.",
           "release_date": "",
           "parties": [
             {
@@ -204,9 +204,27 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -217,13 +235,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp/4.4.0-4.final.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -233,12 +251,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.CodeAnalysis.CSharp.Scripting",
-          "version": "4.4.0-4.final",
+          "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0-4.final",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0",
           "primary_language": "C#",
-          "description": "Microsoft .NET Compiler Platform (\"Roslyn\") CSharp scripting package.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/65df6b1065bae316232a6c9907a8be995302fb5e.",
+          "description": "Microsoft .NET Compiler Platform (\"Roslyn\") CSharp scripting package.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/1ce8866c9de4c2d67351ef6863699dee03b0804a.",
           "release_date": "",
           "parties": [
             {
@@ -249,9 +267,27 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -262,13 +298,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp.scripting/4.4.0-4.final.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp.scripting/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -294,7 +330,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Cake",
+            "Script",
+            "Build"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -384,7 +424,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0",
           "size": 0,
@@ -429,7 +471,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0",
           "size": 0,
@@ -474,7 +518,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0",
           "size": 0,
@@ -519,7 +565,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0",
           "size": 0,
@@ -564,7 +612,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0",
           "size": 0,
@@ -609,7 +659,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0",
           "size": 0,
@@ -654,7 +706,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
           "size": 0,
@@ -699,7 +753,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0",
           "size": 0,
@@ -744,7 +800,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0",
           "size": 0,
@@ -789,7 +848,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0",
           "size": 0,
@@ -834,7 +897,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
           "size": 0,
@@ -879,7 +947,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control",
+            "git"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
           "size": 0,
@@ -924,7 +998,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0",
           "size": 0,
@@ -968,7 +1048,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
               "size": 0,
@@ -1013,7 +1098,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
               "size": 0,
@@ -1094,9 +1185,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -1109,7 +1200,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1124,9 +1215,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1181,12 +1272,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.CodeAnalysis.CSharp",
-          "version": "4.4.0-4.final",
+          "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.4.0-4.final",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.4.0",
           "primary_language": "C#",
-          "description": ".NET Compiler Platform (\"Roslyn\") support for C#, Microsoft.CodeAnalysis.CSharp.dll.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/65df6b1065bae316232a6c9907a8be995302fb5e.",
+          "description": ".NET Compiler Platform (\"Roslyn\") support for C#, Microsoft.CodeAnalysis.CSharp.dll.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/1ce8866c9de4c2d67351ef6863699dee03b0804a.",
           "release_date": "",
           "parties": [
             {
@@ -1197,9 +1288,27 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1210,13 +1319,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0-4.final",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp/4.4.0-4.final.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.4.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/4.4.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1226,12 +1335,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.CodeAnalysis.CSharp.Scripting",
-          "version": "4.4.0-4.final",
+          "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0-4.final",
+          "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Scripting@4.4.0",
           "primary_language": "C#",
-          "description": "Microsoft .NET Compiler Platform (\"Roslyn\") CSharp scripting package.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/65df6b1065bae316232a6c9907a8be995302fb5e.",
+          "description": "Microsoft .NET Compiler Platform (\"Roslyn\") CSharp scripting package.\n    \n      More details at https://aka.ms/roslyn-packages\n      This package was built from the source at https://github.com/dotnet/roslyn/commit/1ce8866c9de4c2d67351ef6863699dee03b0804a.",
           "release_date": "",
           "parties": [
             {
@@ -1242,9 +1351,27 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1255,13 +1382,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0-4.final",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp.scripting/4.4.0-4.final.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp.Scripting/4.4.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.csharp.scripting/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1287,7 +1414,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Cake",
+            "Script",
+            "Build"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -1377,7 +1508,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0",
           "size": 0,
@@ -1422,7 +1555,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0",
           "size": 0,
@@ -1467,7 +1602,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0",
           "size": 0,
@@ -1512,7 +1649,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0",
           "size": 0,
@@ -1557,7 +1696,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0",
           "size": 0,
@@ -1602,7 +1743,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0",
           "size": 0,
@@ -1647,7 +1790,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
           "size": 0,
@@ -1692,7 +1837,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0",
           "size": 0,
@@ -1737,7 +1884,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0",
           "size": 0,
@@ -1782,7 +1932,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0",
           "size": 0,
@@ -1827,7 +1981,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0",
           "size": 0,
@@ -1871,7 +2031,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
               "size": 0,
@@ -1916,7 +2081,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
               "size": 0,

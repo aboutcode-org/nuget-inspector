@@ -114,8 +114,10 @@ namespace NugetInspector
                 .Select(selector: key => versions_pair_by_base_package[key: key]);
             var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.version));
             foreach (var pair in versions_pair_by_base_package)
+            {
                 if (pair.Key.name == name && pair.Value.version == best)
                     return pair.Key.version;
+            }
 
             return null;
         }
@@ -236,6 +238,18 @@ namespace NugetInspector
         public void Update(NugetApi nugetApi)
         {
             IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
+            if (meta ==null)
+            {
+                // Try again this time bypassing cache and also looking for pre-releases
+                meta = nugetApi.FindPackageVersion(
+                    name: name,
+                    version: version,
+                    use_cache: false,
+                    include_prerelease: true);
+                if (meta ==null)
+                    return;
+            }
+
             Update(meta);
         }
 
@@ -267,12 +281,12 @@ namespace NugetInspector
             LicenseMetadata license_meta = metadata.LicenseMetadata;
             if (license_meta != null)
             {
-                meta_declared_licenses.Add($"LicenseType: {license_meta.Type.ToString()}");
+                meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
                 if (!string.IsNullOrWhiteSpace(license_meta.License))
                     meta_declared_licenses.Add($"License: {license_meta.License}");
                 var expression = license_meta.LicenseExpression;
                 if (expression != null)
-                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression.ToString()}");
+                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
             }
 
             declared_license = string.Join("\n", meta_declared_licenses);
@@ -281,21 +295,32 @@ namespace NugetInspector
             string authors = metadata.Authors;
             if (!string.IsNullOrWhiteSpace(authors))
             {
-                Party party = new() {type = "organization", role = "author", name = authors};
-                parties.Add(party);
+                if (!parties.Any(p => p.name == authors && p.role == "author"))
+                {
+                    Party item = new() { type = "organization", role = "author", name = authors };
+                    parties.Add(item);
+                }
             }
 
             string owners = metadata.Owners;
-            if (!string.IsNullOrWhiteSpace(authors))
+            if (!string.IsNullOrWhiteSpace(owners))
             {
-                Party party = new() {type = "organization", role = "owner", name = owners};
-                parties.Add(party);
+                if (!parties.Any(p => p.name == owners && p.role == "owner"))
+                {
+                    Party item = new() { type = "organization", role = "owner", name = owners };
+                    parties.Add(item);
+                }
             }
-            
-            // Update misc and URLs
+
+            // Update misc and URL fields
             primary_language = "C#";
             description = metadata.Description;
-            keywords = metadata.Tags.Trim().Split(separator: ",").ToList();
+
+            string tags = metadata.Tags.Trim();
+            if (!string.IsNullOrWhiteSpace(tags))
+            {
+                keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
+            }
 
             homepage_url = metadata.ProjectUrl.ToString();
 

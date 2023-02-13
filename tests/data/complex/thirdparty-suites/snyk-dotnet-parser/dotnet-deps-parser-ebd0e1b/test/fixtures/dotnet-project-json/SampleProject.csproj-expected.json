@@ -34,7 +34,9 @@
           "url": ""
         }
       ],
-      "keywords": [],
+      "keywords": [
+        "SampleProject"
+      ],
       "homepage_url": "http://github.com/aph5nt/SampleProject",
       "download_url": "https://www.nuget.org/api/v2/package/SampleProject/1.0.0",
       "size": 0,
@@ -77,7 +79,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0",
           "size": 0,
@@ -122,7 +131,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0",
           "size": 0,
@@ -249,7 +276,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/8.0.3",
           "size": 0,
@@ -294,7 +323,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.11.1",
           "size": 0,
@@ -468,7 +499,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0",
           "size": 0,
@@ -513,7 +551,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0",
           "size": 0,
@@ -640,7 +696,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/8.0.3",
           "size": 0,
@@ -685,7 +743,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.11.1",
           "size": 0,

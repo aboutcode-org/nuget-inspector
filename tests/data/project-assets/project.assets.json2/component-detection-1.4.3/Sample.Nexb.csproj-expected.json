@@ -69,7 +69,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "command",
+            "line",
+            "commandline",
+            "argument",
+            "option",
+            "parser",
+            "parsing",
+            "library",
+            "syntax",
+            "shell"
+          ],
           "homepage_url": "https://github.com/commandlineparser/commandline",
           "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.8.0",
           "size": 0,
@@ -114,7 +125,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "coverage",
+            "testing",
+            "unit-test",
+            "lcov",
+            "opencover",
+            "quality"
+          ],
           "homepage_url": "http://github.com/tonerdo/coverlet",
           "download_url": "https://www.nuget.org/api/v2/package/coverlet.msbuild/2.5.1",
           "size": 0,
@@ -159,7 +177,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "glob",
+            "globbing",
+            "dotnet",
+            "pattern",
+            "match"
+          ],
           "homepage_url": "https://github.com/dazinator/DotNet.Glob",
           "download_url": "https://www.nuget.org/api/v2/package/DotNet.Glob/2.1.1",
           "size": 0,
@@ -250,7 +274,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "HttpClient"
+          ],
           "homepage_url": "https://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.2.7",
           "size": 0,
@@ -294,7 +324,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -339,7 +371,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "bson"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json.Bson/1.0.1",
               "size": 0,
@@ -2193,7 +2227,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "TOML",
+            "Serialization",
+            "Configuration"
+          ],
           "homepage_url": "https://github.com/paiden/Nett",
           "download_url": "https://www.nuget.org/api/v2/package/Nett/0.10.0",
           "size": 0,
@@ -2238,7 +2276,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
           "size": 0,
@@ -2283,7 +2323,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "bson"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json.Bson/1.0.1",
           "size": 0,
@@ -2372,7 +2414,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -2419,7 +2463,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.6.0",
           "size": 0,
@@ -2463,7 +2509,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.6.0",
               "size": 0,
@@ -2600,7 +2648,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.6.0",
           "size": 0,
@@ -2644,7 +2694,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.6.0",
               "size": 0,
@@ -2736,7 +2788,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/5.6.0",
           "size": 0,
@@ -2780,7 +2834,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/5.6.0",
               "size": 0,
@@ -2825,7 +2881,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget",
+                "protocol"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/5.6.0",
               "size": 0,
@@ -2872,7 +2931,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.6.0",
           "size": 0,
@@ -2917,7 +2978,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/5.6.0",
           "size": 0,
@@ -2961,7 +3024,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.6.0",
               "size": 0,
@@ -3006,7 +3071,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.6.0",
               "size": 0,
@@ -3053,7 +3122,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.6.0",
           "size": 0,
@@ -3097,7 +3168,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -3142,7 +3215,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.6.0",
               "size": 0,
@@ -3187,7 +3262,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.6.0",
               "size": 0,
@@ -3279,7 +3358,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/5.6.0",
           "size": 0,
@@ -3323,7 +3404,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/5.6.0",
               "size": 0,
@@ -3460,7 +3543,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/5.6.0",
           "size": 0,
@@ -3504,7 +3590,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.6.0",
               "size": 0,
@@ -3596,7 +3684,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.6.0",
           "size": 0,
@@ -3641,7 +3733,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Exception",
+            "Handling",
+            "Resilience",
+            "Transient",
+            "Fault",
+            "Policy",
+            "Circuit",
+            "Breaker",
+            "CircuitBreaker",
+            "Retry",
+            "Wait",
+            "Cache",
+            "Cache-aside",
+            "Bulkhead",
+            "Fallback",
+            "Timeout",
+            "Throttle",
+            "Parallelization"
+          ],
           "homepage_url": "https://github.com/App-vNext/Polly",
           "download_url": "https://www.nuget.org/api/v2/package/Polly/7.0.3",
           "size": 0,
@@ -3867,7 +3978,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
           "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.2",
           "size": 0,
@@ -8696,7 +8813,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Rx",
+            "Reactive",
+            "Extensions",
+            "Observable",
+            "LINQ",
+            "Events"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=261273",
           "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/4.1.2",
           "size": 0,
@@ -13354,7 +13478,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "yaml",
+            "parser",
+            "development",
+            "library",
+            "serialization"
+          ],
           "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
           "download_url": "https://www.nuget.org/api/v2/package/YamlDotNet/5.3.0",
           "size": 0,
@@ -13435,7 +13565,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "HttpClient"
+              ],
               "homepage_url": "https://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.2.7",
               "size": 0,
@@ -13517,7 +13653,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -13787,7 +13925,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Rx",
+                "Reactive",
+                "Extensions",
+                "Observable",
+                "LINQ",
+                "Events"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=261273",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/4.1.2",
               "size": 0,
@@ -13870,7 +14015,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -13960,7 +14107,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Rx",
+                "Reactive",
+                "Extensions",
+                "Observable",
+                "LINQ",
+                "Events"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=261273",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/4.1.2",
               "size": 0,
@@ -14043,7 +14197,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "glob",
+                "globbing",
+                "dotnet",
+                "pattern",
+                "match"
+              ],
               "homepage_url": "https://github.com/dazinator/DotNet.Glob",
               "download_url": "https://www.nuget.org/api/v2/package/DotNet.Glob/2.1.1",
               "size": 0,
@@ -14162,7 +14322,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "TOML",
+                "Serialization",
+                "Configuration"
+              ],
               "homepage_url": "https://github.com/paiden/Nett",
               "download_url": "https://www.nuget.org/api/v2/package/Nett/0.10.0",
               "size": 0,
@@ -14207,7 +14371,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -14252,7 +14418,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/5.6.0",
               "size": 0,
@@ -14297,7 +14465,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.6.0",
               "size": 0,
@@ -14342,7 +14514,26 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Exception",
+                "Handling",
+                "Resilience",
+                "Transient",
+                "Fault",
+                "Policy",
+                "Circuit",
+                "Breaker",
+                "CircuitBreaker",
+                "Retry",
+                "Wait",
+                "Cache",
+                "Cache-aside",
+                "Bulkhead",
+                "Fallback",
+                "Timeout",
+                "Throttle",
+                "Parallelization"
+              ],
               "homepage_url": "https://github.com/App-vNext/Polly",
               "download_url": "https://www.nuget.org/api/v2/package/Polly/7.0.3",
               "size": 0,
@@ -14657,7 +14848,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Rx",
+                "Reactive",
+                "Extensions",
+                "Observable",
+                "LINQ",
+                "Events"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=261273",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/4.1.2",
               "size": 0,
@@ -14747,7 +14945,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "yaml",
+                "parser",
+                "development",
+                "library",
+                "serialization"
+              ],
               "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
               "download_url": "https://www.nuget.org/api/v2/package/YamlDotNet/5.3.0",
               "size": 0,
@@ -14830,7 +15034,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "command",
+                "line",
+                "commandline",
+                "argument",
+                "option",
+                "parser",
+                "parsing",
+                "library",
+                "syntax",
+                "shell"
+              ],
               "homepage_url": "https://github.com/commandlineparser/commandline",
               "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.8.0",
               "size": 0,
@@ -14875,7 +15090,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "glob",
+                "globbing",
+                "dotnet",
+                "pattern",
+                "match"
+              ],
               "homepage_url": "https://github.com/dazinator/DotNet.Glob",
               "download_url": "https://www.nuget.org/api/v2/package/DotNet.Glob/2.1.1",
               "size": 0,
@@ -15031,7 +15252,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.3",
               "size": 0,
@@ -15076,7 +15299,26 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Exception",
+                "Handling",
+                "Resilience",
+                "Transient",
+                "Fault",
+                "Policy",
+                "Circuit",
+                "Breaker",
+                "CircuitBreaker",
+                "Retry",
+                "Wait",
+                "Cache",
+                "Cache-aside",
+                "Bulkhead",
+                "Fallback",
+                "Timeout",
+                "Throttle",
+                "Parallelization"
+              ],
               "homepage_url": "https://github.com/App-vNext/Polly",
               "download_url": "https://www.nuget.org/api/v2/package/Polly/7.0.3",
               "size": 0,
@@ -15346,7 +15588,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Rx",
+                "Reactive",
+                "Extensions",
+                "Observable",
+                "LINQ",
+                "Events"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=261273",
               "download_url": "https://www.nuget.org/api/v2/package/System.Reactive/4.1.2",
               "size": 0,
@@ -16391,7 +16640,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
           "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.2",
           "size": 0,
@@ -16436,7 +16691,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "coverage",
+            "testing",
+            "unit-test",
+            "lcov",
+            "opencover",
+            "quality"
+          ],
           "homepage_url": "http://github.com/tonerdo/coverlet",
           "download_url": "https://www.nuget.org/api/v2/package/coverlet.msbuild/2.5.1",
           "size": 0,
@@ -16719,7 +16981,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
           "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.0.2",
           "size": 0,
@@ -16764,7 +17032,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "coverage",
+            "testing",
+            "unit-test",
+            "lcov",
+            "opencover",
+            "quality"
+          ],
           "homepage_url": "http://github.com/tonerdo/coverlet",
           "download_url": "https://www.nuget.org/api/v2/package/coverlet.msbuild/2.5.1",
           "size": 0,

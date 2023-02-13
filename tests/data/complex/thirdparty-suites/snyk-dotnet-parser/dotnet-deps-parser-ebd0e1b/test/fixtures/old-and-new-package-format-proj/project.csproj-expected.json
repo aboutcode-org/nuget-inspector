@@ -109,9 +109,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -124,7 +124,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -139,9 +139,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -167,7 +167,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "Storage",
+            "Table",
+            "Blob",
+            "Queue",
+            "windowsazureofficial",
+            "Web"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Core/2.2.0",
           "size": 0,
@@ -212,7 +223,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -257,7 +270,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.6.4",
           "size": 0,
@@ -302,7 +332,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.6.4",
           "size": 0,
@@ -347,7 +394,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.6.4",
           "size": 0,
@@ -391,7 +455,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.6.4",
               "size": 0,
@@ -436,7 +517,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.6.4",
               "size": 0,
@@ -483,7 +581,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.6.4",
           "size": 0,
@@ -527,7 +642,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.6.4",
               "size": 0,
@@ -574,7 +706,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "key",
+            "vault",
+            "\"key",
+            "vault\"",
+            "azureofficial",
+            "windowsazureofficial"
+          ],
           "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.KeyVault.Core/1.0.0",
           "size": 0,
@@ -619,7 +760,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "Storage",
+            "Table",
+            "Blob",
+            "File",
+            "Queue",
+            "Scalable",
+            "windowsazureofficial"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=235168",
           "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/7.2.1",
           "size": 0,
@@ -663,7 +814,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.6.4",
               "size": 0,
@@ -708,7 +876,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -753,7 +923,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.6.4",
               "size": 0,
@@ -798,7 +985,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "key",
+                "vault",
+                "\"key",
+                "vault\"",
+                "azureofficial",
+                "windowsazureofficial"
+              ],
               "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.KeyVault.Core/1.0.0",
               "size": 0,
@@ -5351,7 +5547,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "logging"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/1.1.1",
           "size": 0,
@@ -5442,7 +5640,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "Storage",
+            "Table",
+            "Blob",
+            "Queue",
+            "windowsazureofficial",
+            "Web"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
           "size": 0,
@@ -5486,7 +5695,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Core/2.2.0",
               "size": 0,
@@ -5531,7 +5751,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -5576,7 +5798,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "Storage",
+                "Table",
+                "Blob",
+                "File",
+                "Queue",
+                "Scalable",
+                "windowsazureofficial"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=235168",
               "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/7.2.1",
               "size": 0,
@@ -5621,7 +5853,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "logging"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Logging.Abstractions/1.1.1",
               "size": 0,
@@ -5668,7 +5902,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ServiceBus",
+            "Microsoft",
+            "Azure",
+            "AppFabric",
+            "Messaging",
+            "PubSub",
+            "Publish",
+            "Subscribe",
+            "Queue",
+            "Topic",
+            "Relay",
+            "Service",
+            "Bus",
+            "AMQP",
+            "OASIS",
+            "windowsazureofficial",
+            "EventHub",
+            "Event"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
           "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5",
           "size": 0,
@@ -5713,7 +5966,29 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ServiceBus",
+            "Microsoft",
+            "Azure",
+            "AppFabric",
+            "Messaging",
+            "PubSub",
+            "Publish",
+            "Subscribe",
+            "Queue",
+            "Topic",
+            "EventHub",
+            "Event",
+            "ingestion",
+            "Orleans",
+            "Kafka",
+            "Storm",
+            "Service",
+            "Bus",
+            "AMQP",
+            "OASIS",
+            "windowsazureofficial"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.ServiceBus.EventProcessorHost/2.2.10",
           "size": 0,
@@ -5757,7 +6032,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "Storage",
+                "Table",
+                "Blob",
+                "File",
+                "Queue",
+                "Scalable",
+                "windowsazureofficial"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=235168",
               "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.Storage/7.2.1",
               "size": 0,
@@ -5802,7 +6087,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -5847,7 +6134,26 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ServiceBus",
+                "Microsoft",
+                "Azure",
+                "AppFabric",
+                "Messaging",
+                "PubSub",
+                "Publish",
+                "Subscribe",
+                "Queue",
+                "Topic",
+                "Relay",
+                "Service",
+                "Bus",
+                "AMQP",
+                "OASIS",
+                "windowsazureofficial",
+                "EventHub",
+                "Event"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
               "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5",
               "size": 0,
@@ -5894,7 +6200,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "ServiceBus",
+            "windowsazureofficial",
+            "Web",
+            "Service",
+            "Bus"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.ServiceBus/2.2.0",
           "size": 0,
@@ -5938,7 +6254,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
               "size": 0,
@@ -5983,7 +6310,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -6028,7 +6357,26 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ServiceBus",
+                "Microsoft",
+                "Azure",
+                "AppFabric",
+                "Messaging",
+                "PubSub",
+                "Publish",
+                "Subscribe",
+                "Queue",
+                "Topic",
+                "Relay",
+                "Service",
+                "Bus",
+                "AMQP",
+                "OASIS",
+                "windowsazureofficial",
+                "EventHub",
+                "Event"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
               "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5",
               "size": 0,
@@ -6073,7 +6421,29 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ServiceBus",
+                "Microsoft",
+                "Azure",
+                "AppFabric",
+                "Messaging",
+                "PubSub",
+                "Publish",
+                "Subscribe",
+                "Queue",
+                "Topic",
+                "EventHub",
+                "Event",
+                "ingestion",
+                "Orleans",
+                "Kafka",
+                "Storm",
+                "Service",
+                "Bus",
+                "AMQP",
+                "OASIS",
+                "windowsazureofficial"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.ServiceBus.EventProcessorHost/2.2.10",
               "size": 0,
@@ -6120,7 +6490,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4",
           "size": 0,
@@ -6165,7 +6552,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4",
           "size": 0,
@@ -6210,7 +6614,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4",
           "size": 0,
@@ -6254,7 +6675,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4",
               "size": 0,
@@ -6299,7 +6737,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4",
               "size": 0,
@@ -6346,7 +6801,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.8.4",
           "size": 0,
@@ -6390,7 +6862,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4",
               "size": 0,
@@ -6437,7 +6926,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "cron",
+            "schedule",
+            "time"
+          ],
           "homepage_url": "https://github.com/atifaziz/NCrontab",
           "download_url": "https://www.nuget.org/api/v2/package/ncrontab/3.3.0",
           "size": 0,
@@ -6482,7 +6975,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "TPL",
+            "Task",
+            "Parallel",
+            "Dataflow",
+            "Microsoft",
+            "TDF",
+            "Actor",
+            "Async"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=309704",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Tpl.Dataflow/4.5.24",
           "size": 0,
@@ -6527,7 +7030,22 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "Extensions",
+            "Files",
+            "Scheduler",
+            "Cron",
+            "Storage",
+            "Table",
+            "Blob",
+            "Queue",
+            "windowsazureofficial",
+            "Web"
+          ],
           "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions/2.2.0",
           "size": 0,
@@ -6571,7 +7089,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
               "size": 0,
@@ -6616,7 +7145,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "cron",
+                "schedule",
+                "time"
+              ],
               "homepage_url": "https://github.com/atifaziz/NCrontab",
               "download_url": "https://www.nuget.org/api/v2/package/ncrontab/3.3.0",
               "size": 0,
@@ -6661,7 +7194,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "TPL",
+                "Task",
+                "Parallel",
+                "Dataflow",
+                "Microsoft",
+                "TDF",
+                "Actor",
+                "Async"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=309704",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Tpl.Dataflow/4.5.24",
               "size": 0,
@@ -6708,7 +7251,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "HttpClient"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.2.3",
           "size": 0,
@@ -6752,7 +7301,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -6799,7 +7350,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.2.3",
           "size": 0,
@@ -6843,7 +7399,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "HttpClient"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.2.3",
               "size": 0,
@@ -6890,7 +7452,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "Extensions",
+            "Http",
+            "windowsazureofficial",
+            "Web"
+          ],
           "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions.Http/1.1.0",
           "size": 0,
@@ -6934,7 +7505,22 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Extensions",
+                "Files",
+                "Scheduler",
+                "Cron",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions/2.2.0",
               "size": 0,
@@ -6979,7 +7565,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.2.3",
               "size": 0,
@@ -7071,7 +7662,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "azurefunctions"
+          ],
           "homepage_url": "https://github.com/Azure/azure-functions-vs-build-sdk",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Sdk.Functions/1.0.26",
           "size": 0,
@@ -7115,7 +7708,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
               "size": 0,
@@ -7160,7 +7764,22 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Extensions",
+                "Files",
+                "Scheduler",
+                "Cron",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions/2.2.0",
               "size": 0,
@@ -7205,7 +7824,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Extensions",
+                "Http",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions.Http/1.1.0",
               "size": 0,
@@ -7250,7 +7878,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -7342,7 +7972,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OGC",
+            "SFS",
+            "NTS",
+            "GIS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
           "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.Core/1.7.5",
           "size": 0,
@@ -7387,7 +8022,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "Topology",
+            "OGC",
+            "SFS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Core/1.15.0",
           "size": 0,
@@ -7431,7 +8071,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.Core/1.7.5",
               "size": 0,
@@ -7478,7 +8123,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OGC",
+            "SFS",
+            "NTS",
+            "GIS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
           "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.CoordinateSystems/1.7.5",
           "size": 0,
@@ -7522,7 +8172,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.Core/1.7.5",
               "size": 0,
@@ -7569,7 +8224,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "Topology",
+            "OGC",
+            "SFS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.CoordinateSystems/1.15.0",
           "size": 0,
@@ -7613,7 +8273,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.CoordinateSystems/1.7.5",
               "size": 0,
@@ -7660,7 +8325,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "Topology",
+            "OGC",
+            "SFS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite/1.15.0",
           "size": 0,
@@ -7704,7 +8374,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Core/1.15.0",
               "size": 0,
@@ -7749,7 +8424,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.CoordinateSystems/1.15.0",
               "size": 0,
@@ -7796,7 +8476,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OGC",
+            "SFS",
+            "NTS",
+            "GIS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
           "download_url": "https://www.nuget.org/api/v2/package/GeoAPI/1.7.5",
           "size": 0,
@@ -7840,7 +8525,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.Core/1.7.5",
               "size": 0,
@@ -7885,7 +8575,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI.CoordinateSystems/1.7.5",
               "size": 0,
@@ -7932,7 +8627,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "Topology",
+            "OGC",
+            "SFS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite.Features",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Features/1.15.0",
           "size": 0,
@@ -7976,7 +8676,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OGC",
+                "SFS",
+                "NTS",
+                "GIS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/GeoAPI",
               "download_url": "https://www.nuget.org/api/v2/package/GeoAPI/1.7.5",
               "size": 0,
@@ -8023,7 +8728,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "GeoJSON"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite.IO.GeoJSON",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.IO.GeoJSON/1.15.0",
           "size": 0,
@@ -8067,7 +8775,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Core/1.15.0",
               "size": 0,
@@ -8112,7 +8825,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite.Features",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Features/1.15.0",
               "size": 0,
@@ -8157,7 +8875,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -8656,7 +9376,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "npgsql",
+            "postgresql",
+            "postgres",
+            "ado",
+            "ado.net",
+            "database",
+            "sql"
+          ],
           "homepage_url": "http://www.npgsql.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Npgsql/4.0.5",
           "size": 0,
@@ -8882,7 +9610,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Exception",
+            "Handling",
+            "Resilience",
+            "Transient",
+            "Fault",
+            "Policy",
+            "Circuit",
+            "Breaker",
+            "CircuitBreaker",
+            "Retry",
+            "Wait",
+            "Cache",
+            "Cache-aside",
+            "Bulkhead",
+            "Fallback",
+            "Timeout",
+            "Throttle",
+            "Parallelization"
+          ],
           "homepage_url": "https://github.com/App-vNext/Polly",
           "download_url": "https://www.nuget.org/api/v2/package/Polly/6.0.1",
           "size": 0,
@@ -9052,9 +9799,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -9067,7 +9814,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -9082,9 +9829,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -9110,7 +9857,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "WebJobs",
+            "Jobs",
+            "ServiceBus",
+            "windowsazureofficial",
+            "Web",
+            "Service",
+            "Bus"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.ServiceBus/2.2.0",
           "size": 0,
@@ -9154,7 +9911,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
               "size": 0,
@@ -9199,7 +9967,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -9244,7 +10014,26 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ServiceBus",
+                "Microsoft",
+                "Azure",
+                "AppFabric",
+                "Messaging",
+                "PubSub",
+                "Publish",
+                "Subscribe",
+                "Queue",
+                "Topic",
+                "Relay",
+                "Service",
+                "Bus",
+                "AMQP",
+                "OASIS",
+                "windowsazureofficial",
+                "EventHub",
+                "Event"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
               "download_url": "https://www.nuget.org/api/v2/package/WindowsAzure.ServiceBus/3.4.5",
               "size": 0,
@@ -9289,7 +10078,29 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ServiceBus",
+                "Microsoft",
+                "Azure",
+                "AppFabric",
+                "Messaging",
+                "PubSub",
+                "Publish",
+                "Subscribe",
+                "Queue",
+                "Topic",
+                "EventHub",
+                "Event",
+                "ingestion",
+                "Orleans",
+                "Kafka",
+                "Storm",
+                "Service",
+                "Bus",
+                "AMQP",
+                "OASIS",
+                "windowsazureofficial"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.ServiceBus.EventProcessorHost/2.2.10",
               "size": 0,
@@ -9336,7 +10147,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Services.Client/5.8.4",
           "size": 0,
@@ -9380,7 +10208,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4",
               "size": 0,
@@ -9427,7 +10272,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "azurefunctions"
+          ],
           "homepage_url": "https://github.com/Azure/azure-functions-vs-build-sdk",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Sdk.Functions/1.0.26",
           "size": 0,
@@ -9471,7 +10318,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320972",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs/2.2.0",
               "size": 0,
@@ -9516,7 +10374,22 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Extensions",
+                "Files",
+                "Scheduler",
+                "Cron",
+                "Storage",
+                "Table",
+                "Blob",
+                "Queue",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions/2.2.0",
               "size": 0,
@@ -9561,7 +10434,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "Azure",
+                "WebJobs",
+                "Jobs",
+                "Extensions",
+                "Http",
+                "windowsazureofficial",
+                "Web"
+              ],
               "homepage_url": "https://azure.microsoft.com/en-us/documentation/articles/websites-webjobs-resources",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Azure.WebJobs.Extensions.Http/1.1.0",
               "size": 0,
@@ -9606,7 +10488,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -9698,7 +10582,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "Topology",
+            "OGC",
+            "SFS"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite/1.15.0",
           "size": 0,
@@ -9742,7 +10631,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Core/1.15.0",
               "size": 0,
@@ -9787,7 +10681,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.CoordinateSystems/1.15.0",
               "size": 0,
@@ -9834,7 +10733,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "NTS",
+            "GeoJSON"
+          ],
           "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite.IO.GeoJSON",
           "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.IO.GeoJSON/1.15.0",
           "size": 0,
@@ -9878,7 +10780,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Core/1.15.0",
               "size": 0,
@@ -9923,7 +10830,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "NTS",
+                "Topology",
+                "OGC",
+                "SFS"
+              ],
               "homepage_url": "https://github.com/NetTopologySuite/NetTopologySuite.Features",
               "download_url": "https://www.nuget.org/api/v2/package/NetTopologySuite.Features/1.15.0",
               "size": 0,
@@ -9968,7 +10880,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -10015,7 +10929,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "npgsql",
+            "postgresql",
+            "postgres",
+            "ado",
+            "ado.net",
+            "database",
+            "sql"
+          ],
           "homepage_url": "http://www.npgsql.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Npgsql/4.0.5",
           "size": 0,
@@ -10241,7 +11163,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Exception",
+            "Handling",
+            "Resilience",
+            "Transient",
+            "Fault",
+            "Policy",
+            "Circuit",
+            "Breaker",
+            "CircuitBreaker",
+            "Retry",
+            "Wait",
+            "Cache",
+            "Cache-aside",
+            "Bulkhead",
+            "Fallback",
+            "Timeout",
+            "Throttle",
+            "Parallelization"
+          ],
           "homepage_url": "https://github.com/App-vNext/Polly",
           "download_url": "https://www.nuget.org/api/v2/package/Polly/6.0.1",
           "size": 0,

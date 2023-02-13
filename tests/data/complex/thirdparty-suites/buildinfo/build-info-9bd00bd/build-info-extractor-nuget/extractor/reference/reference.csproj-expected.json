@@ -34,7 +34,10 @@
           "url": ""
         }
       ],
-      "keywords": [],
+      "keywords": [
+        "Tag1",
+        "Tag2"
+      ],
       "homepage_url": "http://project_url_here_or_delete_this_line/",
       "download_url": "https://www.nuget.org/api/v2/package/Reference/1.0.0",
       "size": 0,
@@ -77,7 +80,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery"
+          ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.0.0",
           "size": 0,
@@ -167,7 +172,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.3.1",
           "size": 0,
@@ -211,7 +223,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.0.0",
               "size": 0,
@@ -303,7 +317,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,
@@ -332,10 +348,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.Web.Xdt",
-          "version": "2.1.0",
+          "version": "2.1.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
           "primary_language": "C#",
           "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
           "release_date": "",
@@ -393,7 +409,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.14.0",
           "size": 0,
@@ -421,10 +439,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "Microsoft.Web.Xdt",
-              "version": "2.1.0",
+              "version": "2.1.1",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
               "primary_language": "C#",
               "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",
@@ -486,7 +504,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.3.1",
           "size": 0,
@@ -530,7 +555,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.0.0",
               "size": 0,
@@ -622,7 +649,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,
@@ -667,7 +696,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Core/2.14.0",
           "size": 0,
@@ -695,10 +726,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "Microsoft.Web.Xdt",
-              "version": "2.1.0",
+              "version": "2.1.1",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
+              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
               "primary_language": "C#",
               "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
               "release_date": "",

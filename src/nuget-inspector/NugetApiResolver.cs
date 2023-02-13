@@ -30,8 +30,10 @@ public class NugetApiResolver
         {
             var version = packageDependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
+            {
                 Console.WriteLine(
                     $"Nuget failed to find package: '{packageDependency.name}' with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
+            }
 
             if (packageDependency.name != null)
                 builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.name, version: version));
@@ -65,8 +67,11 @@ public class NugetApiResolver
                 if (api_package_metadata == null)
                 {
                     if (Config.TRACE)
+                    {
                         Console.WriteLine(
                             value: $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                    }
+
                     continue;
                 }
 
@@ -81,8 +86,12 @@ public class NugetApiResolver
                 dependencies.Add(item: id);
 
                 if (!builder.DoesPackageExist(package: id))
-                    Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange,
+                {
+                    Add(packageDependency: new Dependency(
+                        name: dependency.Id,
+                        version_range: dependency.VersionRange,
                         framework: packageDependency.framework));
+                }
             }
         }
 

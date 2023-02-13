@@ -34,7 +34,9 @@
           "url": ""
         }
       ],
-      "keywords": [],
+      "keywords": [
+        "SampleProject"
+      ],
       "homepage_url": "http://github.com/aph5nt/SampleProject",
       "download_url": "https://www.nuget.org/api/v2/package/SampleProject/1.0.0",
       "size": 0,
@@ -122,7 +124,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "bootstrap",
+            "html",
+            "css",
+            "javascript",
+            "web"
+          ],
           "homepage_url": "https://github.com/twbs/bootstrap",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0",
           "size": 0,
@@ -166,7 +174,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.10.2",
               "size": 0,
@@ -213,7 +223,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery"
+          ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.10.2",
           "size": 0,
@@ -258,7 +270,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Cors",
+            "Cross",
+            "Origin"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.1.2",
           "size": 0,
@@ -303,7 +321,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "http://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.1.2",
           "size": 0,
@@ -347,7 +370,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.1.2",
               "size": 0,
@@ -392,7 +420,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.1.2",
               "size": 0,
@@ -439,7 +473,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.1.2",
           "size": 0,
@@ -483,7 +522,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -528,7 +569,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.1.2",
               "size": 0,
@@ -575,7 +622,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -620,7 +669,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.1.2",
           "size": 0,
@@ -665,7 +720,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -709,7 +770,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -890,7 +953,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/projects/json-net.aspx",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/5.0.6",
               "size": 0,
@@ -937,7 +1002,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://james.newtonking.com/projects/json-net.aspx",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/5.0.6",
           "size": 0,
@@ -982,7 +1049,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi/5.1.2",
           "size": 0,
@@ -1026,7 +1098,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "WebHost"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.WebHost/5.1.2",
               "size": 0,
@@ -1073,7 +1151,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "WebHost"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.WebHost/5.1.2",
           "size": 0,
@@ -1117,7 +1201,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.1.2",
               "size": 0,
@@ -1164,7 +1253,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.1.2",
           "size": 0,
@@ -1208,7 +1302,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "HttpClient"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.1.2",
               "size": 0,
@@ -1255,7 +1355,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "HttpClient"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Client/5.1.2",
           "size": 0,
@@ -1300,7 +1406,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "Cors",
+            "Cross",
+            "Origin"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Cors/5.1.2",
           "size": 0,
@@ -1344,7 +1458,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.1.2",
               "size": 0,
@@ -1389,7 +1508,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Cors",
+                "Cross",
+                "Origin"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.1.2",
               "size": 0,
@@ -1436,7 +1561,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "HelpPage"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.HelpPage/5.1.2",
           "size": 0,
@@ -1480,7 +1611,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "WebHost"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.WebHost/5.1.2",
               "size": 0,
@@ -1525,7 +1662,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.1.2",
               "size": 0,
@@ -1570,7 +1712,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.1.2",
               "size": 0,
@@ -1617,7 +1765,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2",
           "size": 0,
@@ -1662,7 +1817,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Respond",
+            "Media",
+            "Queries"
+          ],
           "homepage_url": "https://github.com/scottjehl/Respond",
           "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0",
           "size": 0,
@@ -1709,7 +1868,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "bootstrap",
+            "html",
+            "css",
+            "javascript",
+            "web"
+          ],
           "homepage_url": "https://github.com/twbs/bootstrap",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.0.0",
           "size": 0,
@@ -1753,7 +1918,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/1.10.2",
               "size": 0,
@@ -1800,7 +1967,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -1844,7 +2017,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -1936,7 +2111,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi/5.1.2",
           "size": 0,
@@ -1980,7 +2160,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "WebHost"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.WebHost/5.1.2",
               "size": 0,
@@ -2027,7 +2213,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "Cors",
+            "Cross",
+            "Origin"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Cors/5.1.2",
           "size": 0,
@@ -2071,7 +2265,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.Core/5.1.2",
               "size": 0,
@@ -2116,7 +2315,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Cors",
+                "Cross",
+                "Origin"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Cors/5.1.2",
               "size": 0,
@@ -2163,7 +2368,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebApi",
+            "AspNetWebApi",
+            "HelpPage"
+          ],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.HelpPage/5.1.2",
           "size": 0,
@@ -2207,7 +2418,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebApi",
+                "AspNetWebApi",
+                "WebHost"
+              ],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebApi.WebHost/5.1.2",
               "size": 0,
@@ -2252,7 +2469,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.1.2",
               "size": 0,
@@ -2297,7 +2519,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.1.2",
               "size": 0,
@@ -2344,7 +2572,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2",
           "size": 0,
@@ -2389,7 +2624,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Respond",
+            "Media",
+            "Queries"
+          ],
           "homepage_url": "https://github.com/scottjehl/Respond",
           "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0",
           "size": 0,

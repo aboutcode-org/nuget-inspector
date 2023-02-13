@@ -69,7 +69,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Configuration",
+            "Parser",
+            "Sprache",
+            "XML"
+          ],
           "homepage_url": "https://github.com/allisterb/Alpheus",
           "download_url": "https://www.nuget.org/api/v2/package/Alpheus/0.5.4.1",
           "size": 0,
@@ -113,7 +118,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2",
               "size": 0,
@@ -158,7 +165,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Parser",
+                "Parsers"
+              ],
               "homepage_url": "https://github.com/sprache/Sprache",
               "download_url": "https://www.nuget.org/api/v2/package/Sprache/2.2.0",
               "size": 0,
@@ -205,7 +215,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2",
           "size": 0,
@@ -250,7 +262,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Parser",
+            "Parsers"
+          ],
           "homepage_url": "https://github.com/sprache/Sprache",
           "download_url": "https://www.nuget.org/api/v2/package/Sprache/2.2.0",
           "size": 0,
@@ -295,7 +310,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "cache",
+            "objectcache",
+            "System.Runtime.Caching.ObjectCache"
+          ],
           "homepage_url": "https://github.com/acarteas/FileCache",
           "download_url": "https://www.nuget.org/api/v2/package/FileCache/2.2.0",
           "size": 0,
@@ -340,7 +359,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ini"
+          ],
           "homepage_url": "https://github.com/rickyah/ini-parser",
           "download_url": "https://www.nuget.org/api/v2/package/ini-parser/2.5.2",
           "size": 0,
@@ -385,7 +406,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Framework/16.0.461",
           "size": 0,
@@ -430,7 +453,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Core/16.0.461",
           "size": 0,
@@ -475,7 +500,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Utilities.Core/16.0.461",
           "size": 0,
@@ -520,7 +547,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4",
           "size": 0,
@@ -565,7 +603,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "MEF",
+            "Microsoft",
+            "System",
+            "Composition",
+            "IOC",
+            "Dependency",
+            "Injection",
+            "DI",
+            "WindowsStore",
+            "Windows",
+            "Store"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=313252",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Composition/1.0.31",
           "size": 0,
@@ -1242,7 +1293,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "System.Management.Automation",
+            "WinRM",
+            "Naos"
+          ],
           "homepage_url": "http://naosproject.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Naos.External.MS-WinRM/1.0.0.1",
           "size": 0,
@@ -1331,7 +1386,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "System.Management.Automation",
+                "WinRM",
+                "Naos"
+              ],
               "homepage_url": "http://naosproject.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Naos.External.MS-WinRM/1.0.0.1",
               "size": 0,
@@ -1378,7 +1437,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "GitLab",
+            "API",
+            "NGitlab"
+          ],
           "homepage_url": "https://github.com/Franklin89/NGitLab",
           "download_url": "https://www.nuget.org/api/v2/package/NGitLab/2.0.0-beta-0065",
           "size": 0,
@@ -1423,7 +1486,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Build.Tasks/5.2.0",
           "size": 0,
@@ -1468,7 +1533,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Commands/5.2.0",
           "size": 0,
@@ -1513,7 +1580,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.2.0",
           "size": 0,
@@ -1558,7 +1627,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.2.0",
           "size": 0,
@@ -1603,7 +1674,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/5.2.0",
           "size": 0,
@@ -1648,7 +1721,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/5.2.0",
           "size": 0,
@@ -1693,7 +1768,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.2.0",
           "size": 0,
@@ -1738,7 +1815,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/5.2.0",
           "size": 0,
@@ -1783,7 +1862,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.2.0",
           "size": 0,
@@ -1873,7 +1954,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/5.2.0",
           "size": 0,
@@ -1918,7 +2001,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/5.2.0",
           "size": 0,
@@ -1963,7 +2049,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.2.0",
           "size": 0,
@@ -2008,7 +2098,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "GitHub",
+            "API",
+            "Octokit",
+            "linqpad-samples",
+            "dotnetcore"
+          ],
           "homepage_url": "https://github.com/octokit/octokit.net",
           "download_url": "https://www.nuget.org/api/v2/package/Octokit/0.32.0",
           "size": 0,
@@ -2098,7 +2194,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BitBucket",
+            "REST",
+            "API",
+            "C#"
+          ],
           "homepage_url": "https://github.com/MitjaBezensek/SharpBucket",
           "download_url": "https://www.nuget.org/api/v2/package/SharpBucket/0.12.0",
           "size": 0,
@@ -2143,7 +2244,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "rar",
+            "unrar",
+            "zip",
+            "unzip",
+            "bzip2",
+            "gzip",
+            "tar",
+            "7zip",
+            "lzip",
+            "xz"
+          ],
           "homepage_url": "https://github.com/adamhathcock/sharpcompress",
           "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.23.0",
           "size": 0,
@@ -2188,7 +2300,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "yaml",
+            "parser",
+            "yml"
+          ],
           "homepage_url": "https://github.com/xoofx/SharpYaml",
           "download_url": "https://www.nuget.org/api/v2/package/SharpYaml/1.6.5",
           "size": 0,
@@ -2233,7 +2349,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Compression",
+            "Library",
+            "Zip",
+            "GZip",
+            "BZip2",
+            "LZW",
+            "Tar"
+          ],
           "homepage_url": "https://github.com/icsharpcode/SharpZipLib",
           "download_url": "https://www.nuget.org/api/v2/package/SharpZipLib/1.1.0",
           "size": 0,
@@ -4880,7 +5004,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "yaml",
+            "parser",
+            "development",
+            "library",
+            "serialization"
+          ],
           "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
           "download_url": "https://www.nuget.org/api/v2/package/YamlDotNet/6.1.2",
           "size": 0,
@@ -4927,7 +5057,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Configuration",
+            "Parser",
+            "Sprache",
+            "XML"
+          ],
           "homepage_url": "https://github.com/allisterb/Alpheus",
           "download_url": "https://www.nuget.org/api/v2/package/Alpheus/0.5.4.1",
           "size": 0,
@@ -4971,7 +5106,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.2",
               "size": 0,
@@ -5016,7 +5153,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Parser",
+                "Parsers"
+              ],
               "homepage_url": "https://github.com/sprache/Sprache",
               "download_url": "https://www.nuget.org/api/v2/package/Sprache/2.2.0",
               "size": 0,
@@ -5063,7 +5203,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "cache",
+            "objectcache",
+            "System.Runtime.Caching.ObjectCache"
+          ],
           "homepage_url": "https://github.com/acarteas/FileCache",
           "download_url": "https://www.nuget.org/api/v2/package/FileCache/2.2.0",
           "size": 0,
@@ -5108,7 +5252,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ini"
+          ],
           "homepage_url": "https://github.com/rickyah/ini-parser",
           "download_url": "https://www.nuget.org/api/v2/package/ini-parser/2.5.2",
           "size": 0,
@@ -5153,7 +5299,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Framework/16.0.461",
           "size": 0,
@@ -5198,7 +5346,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Core/16.0.461",
           "size": 0,
@@ -5243,7 +5393,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Utilities.Core/16.0.461",
           "size": 0,
@@ -5288,7 +5440,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4",
           "size": 0,
@@ -5333,7 +5496,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "MEF",
+            "Microsoft",
+            "System",
+            "Composition",
+            "IOC",
+            "Dependency",
+            "Injection",
+            "DI",
+            "WindowsStore",
+            "Windows",
+            "Store"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=313252",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Composition/1.0.31",
           "size": 0,
@@ -5558,7 +5734,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "System.Management.Automation",
+                "WinRM",
+                "Naos"
+              ],
               "homepage_url": "http://naosproject.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Naos.External.MS-WinRM/1.0.0.1",
               "size": 0,
@@ -5605,7 +5785,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "GitLab",
+            "API",
+            "NGitlab"
+          ],
           "homepage_url": "https://github.com/Franklin89/NGitLab",
           "download_url": "https://www.nuget.org/api/v2/package/NGitLab/2.0.0-beta-0065",
           "size": 0,
@@ -5650,7 +5834,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Build.Tasks/5.2.0",
           "size": 0,
@@ -5695,7 +5881,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Commands/5.2.0",
           "size": 0,
@@ -5740,7 +5928,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/5.2.0",
           "size": 0,
@@ -5785,7 +5975,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/5.2.0",
           "size": 0,
@@ -5830,7 +6022,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Credentials/5.2.0",
           "size": 0,
@@ -5875,7 +6069,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/5.2.0",
           "size": 0,
@@ -5920,7 +6116,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.2.0",
           "size": 0,
@@ -5965,7 +6163,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/5.2.0",
           "size": 0,
@@ -6010,7 +6210,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/5.2.0",
           "size": 0,
@@ -6100,7 +6302,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/5.2.0",
           "size": 0,
@@ -6145,7 +6349,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/5.2.0",
           "size": 0,
@@ -6190,7 +6397,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/5.2.0",
           "size": 0,
@@ -6235,7 +6446,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "GitHub",
+            "API",
+            "Octokit",
+            "linqpad-samples",
+            "dotnetcore"
+          ],
           "homepage_url": "https://github.com/octokit/octokit.net",
           "download_url": "https://www.nuget.org/api/v2/package/Octokit/0.32.0",
           "size": 0,
@@ -6325,7 +6542,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BitBucket",
+            "REST",
+            "API",
+            "C#"
+          ],
           "homepage_url": "https://github.com/MitjaBezensek/SharpBucket",
           "download_url": "https://www.nuget.org/api/v2/package/SharpBucket/0.12.0",
           "size": 0,
@@ -6370,7 +6592,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "rar",
+            "unrar",
+            "zip",
+            "unzip",
+            "bzip2",
+            "gzip",
+            "tar",
+            "7zip",
+            "lzip",
+            "xz"
+          ],
           "homepage_url": "https://github.com/adamhathcock/sharpcompress",
           "download_url": "https://www.nuget.org/api/v2/package/SharpCompress/0.23.0",
           "size": 0,
@@ -6415,7 +6648,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "yaml",
+            "parser",
+            "yml"
+          ],
           "homepage_url": "https://github.com/xoofx/SharpYaml",
           "download_url": "https://www.nuget.org/api/v2/package/SharpYaml/1.6.5",
           "size": 0,
@@ -6460,7 +6697,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Compression",
+            "Library",
+            "Zip",
+            "GZip",
+            "BZip2",
+            "LZW",
+            "Tar"
+          ],
           "homepage_url": "https://github.com/icsharpcode/SharpZipLib",
           "download_url": "https://www.nuget.org/api/v2/package/SharpZipLib/1.1.0",
           "size": 0,
@@ -9107,7 +9352,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "yaml",
+            "parser",
+            "development",
+            "library",
+            "serialization"
+          ],
           "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
           "download_url": "https://www.nuget.org/api/v2/package/YamlDotNet/6.1.2",
           "size": 0,

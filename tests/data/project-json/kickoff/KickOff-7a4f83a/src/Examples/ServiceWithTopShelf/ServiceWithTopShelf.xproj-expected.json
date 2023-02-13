@@ -114,7 +114,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "elasticsearch",
+            "elastic",
+            "search",
+            "lucene",
+            "nest"
+          ],
           "homepage_url": "https://github.com/elastic/elasticsearch-net",
           "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/2.4.2",
           "size": 0,
@@ -159,7 +165,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "semantic",
+            "structured"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
           "size": 0,
@@ -204,7 +215,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "console",
+            "coloredconsole"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.ColoredConsole/2.0.0",
           "size": 0,
@@ -248,7 +263,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
               "size": 0,
@@ -295,7 +315,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "collector"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/4.1.1",
           "size": 0,
@@ -339,7 +365,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "elasticsearch",
+                "elastic",
+                "search",
+                "lucene",
+                "nest"
+              ],
               "homepage_url": "https://github.com/elastic/elasticsearch-net",
               "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/2.4.2",
               "size": 0,
@@ -384,7 +416,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
               "size": 0,
@@ -429,7 +466,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "file",
+                "io"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1",
               "size": 0,
@@ -474,7 +515,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "batching",
+                "timer"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.0.0",
               "size": 0,
@@ -519,7 +564,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "file",
+                "io",
+                "rolling"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.0.1",
               "size": 0,
@@ -566,7 +616,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file",
+            "io"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1",
           "size": 0,
@@ -610,7 +664,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
               "size": 0,
@@ -657,7 +716,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "batching",
+            "timer"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.0.0",
           "size": 0,
@@ -701,7 +764,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
               "size": 0,
@@ -748,7 +816,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file",
+            "io",
+            "rolling"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.0.1",
           "size": 0,
@@ -792,7 +865,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "file",
+                "io"
+              ],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.0.1",
               "size": 0,
@@ -839,7 +916,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "IoC"
+          ],
           "homepage_url": "http://structuremap.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/StructureMap/4.4.1",
           "size": 0,
@@ -884,7 +963,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Topshelf"
+          ],
           "homepage_url": "https://github.com/Topshelf/Topshelf",
           "download_url": "https://www.nuget.org/api/v2/package/Topshelf/4.0.3",
           "size": 0,
@@ -929,7 +1010,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "microservice",
+            "bootstrap",
+            "pipeline",
+            "boilerplate"
+          ],
           "homepage_url": "https://github.com/pondidum/KickOff",
           "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0",
           "size": 0,
@@ -1021,7 +1107,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "microservice",
+            "bootstrap",
+            "pipeline",
+            "boilerplate"
+          ],
           "homepage_url": "https://github.com/pondidum/KickOff",
           "download_url": "https://www.nuget.org/api/v2/package/KickOff/1.0.0",
           "size": 0,
@@ -1066,7 +1157,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "semantic",
+            "structured"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.3.0",
           "size": 0,
@@ -1111,7 +1207,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "console",
+            "coloredconsole"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.ColoredConsole/2.0.0",
           "size": 0,
@@ -1156,7 +1256,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "collector"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/4.1.1",
           "size": 0,
@@ -1201,7 +1307,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "IoC"
+          ],
           "homepage_url": "http://structuremap.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/StructureMap/4.4.1",
           "size": 0,
@@ -1246,7 +1354,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Topshelf"
+          ],
           "homepage_url": "https://github.com/Topshelf/Topshelf",
           "download_url": "https://www.nuget.org/api/v2/package/Topshelf/4.0.3",
           "size": 0,

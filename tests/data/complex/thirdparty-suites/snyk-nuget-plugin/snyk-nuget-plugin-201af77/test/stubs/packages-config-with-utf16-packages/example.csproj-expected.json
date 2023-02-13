@@ -122,7 +122,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -167,7 +169,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Swagger",
+            "HelpPage",
+            "Documentation",
+            "AspNet",
+            "WebAPI",
+            "AspNetWebApi"
+          ],
           "homepage_url": "https://github.com/miketrionfo/Swagger.Net",
           "download_url": "https://www.nuget.org/api/v2/package/Swagger.Net/0.5.5",
           "size": 0,
@@ -281,53 +290,7 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Microsoft.Web.Infrastructure",
-              "version": "1.0.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
-              "primary_language": "C#",
-              "description": "This package contains the Microsoft.Web.Infrastructure assembly that lets you dynamically register HTTP modules at run time.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "http://www.asp.net/",
-              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=214339",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Infrastructure/1.0.0?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.web.infrastructure/1.0.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
+          "dependencies": []
         }
       ],
       "dependencies": [
@@ -379,6 +342,53 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "Microsoft.Web.Infrastructure",
+          "version": "1.0.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Microsoft.Web.Infrastructure@1.0.0",
+          "primary_language": "C#",
+          "description": "This package contains the Microsoft.Web.Infrastructure assembly that lets you dynamically register HTTP modules at run time.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
+          "homepage_url": "http://www.asp.net/",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=214339",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Infrastructure/1.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.web.infrastructure/1.0.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "Swagger.Net",
           "version": "0.5.5",
           "qualifiers": "",
@@ -396,7 +406,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Swagger",
+            "HelpPage",
+            "Documentation",
+            "AspNet",
+            "WebAPI",
+            "AspNetWebApi"
+          ],
           "homepage_url": "https://github.com/miketrionfo/Swagger.Net",
           "download_url": "https://www.nuget.org/api/v2/package/Swagger.Net/0.5.5",
           "size": 0,

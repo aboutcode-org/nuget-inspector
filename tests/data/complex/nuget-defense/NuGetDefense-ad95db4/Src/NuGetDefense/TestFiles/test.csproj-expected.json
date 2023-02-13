@@ -122,7 +122,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.4.1",
           "size": 0,
@@ -166,7 +173,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
               "size": 0,
@@ -258,7 +267,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery"
+          ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
           "size": 0,
@@ -393,7 +404,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "elasticsearch",
+            "elastic",
+            "search",
+            "lucene",
+            "nest"
+          ],
           "homepage_url": "https://github.com/elastic/elasticsearch-net",
           "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/7.0.0",
           "size": 0,
@@ -438,7 +455,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EntityFramework",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
           "size": 0,
@@ -483,7 +508,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "plugins"
+          ],
           "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
           "size": 0,
@@ -527,7 +555,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
               "size": 0,
@@ -574,7 +604,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "https://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7",
           "size": 0,
@@ -618,7 +653,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
               "size": 0,
@@ -663,7 +703,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -710,7 +756,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
           "size": 0,
@@ -754,7 +805,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -799,7 +852,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -846,7 +905,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -891,7 +952,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
           "size": 0,
@@ -936,7 +1003,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -980,7 +1053,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -1161,7 +1236,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -1208,7 +1285,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
           "size": 0,
@@ -1253,7 +1332,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0",
           "size": 0,
@@ -1298,7 +1384,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4",
           "size": 0,
@@ -1343,7 +1446,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4",
           "size": 0,
@@ -1387,7 +1507,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4",
               "size": 0,
@@ -1432,7 +1569,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4",
               "size": 0,
@@ -1479,7 +1633,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4",
           "size": 0,
@@ -1524,7 +1695,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "https://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11",
           "size": 0,
@@ -1568,7 +1742,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
               "size": 0,
@@ -1613,7 +1789,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
               "size": 0,
@@ -1660,7 +1839,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3",
           "size": 0,
@@ -1750,7 +1936,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Security"
+          ],
           "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense",
           "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/1.0.6",
           "size": 0,
@@ -1795,7 +1983,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "SecurityCodeScan",
+            "Security.Code.Scan",
+            "Security",
+            "Code",
+            "Scan",
+            "Static",
+            "Analysis",
+            "Vulnerability",
+            "Analyzer",
+            "Analyzers",
+            ".NET",
+            "Roslyn",
+            "OWASP",
+            "Injection",
+            "XSS",
+            "CSRF",
+            "XXE",
+            "SQLi"
+          ],
           "homepage_url": "https://security-code-scan.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/SecurityCodeScan/3.5.0",
           "size": 0,
@@ -1840,7 +2047,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "semantic",
+            "structured"
+          ],
           "homepage_url": "https://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0",
           "size": 0,
@@ -1885,7 +2097,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Serilog",
+            "Serilog.Enrichers",
+            "Serilog.Enrichers.HttpContextData",
+            "HttpContext",
+            "Enrichers"
+          ],
           "homepage_url": "https://github.com/aliozgur/Serilog.Enrichers.HttpContextData",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Enrichers.HttpContextData/0.1.3",
           "size": 0,
@@ -1929,7 +2147,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "https://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0",
               "size": 0,
@@ -1976,7 +2199,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "json"
+          ],
           "homepage_url": "https://github.com/nblumhardt/serilog-formatters-compact",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Compact/1.0.0",
           "size": 0,
@@ -2021,7 +2247,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "formatting"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Elasticsearch/8.0.0",
           "size": 0,
@@ -2066,7 +2298,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "console",
+            "terminal"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-console",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1",
           "size": 0,
@@ -2111,7 +2347,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "collector"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/8.0.0",
           "size": 0,
@@ -2156,7 +2398,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/4.0.0",
           "size": 0,
@@ -2201,7 +2446,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "batching",
+            "timer"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.1.1",
           "size": 0,
@@ -2246,7 +2495,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "aspnet"
+          ],
           "homepage_url": "https://github.com/serilog-web/classic",
           "download_url": "https://www.nuget.org/api/v2/package/SerilogWeb.Classic/5.0.52",
           "size": 0,
@@ -2290,7 +2543,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "https://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0",
               "size": 0,
@@ -2429,7 +2687,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/4.4.1",
           "size": 0,
@@ -2473,7 +2738,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
               "size": 0,
@@ -2610,7 +2877,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "elasticsearch",
+            "elastic",
+            "search",
+            "lucene",
+            "nest"
+          ],
           "homepage_url": "https://github.com/elastic/elasticsearch-net",
           "download_url": "https://www.nuget.org/api/v2/package/Elasticsearch.Net/7.0.0",
           "size": 0,
@@ -2655,7 +2928,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EntityFramework",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
           "size": 0,
@@ -2700,7 +2981,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "https://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7",
           "size": 0,
@@ -2744,7 +3030,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
               "size": 0,
@@ -2789,7 +3080,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -2836,7 +3133,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
           "download_url": "",
           "size": 0,
@@ -2880,7 +3183,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -2972,7 +3277,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0",
           "size": 0,
@@ -3017,7 +3329,24 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "wcf",
+            "data",
+            "services",
+            "odata",
+            "odatalib",
+            "edmlib",
+            "spatial",
+            "ado.net",
+            "ef",
+            "entity",
+            "framework",
+            "open",
+            "protocol",
+            "wcfds",
+            "wcfdataservices",
+            "dataservices"
+          ],
           "homepage_url": "http://odata.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.OData/5.8.4",
           "size": 0,
@@ -3061,7 +3390,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/System.Spatial/5.8.4",
               "size": 0,
@@ -3106,7 +3452,24 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "wcf",
+                "data",
+                "services",
+                "odata",
+                "odatalib",
+                "edmlib",
+                "spatial",
+                "ado.net",
+                "ef",
+                "entity",
+                "framework",
+                "open",
+                "protocol",
+                "wcfds",
+                "wcfdataservices",
+                "dataservices"
+              ],
               "homepage_url": "http://odata.github.io/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Data.Edm/5.8.4",
               "size": 0,
@@ -3153,7 +3516,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "https://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11",
           "size": 0,
@@ -3197,7 +3563,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.3.1",
               "size": 0,
@@ -3242,7 +3610,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
               "size": 0,
@@ -3289,7 +3660,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3",
           "size": 0,
@@ -3379,7 +3757,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Security"
+          ],
           "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense",
           "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/1.0.6",
           "size": 0,
@@ -3424,7 +3804,26 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "SecurityCodeScan",
+            "Security.Code.Scan",
+            "Security",
+            "Code",
+            "Scan",
+            "Static",
+            "Analysis",
+            "Vulnerability",
+            "Analyzer",
+            "Analyzers",
+            ".NET",
+            "Roslyn",
+            "OWASP",
+            "Injection",
+            "XSS",
+            "CSRF",
+            "XXE",
+            "SQLi"
+          ],
           "homepage_url": "https://security-code-scan.github.io/",
           "download_url": "https://www.nuget.org/api/v2/package/SecurityCodeScan/3.5.0",
           "size": 0,
@@ -3469,7 +3868,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Serilog",
+            "Serilog.Enrichers",
+            "Serilog.Enrichers.HttpContextData",
+            "HttpContext",
+            "Enrichers"
+          ],
           "homepage_url": "https://github.com/aliozgur/Serilog.Enrichers.HttpContextData",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Enrichers.HttpContextData/0.1.3",
           "size": 0,
@@ -3513,7 +3918,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "https://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0",
               "size": 0,
@@ -3560,7 +3970,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "json"
+          ],
           "homepage_url": "https://github.com/nblumhardt/serilog-formatters-compact",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Compact/1.0.0",
           "size": 0,
@@ -3605,7 +4018,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "formatting"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Formatting.Elasticsearch/8.0.0",
           "size": 0,
@@ -3650,7 +4069,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "console",
+            "terminal"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-console",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Console/3.1.1",
           "size": 0,
@@ -3695,7 +4118,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "elasticsearch",
+            "logging",
+            "event",
+            "collector"
+          ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-elasticsearch",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.Elasticsearch/8.0.0",
           "size": 0,
@@ -3740,7 +4169,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/4.0.0",
           "size": 0,
@@ -3785,7 +4217,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "batching",
+            "timer"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.PeriodicBatching/2.1.1",
           "size": 0,
@@ -3830,7 +4266,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "aspnet"
+          ],
           "homepage_url": "https://github.com/serilog-web/classic",
           "download_url": "https://www.nuget.org/api/v2/package/SerilogWeb.Classic/5.0.52",
           "size": 0,
@@ -3874,7 +4314,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
               "homepage_url": "https://serilog.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.9.0",
               "size": 0,

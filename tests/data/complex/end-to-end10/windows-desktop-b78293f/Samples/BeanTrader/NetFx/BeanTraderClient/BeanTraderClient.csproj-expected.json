@@ -69,7 +69,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
           "size": 0,
@@ -114,7 +122,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "windsor",
+            "inversionOfControl",
+            "DependencyInjection"
+          ],
           "homepage_url": "http://www.castleproject.org/projects/windsor/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1",
           "size": 0,
@@ -159,7 +172,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "XAML",
+            "Controls",
+            "WinRT",
+            "UI",
+            "UX",
+            "Windows",
+            "WindowChrome"
+          ],
           "homepage_url": "https://github.com/ControlzEx/ControlzEx",
           "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4",
           "size": 0,
@@ -204,7 +226,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "\"Microsoft",
+            "Azure\"",
+            "cloud",
+            "REST",
+            "HTTP",
+            "client",
+            "core",
+            "common",
+            "hyak"
+          ],
           "homepage_url": "https://github.com/Azure/hyak-common",
           "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.0.2",
           "size": 0,
@@ -249,7 +282,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "UI",
+            "Metro",
+            "Modern",
+            "Material",
+            "XAML",
+            "Toolkit",
+            "Library",
+            ".NET",
+            "OSS",
+            "OpenSource"
+          ],
           "homepage_url": "https://github.com/MahApps/MahApps.Metro",
           "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/1.6.5",
           "size": 0,
@@ -293,7 +338,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "WPF",
+                "XAML",
+                "Controls",
+                "WinRT",
+                "UI",
+                "UX",
+                "Windows",
+                "WindowChrome"
+              ],
               "homepage_url": "https://github.com/ControlzEx/ControlzEx",
               "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4",
               "size": 0,
@@ -340,7 +394,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "Microsoft",
+            "System",
+            "Task",
+            "IProgress"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
           "size": 0,
@@ -384,7 +444,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
               "size": 0,
@@ -431,7 +495,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "Microsoft",
+            "System"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
           "size": 0,
@@ -476,7 +544,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "Microsoft",
+            "System",
+            "Async",
+            "Await",
+            "Asynchronous"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280056",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168",
           "size": 0,
@@ -520,7 +595,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Task",
+                "IProgress"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
               "size": 0,
@@ -567,7 +648,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3",
           "size": 0,
@@ -611,7 +703,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
               "size": 0,
@@ -656,7 +759,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
               "size": 0,
@@ -701,7 +815,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "size": 0,
@@ -746,7 +871,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
               "size": 0,
@@ -793,7 +929,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
           "size": 0,
@@ -838,7 +985,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
           "size": 0,
@@ -883,7 +1041,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
           "size": 0,
@@ -928,7 +1097,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
           "size": 0,
@@ -973,7 +1153,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "HTTP",
+            "HttpClient",
+            "REST",
+            "Microsoft",
+            "System",
+            "Networking"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280055",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.22",
           "size": 0,
@@ -1017,7 +1205,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Task",
+                "IProgress"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
               "size": 0,
@@ -1062,7 +1256,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
               "size": 0,
@@ -1109,7 +1307,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AutoRest",
+            "ClientRuntime",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8",
           "size": 0,
@@ -1154,7 +1357,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "AutoRest",
+            "ClientRuntime",
+            "REST",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7",
           "size": 0,
@@ -1199,7 +1409,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8",
           "size": 0,
@@ -1244,7 +1456,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "async",
+            "await",
+            "async-await",
+            "task",
+            "asynchronous",
+            "nito"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1",
           "size": 0,
@@ -1288,7 +1507,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Task",
+                "IProgress"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
               "size": 0,
@@ -1333,7 +1558,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
               "size": 0,
@@ -1378,7 +1607,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Async",
+                "Await",
+                "Asynchronous"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280056",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168",
               "size": 0,
@@ -1427,7 +1663,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
           "size": 0,
@@ -1472,7 +1716,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "windsor",
+            "inversionOfControl",
+            "DependencyInjection"
+          ],
           "homepage_url": "http://www.castleproject.org/projects/windsor/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Windsor/4.1.1",
           "size": 0,
@@ -1517,7 +1766,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "\"Microsoft",
+            "Azure\"",
+            "cloud",
+            "REST",
+            "HTTP",
+            "client",
+            "core",
+            "common",
+            "hyak"
+          ],
           "homepage_url": "https://github.com/Azure/hyak-common",
           "download_url": "https://www.nuget.org/api/v2/package/Hyak.Common/1.0.2",
           "size": 0,
@@ -1562,7 +1822,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "WPF",
+            "UI",
+            "Metro",
+            "Modern",
+            "Material",
+            "XAML",
+            "Toolkit",
+            "Library",
+            ".NET",
+            "OSS",
+            "OpenSource"
+          ],
           "homepage_url": "https://github.com/MahApps/MahApps.Metro",
           "download_url": "https://www.nuget.org/api/v2/package/MahApps.Metro/1.6.5",
           "size": 0,
@@ -1606,7 +1878,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "WPF",
+                "XAML",
+                "Controls",
+                "WinRT",
+                "UI",
+                "UX",
+                "Windows",
+                "WindowChrome"
+              ],
               "homepage_url": "https://github.com/ControlzEx/ControlzEx",
               "download_url": "https://www.nuget.org/api/v2/package/ControlzEx/3.0.2.4",
               "size": 0,
@@ -1653,7 +1934,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3",
           "size": 0,
@@ -1697,7 +1989,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeQuality.Analyzers/2.6.3",
               "size": 0,
@@ -1742,7 +2045,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetCore.Analyzers/2.6.3",
               "size": 0,
@@ -1787,7 +2101,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NetFramework.Analyzers/2.6.3",
               "size": 0,
@@ -1832,7 +2157,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Text.Analyzers/2.6.3",
               "size": 0,
@@ -1879,7 +2215,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "BCL",
+            "HTTP",
+            "HttpClient",
+            "REST",
+            "Microsoft",
+            "System",
+            "Networking"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280055",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Http/2.2.22",
           "size": 0,
@@ -1923,7 +2267,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Task",
+                "IProgress"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
               "size": 0,
@@ -1968,7 +2318,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
               "size": 0,
@@ -2015,7 +2369,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AutoRest",
+            "ClientRuntime",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime/2.3.8",
           "size": 0,
@@ -2060,7 +2419,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "Azure",
+            "AutoRest",
+            "ClientRuntime",
+            "REST",
+            "Common"
+          ],
           "homepage_url": "https://github.com/Azure/AutoRest",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Rest.ClientRuntime.Azure/3.3.7",
           "size": 0,
@@ -2105,7 +2471,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.8",
           "size": 0,
@@ -2150,7 +2518,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "async",
+            "await",
+            "async-await",
+            "task",
+            "asynchronous",
+            "nito"
+          ],
           "homepage_url": "https://github.com/StephenCleary/AsyncEx",
           "download_url": "https://www.nuget.org/api/v2/package/Nito.AsyncEx/4.0.1",
           "size": 0,
@@ -2194,7 +2569,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Task",
+                "IProgress"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl/1.1.10",
               "size": 0,
@@ -2239,7 +2620,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Build/1.0.21",
               "size": 0,
@@ -2284,7 +2669,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "BCL",
+                "Microsoft",
+                "System",
+                "Async",
+                "Await",
+                "Asynchronous"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280056",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Bcl.Async/1.0.168",
               "size": 0,

@@ -192,9 +192,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -207,7 +207,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -222,9 +222,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2151,7 +2151,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "Logging"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.8.0",
           "size": 0,
@@ -2196,7 +2202,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "SecurityTokens",
+            "Cryptographic",
+            "operations",
+            "Signing",
+            "Verifying",
+            "Signatures",
+            "Encryption"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
           "size": 0,
@@ -2240,7 +2258,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Logging"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/6.8.0",
               "size": 0,
@@ -2377,7 +2401,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "Reading",
+            "XML",
+            "Writing",
+            "Enveloped",
+            "Signatures"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
           "size": 0,
@@ -2421,7 +2455,19 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SecurityTokens",
+                "Cryptographic",
+                "operations",
+                "Signing",
+                "Verifying",
+                "Signatures",
+                "Encryption"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
               "size": 0,
@@ -2468,7 +2514,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "SamlTokens",
+            "Saml",
+            "Token",
+            "Saml2"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.8.0",
           "size": 0,
@@ -2512,7 +2567,19 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SecurityTokens",
+                "Cryptographic",
+                "operations",
+                "Signing",
+                "Verifying",
+                "Signatures",
+                "Encryption"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/6.8.0",
               "size": 0,
@@ -2557,7 +2624,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Reading",
+                "XML",
+                "Writing",
+                "Enveloped",
+                "Signatures"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
               "size": 0,
@@ -7935,7 +8012,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            ".NET",
+            "Windows",
+            "Authentication",
+            "Identity",
+            "WsTrust"
+          ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
           "size": 0,
@@ -7979,7 +8062,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "SamlTokens",
+                "Saml",
+                "Token",
+                "Saml2"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens.Saml/6.8.0",
               "size": 0,
@@ -8024,7 +8116,17 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "Reading",
+                "XML",
+                "Writing",
+                "Enveloped",
+                "Signatures"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Xml/6.8.0",
               "size": 0,
@@ -8295,7 +8397,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "WsTrust"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
               "size": 0,
@@ -8342,7 +8450,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Upgrade",
+            "analyzers"
+          ],
           "homepage_url": "https://github.com/dotnet/upgrade-assistant",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702",
           "size": 0,
@@ -8467,9 +8578,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -8482,7 +8593,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -8497,9 +8608,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -9021,7 +9132,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                ".NET",
+                "Windows",
+                "Authentication",
+                "Identity",
+                "WsTrust"
+              ],
               "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0",
               "size": 0,
@@ -9068,7 +9185,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Upgrade",
+            "analyzers"
+          ],
           "homepage_url": "https://github.com/dotnet/upgrade-assistant",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702",
           "size": 0,

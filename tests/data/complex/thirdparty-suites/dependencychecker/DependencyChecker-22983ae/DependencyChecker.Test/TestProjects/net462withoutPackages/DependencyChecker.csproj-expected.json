@@ -114,7 +114,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.1",
           "size": 0,
@@ -143,10 +145,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Common",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Common@4.9.3",
+          "purl": "pkg:nuget/NuGet.Common@4.9.6",
           "primary_language": "C#",
           "description": "NuGet client library.",
           "release_date": "",
@@ -159,9 +161,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -176,9 +180,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.common/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.common/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -188,10 +192,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Configuration",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Configuration@4.9.3",
+          "purl": "pkg:nuget/NuGet.Configuration@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's client configuration settings implementation.",
           "release_date": "",
@@ -204,9 +208,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -221,9 +227,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.configuration/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.configuration/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -233,10 +239,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Frameworks",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Frameworks@4.9.3",
+          "purl": "pkg:nuget/NuGet.Frameworks@4.9.6",
           "primary_language": "C#",
           "description": "The understanding of target frameworks for NuGet.Packaging.",
           "release_date": "",
@@ -249,9 +255,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -266,9 +274,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -278,10 +286,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Packaging",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Packaging@4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's implementation for reading nupkg package and nuspec package specification files.",
           "release_date": "",
@@ -294,9 +302,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -311,9 +321,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -323,10 +333,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Packaging.Core",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.6",
           "primary_language": "C#",
           "description": "The core data structures for NuGet.Packaging.",
           "release_date": "",
@@ -339,9 +349,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -356,9 +368,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging.Core/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging.core/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging.Core/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging.core/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -429,7 +441,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0",
           "size": 0,
@@ -474,7 +489,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0",
           "size": 0,
@@ -503,10 +521,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Versioning",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Versioning@4.9.3",
+          "purl": "pkg:nuget/NuGet.Versioning@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's implementation of Semantic Versioning.",
           "release_date": "",
@@ -519,9 +537,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -536,9 +558,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.versioning/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.versioning/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -603,7 +625,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/12.0.1",
           "size": 0,
@@ -632,10 +656,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Common",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Common@4.9.3",
+          "purl": "pkg:nuget/NuGet.Common@4.9.6",
           "primary_language": "C#",
           "description": "NuGet client library.",
           "release_date": "",
@@ -648,9 +672,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -665,9 +691,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.common/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.common/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -677,10 +703,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Configuration",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Configuration@4.9.3",
+          "purl": "pkg:nuget/NuGet.Configuration@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's client configuration settings implementation.",
           "release_date": "",
@@ -693,9 +719,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -710,9 +738,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.configuration/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.configuration/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -722,10 +750,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Frameworks",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Frameworks@4.9.3",
+          "purl": "pkg:nuget/NuGet.Frameworks@4.9.6",
           "primary_language": "C#",
           "description": "The understanding of target frameworks for NuGet.Packaging.",
           "release_date": "",
@@ -738,9 +766,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -755,9 +785,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -767,10 +797,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Packaging",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Packaging@4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's implementation for reading nupkg package and nuspec package specification files.",
           "release_date": "",
@@ -783,9 +813,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -800,9 +832,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -812,10 +844,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Packaging.Core",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.3",
+          "purl": "pkg:nuget/NuGet.Packaging.Core@4.9.6",
           "primary_language": "C#",
           "description": "The core data structures for NuGet.Packaging.",
           "release_date": "",
@@ -828,9 +860,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -845,9 +879,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging.Core/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging.core/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging.Core/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.packaging.core/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -918,7 +952,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.Types/4.2.0",
           "size": 0,
@@ -963,7 +1000,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol.Core.v3/4.2.0",
           "size": 0,
@@ -992,10 +1032,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Versioning",
-          "version": "4.9.3",
+          "version": "4.9.6",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Versioning@4.9.3",
+          "purl": "pkg:nuget/NuGet.Versioning@4.9.6",
           "primary_language": "C#",
           "description": "NuGet's implementation of Semantic Versioning.",
           "release_date": "",
@@ -1008,9 +1048,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.6",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1025,9 +1069,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/4.9.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.versioning/4.9.3.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/4.9.6?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/4.9.6",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.versioning/4.9.6.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
