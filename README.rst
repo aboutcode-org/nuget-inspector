@@ -5,7 +5,7 @@ nuget-inspector - inspect nuget and .NET projects packages dependencies
 Homepage: https://github.com/nexB/nuget-inspector and https://www.aboutcode.org/
 
 
-``nuget-inspector`` is a utilities to:
+``nuget-inspector`` is a utility to:
 
 - resolve .NET project nuget packages dependencies
 
@@ -63,7 +63,7 @@ SPDX-License-Identifier: Apache-2.0 AND MIT
 
 
 This project is based on, depends on or embeds several fine libraries and tools.
-Here are credits for some of these key projects without which it would not exist::
+Here are credits for some of these key projects without which it would not exist:
 
 - ``NuGet.Client``, ``MSBuild`` and ``upgrade-assistant`` from the .NET
   Foundation which are the core .NET tools and libraries to handled .NET and
