@@ -55,8 +55,11 @@ License
 -------------
 
 Copyright (c) nexB Inc. and others.
+
 Copyright (c) the .NET Foundation, Microsoft and others.
+
 Portions Copyright (c) 2018 Black Duck Software, Inc.
+
 Portions Copyright (c) Mario Rivis https://github.com/dxworks
 
 SPDX-License-Identifier: Apache-2.0 AND MIT
