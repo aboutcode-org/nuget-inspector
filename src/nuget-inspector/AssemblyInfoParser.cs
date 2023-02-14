@@ -6,7 +6,7 @@
 /// For example:
 ///   [assembly: AssemblyVersion("1.0.0.0")]
 /// </summary>
-public class AssemblyInfoParser
+public static class AssemblyInfoParser
 
 {
     public class AssemblyVersion
@@ -77,7 +77,7 @@ public class AssemblyInfoParser
 
             if (results.Count > 0)
             {
-                var selected = results.First();
+                var selected = results[0];
                 if (selected is null) return null;
                 if (Config.TRACE)
                     Console.WriteLine($"Selected version '{selected.Version}' from '{selected.Path}'.");
@@ -87,8 +87,7 @@ public class AssemblyInfoParser
         catch (Exception e)
         {
             if (Config.TRACE)
-                Console.WriteLine(value:
-                    $"Failed to collect AssemblyInfo version for project: {project_directory}{e.Message}");
+                Console.WriteLine(value: $"Failed to collect AssemblyInfo version for project: {project_directory}{e.Message}");
         }
 
         return null;

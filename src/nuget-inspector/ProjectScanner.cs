@@ -109,7 +109,7 @@ internal class ProjectScanner
         try
         {
             var package = ScanProject();
-            List<BasePackage> packages = new List<BasePackage>();
+            List<BasePackage> packages = new();
             if (package != null)
             {
                 packages.Add(item: package);
@@ -164,7 +164,7 @@ internal class ProjectScanner
                 {
                     if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subpack: {subpack}: {ex}");
                 }
-                
+
                 foreach (BasePackage subdep in subpack.dependencies)
                 {
                     try

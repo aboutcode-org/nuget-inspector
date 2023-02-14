@@ -81,8 +81,12 @@ public class Options
             if (Config.TRACE) Console.WriteLine($"ParseArguments.field: {field}");
             var attr = GetAttr<CommandLineArgAttribute>(field: field);
             if (attr != null)
-                command_options.Add(prototype: $"{attr.Key}=", description: attr.Description,
-                    action: value => { field.SetValue(obj: options, value: value); });
+            {
+                command_options.Add(
+                    prototype: $"{attr.Key}=",
+                    description: attr.Description,
+                    action: value => field.SetValue(obj: options, value: value));
+            }
         }
 
         command_options.Add(prototype: "h|help", description: "Show this message and exit.",
@@ -126,7 +130,7 @@ public class Options
             Console.Error.WriteLine(message);
             return null;
         }
-        
+
         // TODO: raise error if input or output are missing
 
         return options;

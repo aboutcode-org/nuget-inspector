@@ -25,9 +25,14 @@ public class LegacyPackagesConfigNoDupeResolver
         id = id.ToLower();
         var result = new List<VersionRange?>();
         foreach (var pkg in ResolutionDatas.Values)
-        foreach (var depPair in pkg.Dependencies)
-            if (depPair.Key == id)
+        {
+            foreach (var depPair in pkg.Dependencies)
+            {
+                if (depPair.Key == id)
                 result.Add(item: depPair.Value);
+            }
+        }
+
         return result;
     }
 
@@ -43,13 +48,20 @@ public class LegacyPackagesConfigNoDupeResolver
         {
             var deps = new List<BasePackage>();
             foreach (var dep in data.Dependencies.Keys)
+            {
                 if (!ResolutionDatas.ContainsKey(key: dep))
+                {
                     throw new Exception(
-                        message: $"Encountered a dependency but was unable to resolve a package for it: {dep}");
+                                        message: $"Encountered a dependency but was unable to resolve a package for it: {dep}");
+                }
                 else
+                {
                     deps.Add(item: new BasePackage(
-                        name: ResolutionDatas[key: dep].Name!,
-                        version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
+                                        name: ResolutionDatas[key: dep].Name!,
+                                        version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
+                }
+            }
+
             builder.AddOrUpdatePackage(
                 id: new BasePackage(name: data.Name!, version: data.CurrentVersion?.ToNormalizedString()),
                 dependencies: deps!);
@@ -99,9 +111,12 @@ public class LegacyPackagesConfigNoDupeResolver
         if (best == null)
         {
             if (Config.TRACE)
+            {
                 Console.WriteLine(
                     value:
                     $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
+            }
+
             if (data.CurrentVersion == null) data.CurrentVersion = combo.MinVersion;
             return;
         }
@@ -113,11 +128,13 @@ public class LegacyPackagesConfigNoDupeResolver
 
         var packages = NugetApi.DependenciesForPackage(identity: best.Identity, framework: framework);
         foreach (var dependency in packages)
+        {
             if (!data.Dependencies.ContainsKey(key: dependency.Id.ToLower()))
             {
                 data.Dependencies.Add(key: dependency.Id.ToLower(), value: dependency.VersionRange);
                 Resolve(id: dependency.Id.ToLower(), name: dependency.Id, framework: framework);
             }
+        }
     }
 
     private class ResolutionData
