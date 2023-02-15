@@ -52,7 +52,7 @@ public static class AssemblyInfoParser
     }
 
     /// <summary>
-    /// Return a version string or nul from reading an AssemblyInfo file somewhere in the project tree. 
+    /// Return a version string or nul from reading an AssemblyInfo file somewhere in the project tree.
     /// </summary>
     /// <param name="project_directory"></param>
     /// <returns></returns>

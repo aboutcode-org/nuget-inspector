@@ -388,7 +388,6 @@ internal class ProjectScanner
             .Where(predicate: e => string.Equals(e.Name.LocalName, "targetframeworkversion", StringComparison.InvariantCultureIgnoreCase))
             .ToList().Any();
 
-
         IEnumerable<string> target_framework_tags = new[] { "targetframeworkversion", "targetframework", "targetframeworks" };
         var targetFrameworks = csproj.Descendants()
             .Where(predicate: e => target_framework_tags.Contains(value: e.Name.LocalName.ToLowerInvariant()))

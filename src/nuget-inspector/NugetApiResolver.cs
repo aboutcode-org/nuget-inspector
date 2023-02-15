@@ -70,20 +70,17 @@ public class NugetApiResolver
                 {
                     if (Config.TRACE)
                     {
-                        Console.WriteLine(
-                            value: $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                        Console.WriteLine($"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
                     }
-
                     continue;
                 }
 
-                var id = new BasePackage(name: api_package_metadata.Identity.Id,
+                var id = new BasePackage(
+                    name: api_package_metadata.Identity.Id,
                     version: api_package_metadata.Identity.Version.ToNormalizedString());
+
                 if (Config.TRACE)
-                {
-                    Console.WriteLine($"Package details");
-                    Console.WriteLine($"    Description: {api_package_metadata.Description}");
-                }
+                    Console.WriteLine($"Package details: Description: {api_package_metadata.Description}");
 
                 dependencies.Add(item: id);
 

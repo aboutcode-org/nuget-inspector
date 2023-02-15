@@ -45,30 +45,30 @@ public class NugetLogger : ILogger
 
     public void Log(LogLevel level, string data)
     {
-        Trace.WriteLine(message: $"{level.ToString()}: {data}");
+        Trace.WriteLine(message: $"{level}: {data}");
     }
 
     public Task LogAsync(LogLevel level, string data)
     {
-        return Task.Run(action: () => Trace.WriteLine(message: $"{level.ToString()}: {data}"));
+        return Task.Run(action: () => Trace.WriteLine(message: $"{level}: {data}"));
     }
 
     public void Log(ILogMessage message)
     {
-        Trace.WriteLine(message: $"{message.Level.ToString()}: {message.Message}");
+        Trace.WriteLine(message: $"{message.Level}: {message.Message}");
     }
 
     public Task LogAsync(ILogMessage message)
     {
-        return Task.Run(action: () => Trace.WriteLine(message: $"{message.Level.ToString()}: {message.Message}"));
+        return Task.Run(action: () => Trace.WriteLine(message: $"{message.Level}: {message.Message}"));
     }
 
-    public void LogSummary(string data)
+    public static void LogSummary(string data)
     {
         Trace.WriteLine(message: $"SUMMARY: {data}");
     }
 
-    public void LogErrorSummary(string data)
+    public static void LogErrorSummary(string data)
     {
         Trace.WriteLine(message: $"ERROR SUMMARY: {data}");
     }

@@ -61,12 +61,10 @@ namespace NugetInspector
             package_with_deps = BasePackage.FromBasePackage(package: package, dependencies: new List<BasePackage>());
             base_package_deps_by_base_package[key: package] = package_with_deps;
 
-            NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
+            _ = NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
+
             if (package.version != null)
-            {
-                versions_pair_by_base_package[key: package] =
-                    new VersionPair(rawVersion: package.version, version: version);
-            }
+                versions_pair_by_base_package[key: package] =new VersionPair(rawVersion: package.version, version: version);
 
             return package_with_deps;
         }
@@ -145,16 +143,13 @@ namespace NugetInspector
     public class BasePackage
     {
         public string type { get; set; } = "nuget";
-
         [JsonProperty(propertyName: "namespace")]
         public string name_space { get; set; } = "";
-
         public string name { get; set; } = "";
         public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
         public string subpath { get; set; } = "";
         public string purl { get; set; } = "";
-
         public string primary_language { get; set; } = "C#";
         public string description { get; set; } = "";
         public string release_date { get; set; } = "";
@@ -230,7 +225,6 @@ namespace NugetInspector
         {
             return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
         }
-
 
         /// <summary>
         /// Update this Package instance using the NuGet API

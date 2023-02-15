@@ -4,7 +4,7 @@ using NuGet.Versioning;
 namespace NugetInspector;
 
 /// <summary>
-/// Resolve using packages.config strategy from: 
+/// Resolve using packages.config strategy from:
 /// See https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
 /// See https://learn.microsoft.com/en-us/nuget/reference/packages-config
 /// It means that only one package version can exist in the deps tree.

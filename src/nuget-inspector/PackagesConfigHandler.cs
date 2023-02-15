@@ -81,7 +81,6 @@ internal class PackagesConfigHandler : IDependencyResolver
             if  (package_framework?.IsUnsupported != false)
                 package_framework = NuGetFramework.Parse(folderName: "any");
 
-
             if (Config.TRACE)
                 Console.WriteLine($"GetDependencies: for: {name}@{version}  project_framework: {project_framework} package_framework: {package_framework}");
 

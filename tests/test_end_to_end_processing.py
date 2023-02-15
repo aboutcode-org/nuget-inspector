@@ -30,7 +30,6 @@ NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
 failing_paths = (
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
-    "complex/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.VerificationTests/resources/nuget/packages-config/Microsoft.DependencyDetective.VerificationTests2.csproj",
     "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
