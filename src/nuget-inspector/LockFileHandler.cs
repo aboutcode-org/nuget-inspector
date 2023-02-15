@@ -18,52 +18,51 @@ public class LockFileHandler
         LockFile = lockFile;
     }
 
-    private NuGetVersion BestVersion(string name, VersionRange range, IList<LockFileTargetLibrary> libraries)
+    private static NuGetVersion BestVersion(string name, VersionRange range, IList<LockFileTargetLibrary> libraries)
     {
         var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version);
         var nuGetVersions = versions.ToList();
         var bestMatch = range.FindBestMatch(versions: nuGetVersions);
         if (bestMatch == null)
         {
-            if (nuGetVersions.Count() == 1) return nuGetVersions.First();
+            if (nuGetVersions.Count == 1)
+                return nuGetVersions[0];
 
             if (Config.TRACE)
-                Console.WriteLine(
-                    value:
-                    $"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
-            if (Config.TRACE)
-                Console.WriteLine(
-                    value: $"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
+            {
+                Console.WriteLine($"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
+                Console.WriteLine($"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
+            }
+
             return range.MinVersion;
         }
 
         return bestMatch;
     }
 
-    private NuGetVersion BestLibraryVersion(string? name, VersionRange range, IList<LockFileLibrary> libraries)
+    private static NuGetVersion BestLibraryVersion(string? name, VersionRange range, IList<LockFileLibrary> libraries)
     {
         var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version);
         var nuGetVersions = versions.ToList();
         var bestMatch = range.FindBestMatch(versions: nuGetVersions);
         if (bestMatch == null)
         {
-            if (nuGetVersions.Count() == 1) return nuGetVersions.First();
+            if (nuGetVersions.Count == 1)
+                return nuGetVersions[0];
 
             if (Config.TRACE)
-                Console.WriteLine(
-                    value:
-                    $"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
+                Console.WriteLine($"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
+
             if (range.HasUpperBound && !range.HasLowerBound)
             {
                 if (Config.TRACE)
-                    Console.WriteLine(
-                        value: $"Instead will return the maximum range demanded: {range.MaxVersion.ToFullString()}");
+                    Console.WriteLine($"Instead will return the maximum range demanded: {range.MaxVersion.ToFullString()}");
+
                 return range.MaxVersion;
             }
 
             if (Config.TRACE)
-                Console.WriteLine(
-                    value: $"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
+                Console.WriteLine($"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
             return range.MinVersion;
         }
 
@@ -93,8 +92,9 @@ public class LockFileHandler
                     var bs = BestVersion(name: dep_id, range: vr, libraries: lb);
                     if (bs == null)
                     {
-                        if (Config.TRACE) Console.WriteLine(dependency.Id);
-                        bs = BestVersion(name: dep_id, range: vr, libraries: lb);
+                        if (Config.TRACE)
+                            Console.WriteLine(dependency.Id);
+                        _ = BestVersion(name: dep_id, range: vr, libraries: lb);
                     }
                     else
                     {
@@ -113,9 +113,7 @@ public class LockFileHandler
             Console.WriteLine($"LockFile.Path: {LockFile.Path}");
         }
 
-        if (LockFile != null
-            && LockFile.PackageSpec != null
-            && LockFile.PackageSpec.Dependencies != null
+        if (LockFile?.PackageSpec?.Dependencies != null
             && LockFile.PackageSpec.Dependencies.Count != 0)
         {
             foreach (var dep in LockFile.PackageSpec.Dependencies)
@@ -136,6 +134,7 @@ public class LockFileHandler
             var target_frameworks = LockFile?.PackageSpec?.TargetFrameworks;
 
             if (target_frameworks != null)
+            {
                 foreach (var framework in target_frameworks)
                 {
                     foreach (var dep in framework.Dependencies)
@@ -144,6 +143,7 @@ public class LockFileHandler
                         result.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
                     }
                 }
+            }
         }
 
         if (LockFile != null)
@@ -166,7 +166,6 @@ public class LockFileHandler
                         item: new BasePackage(name: project_dependency.GetName()!, version: version));
                 }
             }
-
 
             if (result.Dependencies.Count == 0 && Config.TRACE)
             {
@@ -191,7 +190,7 @@ public class LockFileHandler
     ///     ".NETFramework,Version=v4.7.2": ["FSharp.Core >= 4.3.4 < 5.0.0",]
     /// },
     /// This a case that is NOT handled yet
-    public ProjectFileDependency ParseProjectFileDependencyGroup(string project_file_dependency)
+    public static ProjectFileDependency ParseProjectFileDependencyGroup(string project_file_dependency)
     {
         if (ParseProjectFileDependencyGroupTokens(
                 input: project_file_dependency,
@@ -254,7 +253,7 @@ public class LockFileHandler
             $"Unable to parse project file dependency group: {project_file_dependency}");
     }
 
-    private bool ParseProjectFileDependencyGroupTokens(string input, string tokens, out string? project_name,
+    private static bool ParseProjectFileDependencyGroupTokens(string input, string tokens, out string? project_name,
         out string? project_version)
     {
         if (input.Contains(value: tokens))
@@ -270,7 +269,7 @@ public class LockFileHandler
         return false;
     }
 
-    private VersionRange MinVersionOrFloat(string? version_value_raw, bool include_min)
+    private static VersionRange MinVersionOrFloat(string? version_value_raw, bool include_min)
     {
         //could be Floating or MinVersion
         if (NuGetVersion.TryParse(value: version_value_raw, version: out var min_version))

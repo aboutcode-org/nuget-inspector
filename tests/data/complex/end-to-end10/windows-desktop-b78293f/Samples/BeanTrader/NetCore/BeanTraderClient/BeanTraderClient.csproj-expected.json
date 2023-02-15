@@ -52,6 +52,59 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "Castle.Core",
+          "version": "4.2.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Castle.Core@4.2.0",
+          "primary_language": "C#",
+          "description": "Castle Core, including DynamicProxy, Logging Abstractions and DictionaryAdapter",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Castle Project Contributors",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
+          "homepage_url": "http://www.castleproject.org/",
+          "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Castle.Core/4.2.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/castle.core/4.2.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "Castle.Windsor",
           "version": "4.1.1",
           "qualifiers": "",
@@ -97,7 +150,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Castle.Core",
+              "version": "4.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Castle.Core@4.2.0",
+              "primary_language": "C#",
+              "description": "Castle Core, including DynamicProxy, Logging Abstractions and DictionaryAdapter",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Castle Project Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
+              "homepage_url": "http://www.castleproject.org/",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Castle.Core/4.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/castle.core/4.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1216,7 +1323,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Castle.Core",
+              "version": "4.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Castle.Core@4.2.0",
+              "primary_language": "C#",
+              "description": "Castle Core, including DynamicProxy, Logging Abstractions and DictionaryAdapter",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Castle Project Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
+              "homepage_url": "http://www.castleproject.org/",
+              "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Castle.Core/4.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Castle.Core/4.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/castle.core/4.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",

@@ -7,7 +7,7 @@ namespace NugetInspector;
 
 /// <summary>
 /// Read the .*proj file directly as XML to extract PackageReference as a last resort
-/// This handler reads a *.*proj file as plain XML and calls the NuGet API for resolution. 
+/// This handler reads a *.*proj file as plain XML and calls the NuGet API for resolution.
 /// </summary>
 internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
 {
@@ -17,11 +17,11 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
     private readonly string ProjectPath;
 
     public ProjFileXmlParserPackageReferenceHandler(string projectPath, NugetApi nugetApi,
-        NuGetFramework? projectTargetFramework)
+        NuGetFramework? project_target_framework)
     {
         ProjectPath = projectPath;
         NugetApi = nugetApi;
-        ProjectTargetFramework = projectTargetFramework;
+        ProjectTargetFramework = project_target_framework;
     }
 
     public DependencyResolution Resolve()
@@ -38,11 +38,11 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
 
         var packagesNodes = doc.GetElementsByTagName(name: "PackageReference");
         if (packagesNodes.Count > 0)
+        {
             foreach (XmlNode package in packagesNodes)
             {
                 var attributes = package.Attributes;
                 string? version_value = null;
-
 
                 if (attributes != null)
                 {
@@ -67,8 +67,7 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                                 if (versionNode.Name == "Version")
                                 {
                                     if (Config.TRACE)
-                                        Console.WriteLine(
-                                            $"    no version attribute, using Version tag: {versionNode.InnerText}");
+                                        Console.WriteLine($"    no version attribute, using Version tag: {versionNode.InnerText}");
                                     version_value = versionNode.InnerText;
                                 }
                             }
@@ -88,6 +87,7 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                     }
                 }
             }
+        }
 
         result.Packages = tree.GetPackageList();
         result.Dependencies = new List<BasePackage>();

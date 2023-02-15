@@ -19,20 +19,23 @@ public class NugetApiResolver
 
     public void AddAll(List<Dependency> packages)
     {
-        foreach (var package in packages) Add(packageDependency: package);
+        foreach (var package in packages)
+            Add(packageDependency: package);
     }
 
     public void Add(Dependency packageDependency)
     {
-        IPackageSearchMetadata? package =
-            nugetApi.FindPackageVersion(id: packageDependency.name, versionRange: packageDependency.version_range);
+        IPackageSearchMetadata? package = nugetApi.FindPackageVersion(
+            id: packageDependency.name,
+            versionRange: packageDependency.version_range);
         if (package == null)
         {
-            var version = packageDependency.version_range?.MinVersion.ToNormalizedString();
+            string? version = packageDependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
             {
                 Console.WriteLine(
-                    $"Nuget failed to find package: '{packageDependency.name}' with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
+                    $"NuGet failed to find package: '{packageDependency.name}' "
+                    + $"with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
             }
 
             if (packageDependency.name != null)
@@ -46,10 +49,9 @@ public class NugetApiResolver
 
         var dependencies = new List<BasePackage>();
 
-        var packages =
-            nugetApi.DependenciesForPackage(
-                identity: package.Identity,
-                framework: packageDependency.framework);
+        IEnumerable<NuGet.Packaging.Core.PackageDependency> packages = nugetApi.DependenciesForPackage(
+            identity: package.Identity,
+            framework: packageDependency.framework);
 
         foreach (var dependency in packages)
         {
@@ -94,7 +96,6 @@ public class NugetApiResolver
                 }
             }
         }
-
 
         builder.AddOrUpdatePackage(id: package_id, dependencies: dependencies!);
     }

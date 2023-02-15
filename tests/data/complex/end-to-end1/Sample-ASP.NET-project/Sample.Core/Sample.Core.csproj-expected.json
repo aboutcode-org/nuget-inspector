@@ -941,6 +941,101 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "primary_language": "C#",
+              "description": "Json.NET is a popular high-performance JSON framework for .NET",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "James Newton-King",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "json"
+              ],
+              "homepage_url": "http://www.newtonsoft.com/json",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Newtonsoft.Json",
+          "version": "9.0.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+          "primary_language": "C#",
+          "description": "Json.NET is a popular high-performance JSON framework for .NET",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newton-King",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "json"
+          ],
+          "homepage_url": "http://www.newtonsoft.com/json",
+          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
           "dependencies": []
         },
         {
@@ -1045,7 +1140,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "EntityFramework",
+              "version": "6.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/EntityFramework@6.2.0",
+              "primary_language": "C#",
+              "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "EntityFramework",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
+              "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1094,6 +1243,97 @@
           "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
           "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
           "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Diagnostics.DiagnosticSource",
+          "version": "4.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+          "primary_language": "C#",
+          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://dot.net/",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1388,98 +1628,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "9.0.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "http://www.newtonsoft.com/json",
-          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "System.Diagnostics.DiagnosticSource",
-          "version": "4.5.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
-          "primary_language": "C#",
-          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ],
       "dependencies": [
@@ -1778,59 +1926,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "EntityFramework",
-          "version": "6.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/EntityFramework@6.2.0",
-          "primary_language": "C#",
-          "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Microsoft",
-            "EntityFramework",
-            "EF",
-            "Database",
-            "Data",
-            "O/RM",
-            "ADO.NET"
-          ],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
-          "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "LinqKit",
           "version": "1.1.15",
           "qualifiers": "",
@@ -1877,7 +1972,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "EntityFramework",
+              "version": "6.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/EntityFramework@6.2.0",
+              "primary_language": "C#",
+              "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "EntityFramework",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
+              "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1929,7 +2078,53 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -2076,98 +2271,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "9.0.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "http://www.newtonsoft.com/json",
-          "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "System.Diagnostics.DiagnosticSource",
-          "version": "4.5.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
-          "primary_language": "C#",
-          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ]
     }

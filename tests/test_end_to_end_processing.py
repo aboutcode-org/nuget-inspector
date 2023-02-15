@@ -63,6 +63,7 @@ project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj"
 def test_nuget_inspector_end_to_end_with_projects(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
+
 def test_nuget_inspector_end_to_end_with_target_framework():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
@@ -81,6 +82,83 @@ def test_nuget_inspector_end_to_end_with_target_framework2():
         test_path=test_path,
         expected_path=expected_path,
         extra_args=' --target-framework "net45" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_netcoreapp31():
+    test_path = "packages-config/packages.config4/Sample.Nexb.csproj"
+    expected_path = "packages-config/packages.config4/Sample.Nexb.csproj-expected-netcoreapp3.1.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "netcoreapp3.1" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net45():
+    test_path = "packages-config/packages.config4/Sample.Nexb.csproj"
+    expected_path = "packages-config/packages.config4/Sample.Nexb.csproj-expected-net45.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net45" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net461_1():
+    test_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj1/proj1.csproj"
+    expected_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj1/proj1.csproj-expected-net461.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net461" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net461_2():
+    test_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj2/proj2.csproj"
+    expected_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj2/proj2.csproj-expected-net461.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net461" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net461_3():
+    test_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/packagesconfig/packagesconfig.csproj"
+    expected_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/packagesconfig/packagesconfig.csproj-expected-net461.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net461" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net461_4():
+    test_path = "complex/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.csproj"
+    expected_path = "complex/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.csproj-expected-net461.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net461" ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net451_1():
+    test_path = "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-movie-hunter-api/SampleProject.csproj"
+    expected_path = "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-movie-hunter-api/SampleProject.csproj-expected-net451.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net451" ',
         regen=REGEN_TEST_FIXTURES,
     )
 
@@ -137,13 +215,19 @@ def check_nuget_inspector_end_to_end(test_path, expected_path=None, extra_args="
     ]
     try:
         subprocess.check_output(cmd, shell=True)
-    except subprocess.CalledProcessError as e:
-        out = e.output.decode("utf-8")
-        print(out)
-        raise Exception(
-            "Failed to run", " ".join(cmd),
-            "with output:", e.output.decode("utf-8"),
-        ) from e
+    except subprocess.CalledProcessError:
+        cmd = [cmd[0] + " --verbose"]
+        try:
+            subprocess.check_output(cmd, shell=True)
+        except subprocess.CalledProcessError as ex:
+            out = ex.output.decode("utf-8")
+            print("==================")
+            print(out)
+            print("==================")
+            raise Exception(
+                "Failed to run", " ".join(cmd),
+                "with output:", out,
+            )
 
     if expected_path is None:
         expected_path = test_path + "-expected.json"

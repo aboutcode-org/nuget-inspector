@@ -200,27 +200,27 @@ namespace NugetInspector
 
         public static BasePackage FromBasePackage(BasePackage package, List<BasePackage> dependencies)
         {
-            var bpwd = new BasePackage(name: package.name, version: package.version);
-            bpwd.extra_data = package.extra_data;
-            bpwd.dependencies = dependencies;
-            return bpwd;
+            return new(name: package.name, version: package.version)
+            {
+                extra_data = package.extra_data,
+                dependencies = dependencies
+            };
         }
 
         protected bool Equals(BasePackage other)
         {
-            return (
-                type == other.type
+            return type == other.type
                 && name_space == other.name_space
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
                 && subpath == other.subpath
-            );
+            ;
         }
 
         public override bool Equals(object? obj)
         {
-            if (ReferenceEquals(null, obj)) return false;
+            if (obj is null) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
             return Equals((BasePackage)obj);
@@ -321,8 +321,8 @@ namespace NugetInspector
             {
                 keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
             }
-
-            homepage_url = metadata.ProjectUrl.ToString();
+            if (metadata.ProjectUrl != null)
+                homepage_url = metadata.ProjectUrl.ToString();
 
             // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
             download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";

@@ -1,8 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyName>Sample.One</AssemblyName>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0,netcoreapp3.1,net45</TargetFramework>
+    <TargetFrameworks>net6.0;netcoreapp3.1;net45</TargetFrameworks>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <RootNamespace>Sample.Nexb</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 </Project>

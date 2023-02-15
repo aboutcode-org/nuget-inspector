@@ -49,7 +49,7 @@ public class Options
     /// </summary>
     public List<string> AsCliList()
     {
-        List<string> options = new List<string>
+        List<string> options = new()
         {
             $"--project-file {ProjectFilePath}",
             $"--json {OutputFilePath}",
@@ -69,7 +69,6 @@ public class Options
 
         return options;
     }
-
 
     public static Options? ParseArguments(string[] args)
     {

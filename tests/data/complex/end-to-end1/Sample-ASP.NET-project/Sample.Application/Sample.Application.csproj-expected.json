@@ -746,7 +746,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "EntityFramework",
+              "version": "6.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/EntityFramework@6.2.0",
+              "primary_language": "C#",
+              "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "EntityFramework",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
+              "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         }
       ],
       "dependencies": [
@@ -899,59 +953,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "EntityFramework",
-          "version": "6.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/EntityFramework@6.2.0",
-          "primary_language": "C#",
-          "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Microsoft",
-            "EntityFramework",
-            "EF",
-            "Database",
-            "Data",
-            "O/RM",
-            "ADO.NET"
-          ],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
-          "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "LinqKit",
           "version": "1.1.15",
           "qualifiers": "",
@@ -998,7 +999,61 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "EntityFramework",
+              "version": "6.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/EntityFramework@6.2.0",
+              "primary_language": "C#",
+              "description": "Entity Framework is Microsoft's recommended data access technology for new applications.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "EntityFramework",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
+              "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=262998",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/EntityFramework/6.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/entityframework/6.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         }
       ]
     }

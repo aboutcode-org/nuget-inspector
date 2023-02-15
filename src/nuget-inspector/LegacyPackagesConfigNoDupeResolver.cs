@@ -7,7 +7,7 @@ namespace NugetInspector;
 /// Resolve using packages.config strategy from: 
 /// See https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
 /// See https://learn.microsoft.com/en-us/nuget/reference/packages-config
-/// It means that that only one package version can exist in the deps tree.
+/// It means that only one package version can exist in the deps tree.
 /// </summary>
 public class LegacyPackagesConfigNoDupeResolver
 {
@@ -57,13 +57,14 @@ public class LegacyPackagesConfigNoDupeResolver
                 else
                 {
                     deps.Add(item: new BasePackage(
-                                        name: ResolutionDatas[key: dep].Name!,
-                                        version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
+                        name: ResolutionDatas[key: dep].Name!,
+                        version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
                 }
             }
 
             builder.AddOrUpdatePackage(
-                id: new BasePackage(name: data.Name!, version: data.CurrentVersion?.ToNormalizedString()),
+                id: new BasePackage(name: data.Name!,
+                version: data.CurrentVersion?.ToNormalizedString()),
                 dependencies: deps!);
         }
 
@@ -73,17 +74,17 @@ public class LegacyPackagesConfigNoDupeResolver
     public void Add(string id, string? name, VersionRange? range, NuGetFramework? framework)
     {
         id = id.ToLower();
-        Resolve(id: id, name: name, framework: framework, overrideRange: range);
+        Resolve(id: id, name: name, project_target_framework: framework, overrideRange: range);
     }
 
     private void Resolve(
         string id,
         string? name,
-        NuGetFramework? framework = null,
+        NuGetFramework? project_target_framework = null,
         VersionRange? overrideRange = null)
     {
         id = id.ToLower();
-        ResolutionData data;
+        ResolutionData data = new();
         if (ResolutionDatas.ContainsKey(key: id))
         {
             data = ResolutionDatas[key: id];
@@ -92,12 +93,11 @@ public class LegacyPackagesConfigNoDupeResolver
                 if (data.ExternalVersionRange == null)
                     data.ExternalVersionRange = overrideRange;
                 else
-                    throw new Exception(message: "Can't set more than one external version range.");
+                    throw new Exception(message: "Cannot set more than one external version range.");
             }
         }
         else
         {
-            data = new ResolutionData();
             data.ExternalVersionRange = overrideRange;
             data.Name = name;
             ResolutionDatas[key: id] = data;
@@ -111,13 +111,11 @@ public class LegacyPackagesConfigNoDupeResolver
         if (best == null)
         {
             if (Config.TRACE)
-            {
-                Console.WriteLine(
-                    value:
-                    $"Unable to find package for '{id}' with range '{combo.ToString()}'. Likely a conflict exists in packages.config or the nuget metadata service configured incorrectly.");
-            }
+                Console.WriteLine( value: $"Unable to find package for '{id}' with versions range '{combo}'.");
 
-            if (data.CurrentVersion == null) data.CurrentVersion = combo.MinVersion;
+            if (data.CurrentVersion == null)
+                data.CurrentVersion = combo.MinVersion;
+
             return;
         }
 
@@ -126,13 +124,16 @@ public class LegacyPackagesConfigNoDupeResolver
         data.CurrentVersion = best.Identity.Version;
         data.Dependencies.Clear();
 
-        var packages = NugetApi.DependenciesForPackage(identity: best.Identity, framework: framework);
+        var packages = NugetApi.DependenciesForPackage(identity: best.Identity, framework: project_target_framework);
         foreach (var dependency in packages)
         {
             if (!data.Dependencies.ContainsKey(key: dependency.Id.ToLower()))
             {
                 data.Dependencies.Add(key: dependency.Id.ToLower(), value: dependency.VersionRange);
-                Resolve(id: dependency.Id.ToLower(), name: dependency.Id, framework: framework);
+                Resolve(
+                    id: dependency.Id.ToLower(),
+                    name: dependency.Id,
+                    project_target_framework: project_target_framework);
             }
         }
     }

@@ -254,20 +254,117 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Owin",
+              "version": "1.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Owin@1.0.0",
+              "primary_language": "C#",
+              "description": "OWIN IAppBuilder startup interface",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "OWIN startup components contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "OWIN"
+              ],
+              "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
+              "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/owin-contrib/owin-hosting/blob/master/LICENSE.txt",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/owin/1.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "primary_language": "C#",
+              "description": "Provides a set of helper types and abstractions for simplifying the creation of OWIN components.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
+              "homepage_url": "http://katanaproject.codeplex.com/",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.owin/2.1.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         }
       ],
       "dependencies": [
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Microsoft.Owin",
+          "name": "Microsoft.Owin.Host.SystemWeb",
           "version": "2.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+          "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
           "primary_language": "C#",
-          "description": "Provides a set of helper types and abstractions for simplifying the creation of OWIN components.",
+          "description": "OWIN server that enables OWIN-based applications to run on IIS using the ASP.NET request pipeline.",
           "release_date": "",
           "parties": [
             {
@@ -284,7 +381,7 @@
             "Katana"
           ],
           "homepage_url": "http://katanaproject.codeplex.com/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -299,9 +396,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.owin/2.1.0.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Host.SystemWeb/2.1.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.owin.host.systemweb/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -352,57 +449,57 @@
               "datafile_path": "",
               "packages": [],
               "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.Owin",
+              "version": "2.1.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
+              "primary_language": "C#",
+              "description": "Provides a set of helper types and abstractions for simplifying the creation of OWIN components.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
+              "homepage_url": "http://katanaproject.codeplex.com/",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/2.1.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.owin/2.1.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.Owin.Host.SystemWeb",
-          "version": "2.1.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
-          "primary_language": "C#",
-          "description": "OWIN server that enables OWIN-based applications to run on IIS using the ASP.NET request pipeline.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
-          "homepage_url": "http://katanaproject.codeplex.com/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Host.SystemWeb/2.1.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/2.1.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.owin.host.systemweb/2.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ]
     }
