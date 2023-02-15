@@ -27,6 +27,7 @@ do
     RELEASE_DIR=release/nuget-inspector
     rm -rf $RELEASE_DIR
     mkdir -p $RELEASE_DIR
+
     dotnet publish \
       --runtime $platform \
       --self-contained true \
@@ -34,7 +35,7 @@ do
       -p:Version=$VERSION \
       --output $RELEASE_DIR \
       src/nuget-inspector/nuget-inspector.csproj ;
-    
+
     cp apache-2.0.LICENSE \
        mit.LICENSE        \
        AUTHORS.rst        \
@@ -42,6 +43,8 @@ do
        NOTICE             \
        README.rst         \
        $RELEASE_DIR
-    
+
+    rm release/nuget-inspector/createdump
+
     tar -czf release/$TARGET.tar.gz -C release/ nuget-inspector
 done
