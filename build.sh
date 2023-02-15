@@ -17,6 +17,6 @@ dotnet publish \
   --runtime linux-x64 \
   --self-contained true \
   --configuration Release \
-  -p:Version=0.7.2 \
+  -p:Version=0.8.0 \
   --output build \
   src/nuget-inspector/nuget-inspector.csproj
