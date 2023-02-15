@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Xml.Linq;
-using Microsoft.Build.Evaluation;
 using NuGet.Frameworks;
 
 namespace NugetInspector;
@@ -20,7 +19,7 @@ public class ScanResult
 }
 
 /// <summary>
-/// An Options subclass that track project scan-specific options. 
+/// An Options subclass that track project scan-specific options.
 /// </summary>
 public class ProjectScannerOptions : Options
 {
@@ -57,7 +56,7 @@ internal class ProjectScanner
     /// <exception cref="Exception"></exception>
     public ProjectScanner(ProjectScannerOptions options, NugetApi nuget_api_service)
     {
-        string combine_paths(string? project_directory, string file_name)
+        static string combine_paths(string? project_directory, string file_name)
         {
             return Path
                 .Combine(path1: project_directory ?? string.Empty, path2: file_name)
@@ -109,7 +108,7 @@ internal class ProjectScanner
         try
         {
             var package = ScanProject();
-            List<BasePackage> packages = new List<BasePackage>();
+            List<BasePackage> packages = new();
             if (package != null)
             {
                 packages.Add(item: package);
@@ -134,7 +133,7 @@ internal class ProjectScanner
     }
 
     /// <summary>
-    /// Enhance results with metadata.
+    /// Enhance the packages in scan results with metadata fetched from the NuGet API.
     /// </summary>
     /// <param name="scan_result"></param>
     /// <returns></returns>
@@ -145,13 +144,14 @@ internal class ProjectScanner
             try
             {
                 if (Config.TRACE)
-                    Console.WriteLine($"FetchMetadata AssemblyInfoParser for project version: {Options.ProjectVersion}");
+                    Console.WriteLine($"FetchMetadata for '{package.purl}'");
 
                 package.Update(nugetApi: NugetApiService);
             }
             catch (Exception ex)
             {
-                if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for pack: {package}: {ex}");
+                if (Config.TRACE)
+                    Console.WriteLine($"Failed to fetch NuGet API for package: {package.purl}: {ex}");
             }
 
             foreach (BasePackage subpack in package.packages)
@@ -162,9 +162,10 @@ internal class ProjectScanner
                 }
                 catch (Exception ex)
                 {
-                    if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subpack: {subpack}: {ex}");
+                    if (Config.TRACE)
+                        Console.WriteLine($"Failed to fetch NuGet API for subpackage: {subpack.purl}: {ex}");
                 }
-                
+
                 foreach (BasePackage subdep in subpack.dependencies)
                 {
                     try
@@ -173,11 +174,10 @@ internal class ProjectScanner
                     }
                     catch (Exception ex)
                     {
-                        if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for subdep: {subdep}: {ex}");
+                        if (Config.TRACE)
+                            Console.WriteLine($"Failed to fetch NuGet API for subdep: {subdep.purl}: {ex}");
                     }
                 }
-
-                
             }
 
             foreach (BasePackage dep in package.dependencies)
@@ -188,7 +188,8 @@ internal class ProjectScanner
                 }
                 catch (Exception ex)
                 {
-                    if (Config.TRACE) Console.WriteLine($"Failed to fetch NuGet API for dep: {dep}: {ex}");
+                    if (Config.TRACE)
+                        Console.WriteLine($"Failed to fetch NuGet API for dep: {dep.purl}: {ex}");
                 }
             }
         }
@@ -204,8 +205,7 @@ internal class ProjectScanner
         if (Config.TRACE)
         {
             stopWatch = Stopwatch.StartNew();
-            Console.WriteLine(
-                $"Processing Project: {Options.ProjectName} using Directory: {Options.ProjectDirectory}");
+            Console.WriteLine($"Processing Project: {Options.ProjectName} using Directory: {Options.ProjectDirectory}");
         }
 
         var package = new BasePackage(
@@ -214,7 +214,7 @@ internal class ProjectScanner
             datafile_path: Options.ProjectFilePath
         );
         // Force using the provided framework if present
-        NuGetFramework? project_target_framework = null;
+        NuGetFramework? project_target_framework;
         if (!string.IsNullOrWhiteSpace(Options.TargetFramework))
         {
             string option_target_framework = Options.TargetFramework.ToLowerInvariant();
@@ -224,6 +224,10 @@ internal class ProjectScanner
         {
             // use the 1st framework found in the project
             project_target_framework = ParseTargetFramework();
+        }
+        if (Config.TRACE)
+        {
+            Console.WriteLine($"project_target_framework: {project_target_framework}");
         }
 
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
@@ -266,9 +270,12 @@ internal class ProjectScanner
         else if (hasPackagesConfig)
         {
             // packages.config is legacy but should be used if present
-            if (Config.TRACE) Console.WriteLine($"Using packages.config: {Options.PackagesConfigPath}");
+            if (Config.TRACE)
+                Console.WriteLine($"Using packages.config: {Options.PackagesConfigPath}");
             var packagesConfigResolver = new PackagesConfigHandler(
-                packages_config_path: Options.PackagesConfigPath!, nuget_api: NugetApiService);
+                packages_config_path: Options.PackagesConfigPath!,
+                nuget_api: NugetApiService,
+                project_target_framework: project_target_framework!);
             var packagesConfigResult = packagesConfigResolver.Resolve();
             package.packages = packagesConfigResult.Packages;
             package.dependencies = packagesConfigResult.Dependencies;
@@ -278,7 +285,8 @@ internal class ProjectScanner
         {
             // project.json is legacy but should be used if present
             if (Config.TRACE) Console.WriteLine($"Using legacy project.json: {Options.ProjectJsonPath}");
-            var projectJsonResolver = new LegacyProjectJsonHandler(projectName: Options.ProjectName,
+            var projectJsonResolver = new LegacyProjectJsonHandler(
+                projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Resolve();
             package.packages = projectJsonResult.Packages;
@@ -309,7 +317,7 @@ internal class ProjectScanner
                 if (Config.TRACE) Console.WriteLine("Using Fallback XML project file reader and resolver.");
                 var xmlResolver =
                     new ProjFileXmlParserPackageReferenceHandler(projectPath: Options.ProjectFilePath,
-                        nugetApi: NugetApiService, projectTargetFramework: project_target_framework);
+                        nugetApi: NugetApiService, project_target_framework: project_target_framework);
                 var xmlResult = xmlResolver.Resolve();
                 package.version = xmlResult.ProjectVersion;
                 package.packages = xmlResult.Packages;
@@ -338,47 +346,67 @@ internal class ProjectScanner
         return !string.IsNullOrWhiteSpace(value: path) && File.Exists(path: path);
     }
 
+    /// <summary>
+    /// Return a NuGetFramework string or null as found in the *.*proj XML file.
+    /// Handles new and legacy style target framework references.
+    /// </summary>
     private NuGetFramework? ParseTargetFramework()
     {
-        var target_framework = ExtractTargetFramework(projectFilePath: Options.ProjectFilePath);
-        return NuGetFramework.ParseFolder(folderName: target_framework);
+        try
+        {
+            var (target_framework, is_legacy) = ExtractTargetFramework(projectFilePath: Options.ProjectFilePath);
+            if (!is_legacy)
+            {
+                return NuGetFramework.ParseFolder(folderName: target_framework);
+            }
+            else
+            {
+                var version = Version.Parse(target_framework.Trim('v', 'V'));
+                return new NuGetFramework(FrameworkConstants.FrameworkIdentifiers.Net, version);
+            }
+        }
+        catch (Exception)
+        {
+            if (Config.TRACE) Console.WriteLine("Failed to parse ParseTargetFramework.");
+            return null;
+        }
     }
 
     /// <summary>
-    /// Return the first TargetFramework found in the *.*proj XML file 
+    /// Return the first TargetFramework string found in the *.*proj XML file
+    /// and a legacy flag if the project file is an older style using the
+    /// "targetframeworkversion" XML element.
     /// </summary>
     /// <param name="projectFilePath"></param>
     /// <returns></returns>
-    private static string ExtractTargetFramework(string projectFilePath)
+    private static (string, bool) ExtractTargetFramework(string projectFilePath)
     {
-        var targetFrameworkNodeNames = new[]
-                { "TargetFrameworkVersion", "TargetFramework", "TargetFrameworks" }
-            .Select(selector: x => x.ToLowerInvariant());
+        var csproj = XElement.Load(uri: projectFilePath);
 
-        var csProj = XElement.Load(uri: projectFilePath);
-        var targetFrameworks = csProj.Descendants()
-            .Where(predicate: e => targetFrameworkNodeNames.Contains(value: e.Name.LocalName.ToLowerInvariant()))
+        bool is_legacy = csproj
+            .Descendants()
+            .Where(predicate: e => string.Equals(e.Name.LocalName, "targetframeworkversion", StringComparison.InvariantCultureIgnoreCase))
+            .ToList().Any();
+
+        IEnumerable<string> target_framework_tags = new[] { "targetframeworkversion", "targetframework", "targetframeworks" };
+        var targetFrameworks = csproj.Descendants()
+            .Where(predicate: e => target_framework_tags.Contains(value: e.Name.LocalName.ToLowerInvariant()))
             .ToList();
 
         if (!targetFrameworks.Any())
         {
             if (Config.TRACE)
-                Console.WriteLine(
-                    value: $"Warning - Target Framework: Could not extract a target framework for {projectFilePath}");
-            return string.Empty;
-        }
-
-        if (targetFrameworks.Count > 1 && Config.TRACE)
-        {
-            Console.WriteLine(
-                value: $"Warning - Target Framework: Found multiple target frameworks for {projectFilePath}");
+                Console.WriteLine($"Warning - Target Framework: Could not extract a target framework for {projectFilePath}");
+            return (string.Empty, false);
         }
 
         if (Config.TRACE)
-            Console.WriteLine(
-                value:
-                $"Found the following TargetFramework(s): {string.Join(separator: Environment.NewLine, values: targetFrameworks)}");
+        {
+            if (targetFrameworks.Count > 1)
+                Console.WriteLine($"Warning - Multiple target frameworks for {projectFilePath}");
+            Console.WriteLine($"TargetFramework(s): {string.Join(separator: Environment.NewLine, values: targetFrameworks)}");
+        }
 
-        return targetFrameworks.First().Value;
+        return (targetFrameworks[0].Value, is_legacy);
     }
 }

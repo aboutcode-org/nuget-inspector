@@ -21,7 +21,7 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/app@6.0.8",
+      "purl": "pkg:nuget/app@6.0.11",
       "primary_language": "C#",
       "description": "Easily view and deploy any ServiceStack .NET Core Web App in a self-contained Chrome CEF Browser (Win64)",
       "release_date": "",
@@ -34,9 +34,19 @@
           "url": ""
         }
       ],
-      "keywords": [],
+      "keywords": [
+        "CEF",
+        "ServiceStack",
+        ".NET",
+        "Core",
+        "WebApps",
+        "self-contained",
+        "exe",
+        "Chromium",
+        "CefGlue"
+      ],
       "homepage_url": "https://github.com/ServiceStack/dotnet-app",
-      "download_url": "https://www.nuget.org/api/v2/package/app/6.0.8",
+      "download_url": "https://www.nuget.org/api/v2/package/app/6.0.11",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -51,9 +61,9 @@
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/app/6.0.8?_src=template",
-      "repository_download_url": "https://www.nuget.org/api/v2/package/app/6.0.8",
-      "api_data_url": "https://api.nuget.org/v3/registration5-semver1/app/6.0.8.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/app/6.0.11?_src=template",
+      "repository_download_url": "https://www.nuget.org/api/v2/package/app/6.0.11",
+      "api_data_url": "https://api.nuget.org/v3/registration5-semver1/app/6.0.11.json",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/TwoProjectsWithAnalyzerSuppressor/App/App.csproj",
       "packages": [
@@ -109,9 +119,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -124,7 +134,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -139,9 +149,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -167,7 +177,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4",
           "size": 0,
@@ -618,7 +639,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/3.3.1",
           "size": 0,
@@ -662,7 +701,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn-analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.9.4",
               "size": 0,
@@ -979,7 +1029,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1",
           "size": 0,
@@ -1023,7 +1091,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/3.3.1",
               "size": 0,
@@ -1070,7 +1156,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
           "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118",
           "size": 0,
@@ -1149,9 +1241,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -1164,7 +1256,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1179,9 +1271,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1207,7 +1299,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/3.3.1",
           "size": 0,
@@ -1251,7 +1361,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/3.3.1",
               "size": 0,
@@ -1298,7 +1426,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
           "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
           "download_url": "https://www.nuget.org/api/v2/package/StyleCop.Analyzers/1.1.118",
           "size": 0,

@@ -61,12 +61,10 @@ namespace NugetInspector
             package_with_deps = BasePackage.FromBasePackage(package: package, dependencies: new List<BasePackage>());
             base_package_deps_by_base_package[key: package] = package_with_deps;
 
-            NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
+            _ = NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
+
             if (package.version != null)
-            {
-                versions_pair_by_base_package[key: package] =
-                    new VersionPair(rawVersion: package.version, version: version);
-            }
+                versions_pair_by_base_package[key: package] =new VersionPair(rawVersion: package.version, version: version);
 
             return package_with_deps;
         }
@@ -114,8 +112,10 @@ namespace NugetInspector
                 .Select(selector: key => versions_pair_by_base_package[key: key]);
             var best = range.FindBestMatch(versions: allVersions.Select(selector: ver => ver.version));
             foreach (var pair in versions_pair_by_base_package)
+            {
                 if (pair.Key.name == name && pair.Value.version == best)
                     return pair.Key.version;
+            }
 
             return null;
         }
@@ -143,16 +143,13 @@ namespace NugetInspector
     public class BasePackage
     {
         public string type { get; set; } = "nuget";
-
         [JsonProperty(propertyName: "namespace")]
         public string name_space { get; set; } = "";
-
         public string name { get; set; } = "";
         public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
         public string subpath { get; set; } = "";
         public string purl { get; set; } = "";
-
         public string primary_language { get; set; } = "C#";
         public string description { get; set; } = "";
         public string release_date { get; set; } = "";
@@ -198,27 +195,27 @@ namespace NugetInspector
 
         public static BasePackage FromBasePackage(BasePackage package, List<BasePackage> dependencies)
         {
-            var bpwd = new BasePackage(name: package.name, version: package.version);
-            bpwd.extra_data = package.extra_data;
-            bpwd.dependencies = dependencies;
-            return bpwd;
+            return new(name: package.name, version: package.version)
+            {
+                extra_data = package.extra_data,
+                dependencies = dependencies
+            };
         }
 
         protected bool Equals(BasePackage other)
         {
-            return (
-                type == other.type
+            return type == other.type
                 && name_space == other.name_space
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
                 && subpath == other.subpath
-            );
+            ;
         }
 
         public override bool Equals(object? obj)
         {
-            if (ReferenceEquals(null, obj)) return false;
+            if (obj is null) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
             return Equals((BasePackage)obj);
@@ -229,13 +226,24 @@ namespace NugetInspector
             return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
         }
 
-
         /// <summary>
         /// Update this Package instance using the NuGet API
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
             IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
+            if (meta ==null)
+            {
+                // Try again this time bypassing cache and also looking for pre-releases
+                meta = nugetApi.FindPackageVersion(
+                    name: name,
+                    version: version,
+                    use_cache: false,
+                    include_prerelease: true);
+                if (meta ==null)
+                    return;
+            }
+
             Update(meta);
         }
 
@@ -267,37 +275,52 @@ namespace NugetInspector
             LicenseMetadata license_meta = metadata.LicenseMetadata;
             if (license_meta != null)
             {
-                meta_declared_licenses.Add($"LicenseType: {license_meta.Type.ToString()}");
+                meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
                 if (!string.IsNullOrWhiteSpace(license_meta.License))
                     meta_declared_licenses.Add($"License: {license_meta.License}");
                 var expression = license_meta.LicenseExpression;
                 if (expression != null)
-                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression.ToString()}");
+                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
             }
 
             declared_license = string.Join("\n", meta_declared_licenses);
 
             // Update the parties
             string authors = metadata.Authors;
-            if (!string.IsNullOrWhiteSpace(authors) && parties.Count == 0)
+            if (!string.IsNullOrWhiteSpace(authors))
             {
-                Party party = new()
+                if (!parties.Any(p => p.name == authors && p.role == "author"))
                 {
-                    type = "organization",
-                    role = "author",
-                    name = authors,
-                };
-                parties.Add(party);
+                    Party item = new() { type = "organization", role = "author", name = authors };
+                    parties.Add(item);
+                }
             }
 
-            // Update misc and URLs
+            string owners = metadata.Owners;
+            if (!string.IsNullOrWhiteSpace(owners))
+            {
+                if (!parties.Any(p => p.name == owners && p.role == "owner"))
+                {
+                    Party item = new() { type = "organization", role = "owner", name = owners };
+                    parties.Add(item);
+                }
+            }
+
+            // Update misc and URL fields
             primary_language = "C#";
             description = metadata.Description;
-            //keywords = null;
+
+            string tags = metadata.Tags.Trim();
+            if (!string.IsNullOrWhiteSpace(tags))
+            {
+                keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
+            }
+            if (metadata.ProjectUrl != null)
+                homepage_url = metadata.ProjectUrl.ToString();
 
             // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
-            homepage_url = metadata.ProjectUrl.ToString();
             download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
+
             repository_homepage_url = metadata.PackageDetailsUrl.ToString();
             repository_download_url = download_url;
             api_data_url =

@@ -19,19 +19,24 @@ public class NugetApiResolver
 
     public void AddAll(List<Dependency> packages)
     {
-        foreach (var package in packages) Add(packageDependency: package);
+        foreach (var package in packages)
+            Add(packageDependency: package);
     }
 
     public void Add(Dependency packageDependency)
     {
-        IPackageSearchMetadata? package =
-            nugetApi.FindPackageVersion(id: packageDependency.name, versionRange: packageDependency.version_range);
+        IPackageSearchMetadata? package = nugetApi.FindPackageVersion(
+            id: packageDependency.name,
+            versionRange: packageDependency.version_range);
         if (package == null)
         {
-            var version = packageDependency.version_range?.MinVersion.ToNormalizedString();
+            string? version = packageDependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
+            {
                 Console.WriteLine(
-                    $"Nuget failed to find package: '{packageDependency.name}' with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
+                    $"NuGet failed to find package: '{packageDependency.name}' "
+                    + $"with version range: '{packageDependency.version_range}', assuming instead version: '{version}'");
+            }
 
             if (packageDependency.name != null)
                 builder.AddOrUpdatePackage(id: new BasePackage(name: packageDependency.name, version: version));
@@ -44,10 +49,9 @@ public class NugetApiResolver
 
         var dependencies = new List<BasePackage>();
 
-        var packages =
-            nugetApi.DependenciesForPackage(
-                identity: package.Identity,
-                framework: packageDependency.framework);
+        IEnumerable<NuGet.Packaging.Core.PackageDependency> packages = nugetApi.DependenciesForPackage(
+            identity: package.Identity,
+            framework: packageDependency.framework);
 
         foreach (var dependency in packages)
         {
@@ -65,27 +69,30 @@ public class NugetApiResolver
                 if (api_package_metadata == null)
                 {
                     if (Config.TRACE)
-                        Console.WriteLine(
-                            value: $"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                    {
+                        Console.WriteLine($"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
+                    }
                     continue;
                 }
 
-                var id = new BasePackage(name: api_package_metadata.Identity.Id,
+                var id = new BasePackage(
+                    name: api_package_metadata.Identity.Id,
                     version: api_package_metadata.Identity.Version.ToNormalizedString());
+
                 if (Config.TRACE)
-                {
-                    Console.WriteLine($"Package details");
-                    Console.WriteLine($"    Description: {api_package_metadata.Description}");
-                }
+                    Console.WriteLine($"Package details: Description: {api_package_metadata.Description}");
 
                 dependencies.Add(item: id);
 
                 if (!builder.DoesPackageExist(package: id))
-                    Add(packageDependency: new Dependency(name: dependency.Id, version_range: dependency.VersionRange,
+                {
+                    Add(packageDependency: new Dependency(
+                        name: dependency.Id,
+                        version_range: dependency.VersionRange,
                         framework: packageDependency.framework));
+                }
             }
         }
-
 
         builder.AddOrUpdatePackage(id: package_id, dependencies: dependencies!);
     }

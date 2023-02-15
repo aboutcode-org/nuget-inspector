@@ -69,7 +69,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "git",
+            "commit",
+            "versioning",
+            "version",
+            "assemblyinfo"
+          ],
           "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119",
           "size": 0,
@@ -146,9 +152,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -161,7 +167,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -176,9 +182,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -340,7 +346,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest2",
+            "xUnit",
+            "NUnit",
+            "MSpec",
+            "NSpec",
+            "TDD",
+            "BDD",
+            "Fluent",
+            "netcore",
+            "netstandard",
+            "uwp"
+          ],
           "homepage_url": "https://www.fluentassertions.com/",
           "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0",
           "size": 0,
@@ -22361,7 +22379,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jmespath",
+            "json"
+          ],
           "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
           "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net.Parser/1.0.205",
           "size": 0,
@@ -22452,7 +22473,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
           "size": 0,
@@ -22542,7 +22565,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jmespath",
+            "json"
+          ],
           "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
           "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205",
           "size": 0,
@@ -22586,7 +22612,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jmespath",
+                "json"
+              ],
               "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
               "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net.Parser/1.0.205",
               "size": 0,
@@ -22676,7 +22705,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -22797,10 +22828,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Frameworks",
-          "version": "5.11.0",
+          "version": "5.11.3",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Frameworks@5.11.0",
+          "purl": "pkg:nuget/NuGet.Frameworks@5.11.3",
           "primary_language": "C#",
           "description": "NuGet's understanding of target frameworks.",
           "release_date": "",
@@ -22813,9 +22844,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.0",
+          "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -22826,13 +22859,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/5.11.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/5.11.3/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/5.11.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/5.11.0.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/5.11.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/5.11.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -22858,7 +22891,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "vstest",
+            "visual-studio",
+            "unittest",
+            "testplatform",
+            "mstest",
+            "microsoft",
+            "test",
+            "testing"
+          ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.ObjectModel/17.3.2",
           "size": 0,
@@ -22931,10 +22973,10 @@
               "type": "nuget",
               "namespace": "",
               "name": "NuGet.Frameworks",
-              "version": "5.11.0",
+              "version": "5.11.3",
               "qualifiers": "",
               "subpath": "",
-              "purl": "pkg:nuget/NuGet.Frameworks@5.11.0",
+              "purl": "pkg:nuget/NuGet.Frameworks@5.11.3",
               "primary_language": "C#",
               "description": "NuGet's understanding of target frameworks.",
               "release_date": "",
@@ -22947,9 +22989,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
-              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.0",
+              "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.3",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -22960,13 +23004,13 @@
               "vcs_url": "",
               "copyright": "",
               "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/5.11.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/5.11.3/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/5.11.0?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.0",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/5.11.0.json",
+              "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/5.11.3?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/5.11.3",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nuget.frameworks/5.11.3.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -22994,7 +23038,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "vstest",
+            "visual-studio",
+            "unittest",
+            "testplatform",
+            "mstest",
+            "microsoft",
+            "test",
+            "testing"
+          ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/17.3.2",
           "size": 0,
@@ -23038,7 +23091,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "vstest",
+                "visual-studio",
+                "unittest",
+                "testplatform",
+                "mstest",
+                "microsoft",
+                "test",
+                "testing"
+              ],
               "homepage_url": "https://github.com/microsoft/vstest/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.ObjectModel/17.3.2",
               "size": 0,
@@ -23083,7 +23145,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -23130,7 +23194,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "vstest",
+            "visual-studio",
+            "unittest",
+            "testplatform",
+            "mstest",
+            "microsoft",
+            "test",
+            "testing",
+            "codecoverage",
+            "code-coverage"
+          ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeCoverage/17.3.2",
           "size": 0,
@@ -23175,7 +23250,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "vstest",
+            "visual-studio",
+            "unittest",
+            "testplatform",
+            "mstest",
+            "microsoft",
+            "test",
+            "testing"
+          ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2",
           "size": 0,
@@ -23219,7 +23303,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "vstest",
+                "visual-studio",
+                "unittest",
+                "testplatform",
+                "mstest",
+                "microsoft",
+                "test",
+                "testing"
+              ],
               "homepage_url": "https://github.com/microsoft/vstest/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/17.3.2",
               "size": 0,
@@ -23264,7 +23357,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "vstest",
+                "visual-studio",
+                "unittest",
+                "testplatform",
+                "mstest",
+                "microsoft",
+                "test",
+                "testing",
+                "codecoverage",
+                "code-coverage"
+              ],
               "homepage_url": "https://github.com/microsoft/vstest/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeCoverage/17.3.2",
               "size": 0,
@@ -23311,7 +23415,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "coverage",
+            "testing",
+            "unit-test",
+            "lcov",
+            "opencover",
+            "quality"
+          ],
           "homepage_url": "https://github.com/coverlet-coverage/coverlet",
           "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2",
           "size": 0,
@@ -23401,7 +23512,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/5.1.0",
           "size": 0,
@@ -23492,7 +23611,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "moq",
+            "tdd",
+            "mocking",
+            "mocks",
+            "unittesting",
+            "agile",
+            "unittest"
+          ],
           "homepage_url": "https://github.com/moq/moq4",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2",
           "size": 0,
@@ -23536,7 +23663,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
               "homepage_url": "http://www.castleproject.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/5.1.0",
               "size": 0,
@@ -24350,7 +24485,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest",
+            "TestFramework",
+            "TestAdapter",
+            "VisualStudio",
+            "Unittest",
+            "MSTestV2",
+            "Microsoft"
+          ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10",
           "size": 0,
@@ -24439,7 +24582,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -24486,7 +24631,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest",
+            "TestFramework",
+            "Unittest",
+            "MSTestV2",
+            "Microsoft",
+            "Test",
+            "Testing",
+            "TDD",
+            "Framework"
+          ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10",
           "size": 0,
@@ -24531,7 +24686,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "httpclient",
+            "test",
+            "mock",
+            "fake",
+            "stub"
+          ],
           "homepage_url": "https://github.com/richardszalay/mockhttp",
           "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0",
           "size": 0,
@@ -24578,7 +24739,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "git",
+            "commit",
+            "versioning",
+            "version",
+            "assemblyinfo"
+          ],
           "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
           "download_url": "https://www.nuget.org/api/v2/package/Nerdbank.GitVersioning/3.5.119",
           "size": 0,
@@ -24655,9 +24822,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -24670,7 +24837,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -24685,9 +24852,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -24713,7 +24880,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest2",
+            "xUnit",
+            "NUnit",
+            "MSpec",
+            "NSpec",
+            "TDD",
+            "BDD",
+            "Fluent",
+            "netcore",
+            "netstandard",
+            "uwp"
+          ],
           "homepage_url": "https://www.fluentassertions.com/",
           "download_url": "https://www.nuget.org/api/v2/package/FluentAssertions/6.8.0",
           "size": 0,
@@ -24804,7 +24983,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jmespath",
+            "json"
+          ],
           "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
           "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net/1.0.205",
           "size": 0,
@@ -24848,7 +25030,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jmespath",
+                "json"
+              ],
               "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
               "download_url": "https://www.nuget.org/api/v2/package/JmesPath.Net.Parser/1.0.205",
               "size": 0,
@@ -24938,7 +25123,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -25030,7 +25217,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "vstest",
+            "visual-studio",
+            "unittest",
+            "testplatform",
+            "mstest",
+            "microsoft",
+            "test",
+            "testing"
+          ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NET.Test.Sdk/17.3.2",
           "size": 0,
@@ -25074,7 +25270,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "vstest",
+                "visual-studio",
+                "unittest",
+                "testplatform",
+                "mstest",
+                "microsoft",
+                "test",
+                "testing"
+              ],
               "homepage_url": "https://github.com/microsoft/vstest/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.TestPlatform.TestHost/17.3.2",
               "size": 0,
@@ -25119,7 +25324,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "vstest",
+                "visual-studio",
+                "unittest",
+                "testplatform",
+                "mstest",
+                "microsoft",
+                "test",
+                "testing",
+                "codecoverage",
+                "code-coverage"
+              ],
               "homepage_url": "https://github.com/microsoft/vstest/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeCoverage/17.3.2",
               "size": 0,
@@ -25166,7 +25382,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "coverage",
+            "testing",
+            "unit-test",
+            "lcov",
+            "opencover",
+            "quality"
+          ],
           "homepage_url": "https://github.com/coverlet-coverage/coverlet",
           "download_url": "https://www.nuget.org/api/v2/package/coverlet.collector/3.1.2",
           "size": 0,
@@ -25211,7 +25434,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "moq",
+            "tdd",
+            "mocking",
+            "mocks",
+            "unittesting",
+            "agile",
+            "unittest"
+          ],
           "homepage_url": "https://github.com/moq/moq4",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.18.2",
           "size": 0,
@@ -25255,7 +25486,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
               "homepage_url": "http://www.castleproject.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/5.1.0",
               "size": 0,
@@ -25302,7 +25541,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest",
+            "TestFramework",
+            "TestAdapter",
+            "VisualStudio",
+            "Unittest",
+            "MSTestV2",
+            "Microsoft"
+          ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestAdapter/2.2.10",
           "size": 0,
@@ -25391,7 +25638,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -25438,7 +25687,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSTest",
+            "TestFramework",
+            "Unittest",
+            "MSTestV2",
+            "Microsoft",
+            "Test",
+            "Testing",
+            "TDD",
+            "Framework"
+          ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://www.nuget.org/api/v2/package/MSTest.TestFramework/2.2.10",
           "size": 0,
@@ -25483,7 +25742,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "httpclient",
+            "test",
+            "mock",
+            "fake",
+            "stub"
+          ],
           "homepage_url": "https://github.com/richardszalay/mockhttp",
           "download_url": "https://www.nuget.org/api/v2/package/RichardSzalay.MockHttp/6.0.0",
           "size": 0,

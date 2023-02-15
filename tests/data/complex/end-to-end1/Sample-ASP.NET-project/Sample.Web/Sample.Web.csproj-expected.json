@@ -114,7 +114,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "autofac",
+            "di",
+            "ioc",
+            "dependencyinjection"
+          ],
           "homepage_url": "http://autofac.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.8.1",
           "size": 0,
@@ -203,7 +208,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "autofac",
+                "di",
+                "ioc",
+                "dependencyinjection"
+              ],
               "homepage_url": "http://autofac.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.8.1",
               "size": 0,
@@ -248,7 +258,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "https://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.4",
               "size": 0,
@@ -295,7 +310,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "https://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.4",
           "size": 0,
@@ -339,7 +359,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.4",
               "size": 0,
@@ -384,7 +409,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4",
               "size": 0,
@@ -431,7 +462,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.4",
           "size": 0,
@@ -475,7 +511,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -520,7 +558,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4",
               "size": 0,
@@ -567,7 +611,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -612,7 +658,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.4",
           "size": 0,
@@ -657,7 +709,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EntityFramework",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
           "size": 0,
@@ -702,7 +762,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "Azure",
+            "ApplicationInsights",
+            "Telemetry",
+            "Monitoring",
+            "SDK"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
           "size": 0,
@@ -722,6 +789,97 @@
           "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
           "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
           "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Diagnostics.DiagnosticSource",
+          "version": "4.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+          "primary_language": "C#",
+          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://dot.net/",
+          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -747,7 +905,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Instrumentation",
+            "Extensions",
+            "Decorate",
+            "Callbacks",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0",
           "size": 0,
@@ -792,7 +959,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Azure",
+            "Monitoring",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.8.0",
           "size": 0,
@@ -815,7 +989,159 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.Agent.Intercept",
+              "version": "2.4.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.Agent.Intercept@2.4.0",
+              "primary_language": "C#",
+              "description": "This NuGet enables Interception of method calls. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Instrumentation",
+                "Extensions",
+                "Decorate",
+                "Callbacks",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.agent.intercept/2.4.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -837,7 +1163,23 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Azure",
+            "Monitoring",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "ASP.NET",
+            "ASMX",
+            "Web",
+            "Server",
+            "Services",
+            "ASPX",
+            "Websites",
+            "Performance",
+            "Counters",
+            "Collection"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0",
           "size": 0,
@@ -860,7 +1202,60 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -882,7 +1277,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Azure",
+            "Monitoring",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Web/2.8.0",
           "size": 0,
@@ -905,7 +1307,208 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Windows Server nuget package provides automatic collection of application insights telemetry for .NET applications. This package can be used as a dependent package for Application Insights platform specific packages or as a standalone package for .NET applications that are not covered by platform specific packages (like for .NET worker roles). Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Azure",
+                "Monitoring",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.AspNet.TelemetryCorrelation",
+              "version": "1.0.4",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.AspNet.TelemetryCorrelation@1.0.4",
+              "primary_language": "C#",
+              "description": "A module that instruments incoming request with System.Diagnostics.Activity and notifies listeners with DiagnosticsSource.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft,aspnet",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Diagnostics",
+                "DiagnosticSource",
+                "Correlation",
+                "Activity",
+                "ASP.NET"
+              ],
+              "homepage_url": "http://www.asp.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.TelemetryCorrelation/1.0.4?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.telemetrycorrelation/1.0.4.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -927,7 +1530,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Azure",
+            "Monitoring",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
           "size": 0,
@@ -950,7 +1560,225 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.DependencyCollector",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.DependencyCollector@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Dependency Collector for .NET applications. This is a dependent package for Application Insights platform specific packages and provides automatic collection of dependency telemetry. Please install the platform specific packages directly for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Azure",
+                "Monitoring",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.DependencyCollector/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.dependencycollector/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel@2.8.0",
+              "primary_language": "C#",
+              "description": "This nuget provides a telemetry channel to Application Insights Windows Server SDK that will preserve telemetry in offline scenarios. This is a dependent package, for the best experience please install the platform specific package. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver.telemetrychannel/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.PerfCounterCollector",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.PerfCounterCollector@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Performance Counters Collector allows you to send data collected by Performance Counters to Application Insights. Application Insights Performance Counters Collector is supported for .NET FX 4.0 and later. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Azure",
+                "Monitoring",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "ASP.NET",
+                "ASMX",
+                "Web",
+                "Server",
+                "Services",
+                "ASPX",
+                "Websites",
+                "Performance",
+                "Counters",
+                "Collection"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.perfcountercollector/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -972,7 +1800,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "Azure",
+            "ApplicationInsights",
+            "Telemetry",
+            "Monitoring",
+            "SDK"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0",
           "size": 0,
@@ -995,7 +1830,60 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1017,7 +1905,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Diagnostics",
+            "DiagnosticSource",
+            "Correlation",
+            "Activity",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
           "size": 0,
@@ -1040,7 +1934,53 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1062,9 +2002,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1079,9 +2025,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1106,7 +2052,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -1287,7 +2235,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -1334,7 +2284,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -1379,7 +2331,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0",
           "size": 0,
@@ -1424,7 +2383,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "https://github.com/aspnet/AspNetKatana/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/4.0.0",
           "size": 0,
@@ -1468,7 +2431,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1515,7 +2480,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OWIN"
+          ],
           "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
           "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
           "size": 0,
@@ -1560,7 +2527,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "https://github.com/aspnet/AspNetKatana/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/4.0.0",
           "size": 0,
@@ -1604,7 +2575,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1649,7 +2622,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "https://github.com/aspnet/AspNetKatana/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/4.0.0",
               "size": 0,
@@ -1675,51 +2652,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "System.Diagnostics.DiagnosticSource",
-          "version": "4.5.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
-          "primary_language": "C#",
-          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ],
       "dependencies": [
@@ -1787,7 +2719,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "autofac",
+                "di",
+                "ioc",
+                "dependencyinjection"
+              ],
               "homepage_url": "http://autofac.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Autofac/4.8.1",
               "size": 0,
@@ -1832,7 +2769,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "https://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.4",
               "size": 0,
@@ -1879,7 +2821,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EntityFramework",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=263480",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.2.0",
           "size": 0,
@@ -1907,186 +2857,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Microsoft.ApplicationInsights",
-          "version": "2.8.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
-          "primary_language": "C#",
-          "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.Agent.Intercept",
-          "version": "2.4.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.Agent.Intercept@2.4.0",
-          "primary_language": "C#",
-          "description": "This NuGet enables Interception of method calls. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/2.4.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.agent.intercept/2.4.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.DependencyCollector",
-          "version": "2.8.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.DependencyCollector@2.8.0",
-          "primary_language": "C#",
-          "description": "Application Insights Dependency Collector for .NET applications. This is a dependent package for Application Insights platform specific packages and provides automatic collection of dependency telemetry. Please install the platform specific packages directly for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.8.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.DependencyCollector/2.8.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.8.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.dependencycollector/2.8.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.PerfCounterCollector",
-          "version": "2.8.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.PerfCounterCollector@2.8.0",
-          "primary_language": "C#",
-          "description": "Application Insights Performance Counters Collector allows you to send data collected by Performance Counters to Application Insights. Application Insights Performance Counters Collector is supported for .NET FX 4.0 and later. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.8.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.perfcountercollector/2.8.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.ApplicationInsights.Web",
           "version": "2.8.0",
           "qualifiers": "",
@@ -2104,7 +2874,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Azure",
+            "Monitoring",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Web/2.8.0",
           "size": 0,
@@ -2127,142 +2904,208 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.WindowsServer",
-          "version": "2.8.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.8.0",
-          "primary_language": "C#",
-          "description": "Application Insights Windows Server nuget package provides automatic collection of application insights telemetry for .NET applications. This package can be used as a dependent package for Application Insights platform specific packages or as a standalone package for .NET applications that are not covered by platform specific packages (like for .NET worker roles). Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.8.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.8.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
-          "version": "2.8.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel@2.8.0",
-          "primary_language": "C#",
-          "description": "This nuget provides a telemetry channel to Application Insights Windows Server SDK that will preserve telemetry in offline scenarios. This is a dependent package, for the best experience please install the platform specific package. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
-          "release_date": "",
-          "parties": [
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Base API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "Azure",
+                "ApplicationInsights",
+                "Telemetry",
+                "Monitoring",
+                "SDK"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.8.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver.telemetrychannel/2.8.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.AspNet.TelemetryCorrelation",
-          "version": "1.0.4",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.AspNet.TelemetryCorrelation@1.0.4",
-          "primary_language": "C#",
-          "description": "A module that instruments incoming request with System.Diagnostics.Activity and notifies listeners with DiagnosticsSource.",
-          "release_date": "",
-          "parties": [
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer",
+              "version": "2.8.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.8.0",
+              "primary_language": "C#",
+              "description": "Application Insights Windows Server nuget package provides automatic collection of application insights telemetry for .NET applications. This package can be used as a dependent package for Application Insights platform specific packages or as a standalone package for .NET applications that are not covered by platform specific packages (like for .NET worker roles). Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Azure",
+                "Monitoring",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "https://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.8.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.8.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.8.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft,aspnet",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.AspNet.TelemetryCorrelation",
+              "version": "1.0.4",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.AspNet.TelemetryCorrelation@1.0.4",
+              "primary_language": "C#",
+              "description": "A module that instruments incoming request with System.Diagnostics.Activity and notifies listeners with DiagnosticsSource.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft,aspnet",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Diagnostics",
+                "DiagnosticSource",
+                "Correlation",
+                "Activity",
+                "ASP.NET"
+              ],
+              "homepage_url": "http://www.asp.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.TelemetryCorrelation/1.0.4?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.telemetrycorrelation/1.0.4.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "System.Diagnostics.DiagnosticSource",
+              "version": "4.5.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
+              "primary_language": "C#",
+              "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://dot.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "http://www.asp.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.TelemetryCorrelation/1.0.4?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.TelemetryCorrelation/1.0.4",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.telemetrycorrelation/1.0.4.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -2284,9 +3127,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -2301,9 +3150,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2328,7 +3177,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -2420,7 +3271,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.0",
           "size": 0,
@@ -2465,7 +3323,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "https://github.com/aspnet/AspNetKatana/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/4.0.0",
           "size": 0,
@@ -2509,7 +3371,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -2554,7 +3418,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "https://github.com/aspnet/AspNetKatana/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/4.0.0",
               "size": 0,
@@ -2580,51 +3448,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "System.Diagnostics.DiagnosticSource",
-          "version": "4.5.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@4.5.0",
-          "primary_language": "C#",
-          "description": "Provides Classes that allow you to decouple code logging rich (unserializable) diagnostics/telemetry (e.g. framework) from code that consumes it (e.g. tools)\n\nCommonly Used Types:\nSystem.Diagnostics.DiagnosticListener\nSystem.Diagnostics.DiagnosticSource\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/4.5.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/System.Diagnostics.DiagnosticSource/4.5.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.diagnostics.diagnosticsource/4.5.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ]
     }

@@ -203,7 +203,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xunit.analyzers",
+                "analyzers",
+                "roslyn",
+                "xunit",
+                "xunit.net"
+              ],
               "homepage_url": "https://github.com/xunit/xunit.analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
               "size": 0,
@@ -409,6 +415,97 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "xunit.abstractions",
+              "version": "2.0.3",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/xunit.abstractions@2.0.3",
+              "primary_language": "C#",
+              "description": "Common abstractions used to exchange information between xUnit.net and version-independent runners (xunit.abstractions.dll).",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "James Newkirk,Brad Wilson",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://github.com/xunit/xunit",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.3?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.abstractions/2.0.3.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "xunit.abstractions",
+          "version": "2.0.3",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/xunit.abstractions@2.0.3",
+          "primary_language": "C#",
+          "description": "Common abstractions used to exchange information between xUnit.net and version-independent runners (xunit.abstractions.dll).",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newkirk,Brad Wilson",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://github.com/xunit/xunit",
+          "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.abstractions/2.0.3.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
           "dependencies": []
         },
         {
@@ -454,7 +551,53 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "xunit.extensibility.core",
+              "version": "2.4.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/xunit.extensibility.core@2.4.1",
+              "primary_language": "C#",
+              "description": "Includes xunit.core.dll for extensibility purposes. Supports .NET 4.5.2 or later, and .NET Standard 1.1.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "James Newkirk,Brad Wilson",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "https://github.com/xunit/xunit",
+              "download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.core/2.4.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.extensibility.core/2.4.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.extensibility.core/2.4.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -521,7 +664,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xunit.analyzers",
+            "analyzers",
+            "roslyn",
+            "xunit",
+            "xunit.net"
+          ],
           "homepage_url": "https://github.com/xunit/xunit.analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
           "size": 0,
@@ -541,51 +690,6 @@
           "repository_homepage_url": "https://www.nuget.org/packages/xunit.analyzers/0.10.0?_src=template",
           "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
           "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.analyzers/0.10.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "xunit.abstractions",
-          "version": "2.0.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/xunit.abstractions@2.0.3",
-          "primary_language": "C#",
-          "description": "Common abstractions used to exchange information between xUnit.net and version-independent runners (xunit.abstractions.dll).",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newkirk,Brad Wilson",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://github.com/xunit/xunit",
-          "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.abstractions/2.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -747,7 +851,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xunit.analyzers",
+                "analyzers",
+                "roslyn",
+                "xunit",
+                "xunit.net"
+              ],
               "homepage_url": "https://github.com/xunit/xunit.analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
               "size": 0,
@@ -773,51 +883,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "xunit.abstractions",
-          "version": "2.0.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/xunit.abstractions@2.0.3",
-          "primary_language": "C#",
-          "description": "Common abstractions used to exchange information between xUnit.net and version-independent runners (xunit.abstractions.dll).",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newkirk,Brad Wilson",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://github.com/xunit/xunit",
-          "download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.3?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/xunit.abstractions/2.0.3",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/xunit.abstractions/2.0.3.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
         }
       ]
     }

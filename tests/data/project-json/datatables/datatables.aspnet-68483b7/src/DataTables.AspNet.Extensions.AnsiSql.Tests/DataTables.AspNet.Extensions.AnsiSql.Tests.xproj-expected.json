@@ -69,7 +69,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "castle",
+            "dynamicproxy",
+            "dynamic",
+            "proxy",
+            "dynamicproxy2",
+            "dictionaryadapter",
+            "emailsender"
+          ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/3.3.3",
           "size": 0,
@@ -160,7 +168,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -175,9 +183,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.extensions.testing.abstractions/1.0.0-preview2-003121.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -295,7 +303,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "DiaSymReader",
+            "ISymUnmanagedReader",
+            "PDB",
+            "COM",
+            "interop",
+            "debugging"
+          ],
           "homepage_url": "https://github.com/dotnet/symreader",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader/1.0.8",
           "size": 0,
@@ -476,7 +491,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "DiaSymReader",
+            "PDB"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader.Native/1.4.0-rc2",
           "size": 0,
@@ -523,7 +541,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -538,9 +556,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.InternalAbstractions/1.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.dotnet.internalabstractions/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -568,7 +586,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -583,9 +601,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.dotnet.projectmodel/1.0.0-rc3-003121.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -612,7 +630,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -627,9 +645,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Extensions.DependencyModel/1.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.extensions.dependencymodel/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -655,7 +673,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -700,7 +720,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://github.com/NuGet/NuGet.Client",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/3.5.0-beta2-1484",
               "size": 0,
@@ -839,7 +863,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -854,9 +878,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Extensions.DependencyModel/1.0.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.DependencyModel/1.0.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.extensions.dependencymodel/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -883,7 +907,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -898,9 +922,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.InternalAbstractions/1.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.InternalAbstractions/1.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.dotnet.internalabstractions/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -926,7 +950,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -975,7 +1001,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -990,9 +1016,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Extensions.Testing.Abstractions/1.0.0-preview2-003121",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.extensions.testing.abstractions/1.0.0-preview2-003121.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1017,7 +1043,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "DiaSymReader",
+                "ISymUnmanagedReader",
+                "PDB",
+                "COM",
+                "interop",
+                "debugging"
+              ],
               "homepage_url": "https://github.com/dotnet/symreader",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader/1.0.8",
               "size": 0,
@@ -1062,7 +1095,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "DiaSymReader",
+                "PDB"
+              ],
               "homepage_url": "http://msdn.com/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DiaSymReader.Native/1.4.0-rc2",
               "size": 0,
@@ -1109,7 +1145,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -1124,9 +1160,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.dotnet.projectmodel/1.0.0-rc3-003121.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -1152,7 +1188,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -1244,7 +1282,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "moq",
+            "tdd",
+            "mocking",
+            "mocks",
+            "unittesting",
+            "agile",
+            "unittest"
+          ],
           "homepage_url": "http://www.moqthis.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.6.38-alpha",
           "size": 0,
@@ -1288,7 +1334,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "castle",
+                "dynamicproxy",
+                "dynamic",
+                "proxy",
+                "dynamicproxy2",
+                "dictionaryadapter",
+                "emailsender"
+              ],
               "homepage_url": "http://www.castleproject.org/",
               "download_url": "https://www.nuget.org/api/v2/package/Castle.Core/3.3.3",
               "size": 0,
@@ -1335,7 +1389,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -1470,7 +1526,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/3.5.0-beta2-1484",
           "size": 0,
@@ -1831,7 +1891,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://github.com/NuGet/NuGet.Client",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484",
               "size": 0,
@@ -1922,7 +1986,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -2012,7 +2078,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://github.com/NuGet/NuGet.Client",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484",
               "size": 0,
@@ -2059,7 +2129,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/3.5.0-beta2-1484",
           "size": 0,
@@ -3101,7 +3175,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "DataTables",
+            "DataTables.Mvc",
+            "DataTables.AspNet",
+            "Mvc",
+            "AspNet",
+            "WebApi"
+          ],
           "homepage_url": "https://github.com/ALMMa/datatables.aspnet",
           "download_url": "https://www.nuget.org/api/v2/package/DataTables.AspNet.Core/2.0.2",
           "size": 0,
@@ -3148,7 +3229,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "DataTables",
+            "DataTables.Mvc",
+            "DataTables.AspNet",
+            "Mvc",
+            "AspNet",
+            "WebApi"
+          ],
           "homepage_url": "https://github.com/ALMMa/datatables.aspnet",
           "download_url": "https://www.nuget.org/api/v2/package/DataTables.AspNet.Core/2.0.2",
           "size": 0,
@@ -3193,7 +3281,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "moq",
+            "tdd",
+            "mocking",
+            "mocks",
+            "unittesting",
+            "agile",
+            "unittest"
+          ],
           "homepage_url": "http://www.moqthis.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Moq/4.6.38-alpha",
           "size": 0,

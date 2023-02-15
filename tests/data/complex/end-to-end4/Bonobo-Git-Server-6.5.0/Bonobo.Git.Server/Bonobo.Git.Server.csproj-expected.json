@@ -69,7 +69,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "linq"
+          ],
           "homepage_url": "http://linqcomparer.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/AnonymousComparer/1.3.0",
           "size": 0,
@@ -159,7 +161,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "CommonMark",
+            "Markdown"
+          ],
           "homepage_url": "https://github.com/Knagis/CommonMark.NET/",
           "download_url": "https://www.nuget.org/api/v2/package/CommonMark.NET/0.15.1",
           "size": 0,
@@ -294,7 +299,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
           "size": 0,
@@ -339,7 +351,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "libgit2",
+            "git",
+            "wrapper",
+            "bindings",
+            "API",
+            "dvcs",
+            "vcs"
+          ],
           "homepage_url": "https://github.com/libgit2/libgit2sharp/",
           "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp/0.23.1",
           "size": 0,
@@ -475,7 +495,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "C#",
+            "ASP.NET"
+          ],
           "homepage_url": "https://github.com/samuelneff/MimeTypeMap",
           "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap/2.1.0",
           "size": 0,
@@ -520,7 +543,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "http://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
           "size": 0,
@@ -564,7 +592,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
               "size": 0,
@@ -609,7 +642,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -656,7 +695,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
           "size": 0,
@@ -700,7 +744,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -745,7 +791,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -792,7 +844,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -837,7 +891,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
           "size": 0,
@@ -882,9 +942,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -899,9 +965,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -926,7 +992,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -1107,7 +1175,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
               "size": 0,
@@ -1154,7 +1224,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -1199,7 +1271,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5",
           "size": 0,
@@ -1219,6 +1298,133 @@
           "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5?_src=template",
           "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5",
           "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codedom.providers.dotnetcompilerplatform/1.0.5.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.Net.Compilers",
+              "version": "2.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
+              "primary_language": "C#",
+              "description": ".Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.\n\n    This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.6+ Full Framework.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
+              "homepage_url": "http://msdn.com/roslyn",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529444",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Compilers/2.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.net.compilers/2.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Microsoft.Net.Compilers",
+          "version": "2.2.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
+          "primary_language": "C#",
+          "description": ".Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.\n\n    This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.6+ Full Framework.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
+          "homepage_url": "http://msdn.com/roslyn",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529444",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Compilers/2.2.0?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.net.compilers/2.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1246,7 +1452,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1261,9 +1467,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.identitymodel.logging/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1289,7 +1495,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Claims",
+            "OpenIdConnect",
+            "WS-Federation"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocol.Extensions/1.0.4.403061554",
           "size": 0,
@@ -1333,7 +1544,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "JWT",
+                "JSON",
+                "Web",
+                "Token",
+                "WIF",
+                "Windows",
+                "Identity",
+                "Foundation",
+                "OAuth",
+                "OAuth2",
+                "Bearer",
+                "TokenHandler",
+                "Azure",
+                "Active",
+                "Directory",
+                "Claims",
+                "Authentication"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
               "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554",
               "size": 0,
@@ -1380,7 +1609,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JWT",
+            "JSON",
+            "Web",
+            "Token",
+            "WIF",
+            "Windows",
+            "Identity",
+            "Foundation",
+            "OAuth",
+            "OAuth2",
+            "Bearer",
+            "TokenHandler",
+            "Azure",
+            "Active",
+            "Directory",
+            "Claims",
+            "Authentication"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
           "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554",
           "size": 0,
@@ -1427,7 +1674,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1442,58 +1689,106 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/5.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.identitymodel.tokens/5.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.Net.Compilers",
-          "version": "2.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
-          "primary_language": "C#",
-          "description": ".Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.\n\n    This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.6+ Full Framework.",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "1.1.3",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@1.1.3",
+              "primary_language": "C#",
+              "description": "Includes Event Source based logging support.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/master/LICENSE.txt",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/1.1.3?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.identitymodel.logging/1.1.3.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "primary_language": "C#",
+              "description": "Json.NET is a popular high-performance JSON framework for .NET",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "James Newton-King",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "json"
+              ],
+              "homepage_url": "http://www.newtonsoft.com/json",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "http://msdn.com/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529444",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Compilers/2.2.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.net.compilers/2.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -1515,7 +1810,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
           "size": 0,
@@ -1559,7 +1858,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1606,7 +1907,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OWIN"
+          ],
           "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
           "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
           "size": 0,
@@ -1651,7 +1954,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1",
           "size": 0,
@@ -1695,7 +2002,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1740,7 +2049,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -1787,7 +2100,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
           "size": 0,
@@ -1831,7 +2148,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1876,7 +2195,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -1923,7 +2246,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1",
           "size": 0,
@@ -1967,7 +2294,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -2012,7 +2341,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -2057,7 +2390,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -2104,7 +2441,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.WsFederation/3.0.1",
           "size": 0,
@@ -2148,7 +2489,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -2193,7 +2536,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -2238,7 +2585,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -2283,7 +2634,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "JWT",
+                "JSON",
+                "Web",
+                "Token",
+                "WIF",
+                "Windows",
+                "Identity",
+                "Foundation",
+                "OAuth",
+                "OAuth2",
+                "Bearer",
+                "TokenHandler",
+                "Azure",
+                "Active",
+                "Directory",
+                "Claims",
+                "Authentication"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
               "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554",
               "size": 0,
@@ -2328,7 +2697,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Claims",
+                "OpenIdConnect",
+                "WS-Federation"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocol.Extensions/1.0.4.403061554",
               "size": 0,
@@ -2375,9 +2749,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MVC",
+            "CheckBoxList",
+            "HtmlHelper",
+            "Extension",
+            "Razor",
+            "View",
+            "Check",
+            "Box",
+            "List"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -2392,9 +2776,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/MvcCheckBoxList/1.4.5?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/mvccheckboxlist/1.4.5.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2420,7 +2804,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "logging",
+            "semantic",
+            "structured"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
           "size": 0,
@@ -2465,7 +2854,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "xml"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Settings.AppSettings/2.1.0",
           "size": 0,
@@ -2488,7 +2880,58 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Serilog",
+              "version": "2.4.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Serilog@2.4.0",
+              "primary_language": "C#",
+              "description": "Simple .NET logging with fully-structured events",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Serilog Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
+              "homepage_url": "http://serilog.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.4.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog/2.4.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -2510,7 +2953,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file",
+            "io"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
           "size": 0,
@@ -2533,7 +2980,58 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Serilog",
+              "version": "2.4.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Serilog@2.4.0",
+              "primary_language": "C#",
+              "description": "Simple .NET logging with fully-structured events",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Serilog Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
+              "homepage_url": "http://serilog.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.4.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog/2.4.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -2555,7 +3053,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file",
+            "io",
+            "rolling"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.3.0",
           "size": 0,
@@ -2578,7 +3081,57 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Serilog.Sinks.File",
+              "version": "3.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Serilog.Sinks.File@3.2.0",
+              "primary_language": "C#",
+              "description": "Write Serilog events to a text file in plain or JSON format.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Serilog Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "serilog",
+                "file",
+                "io"
+              ],
+              "homepage_url": "http://serilog.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Serilog.Sinks.File/3.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog.sinks.file/3.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -2600,7 +3153,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104",
           "size": 0,
@@ -2645,7 +3204,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104",
           "size": 0,
@@ -2690,7 +3255,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104",
           "size": 0,
@@ -2735,7 +3306,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104",
           "size": 0,
@@ -2825,7 +3402,35 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Unity",
+            "Unity3",
+            "Unity35",
+            "EntLib",
+            "EntLib6",
+            "IoC",
+            "DI",
+            "container",
+            "dependency",
+            "injection",
+            "inversion",
+            "control",
+            "LOB",
+            "WinRT",
+            "Win8",
+            "Windows8",
+            "NetCore",
+            "WindowsStoreApps",
+            "WindowsStore",
+            "WindowsPhone",
+            "WindowsPhone8",
+            "wp8",
+            "Azure",
+            "Xamarin",
+            "MonoTouch",
+            "MonoAndroid",
+            "OSS"
+          ],
           "homepage_url": "https://github.com/unitycontainer",
           "download_url": "https://www.nuget.org/api/v2/package/Unity/4.0.1",
           "size": 0,
@@ -2916,7 +3521,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Unity",
+            "Unity3",
+            "Unity35",
+            "EntLib",
+            "EntLib6",
+            "IoC",
+            "DI",
+            "container",
+            "dependency",
+            "injection",
+            "inversion",
+            "control",
+            "aspnet",
+            "mvc",
+            "aspnetmvc",
+            "LOB",
+            "OSS"
+          ],
           "homepage_url": "https://github.com/unitycontainer",
           "download_url": "https://www.nuget.org/api/v2/package/Unity.Mvc/4.0.1",
           "size": 0,
@@ -2960,7 +3583,35 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Unity",
+                "Unity3",
+                "Unity35",
+                "EntLib",
+                "EntLib6",
+                "IoC",
+                "DI",
+                "container",
+                "dependency",
+                "injection",
+                "inversion",
+                "control",
+                "LOB",
+                "WinRT",
+                "Win8",
+                "Windows8",
+                "NetCore",
+                "WindowsStoreApps",
+                "WindowsStore",
+                "WindowsPhone",
+                "WindowsPhone8",
+                "wp8",
+                "Azure",
+                "Xamarin",
+                "MonoTouch",
+                "MonoAndroid",
+                "OSS"
+              ],
               "homepage_url": "https://github.com/unitycontainer",
               "download_url": "https://www.nuget.org/api/v2/package/Unity/4.0.1",
               "size": 0,
@@ -3095,7 +3746,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
               "size": 0,
@@ -3186,7 +3842,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -3235,7 +3893,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "linq"
+          ],
           "homepage_url": "http://linqcomparer.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/AnonymousComparer/1.3.0",
           "size": 0,
@@ -3280,7 +3940,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "CommonMark",
+            "Markdown"
+          ],
           "homepage_url": "https://github.com/Knagis/CommonMark.NET/",
           "download_url": "https://www.nuget.org/api/v2/package/CommonMark.NET/0.15.1",
           "size": 0,
@@ -3370,7 +4033,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
           "size": 0,
@@ -3415,7 +4085,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "libgit2",
+            "git",
+            "wrapper",
+            "bindings",
+            "API",
+            "dvcs",
+            "vcs"
+          ],
           "homepage_url": "https://github.com/libgit2/libgit2sharp/",
           "download_url": "https://www.nuget.org/api/v2/package/LibGit2Sharp/0.23.1",
           "size": 0,
@@ -3506,7 +4184,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "C#",
+            "ASP.NET"
+          ],
           "homepage_url": "https://github.com/samuelneff/MimeTypeMap",
           "download_url": "https://www.nuget.org/api/v2/package/MediaTypeMap/2.1.0",
           "size": 0,
@@ -3551,9 +4232,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -3568,9 +4255,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -3595,7 +4282,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -3687,7 +4376,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.5",
           "size": 0,
@@ -3710,52 +4406,71 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.IdentityModel.Logging",
-          "version": "1.1.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@1.1.3",
-          "primary_language": "C#",
-          "description": "Includes Event Source based logging support.",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.Net.Compilers",
+              "version": "2.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
+              "primary_language": "C#",
+              "description": ".Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.\n\n    This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.6+ Full Framework.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
+              "homepage_url": "http://msdn.com/roslyn",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529444",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Compilers/2.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.net.compilers/2.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/master/LICENSE.txt",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -3779,7 +4494,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -3794,58 +4509,106 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/5.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Tokens/5.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.identitymodel.tokens/5.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.Net.Compilers",
-          "version": "2.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Net.Compilers@2.2.0",
-          "primary_language": "C#",
-          "description": ".Net Compilers package. Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.\n\n    This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.6+ Full Framework.",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.IdentityModel.Logging",
+              "version": "1.1.3",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@1.1.3",
+              "primary_language": "C#",
+              "description": "Includes Event Source based logging support.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [],
+              "homepage_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/master/LICENSE.txt",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/1.1.3?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Logging/1.1.3",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.identitymodel.logging/1.1.3.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Newtonsoft.Json",
+              "version": "9.0.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
+              "primary_language": "C#",
+              "description": "Json.NET is a popular high-performance JSON framework for .NET",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "James Newton-King",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "json"
+              ],
+              "homepage_url": "http://www.newtonsoft.com/json",
+              "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/newtonsoft.json/9.0.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "http://msdn.com/roslyn",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=529444",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Compilers/2.2.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.net.compilers/2.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -3867,7 +4630,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1",
           "size": 0,
@@ -3911,7 +4678,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -3956,7 +4725,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -4003,7 +4776,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1",
           "size": 0,
@@ -4047,7 +4824,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -4092,7 +4871,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -4137,7 +4920,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -4184,7 +4971,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.WsFederation/3.0.1",
           "size": 0,
@@ -4228,7 +5019,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -4273,7 +5066,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -4318,7 +5115,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -4363,7 +5164,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "JWT",
+                "JSON",
+                "Web",
+                "Token",
+                "WIF",
+                "Windows",
+                "Identity",
+                "Foundation",
+                "OAuth",
+                "OAuth2",
+                "Bearer",
+                "TokenHandler",
+                "Azure",
+                "Active",
+                "Directory",
+                "Claims",
+                "Authentication"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
               "download_url": "https://www.nuget.org/api/v2/package/System.IdentityModel.Tokens.Jwt/4.0.4.403061554",
               "size": 0,
@@ -4408,7 +5227,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Claims",
+                "OpenIdConnect",
+                "WS-Federation"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.IdentityModel.Protocol.Extensions/1.0.4.403061554",
               "size": 0,
@@ -4455,9 +5279,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MVC",
+            "CheckBoxList",
+            "HtmlHelper",
+            "Extension",
+            "Razor",
+            "View",
+            "Check",
+            "Box",
+            "List"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -4472,54 +5306,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Serilog",
-          "version": "2.4.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Serilog@2.4.0",
-          "primary_language": "C#",
-          "description": "Simple .NET logging with fully-structured events",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Serilog Contributors",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://serilog.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.4.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog/2.4.0.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/MvcCheckBoxList/1.4.5?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/MvcCheckBoxList/1.4.5",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/mvccheckboxlist/1.4.5.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -4545,7 +5334,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "xml"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Settings.AppSettings/2.1.0",
           "size": 0,
@@ -4568,52 +5360,58 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Serilog.Sinks.File",
-          "version": "3.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Serilog.Sinks.File@3.2.0",
-          "primary_language": "C#",
-          "description": "Write Serilog events to a text file in plain or JSON format.",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Serilog Contributors",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Serilog",
+              "version": "2.4.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Serilog@2.4.0",
+              "primary_language": "C#",
+              "description": "Simple .NET logging with fully-structured events",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Serilog Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "serilog",
+                "logging",
+                "semantic",
+                "structured"
+              ],
+              "homepage_url": "http://serilog.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.4.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog/2.4.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog/2.4.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "http://serilog.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Serilog.Sinks.File/3.2.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog.sinks.file/3.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -4635,7 +5433,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "serilog",
+            "file",
+            "io",
+            "rolling"
+          ],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.RollingFile/3.3.0",
           "size": 0,
@@ -4658,7 +5461,57 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Serilog.Sinks.File",
+              "version": "3.2.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Serilog.Sinks.File@3.2.0",
+              "primary_language": "C#",
+              "description": "Write Serilog events to a text file in plain or JSON format.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Serilog Contributors",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "serilog",
+                "file",
+                "io"
+              ],
+              "homepage_url": "http://serilog.net/",
+              "download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://www.apache.org/licenses/LICENSE-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Serilog.Sinks.File/3.2.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Serilog.Sinks.File/3.2.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/serilog.sinks.file/3.2.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -4680,7 +5533,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104",
           "size": 0,
@@ -4725,7 +5584,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104",
           "size": 0,
@@ -4770,7 +5635,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104",
           "size": 0,
@@ -4815,7 +5686,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104",
           "size": 0,
@@ -4905,7 +5782,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Unity",
+            "Unity3",
+            "Unity35",
+            "EntLib",
+            "EntLib6",
+            "IoC",
+            "DI",
+            "container",
+            "dependency",
+            "injection",
+            "inversion",
+            "control",
+            "aspnet",
+            "mvc",
+            "aspnetmvc",
+            "LOB",
+            "OSS"
+          ],
           "homepage_url": "https://github.com/unitycontainer",
           "download_url": "https://www.nuget.org/api/v2/package/Unity.Mvc/4.0.1",
           "size": 0,
@@ -4949,7 +5844,35 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Unity",
+                "Unity3",
+                "Unity35",
+                "EntLib",
+                "EntLib6",
+                "IoC",
+                "DI",
+                "container",
+                "dependency",
+                "injection",
+                "inversion",
+                "control",
+                "LOB",
+                "WinRT",
+                "Win8",
+                "Windows8",
+                "NetCore",
+                "WindowsStoreApps",
+                "WindowsStore",
+                "WindowsPhone",
+                "WindowsPhone8",
+                "wp8",
+                "Azure",
+                "Xamarin",
+                "MonoTouch",
+                "MonoAndroid",
+                "OSS"
+              ],
               "homepage_url": "https://github.com/unitycontainer",
               "download_url": "https://www.nuget.org/api/v2/package/Unity/4.0.1",
               "size": 0,
@@ -5084,7 +6007,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
               "size": 0,

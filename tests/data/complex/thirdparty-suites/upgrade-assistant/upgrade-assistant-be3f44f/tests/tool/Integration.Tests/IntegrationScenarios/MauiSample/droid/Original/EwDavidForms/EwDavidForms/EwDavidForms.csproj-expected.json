@@ -192,9 +192,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -207,7 +207,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -222,9 +222,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -250,7 +250,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "app",
+            "center",
+            "appcenter",
+            "mobilecenter"
+          ],
           "homepage_url": "https://aka.ms/telgml",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0",
           "size": 0,
@@ -295,7 +300,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "app",
+            "center",
+            "appcenter",
+            "analytics",
+            "mobilecenter"
+          ],
           "homepage_url": "https://aka.ms/telgml",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0",
           "size": 0,
@@ -339,7 +350,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "app",
+                "center",
+                "appcenter",
+                "mobilecenter"
+              ],
               "homepage_url": "https://aka.ms/telgml",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0",
               "size": 0,
@@ -386,7 +402,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "app",
+            "center",
+            "appcenter",
+            "crashes",
+            "mobilecenter"
+          ],
           "homepage_url": "https://aka.ms/telgml",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0",
           "size": 0,
@@ -430,7 +452,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "app",
+                "center",
+                "appcenter",
+                "mobilecenter"
+              ],
               "homepage_url": "https://aka.ms/telgml",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0",
               "size": 0,
@@ -477,7 +504,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
           "size": 0,
@@ -794,7 +823,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xamarin",
+            "forms",
+            "xamarinforms",
+            "xamarin.forms"
+          ],
           "homepage_url": "http://xamarin.com/forms",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2291",
           "size": 0,
@@ -973,7 +1007,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xamarin",
+                "forms",
+                "xamarinforms",
+                "xamarin.forms"
+              ],
               "homepage_url": "http://xamarin.com/forms",
               "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2291",
               "size": 0,
@@ -1020,7 +1059,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xamarin",
+            "forms",
+            "xamarinforms",
+            "xamarin.forms"
+          ],
           "homepage_url": "http://xamarin.com/forms",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2401",
           "size": 0,
@@ -1110,7 +1154,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xamarin",
+            "windows",
+            "uwp",
+            "ios",
+            "android",
+            "watchos",
+            "tvos",
+            "tizen",
+            "toolkit",
+            "xamarin.forms",
+            "Xamarin.Essentials",
+            "kit"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?linkid=868960",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3",
           "size": 0,
@@ -1281,9 +1338,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -1296,7 +1353,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1311,9 +1368,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1339,7 +1396,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "app",
+            "center",
+            "appcenter",
+            "analytics",
+            "mobilecenter"
+          ],
           "homepage_url": "https://aka.ms/telgml",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Analytics/4.3.0",
           "size": 0,
@@ -1383,7 +1446,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "app",
+                "center",
+                "appcenter",
+                "mobilecenter"
+              ],
               "homepage_url": "https://aka.ms/telgml",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0",
               "size": 0,
@@ -1430,7 +1498,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "app",
+            "center",
+            "appcenter",
+            "crashes",
+            "mobilecenter"
+          ],
           "homepage_url": "https://aka.ms/telgml",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter.Crashes/4.3.0",
           "size": 0,
@@ -1474,7 +1548,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "app",
+                "center",
+                "appcenter",
+                "mobilecenter"
+              ],
               "homepage_url": "https://aka.ms/telgml",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AppCenter/4.3.0",
               "size": 0,
@@ -1521,7 +1600,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
           "size": 0,
@@ -1700,7 +1781,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xamarin",
+                "forms",
+                "xamarinforms",
+                "xamarin.forms"
+              ],
               "homepage_url": "http://xamarin.com/forms",
               "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2291",
               "size": 0,
@@ -1747,7 +1833,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xamarin",
+            "forms",
+            "xamarinforms",
+            "xamarin.forms"
+          ],
           "homepage_url": "http://xamarin.com/forms",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Forms/5.0.0.2401",
           "size": 0,
@@ -1792,7 +1883,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xamarin",
+            "windows",
+            "uwp",
+            "ios",
+            "android",
+            "watchos",
+            "tvos",
+            "tizen",
+            "toolkit",
+            "xamarin.forms",
+            "Xamarin.Essentials",
+            "kit"
+          ],
           "homepage_url": "https://go.microsoft.com/fwlink/?linkid=868960",
           "download_url": "https://www.nuget.org/api/v2/package/Xamarin.Essentials/1.7.3",
           "size": 0,

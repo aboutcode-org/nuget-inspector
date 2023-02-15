@@ -21,7 +21,7 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGetDefense@3.0.9",
+      "purl": "pkg:nuget/NuGetDefense@3.0.10",
       "primary_language": "C#",
       "description": "NuGetDefense was inspired by OWASP SafeNuGet but checks with multiple sources for known vulnerabilities.",
       "release_date": "",
@@ -34,9 +34,11 @@
           "url": ""
         }
       ],
-      "keywords": [],
+      "keywords": [
+        "Security"
+      ],
       "homepage_url": "https://digitalcoyote.github.io/NuGetDefense/",
-      "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/3.0.9",
+      "download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/3.0.10",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -47,13 +49,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/3.0.9/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/3.0.10/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/3.0.9?_src=template",
-      "repository_download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/3.0.9",
-      "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nugetdefense/3.0.9.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/3.0.10?_src=template",
+      "repository_download_url": "https://www.nuget.org/api/v2/package/NuGetDefense/3.0.10",
+      "api_data_url": "https://api.nuget.org/v3/registration5-semver1/nugetdefense/3.0.10.json",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
       "packages": [
@@ -109,9 +111,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -124,7 +126,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -139,9 +141,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -167,7 +169,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1",
           "size": 0,
@@ -212,7 +219,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control",
+            "git"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1",
           "size": 0,
@@ -257,7 +270,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1",
           "size": 0,
@@ -301,7 +320,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1",
               "size": 0,
@@ -346,7 +370,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1",
               "size": 0,
@@ -461,53 +491,7 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "System.CommandLine",
-              "version": "2.0.0-beta4.22272.1",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
-              "primary_language": "C#",
-              "description": "This package includes a powerful command line parser and other tools for building command line applications, including:\n    \n    * Shell-agnostic support for command line completions\n    * Method invocation and an extensible middleware pipeline\n    * Constructor- and property-based model binding for complex types\n    * Test and debug support",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "https://github.com/dotnet/command-line-api",
-              "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.commandline/2.0.0-beta4.22272.1.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
+          "dependencies": []
         }
       ],
       "dependencies": [
@@ -563,9 +547,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -578,7 +562,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -593,9 +577,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -621,7 +605,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.1.1",
           "size": 0,
@@ -665,7 +655,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.1.1",
               "size": 0,
@@ -710,7 +705,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.1.1",
               "size": 0,
@@ -736,6 +737,51 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.CommandLine",
+          "version": "2.0.0-beta4.22272.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+          "primary_language": "C#",
+          "description": "This package includes a powerful command line parser and other tools for building command line applications, including:\n    \n    * Shell-agnostic support for command line completions\n    * Method invocation and an extensible middleware pipeline\n    * Constructor- and property-based model binding for complex types\n    * Test and debug support",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://github.com/dotnet/command-line-api",
+          "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.commandline/2.0.0-beta4.22272.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -780,53 +826,7 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "System.CommandLine",
-              "version": "2.0.0-beta4.22272.1",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
-              "primary_language": "C#",
-              "description": "This package includes a powerful command line parser and other tools for building command line applications, including:\n    \n    * Shell-agnostic support for command line completions\n    * Method invocation and an extensible middleware pipeline\n    * Constructor- and property-based model binding for complex types\n    * Test and debug support",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "https://github.com/dotnet/command-line-api",
-              "download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1?_src=template",
-              "repository_download_url": "https://www.nuget.org/api/v2/package/System.CommandLine/2.0.0-beta4.22272.1",
-              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/system.commandline/2.0.0-beta4.22272.1.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
+          "dependencies": []
         }
       ]
     }

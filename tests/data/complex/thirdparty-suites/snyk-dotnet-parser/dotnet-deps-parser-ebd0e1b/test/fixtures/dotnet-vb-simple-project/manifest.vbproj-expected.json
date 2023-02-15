@@ -52,6 +52,60 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "Google.Protobuf",
+          "version": "3.5.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Google.Protobuf@3.5.1",
+          "primary_language": "C#",
+          "description": "C# runtime library for Protocol Buffers - Google's data interchange format.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Google Inc.",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "Protocol",
+            "Buffers",
+            "Binary",
+            "Serialization",
+            "Format",
+            "Google",
+            "proto",
+            "proto3"
+          ],
+          "homepage_url": "https://github.com/google/protobuf",
+          "download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/google/protobuf/blob/master/LICENSE",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Google.Protobuf/3.5.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/google.protobuf/3.5.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "packages": [],
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "MySql.Data",
           "version": "8.0.12",
           "qualifiers": "",
@@ -69,7 +123,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MySql",
+            ".NET",
+            "Connector",
+            "Connector/NET",
+            "netcore",
+            ".Net",
+            "Core",
+            "Conector/Net",
+            "coreclr",
+            "C/NET",
+            "C/Net"
+          ],
           "homepage_url": "https://dev.mysql.com/downloads/",
           "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12",
           "size": 0,
@@ -92,7 +158,62 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Google.Protobuf",
+              "version": "3.5.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Google.Protobuf@3.5.1",
+              "primary_language": "C#",
+              "description": "C# runtime library for Protocol Buffers - Google's data interchange format.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Google Inc.",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Protocol",
+                "Buffers",
+                "Binary",
+                "Serialization",
+                "Format",
+                "Google",
+                "proto",
+                "proto3"
+              ],
+              "homepage_url": "https://github.com/google/protobuf",
+              "download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/google/protobuf/blob/master/LICENSE",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Google.Protobuf/3.5.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/google.protobuf/3.5.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -114,7 +235,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,
@@ -161,7 +284,19 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MySql",
+            ".NET",
+            "Connector",
+            "Connector/NET",
+            "netcore",
+            ".Net",
+            "Core",
+            "Conector/Net",
+            "coreclr",
+            "C/NET",
+            "C/Net"
+          ],
           "homepage_url": "https://dev.mysql.com/downloads/",
           "download_url": "https://www.nuget.org/api/v2/package/MySql.Data/8.0.12",
           "size": 0,
@@ -184,7 +319,62 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Google.Protobuf",
+              "version": "3.5.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Google.Protobuf@3.5.1",
+              "primary_language": "C#",
+              "description": "C# runtime library for Protocol Buffers - Google's data interchange format.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Google Inc.",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Protocol",
+                "Buffers",
+                "Binary",
+                "Serialization",
+                "Format",
+                "Google",
+                "proto",
+                "proto3"
+              ],
+              "homepage_url": "https://github.com/google/protobuf",
+              "download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://github.com/google/protobuf/blob/master/LICENSE",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Google.Protobuf/3.5.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Google.Protobuf/3.5.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/google.protobuf/3.5.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -206,7 +396,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/11.0.2",
           "size": 0,

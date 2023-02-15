@@ -69,7 +69,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
           "size": 0,
@@ -114,7 +121,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "http://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
           "size": 0,
@@ -158,7 +170,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
               "size": 0,
@@ -203,7 +220,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -250,7 +273,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
           "size": 0,
@@ -294,7 +322,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -339,7 +369,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -386,7 +422,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -431,7 +469,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
           "size": 0,
@@ -476,7 +520,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "aspnetmvc",
+            "futures",
+            "aspnet"
+          ],
           "homepage_url": "http://aspnet.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc.Futures/5.0.0",
           "size": 0,
@@ -521,7 +569,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
           "size": 0,
@@ -566,7 +632,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -611,7 +679,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Selenium",
+            "WebDriver",
+            "browser",
+            "automation",
+            "support"
+          ],
           "homepage_url": "https://github.com/SeleniumHQ/selenium",
           "download_url": "https://www.nuget.org/api/v2/package/Selenium.Support/3.3.0",
           "size": 0,
@@ -655,7 +729,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "browser",
+                "automation"
+              ],
               "homepage_url": "https://github.com/SeleniumHQ/selenium",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver/3.3.0",
               "size": 0,
@@ -702,7 +781,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Selenium",
+            "WebDriver",
+            "browser",
+            "automation"
+          ],
           "homepage_url": "https://github.com/SeleniumHQ/selenium",
           "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver/3.3.0",
           "size": 0,
@@ -747,7 +831,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Selenium",
+            "WebDriver",
+            "chromedriver"
+          ],
           "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-chromedriver/",
           "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.ChromeDriver/2.29.0",
           "size": 0,
@@ -792,7 +880,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Selenium",
+            "WebDriver",
+            "IEDriverServer",
+            "iedriver"
+          ],
           "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-iedriver/",
           "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.IEDriver/3.3.0",
           "size": 0,
@@ -837,7 +930,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "testing",
+            "tdd",
+            "bdd",
+            "specs",
+            "acceptance-tests",
+            "ui-testing"
+          ],
           "homepage_url": "http://specsfor.com/",
           "download_url": "https://www.nuget.org/api/v2/package/SpecsFor.Mvc/4.8.0",
           "size": 0,
@@ -881,7 +981,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
               "size": 0,
@@ -926,7 +1031,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "aspnetmvc",
+                "futures",
+                "aspnet"
+              ],
               "homepage_url": "http://aspnet.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc.Futures/5.0.0",
               "size": 0,
@@ -971,7 +1080,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "browser",
+                "automation",
+                "support"
+              ],
               "homepage_url": "https://github.com/SeleniumHQ/selenium",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.Support/3.3.0",
               "size": 0,
@@ -1016,7 +1131,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "chromedriver"
+              ],
               "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-chromedriver/",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.ChromeDriver/2.29.0",
               "size": 0,
@@ -1061,7 +1180,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "IEDriverServer",
+                "iedriver"
+              ],
               "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-iedriver/",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.IEDriver/3.3.0",
               "size": 0,
@@ -1108,7 +1232,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104",
           "size": 0,
@@ -1153,7 +1283,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104",
           "size": 0,
@@ -1198,7 +1334,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104",
           "size": 0,
@@ -1243,7 +1385,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104",
           "size": 0,
@@ -1290,7 +1438,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
           "size": 0,
@@ -1335,7 +1490,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/2.2.0",
           "size": 0,
@@ -1380,7 +1553,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/9.0.1",
           "size": 0,
@@ -1425,7 +1600,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "testing",
+            "tdd",
+            "bdd",
+            "specs",
+            "acceptance-tests",
+            "ui-testing"
+          ],
           "homepage_url": "http://specsfor.com/",
           "download_url": "https://www.nuget.org/api/v2/package/SpecsFor.Mvc/4.8.0",
           "size": 0,
@@ -1469,7 +1651,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "Mvc",
+                "AspNetMvc"
+              ],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
               "size": 0,
@@ -1514,7 +1701,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "aspnetmvc",
+                "futures",
+                "aspnet"
+              ],
               "homepage_url": "http://aspnet.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc.Futures/5.0.0",
               "size": 0,
@@ -1559,7 +1750,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "browser",
+                "automation",
+                "support"
+              ],
               "homepage_url": "https://github.com/SeleniumHQ/selenium",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.Support/3.3.0",
               "size": 0,
@@ -1604,7 +1801,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "chromedriver"
+              ],
               "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-chromedriver/",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.ChromeDriver/2.29.0",
               "size": 0,
@@ -1649,7 +1850,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Selenium",
+                "WebDriver",
+                "IEDriverServer",
+                "iedriver"
+              ],
               "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-iedriver/",
               "download_url": "https://www.nuget.org/api/v2/package/Selenium.WebDriver.IEDriver/3.3.0",
               "size": 0,
@@ -1696,7 +1902,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite/1.0.104",
           "size": 0,
@@ -1741,7 +1953,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Core/1.0.104",
           "size": 0,
@@ -1786,7 +2004,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.EF6/1.0.104",
           "size": 0,
@@ -1831,7 +2055,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "sqlite",
+            "database",
+            "ado.net",
+            "provider",
+            "interop"
+          ],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://www.nuget.org/api/v2/package/System.Data.SQLite.Linq/1.0.104",
           "size": 0,

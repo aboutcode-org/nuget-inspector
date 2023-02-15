@@ -7,7 +7,7 @@ namespace NugetInspector;
 
 /// <summary>
 /// See https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files
-/// This handler reads a *.*proj file using MSBuild readers and calls the NuGet API for resolution. 
+/// This handler reads a *.*proj file using MSBuild readers and calls the NuGet API for resolution.
 /// </summary>
 internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
 {
@@ -36,13 +36,11 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             var deps = new List<Dependency>();
             foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "PackageReference"))
             {
-                var versionMetaData = reference.Metadata
-                    .Where(predicate: meta => meta.Name == "Version")
-                    .FirstOrDefault();
+                var versionMetaData = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
                 VersionRange? version_range;
                 if (versionMetaData is not null)
                 {
-                    VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version_range);
+                    _ = VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version_range);
                 }
                 else
                 {
@@ -59,36 +57,39 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
             }
 
             foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "Reference"))
+            {
                 if (reference.Xml != null && !string.IsNullOrWhiteSpace(value: reference.Xml.Include) &&
-                    reference.Xml.Include.Contains(value: "Version="))
+                    reference.Xml.Include.Contains("Version="))
                 {
                     var packageInfo = reference.Xml.Include;
 
-                    var comma = packageInfo.IndexOf(value: ",", comparisonType: StringComparison.Ordinal);
-                    var artifact = packageInfo.Substring(startIndex: 0, length: comma);
+                    var comma_pos = packageInfo.IndexOf(",", comparisonType: StringComparison.Ordinal);
+                    var artifact = packageInfo[..comma_pos];
 
-                    var versionKey = "Version=";
-                    var versionKeyIndex =
-                        packageInfo.IndexOf(value: versionKey, comparisonType: StringComparison.Ordinal);
+                    const string versionKey = "Version=";
+                    var versionKeyIndex = packageInfo.IndexOf(value: versionKey, comparisonType: StringComparison.Ordinal);
                     var versionStartIndex = versionKeyIndex + versionKey.Length;
-                    var packageInfoAfterVersionKey = packageInfo.Substring(startIndex: versionStartIndex);
+                    var packageInfoAfterVersionKey = packageInfo[versionStartIndex..];
 
                     string version;
-                    if (packageInfoAfterVersionKey.Contains(value: ","))
+                    if (packageInfoAfterVersionKey.Contains(','))
                     {
                         var firstSep =
-                            packageInfoAfterVersionKey.IndexOf(value: ",", comparisonType: StringComparison.Ordinal);
-                        version = packageInfoAfterVersionKey.Substring(startIndex: 0, length: firstSep);
+                            packageInfoAfterVersionKey.IndexOf(",", comparisonType: StringComparison.Ordinal);
+                        version = packageInfoAfterVersionKey[..firstSep];
                     }
                     else
                     {
                         version = packageInfoAfterVersionKey;
                     }
 
-                    var dep = new Dependency(name: artifact, version_range: VersionRange.Parse(value: version),
+                    var dep = new Dependency(
+                        name: artifact,
+                        version_range: VersionRange.Parse(value: version),
                         framework: ProjectTargetFramework);
                     deps.Add(item: dep);
                 }
+            }
 
             ProjectCollection.GlobalProjectCollection.UnloadProject(project: proj);
 

@@ -101,9 +101,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -116,7 +116,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -131,9 +131,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -159,7 +159,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "benchmark",
+            "benchmarking",
+            "performance"
+          ],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Annotations/0.12.1",
           "size": 0,
@@ -204,7 +208,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "command",
+            "line",
+            "commandline",
+            "argument",
+            "option",
+            "parser",
+            "parsing",
+            "library",
+            "syntax",
+            "shell"
+          ],
           "homepage_url": "https://github.com/gsscoder/commandline",
           "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.4.3",
           "size": 0,
@@ -249,7 +264,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "x86",
+            "x64",
+            "encoder",
+            "decoder",
+            "formatter",
+            "disassembler"
+          ],
           "homepage_url": "https://github.com/0xd4d/iced",
           "download_url": "https://www.nuget.org/api/v2/package/Iced/1.4.0",
           "size": 0,
@@ -294,9 +316,20 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Diagnostic",
+            "Analyzers",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -311,9 +344,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.Analyzers/2.6.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.analyzers/2.6.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2685,7 +2718,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/2.10.0",
           "size": 0,
@@ -2729,9 +2780,20 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Diagnostic",
+                "Analyzers",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -2746,9 +2808,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeAnalysis.Analyzers/2.6.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Analyzers/2.6.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.codeanalysis.analyzers/2.6.1.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -4531,7 +4593,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "https://github.com/dotnet/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.10.0",
           "size": 0,
@@ -4575,7 +4655,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.Common/2.10.0",
               "size": 0,
@@ -4622,7 +4720,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Diagnostic"
+          ],
           "homepage_url": "https://github.com/dotnet/diagnostics",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.NETCore.Client/0.2.61701",
           "size": 0,
@@ -4712,7 +4812,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "TraceEvent",
+            "EventSource",
+            "Microsoft",
+            "ETW",
+            "Event",
+            "Tracing",
+            "for",
+            "Windows"
+          ],
           "homepage_url": "https://github.com/Microsoft/perfview",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49",
           "size": 0,
@@ -5481,7 +5590,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "analysis",
+            "performance",
+            "tool"
+          ],
           "homepage_url": "https://github.com/AndreyAkinshin/perfolizer",
           "download_url": "https://www.nuget.org/api/v2/package/Perfolizer/0.2.1",
           "size": 0,
@@ -5843,7 +5956,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "benchmark",
+            "benchmarking",
+            "performance"
+          ],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1",
           "size": 0,
@@ -5887,7 +6004,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "benchmark",
+                "benchmarking",
+                "performance"
+              ],
               "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
               "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Annotations/0.12.1",
               "size": 0,
@@ -5932,7 +6053,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "command",
+                "line",
+                "commandline",
+                "argument",
+                "option",
+                "parser",
+                "parsing",
+                "library",
+                "syntax",
+                "shell"
+              ],
               "homepage_url": "https://github.com/gsscoder/commandline",
               "download_url": "https://www.nuget.org/api/v2/package/CommandLineParser/2.4.3",
               "size": 0,
@@ -5977,7 +6109,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "x86",
+                "x64",
+                "encoder",
+                "decoder",
+                "formatter",
+                "disassembler"
+              ],
               "homepage_url": "https://github.com/0xd4d/iced",
               "download_url": "https://www.nuget.org/api/v2/package/Iced/1.4.0",
               "size": 0,
@@ -6022,7 +6161,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "https://github.com/dotnet/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeAnalysis.CSharp/2.10.0",
               "size": 0,
@@ -6067,7 +6224,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Diagnostic"
+              ],
               "homepage_url": "https://github.com/dotnet/diagnostics",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.NETCore.Client/0.2.61701",
               "size": 0,
@@ -6157,7 +6316,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "TraceEvent",
+                "EventSource",
+                "Microsoft",
+                "ETW",
+                "Event",
+                "Tracing",
+                "for",
+                "Windows"
+              ],
               "homepage_url": "https://github.com/Microsoft/perfview",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49",
               "size": 0,
@@ -6292,7 +6460,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "analysis",
+                "performance",
+                "tool"
+              ],
               "homepage_url": "https://github.com/AndreyAkinshin/perfolizer",
               "download_url": "https://www.nuget.org/api/v2/package/Perfolizer/0.2.1",
               "size": 0,
@@ -6564,7 +6736,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "benchmark",
+            "benchmarking",
+            "performance"
+          ],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Diagnostics.Windows/0.12.1",
           "size": 0,
@@ -6608,7 +6784,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "benchmark",
+                "benchmarking",
+                "performance"
+              ],
               "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
               "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1",
               "size": 0,
@@ -6653,7 +6833,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "TraceEvent",
+                "EventSource",
+                "Microsoft",
+                "ETW",
+                "Event",
+                "Tracing",
+                "for",
+                "Windows"
+              ],
               "homepage_url": "https://github.com/Microsoft/perfview",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49",
               "size": 0,
@@ -7108,7 +7297,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "xunit.analyzers",
+            "analyzers",
+            "roslyn",
+            "xunit",
+            "xunit.net"
+          ],
           "homepage_url": "https://github.com/xunit/xunit.analyzers",
           "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
           "size": 0,
@@ -7287,7 +7482,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xunit.analyzers",
+                "analyzers",
+                "roslyn",
+                "xunit",
+                "xunit.net"
+              ],
               "homepage_url": "https://github.com/xunit/xunit.analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
               "size": 0,
@@ -7516,7 +7717,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0",
           "size": 0,
@@ -7561,7 +7764,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0",
           "size": 0,
@@ -7605,7 +7810,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Frameworks/6.4.0",
               "size": 0,
@@ -7652,7 +7859,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0",
           "size": 0,
@@ -7696,7 +7905,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0",
               "size": 0,
@@ -7743,7 +7954,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0",
           "size": 0,
@@ -7788,7 +8003,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0",
           "size": 0,
@@ -7832,7 +8049,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Common/6.4.0",
               "size": 0,
@@ -7877,7 +8096,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0",
               "size": 0,
@@ -7924,7 +8147,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
           "size": 0,
@@ -7969,7 +8194,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
           "size": 0,
@@ -8013,7 +8240,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0",
               "size": 0,
@@ -8058,7 +8287,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "semver",
+                "semantic",
+                "versioning"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Versioning/6.4.0",
               "size": 0,
@@ -8103,7 +8336,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/13.0.1",
               "size": 0,
@@ -8150,7 +8385,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0",
           "size": 0,
@@ -8194,7 +8432,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
               "size": 0,
@@ -8241,7 +8481,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0",
           "size": 0,
@@ -8285,7 +8527,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Configuration/6.4.0",
               "size": 0,
@@ -8330,7 +8574,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.LibraryModel/6.4.0",
               "size": 0,
@@ -8375,7 +8621,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget",
+                "protocol"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Protocol/6.4.0",
               "size": 0,
@@ -8422,7 +8671,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0",
           "size": 0,
@@ -8466,7 +8717,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
               "size": 0,
@@ -8513,7 +8766,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0",
           "size": 0,
@@ -8557,7 +8812,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0",
               "size": 0,
@@ -8604,7 +8861,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
           "size": 0,
@@ -8649,7 +8911,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "source",
+            "control",
+            "git"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
           "size": 0,
@@ -8694,7 +8962,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0",
           "size": 0,
@@ -8738,7 +9012,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
               "size": 0,
@@ -8783,7 +9062,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
               "size": 0,
@@ -8864,9 +9149,9 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@3.0.0-preview8-28405-07",
+          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
           "primary_language": "C#",
-          "description": "A set of .NET APIs that are included in the default .NET Core application model. \nd01b2fb7bc6bd4911e157fbd51353059a3ba1a6c \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
           "parties": [
             {
@@ -8879,7 +9164,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -8894,9 +9179,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/3.0.0-preview8-28405-07?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/3.0.0-preview8-28405-07",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/3.0.0-preview8-28405-07.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.NETCore.App/2.2.8",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -8922,7 +9207,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "benchmark",
+            "benchmarking",
+            "performance"
+          ],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet.Diagnostics.Windows/0.12.1",
           "size": 0,
@@ -8966,7 +9255,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "benchmark",
+                "benchmarking",
+                "performance"
+              ],
               "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
               "download_url": "https://www.nuget.org/api/v2/package/BenchmarkDotNet/0.12.1",
               "size": 0,
@@ -9011,7 +9304,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "TraceEvent",
+                "EventSource",
+                "Microsoft",
+                "ETW",
+                "Event",
+                "Tracing",
+                "for",
+                "Windows"
+              ],
               "homepage_url": "https://github.com/Microsoft/perfview",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Diagnostics.Tracing.TraceEvent/2.0.49",
               "size": 0,
@@ -9192,7 +9494,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "xunit.analyzers",
+                "analyzers",
+                "roslyn",
+                "xunit",
+                "xunit.net"
+              ],
               "homepage_url": "https://github.com/xunit/xunit.analyzers",
               "download_url": "https://www.nuget.org/api/v2/package/xunit.analyzers/0.10.0",
               "size": 0,
@@ -9330,7 +9638,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging.Core/6.4.0",
           "size": 0,
@@ -9374,7 +9684,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.Packaging/6.4.0",
               "size": 0,
@@ -9421,7 +9733,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "nuget"
+          ],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://www.nuget.org/api/v2/package/NuGet.ProjectModel/6.4.0",
           "size": 0,
@@ -9465,7 +9779,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "nuget"
+              ],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://www.nuget.org/api/v2/package/NuGet.DependencyResolver.Core/6.4.0",
               "size": 0,
@@ -9512,7 +9828,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "MSBuild",
+            "Tasks",
+            "GitHub",
+            "source",
+            "link"
+          ],
           "homepage_url": "https://github.com/dotnet/sourcelink",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.GitHub/1.0.0",
           "size": 0,
@@ -9556,7 +9878,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.SourceLink.Common/1.0.0",
               "size": 0,
@@ -9601,7 +9928,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control",
+                "git"
+              ],
               "homepage_url": "https://github.com/dotnet/sourcelink",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Build.Tasks.Git/1.0.0",
               "size": 0,

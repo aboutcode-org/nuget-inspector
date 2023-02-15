@@ -69,7 +69,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "bootstrap",
+            "template",
+            "admin",
+            "adminlte"
+          ],
           "homepage_url": "https://almsaeedstudio.com/",
           "download_url": "https://www.nuget.org/api/v2/package/AdminLTE/2.4.0",
           "size": 0,
@@ -113,7 +118,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "FortAwesome",
+                "FontAwesome",
+                "Font",
+                "Awesome",
+                "Iconic",
+                "Twitter",
+                "Bootstrap"
+              ],
               "homepage_url": "http://fontawesome.io/",
               "download_url": "https://www.nuget.org/api/v2/package/FontAwesome/4.7.0",
               "size": 0,
@@ -158,7 +171,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -203,7 +218,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Tether",
+                "tether",
+                "Newest",
+                "JavaScript",
+                "library",
+                "devtools",
+                "optimizes",
+                "HTML",
+                "HTML5",
+                "jquery"
+              ],
               "homepage_url": "https://github.com/HubSpot/tether",
               "download_url": "https://www.nuget.org/api/v2/package/Tether.New/1.3.3",
               "size": 0,
@@ -248,7 +274,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "css",
+                "js",
+                "less",
+                "mobile-first",
+                "responsive",
+                "front-end",
+                "framework",
+                "web"
+              ],
               "homepage_url": "http://getbootstrap.com/",
               "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.3.7",
               "size": 0,
@@ -295,7 +330,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "FortAwesome",
+            "FontAwesome",
+            "Font",
+            "Awesome",
+            "Iconic",
+            "Twitter",
+            "Bootstrap"
+          ],
           "homepage_url": "http://fontawesome.io/",
           "download_url": "https://www.nuget.org/api/v2/package/FontAwesome/4.7.0",
           "size": 0,
@@ -340,7 +383,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery"
+          ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
           "size": 0,
@@ -385,7 +430,18 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Tether",
+            "tether",
+            "Newest",
+            "JavaScript",
+            "library",
+            "devtools",
+            "optimizes",
+            "HTML",
+            "HTML5",
+            "jquery"
+          ],
           "homepage_url": "https://github.com/HubSpot/tether",
           "download_url": "https://www.nuget.org/api/v2/package/Tether.New/1.3.3",
           "size": 0,
@@ -430,7 +486,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "js",
+            "less",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "http://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.3.7",
           "size": 0,
@@ -474,7 +539,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -523,7 +590,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -538,9 +605,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Antlr/3.4.1.9004?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/antlr/3.4.1.9004.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -566,7 +633,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "EF",
+            "Database",
+            "Data",
+            "O/RM",
+            "ADO.NET"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
           "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
           "size": 0,
@@ -611,7 +685,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "plugins"
+          ],
           "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.11.1",
           "size": 0,
@@ -655,7 +732,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -702,7 +781,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
           "size": 0,
@@ -747,7 +831,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Instrumentation",
+            "Extensions",
+            "Decorate",
+            "Callbacks",
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1",
           "size": 0,
@@ -792,7 +885,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.0.0",
           "size": 0,
@@ -815,7 +913,112 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.Agent.Intercept",
+              "version": "1.2.1",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.Agent.Intercept@1.2.1",
+              "primary_language": "C#",
+              "description": "This NuGet enables Interception of method calls",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Instrumentation",
+                "Extensions",
+                "Decorate",
+                "Callbacks",
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.agent.intercept/1.2.1.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -837,7 +1040,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "Insights",
+            "Telemetry",
+            "JavaScript",
+            "MDD",
+            "Multi-Device",
+            "ApplicationInsights",
+            "Cordova",
+            "Web"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.JavaScript/0.22.9-build00167",
           "size": 0,
@@ -882,7 +1095,22 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "ASP.NET",
+            "ASMX",
+            "Web",
+            "Azure",
+            "Server",
+            "Services",
+            "ASPX",
+            "Websites",
+            "Performance",
+            "Counters",
+            "Collection"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0",
           "size": 0,
@@ -905,7 +1133,58 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -927,7 +1206,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Web/2.0.0",
           "size": 0,
@@ -950,7 +1234,108 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Windows Server nuget package. This is a dependent package for Application Insights platform specific packages. Please install the platform specific packages directly for the best experience. See http://go.microsoft.com/fwlink/?LinkID=510754 for more information.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -972,7 +1357,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
           "size": 0,
@@ -995,7 +1385,217 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.DependencyCollector",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.DependencyCollector@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Dependency Collector for .NET applications. See http://go.microsoft.com/fwlink/?LinkID=510754 for more information. This is a dependent package for Application Insights platform specifc packages and provides automatic collection of dependency telemetry. Please install the platform specific packages directly for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.DependencyCollector/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.dependencycollector/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel@2.0.0",
+              "primary_language": "C#",
+              "description": "This nuget provides a telemetry channel to Application Insights Windows Server SDK that will preserve telemetry in offline scenarios. This is a dependent package, for the best experience please install the platform specific package.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=391182",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver.telemetrychannel/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.PerfCounterCollector",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.PerfCounterCollector@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Performance Counters Collector allows you to send data collected by Performance Counters to Application Insights.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "ASP.NET",
+                "ASMX",
+                "Web",
+                "Azure",
+                "Server",
+                "Services",
+                "ASPX",
+                "Websites",
+                "Performance",
+                "Counters",
+                "Collection"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=391182",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.perfcountercollector/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1017,7 +1617,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0",
           "size": 0,
@@ -1040,7 +1644,58 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
+          "dependencies": [
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            }
+          ]
         },
         {
           "type": "nuget",
@@ -1062,9 +1717,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Membership"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1079,9 +1737,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/2.2.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.core/2.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1107,9 +1765,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Membership"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.EntityFramework/2.2.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1124,9 +1785,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.EntityFramework/2.2.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.EntityFramework/2.2.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.entityframework/2.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1151,9 +1812,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Membership"
+              ],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -1168,9 +1832,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/2.2.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.core/2.2.1.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -1196,7 +1860,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
               "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
               "size": 0,
@@ -1243,9 +1914,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Membership"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Owin/2.2.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1260,9 +1934,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Owin/2.2.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Owin/2.2.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.owin/2.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1287,9 +1961,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Membership"
+              ],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -1304,9 +1981,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/2.2.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.core/2.2.1.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -1332,7 +2009,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -1377,7 +2058,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1",
               "size": 0,
@@ -1422,7 +2107,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.OAuth/3.0.1",
               "size": 0,
@@ -1469,7 +2158,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
           "size": 0,
@@ -1513,7 +2206,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1558,7 +2253,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -1605,7 +2304,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "OWIN"
+          ],
           "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
           "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
           "size": 0,
@@ -1650,7 +2351,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
           "size": 0,
@@ -1694,7 +2399,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1741,7 +2448,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1",
           "size": 0,
@@ -1785,7 +2496,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -1830,7 +2543,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -1875,7 +2592,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -1922,7 +2643,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.OAuth/3.0.1",
           "size": 0,
@@ -1966,7 +2691,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -2011,7 +2738,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -2056,7 +2787,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -2101,7 +2834,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -2148,7 +2885,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://james.newtonking.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
           "size": 0,
@@ -2193,7 +2932,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "http://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
           "size": 0,
@@ -2237,7 +2981,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
               "size": 0,
@@ -2282,7 +3031,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -2329,7 +3084,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
           "size": 0,
@@ -2373,7 +3133,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -2418,7 +3180,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -2465,7 +3233,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -2510,7 +3280,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "http://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
           "size": 0,
@@ -2555,9 +3331,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -2572,9 +3354,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2599,7 +3381,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -2646,7 +3430,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -2661,9 +3445,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/WebGrease/1.5.2?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/webgrease/1.5.2.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -2693,7 +3477,7 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -2708,9 +3492,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/WebGrease/1.5.2?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/webgrease/1.5.2.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -2737,7 +3521,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -2752,9 +3536,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Antlr/3.4.1.9004?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Antlr/3.4.1.9004",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/antlr/3.4.1.9004.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -2780,7 +3564,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -2827,7 +3613,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0",
           "size": 0,
@@ -2871,7 +3664,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "http://msdn.com/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0",
               "size": 0,
@@ -2918,7 +3729,25 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeAnalysis",
+            "Compiler",
+            "CSharp",
+            "VB",
+            "VisualBasic",
+            "Parser",
+            "Scanner",
+            "Lexer",
+            "Emit",
+            "CodeGeneration",
+            "Metadata",
+            "IL",
+            "Compilation",
+            "Scripting",
+            "Syntax",
+            "Semantics"
+          ],
           "homepage_url": "http://msdn.com/roslyn",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0",
           "size": 0,
@@ -2963,7 +3792,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.3",
           "size": 0,
@@ -3007,7 +3839,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -3052,7 +3886,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.11.1",
               "size": 0,
@@ -3099,7 +3936,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1",
           "size": 0,
@@ -3143,7 +3984,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -3188,7 +4031,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -3235,7 +4082,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Facebook/3.0.1",
           "size": 0,
@@ -3279,7 +4130,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -3324,7 +4177,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -3369,7 +4224,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -3414,7 +4273,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -3461,7 +4324,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Google/3.0.1",
           "size": 0,
@@ -3505,7 +4372,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -3550,7 +4419,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -3595,7 +4466,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -3640,7 +4515,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -3687,7 +4566,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.MicrosoftAccount/3.0.1",
           "size": 0,
@@ -3731,7 +4614,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -3776,7 +4661,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -3821,7 +4710,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -3866,7 +4757,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -3913,7 +4808,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Twitter/3.0.1",
           "size": 0,
@@ -3957,7 +4856,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -4002,7 +4903,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -4047,7 +4952,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -4092,7 +4999,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -4139,7 +5050,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2",
           "size": 0,
@@ -4184,7 +5102,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Respond",
+            "Media",
+            "Queries"
+          ],
           "homepage_url": "https://github.com/scottjehl/Respond",
           "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0",
           "size": 0,
@@ -4231,7 +5153,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "bootstrap",
+            "template",
+            "admin",
+            "adminlte"
+          ],
           "homepage_url": "https://almsaeedstudio.com/",
           "download_url": "https://www.nuget.org/api/v2/package/AdminLTE/2.4.0",
           "size": 0,
@@ -4275,7 +5202,15 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "FortAwesome",
+                "FontAwesome",
+                "Font",
+                "Awesome",
+                "Iconic",
+                "Twitter",
+                "Bootstrap"
+              ],
               "homepage_url": "http://fontawesome.io/",
               "download_url": "https://www.nuget.org/api/v2/package/FontAwesome/4.7.0",
               "size": 0,
@@ -4320,7 +5255,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -4365,7 +5302,18 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Tether",
+                "tether",
+                "Newest",
+                "JavaScript",
+                "library",
+                "devtools",
+                "optimizes",
+                "HTML",
+                "HTML5",
+                "jquery"
+              ],
               "homepage_url": "https://github.com/HubSpot/tether",
               "download_url": "https://www.nuget.org/api/v2/package/Tether.New/1.3.3",
               "size": 0,
@@ -4410,7 +5358,16 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "css",
+                "js",
+                "less",
+                "mobile-first",
+                "responsive",
+                "front-end",
+                "framework",
+                "web"
+              ],
               "homepage_url": "http://getbootstrap.com/",
               "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.3.7",
               "size": 0,
@@ -4440,141 +5397,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Microsoft.ApplicationInsights",
-          "version": "2.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
-          "primary_language": "C#",
-          "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.Agent.Intercept",
-          "version": "1.2.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.Agent.Intercept@1.2.1",
-          "primary_language": "C#",
-          "description": "This NuGet enables Interception of method calls",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Agent.Intercept/1.2.1",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.agent.intercept/1.2.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.DependencyCollector",
-          "version": "2.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.DependencyCollector@2.0.0",
-          "primary_language": "C#",
-          "description": "Application Insights Dependency Collector for .NET applications. See http://go.microsoft.com/fwlink/?LinkID=510754 for more information. This is a dependent package for Application Insights platform specifc packages and provides automatic collection of dependency telemetry. Please install the platform specific packages directly for the best experience.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.0.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.DependencyCollector/2.0.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.DependencyCollector/2.0.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.dependencycollector/2.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.ApplicationInsights.JavaScript",
           "version": "0.22.9-build00167",
           "qualifiers": "",
@@ -4592,7 +5414,17 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "Insights",
+            "Telemetry",
+            "JavaScript",
+            "MDD",
+            "Multi-Device",
+            "ApplicationInsights",
+            "Cordova",
+            "Web"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.JavaScript/0.22.9-build00167",
           "size": 0,
@@ -4620,51 +5452,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Microsoft.ApplicationInsights.PerfCounterCollector",
-          "version": "2.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.PerfCounterCollector@2.0.0",
-          "primary_language": "C#",
-          "description": "Application Insights Performance Counters Collector allows you to send data collected by Performance Counters to Application Insights.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=391182",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.PerfCounterCollector/2.0.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.perfcountercollector/2.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.ApplicationInsights.Web",
           "version": "2.0.0",
           "qualifiers": "",
@@ -4682,7 +5469,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Analytics",
+            "ApplicationInsights",
+            "Telemetry",
+            "AppInsights"
+          ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.Web/2.0.0",
           "size": 0,
@@ -4705,97 +5497,108 @@
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.WindowsServer",
-          "version": "2.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.0.0",
-          "primary_language": "C#",
-          "description": "Application Insights Windows Server nuget package. This is a dependent package for Application Insights platform specific packages. Please install the platform specific packages directly for the best experience. See http://go.microsoft.com/fwlink/?LinkID=510754 for more information.",
-          "release_date": "",
-          "parties": [
+          "dependencies": [
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.0.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel",
-          "version": "2.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel@2.0.0",
-          "primary_language": "C#",
-          "description": "This nuget provides a telemetry channel to Application Insights Windows Server SDK that will preserve telemetry in offline scenarios. This is a dependent package, for the best experience please install the platform specific package.",
-          "release_date": "",
-          "parties": [
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Core API. This package provides core functionality for transmission of all Application Insights Telemetry Types and is a dependent package for all other Application Insights packages. Please install the platform specific package for the best experience.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
+            },
             {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.ApplicationInsights.WindowsServer",
+              "version": "2.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.ApplicationInsights.WindowsServer@2.0.0",
+              "primary_language": "C#",
+              "description": "Application Insights Windows Server nuget package. This is a dependent package for Application Insights platform specific packages. Please install the platform specific packages directly for the best experience. See http://go.microsoft.com/fwlink/?LinkID=510754 for more information.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Analytics",
+                "ApplicationInsights",
+                "Telemetry",
+                "AppInsights"
+              ],
+              "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=510710",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
+              "size": 0,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=510709",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer/2.0.0?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer/2.0.0",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver/2.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "packages": [],
+              "dependencies": []
             }
-          ],
-          "keywords": [],
-          "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=392727",
-          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkID=391182",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0?_src=template",
-          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel/2.0.0",
-          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.applicationinsights.windowsserver.telemetrychannel/2.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+          ]
         },
         {
           "type": "nuget",
@@ -4817,9 +5620,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Membership"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.EntityFramework/2.2.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -4834,9 +5640,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.EntityFramework/2.2.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.EntityFramework/2.2.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.entityframework/2.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -4861,9 +5667,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Membership"
+              ],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -4878,9 +5687,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/2.2.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.core/2.2.1.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -4906,7 +5715,14 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "EF",
+                "Database",
+                "Data",
+                "O/RM",
+                "ADO.NET"
+              ],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=320540",
               "download_url": "https://www.nuget.org/api/v2/package/EntityFramework/6.1.3",
               "size": 0,
@@ -4953,9 +5769,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Identity",
+            "Membership"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Owin/2.2.1",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -4970,9 +5789,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Owin/2.2.1?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Owin/2.2.1",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.owin/2.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -4997,9 +5816,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Identity",
+                "Membership"
+              ],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -5014,9 +5836,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core/2.2.1?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Identity.Core/2.2.1",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.identity.core/2.2.1.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -5042,7 +5864,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -5087,7 +5913,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Cookies/3.0.1",
               "size": 0,
@@ -5132,7 +5962,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.OAuth/3.0.1",
               "size": 0,
@@ -5179,7 +6013,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "http://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.3",
           "size": 0,
@@ -5223,7 +6062,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.3",
               "size": 0,
@@ -5268,7 +6112,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "http://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.3",
               "size": 0,
@@ -5315,9 +6165,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -5332,9 +6188,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -5359,7 +6215,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -5406,7 +6264,7 @@
               ],
               "keywords": [],
               "homepage_url": "",
-              "download_url": "",
+              "download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
               "size": 0,
               "sha1": "",
               "md5": "",
@@ -5421,9 +6279,9 @@
               "notice_text": "",
               "source_packages": [],
               "extra_data": {},
-              "repository_homepage_url": "",
-              "repository_download_url": "",
-              "api_data_url": "",
+              "repository_homepage_url": "https://www.nuget.org/packages/WebGrease/1.5.2?_src=template",
+              "repository_download_url": "https://www.nuget.org/api/v2/package/WebGrease/1.5.2",
+              "api_data_url": "https://api.nuget.org/v3/registration5-semver1/webgrease/1.5.2.json",
               "datasource_id": "",
               "datafile_path": "",
               "packages": [],
@@ -5451,7 +6309,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/1.0.0",
           "size": 0,
@@ -5495,7 +6360,25 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Roslyn",
+                "CodeAnalysis",
+                "Compiler",
+                "CSharp",
+                "VB",
+                "VisualBasic",
+                "Parser",
+                "Scanner",
+                "Lexer",
+                "Emit",
+                "CodeGeneration",
+                "Metadata",
+                "IL",
+                "Compilation",
+                "Scripting",
+                "Syntax",
+                "Semantics"
+              ],
               "homepage_url": "http://msdn.com/roslyn",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Net.Compilers/1.0.0",
               "size": 0,
@@ -5542,7 +6425,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.3",
           "size": 0,
@@ -5586,7 +6472,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.1.1",
               "size": 0,
@@ -5631,7 +6519,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.11.1",
               "size": 0,
@@ -5678,7 +6569,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Host.SystemWeb/3.0.1",
           "size": 0,
@@ -5722,7 +6617,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -5767,7 +6664,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -5814,7 +6715,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Facebook/3.0.1",
           "size": 0,
@@ -5858,7 +6763,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -5903,7 +6810,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -5948,7 +6857,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -5993,7 +6906,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -6040,7 +6957,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Google/3.0.1",
           "size": 0,
@@ -6084,7 +7005,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -6129,7 +7052,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -6174,7 +7099,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -6219,7 +7148,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -6266,7 +7199,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.MicrosoftAccount/3.0.1",
           "size": 0,
@@ -6310,7 +7247,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -6355,7 +7294,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -6400,7 +7343,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -6445,7 +7390,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -6492,7 +7441,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "OWIN",
+            "Katana"
+          ],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security.Twitter/3.0.1",
           "size": 0,
@@ -6536,7 +7489,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "OWIN"
+              ],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://www.nuget.org/api/v2/package/Owin/1.0.0",
               "size": 0,
@@ -6581,7 +7536,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin/3.0.1",
               "size": 0,
@@ -6626,7 +7585,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://james.newtonking.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/6.0.4",
               "size": 0,
@@ -6671,7 +7632,11 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "OWIN",
+                "Katana"
+              ],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Owin.Security/3.0.1",
               "size": 0,
@@ -6718,7 +7683,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.6.2",
           "size": 0,
@@ -6763,7 +7735,11 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Respond",
+            "Media",
+            "Queries"
+          ],
           "homepage_url": "https://github.com/scottjehl/Respond",
           "download_url": "https://www.nuget.org/api/v2/package/Respond/1.2.0",
           "size": 0,

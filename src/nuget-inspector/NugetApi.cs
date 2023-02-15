@@ -29,28 +29,49 @@ public class NugetApi
     /// </summary>
     /// <param name="id"></param>
     /// <param name="versionRange"></param>
-    /// <returns></returns>
-    public IPackageSearchMetadata? FindPackageVersion(string? id, VersionRange? versionRange)
+    /// <param name="use_cache">use_cache</param>
+    /// <param name="include_prerelease">include_prerelease</param>
+    /// <returns>IPackageSearchMetadata or null</returns>
+    public IPackageSearchMetadata? FindPackageVersion(
+        string? id,
+        VersionRange? versionRange,
+        bool use_cache = true,
+        bool include_prerelease = false)
     {
-        var package_versions = FindPackages(id: id);
+        var package_versions = FindPackages(id: id, use_cache: use_cache, include_prerelease: include_prerelease);
+
         // TODO: we may need to error out if version is not known/existing upstream
         if (package_versions.Count == 0)
             return null;
         var versions = package_versions.Select(selector: package => package.Identity.Version);
         var best_version = versionRange?.FindBestMatch(versions: versions);
-        return package_versions.FirstOrDefault(predicate: package => package.Identity.Version == best_version);
+        return package_versions.Find(package => package.Identity.Version == best_version);
     }
 
     /// <summary>
     /// Return an IPackageSearchMetadata querying the API using a name and version, or null.
+    /// Return the latest version when no version is provided.
+    /// Bypass the cache if no_cache is true.
+    /// Include prereleases if include_prerelease is true.
     /// </summary>
     /// <param name="name">name</param>
-    /// <param name="version"></param>
-    /// <returns></returns>
-    public IPackageSearchMetadata? FindPackageVersion(string name, string? version)
+    /// <param name="version">version</param>
+    /// <param name="use_cache">use_cache</param>
+    /// <param name="include_prerelease">include_prerelease</param>
+    /// <returns>IPackageSearchMetadata or null</returns>
+    public IPackageSearchMetadata? FindPackageVersion(
+        string name,
+        string? version,
+        bool use_cache = true,
+        bool include_prerelease = false)
     {
         IPackageSearchMetadata? last_package = null;
-        foreach (var package in FindPackages(id: name))
+        List<IPackageSearchMetadata> packages = FindPackages(
+            id: name,
+            use_cache: use_cache,
+            include_prerelease: include_prerelease);
+
+        foreach (var package in packages)
         {
             last_package = package;
             if (package.Identity.Version.ToString() == version)
@@ -63,38 +84,50 @@ public class NugetApi
         return null;
     }
 
-
-    private List<IPackageSearchMetadata> FindPackages(string? id)
+    /// <summary>
+    ///     Return a list of NuGet package metadata and cache if use_cache is true.
+    /// </summary>
+    /// <param name="id">id (e.g., the name)</param>
+    /// <param name="use_cache">use_cache</param>
+    /// <param name="include_prerelease">include_prerelease</param>
+    private List<IPackageSearchMetadata> FindPackages(
+        string? id,
+        bool use_cache = true,
+        bool include_prerelease = true)
     {
-        if (id != null && lookupCache.ContainsKey(key: id))
-        {
-            if (Config.TRACE)
-            {
-                Console.WriteLine($"API Cache hit for package '{id}'");
-            }
-        }
-        else
-        {
-            if (Config.TRACE)
-            {
-                Console.WriteLine($"API Cache miss package '{id}'");
-            }
-
-            if (id != null)
-            {
-                lookupCache[key: id] = FindPackagesOnline(name: id);
-            }
+        if (id == null) {
+            return new List<IPackageSearchMetadata>();
         }
 
-        return lookupCache[key: id!];
+        if (use_cache)
+        {
+            if (!lookupCache.ContainsKey(key: id))
+            {
+                if (Config.TRACE)
+                    Console.WriteLine($"API Cache miss package '{id}'");
+
+                List<IPackageSearchMetadata> metadatas = FindPackagesOnline(
+                    name: id,
+                    include_prerelease: include_prerelease);
+                lookupCache[key: id] = metadatas;
+                return metadatas;
+            } else {
+                return lookupCache[key: id!];
+            }
+        } else {
+            return FindPackagesOnline(name: id, include_prerelease: include_prerelease);
+        }
     }
 
     /// <summary>
-    ///     Find NuGet packages online using the configured NuGet APIs 
+    ///     Find NuGet packages online using the configured NuGet APIs
     /// </summary>
     /// <param name="name"></param>
+    /// <param name="include_prerelease">include_prerelease</param>
     /// <returns>List of IPackageSearchMetadata</returns>
-    private List<IPackageSearchMetadata> FindPackagesOnline(string? name)
+    private List<IPackageSearchMetadata> FindPackagesOnline(
+        string? name,
+        bool include_prerelease = false)
     {
         if (Config.TRACE)
             Console.WriteLine($"------> FindPackagesOnline: {name}");
@@ -103,45 +136,42 @@ public class NugetApi
         var exceptions = new List<Exception>();
 
         foreach (PackageMetadataResource metadata_resource in MetadataResourceList)
+        {
             try
             {
                 Stopwatch stop_watch = Stopwatch.StartNew();
-                SourceCacheContext context = new SourceCacheContext();
+                SourceCacheContext context = new();
                 IEnumerable<IPackageSearchMetadata>? package_metadata = metadata_resource
                     .GetMetadataAsync(
-                        packageId: name, 
-                        includePrerelease: true, 
-                        includeUnlisted: true,
-                        sourceCacheContext: context, 
-                        log: new NugetLogger(), 
+                        packageId: name,
+                        includePrerelease: include_prerelease,
+                        includeUnlisted: include_prerelease,
+                        sourceCacheContext: context,
+                        log: new NugetLogger(),
                         token: CancellationToken.None
                     ).Result;
 
                 if (Config.TRACE)
+                {
                     Console.WriteLine(
                         value:
                         $"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{name}'");
+                }
 
                 List<IPackageSearchMetadata> packageSearchMetadatas = package_metadata.ToList();
-                if (packageSearchMetadatas.Any()) matching_packages.AddRange(collection: packageSearchMetadatas);
+                if (packageSearchMetadatas.Any())
+                {
+                    matching_packages.AddRange(collection: packageSearchMetadatas);
+                }
             }
             catch (Exception ex)
             {
                 exceptions.Add(item: ex);
             }
+        }
 
         if (matching_packages.Count > 0)
-        {
-            // if (Config.TRACE)
-            //     foreach (var mp in matching_packages)
-            //     {
-            //         Console.WriteLine("========================================================");
-            //         Console.WriteLine(mp.Identity);
-            //         Console.WriteLine(mp.ToJson(Formatting.Indented));
-            //     }
-
             return matching_packages;
-        }
 
         if (exceptions.Count > 0)
         {
@@ -182,11 +212,11 @@ public class NugetApi
                 if (Config.TRACE) Console.WriteLine($"Loading nuget config {nugetFile} at {parent}.");
                 ISettings? setting = Settings.LoadSpecificSettings(root: parent, configFileName: nugetFile);
 
-                PackageSourceProvider package_source_provider = new PackageSourceProvider(settings: setting);
+                PackageSourceProvider package_source_provider = new(settings: setting);
                 IEnumerable<PackageSource> package_sources = package_source_provider.LoadPackageSources();
                 List<PackageSource> packageSources = package_sources.ToList();
                 if (Config.TRACE)
-                    Console.WriteLine($"Loaded {packageSources.Count()} package sources from nuget config.");
+                    Console.WriteLine($"Loaded {packageSources.Count} package sources from nuget config.");
                 foreach (var package_source in packageSources)
                 {
                     if (Config.TRACE) Console.WriteLine($"Found package source: {package_source.Source}");
@@ -198,7 +228,6 @@ public class NugetApi
                 if (Config.TRACE) Console.WriteLine("Nuget config path did not exist.");
             }
         }
-
 
         var splitRepoUrls = nuget_api_feed_url.Split(separator: new[] { ',' });
         foreach (var repoUrl in splitRepoUrls)
@@ -244,8 +273,10 @@ public class NugetApi
             var dependencyInfoResource = sourceRepository.GetResource<DependencyInfoResource>();
             DependencyInfoResourceList.Add(item: dependencyInfoResource);
             if (Config.TRACE)
+            {
                 Console.WriteLine(
                     value: $"Successfully added dependency info resource: {sourceRepository.PackageSource.SourceUri}");
+            }
         }
         catch (Exception e)
         {
@@ -261,9 +292,10 @@ public class NugetApi
     public IEnumerable<PackageDependency> DependenciesForPackage(PackageIdentity identity, NuGetFramework? framework)
     {
         foreach (var dependencyInfoResource in DependencyInfoResourceList)
+        {
             try
             {
-                SourceCacheContext context = new SourceCacheContext();
+                SourceCacheContext context = new();
                 Task<SourcePackageDependencyInfo>? infoTask = dependencyInfoResource.ResolvePackage(
                     package: identity,
                     projectFramework: framework,
@@ -281,10 +313,10 @@ public class NugetApi
                     if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
                 }
             }
+        }
 
         return new List<PackageDependency>();
     }
-
 }
 
 public class DotNetFramework

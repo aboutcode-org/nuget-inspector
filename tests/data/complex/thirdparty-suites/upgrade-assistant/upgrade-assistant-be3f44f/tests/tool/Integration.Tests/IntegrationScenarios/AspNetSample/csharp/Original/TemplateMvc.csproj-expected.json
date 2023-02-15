@@ -114,7 +114,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "js",
+            "less",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.4.1",
           "size": 0,
@@ -158,7 +167,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
               "size": 0,
@@ -205,7 +216,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery"
+          ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
           "size": 0,
@@ -250,7 +263,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "plugins"
+          ],
           "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
           "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
           "size": 0,
@@ -294,7 +310,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
               "size": 0,
@@ -341,7 +359,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "https://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7",
           "size": 0,
@@ -385,7 +408,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
               "size": 0,
@@ -430,7 +458,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -477,7 +511,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
           "size": 0,
@@ -521,7 +560,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -566,7 +607,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -613,7 +660,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "ASPNETWEBPAGES"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
           "size": 0,
@@ -658,7 +707,13 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "WebPages",
+            "AspNetWebPages",
+            "Razor"
+          ],
           "homepage_url": "https://www.asp.net/web-pages",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
           "size": 0,
@@ -703,9 +758,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -720,9 +781,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -747,7 +808,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -928,7 +991,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "json"
+              ],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1",
               "size": 0,
@@ -975,7 +1040,9 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "json"
+          ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://www.nuget.org/api/v2/package/Newtonsoft.Json/7.0.1",
           "size": 0,
@@ -1020,7 +1087,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.1",
           "size": 0,
@@ -1065,7 +1139,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "https://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11",
           "size": 0,
@@ -1109,7 +1186,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
               "size": 0,
@@ -1154,7 +1233,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
               "size": 0,
@@ -1201,7 +1283,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3",
           "size": 0,
@@ -1248,7 +1337,16 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "css",
+            "js",
+            "less",
+            "mobile-first",
+            "responsive",
+            "front-end",
+            "framework",
+            "web"
+          ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://www.nuget.org/api/v2/package/bootstrap/3.4.1",
           "size": 0,
@@ -1292,7 +1390,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
               "size": 0,
@@ -1339,7 +1439,12 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "Mvc",
+            "AspNetMvc"
+          ],
           "homepage_url": "https://www.asp.net/mvc",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Mvc/5.2.7",
           "size": 0,
@@ -1383,7 +1488,12 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.WebPages/3.2.7",
               "size": 0,
@@ -1428,7 +1538,13 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "Microsoft",
+                "AspNet",
+                "WebPages",
+                "AspNetWebPages",
+                "Razor"
+              ],
               "homepage_url": "https://www.asp.net/web-pages",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Razor/3.2.7",
               "size": 0,
@@ -1475,9 +1591,15 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Microsoft",
+            "AspNet",
+            "optimization",
+            "bundling",
+            "minification"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1492,9 +1614,9 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Web.Optimization/1.1.3?_src=template",
+          "repository_download_url": "https://www.nuget.org/api/v2/package/Microsoft.AspNet.Web.Optimization/1.1.3",
+          "api_data_url": "https://api.nuget.org/v3/registration5-semver1/microsoft.aspnet.web.optimization/1.1.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "packages": [],
@@ -1519,7 +1641,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "ASPNETWEBPAGES"
+              ],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://www.nuget.org/api/v2/package/Microsoft.Web.Infrastructure/1.0.0",
               "size": 0,
@@ -1611,7 +1735,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "Roslyn",
+            "CodeDOM",
+            "Compiler",
+            "CSharp",
+            "VB.Net",
+            "ASP.NET"
+          ],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.CodeDom.Providers.DotNetCompilerPlatform/2.0.1",
           "size": 0,
@@ -1656,7 +1787,10 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "jQuery",
+            "Unobtrusive"
+          ],
           "homepage_url": "https://www.asp.net/",
           "download_url": "https://www.nuget.org/api/v2/package/Microsoft.jQuery.Unobtrusive.Validation/3.2.11",
           "size": 0,
@@ -1700,7 +1834,9 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery"
+              ],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery/3.5.0",
               "size": 0,
@@ -1745,7 +1881,10 @@
                   "url": ""
                 }
               ],
-              "keywords": [],
+              "keywords": [
+                "jQuery",
+                "plugins"
+              ],
               "homepage_url": "http://bassistance.de/jquery-plugins/jquery-plugin-validation/",
               "download_url": "https://www.nuget.org/api/v2/package/jQuery.Validation/1.17.0",
               "size": 0,
@@ -1792,7 +1931,14 @@
               "url": ""
             }
           ],
-          "keywords": [],
+          "keywords": [
+            "JavaScript",
+            "HTML",
+            "HTML5",
+            "CSS",
+            "CSS3",
+            "SVG"
+          ],
           "homepage_url": "http://www.modernizr.com/",
           "download_url": "https://www.nuget.org/api/v2/package/Modernizr/2.8.3",
           "size": 0,
