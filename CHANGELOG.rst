@@ -2,11 +2,58 @@ Changelog
 =========
 
 
+v0.8.0
+-------
+
+This is a major release with these updates:
+
+* Ignore prerelease in resolution. By default we should not includePrerelease and not includeUnlisted
+  in the resolution. This should be a command line option in the future.
+  (except for metadata where we fetch pre-release if requested)
+* Respect the TargetFramework in packages.config. Test for framework compatibility
+  between project and package and skip non-compatible packages.
+* Correctly extract target framework from legacy project files
+* Ensure that transitive dependencies are reported correctly
+* Include keywords from tags
+* Include owners as Parties and improve reporting of authors
+* Ensure we correctly report dependency URLs and do not fail when Home URL is missing
+
+
+v0.7.2
+-------
+
+This is a minor release with these updates:
+
+* Add new command line options for --version and --about
+* Ensure that we collect metadata for nested dependencies
+
+
+v0.7.1
+-------
+
+This is a minor release to create proper release archives
+
+
+v0.7.0
+-------
+
+This is a major release with extensive changes, including:
+
+* Major changes to the output format. It is now flatter (now more package.package
+  double nesting) and similar to the python-inspector and scancode-toolkit
+  overall layout. This is not final
+
+* Support for packagereference dependencies without a version or version range
+* Addition of package metadata fetched from the NuGet API #2
+* Improves support for target framework including adding a new CLI option #4
+* Improve handling overall based on issues reported #3
+* Overall code simplification and streamlining. Improved tracing.
+
+
 v0.6.0
 ------
 
 - Improve tests.
-
 
 
 v0.5.0
