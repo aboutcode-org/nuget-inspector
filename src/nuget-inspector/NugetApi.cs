@@ -20,8 +20,10 @@ public class NugetApi
     {
         var providers = new List<Lazy<INuGetResourceProvider>>();
         providers.AddRange(collection: Repository.Provider.GetCoreV3());
-        // TODO: providers.AddRange(Repository.Provider.GetCoreV2());
-        CreateResourceLists(providers: providers, nuget_api_feed_url: nugetApiFeedUrl, nuget_config_path: nugetConfig);
+        CreateResourceLists(
+            providers: providers,
+            nuget_api_feed_url: nugetApiFeedUrl,
+            nuget_config_path: nugetConfig);
     }
 
     /// <summary>
@@ -38,7 +40,10 @@ public class NugetApi
         bool use_cache = true,
         bool include_prerelease = false)
     {
-        var package_versions = FindPackages(id: id, use_cache: use_cache, include_prerelease: include_prerelease);
+        var package_versions = FindPackages(
+            id: id,
+            use_cache: use_cache,
+            include_prerelease: include_prerelease);
 
         // TODO: we may need to error out if version is not known/existing upstream
         if (package_versions.Count == 0)
