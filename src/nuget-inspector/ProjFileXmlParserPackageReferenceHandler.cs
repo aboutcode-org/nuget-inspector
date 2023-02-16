@@ -24,6 +24,10 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
         ProjectTargetFramework = project_target_framework;
     }
 
+    /// <summary>
+    /// Resolve using a best effort when a project file cannot be processed
+    /// otherwise. This is using raw XML directly.
+    /// </summary>
     public DependencyResolution Resolve()
     {
         var result = new DependencyResolution();
@@ -37,56 +41,51 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
         doc.Load(filename: ProjectPath);
 
         var packagesNodes = doc.GetElementsByTagName(name: "PackageReference");
-        if (packagesNodes.Count > 0)
+        foreach (XmlNode package in packagesNodes)
         {
-            foreach (XmlNode package in packagesNodes)
+            var attributes = package.Attributes;
+            string? version_value = null;
+
+            if (attributes == null)
+                continue;
+
+            if (Config.TRACE)
+                Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
+
+            var include = attributes[name: "Include"];
+            if (include == null)
+                continue;
+
+            var version = attributes[name: "Version"];
+            if (version != null)
             {
-                var attributes = package.Attributes;
-                string? version_value = null;
-
-                if (attributes != null)
+                version_value = version.Value;
+            }
+            else
+            {
+                //try nested element instead of attribute  
+                foreach (XmlElement versionNode in package.ChildNodes)
                 {
-                    if (Config.TRACE)
+                    if (versionNode.Name == "Version")
                     {
-                        Console.WriteLine($"ProjFileXmlParserPackageReferenceHandler: attributes {attributes}");
-                    }
-
-                    var include = attributes[name: "Include"];
-                    if (include != null)
-                    {
-                        var version = attributes[name: "Version"];
-                        if (version != null)
-                        {
-                            version_value = version.Value;
-                        }
-                        else
-                        {
-                            //try nested element instead of attribute  
-                            foreach (XmlElement versionNode in package.ChildNodes)
-                            {
-                                if (versionNode.Name == "Version")
-                                {
-                                    if (Config.TRACE)
-                                        Console.WriteLine($"    no version attribute, using Version tag: {versionNode.InnerText}");
-                                    version_value = versionNode.InnerText;
-                                }
-                            }
-                        }
-
                         if (Config.TRACE)
-                            Console.WriteLine($"    version_value: {version_value}");
-
-                        VersionRange? version_range = null;
-                        if (version_value != null)
-                            version_range = VersionRange.Parse(value: version_value);
-                        var dep = new Dependency(
-                            name: include.Value,
-                            version_range: version_range,
-                            framework: ProjectTargetFramework);
-                        tree.Add(packageDependency: dep);
+                            Console.WriteLine($"    no version attribute, using Version tag: {versionNode.InnerText}");
+                        version_value = versionNode.InnerText;
                     }
                 }
             }
+
+            if (Config.TRACE)
+                Console.WriteLine($"    version_value: {version_value}");
+
+            VersionRange? version_range = null;
+            if (version_value != null)
+                version_range = VersionRange.Parse(value: version_value);
+            var dep = new Dependency(
+                name: include.Value,
+                version_range: version_range,
+                framework: ProjectTargetFramework);
+            tree.Add(packageDependency: dep);
         }
 
         result.Packages = tree.GetPackageList();
@@ -106,7 +105,6 @@ internal class ProjFileXmlParserPackageReferenceHandler : IDependencyResolver
                 result.Dependencies.Add(item: package);
             }
         }
-
         return result;
     }
 }

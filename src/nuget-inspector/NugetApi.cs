@@ -151,12 +151,8 @@ public class NugetApi
                         token: CancellationToken.None
                     ).Result;
 
-                if (Config.TRACE)
-                {
-                    Console.WriteLine(
-                        value:
-                        $"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{name}'");
-                }
+                // if (Config.TRACE)
+                //     Console.WriteLine($"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{name}'");
 
                 List<IPackageSearchMetadata> packageSearchMetadatas = package_metadata.ToList();
                 if (packageSearchMetadatas.Any())
@@ -177,9 +173,7 @@ public class NugetApi
         {
             if (Config.TRACE)
             {
-                Console.WriteLine(
-                    value:
-                    $"No packages were found for {name}, and an exception occured in one or more metadata resources.");
+                Console.WriteLine($"No packages were found for {name}, and an exception occured in one or more metadata resources.");
                 foreach (var ex in exceptions)
                 {
                     Console.WriteLine($"Failed to fetch metadata for packages: {ex.Message}");
@@ -193,7 +187,8 @@ public class NugetApi
             return new List<IPackageSearchMetadata>();
         }
 
-        if (Config.TRACE) Console.WriteLine($"No package found for {name} in any meta data resources.");
+        if (Config.TRACE)
+            Console.WriteLine($"No package found for {name} in any meta data resources.");
         return new List<IPackageSearchMetadata>();
     }
 
@@ -316,22 +311,5 @@ public class NugetApi
         }
 
         return new List<PackageDependency>();
-    }
-}
-
-public class DotNetFramework
-{
-    public string Identifier { get; set; }
-    public int Major { get; set; }
-    public int Minor { get; set; }
-
-    public DotNetFramework(string id, int major, int minor)
-    {
-        if (Config.TRACE)
-            Console.WriteLine($"DotNetFramework: creating  id: {id}, major: {major}, minor: {minor}");
-
-        Identifier = id;
-        Major = major;
-        Minor = minor;
     }
 }

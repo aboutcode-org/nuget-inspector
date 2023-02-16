@@ -14,7 +14,6 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
     public const string DatasourceId = "dotnet-project-reference";
     private readonly NuGetFramework? ProjectTargetFramework;
     private readonly NugetApi nugetApi;
-
     private readonly string ProjectPath;
 
     public ProjFileStandardPackageReferenceHandler(
@@ -32,9 +31,16 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
         try
         {
             var tree = new NugetApiResolver(nugetApi: nugetApi);
-            var proj = new Microsoft.Build.Evaluation.Project(projectFile: ProjectPath);
+            Dictionary<string, string> properties = new();
+            if (ProjectTargetFramework != null)
+               properties["TargetFramework"] = ProjectTargetFramework.GetShortFolderName();
+
+            var proj = new Microsoft.Build.Evaluation.Project(
+                projectFile: ProjectPath,
+                globalProperties: properties,
+                toolsVersion: null);
             var deps = new List<Dependency>();
-            foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "PackageReference"))
+            foreach (var reference in proj.GetItems(itemType: "PackageReference"))
             {
                 var versionMetaData = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
                 VersionRange? version_range;
@@ -56,7 +62,7 @@ internal class ProjFileStandardPackageReferenceHandler : IDependencyResolver
                 deps.Add(item: dep);
             }
 
-            foreach (var reference in proj.GetItemsIgnoringCondition(itemType: "Reference"))
+            foreach (var reference in proj.GetItems(itemType: "Reference"))
             {
                 if (reference.Xml != null && !string.IsNullOrWhiteSpace(value: reference.Xml.Include) &&
                     reference.Xml.Include.Contains("Version="))

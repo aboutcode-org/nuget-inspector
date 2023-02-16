@@ -8,6 +8,7 @@
         "--project-file /packages-config/packages.config4/Sample.Nexb.csproj",
         "--target-framework netcoreapp3.1"
       ],
+      "project_framework": "netcoreapp3.1",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
