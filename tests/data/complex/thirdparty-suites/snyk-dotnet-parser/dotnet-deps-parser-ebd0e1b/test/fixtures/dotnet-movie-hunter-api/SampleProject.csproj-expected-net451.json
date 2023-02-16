@@ -8,6 +8,7 @@
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-movie-hunter-api/SampleProject.csproj",
         "--target-framework net451"
       ],
+      "project_framework": "net451",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

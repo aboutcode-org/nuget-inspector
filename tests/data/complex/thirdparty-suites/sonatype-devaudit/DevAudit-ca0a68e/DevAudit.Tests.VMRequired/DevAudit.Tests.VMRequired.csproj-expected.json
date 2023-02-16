@@ -7,6 +7,7 @@
       "options": [
         "--project-file /complex/thirdparty-suites/sonatype-devaudit/DevAudit-ca0a68e/DevAudit.Tests.VMRequired/DevAudit.Tests.VMRequired.csproj"
       ],
+      "project_framework": "net461",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

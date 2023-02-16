@@ -63,24 +63,49 @@ def test_nuget_inspector_end_to_end_with_projects(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
-def test_nuget_inspector_end_to_end_with_target_framework():
+def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_config_1():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
+    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
-        extra_args=' --target-framework "netcoreapp3.1" ',
+        extra_args=f' --target-framework "netcoreapp3.1" --nuget-config {nuget_config}',
         regen=REGEN_TEST_FIXTURES,
     )
 
 
-def test_nuget_inspector_end_to_end_with_target_framework2():
+def test_nuget_inspector_end_to_end_file_target_with_framework_and_nuget_config_2():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
+    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
-        extra_args=' --target-framework "net45" ',
+        extra_args=f' --target-framework "net45" --nuget-config {nuget_config}',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_file_target_with_default_framework_and_nuget_config_3():
+    test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
+    expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-no-target.json"
+    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=f' --nuget-config {nuget_config}',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
+def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net60():
+    test_path = "packages-config/packages.config4/Sample.Nexb.csproj"
+    expected_path = "packages-config/packages.config4/Sample.Nexb.csproj-expected-net6.0.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --target-framework "net6.0" ',
         regen=REGEN_TEST_FIXTURES,
     )
 

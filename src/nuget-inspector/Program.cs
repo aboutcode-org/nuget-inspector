@@ -56,7 +56,9 @@ internal static class Program
                 nugetConfig: options.NugetConfigPath);
 
             var project_options = new ProjectScannerOptions(options: options);
-            var inspector = new ProjectScanner(options: project_options, nuget_api_service: nuget_api_service);
+            var inspector = new ProjectScanner(
+                options: project_options,
+                nuget_api_service: nuget_api_service);
             var scan = inspector.RunScan();
             if (Config.TRACE) Console.WriteLine("=======================> FetchMetadata");
             inspector.FetchMetadata(scan_result: scan);

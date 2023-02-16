@@ -7,6 +7,7 @@
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-simple-project-with-devDeps/simple-project-with-dev.csproj"
       ],
+      "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

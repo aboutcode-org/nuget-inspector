@@ -7,6 +7,7 @@
       "options": [
         "--project-file /complex/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagereferences/simple-multi-assets/api/api.csproj"
       ],
+      "project_framework": "net45",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

@@ -7,6 +7,7 @@
       "options": [
         "--project-file /complex/thirdparty-suites/sonatype-audit.net/audit.net-6155370/tests/NugetAuditor.Tests/NugetAuditor.Tests.csproj"
       ],
+      "project_framework": "net472",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

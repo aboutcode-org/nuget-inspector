@@ -8,6 +8,7 @@
         "--project-file /complex/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.csproj",
         "--target-framework net461"
       ],
+      "project_framework": "net461",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

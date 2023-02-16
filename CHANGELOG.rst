@@ -1,21 +1,43 @@
 Changelog
 =========
 
+v0.9.0
+-------
+
+This is a major release with these updates:
+
+* Correctly consider target framework conditions when processing project files.
+  This was a bug that has been fixed and the fix has been validated against
+  running the corresponding dotnet commands
+
+* Correctly collect target framework(s) from a project file when there are more
+  than one target, and when there are for legacy version references.
+
+* Include the "project_framework" target framework moniker in the scan headers
+  using the effective target framework used for the resolution, either the one
+  provided at the command line of the default first framework.
+
 
 v0.8.0
 -------
 
 This is a major release with these updates:
 
-* Ignore prerelease in resolution. By default we should not includePrerelease and not includeUnlisted
-  in the resolution. This should be a command line option in the future.
-  (except for metadata where we fetch pre-release if requested)
+* Ignore prerelease in resolution. By default we should not includePrerelease
+  and not includeUnlisted in the resolution. This should be a command line
+  option in the future. (except for metadata where we fetch pre-release if requested)
+
 * Respect the TargetFramework in packages.config. Test for framework compatibility
   between project and package and skip non-compatible packages.
+
 * Correctly extract target framework from legacy project files
+
 * Ensure that transitive dependencies are reported correctly
+
 * Include keywords from tags
+
 * Include owners as Parties and improve reporting of authors
+
 * Ensure we correctly report dependency URLs and do not fail when Home URL is missing
 
 
@@ -25,6 +47,7 @@ v0.7.2
 This is a minor release with these updates:
 
 * Add new command line options for --version and --about
+
 * Ensure that we collect metadata for nested dependencies
 
 

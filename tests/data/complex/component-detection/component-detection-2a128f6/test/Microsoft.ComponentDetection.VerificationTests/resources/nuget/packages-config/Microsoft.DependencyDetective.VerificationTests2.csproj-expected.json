@@ -7,6 +7,7 @@
       "options": [
         "--project-file /complex/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.VerificationTests/resources/nuget/packages-config/Microsoft.DependencyDetective.VerificationTests2.csproj"
       ],
+      "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []

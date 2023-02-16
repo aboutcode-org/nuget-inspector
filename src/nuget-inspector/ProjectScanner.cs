@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using System.Xml.Linq;
+using System.Xml;
 using NuGet.Frameworks;
 
 namespace NugetInspector;
@@ -41,6 +41,7 @@ public class ProjectScannerOptions : Options
     public string? ProjectJsonPath { get; set; }
     public string? ProjectJsonLockPath { get; set; }
     public string? ProjectAssetsJsonPath { get; set; }
+    public string? ProjectFramework { get; set; } = "";
 }
 
 internal class ProjectScanner
@@ -213,26 +214,47 @@ internal class ProjectScanner
             version: Options.ProjectVersion,
             datafile_path: Options.ProjectFilePath
         );
+
         // Force using the provided framework if present
-        NuGetFramework? project_target_framework;
+        NuGetFramework? project_target_framework = null;
+        if (Config.TRACE)
+            Console.WriteLine($"  option_target_framework: {Options.TargetFramework}");
         if (!string.IsNullOrWhiteSpace(Options.TargetFramework))
         {
+            if (Config.TRACE)
+                Console.WriteLine($"    project_target_framework, before parsefolder: {project_target_framework}");
             string option_target_framework = Options.TargetFramework.ToLowerInvariant();
             project_target_framework = NuGetFramework.ParseFolder(folderName: option_target_framework);
         }
-        else
-        {
-            // use the 1st framework found in the project
-            project_target_framework = ParseTargetFramework();
-        }
         if (Config.TRACE)
+            Console.WriteLine($"    project_target_framework, parsefolder: {project_target_framework}");
+
+        // ... Or use the 1st framework found in the project
+        if (project_target_framework == null || project_target_framework.Framework == "Unsupported")
         {
-            Console.WriteLine($"project_target_framework: {project_target_framework}");
+            if (Config.TRACE)
+                Console.WriteLine($"  project_target_framework, before parse: {project_target_framework}");
+            project_target_framework = FindProjectTargetFramework(Options.ProjectFilePath);
         }
+
+        if (Config.TRACE)
+            Console.WriteLine($"    project_target_framework, parse: {project_target_framework}");
+
+        // ... Or fallback to "any" framework meaning really anything flies
+        if (project_target_framework == null || project_target_framework.Framework == "Unsupported")
+        {
+            if (Config.TRACE)
+                Console.WriteLine($"    project_target_framework, before fallback: {project_target_framework}");
+            project_target_framework = NuGetFramework.AnyFramework;
+        }
+
+        if (Config.TRACE)
+            Console.WriteLine($"  project_target_framework, final: {project_target_framework.GetShortFolderName()}");
+        Options.ProjectFramework = project_target_framework.GetShortFolderName();
 
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
         bool hasProjectAssetsJson = FileExists(path: Options.ProjectAssetsJsonPath!);
-        // legacy formats
+        // legacy lockfile formats
         bool hasProjectJson = FileExists(path: Options.ProjectJsonPath!);
         bool hasProjectJsonLock = FileExists(path: Options.ProjectJsonLockPath!);
 
@@ -248,8 +270,8 @@ internal class ProjectScanner
             // project.assets.json is the gold standard when available
             if (Config.TRACE)
                 Console.WriteLine($"Using project.assets.json file: {Options.ProjectAssetsJsonPath}");
-            var projectAssetsJsonResolver =
-                new ProjectAssetsJsonHandler(projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
+            var projectAssetsJsonResolver = new ProjectAssetsJsonHandler(
+                projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Resolve();
             package.packages = projectAssetsJsonResult.Packages;
             package.dependencies = projectAssetsJsonResult.Dependencies;
@@ -260,8 +282,8 @@ internal class ProjectScanner
             // projects.json.lock is legacy but should be used if present
             if (Config.TRACE)
                 Console.WriteLine($"Using legacy projects.json.lock: {Options.ProjectJsonLockPath}");
-            var projectJsonLockResolver =
-                new LegacyProjectLockJsonHandler(projectLockJsonPath: Options.ProjectJsonLockPath!);
+            var projectJsonLockResolver = new LegacyProjectLockJsonHandler(
+                projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Resolve();
             package.packages = projectJsonLockResult.Packages;
             package.dependencies = projectJsonLockResult.Dependencies;
@@ -328,8 +350,7 @@ internal class ProjectScanner
 
         if (Config.TRACE)
         {
-            Console.WriteLine(
-                $"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
+            Console.WriteLine($"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
             Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch!.ElapsedMilliseconds} ms.");
         }
 
@@ -340,73 +361,59 @@ internal class ProjectScanner
     /// Return true if the "path" strings is an existing file.
     /// </summary>
     /// <param name="path"></param>
-    /// <returns></returns>
+    /// <returns>bool</returns>
     private static bool FileExists(string path)
     {
         return !string.IsNullOrWhiteSpace(value: path) && File.Exists(path: path);
     }
 
     /// <summary>
-    /// Return a NuGetFramework string or null as found in the *.*proj XML file.
+    /// Return the first NuGetFramework found in the *.*proj XML file or null.
     /// Handles new and legacy style target framework references.
-    /// </summary>
-    private NuGetFramework? ParseTargetFramework()
-    {
-        try
-        {
-            var (target_framework, is_legacy) = ExtractTargetFramework(projectFilePath: Options.ProjectFilePath);
-            if (!is_legacy)
-            {
-                return NuGetFramework.ParseFolder(folderName: target_framework);
-            }
-            else
-            {
-                var version = Version.Parse(target_framework.Trim('v', 'V'));
-                return new NuGetFramework(FrameworkConstants.FrameworkIdentifiers.Net, version);
-            }
-        }
-        catch (Exception)
-        {
-            if (Config.TRACE) Console.WriteLine("Failed to parse ParseTargetFramework.");
-            return null;
-        }
-    }
-
-    /// <summary>
-    /// Return the first TargetFramework string found in the *.*proj XML file
-    /// and a legacy flag if the project file is an older style using the
-    /// "targetframeworkversion" XML element.
     /// </summary>
     /// <param name="projectFilePath"></param>
     /// <returns></returns>
-    private static (string, bool) ExtractTargetFramework(string projectFilePath)
+    private static NuGetFramework? FindProjectTargetFramework(string projectFilePath)
     {
-        var csproj = XElement.Load(uri: projectFilePath);
+        var doc = new XmlDocument();
+        doc.Load(filename: projectFilePath);
 
-        bool is_legacy = csproj
-            .Descendants()
-            .Where(predicate: e => string.Equals(e.Name.LocalName, "targetframeworkversion", StringComparison.InvariantCultureIgnoreCase))
-            .ToList().Any();
-
-        IEnumerable<string> target_framework_tags = new[] { "targetframeworkversion", "targetframework", "targetframeworks" };
-        var targetFrameworks = csproj.Descendants()
-            .Where(predicate: e => target_framework_tags.Contains(value: e.Name.LocalName.ToLowerInvariant()))
-            .ToList();
-
-        if (!targetFrameworks.Any())
+        var target_framework_version = doc.GetElementsByTagName(name: "TargetFrameworkVersion");
+        foreach (XmlNode tfv in target_framework_version)
         {
-            if (Config.TRACE)
-                Console.WriteLine($"Warning - Target Framework: Could not extract a target framework for {projectFilePath}");
-            return (string.Empty, false);
+            var framework_version = tfv.InnerText.Trim();
+            if (!string.IsNullOrWhiteSpace(framework_version))
+            {
+                var version = Version.Parse(framework_version.Trim('v', 'V'));
+                return new NuGetFramework(FrameworkConstants.FrameworkIdentifiers.Net, version);
+            }
         }
 
-        if (Config.TRACE)
+        var target_framework = doc.GetElementsByTagName(name: "TargetFramework");
+        foreach (XmlNode tf in target_framework)
         {
-            if (targetFrameworks.Count > 1)
-                Console.WriteLine($"Warning - Multiple target frameworks for {projectFilePath}");
-            Console.WriteLine($"TargetFramework(s): {string.Join(separator: Environment.NewLine, values: targetFrameworks)}");
+            var framework_moniker = tf.InnerText.Trim();
+            if (!string.IsNullOrWhiteSpace(framework_moniker))
+            {
+                return NuGetFramework.ParseFolder(framework_moniker);
+            }
         }
 
-        return (targetFrameworks[0].Value, is_legacy);
+        var target_frameworks = doc.GetElementsByTagName(name: "TargetFrameworks");
+        foreach (XmlNode tf in target_frameworks)
+        {
+            var framework_monikers = tf.InnerText.Trim();
+            if (!string.IsNullOrWhiteSpace(framework_monikers))
+            {
+                var monikers = framework_monikers.Split(";", StringSplitOptions.RemoveEmptyEntries);
+                foreach (var moniker in monikers)
+                {
+                     if (!string.IsNullOrWhiteSpace(moniker))
+                        return NuGetFramework.ParseFolder(moniker.Trim());
+                }
+            }
+        }
+
+        return null;
     }
 }
