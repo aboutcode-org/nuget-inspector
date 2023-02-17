@@ -231,7 +231,12 @@ namespace NugetInspector
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
-            IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(name: name, version: version);
+            IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(
+                name: name,
+                version: version,
+                use_cache: true,
+                include_prerelease: true);
+
             if (meta ==null)
             {
                 // Try again this time bypassing cache and also looking for pre-releases
@@ -240,7 +245,7 @@ namespace NugetInspector
                     version: version,
                     use_cache: false,
                     include_prerelease: true);
-                if (meta ==null)
+                if (meta == null)
                     return;
             }
 
@@ -318,13 +323,19 @@ namespace NugetInspector
             if (metadata.ProjectUrl != null)
                 homepage_url = metadata.ProjectUrl.ToString();
 
-            // TODO consider instead: https://api.nuget.org/packages/{name}.{version}.nupkg
+            string name_lower = meta_name.ToLower();
+            string version_lower = meta_version.ToLower();
+
+            // TODO consider instead: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg
+            // TODO consider instead: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.nuspec
+            // TODO consider instead: https://api.nuget.org/packages/{name_lower}.{version_lower}.nupkg
+            // this is the URL from the home page
             download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
 
             repository_homepage_url = metadata.PackageDetailsUrl.ToString();
             repository_download_url = download_url;
-            api_data_url =
-                $"https://api.nuget.org/v3/registration5-semver1/{meta_name.ToLower()}/{meta_version.ToLower()}.json";
+            // TODO consider also https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json
+            api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{name_lower}/{version_lower}.json";
 
             // source_packages = null;
             // dependencies = null;
