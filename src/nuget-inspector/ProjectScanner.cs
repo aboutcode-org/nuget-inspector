@@ -98,6 +98,12 @@ internal class ProjectScanner
             if (Config.TRACE)
                 Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
         }
+        if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
+        {
+            Options.ProjectVersion = "1.0.0";
+            if (Config.TRACE)
+                Console.WriteLine("Fallback to default .Net version of 1.0.0");
+        }
     }
 
     /// <summary>
