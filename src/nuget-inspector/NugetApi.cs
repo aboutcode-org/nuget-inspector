@@ -15,6 +15,7 @@ public class NugetApi
     private readonly List<DependencyInfoResource> DependencyInfoResourceList = new();
     private readonly Dictionary<string, List<IPackageSearchMetadata>> lookupCache = new();
     private readonly List<PackageMetadataResource> MetadataResourceList = new();
+    private readonly SourceCacheContext cache_context = new();
 
     public NugetApi(string nugetApiFeedUrl, string nugetConfig)
     {
@@ -145,16 +146,14 @@ public class NugetApi
             try
             {
                 Stopwatch stop_watch = Stopwatch.StartNew();
-                SourceCacheContext context = new();
-                IEnumerable<IPackageSearchMetadata>? package_metadata = metadata_resource
-                    .GetMetadataAsync(
-                        packageId: name,
-                        includePrerelease: include_prerelease,
-                        includeUnlisted: include_prerelease,
-                        sourceCacheContext: context,
-                        log: new NugetLogger(),
-                        token: CancellationToken.None
-                    ).Result;
+                IEnumerable<IPackageSearchMetadata>? package_metadata = metadata_resource.GetMetadataAsync(
+                    packageId: name,
+                    includePrerelease: include_prerelease,
+                    includeUnlisted: include_prerelease,
+                    sourceCacheContext: cache_context,
+                    log: new NugetLogger(),
+                    token: CancellationToken.None
+                ).Result;
 
                 // if (Config.TRACE)
                 //     Console.WriteLine($"Took {stop_watch.ElapsedMilliseconds} ms to fetch metadata resource for '{name}'");
@@ -217,6 +216,7 @@ public class NugetApi
                 List<PackageSource> packageSources = package_sources.ToList();
                 if (Config.TRACE)
                     Console.WriteLine($"Loaded {packageSources.Count} package sources from nuget config.");
+
                 foreach (var package_source in packageSources)
                 {
                     if (Config.TRACE) Console.WriteLine($"Found package source: {package_source.Source}");
@@ -229,15 +229,13 @@ public class NugetApi
             }
         }
 
-        var splitRepoUrls = nuget_api_feed_url.Split(separator: new[] { ',' });
-        foreach (var repoUrl in splitRepoUrls)
+        foreach (var repoUrl in nuget_api_feed_url.Split(","))
         {
             var url = repoUrl.Trim();
-            if (!string.IsNullOrWhiteSpace(value: url))
-            {
-                var packageSource = new PackageSource(source: url);
-                AddPackageSource(providers: providers, package_source: packageSource);
-            }
+            if (string.IsNullOrWhiteSpace(value: url))
+                continue;
+            var packageSource = new PackageSource(source: url);
+            AddPackageSource(providers: providers, package_source: packageSource);
         }
     }
 
@@ -261,9 +259,7 @@ public class NugetApi
         {
             if (Config.TRACE)
             {
-                Console.WriteLine(
-                    value:
-                    $"Error loading NuGet PackageMetadataResource resource from url: {package_source.SourceUri}");
+                Console.WriteLine($"Error loading NuGet PackageMetadataResource resource from url: {package_source.SourceUri}");
                 if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
             }
         }
@@ -291,30 +287,47 @@ public class NugetApi
 
     public IEnumerable<PackageDependency> DependenciesForPackage(PackageIdentity identity, NuGetFramework? framework)
     {
+        var package_info = GetPackageInfo(identity: identity,framework:framework);
+        if (package_info != null)
+        {
+            return package_info.Dependencies;
+        } else {
+            return new List<PackageDependency>();
+        }
+    }
+
+    /// <summary>
+    /// Return a SourcePackageDependencyInfo or null for a given package.
+    /// </summary>
+    public SourcePackageDependencyInfo? GetPackageInfo(
+        PackageIdentity identity,
+        NuGetFramework? framework)
+    {
         foreach (var dependencyInfoResource in DependencyInfoResourceList)
         {
             try
             {
-                SourceCacheContext context = new();
                 Task<SourcePackageDependencyInfo>? infoTask = dependencyInfoResource.ResolvePackage(
                     package: identity,
                     projectFramework: framework,
-                    cacheContext: context,
+                    cacheContext: cache_context,
                     log: new NugetLogger(),
                     token: CancellationToken.None);
                 SourcePackageDependencyInfo result = infoTask.Result;
-                return result.Dependencies;
+
+                if (Config.TRACE && result !=null)
+                    Console.WriteLine($"GetPackageInfo: {identity} url: {result.DownloadUri} hash: {result.PackageHash}");
+                return result;
             }
             catch (Exception e)
             {
                 if (Config.TRACE)
                 {
-                    Console.WriteLine($"Dependency not found for package: {identity}");
+                    Console.WriteLine($"SourcePackageDependencyInfo not found for package: {identity}");
                     if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
                 }
             }
         }
-
-        return new List<PackageDependency>();
+        return null;
     }
 }
