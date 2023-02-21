@@ -60,9 +60,7 @@ internal static class Program
                 options: project_options,
                 nuget_api_service: nuget_api_service);
             var scan = inspector.RunScan();
-            if (Config.TRACE) Console.WriteLine("=======================> FetchMetadata");
             inspector.FetchMetadata(scan_result: scan);
-            if (Config.TRACE) Console.WriteLine("=======================> FetchMetadata");
 
             try
             {

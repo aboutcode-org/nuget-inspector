@@ -221,41 +221,23 @@ internal class ProjectScanner
             datafile_path: Options.ProjectFilePath
         );
 
-        // Force using the provided framework if present
         NuGetFramework? project_target_framework = null;
-        if (Config.TRACE)
-            Console.WriteLine($"  option_target_framework: {Options.TargetFramework}");
+
+        // Force using the provided framework if present
         if (!string.IsNullOrWhiteSpace(Options.TargetFramework))
-        {
-            if (Config.TRACE)
-                Console.WriteLine($"    project_target_framework, before parsefolder: {project_target_framework}");
-            string option_target_framework = Options.TargetFramework.ToLowerInvariant();
-            project_target_framework = NuGetFramework.ParseFolder(folderName: option_target_framework);
-        }
-        if (Config.TRACE)
-            Console.WriteLine($"    project_target_framework, parsefolder: {project_target_framework}");
+            project_target_framework = NuGetFramework.ParseFolder(folderName: Options.TargetFramework.ToLower());
 
         // ... Or use the 1st framework found in the project
         if (project_target_framework == null || project_target_framework.Framework == "Unsupported")
-        {
-            if (Config.TRACE)
-                Console.WriteLine($"  project_target_framework, before parse: {project_target_framework}");
             project_target_framework = FindProjectTargetFramework(Options.ProjectFilePath);
-        }
-
-        if (Config.TRACE)
-            Console.WriteLine($"    project_target_framework, parse: {project_target_framework}");
 
         // ... Or fallback to "any" framework meaning really anything flies
         if (project_target_framework == null || project_target_framework.Framework == "Unsupported")
-        {
-            if (Config.TRACE)
-                Console.WriteLine($"    project_target_framework, before fallback: {project_target_framework}");
             project_target_framework = NuGetFramework.AnyFramework;
-        }
 
         if (Config.TRACE)
-            Console.WriteLine($"  project_target_framework, final: {project_target_framework.GetShortFolderName()}");
+            Console.WriteLine($"  project_target_framework: {project_target_framework.GetShortFolderName()}");
+
         Options.ProjectFramework = project_target_framework.GetShortFolderName();
 
         bool hasPackagesConfig = FileExists(path: Options.PackagesConfigPath!);
@@ -326,30 +308,36 @@ internal class ProjectScanner
             // In the most common case we use the *proj file and its PackageReference
             if (Config.TRACE)
                 Console.WriteLine($"Attempting package-reference resolver: {Options.ProjectFilePath}");
-            var pkgRefResolver = new ProjFileStandardPackageReferenceHandler(
+
+            ProjFileStandardPackageReferenceHandler projfile_resolver = new(
                 projectPath: Options.ProjectFilePath,
                 nugetApi: NugetApiService,
                 projectTargetFramework: project_target_framework);
 
-            var projectReferencesResult = pkgRefResolver.Resolve();
+            DependencyResolution dependency_resolution = projfile_resolver.Resolve();
 
-            if (projectReferencesResult.Success)
+            if (dependency_resolution.Success)
             {
                 if (Config.TRACE) Console.WriteLine("ProjFileStandardPackageReferenceHandler success.");
-                package.packages = projectReferencesResult.Packages;
-                package.dependencies = projectReferencesResult.Dependencies;
+                package.packages = dependency_resolution.Packages;
+                package.dependencies = dependency_resolution.Dependencies;
                 package.datasource_id = ProjFileStandardPackageReferenceHandler.DatasourceId;
             }
             else
             {
-                if (Config.TRACE) Console.WriteLine("Using Fallback XML project file reader and resolver.");
+                if (Config.TRACE){
+                    Console.WriteLine($"Failed to use projfile_resolver: {dependency_resolution.ErrorMessage}");
+                    Console.WriteLine("Using Fallback XML project file reader and resolver.");
+                }
                 var xmlResolver =
-                    new ProjFileXmlParserPackageReferenceHandler(projectPath: Options.ProjectFilePath,
-                        nugetApi: NugetApiService, project_target_framework: project_target_framework);
-                var xmlResult = xmlResolver.Resolve();
-                package.version = xmlResult.ProjectVersion;
-                package.packages = xmlResult.Packages;
-                package.dependencies = xmlResult.Dependencies;
+                    new ProjFileXmlParserPackageReferenceHandler(
+                        projectPath: Options.ProjectFilePath,
+                        nugetApi: NugetApiService,
+                        project_target_framework: project_target_framework);
+                DependencyResolution xml_dependecy_resolution = xmlResolver.Resolve();
+                package.version = xml_dependecy_resolution.ProjectVersion;
+                package.packages = xml_dependecy_resolution.Packages;
+                package.dependencies = xml_dependecy_resolution.Dependencies;
                 package.datasource_id = ProjFileXmlParserPackageReferenceHandler.DatasourceId;
             }
         }

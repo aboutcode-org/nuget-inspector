@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
 using NuGet.Frameworks;
 using NuGet.Packaging;
-using NuGet.Protocol.Core.Types;
+using NuGet.Packaging.Core;
+using NuGet.Protocol;
+using NuGet.Protocol.Core;
 using NuGet.Versioning;
 
 namespace NugetInspector
@@ -204,13 +206,13 @@ namespace NugetInspector
 
         protected bool Equals(BasePackage other)
         {
-            return type == other.type
+            return (
+                type == other.type
                 && name_space == other.name_space
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
-                && subpath == other.subpath
-            ;
+                && subpath == other.subpath);
         }
 
         public override bool Equals(object? obj)
@@ -231,13 +233,13 @@ namespace NugetInspector
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
-            IPackageSearchMetadata? meta = nugetApi.FindPackageVersion(
+            PackageSearchMetadataRegistration? meta = nugetApi.FindPackageVersion(
                 name: name,
                 version: version,
                 use_cache: true,
                 include_prerelease: true);
 
-            if (meta ==null)
+            if (meta == null)
             {
                 // Try again this time bypassing cache and also looking for pre-releases
                 meta = nugetApi.FindPackageVersion(
@@ -250,13 +252,25 @@ namespace NugetInspector
             }
 
             Update(meta);
+
+            // also fetch API-provided download URL and package hash
+            PackageIdentity identity = new(id: name , version: new NuGetVersion(version));
+            var download = nugetApi.GetPackageDownload(identity: identity);
+            if (download != null)
+            {
+                download_url = download.download_url;
+                if (download.hash_algorithm == "SHA512")
+                    sha512 = download.hash;
+                if (download.size != null)
+                    size = (int)download.size;
+            }
         }
 
         /// <summary>
-        /// Update this Package instance from an IPackageSearchMetadata
+        /// Update this Package instance from an PackageSearchMetadataRegistration
         /// </summary>
         /// <param name="metadata"></param>
-        public void Update(IPackageSearchMetadata? metadata)
+        public void Update(PackageSearchMetadataRegistration? metadata)
         {
             if (metadata == null)
                 return;
@@ -326,16 +340,15 @@ namespace NugetInspector
             string name_lower = meta_name.ToLower();
             string version_lower = meta_version.ToLower();
 
-            // TODO consider instead: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg
-            // TODO consider instead: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.nuspec
+            // TODO consider also: https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}
+            // TODO consider also: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.nuspec
             // TODO consider instead: https://api.nuget.org/packages/{name_lower}.{version_lower}.nupkg
             // this is the URL from the home page
-            download_url = $"https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}";
+            download_url = $"https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg";
+            repository_download_url = download_url;
 
             repository_homepage_url = metadata.PackageDetailsUrl.ToString();
-            repository_download_url = download_url;
-            // TODO consider also https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json
-            api_data_url = $"https://api.nuget.org/v3/registration5-semver1/{name_lower}/{version_lower}.json";
+            api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
 
             // source_packages = null;
             // dependencies = null;
@@ -365,5 +378,21 @@ namespace NugetInspector
         public bool is_resolved { get; set; }
         public BasePackage? resolved_package { get; set; }
         public Dictionary<string, string> extra_data { get; set; } = new();
+    }
+
+    /// <summary>
+    /// A PackageDownload has a URL and checkcum
+    /// </summary>
+    public class PackageDownload
+    {
+        public string download_url { get; set; } = "";
+        public string hash { get; set; } = "";
+        public string hash_algorithm { get; set; } = "";
+        public int? size { get; set; } = 0;
+
+        public bool IsEnhanced(){
+            return !string.IsNullOrWhiteSpace(download_url)
+            && !string.IsNullOrWhiteSpace(hash);
+        }
     }
 }
