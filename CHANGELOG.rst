@@ -1,6 +1,22 @@
 Changelog
 =========
 
+
+v0.9.1
+-------
+
+This is a feature update release with these updates:
+
+* Add package SHA512, size and update download URL to metadata
+  We now collect the download URL from the API (as opposed to compute this
+  from a template). We also collect the size. This is however about
+  7 times slower (the test suite takes 7 times more to complete).
+
+* We also use the registration URL for the API URL.
+
+* Bump to use NuGet libraries 6.4.x
+
+
 v0.9.0
 -------
 

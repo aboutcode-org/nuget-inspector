@@ -1,4 +1,4 @@
-﻿using NuGet.Protocol.Core.Types;
+﻿using NuGet.Protocol;
 
 namespace NugetInspector;
 
@@ -25,7 +25,7 @@ public class NugetApiResolver
 
     public void Add(Dependency packageDependency)
     {
-        IPackageSearchMetadata? package = nugetApi.FindPackageVersion(
+        PackageSearchMetadataRegistration? package = nugetApi.FindPackageVersion(
             id: packageDependency.name,
             versionRange: packageDependency.version_range);
         if (package == null)
@@ -63,28 +63,23 @@ public class NugetApiResolver
             }
             else
             {
-                IPackageSearchMetadata? api_package_metadata = nugetApi.FindPackageVersion(
+                PackageSearchMetadataRegistration? api_package_metadata = nugetApi.FindPackageVersion(
                     id: dependency.Id,
                     versionRange: dependency.VersionRange);
                 if (api_package_metadata == null)
                 {
                     if (Config.TRACE)
-                    {
                         Console.WriteLine($"Unable to find package for '{dependency.Id}' version '{dependency.VersionRange}'");
-                    }
                     continue;
                 }
 
-                var id = new BasePackage(
+                var base_package = new BasePackage(
                     name: api_package_metadata.Identity.Id,
                     version: api_package_metadata.Identity.Version.ToNormalizedString());
 
-                if (Config.TRACE)
-                    Console.WriteLine($"Package details: Description: {api_package_metadata.Description}");
+                dependencies.Add(item: base_package);
 
-                dependencies.Add(item: id);
-
-                if (!builder.DoesPackageExist(package: id))
+                if (!builder.DoesPackageExist(package: base_package))
                 {
                     Add(packageDependency: new Dependency(
                         name: dependency.Id,
