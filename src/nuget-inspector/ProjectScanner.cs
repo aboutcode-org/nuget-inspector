@@ -357,7 +357,7 @@ internal class ProjectScanner
             ProjectFileProcessor projfile_resolver = new(
                 projectPath: Options.ProjectFilePath,
                 nugetApi: NugetApiService,
-                projectTargetFramework: project_target_framework);
+                project_target_framework: project_target_framework);
 
             DependencyResolution dependency_resolution = projfile_resolver.Resolve();
 
@@ -379,6 +379,7 @@ internal class ProjectScanner
                         projectPath: Options.ProjectFilePath,
                         nugetApi: NugetApiService,
                         project_target_framework: project_target_framework);
+
                 DependencyResolution xml_dependecy_resolution = xmlResolver.Resolve();
                 package.version = xml_dependecy_resolution.ProjectVersion;
                 package.packages = xml_dependecy_resolution.Packages;
