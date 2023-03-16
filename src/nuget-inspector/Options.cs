@@ -103,14 +103,17 @@ public class Options
         }
         catch (OptionException)
         {
-            ShowHelpMessage(message: "Error: Unexpected extra argument or option. usage is: nuget-inspector [OPTIONS]",
+            ShowHelpMessage(
+                message: "Error: Unexpected extra argument or option. Usage is: nuget-inspector [OPTIONS]",
                 optionSet: command_options);
             return null;
         }
 
         if (options.ShowHelp)
         {
-            ShowHelpMessage(message: "Usage: nuget-inspector [OPTIONS]", optionSet: command_options);
+            ShowHelpMessage(
+                message: "Usage: nuget-inspector [OPTIONS]",
+                optionSet: command_options);
             return null;
         }
 
@@ -121,16 +124,31 @@ public class Options
         }
         if (options.ShowAbout)
         {
-            string message = ($"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
-                              + "Inspect .NET code and NuGet package manifests. Resolve NuGet dependencies.\n"
-                              + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
-                              + "Copyright (c) nexB Inc. and others.\n"
-                              + "https://github.com/nexB/nuget-inspector");
+            string message = (
+                $"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
+                + "Inspect .NET code and NuGet package manifests. Resolve NuGet dependencies.\n"
+                + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
+                + "Copyright (c) nexB Inc. and others.\n"
+                + "https://github.com/nexB/nuget-inspector");
             Console.Error.WriteLine(message);
             return null;
         }
 
-        // TODO: raise error if input or output are missing
+        if (string.IsNullOrEmpty(options.ProjectFilePath))
+        {
+            ShowHelpMessage(
+                message: "Error: missing required --project-file option. Usage: nuget-inspector [OPTIONS]",
+                optionSet: command_options);
+            return null;
+        }
+
+        if (string.IsNullOrEmpty(options.OutputFilePath))
+        {
+            ShowHelpMessage(
+                message: "Error: missing required --json option. Usage: nuget-inspector [OPTIONS]",
+                optionSet: command_options);
+            return null;
+        }
 
         return options;
     }

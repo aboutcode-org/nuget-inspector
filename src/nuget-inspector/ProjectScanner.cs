@@ -77,6 +77,8 @@ internal class ProjectScanner
 
         string project_directory = Options.ProjectDirectory;
 
+        // TODO: Also rarer files named packahes.<project name>.congig
+        // See CommandLineUtility.IsValidConfigFileName(Path.GetFileName(path) 
         if (string.IsNullOrWhiteSpace(value: Options.PackagesConfigPath))
             Options.PackagesConfigPath = combine_paths(project_directory, "packages.config");
 
@@ -98,12 +100,12 @@ internal class ProjectScanner
             if (Config.TRACE)
                 Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
         }
-        if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
-        {
-            Options.ProjectVersion = "1.0.0";
-            if (Config.TRACE)
-                Console.WriteLine("Fallback to default .Net version of 1.0.0");
-        }
+        // if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
+        // {
+        //     Options.ProjectVersion = "1.0.0";
+        //     if (Config.TRACE)
+        //         Console.WriteLine("Fallback to default .Net version of 1.0.0");
+        // }
     }
 
     /// <summary>
@@ -143,7 +145,6 @@ internal class ProjectScanner
     /// Enhance the packages in scan results with metadata fetched from the NuGet API.
     /// </summary>
     /// <param name="scan_result"></param>
-    /// <returns></returns>
     public void FetchMetadata(ScanResult scan_result)
     {
         foreach (BasePackage package in scan_result.Packages)
@@ -152,8 +153,8 @@ internal class ProjectScanner
             {
                 if (Config.TRACE)
                     Console.WriteLine($"FetchMetadata for '{package.purl}'");
-
-                package.Update(nugetApi: NugetApiService);
+                if (!string.IsNullOrWhiteSpace(package.purl))
+                    package.Update(nugetApi: NugetApiService);
             }
             catch (Exception ex)
             {
@@ -198,6 +199,50 @@ internal class ProjectScanner
                     if (Config.TRACE)
                         Console.WriteLine($"Failed to fetch NuGet API for dep: {dep.purl}: {ex}");
                 }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Enhance the packages in scan results with metadata fetched from the NuGet API.
+    /// </summary>
+    /// <param name="scan_result"></param>
+    /// <returns></returns>
+    public void FetchMetadataNew(ScanResult scan_result)
+    {
+    if (Config.TRACE_META)
+        {
+            int c = scan_result.Packages.Count;
+            Console.WriteLine($"\nFetchMetadata for {c} package(s)");
+        }
+
+    // There is always only one top level package 
+    foreach (BasePackage package in scan_result.Packages)
+        {
+            Update(package);
+        }
+    }
+
+    private void Update(BasePackage package)
+    {
+        var all_packages = package.dependencies.Concat(package.packages).ToList();
+        foreach (BasePackage pack in all_packages)
+        {
+            if (Config.TRACE_META)
+                Console.WriteLine($"        Fetching for dep purl: '{pack.purl}'");
+            if (pack.has_updated_metadata)
+                continue;
+            try
+            {
+                pack.Update(nugetApi: NugetApiService);
+
+                // recursively update the whole packages and deps tree
+                Update(pack);
+            }
+            catch (Exception ex)
+            {
+                if (Config.TRACE_META)
+                    Console.WriteLine($"        Failed to fetch NuGet API for dep: {pack.purl}: {ex}");
             }
         }
     }
@@ -258,58 +303,58 @@ internal class ProjectScanner
             // project.assets.json is the gold standard when available
             if (Config.TRACE)
                 Console.WriteLine($"Using project.assets.json file: {Options.ProjectAssetsJsonPath}");
-            var projectAssetsJsonResolver = new ProjectAssetsJsonHandler(
+            var projectAssetsJsonResolver = new ProjectAssetsJsonProcessor(
                 projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Resolve();
             package.packages = projectAssetsJsonResult.Packages;
             package.dependencies = projectAssetsJsonResult.Dependencies;
-            package.datasource_id = ProjectAssetsJsonHandler.DatasourceId;
+            package.datasource_id = ProjectAssetsJsonProcessor.DatasourceId;
         }
         else if (hasProjectJsonLock)
         {
             // projects.json.lock is legacy but should be used if present
             if (Config.TRACE)
                 Console.WriteLine($"Using legacy projects.json.lock: {Options.ProjectJsonLockPath}");
-            var projectJsonLockResolver = new LegacyProjectLockJsonHandler(
+            var projectJsonLockResolver = new ProjectLockJsonProcessor(
                 projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Resolve();
             package.packages = projectJsonLockResult.Packages;
             package.dependencies = projectJsonLockResult.Dependencies;
-            package.datasource_id = LegacyProjectLockJsonHandler.DatasourceId;
+            package.datasource_id = ProjectLockJsonProcessor.DatasourceId;
         }
         else if (hasPackagesConfig)
         {
             // packages.config is legacy but should be used if present
             if (Config.TRACE)
                 Console.WriteLine($"Using packages.config: {Options.PackagesConfigPath}");
-            var packagesConfigResolver = new PackagesConfigHandler(
+            var packagesConfigResolver = new PackagesConfigProcessor(
                 packages_config_path: Options.PackagesConfigPath!,
                 nuget_api: NugetApiService,
                 project_target_framework: project_target_framework!);
             var packagesConfigResult = packagesConfigResolver.Resolve();
             package.packages = packagesConfigResult.Packages;
             package.dependencies = packagesConfigResult.Dependencies;
-            package.datasource_id = PackagesConfigHandler.DatasourceId;
+            package.datasource_id = PackagesConfigProcessor.DatasourceId;
         }
         else if (hasProjectJson)
         {
             // project.json is legacy but should be used if present
             if (Config.TRACE) Console.WriteLine($"Using legacy project.json: {Options.ProjectJsonPath}");
-            var projectJsonResolver = new LegacyProjectJsonHandler(
+            var projectJsonResolver = new ProjectJsonProcessor(
                 projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Resolve();
             package.packages = projectJsonResult.Packages;
             package.dependencies = projectJsonResult.Dependencies;
-            package.datasource_id = LegacyProjectJsonHandler.DatasourceId;
+            package.datasource_id = ProjectJsonProcessor.DatasourceId;
         }
         else
         {
             // In the most common case we use the *proj file and its PackageReference
             if (Config.TRACE)
-                Console.WriteLine($"Attempting package-reference resolver: {Options.ProjectFilePath}");
+                Console.WriteLine($"Attempting proj file and package-reference resolver: {Options.ProjectFilePath}");
 
-            ProjFileStandardPackageReferenceHandler projfile_resolver = new(
+            ProjectFileProcessor projfile_resolver = new(
                 projectPath: Options.ProjectFilePath,
                 nugetApi: NugetApiService,
                 projectTargetFramework: project_target_framework);
@@ -321,7 +366,7 @@ internal class ProjectScanner
                 if (Config.TRACE) Console.WriteLine("ProjFileStandardPackageReferenceHandler success.");
                 package.packages = dependency_resolution.Packages;
                 package.dependencies = dependency_resolution.Dependencies;
-                package.datasource_id = ProjFileStandardPackageReferenceHandler.DatasourceId;
+                package.datasource_id = ProjectFileProcessor.DatasourceId;
             }
             else
             {
@@ -330,7 +375,7 @@ internal class ProjectScanner
                     Console.WriteLine("Using Fallback XML project file reader and resolver.");
                 }
                 var xmlResolver =
-                    new ProjFileXmlParserPackageReferenceHandler(
+                    new ProjectXmlFileProcessor(
                         projectPath: Options.ProjectFilePath,
                         nugetApi: NugetApiService,
                         project_target_framework: project_target_framework);
@@ -338,7 +383,7 @@ internal class ProjectScanner
                 package.version = xml_dependecy_resolution.ProjectVersion;
                 package.packages = xml_dependecy_resolution.Packages;
                 package.dependencies = xml_dependecy_resolution.Dependencies;
-                package.datasource_id = ProjFileXmlParserPackageReferenceHandler.DatasourceId;
+                package.datasource_id = ProjectXmlFileProcessor.DatasourceId;
             }
         }
 

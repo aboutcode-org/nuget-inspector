@@ -3,7 +3,7 @@ using NuGet.Frameworks;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
 using NuGet.Protocol;
-using NuGet.Protocol.Core;
+using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
 namespace NugetInspector
@@ -13,19 +13,22 @@ namespace NugetInspector
         public string? name;
         public NuGetFramework? framework;
         public VersionRange? version_range;
+       public bool is_direct;
 
-        public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null)
+        public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null, bool is_direct = false)
         {
             this.framework = framework;
             this.name = name;
             this.version_range = version_range;
+            this.is_direct = is_direct;
         }
 
-        public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework)
+        public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework, bool is_direct = false)
         {
             this.framework = framework;
-            name = dependency.Id;
-            version_range = dependency.VersionRange;
+            this.name = dependency.Id;
+            this.version_range = dependency.VersionRange;
+            this.is_direct = is_direct;
         }
 
         /// <summary>
@@ -42,7 +45,7 @@ namespace NugetInspector
         }
     }
 
-    public class PackageBuilder
+    public class PackageTree
     {
         private readonly Dictionary<BasePackage, BasePackage> base_package_deps_by_base_package = new();
         private readonly Dictionary<BasePackage, VersionPair> versions_pair_by_base_package = new();
@@ -92,14 +95,20 @@ namespace NugetInspector
         }
 
         /// <summary>
-        /// Add BasePackage to the packageSets, and dependencies as dependencies.
+        /// Add BasePackage base_package to the packageSets, and dependencies to dependencies.
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="base_package"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage id, List<BasePackage?> dependencies)
+        public void AddOrUpdatePackage(BasePackage base_package, List<BasePackage?> dependencies)
         {
-            var packageWithDeps = GetOrCreateBasePackage(package: id);
-            if (dependencies != null) packageWithDeps.dependencies.AddRange(dependencies!);
+            var packageWithDeps = GetOrCreateBasePackage(package: base_package);
+            foreach (var dep in dependencies)
+            {
+                if (dep != null)
+                {
+                    packageWithDeps.dependencies.Add(dep);
+                }
+            }
             packageWithDeps.dependencies = packageWithDeps.dependencies.Distinct().ToList();
         }
 
@@ -135,7 +144,6 @@ namespace NugetInspector
         }
     }
 
-
     /// <summary>
     /// Package data object using purl as identifying attributes as
     /// specified here https://github.com/package-url/purl-spec
@@ -146,7 +154,7 @@ namespace NugetInspector
     {
         public string type { get; set; } = "nuget";
         [JsonProperty(propertyName: "namespace")]
-        public string name_space { get; set; } = "";
+        public string namespace_ { get; set; } = "";
         public string name { get; set; } = "";
         public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
@@ -183,6 +191,11 @@ namespace NugetInspector
         public List<BasePackage> packages { get; set; } = new();
         public List<BasePackage> dependencies { get; set; } = new();
 
+        // Track if we updated this package metadata
+
+        [JsonIgnore]
+        public bool has_updated_metadata;
+
         public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
         {
             this.name = name;
@@ -208,7 +221,7 @@ namespace NugetInspector
         {
             return (
                 type == other.type
-                && name_space == other.name_space
+                && namespace_ == other.namespace_
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
@@ -225,7 +238,7 @@ namespace NugetInspector
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
+            return HashCode.Combine(type, namespace_, name, version, qualifiers, subpath);
         }
 
         /// <summary>
@@ -233,6 +246,9 @@ namespace NugetInspector
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
+            if (has_updated_metadata)
+                return;
+
             PackageSearchMetadataRegistration? meta = nugetApi.FindPackageVersion(
                 name: name,
                 version: version,
@@ -264,6 +280,7 @@ namespace NugetInspector
                 if (download.size != null)
                     size = (int)download.size;
             }
+            has_updated_metadata = true;
         }
 
         /// <summary>
@@ -389,6 +406,7 @@ namespace NugetInspector
         public string hash { get; set; } = "";
         public string hash_algorithm { get; set; } = "";
         public int? size { get; set; } = 0;
+        public SourcePackageDependencyInfo? package_info = null;
 
         public bool IsEnhanced(){
             return !string.IsNullOrWhiteSpace(download_url)
