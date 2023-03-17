@@ -5,9 +5,9 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-vb-simple-project/manifest.vbproj"
+        "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj"
       ],
-      "project_framework": "net461",
+      "project_framework": "netcoreapp2.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
@@ -18,7 +18,7 @@
     {
       "type": "nuget",
       "namespace": "",
-      "name": "manifest",
+      "name": "example",
       "version": null,
       "qualifiers": "",
       "subpath": "",
@@ -48,7 +48,7 @@
       "repository_download_url": "",
       "api_data_url": "",
       "datasource_id": "dotnet-project-xml",
-      "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-vb-simple-project/manifest.vbproj",
+      "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
       "packages": [],
       "dependencies": []
     }
