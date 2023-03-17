@@ -223,16 +223,6 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
     {
     }
 
-    // public ProjectXmlFileProcessor(
-    //     string projectPath,
-    //     NugetApi nugetApi,
-    //     NuGetFramework? project_target_framework)
-    // {
-        // ProjectPath = projectPath;
-        // this.nugetApi = nugetApi;
-        // ProjectTargetFramework = project_target_framework;
-    // }
-
     /// <summary>
     /// Return a list of Dependency extracted from the raw XML of a project file.
     /// Note that this is used only as a fallback and does not handle the same
