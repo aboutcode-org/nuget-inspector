@@ -242,7 +242,7 @@ namespace NugetInspector
         }
 
         /// <summary>
-        /// Update this Package instance using the NuGet API
+        /// Update this Package instance using the NuGet API to fetch extra metadata
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
