@@ -319,12 +319,13 @@ public class NugetApi
         {
             if (Config.TRACE)
             {
-                Console.WriteLine(
-                    $"Error loading NuGet PackageMetadata or DependencyInfo Resource from url: {package_source.SourceUri}");
+                Console.WriteLine($"AddPackageSource: Error loading Resource from url: {package_source.SourceUri}");
                 if (e.InnerException != null)
                     Console.WriteLine(e.InnerException.Message);
             }
         }
+        if (Config.TRACE)
+            Console.WriteLine("    Added");
     }
 
     /// <summary>

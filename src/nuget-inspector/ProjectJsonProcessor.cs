@@ -30,7 +30,6 @@ internal class ProjectJsonProcessor : IDependencyProcessor
                 name: package.Name,
                 version: package.LibraryRange.VersionRange.OriginalString
             );
-            result.Packages.Add(item: bpwd);
             result.Dependencies.Add(item: bpwd);
         }
 

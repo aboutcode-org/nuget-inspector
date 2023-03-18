@@ -148,13 +148,13 @@ internal class ProjectFileProcessor : IDependencyProcessor
             var resolution = new DependencyResolution
             {
                 Success = true,
-                Packages = deps_helper.GetPackageList(),
                 Dependencies = new List<BasePackage>()
             };
+            var packages = deps_helper.GetPackageList();
 
-            foreach (var package in resolution.Packages)
+            foreach (var package in packages)
             {
-                var references = resolution.Packages.Any(
+                var references = packages.Any(
                     predicate: pkg => pkg.dependencies.Contains(item: package));
                 if (!references && package != null)
                     resolution.Dependencies.Add(item: package);

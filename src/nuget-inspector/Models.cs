@@ -186,9 +186,6 @@ namespace NugetInspector
         public string api_data_url { get; set; } = "";
         public string datasource_id { get; set; } = "";
         public string datafile_path { get; set; } = "";
-
-        // public List<DependentPackage> dependencies { get; set; } = new();
-        public List<BasePackage> packages { get; set; } = new();
         public List<BasePackage> dependencies { get; set; } = new();
 
         // Track if we updated this package metadata
@@ -219,13 +216,13 @@ namespace NugetInspector
 
         protected bool Equals(BasePackage other)
         {
-            return (
+            return
                 type == other.type
                 && namespace_ == other.namespace_
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
-                && subpath == other.subpath);
+                && subpath == other.subpath;
         }
 
         public override bool Equals(object? obj)
@@ -243,8 +240,19 @@ namespace NugetInspector
 
         /// <summary>
         /// Update this Package instance using the NuGet API to fetch extra metadata
+        /// and also update all its dependencies recursively.
         /// </summary>
         public void Update(NugetApi nugetApi)
+        {
+            UpdateWithRemoteMetadata(nugetApi);
+            foreach (var dep in dependencies)
+                dep.Update(nugetApi);
+        }
+
+        /// <summary>
+        /// Update this Package instance using the NuGet API to fetch extra metadata
+        /// </summary>
+        public void UpdateWithRemoteMetadata(NugetApi nugetApi)
         {
             if (has_updated_metadata)
                 return;
@@ -368,17 +376,13 @@ namespace NugetInspector
             api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
 
             // source_packages = null;
-            // dependencies = null;
         }
 
         /// <summary>
         /// Sort recursively the lists of packages and dependencies.
         /// </summary>
         public void Sort() {
-            packages.Sort();
             dependencies.Sort();
-            foreach (var pack in packages)
-                pack.Sort();
             foreach (var dep in dependencies)
                 dep.Sort();
         }
@@ -397,6 +401,7 @@ namespace NugetInspector
         public string? url { get; set; } = "";
     }
 
+    // TODO: unused
     public class DependentPackage
     {
         public string purl { get; set; } = "";

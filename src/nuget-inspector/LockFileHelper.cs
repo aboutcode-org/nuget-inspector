@@ -146,34 +146,33 @@ public class LockFileHelper
             }
         }
 
-        if (LockFile != null)
+        if (LockFile == null)
         {
-            foreach (var project_file_dependency_group in LockFile.ProjectFileDependencyGroups)
+            return result;
+        }
+
+        foreach (var dependency_group in LockFile.ProjectFileDependencyGroups)
+        {
+            foreach (var dependency in dependency_group.Dependencies)
             {
-                foreach (var project_file_dependency in project_file_dependency_group.Dependencies)
+                var project_dependency = ParseProjectFileDependencyGroup(project_file_dependency: dependency);
+                var library_version = BestLibraryVersion(name: project_dependency.GetName(),
+                    range: project_dependency.GetVersionRange(), libraries: LockFile.Libraries);
+                string? version = null;
+                if (library_version != null)
                 {
-                    var project_dependency =
-                        ParseProjectFileDependencyGroup(project_file_dependency: project_file_dependency);
-                    var library_version = BestLibraryVersion(name: project_dependency.GetName(),
-                        range: project_dependency.GetVersionRange(), libraries: LockFile.Libraries);
-                    string? version = null;
-                    if (library_version != null)
-                    {
-                        version = library_version.ToNormalizedString();
-                    }
-
-                    result.Dependencies.Add(
-                        item: new BasePackage(name: project_dependency.GetName()!, version: version));
+                    version = library_version.ToNormalizedString();
                 }
-            }
 
-            if (result.Dependencies.Count == 0 && Config.TRACE)
-            {
-                Console.WriteLine($"Found no dependencies fo r lock file: {LockFile.Path}");
+                result.Dependencies.Add(
+                    item: new BasePackage(name: project_dependency.GetName()!, version: version));
             }
         }
 
-        result.Packages = builder.GetPackageList();
+        if (result.Dependencies.Count == 0 && Config.TRACE)
+        {
+            Console.WriteLine($"Found no dependencies for lock file: {LockFile.Path}");
+        }
         return result;
     }
 

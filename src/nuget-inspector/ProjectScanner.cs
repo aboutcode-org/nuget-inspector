@@ -147,56 +147,20 @@ internal class ProjectScanner
     }
 
     /// <summary>
-    /// Enhance the packages in scan results with metadata fetched from the NuGet API.
+    /// Enhance the dependencies recursively in scan results with metadata
+    /// fetched from the NuGet API.
     /// </summary>
     /// <param name="scan_result"></param>
     public void FetchMetadata(ScanResult scan_result)
     {
         foreach (BasePackage package in scan_result.Packages)
         {
-            try
-            {
-                if (Config.TRACE)
-                    Console.WriteLine($"FetchMetadata for '{package.purl}'");
-                if (!string.IsNullOrWhiteSpace(package.purl))
-                    package.Update(nugetApi: NugetApiService);
-            }
-            catch (Exception ex)
-            {
-                if (Config.TRACE)
-                    Console.WriteLine($"Failed to fetch NuGet API for package: {package.purl}: {ex}");
-            }
-
-            foreach (BasePackage subpack in package.packages)
-            {
-                try
-                {
-                    subpack.Update(nugetApi: NugetApiService);
-                }
-                catch (Exception ex)
-                {
-                    if (Config.TRACE)
-                        Console.WriteLine($"Failed to fetch NuGet API for subpackage: {subpack.purl}: {ex}");
-                }
-
-                foreach (BasePackage subdep in subpack.dependencies)
-                {
-                    try
-                    {
-                        subdep.Update(nugetApi: NugetApiService);
-                    }
-                    catch (Exception ex)
-                    {
-                        if (Config.TRACE)
-                            Console.WriteLine($"Failed to fetch NuGet API for subdep: {subdep.purl}: {ex}");
-                    }
-                }
-            }
-
             foreach (BasePackage dep in package.dependencies)
             {
                 try
                 {
+                    if (Config.TRACE)
+                        Console.WriteLine($"FetchMetadata for '{package.name}@{package.version}'");
                     dep.Update(nugetApi: NugetApiService);
                 }
                 catch (Exception ex)
@@ -267,9 +231,8 @@ internal class ProjectScanner
             var projectAssetsJsonResolver = new ProjectAssetsJsonProcessor(
                 projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Resolve();
-            package.packages = projectAssetsJsonResult.Packages;
-            package.dependencies = projectAssetsJsonResult.Dependencies;
             package.datasource_id = ProjectAssetsJsonProcessor.DatasourceId;
+            package.dependencies = projectAssetsJsonResult.Dependencies;
         }
         else if (hasProjectJsonLock)
         {
@@ -279,9 +242,8 @@ internal class ProjectScanner
             var projectJsonLockResolver = new ProjectLockJsonProcessor(
                 projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Resolve();
-            package.packages = projectJsonLockResult.Packages;
-            package.dependencies = projectJsonLockResult.Dependencies;
             package.datasource_id = ProjectLockJsonProcessor.DatasourceId;
+            package.dependencies = projectJsonLockResult.Dependencies;
         }
         else if (hasPackagesConfig)
         {
@@ -293,9 +255,8 @@ internal class ProjectScanner
                 nuget_api: NugetApiService,
                 project_target_framework: project_target_framework!);
             var packagesConfigResult = packagesConfigResolver.Resolve();
-            package.packages = packagesConfigResult.Packages;
-            package.dependencies = packagesConfigResult.Dependencies;
             package.datasource_id = PackagesConfigProcessor.DatasourceId;
+            package.dependencies = packagesConfigResult.Dependencies;
         }
         else if (hasProjectJson)
         {
@@ -305,9 +266,8 @@ internal class ProjectScanner
                 projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Resolve();
-            package.packages = projectJsonResult.Packages;
-            package.dependencies = projectJsonResult.Dependencies;
             package.datasource_id = ProjectJsonProcessor.DatasourceId;
+            package.dependencies = projectJsonResult.Dependencies;
         }
         else
         {
@@ -326,9 +286,8 @@ internal class ProjectScanner
             if (dependency_resolution.Success)
             {
                 if (Config.TRACE) Console.WriteLine("  ProjectFileProcessor success.");
-                package.packages = dependency_resolution.Packages;
-                package.dependencies = dependency_resolution.Dependencies;
                 package.datasource_id = ProjectFileProcessor.DatasourceId;
+                package.dependencies = dependency_resolution.Dependencies;
             }
             else
             {
@@ -344,15 +303,14 @@ internal class ProjectScanner
 
                 DependencyResolution xml_dependecy_resolution = xmlResolver.Resolve();
                 package.version = xml_dependecy_resolution.ProjectVersion;
-                package.packages = xml_dependecy_resolution.Packages;
-                package.dependencies = xml_dependecy_resolution.Dependencies;
                 package.datasource_id = ProjectXmlFileProcessor.DatasourceId;
+                package.dependencies = xml_dependecy_resolution.Dependencies;
             }
         }
 
         if (Config.TRACE)
         {
-            Console.WriteLine($"Found #{package.dependencies.Count} dependencies for #{package.packages.Count} packages.");
+            Console.WriteLine($"Found #{package.dependencies.Count} dependencies.");
             Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch!.ElapsedMilliseconds} ms.");
         }
 
