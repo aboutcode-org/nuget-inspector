@@ -16,6 +16,13 @@ public class ScanResult
     public ProjectScannerOptions? Options;
     public List<BasePackage> Packages = new();
     public ResultStatus Status;
+
+    public void Sort()
+    {
+        Packages.Sort();
+        foreach (var package in Packages)
+            package.Sort();
+    }
 }
 
 /// <summary>
@@ -100,12 +107,6 @@ internal class ProjectScanner
             if (Config.TRACE)
                 Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
         }
-        // if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
-        // {
-        //     Options.ProjectVersion = "1.0.0";
-        //     if (Config.TRACE)
-        //         Console.WriteLine("Fallback to default .Net version of 1.0.0");
-        // }
     }
 
     /// <summary>
@@ -199,50 +200,6 @@ internal class ProjectScanner
                     if (Config.TRACE)
                         Console.WriteLine($"Failed to fetch NuGet API for dep: {dep.purl}: {ex}");
                 }
-            }
-        }
-    }
-
-    /// <summary>
-    /// Enhance the packages in scan results with metadata fetched from the NuGet API.
-    /// </summary>
-    /// <param name="scan_result"></param>
-    /// <returns></returns>
-    public void FetchMetadataNew(ScanResult scan_result)
-    {
-    if (Config.TRACE_META)
-        {
-            int c = scan_result.Packages.Count;
-            Console.WriteLine($"\nFetchMetadata for {c} package(s)");
-        }
-
-    // There is always only one top level package 
-    foreach (BasePackage package in scan_result.Packages)
-        {
-            Update(package);
-        }
-    }
-
-    private void Update(BasePackage package)
-    {
-        var all_packages = package.dependencies.Concat(package.packages).ToList();
-        foreach (BasePackage pack in all_packages)
-        {
-            if (Config.TRACE_META)
-                Console.WriteLine($"        Fetching for dep purl: '{pack.purl}'");
-            if (pack.has_updated_metadata)
-                continue;
-            try
-            {
-                pack.Update(nugetApi: NugetApiService);
-
-                // recursively update the whole packages and deps tree
-                Update(pack);
-            }
-            catch (Exception ex)
-            {
-                if (Config.TRACE_META)
-                    Console.WriteLine($"        Failed to fetch NuGet API for dep: {pack.purl}: {ex}");
             }
         }
     }

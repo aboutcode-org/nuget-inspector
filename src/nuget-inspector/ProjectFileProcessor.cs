@@ -46,12 +46,12 @@ internal class ProjectFileProcessor : IDependencyProcessor
         if (ProjectTargetFramework != null)
             properties["TargetFramework"] = ProjectTargetFramework.GetShortFolderName();
 
-        var proj = new Microsoft.Build.Evaluation.Project(
+        var project = new Microsoft.Build.Evaluation.Project(
             projectFile: ProjectPath,
             globalProperties: properties,
             toolsVersion: null);
 
-        foreach (var reference in proj.GetItems(itemType: "PackageReference"))
+        foreach (var reference in project.GetItems(itemType: "PackageReference"))
         {
             var versionMetaData = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
             VersionRange? version_range;
@@ -78,7 +78,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         }
 
         // Also fetch "legacy" versioned references
-        foreach (var reference in proj.GetItems(itemType: "Reference"))
+        foreach (var reference in project.GetItems(itemType: "Reference"))
         {
             if (reference.Xml != null && !string.IsNullOrWhiteSpace(value: reference.Xml.Include) &&
                 reference.Xml.Include.Contains("Version="))
@@ -118,22 +118,31 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
         }
 
-        ProjectCollection.GlobalProjectCollection.UnloadProject(project: proj);
+        ProjectCollection.GlobalProjectCollection.UnloadProject(project: project);
         return dependencies;
     }
+
     /// <summary>
-    /// Resolve the dependencies.
+    /// Resolve the dependencies one at a time.
     /// </summary>
     public DependencyResolution Resolve()
+    {
+        return ResolveOneAtATime();
+    }
+
+    /// <summary>
+    /// Resolve the dependencies one at a time.
+    /// </summary>
+    public DependencyResolution ResolveOneAtATime()
     {
         if (Config.TRACE)
             Console.WriteLine("\nProjectFileResolver.Resolve: starting resolution");
         try
         {
-            var deps_helper = new NugetApiHelper(nugetApi: nugetApi);
+            var deps_helper = new NugetResolverHelper(nugetApi: nugetApi);
             foreach (var dep in GetDependencies())
             {
-                deps_helper.Resolve(packageDependency: dep);
+                deps_helper.ResolveOne(dependency: dep);
             }
 
             var resolution = new DependencyResolution
@@ -163,26 +172,39 @@ internal class ProjectFileProcessor : IDependencyProcessor
     }
 
     /// <summary>
-    /// Resolve the dependencies.
+    /// Resolve the dependencies resolving all direct dependencies at once.
     /// </summary>
-    public DependencyResolution ResolveNew()
+    public DependencyResolution ResolveManyAtOnce()
     {
         if (Config.TRACE)
             Console.WriteLine("\nProjectFileResolver.Resolve: starting resolution");
         try
         {
-            var dependencies = GetDependencies();
+            List<Dependency> dependencies = GetDependencies();
             var direct_deps = new List<PackageIdentity>();
             foreach (var dep in dependencies)
             {
                 PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(id: dep.name,  versionRange: dep.version_range);
+                if (Config.TRACE)
+                    Console.WriteLine($"    psmr1: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
+
+                if (psmr == null)
+                {
+                    // try again using pre-release
+                    psmr = nugetApi.FindPackageVersion(id: dep.name,  versionRange: dep.version_range, include_prerelease: true);
+                    if (Config.TRACE)
+                        Console.WriteLine($"    psmr2: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
+                }
+
                 if (psmr != null)
                 {
                     direct_deps.Add(psmr.Identity);
                 }
             }
+            if (direct_deps.Count == 0)
+                return new DependencyResolution(Success: true);
 
-            var spdis = nugetApi.ResolveDeps(
+            var spdis = nugetApi.ResolveDirectDependenciesAtOnce(
                 direct_dependencies: direct_deps,
                 framework: ProjectTargetFramework!
             );

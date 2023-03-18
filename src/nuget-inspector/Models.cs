@@ -370,6 +370,18 @@ namespace NugetInspector
             // source_packages = null;
             // dependencies = null;
         }
+
+        /// <summary>
+        /// Sort recursively the lists of packages and dependencies.
+        /// </summary>
+        public void Sort() {
+            packages.Sort();
+            dependencies.Sort();
+            foreach (var pack in packages)
+                pack.Sort();
+            foreach (var dep in dependencies)
+                dep.Sort();
+        }
     }
 
     /// <summary>

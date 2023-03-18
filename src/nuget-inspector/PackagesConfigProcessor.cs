@@ -127,8 +127,8 @@ internal class PackagesConfigProcessor : IDependencyProcessor
                 Console.WriteLine($"PackagesConfigHandler.CreateBasePackage: Failed processing packages.config as list: {listex.Message}");
             try
             {
-                var resolver = new NugetApiHelper(nugetApi: nugetApi);
-                resolver.AddAll(packages: dependencies);
+                var resolver = new NugetResolverHelper(nugetApi: nugetApi);
+                resolver.ResolveManyOneByOne(dependencies: dependencies);
                 return resolver.GetPackageList();
             }
             catch (Exception treeex)
