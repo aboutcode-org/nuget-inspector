@@ -99,13 +99,17 @@ internal class ProjectScanner
             Options.ProjectJsonLockPath = combine_paths(project_directory, "project.lock.json");
 
         if (string.IsNullOrWhiteSpace(value: Options.ProjectName))
+        {
             Options.ProjectName = Path.GetFileNameWithoutExtension(path: Options.ProjectFilePath);
+            if (Config.TRACE)
+                Console.WriteLine($"ProjectScanner: Using filename for project name: {Options.ProjectName}");
+        }
 
         if (string.IsNullOrWhiteSpace(value: Options.ProjectVersion))
         {
             Options.ProjectVersion = AssemblyInfoParser.GetProjectAssemblyVersion(project_directory);
             if (Config.TRACE)
-                Console.WriteLine($"Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
+                Console.WriteLine($"ProjectScanner: Using AssemblyInfoParser for project version: {Options.ProjectVersion}");
         }
     }
 
