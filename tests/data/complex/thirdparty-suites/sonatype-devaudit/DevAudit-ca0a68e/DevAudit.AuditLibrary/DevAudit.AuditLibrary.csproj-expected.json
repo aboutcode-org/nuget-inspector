@@ -97,7 +97,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/alpheus/0.5.4.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -142,7 +142,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/12.0.2.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -189,7 +189,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sprache/2.2.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -239,7 +239,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/filecache/2.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -285,7 +285,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ini-parser/2.5.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -331,7 +331,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.tasks.core/16.0.461.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -376,7 +376,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.framework/16.0.461.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -422,7 +422,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.utilities.core/16.0.461.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -466,7 +466,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.win32.registry/4.5.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -510,7 +510,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.codedom/4.5.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -554,7 +554,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections.immutable/1.5.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -598,7 +598,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq.parallel/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -642,7 +642,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/4.3.4.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -686,7 +686,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.metadata/1.6.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -730,7 +730,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.typeextensions/4.5.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -774,7 +774,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.writer/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -818,7 +818,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.dataflow/4.9.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -864,7 +864,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.diagnosticsource/4.5.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -919,7 +919,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.analyzers/2.9.4.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -976,7 +976,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.composition/1.0.31.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -1019,7 +1019,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.composition/1.2.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -1065,7 +1065,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/naos.winrm/1.0.50.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -1112,7 +1112,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/naos.external.ms-winrm/1.0.0.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -1162,7 +1162,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ngitlab/2.0.0-beta-0065.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1208,7 +1208,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.build.tasks/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1254,7 +1254,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1300,7 +1300,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1346,7 +1346,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.credentials/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1392,7 +1392,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1438,7 +1438,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.librarymodel/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1484,7 +1484,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.packaging/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1528,7 +1528,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.projectmanagement/4.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -1571,7 +1571,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -1615,7 +1615,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.projectmodel/4.2.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -1661,7 +1661,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.commands/5.2.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -1710,7 +1710,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1758,7 +1758,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1808,7 +1808,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/octokit/0.32.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -1857,7 +1857,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sharpbucket/0.12.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -1900,7 +1900,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/restsharp/106.6.10.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -1957,7 +1957,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sharpcompress/0.23.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2005,7 +2005,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sharpyaml/1.6.5.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2057,7 +2057,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sharpziplib/1.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2101,7 +2101,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.appcontext/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2145,7 +2145,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2189,7 +2189,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections.concurrent/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2233,7 +2233,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.console/4.3.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2277,7 +2277,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.debug/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2321,7 +2321,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.fileversioninfo/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2365,7 +2365,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.process/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2409,7 +2409,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.stacktrace/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2453,7 +2453,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.tools/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2497,7 +2497,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.dynamic.runtime/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2541,7 +2541,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.globalization/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2585,7 +2585,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2629,7 +2629,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -2672,7 +2672,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem.primitives/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -2718,7 +2718,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2762,7 +2762,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq.expressions/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2806,7 +2806,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2850,7 +2850,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.extensions/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2894,7 +2894,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2938,7 +2938,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.resourcemanager/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -2982,7 +2982,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.3.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3026,7 +3026,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.extensions/4.3.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3070,7 +3070,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.handles/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3114,7 +3114,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.interopservices/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3158,7 +3158,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.numerics/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3202,7 +3202,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.formatters/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -3245,7 +3245,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.primitives/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -3291,7 +3291,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.protecteddata/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3335,7 +3335,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3379,7 +3379,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.extensions/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3423,7 +3423,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3467,7 +3467,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3511,7 +3511,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.parallel/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3555,7 +3555,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.readerwriter/4.3.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3599,7 +3599,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xdocument/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3643,7 +3643,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xmldocument/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3687,7 +3687,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xpath.xdocument/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -3730,7 +3730,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xpath/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -3768,7 +3768,7 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3812,7 +3812,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xpathparser/1.2.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -3862,7 +3862,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/yamldotnet/6.1.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

@@ -92,7 +92,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/minver/2.3.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -136,7 +136,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netframework.referenceassemblies.net461/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -186,7 +186,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.github/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -234,7 +234,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.common/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -284,7 +284,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.tasks.git/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -336,7 +336,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/configureawaitchecker.analyzer/4.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -398,7 +398,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.csharp/2.8.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -459,7 +459,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.common/2.8.2.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -511,7 +511,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/shellprogressbar/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -554,7 +554,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.codepages/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -606,7 +606,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nest/7.7.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -655,7 +655,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/elasticsearch.net/7.7.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -703,7 +703,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

@@ -94,7 +94,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -137,7 +137,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -181,7 +181,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/netstandard.library/1.6.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -225,7 +225,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.componentmodel.typeconverter/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -269,7 +269,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.formatters/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -313,7 +313,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.primitives/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -357,7 +357,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xmldocument/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         }

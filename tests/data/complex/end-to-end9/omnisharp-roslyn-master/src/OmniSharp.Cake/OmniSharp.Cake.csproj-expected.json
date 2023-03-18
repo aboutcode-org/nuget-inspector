@@ -92,7 +92,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netframework.referenceassemblies/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -154,7 +154,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.csharp.scripting/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -215,7 +215,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.common/4.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -277,7 +277,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.csharp/4.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -339,7 +339,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codeanalysis.scripting.common/4.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -383,7 +383,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.7.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -433,7 +433,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cake.scripting.transport/0.9.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -480,7 +480,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cake.scripting.abstractions/0.9.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -524,7 +524,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/6.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -576,7 +576,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.github/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -624,7 +624,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.common/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -674,7 +674,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.tasks.git/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         }

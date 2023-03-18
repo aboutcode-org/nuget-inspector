@@ -92,7 +92,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.2.8.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -136,7 +136,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -179,7 +179,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -223,7 +223,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -273,7 +273,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -319,7 +319,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -371,7 +371,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/15.9.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -417,7 +417,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/3.5.8.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

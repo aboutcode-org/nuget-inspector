@@ -101,7 +101,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/16.6.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -153,7 +153,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.testplatform.testhost/16.6.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -208,7 +208,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codecoverage/16.6.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -262,7 +262,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/2.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -305,7 +305,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/netstandard.library/1.6.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -349,7 +349,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.textwritertracelistener/4.3.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -405,7 +405,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testframework/2.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

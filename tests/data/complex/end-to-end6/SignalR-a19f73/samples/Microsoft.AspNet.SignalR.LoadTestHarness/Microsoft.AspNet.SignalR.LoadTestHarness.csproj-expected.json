@@ -96,7 +96,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.color/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -141,7 +141,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -191,7 +191,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.ui.combined/1.9.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -236,7 +236,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -285,7 +285,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/knockoutjs/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -333,7 +333,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.host.systemweb/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -378,7 +378,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -426,7 +426,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -474,7 +474,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/6.0.4.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

@@ -92,7 +92,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -135,7 +135,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -179,7 +179,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -229,7 +229,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         }

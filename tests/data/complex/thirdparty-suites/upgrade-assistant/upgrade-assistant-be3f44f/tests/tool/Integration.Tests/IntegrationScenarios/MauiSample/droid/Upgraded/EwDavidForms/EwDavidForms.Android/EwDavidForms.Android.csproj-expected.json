@@ -99,7 +99,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/communitytoolkit.maui/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -149,7 +149,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/communitytoolkit.maui.core/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -193,7 +193,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.maui.dependencies/6.0.312.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -237,7 +237,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.maui.extensions/6.0.312.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -286,7 +286,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         }
       ]
     }

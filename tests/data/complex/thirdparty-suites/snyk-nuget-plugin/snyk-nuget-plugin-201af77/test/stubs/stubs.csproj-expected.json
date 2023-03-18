@@ -98,7 +98,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.applicationinsights.aspnetcore/2.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -141,7 +141,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/4.3.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -200,7 +200,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.applicationinsights.perfcountercollector/2.4.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -248,7 +248,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.applicationinsights.windowsserver.telemetrychannel/2.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -295,7 +295,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.hosting/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -341,7 +341,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.configuration/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -388,7 +388,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.configuration.json/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -436,7 +436,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.diagnosticadapter/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -482,7 +482,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.logging.abstractions/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -526,7 +526,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encodings.web/4.3.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -575,7 +575,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.applicationinsights/2.4.0.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -624,7 +624,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.applicationinsights.dependencycollector/2.4.1.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         },
@@ -672,7 +672,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": []
+          "dependencies": []
         },
         {
           "type": "nuget",
@@ -722,7 +722,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.sqlite/1.0.115.5.json",
           "datasource_id": "",
           "datafile_path": "",
-              "dependencies": [
+          "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -771,7 +771,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.sqlite.core/1.0.115.5.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -821,7 +821,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.sqlite.linq/1.0.115.5.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             },
             {
               "type": "nuget",
@@ -871,7 +871,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.sqlite.ef6/1.0.115.5.json",
               "datasource_id": "",
               "datafile_path": "",
-                      "dependencies": []
+              "dependencies": []
             }
           ]
         }
