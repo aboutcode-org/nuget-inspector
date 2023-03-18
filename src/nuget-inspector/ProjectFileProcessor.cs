@@ -127,7 +127,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// </summary>
     public DependencyResolution Resolve()
     {
-        return ResolveOneAtATime();
+        return ResolveManyAtOnce();
     }
 
     /// <summary>
