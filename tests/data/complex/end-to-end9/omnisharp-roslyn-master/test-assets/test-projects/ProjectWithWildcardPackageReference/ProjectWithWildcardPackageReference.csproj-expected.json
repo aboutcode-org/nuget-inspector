@@ -49,55 +49,6 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/end-to-end9/omnisharp-roslyn-master/test-assets/test-projects/ProjectWithWildcardPackageReference/ProjectWithWildcardPackageReference.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "12.0.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@12.0.3",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "https://www.newtonsoft.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg",
-          "size": 2596051,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "6934665F0479C58BBE996C44F2BF16D435A72F4D92795F0BC1D40CB0BC1358FF0E660AC20B24EABCE01EE6145BD553506178E59FBAABD0F2A94B23BFA5C735F5",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Newtonsoft.Json/12.0.3/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/12.0.3?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/12.0.3.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -143,8 +94,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/12.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

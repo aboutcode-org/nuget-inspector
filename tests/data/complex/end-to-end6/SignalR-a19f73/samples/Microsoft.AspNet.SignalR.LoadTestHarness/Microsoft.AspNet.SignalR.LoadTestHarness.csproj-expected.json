@@ -49,634 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "jQuery",
-          "version": "1.8.2",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/jQuery@1.8.2",
-          "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "John Resig",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-          "size": 195047,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "8DAC3C5BBC248F2B5C2DF071234424C8D87AEFC459271B201D6E9A1E0BC22CC0102321B41956D0D19C2FBF4D30D97C2337943493BD69529CEC5C896624B713A3",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.8.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "jQuery.Color",
-          "version": "2.1.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/jQuery.Color@2.1.0",
-          "primary_language": "C#",
-          "description": "A jQuery plugin that adds the ability to do color animations to jQuery.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery Foundation",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery",
-            "plugins",
-            "color"
-          ],
-          "homepage_url": "http://plugins.jquery.com/project/color/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery.color/2.1.0/jquery.color.2.1.0.nupkg",
-          "size": 23786,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "2066E7F6BB211E56B833A31ED006C1D1EF773A2F2C2E7E8524B56BD188112055CB1EDACF53A6D9BB1EEED74652BD6B305DDD8CA7FCC36FA0454BB460073BABEF",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.opensource.org/licenses/mit-license.php",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery.Color/2.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery.color/2.1.0/jquery.color.2.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.color/2.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "jQuery",
-              "version": "1.8.2",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/jQuery@1.8.2",
-              "primary_language": "C#",
-              "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "John Resig",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "jQuery"
-              ],
-              "homepage_url": "http://jquery.com/",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-              "size": 195047,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "8DAC3C5BBC248F2B5C2DF071234424C8D87AEFC459271B201D6E9A1E0BC22CC0102321B41956D0D19C2FBF4D30D97C2337943493BD69529CEC5C896624B713A3",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://jquery.org/license",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.8.2?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "jQuery.UI.Combined",
-          "version": "1.9.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/jQuery.UI.Combined@1.9.0",
-          "primary_language": "C#",
-          "description": "jQuery UI is an open source library of interface components \u2014 interactions, full-featured widgets, and animation effects \u2014 based on the stellar jQuery javascript library . Each component is built according to jQuery's event-driven architecture (find something, manipulate it) and is themeable, making it easy for developers of any skill level to integrate and extend into their own code.\n    NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery UI Team",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery",
-            "jQueryUI",
-            "plugins"
-          ],
-          "homepage_url": "http://jqueryui.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery.ui.combined/1.9.0/jquery.ui.combined.1.9.0.nupkg",
-          "size": 272234,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "BBF8CC0FEC98A2FDF4A4690B041B1C9E54ECF0D171754B9AF6A8C21A069D3B5858A6451BA5560ADA67EB99CF2A340B9D925F512D9F514B7742BD90AED22225E7",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery.UI.Combined/1.9.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery.ui.combined/1.9.0/jquery.ui.combined.1.9.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.ui.combined/1.9.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "jQuery",
-              "version": "1.8.2",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/jQuery@1.8.2",
-              "primary_language": "C#",
-              "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "John Resig",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "jQuery"
-              ],
-              "homepage_url": "http://jquery.com/",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-              "size": 195047,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "8DAC3C5BBC248F2B5C2DF071234424C8D87AEFC459271B201D6E9A1E0BC22CC0102321B41956D0D19C2FBF4D30D97C2337943493BD69529CEC5C896624B713A3",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://jquery.org/license",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.8.2?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.8.2/jquery.1.8.2.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "knockoutjs",
-          "version": "2.1.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/knockoutjs@2.1.0",
-          "primary_language": "C#",
-          "description": "A JavaScript MVVM library to help you create rich, dynamic user interfaces with clean maintainable code",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Steven Sanderson",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "knockout",
-            "mvvm"
-          ],
-          "homepage_url": "http://knockoutjs.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/knockoutjs/2.1.0/knockoutjs.2.1.0.nupkg",
-          "size": 73992,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "2BA49BE673D52F7D746F7491745200F3290D0DAF54CFEBFF4A0E140AEDC57D8661C1F6DB728A0898076A6B817C4ED418DB3312E2D8A3623D4F59CA86284ED894",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.opensource.org/licenses/mit-license.php",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/knockoutjs/2.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/knockoutjs/2.1.0/knockoutjs.2.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/knockoutjs/2.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.Owin",
-          "version": "2.1.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
-          "primary_language": "C#",
-          "description": "Provides a set of helper types and abstractions for simplifying the creation of OWIN components.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
-          "homepage_url": "http://katanaproject.codeplex.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
-          "size": 121376,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "CA6002D61027A8146572CDD23719FB8C45A64FDA772DDDAD50F864D2ADE835A19FF7BEB2FE5E502E4C83ADA3FB7B82685132C7732665F736DEEA58C727C74EE6",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Owin",
-              "version": "1.0.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Owin@1.0.0",
-              "primary_language": "C#",
-              "description": "OWIN IAppBuilder startup interface",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "OWIN startup components contributors",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "OWIN"
-              ],
-              "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-              "size": 14137,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "4BCEFE00AC52C5F8574732107E6E960717C66E7CC408B1BC6E6569DE5462C237981BD60127401777ED979FB23B6AAC308F48F87AB4A95FA1FD3A15F2FAA43BB7",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://github.com/owin-contrib/owin-hosting/blob/master/LICENSE.txt",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Owin",
-          "version": "1.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Owin@1.0.0",
-          "primary_language": "C#",
-          "description": "OWIN IAppBuilder startup interface",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "OWIN startup components contributors",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "OWIN"
-          ],
-          "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-          "size": 14137,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "4BCEFE00AC52C5F8574732107E6E960717C66E7CC408B1BC6E6569DE5462C237981BD60127401777ED979FB23B6AAC308F48F87AB4A95FA1FD3A15F2FAA43BB7",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/owin-contrib/owin-hosting/blob/master/LICENSE.txt",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Microsoft.Owin.Host.SystemWeb",
-          "version": "2.1.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Owin.Host.SystemWeb@2.1.0",
-          "primary_language": "C#",
-          "description": "OWIN server that enables OWIN-based applications to run on IIS using the ASP.NET request pipeline.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
-          "homepage_url": "http://katanaproject.codeplex.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/2.1.0/microsoft.owin.host.systemweb.2.1.0.nupkg",
-          "size": 141302,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "2A4C8D3FF1A8341900C4AD65BF77BF50CFF5CADE26DE5540637E94226059A58B003089738A45FB7C506E17AFE2A23DA42D2792E01550C5296E78592F51FDFB6A",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Host.SystemWeb/2.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/2.1.0/microsoft.owin.host.systemweb.2.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.host.systemweb/2.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Owin",
-              "version": "1.0.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Owin@1.0.0",
-              "primary_language": "C#",
-              "description": "OWIN IAppBuilder startup interface",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "OWIN startup components contributors",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "OWIN"
-              ],
-              "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-              "size": 14137,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "4BCEFE00AC52C5F8574732107E6E960717C66E7CC408B1BC6E6569DE5462C237981BD60127401777ED979FB23B6AAC308F48F87AB4A95FA1FD3A15F2FAA43BB7",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://github.com/owin-contrib/owin-hosting/blob/master/LICENSE.txt",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            },
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Microsoft.Owin",
-              "version": "2.1.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Owin@2.1.0",
-              "primary_language": "C#",
-              "description": "Provides a set of helper types and abstractions for simplifying the creation of OWIN components.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
-              "homepage_url": "http://katanaproject.codeplex.com/",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
-              "size": 121376,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "CA6002D61027A8146572CDD23719FB8C45A64FDA772DDDAD50F864D2ADE835A19FF7BEB2FE5E502E4C83ADA3FB7B82685132C7732665F736DEEA58C727C74EE6",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "packages": [],
-              "dependencies": []
-            }
-          ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "6.0.4",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "http://james.newtonking.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
-          "size": 1523183,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "3CE707ADE5C4434BEA0859182E543BF96622545BE2E73FE685948C2312E8ADBD4C9BC5545B04A9C855CD102E149B800F5926914E4CDA6173FF756AC5AEE6FF04",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/6.0.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/6.0.4.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -724,8 +96,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.color/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": [
+              "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -770,8 +141,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
               "datasource_id": "",
               "datafile_path": "",
-              "packages": [],
-              "dependencies": []
+                      "dependencies": []
             }
           ]
         },
@@ -821,8 +191,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery.ui.combined/1.9.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": [
+              "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -867,8 +236,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.8.2.json",
               "datasource_id": "",
               "datafile_path": "",
-              "packages": [],
-              "dependencies": []
+                      "dependencies": []
             }
           ]
         },
@@ -917,8 +285,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/knockoutjs/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         },
         {
           "type": "nuget",
@@ -966,8 +333,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.host.systemweb/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": [
+              "dependencies": [
             {
               "type": "nuget",
               "namespace": "",
@@ -1012,8 +378,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
               "datasource_id": "",
               "datafile_path": "",
-              "packages": [],
-              "dependencies": []
+                      "dependencies": []
             },
             {
               "type": "nuget",
@@ -1061,8 +426,7 @@
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
               "datasource_id": "",
               "datafile_path": "",
-              "packages": [],
-              "dependencies": []
+                      "dependencies": []
             }
           ]
         },
@@ -1110,8 +474,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/6.0.4.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

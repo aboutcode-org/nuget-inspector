@@ -49,59 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/packages_dir/only_momentjs/only_moment.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Moment.js",
-          "version": "2.20.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Moment.js@2.20.1",
-          "primary_language": "C#",
-          "description": "A lightweight JavaScript date library for parsing, manipulating, and formatting dates.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Tim Wood, Iskren Chernev, Moment.js contributors",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "JavaScript",
-            "date",
-            "time",
-            "browser",
-            "node.js"
-          ],
-          "homepage_url": "http://momentjs.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/moment.js/2.20.1/moment.js.2.20.1.nupkg",
-          "size": 220640,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "5892A3FC8A3429F40B6FE70A3A46B7DDC3DB077BDB87FB7E90AB6E1D059D6B60F1DADF708BB3E615C38B0A594A99C4ECC4DC9ABC79B7BFEB52340E4CF2BBD331",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/timrwood/moment/master/LICENSE",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Moment.js/2.20.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/moment.js/2.20.1/moment.js.2.20.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -151,8 +98,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

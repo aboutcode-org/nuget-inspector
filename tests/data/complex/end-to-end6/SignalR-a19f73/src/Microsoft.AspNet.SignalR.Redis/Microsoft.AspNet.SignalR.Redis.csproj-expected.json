@@ -49,96 +49,6 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Internal.AspNetCore.Sdk",
-          "version": "3.0.0-alpha1-20180907.9",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "",
-          "primary_language": "C#",
-          "description": "",
-          "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "StackExchange.Redis.StrongName",
-          "version": "1.1.608",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/StackExchange.Redis.StrongName@1.1.608",
-          "primary_language": "C#",
-          "description": "High performance Redis client, incorporating both synchronous and asynchronous usage.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Stack Exchange inc., marc.gravell",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Async",
-            "Redis",
-            "Cache",
-            "PubSub",
-            "Messaging"
-          ],
-          "homepage_url": "https://github.com/StackExchange/StackExchange.Redis",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
-          "size": 741118,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "3E845E9AE3D27D6A26FD2AC164089B6612258FDCBDDE8E38966B966E620C62A60D690A1B8A7C5D4F35AEBF773A059206E98C9608280A2F0A84B2C4BDBB768FB4",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/StackExchange/StackExchange.Redis/master/LICENSE",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/StackExchange.Redis.StrongName/1.1.608?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis.strongname/1.1.608.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -174,8 +84,7 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         },
         {
           "type": "nuget",
@@ -225,8 +134,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis.strongname/1.1.608.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

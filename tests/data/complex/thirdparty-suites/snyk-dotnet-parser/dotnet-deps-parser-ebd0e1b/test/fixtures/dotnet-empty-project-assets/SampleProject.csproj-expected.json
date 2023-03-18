@@ -49,7 +49,6 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project.assets.json",
       "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-project-assets/SampleProject.csproj",
-      "packages": [],
       "dependencies": [
         {
           "type": "nuget",
@@ -93,8 +92,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         },
         {
           "type": "nuget",
@@ -140,8 +138,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         },
         {
           "type": "nuget",
@@ -188,8 +185,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

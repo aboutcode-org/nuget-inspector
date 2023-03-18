@@ -49,55 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.StressServer/Microsoft.AspNet.SignalR.StressServer.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "6.0.4",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@6.0.4",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "http://james.newtonking.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
-          "size": 1523183,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "3CE707ADE5C4434BEA0859182E543BF96622545BE2E73FE685948C2312E8ADBD4C9BC5545B04A9C855CD102E149B800F5926914E4CDA6173FF756AC5AEE6FF04",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/6.0.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/6.0.4.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -143,8 +94,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/6.0.4.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

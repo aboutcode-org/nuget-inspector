@@ -49,61 +49,6 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-conditional-targetframework/regular-frameworks.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "MSTest.TestAdapter",
-          "version": "1.4.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
-          "primary_language": "C#",
-          "description": "The adapter to discover and execute MSTest Framework based tests. \n\n  Supported platforms: \n   - .NET 4.5.0+ \n   - .NET Core 1.0+ (Universal Windows Apps 10+) (Visual Studio 2017) \n   - ASP.NET Core 1.0+ (Visual Studio 2017)",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "MSTest",
-            "TestFramework",
-            "TestAdapter",
-            "VisualStudio",
-            "Unittest",
-            "MSTestV2",
-            "Microsoft"
-          ],
-          "homepage_url": "https://github.com/microsoft/testfx",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
-          "size": 791699,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "6FE3FAFB7C4D73ED352D109C06BC900D17C8080CB77E5310C02CBBE5351338528096BEE7C41C37C1A23CF36546167F17F2C1BDD2368E1C61878BC80DF9872AD5",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestAdapter/1.4.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.4.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -155,8 +100,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }

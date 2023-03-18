@@ -49,92 +49,6 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/end-to-end6/SignalR-a19f73/build/sign.proj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "MicroBuild.Core",
-          "version": "0.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/MicroBuild.Core@0.2.0",
-          "primary_language": "C#",
-          "description": "MicroBuild bootstrapper package which wires up build targets that load and execute other MicroBuild plugins during the build",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "MicroBuild"
-          ],
-          "homepage_url": "",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microbuild.core/0.2.0/microbuild.core.0.2.0.nupkg",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://microsoft.mit-license.org/",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/MicroBuild.Core/0.2.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microbuild.core/0.2.0/microbuild.core.0.2.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microbuild.core/0.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "RoslynTools.SignTool",
-          "version": "1.0.0-beta2-63206-01",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "",
-          "primary_language": "C#",
-          "description": "",
-          "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -180,8 +94,7 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microbuild.core/0.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         },
         {
           "type": "nuget",
@@ -217,8 +130,7 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
-          "dependencies": []
+              "dependencies": []
         }
       ]
     }
