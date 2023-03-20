@@ -22,15 +22,6 @@ namespace NugetInspector
             this.version_range = version_range;
             this.is_direct = is_direct;
         }
-
-        public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework, bool is_direct = false)
-        {
-            this.framework = framework;
-            this.name = dependency.Id;
-            this.version_range = dependency.VersionRange;
-            this.is_direct = is_direct;
-        }
-
         /// <summary>
         /// Return a new empty BasePackageWithDeps using this package.
         /// </summary>
@@ -50,7 +41,6 @@ namespace NugetInspector
         private readonly Dictionary<BasePackage, BasePackage> base_package_deps_by_base_package = new();
         private readonly Dictionary<BasePackage, VersionPair> versions_pair_by_base_package = new();
 
-
         public bool DoesPackageExist(BasePackage package)
         {
             return base_package_deps_by_base_package.ContainsKey(key: package);
@@ -69,7 +59,7 @@ namespace NugetInspector
             _ = NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
 
             if (package.version != null)
-                versions_pair_by_base_package[key: package] =new VersionPair(rawVersion: package.version, version: version);
+                versions_pair_by_base_package[key: package] = new VersionPair(rawVersion: package.version, version: version);
 
             return package_with_deps;
         }
@@ -150,7 +140,7 @@ namespace NugetInspector
     /// This model is essentially derived from ScanCode Toolkit Package/PackageData.
     /// This is used to represent the top-level project.
     /// </summary>
-    public class BasePackage
+    public class BasePackage : IEquatable<BasePackage>, IComparable<BasePackage>
     {
         public string type { get; set; } = "nuget";
         [JsonProperty(propertyName: "namespace")]
@@ -236,6 +226,18 @@ namespace NugetInspector
         public override int GetHashCode()
         {
             return HashCode.Combine(type, namespace_, name, version, qualifiers, subpath);
+        }
+
+        public PackageIdentity GetPackageIdentity()
+        {
+            if (!string.IsNullOrWhiteSpace(version))
+            {
+                return new PackageIdentity(id: name, version: new NuGetVersion(version));
+            }
+            else
+            {
+                return new PackageIdentity(id: name, version: null);
+            }
         }
 
         /// <summary>
@@ -379,12 +381,37 @@ namespace NugetInspector
         }
 
         /// <summary>
-        /// Sort recursively the lists of packages and dependencies.
+        /// Sort recursively the dependencies.
         /// </summary>
         public void Sort() {
             dependencies.Sort();
             foreach (var dep in dependencies)
                 dep.Sort();
+        }
+
+        bool IEquatable<BasePackage>.Equals(BasePackage? other)
+        {
+            if (other != null)
+                return Equals(other);
+            return false;
+        }
+
+        public (string, string, string, string, string, string) AsTuple()
+        {
+            return ValueTuple.Create(
+                this.type.ToLowerInvariant(),
+                this.namespace_.ToLowerInvariant(),
+                this.name.ToLowerInvariant(),
+                (this.version ?? "").ToLowerInvariant(),
+                this.qualifiers.ToLowerInvariant(),
+                this.subpath.ToLowerInvariant());
+        }
+
+        public int CompareTo(BasePackage? other)
+        {
+            if (other == null)
+                return 1;
+            return AsTuple().CompareTo(other.AsTuple());
         }
     }
 

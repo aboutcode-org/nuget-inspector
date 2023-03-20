@@ -61,7 +61,7 @@ public class NugetResolverHelper
             name: dependency.name!,
             version: package.Identity.Version.ToNormalizedString());
 
-        IEnumerable<NuGet.Packaging.Core.PackageDependency> packages = nugetApi.DependenciesForPackage(
+        IEnumerable<NuGet.Packaging.Core.PackageDependency> packages = nugetApi.GetPackageDependenciesForPackage(
             identity: package.Identity,
             framework: dependency.framework);
 

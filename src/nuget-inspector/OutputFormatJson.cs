@@ -45,6 +45,7 @@ internal class OutputFormatJson
 
     public OutputFormatJson(ScanResult result)
     {
+        result.Sort();
         Result = result;
         scan_output = new ScanOutput
         {

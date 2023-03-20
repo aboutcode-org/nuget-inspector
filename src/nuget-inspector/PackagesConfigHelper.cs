@@ -123,7 +123,7 @@ public class PackagesConfigHelper
         data.CurrentVersion = best.Identity.Version;
         data.Dependencies.Clear();
 
-        var packages = NugetApi.DependenciesForPackage(identity: best.Identity, framework: project_target_framework);
+        var packages = NugetApi.GetPackageDependenciesForPackage(identity: best.Identity, framework: project_target_framework);
         foreach (var dependency in packages)
         {
             if (!data.Dependencies.ContainsKey(key: dependency.Id.ToLower()))
