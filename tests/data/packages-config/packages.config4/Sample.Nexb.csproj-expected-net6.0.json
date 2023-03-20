@@ -54,6 +54,57 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "Brutal.Dev.StrongNameSigner",
+          "version": "1.6.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Brutal.Dev.StrongNameSigner@1.6.1",
+          "primary_language": "C#",
+          "description": "Utility software to strong-name sign .NET assemblies, including assemblies you do not have the source code for.\n\nIf you strong-name sign your own projects you may have noticed that if you reference an unsigned third party assembly you get an error similar to \"Referenced assembly 'A.B.C' does not have a strong name\". If you did not create this assembly, you can use this tool to sign the assembly with your own (or temporarily generated) strong-name key.\n\nThe tool will also re-write the assembly references (as well as any InternalsVisibleTo references) to match the new signed versions of the assemblies you create.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Werner van Deventer",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "strongname",
+            "assembly",
+            "gac",
+            "unsigned",
+            "strong",
+            "name"
+          ],
+          "homepage_url": "https://github.com/brutaldev/StrongNameSigner",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/brutal.dev.strongnamesigner/1.6.1/brutal.dev.strongnamesigner.1.6.1.nupkg",
+          "size": 295872,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "EDC1AC52F1676661EECA38C431643C7991E3048ECD154FD6D0FB2FA31D4F0E1CB25C274CE5D5001E13680D4D6F8C18ED5F3FD48C06E9009C8A1C71CC83D4F042",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/brutaldev/StrongNameSigner#license",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Brutal.Dev.StrongNameSigner/1.6.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/brutal.dev.strongnamesigner/1.6.1/brutal.dev.strongnamesigner.1.6.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/brutal.dev.strongnamesigner/1.6.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "System.Globalization",
           "version": "4.3.0",
           "qualifiers": "",
@@ -360,57 +411,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Brutal.Dev.StrongNameSigner",
-          "version": "1.6.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Brutal.Dev.StrongNameSigner@1.6.1",
-          "primary_language": "C#",
-          "description": "Utility software to strong-name sign .NET assemblies, including assemblies you do not have the source code for.\n\nIf you strong-name sign your own projects you may have noticed that if you reference an unsigned third party assembly you get an error similar to \"Referenced assembly 'A.B.C' does not have a strong name\". If you did not create this assembly, you can use this tool to sign the assembly with your own (or temporarily generated) strong-name key.\n\nThe tool will also re-write the assembly references (as well as any InternalsVisibleTo references) to match the new signed versions of the assemblies you create.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Werner van Deventer",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "strongname",
-            "assembly",
-            "gac",
-            "unsigned",
-            "strong",
-            "name"
-          ],
-          "homepage_url": "https://github.com/brutaldev/StrongNameSigner",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/brutal.dev.strongnamesigner/1.6.1/brutal.dev.strongnamesigner.1.6.1.nupkg",
-          "size": 295872,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "EDC1AC52F1676661EECA38C431643C7991E3048ECD154FD6D0FB2FA31D4F0E1CB25C274CE5D5001E13680D4D6F8C18ED5F3FD48C06E9009C8A1C71CC83D4F042",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/brutaldev/StrongNameSigner#license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Brutal.Dev.StrongNameSigner/1.6.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/brutal.dev.strongnamesigner/1.6.1/brutal.dev.strongnamesigner.1.6.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/brutal.dev.strongnamesigner/1.6.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
         }
       ]
     }

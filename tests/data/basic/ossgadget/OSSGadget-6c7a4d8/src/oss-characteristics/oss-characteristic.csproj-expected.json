@@ -53,56 +53,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Nerdbank.GitVersioning",
-          "version": "3.5.119",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
-          "primary_language": "C#",
-          "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Andrew Arnott",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "git",
-            "commit",
-            "versioning",
-            "version",
-            "assemblyinfo"
-          ],
-          "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "size": 12709967,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.CST.ApplicationInspector.Commands",
           "version": "1.6.24",
           "qualifiers": "",
@@ -147,54 +97,6 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Microsoft.CST.ApplicationInspector.RulesEngine",
-              "version": "1.6.24",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.RulesEngine@1.6.24",
-              "primary_language": "C#",
-              "description": "Microsoft Application Inspector is a software source code analysis tool that helps identify and surface well-known features and other interesting characteristics of source code to aid in determining what the software is or what it does.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "Security",
-                "Static",
-                "Analyzer"
-              ],
-              "homepage_url": "https://github.com/microsoft/ApplicationInspector",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.applicationinspector.rulesengine/1.6.24/microsoft.cst.applicationinspector.rulesengine.1.6.24.nupkg",
-              "size": 129643,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "9936DBC37A52EC796BF2DAFB42C391BB9BB320D8E45868F15F8A2B9A6F846E0B033CBE1E50754C949795A2A4A81EC44E53E7ED071712D16990F77A8FD7425462",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CST.ApplicationInspector.RulesEngine/1.6.24/license",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CST.ApplicationInspector.RulesEngine/1.6.24?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.applicationinspector.rulesengine/1.6.24/microsoft.cst.applicationinspector.rulesengine.1.6.24.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.cst.applicationinspector.rulesengine/1.6.24.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "dependencies": []
-            },
             {
               "type": "nuget",
               "namespace": "",
@@ -344,6 +246,54 @@
               "repository_homepage_url": "https://www.nuget.org/packages/Glob/1.1.9?_src=template",
               "repository_download_url": "https://api.nuget.org/v3-flatcontainer/glob/1.1.9/glob.1.1.9.nupkg",
               "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/glob/1.1.9.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.CST.ApplicationInspector.RulesEngine",
+              "version": "1.6.24",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.CST.ApplicationInspector.RulesEngine@1.6.24",
+              "primary_language": "C#",
+              "description": "Microsoft Application Inspector is a software source code analysis tool that helps identify and surface well-known features and other interesting characteristics of source code to aid in determining what the software is or what it does.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "Security",
+                "Static",
+                "Analyzer"
+              ],
+              "homepage_url": "https://github.com/microsoft/ApplicationInspector",
+              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.applicationinspector.rulesengine/1.6.24/microsoft.cst.applicationinspector.rulesengine.1.6.24.nupkg",
+              "size": 129643,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "9936DBC37A52EC796BF2DAFB42C391BB9BB320D8E45868F15F8A2B9A6F846E0B033CBE1E50754C949795A2A4A81EC44E53E7ED071712D16990F77A8FD7425462",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CST.ApplicationInspector.RulesEngine/1.6.24/license",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CST.ApplicationInspector.RulesEngine/1.6.24?_src=template",
+              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.applicationinspector.rulesengine/1.6.24/microsoft.cst.applicationinspector.rulesengine.1.6.24.nupkg",
+              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.cst.applicationinspector.rulesengine/1.6.24.json",
               "datasource_id": "",
               "datafile_path": "",
               "dependencies": []
@@ -629,6 +579,56 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Nerdbank.GitVersioning",
+          "version": "3.5.119",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
+          "primary_language": "C#",
+          "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Andrew Arnott",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "git",
+            "commit",
+            "versioning",
+            "version",
+            "assemblyinfo"
+          ],
+          "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
+          "size": 12709967,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         }
       ]
     }

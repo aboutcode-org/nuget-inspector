@@ -113,52 +113,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "NuGetDefense",
-          "version": "2.1.2",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/NuGetDefense@2.1.2",
-          "primary_language": "C#",
-          "description": "NuGetDefense was inspired by OWASP SafeNuGet but checks with multiple sources for known vulnerabilities.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Curtis Carter",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Security"
-          ],
-          "homepage_url": "https://digitalcoyote.github.io/NuGetDefense/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/2.1.2/nugetdefense.2.1.2.nupkg",
-          "size": 24065448,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "7DBDF0D8F3560AA50629121855D651479024FA9A269F2BD56EFE14E658ABEF678DF161C69F61809FA75D4240C926BBB988AA1E5D0B6E7B2D356495E0341BE7A6",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/2.1.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/2.1.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/2.1.2/nugetdefense.2.1.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/2.1.2.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Bootstrap",
           "version": "3.4.0",
           "qualifiers": "",
@@ -255,6 +209,52 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGetDefense",
+          "version": "2.1.2",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGetDefense@2.1.2",
+          "primary_language": "C#",
+          "description": "NuGetDefense was inspired by OWASP SafeNuGet but checks with multiple sources for known vulnerabilities.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Curtis Carter",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "Security"
+          ],
+          "homepage_url": "https://digitalcoyote.github.io/NuGetDefense/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/2.1.2/nugetdefense.2.1.2.nupkg",
+          "size": 24065448,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "7DBDF0D8F3560AA50629121855D651479024FA9A269F2BD56EFE14E658ABEF678DF161C69F61809FA75D4240C926BBB988AA1E5D0B6E7B2D356495E0341BE7A6",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/2.1.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/2.1.2?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/2.1.2/nugetdefense.2.1.2.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/2.1.2.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         },
         {
           "type": "nuget",

@@ -53,50 +53,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "System.Data.DataSetExtensions",
-          "version": "4.5.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
-          "primary_language": "C#",
-          "description": "Provides extensions to form LINQ expressions and method queries against DataTable objects.\n\nCommonly Used Types:\nSystem.Data.DataRowComparer\nSystem.Data.DataRowExtensions\nSystem.Data.DataTableExtensions\nSystem.Data.EnumerableRowCollection\nSystem.Data.EnumerableRowCollectionExtensions\nSystem.Data.OrderedEnumerableRowCollection\nSystem.Data.TypedTableBase\nSystem.Data.TypedTableBaseExtensions\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
-          "size": 62293,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "C4A50BF1E786B89D2E1DA4690CA1626D5C578D6AEAB96C50B804A546786F21343C70664F66B3BC4FC961F1729F3A78ABAC3C90CFCD530B000B3D7CDF9525B724",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
           "version": "0.2.222702",
           "qualifiers": "",
@@ -1155,6 +1111,50 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Data.DataSetExtensions",
+          "version": "4.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Data.DataSetExtensions@4.5.0",
+          "primary_language": "C#",
+          "description": "Provides extensions to form LINQ expressions and method queries against DataTable objects.\n\nCommonly Used Types:\nSystem.Data.DataRowComparer\nSystem.Data.DataRowExtensions\nSystem.Data.DataTableExtensions\nSystem.Data.EnumerableRowCollection\nSystem.Data.EnumerableRowCollectionExtensions\nSystem.Data.OrderedEnumerableRowCollection\nSystem.Data.TypedTableBase\nSystem.Data.TypedTableBaseExtensions\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://dot.net/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
+          "size": 62293,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "C4A50BF1E786B89D2E1DA4690CA1626D5C578D6AEAB96C50B804A546786F21343C70664F66B3BC4FC961F1729F3A78ABAC3C90CFCD530B000B3D7CDF9525B724",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         }
       ]
     }

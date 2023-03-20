@@ -89,6 +89,52 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "jQuery",
+          "version": "1.12.4",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/jQuery@1.12.4",
+          "primary_language": "C#",
+          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "jQuery Foundation, Inc.",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "jQuery"
+          ],
+          "homepage_url": "http://jquery.com/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.12.4/jquery.1.12.4.nupkg",
+          "size": 259995,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "08ED57FE0BE5D88F133E25F2C08CC50963FAEDA299DDF8BA7A65433E81EC10A050691883088AF221B83656DA157EABDF3B16FF7532DD7091ECF1C4EC1FBFEE30",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.12.4?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.12.4/jquery.1.12.4.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.12.4.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "NETStandard.Library",
           "version": "1.6.1",
           "qualifiers": "",
@@ -1142,52 +1188,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "jQuery",
-          "version": "1.12.4",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/jQuery@1.12.4",
-          "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery Foundation, Inc.",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.12.4/jquery.1.12.4.nupkg",
-          "size": 259995,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "08ED57FE0BE5D88F133E25F2C08CC50963FAEDA299DDF8BA7A65433E81EC10A050691883088AF221B83656DA157EABDF3B16FF7532DD7091ECF1C4EC1FBFEE30",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.12.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.12.4/jquery.1.12.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.12.4.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
         }
       ]
     }

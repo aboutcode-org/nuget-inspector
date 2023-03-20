@@ -53,52 +53,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "11.0.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@11.0.1",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "https://www.newtonsoft.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.1/newtonsoft.json.11.0.1.nupkg",
-          "size": 2412261,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "C2B7F92C15F5A2627FF0789829BCB6DAE055ECC3C27F0C57598DFDC36F156498D874DD426F77A24E4916939800924756F8DFC0D218129AAB623E8030B1BD3BAA",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.1/newtonsoft.json.11.0.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "NETStandard.Library",
           "version": "2.0.3",
           "qualifiers": "",
@@ -184,6 +138,52 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Newtonsoft.Json",
+          "version": "11.0.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@11.0.1",
+          "primary_language": "C#",
+          "description": "Json.NET is a popular high-performance JSON framework for .NET",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newton-King",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "json"
+          ],
+          "homepage_url": "https://www.newtonsoft.com/json",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.1/newtonsoft.json.11.0.1.nupkg",
+          "size": 2412261,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "C2B7F92C15F5A2627FF0789829BCB6DAE055ECC3C27F0C57598DFDC36F156498D874DD426F77A24E4916939800924756F8DFC0D218129AAB623E8030B1BD3BAA",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.1/newtonsoft.json.11.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         }
       ]
     }

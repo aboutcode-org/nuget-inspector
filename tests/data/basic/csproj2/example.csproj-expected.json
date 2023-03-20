@@ -53,6 +53,57 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "iTextSharp",
+          "version": "5.5.13.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/iTextSharp@5.5.13.1",
+          "primary_language": "C#",
+          "description": "PLEASE NOTE: iTextSharp is EOL, and has been replaced by iText\u00a07. Only security fixes will be added\n\nWe HIGHLY recommend customers use iText\u00a07 for new projects, and to consider moving existing projects from iTextSharp to iText\u00a07 to benefit from the many improvements such as:\n\n* HTML to PDF (PDF/UA) conversion\n* PDF Redaction\n* SVG support\n* Better language support (Indic, Thai, Khmer, Arabic, Hebrew)\n* PDF Debugging for your IDE\n* Data Extraction\n* Better continued support and bugfixes\n* More modular, extensible handling of your document workflow\n* Extra practical add-ons\n* Encryption, hashing and digital signatures\n\niText is a PDF library that allows you to CREATE, ADAPT, INSPECT and MAINTAIN documents in the Portable Document Format (PDF), allowing you to add PDF functionality to your software projects with ease.  We even have documentation to help you get coding.\n\niText\u00a07 is available under AGPL and Commercial license. iText\u00a07 community: https://www.nuget.org/packages/itext7/\n\niText\u00a07 is a complete re-write of iText\u00a05, allowing you to choose your adventure with add-ons, all based on a simple, modular code structure that is easy to use and well documented.\n\niText\u00a07 includes pdfDebug, the first debugging tool that gives you a clear overview of your content streams and document structure as well as pdfCalligraph, allowing you to leverage advanced typography.\n\nSeveral iText engineers are actively supporting the project on StackOverflow: http://stackoverflow.com/questions/tagged/itext",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Bruno Lowagie, Paulo Soares, et al.",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "itext",
+            "itextsharp",
+            "c#",
+            ".net",
+            "csharp",
+            "pdf"
+          ],
+          "homepage_url": "http://itextpdf.com/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
+          "size": 1870150,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "EA9DD115127CB56D0518391D47A3E660870BCB66DD4F884516E6CE61132C3DE5C4E8E28BB1DCEF05034371F3AADDFDB45CFEC935639EA5A9644F9E7A189B55D4",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://www.gnu.org/licenses/agpl.html",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/iTextSharp/5.5.13.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/itextsharp/5.5.13.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "NETStandard.Library",
           "version": "2.0.3",
           "qualifiers": "",
@@ -138,57 +189,6 @@
               "dependencies": []
             }
           ]
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "iTextSharp",
-          "version": "5.5.13.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/iTextSharp@5.5.13.1",
-          "primary_language": "C#",
-          "description": "PLEASE NOTE: iTextSharp is EOL, and has been replaced by iText\u00a07. Only security fixes will be added\n\nWe HIGHLY recommend customers use iText\u00a07 for new projects, and to consider moving existing projects from iTextSharp to iText\u00a07 to benefit from the many improvements such as:\n\n* HTML to PDF (PDF/UA) conversion\n* PDF Redaction\n* SVG support\n* Better language support (Indic, Thai, Khmer, Arabic, Hebrew)\n* PDF Debugging for your IDE\n* Data Extraction\n* Better continued support and bugfixes\n* More modular, extensible handling of your document workflow\n* Extra practical add-ons\n* Encryption, hashing and digital signatures\n\niText is a PDF library that allows you to CREATE, ADAPT, INSPECT and MAINTAIN documents in the Portable Document Format (PDF), allowing you to add PDF functionality to your software projects with ease.  We even have documentation to help you get coding.\n\niText\u00a07 is available under AGPL and Commercial license. iText\u00a07 community: https://www.nuget.org/packages/itext7/\n\niText\u00a07 is a complete re-write of iText\u00a05, allowing you to choose your adventure with add-ons, all based on a simple, modular code structure that is easy to use and well documented.\n\niText\u00a07 includes pdfDebug, the first debugging tool that gives you a clear overview of your content streams and document structure as well as pdfCalligraph, allowing you to leverage advanced typography.\n\nSeveral iText engineers are actively supporting the project on StackOverflow: http://stackoverflow.com/questions/tagged/itext",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Bruno Lowagie, Paulo Soares, et al.",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "itext",
-            "itextsharp",
-            "c#",
-            ".net",
-            "csharp",
-            "pdf"
-          ],
-          "homepage_url": "http://itextpdf.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
-          "size": 1870150,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "EA9DD115127CB56D0518391D47A3E660870BCB66DD4F884516E6CE61132C3DE5C4E8E28BB1DCEF05034371F3AADDFDB45CFEC935639EA5A9644F9E7A189B55D4",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://www.gnu.org/licenses/agpl.html",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/iTextSharp/5.5.13.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/itextsharp/5.5.13.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
         }
       ]
     }

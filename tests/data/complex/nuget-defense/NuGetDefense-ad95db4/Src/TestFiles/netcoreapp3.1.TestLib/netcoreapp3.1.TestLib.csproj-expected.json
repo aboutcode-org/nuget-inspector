@@ -113,98 +113,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "NuGetDefense",
-          "version": "3.0.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/NuGetDefense@3.0.0",
-          "primary_language": "C#",
-          "description": "NuGetDefense was inspired by OWASP SafeNuGet but checks with multiple sources for known\n            vulnerabilities.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Curtis Carter",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Security"
-          ],
-          "homepage_url": "https://digitalcoyote.github.io/NuGetDefense/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/3.0.0/nugetdefense.3.0.0.nupkg",
-          "size": 38060830,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "254CED3EA596004F96C1DACC194DF12254EBEC2913FC566E10A83C11926F5BC06388EEF85FD42A274B069B481E0C588E318A2DA1AF7833AA489B563C4461B1F3",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/3.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/3.0.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/3.0.0/nugetdefense.3.0.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/3.0.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "jquery",
-          "version": "1.9.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/jQuery@1.9.0",
-          "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "John Resig",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.9.0/jquery.1.9.0.nupkg",
-          "size": 250273,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "AE5F361D100D3A1E29480CC27C6525FFB9292AC6B515FCA7758FD8C02FB09B5C813C58018E6BA553A3076DAF15F21B589D5693F187DE0ED1E6D5989F709191FF",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.9.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.9.0/jquery.1.9.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.9.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Bootstrap",
           "version": "3.0.0",
           "qualifiers": "",
@@ -298,6 +206,98 @@
               "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "jquery",
+          "version": "1.9.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/jQuery@1.9.0",
+          "primary_language": "C#",
+          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "John Resig",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "jQuery"
+          ],
+          "homepage_url": "http://jquery.com/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.9.0/jquery.1.9.0.nupkg",
+          "size": 250273,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "AE5F361D100D3A1E29480CC27C6525FFB9292AC6B515FCA7758FD8C02FB09B5C813C58018E6BA553A3076DAF15F21B589D5693F187DE0ED1E6D5989F709191FF",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/1.9.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.9.0/jquery.1.9.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.9.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGetDefense",
+          "version": "3.0.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGetDefense@3.0.0",
+          "primary_language": "C#",
+          "description": "NuGetDefense was inspired by OWASP SafeNuGet but checks with multiple sources for known\n            vulnerabilities.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Curtis Carter",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "Security"
+          ],
+          "homepage_url": "https://digitalcoyote.github.io/NuGetDefense/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/3.0.0/nugetdefense.3.0.0.nupkg",
+          "size": 38060830,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "254CED3EA596004F96C1DACC194DF12254EBEC2913FC566E10A83C11926F5BC06388EEF85FD42A274B069B481E0C588E318A2DA1AF7833AA489B563C4461B1F3",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGetDefense/3.0.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGetDefense/3.0.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense/3.0.0/nugetdefense.3.0.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/3.0.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         },
         {
           "type": "nuget",

@@ -53,52 +53,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "13.0.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "https://www.newtonsoft.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
-          "size": 2065787,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "83731B662EAF05379A23F8446EF47BBC111349DD4358B7BD8B51383FE9CF637E2FE62F78CEA52A0D7BDD582DC6FBBB5837D4A7B1D53DCF37A0AE7473E21EE7B1",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Newtonsoft.Json/13.0.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/13.0.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.SourceLink.GitHub",
           "version": "1.0.0",
           "qualifiers": "",
@@ -148,55 +102,6 @@
             {
               "type": "nuget",
               "namespace": "",
-              "name": "Microsoft.SourceLink.Common",
-              "version": "1.0.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
-              "primary_language": "C#",
-              "description": "MSBuild tasks providing source control information.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "MSBuild",
-                "Tasks",
-                "source",
-                "control"
-              ],
-              "homepage_url": "https://github.com/dotnet/sourcelink",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
-              "size": 273871,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "AA73A2AA20711EC2B294B56776BDAEA874B1F5C7792F55C150F8EEFF8E474ED1AFD0F8F9388BB9D88DDACDA8DD35E9E5E110CDEB5296594D68D03BADAD157D85",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.common/1.0.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "dependencies": []
-            },
-            {
-              "type": "nuget",
-              "namespace": "",
               "name": "Microsoft.Build.Tasks.Git",
               "version": "1.0.0",
               "qualifiers": "",
@@ -243,8 +148,103 @@
               "datasource_id": "",
               "datafile_path": "",
               "dependencies": []
+            },
+            {
+              "type": "nuget",
+              "namespace": "",
+              "name": "Microsoft.SourceLink.Common",
+              "version": "1.0.0",
+              "qualifiers": "",
+              "subpath": "",
+              "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+              "primary_language": "C#",
+              "description": "MSBuild tasks providing source control information.",
+              "release_date": "",
+              "parties": [
+                {
+                  "type": "organization",
+                  "role": "author",
+                  "name": "Microsoft",
+                  "email": "",
+                  "url": ""
+                }
+              ],
+              "keywords": [
+                "MSBuild",
+                "Tasks",
+                "source",
+                "control"
+              ],
+              "homepage_url": "https://github.com/dotnet/sourcelink",
+              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
+              "size": 273871,
+              "sha1": "",
+              "md5": "",
+              "sha256": "",
+              "sha512": "AA73A2AA20711EC2B294B56776BDAEA874B1F5C7792F55C150F8EEFF8E474ED1AFD0F8F9388BB9D88DDACDA8DD35E9E5E110CDEB5296594D68D03BADAD157D85",
+              "bug_tracking_url": "",
+              "code_view_url": "",
+              "vcs_url": "",
+              "copyright": "",
+              "license_expression": "",
+              "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+              "notice_text": "",
+              "source_packages": [],
+              "extra_data": {},
+              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0?_src=template",
+              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
+              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.common/1.0.0.json",
+              "datasource_id": "",
+              "datafile_path": "",
+              "dependencies": []
             }
           ]
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Newtonsoft.Json",
+          "version": "13.0.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@13.0.1",
+          "primary_language": "C#",
+          "description": "Json.NET is a popular high-performance JSON framework for .NET",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newton-King",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "json"
+          ],
+          "homepage_url": "https://www.newtonsoft.com/json",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
+          "size": 2065787,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "83731B662EAF05379A23F8446EF47BBC111349DD4358B7BD8B51383FE9CF637E2FE62F78CEA52A0D7BDD582DC6FBBB5837D4A7B1D53DCF37A0AE7473E21EE7B1",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Newtonsoft.Json/13.0.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/13.0.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
         }
       ]
     }
