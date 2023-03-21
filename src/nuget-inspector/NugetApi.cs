@@ -19,7 +19,7 @@ namespace NugetInspector;
 /// </summary>
 public class NugetApi
 {
-    private readonly Dictionary<(string, bool), List<PackageSearchMetadataRegistration>> lookupCache = new();
+    private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> lookupCache = new();
     private readonly Dictionary<PackageIdentity, PackageDownload> download_by_identity = new();
     private readonly List<SourceRepository> source_repositories = new();
     private readonly List<PackageMetadataResource> MetadataResourceList = new();
@@ -62,7 +62,7 @@ public class NugetApi
         // TODO: we may need to error out if version is not known/existing upstream
         if (package_versions.Count == 0)
             return null;
-        var versions = package_versions.Select(selector: package => package.Identity.Version);
+        IEnumerable<NuGetVersion> versions = package_versions.Select(selector: package => package.Identity.Version);
         var best_version = versionRange?.FindBestMatch(versions: versions);
         return package_versions.Find(package => package.Identity.Version == best_version);
     }
@@ -134,7 +134,7 @@ public class NugetApi
     private List<PackageSearchMetadataRegistration> FindPackageVersionsThroughCache(
         string? id,
         bool use_cache = true,
-        bool include_prerelease = true)
+        bool include_prerelease = false)
     {
         if (id == null)
         {
@@ -143,7 +143,7 @@ public class NugetApi
 
         if (use_cache)
         {
-            if (!lookupCache.ContainsKey(key: (id, include_prerelease)))
+            if (!lookupCache.ContainsKey(id))
             {
                 if (Config.TRACE_NET)
                     Console.WriteLine($"API Cache miss package '{id}'");
@@ -151,12 +151,12 @@ public class NugetApi
                 List<PackageSearchMetadataRegistration> metadatas = FindPackagesOnline(
                     name: id,
                     include_prerelease: include_prerelease);
-                lookupCache[key: (id, include_prerelease)] = metadatas;
+                lookupCache[id] = metadatas;
                 return metadatas;
             }
             else
             {
-                return lookupCache[key: (id, include_prerelease)];
+                return lookupCache[key: id];
             }
         }
         else
@@ -176,7 +176,7 @@ public class NugetApi
         bool include_prerelease = false)
     {
         if (Config.TRACE_NET)
-            Console.WriteLine($"FindPackagesOnline: {name}");
+            Console.WriteLine($"FindPackagesOnline: {name} include_prerelease: {include_prerelease}");
 
         var matching_packages = new List<PackageSearchMetadataRegistration>();
         var exceptions = new List<Exception>();
@@ -194,7 +194,7 @@ public class NugetApi
                     (IEnumerable<PackageSearchMetadataRegistration>)metadata_resource.GetMetadataAsync(
                         packageId: name,
                         includePrerelease: include_prerelease,
-                        includeUnlisted: include_prerelease,
+                        includeUnlisted: false,
                         sourceCacheContext: cache_context,
                         log: new NugetLogger(),
                         token: CancellationToken.None
@@ -208,6 +208,13 @@ public class NugetApi
                     List<PackageSearchMetadataRegistration> metadata = package_metadata.ToList();
                     if (metadata.Any())
                         matching_packages.AddRange(collection: metadata);
+                    if (Config.TRACE_NET)
+                    {
+                        foreach (var meta in metadata)
+                        {
+                            Console.WriteLine($"    Fetched: {meta.PackageId}@{meta.Version}");
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -520,11 +527,9 @@ public class NugetApi
         //var pruned = PrunePackageTree.PrunePreleaseForStableTargets();
         if (Config.TRACE)
         {
-            Console.WriteLine($"    all gathered dependencies");
+            Console.WriteLine("    all gathered dependencies");
             foreach (var spdi in gathered_dependencies)
-            {
                 Console.WriteLine($"        {spdi.Id}@{spdi.Version}");
-            }
         }
         return gathered_dependencies;
     }

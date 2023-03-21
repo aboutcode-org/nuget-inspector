@@ -54,9 +54,10 @@ internal class ProjectFileProcessor : IDependencyProcessor
         var dependencies = new List<Dependency>();
         foreach (var reference in references)
         {
+            var rpid = reference.PackageIdentity;
             var dep = new Dependency(
-                name: reference.PackageIdentity.Id,
-                version_range: reference.AllowedVersions,
+                name: rpid.Id,
+                version_range: reference.AllowedVersions ?? new VersionRange(rpid.Version),
                 framework: ProjectTargetFramework,
                 is_direct: true);
             dependencies.Add(item: dep);
@@ -76,9 +77,11 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
         var references = new List<PackageReference>();
 
+        // TODO: consider reading global.json if present?
         Dictionary<string, string> properties = new();
         if (ProjectTargetFramework != null)
             properties["TargetFramework"] = ProjectTargetFramework.GetShortFolderName();
+        //properties["AllowPrerelease"] = "false";
 
         var project = new Microsoft.Build.Evaluation.Project(
             projectFile: ProjectPath,
@@ -89,12 +92,24 @@ internal class ProjectFileProcessor : IDependencyProcessor
         {
             if (reference == null)
                 continue;
-
-            var versionMetaData = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
-            VersionRange? version_range;
-            if (versionMetaData is not null)
+            if (Config.TRACE)
             {
-                _ = VersionRange.TryParse(value: versionMetaData.EvaluatedValue, versionRange: out version_range);
+                Console.WriteLine($"    Project reference: EvaluatedInclude: {reference.EvaluatedInclude}");
+                foreach (var meta in reference.Metadata)
+                {
+                    Console.WriteLine($"        meta: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
+                }
+                foreach (var dmeta in reference.DirectMetadata)
+                {
+                    Console.WriteLine($"        dmeta: name: '{dmeta.Name}' value: '{dmeta.EvaluatedValue}'");
+                }
+            }
+
+            var version_metadata = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
+            VersionRange? version_range;
+            if (version_metadata is not null)
+            {
+                _ = VersionRange.TryParse(value: version_metadata.EvaluatedValue, versionRange: out version_range);
             }
             else
             {
@@ -113,7 +128,9 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 packref = new PackageReference(
                     identity: identity,
                     targetFramework: ProjectTargetFramework);
-            } else {
+            }
+            else
+            {
                 packref = new PackageReference(
                     identity: identity,
                     targetFramework: ProjectTargetFramework,
@@ -189,8 +206,8 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// </summary>
     public DependencyResolution Resolve()
     {
-        return ResolveOneAtATime()  ;
-        // return ResolveManyAtOnce();
+        //return ResolveOneAtATime()  ;
+        return ResolveManyAtOnce();
     }
 
     /// <summary>
@@ -333,7 +350,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
     public DependencyResolution ResolveManyAtOnce()
     {
         if (Config.TRACE)
-            Console.WriteLine("\nProjectFileResolver.DependencyResolution: starting resolution");
+            Console.WriteLine("\nProjectFileResolver.ResolveManyAtOnce: starting resolution");
         try
         {
             List<PackageReference> references = GetPackageReferences();
@@ -349,16 +366,33 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 framework: ProjectTargetFramework!
             );
 
-            // Prune the potential dependencies
-            var pruned_dependencies = PrunePackageTree.PruneDisallowedVersions(
-                packages: available_dependencies,
-                packageReferences: references);
+            if (Config.TRACE)
+            {
+                foreach (var spdi in available_dependencies)
+                    Console.WriteLine($"    potential_dependencies: {spdi.Id}@{spdi.Version} prerel:{spdi.Version.IsPrerelease}");
+            }
 
-            pruned_dependencies = PrunePackageTree.PrunePreleaseForStableTargets(
-                packages: pruned_dependencies,
-                targets: direct_deps,
-                packagesToInstall: direct_deps
-            );
+            // Prune the potential dependencies from prereleases
+            var pruned_dependencies = available_dependencies.Where(p => !p.Version.IsPrerelease);
+
+            if (Config.TRACE)
+                foreach (var spdi in pruned_dependencies) Console.WriteLine($"    pruned_dependencies1: {spdi.Id}@{spdi.Version}");
+
+            // pruned_dependencies = PrunePackageTree.PruneDisallowedVersions(
+            //     packages: available_dependencies,
+            //     packageReferences: references);
+
+            // if (Config.TRACE)
+            //     foreach (var spdi in pruned_dependencies) Console.WriteLine($"    pruned_dependencies2: {spdi.Id}@{spdi.Version}");
+
+            // pruned_dependencies = PrunePackageTree.PrunePreleaseForStableTargets(
+            //     packages: pruned_dependencies,
+            //     targets: direct_deps,
+            //     packagesToInstall: direct_deps
+            // );
+
+            // if (Config.TRACE)
+            //     foreach (var spdi in pruned_dependencies) Console.WriteLine($"    pruned_dependencies3: {spdi.Id}@{spdi.Version}");
 
             // Resolve proper
             List<string> target_names = new HashSet<string>(direct_deps.Select(p => p.Id)).ToList();
@@ -374,6 +408,10 @@ internal class ProjectFileProcessor : IDependencyProcessor
                     name: resolved_dep.Id,
                     version: resolved_dep.Version.ToString(),
                     framework: ProjectTargetFramework!.GetShortFolderName());
+
+                if (Config.TRACE)
+                    Console.WriteLine($"    Success to resolve: {resolved_dep.Id}@{resolved_dep.Version}");
+
                 resolution.Dependencies.Add(dep);
             }
 
@@ -397,9 +435,15 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// </summary>
     private List<PackageIdentity> CollectDirectDeps(List<Dependency> dependencies)
     {
+        if (Config.TRACE)
+            Console.WriteLine("ProjectFileProcessor.CollectDirectDeps for dependencies:");
+
         var direct_deps = new List<PackageIdentity>();
         foreach (var dep in dependencies)
         {
+            if (Config.TRACE)
+                Console.WriteLine($"    name: {dep.name} version_range: {dep.version_range}");
+
             PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
                 id: dep.name,
                 versionRange: dep.version_range,
