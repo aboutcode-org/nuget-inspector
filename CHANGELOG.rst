@@ -2,6 +2,19 @@ Changelog
 =========
 
 
+v0.9.5
+-------
+
+This is a major feature update release with these updates and API breaking changes:
+
+* Remove nested "packages". Instead report only the "dependencies", nested as
+  needed. Many processors return a flat list of dependencies. This is towards
+  https://github.com/nexB/nuget-inspector/issues/24
+
+* Resolve packages removing duplicates to fix 
+  https://github.com/nexB/nuget-inspector/issues/23
+
+
 v0.9.1
 -------
 

@@ -19,7 +19,7 @@
       "type": "nuget",
       "namespace": "",
       "name": "NugetAuditor.ConsoleApp",
-      "version": "1.0.0",
+      "version": null,
       "qualifiers": "",
       "subpath": "",
       "purl": "",
@@ -49,156 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/thirdparty-suites/sonatype-audit.net/audit.net-6155370/src/NugetAuditor/NugetAuditor.Console/NugetAuditor.ConsoleApp.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "CommandLineParser",
-          "version": "1.9.71",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/CommandLineParser@1.9.71",
-          "primary_language": "C#",
-          "description": "The Command Line Parser Library offers to CLR applications a clean and concise API for manipulating command line arguments and related tasks.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Giacomo Stelluti Scala",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "command",
-            "line",
-            "argument",
-            "option",
-            "parser",
-            "parsing",
-            "library",
-            "syntax",
-            "shell"
-          ],
-          "homepage_url": "https://github.com/commandlineparser/commandline",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/commandlineparser/1.9.71/commandlineparser.1.9.71.nupkg",
-          "size": 114022,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "7D1580432D11B96210087C5B9D498C4BEFA983435EF4B8B144B3E46051CD78C18608F58071846854583527BD41F2D244B071C6AC47149E39EEDE6902293BA83E",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/gsscoder/commandline/master/doc/LICENSE",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/CommandLineParser/1.9.71?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/commandlineparser/1.9.71/commandlineparser.1.9.71.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/commandlineparser/1.9.71.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "ILMerge",
-          "version": "2.14.1208",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/ILMerge@2.14.1208",
-          "primary_language": "C#",
-          "description": "ILMerge is a utility that can be used to merge multiple .NET assemblies into a single assembly. ILMerge takes a set of input assemblies and merges them into one target assembly. The first assembly in the list of input assemblies is the primary assembly. When the primary assembly is an executable, then the target assembly is created as an executable with the same entry point as the primary assembly. Also, if the primary assembly has a strong name, and a .snk file is provided, then the target assembly is re-signed with the specified key so that it also has a strong name.\n \nILMerge is packaged as a console application. But all of its functionality is also available programmatically. \n\nThere are several options that control the behavior of ILMerge. See the documentation that comes with the tool for details.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "mbarnett",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://www.microsoft.com/en-us/research/people/mbarnett/#ilmerge",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/ilmerge/2.14.1208/ilmerge.2.14.1208.nupkg",
-          "size": 311897,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "3215B9FA81661D5247A7433B61B96EC74918EE576BC1B2D7E9F84AF94F123428EB3B0A717DA84F3DB78DDAE9340207BC73B212BE3E57B02E2CFD56B670F8A94C",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://research.microsoft.com/en-us/people/mbarnett/ilmerge-license.aspx",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/ILMerge/2.14.1208?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/ilmerge/2.14.1208/ilmerge.2.14.1208.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge/2.14.1208.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "ILMerge.MSBuild.Tasks",
-          "version": "1.0.0.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/ILMerge.MSBuild.Tasks@1.0.0.3",
-          "primary_language": "C#",
-          "description": "Interested in using ILMerge during an automated build? ILMerge Tasks will allow you to access ILMerge as a task from MSBuild.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "neoeinstein@gmail.com",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "MSBuild",
-            "ILMerge"
-          ],
-          "homepage_url": "http://code.google.com/p/ilmerge-tasks/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/ilmerge.msbuild.tasks/1.0.0.3/ilmerge.msbuild.tasks.1.0.0.3.nupkg",
-          "size": 405407,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "D71BE8E11EFCE04EA3E8E399998074A44E300D56701029FD4EBABD95D2D70329792544540D3D856FF6C79201131F17E174824650A0F29C841AAD3D34CEAA3A7A",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/ILMerge.MSBuild.Tasks/1.0.0.3?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/ilmerge.msbuild.tasks/1.0.0.3/ilmerge.msbuild.tasks.1.0.0.3.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge.msbuild.tasks/1.0.0.3.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -252,7 +102,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/commandlineparser/1.9.71.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         },
         {
@@ -297,7 +146,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge/2.14.1208.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         },
         {
@@ -345,7 +193,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge.msbuild.tasks/1.0.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         }
       ]

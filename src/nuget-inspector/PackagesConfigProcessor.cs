@@ -10,7 +10,7 @@ namespace NugetInspector;
 /// https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
 /// and https://learn.microsoft.com/en-us/nuget/consume-packages/migrate-packages-config-to-package-reference
 /// </summary>
-internal class PackagesConfigHandler : IDependencyResolver
+internal class PackagesConfigProcessor : IDependencyProcessor
 {
     public const string DatasourceId = "nuget-packages.config";
     private readonly NugetApi nugetApi;
@@ -19,7 +19,7 @@ internal class PackagesConfigHandler : IDependencyResolver
 
     private readonly NuGetFramework project_target_framework;
 
-    public PackagesConfigHandler(
+    public PackagesConfigProcessor(
         string packages_config_path,
         NugetApi nuget_api,
         NuGetFramework project_target_framework)
@@ -39,12 +39,13 @@ internal class PackagesConfigHandler : IDependencyResolver
 
         DependencyResolution result = new()
         {
-            Packages = CreateBasePackage(dependencies: dependencies),
             Dependencies = new List<BasePackage>()
         };
-        foreach (var package in result.Packages)
+
+        var packages = CreateBasePackage(dependencies: dependencies);
+        foreach (var package in packages)
         {
-            var has_package_references = result.Packages.Any(pkg => pkg.dependencies.Contains(item: package));
+            var has_package_references = packages.Any(pkg => pkg.dependencies.Contains(item: package));
             if (!has_package_references && package != null)
                 result.Dependencies.Add(item: package);
         }
@@ -53,7 +54,7 @@ internal class PackagesConfigHandler : IDependencyResolver
     }
 
     /// <summary>
-    /// Return a lits of Dependency found in a packages.config file.
+    /// Return a list of Dependency found in a packages.config file.
     /// Skip packages with a TargetFramework that is not compatible with
     /// the requested Project TargetFramework.
     /// </summary>
@@ -72,6 +73,9 @@ internal class PackagesConfigHandler : IDependencyResolver
 
         var dependencies = new List<Dependency>();
 
+        if (Config.TRACE)
+            Console.WriteLine("PackagesConfigHandler.GetDependencies");
+
         foreach (var package in packages)
         {
             var name = package.PackageIdentity.Id;
@@ -82,13 +86,13 @@ internal class PackagesConfigHandler : IDependencyResolver
                 package_framework = NuGetFramework.AnyFramework;
 
             if (Config.TRACE)
-                Console.WriteLine($"GetDependencies: for: {name}@{version}  project_framework: {project_framework} package_framework: {package_framework}");
+                Console.WriteLine($"    for: {name}@{version}  project_framework: {project_framework} package_framework: {package_framework}");
 
             if  (project_framework?.IsUnsupported == false
                 && !compat.IsCompatible(framework: project_framework, other: package_framework))
             {
                 if (Config.TRACE)
-                    Console.WriteLine("    GetDependencies: incompatible frameworks");
+                    Console.WriteLine("    incompatible frameworks");
                 continue;
             }
             var range = new VersionRange(
@@ -98,7 +102,11 @@ internal class PackagesConfigHandler : IDependencyResolver
                 includeMaxVersion: true
             );
 
-            Dependency dep = new(name: name, version_range: range, framework: package_framework);
+            Dependency dep = new(
+                name: name,
+                version_range: range,
+                framework: package_framework,
+                is_direct: true);
             dependencies.Add(item: dep);
         }
 
@@ -109,24 +117,24 @@ internal class PackagesConfigHandler : IDependencyResolver
     {
         try
         {
-            var resolver = new LegacyPackagesConfigNoDupeResolver(service: nugetApi);
-            var packages = resolver.ProcessAll(packages: dependencies);
+            var resolver_helper = new PackagesConfigHelper(nugetApi: nugetApi);
+            var packages = resolver_helper.ProcessAll(packages: dependencies);
             return packages;
         }
         catch (Exception listex)
         {
             if (Config.TRACE)
-                Console.WriteLine($"There was an issue processing packages.config as list: {listex.Message}");
+                Console.WriteLine($"PackagesConfigHandler.CreateBasePackage: Failed processing packages.config as list: {listex.Message}");
             try
             {
-                var resolver = new NugetApiResolver(nugetApi: nugetApi);
-                resolver.AddAll(packages: dependencies);
+                var resolver = new NugetResolverHelper(nugetApi: nugetApi);
+                resolver.ResolveManyOneByOne(dependencies: dependencies);
                 return resolver.GetPackageList();
             }
             catch (Exception treeex)
             {
                 if (Config.TRACE)
-                    Console.WriteLine($"There was an issue processing packages.config as a tree: {treeex.Message}");
+                    Console.WriteLine($"PackagesConfigHandler.CreateBasePackage: TFailed processing packages.config as a tree: {treeex.Message}");
                 var packages =
                     new List<BasePackage>(
                         collection: dependencies.Select(selector: dependency => dependency.CreateEmptyBasePackage()));

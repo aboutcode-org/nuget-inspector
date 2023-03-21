@@ -7,17 +7,16 @@ namespace NugetInspector;
 /// Resolve using packages.config strategy from:
 /// See https://docs.microsoft.com/en-us/nuget/consume-packages/dependency-resolution#dependency-resolution-with-packagesconfig
 /// See https://learn.microsoft.com/en-us/nuget/reference/packages-config
-/// It means that only one package version can exist in the deps tree.
+/// It means that only one package version can exist in the dependencies tree.
 /// </summary>
-public class LegacyPackagesConfigNoDupeResolver
+public class PackagesConfigHelper
 {
-    public const string DatasourceId = "nuget-packages.config-no-dupe";
     private readonly NugetApi NugetApi;
     private readonly Dictionary<string, ResolutionData> ResolutionDatas = new();
 
-    public LegacyPackagesConfigNoDupeResolver(NugetApi service)
+    public PackagesConfigHelper(NugetApi nugetApi)
     {
-        NugetApi = service;
+        NugetApi = nugetApi;
     }
 
     private List<VersionRange?> FindAllVersionRangesFor(string id)
@@ -43,7 +42,7 @@ public class LegacyPackagesConfigNoDupeResolver
             Add(id: package.name!, name: package.name, range: package.version_range, framework: package.framework);
         }
 
-        var builder = new PackageBuilder();
+        var builder = new PackageTree();
         foreach (var data in ResolutionDatas.Values)
         {
             var deps = new List<BasePackage>();
@@ -63,7 +62,7 @@ public class LegacyPackagesConfigNoDupeResolver
             }
 
             builder.AddOrUpdatePackage(
-                id: new BasePackage(name: data.Name!,
+                base_package: new BasePackage(name: data.Name!,
                 version: data.CurrentVersion?.ToNormalizedString()),
                 dependencies: deps!);
         }
@@ -124,7 +123,7 @@ public class LegacyPackagesConfigNoDupeResolver
         data.CurrentVersion = best.Identity.Version;
         data.Dependencies.Clear();
 
-        var packages = NugetApi.DependenciesForPackage(identity: best.Identity, framework: project_target_framework);
+        var packages = NugetApi.GetPackageDependenciesForPackage(identity: best.Identity, framework: project_target_framework);
         foreach (var dependency in packages)
         {
             if (!data.Dependencies.ContainsKey(key: dependency.Id.ToLower()))

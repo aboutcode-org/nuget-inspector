@@ -2,12 +2,12 @@
 
 namespace NugetInspector;
 
-internal class ProjectAssetsJsonHandler : IDependencyResolver
+internal class ProjectAssetsJsonProcessor : IDependencyProcessor
 {
     public const string DatasourceId = "dotnet-project.assets.json";
     private readonly string ProjectAssetsJsonPath;
 
-    public ProjectAssetsJsonHandler(string projectAssetsJsonPath)
+    public ProjectAssetsJsonProcessor(string projectAssetsJsonPath)
     {
         ProjectAssetsJsonPath = projectAssetsJsonPath;
     }
@@ -16,7 +16,7 @@ internal class ProjectAssetsJsonHandler : IDependencyResolver
     {
         var lockFile = LockFileUtilities.GetLockFile(lockFilePath: ProjectAssetsJsonPath, logger: null);
 
-        var resolver = new LockFileHandler(lockFile: lockFile);
+        var resolver = new LockFileHelper(lockFile: lockFile);
 
         return resolver.Process();
     }

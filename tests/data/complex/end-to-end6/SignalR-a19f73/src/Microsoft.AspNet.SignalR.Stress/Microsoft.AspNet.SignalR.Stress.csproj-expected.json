@@ -19,7 +19,7 @@
       "type": "nuget",
       "namespace": "",
       "name": "Microsoft.AspNet.SignalR.Stress",
-      "version": "1.0.0",
+      "version": null,
       "qualifiers": "",
       "subpath": "",
       "purl": "",
@@ -49,103 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "CmdLine",
-          "version": "1.0.7.509",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/CmdLine@1.0.7.509",
-          "primary_language": "C#",
-          "description": "Command line parser with support for tokenizing, switches and attribute based arguments classes",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Ron Jacobs",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "CommandLine",
-            "Parser"
-          ],
-          "homepage_url": "http://code.msdn.microsoft.com/Command-Line-Parser-Library-a8ba828a",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
-          "size": 26440,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "FB6403EBDEA1FEC9D6DFB02FCCB9688E0DB947C3EB3FE72C548E75CB2C6C1EF533B467B2843C9FB3417916E8E608A4F8AAA914176EE70CF6E1C64A32BECC394B",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://opensource.org/licenses/ms-pl.html",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/CmdLine/1.0.7.509?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "11.0.2",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@11.0.2",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "https://www.newtonsoft.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
-          "size": 2409669,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "CE76466F0B3B138040F63C4D67B16E888448DC2F61AE06AD5504932A121865834EB9DE0CE557C6953622E917583B9B10ADE6C5B85FE0F54115DE13B10CC5C5E9",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -192,7 +95,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         },
         {
@@ -239,7 +141,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         }
       ]

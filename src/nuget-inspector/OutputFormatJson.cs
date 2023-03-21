@@ -45,6 +45,7 @@ internal class OutputFormatJson
 
     public OutputFormatJson(ScanResult result)
     {
+        result.Sort();
         Result = result;
         scan_output = new ScanOutput
         {
@@ -60,7 +61,6 @@ internal class OutputFormatJson
     public void Write()
     {
         var output_file_path = Result.Options!.OutputFilePath;
-        if (Config.TRACE) Console.WriteLine($"Creating output file path: {output_file_path}");
         using var fs = new FileStream(path: output_file_path!, mode: FileMode.Create);
         using var sw = new StreamWriter(stream: fs);
         var serializer = new JsonSerializer

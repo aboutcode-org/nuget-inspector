@@ -7,13 +7,13 @@ namespace NugetInspector;
 /// Handles legacy project.json format
 /// See https://learn.microsoft.com/en-us/nuget/archive/project-json
 /// </summary>
-internal class LegacyProjectJsonHandler : IDependencyResolver
+internal class ProjectJsonProcessor : IDependencyProcessor
 {
     public const string DatasourceId = "dotnet-project.json";
     private readonly string ProjectJsonPath;
     private readonly string? ProjectName;
 
-    public LegacyProjectJsonHandler(string? projectName, string projectJsonPath)
+    public ProjectJsonProcessor(string? projectName, string projectJsonPath)
     {
         ProjectName = projectName;
         ProjectJsonPath = projectJsonPath;
@@ -30,7 +30,6 @@ internal class LegacyProjectJsonHandler : IDependencyResolver
                 name: package.Name,
                 version: package.LibraryRange.VersionRange.OriginalString
             );
-            result.Packages.Add(item: bpwd);
             result.Dependencies.Add(item: bpwd);
         }
 

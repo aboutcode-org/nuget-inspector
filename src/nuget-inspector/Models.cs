@@ -3,7 +3,7 @@ using NuGet.Frameworks;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
 using NuGet.Protocol;
-using NuGet.Protocol.Core;
+using NuGet.Protocol.Core.Types;
 using NuGet.Versioning;
 
 namespace NugetInspector
@@ -13,21 +13,15 @@ namespace NugetInspector
         public string? name;
         public NuGetFramework? framework;
         public VersionRange? version_range;
+       public bool is_direct;
 
-        public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null)
+        public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null, bool is_direct = false)
         {
             this.framework = framework;
             this.name = name;
             this.version_range = version_range;
+            this.is_direct = is_direct;
         }
-
-        public Dependency(NuGet.Packaging.Core.PackageDependency dependency, NuGetFramework? framework)
-        {
-            this.framework = framework;
-            name = dependency.Id;
-            version_range = dependency.VersionRange;
-        }
-
         /// <summary>
         /// Return a new empty BasePackageWithDeps using this package.
         /// </summary>
@@ -42,11 +36,10 @@ namespace NugetInspector
         }
     }
 
-    public class PackageBuilder
+    public class PackageTree
     {
         private readonly Dictionary<BasePackage, BasePackage> base_package_deps_by_base_package = new();
         private readonly Dictionary<BasePackage, VersionPair> versions_pair_by_base_package = new();
-
 
         public bool DoesPackageExist(BasePackage package)
         {
@@ -66,7 +59,7 @@ namespace NugetInspector
             _ = NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
 
             if (package.version != null)
-                versions_pair_by_base_package[key: package] =new VersionPair(rawVersion: package.version, version: version);
+                versions_pair_by_base_package[key: package] = new VersionPair(rawVersion: package.version, version: version);
 
             return package_with_deps;
         }
@@ -92,14 +85,20 @@ namespace NugetInspector
         }
 
         /// <summary>
-        /// Add BasePackage to the packageSets, and dependencies as dependencies.
+        /// Add BasePackage base_package to the packageSets, and dependencies to dependencies.
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="base_package"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage id, List<BasePackage?> dependencies)
+        public void AddOrUpdatePackage(BasePackage base_package, List<BasePackage?> dependencies)
         {
-            var packageWithDeps = GetOrCreateBasePackage(package: id);
-            if (dependencies != null) packageWithDeps.dependencies.AddRange(dependencies!);
+            var packageWithDeps = GetOrCreateBasePackage(package: base_package);
+            foreach (var dep in dependencies)
+            {
+                if (dep != null)
+                {
+                    packageWithDeps.dependencies.Add(dep);
+                }
+            }
             packageWithDeps.dependencies = packageWithDeps.dependencies.Distinct().ToList();
         }
 
@@ -135,18 +134,17 @@ namespace NugetInspector
         }
     }
 
-
     /// <summary>
     /// Package data object using purl as identifying attributes as
     /// specified here https://github.com/package-url/purl-spec
     /// This model is essentially derived from ScanCode Toolkit Package/PackageData.
     /// This is used to represent the top-level project.
     /// </summary>
-    public class BasePackage
+    public class BasePackage : IEquatable<BasePackage>, IComparable<BasePackage>
     {
         public string type { get; set; } = "nuget";
         [JsonProperty(propertyName: "namespace")]
-        public string name_space { get; set; } = "";
+        public string namespace_ { get; set; } = "";
         public string name { get; set; } = "";
         public string? version { get; set; } = "";
         public string qualifiers { get; set; } = "";
@@ -178,10 +176,12 @@ namespace NugetInspector
         public string api_data_url { get; set; } = "";
         public string datasource_id { get; set; } = "";
         public string datafile_path { get; set; } = "";
-
-        // public List<DependentPackage> dependencies { get; set; } = new();
-        public List<BasePackage> packages { get; set; } = new();
         public List<BasePackage> dependencies { get; set; } = new();
+
+        // Track if we updated this package metadata
+
+        [JsonIgnore]
+        public bool has_updated_metadata;
 
         public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
         {
@@ -206,13 +206,13 @@ namespace NugetInspector
 
         protected bool Equals(BasePackage other)
         {
-            return (
+            return
                 type == other.type
-                && name_space == other.name_space
+                && namespace_ == other.namespace_
                 && name == other.name
                 && version == other.version
                 && qualifiers == other.qualifiers
-                && subpath == other.subpath);
+                && subpath == other.subpath;
         }
 
         public override bool Equals(object? obj)
@@ -225,14 +225,40 @@ namespace NugetInspector
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(type, name_space, name, version, qualifiers, subpath);
+            return HashCode.Combine(type, namespace_, name, version, qualifiers, subpath);
+        }
+
+        public PackageIdentity GetPackageIdentity()
+        {
+            if (!string.IsNullOrWhiteSpace(version))
+            {
+                return new PackageIdentity(id: name, version: new NuGetVersion(version));
+            }
+            else
+            {
+                return new PackageIdentity(id: name, version: null);
+            }
         }
 
         /// <summary>
-        /// Update this Package instance using the NuGet API
+        /// Update this Package instance using the NuGet API to fetch extra metadata
+        /// and also update all its dependencies recursively.
         /// </summary>
         public void Update(NugetApi nugetApi)
         {
+            UpdateWithRemoteMetadata(nugetApi);
+            foreach (var dep in dependencies)
+                dep.Update(nugetApi);
+        }
+
+        /// <summary>
+        /// Update this Package instance using the NuGet API to fetch extra metadata
+        /// </summary>
+        public void UpdateWithRemoteMetadata(NugetApi nugetApi)
+        {
+            if (has_updated_metadata)
+                return;
+
             PackageSearchMetadataRegistration? meta = nugetApi.FindPackageVersion(
                 name: name,
                 version: version,
@@ -264,6 +290,7 @@ namespace NugetInspector
                 if (download.size != null)
                     size = (int)download.size;
             }
+            has_updated_metadata = true;
         }
 
         /// <summary>
@@ -351,7 +378,40 @@ namespace NugetInspector
             api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
 
             // source_packages = null;
-            // dependencies = null;
+        }
+
+        /// <summary>
+        /// Sort recursively the dependencies.
+        /// </summary>
+        public void Sort() {
+            dependencies.Sort();
+            foreach (var dep in dependencies)
+                dep.Sort();
+        }
+
+        bool IEquatable<BasePackage>.Equals(BasePackage? other)
+        {
+            if (other != null)
+                return Equals(other);
+            return false;
+        }
+
+        public (string, string, string, string, string, string) AsTuple()
+        {
+            return ValueTuple.Create(
+                this.type.ToLowerInvariant(),
+                this.namespace_.ToLowerInvariant(),
+                this.name.ToLowerInvariant(),
+                (this.version ?? "").ToLowerInvariant(),
+                this.qualifiers.ToLowerInvariant(),
+                this.subpath.ToLowerInvariant());
+        }
+
+        public int CompareTo(BasePackage? other)
+        {
+            if (other == null)
+                return 1;
+            return AsTuple().CompareTo(other.AsTuple());
         }
     }
 
@@ -368,6 +428,7 @@ namespace NugetInspector
         public string? url { get; set; } = "";
     }
 
+    // TODO: unused
     public class DependentPackage
     {
         public string purl { get; set; } = "";
@@ -389,6 +450,7 @@ namespace NugetInspector
         public string hash { get; set; } = "";
         public string hash_algorithm { get; set; } = "";
         public int? size { get; set; } = 0;
+        public SourcePackageDependencyInfo? package_info = null;
 
         public bool IsEnhanced(){
             return !string.IsNullOrWhiteSpace(download_url)

@@ -4,16 +4,16 @@ using NuGet.Versioning;
 namespace NugetInspector;
 
 /// <summary>
-/// Handle legacy and new style lock files (project.assets.json)
+/// Parse legacy and new style lock files (project.assets.json)
 /// See https://learn.microsoft.com/en-us/nuget/archive/project-json#projectlockjson
 /// See https://kimsereyblog.blogspot.com/2018/08/sdk-style-project-and-projectassetsjson.html
 /// See https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build?tabs=netcore2x#implicit-restore
 /// </summary>
-public class LockFileHandler
+public class LockFileHelper
 {
     private readonly LockFile LockFile;
 
-    public LockFileHandler(LockFile lockFile)
+    public LockFileHelper(LockFile lockFile)
     {
         LockFile = lockFile;
     }
@@ -51,18 +51,18 @@ public class LockFileHandler
                 return nuGetVersions[0];
 
             if (Config.TRACE)
-                Console.WriteLine($"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
+                Console.WriteLine($"BestLibraryVersion: WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
 
             if (range.HasUpperBound && !range.HasLowerBound)
             {
                 if (Config.TRACE)
-                    Console.WriteLine($"Instead will return the maximum range demanded: {range.MaxVersion.ToFullString()}");
+                    Console.WriteLine($"BestLibraryVersion: Instead will return the maximum range demanded: {range.MaxVersion.ToFullString()}");
 
                 return range.MaxVersion;
             }
 
             if (Config.TRACE)
-                Console.WriteLine($"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
+                Console.WriteLine($"BestLibraryVersion: Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
             return range.MinVersion;
         }
 
@@ -71,7 +71,7 @@ public class LockFileHandler
 
     public DependencyResolution Process()
     {
-        var builder = new PackageBuilder();
+        var builder = new PackageTree();
         var result = new DependencyResolution();
 
         foreach (var target in LockFile.Targets)
@@ -103,7 +103,7 @@ public class LockFileHandler
                     }
                 }
 
-                builder.AddOrUpdatePackage(id: packageId, dependencies: dependencies);
+                builder.AddOrUpdatePackage(base_package: packageId, dependencies: dependencies);
             }
         }
 
@@ -146,34 +146,33 @@ public class LockFileHandler
             }
         }
 
-        if (LockFile != null)
+        if (LockFile == null)
         {
-            foreach (var project_file_dependency_group in LockFile.ProjectFileDependencyGroups)
+            return result;
+        }
+
+        foreach (var dependency_group in LockFile.ProjectFileDependencyGroups)
+        {
+            foreach (var dependency in dependency_group.Dependencies)
             {
-                foreach (var project_file_dependency in project_file_dependency_group.Dependencies)
+                var project_dependency = ParseProjectFileDependencyGroup(project_file_dependency: dependency);
+                var library_version = BestLibraryVersion(name: project_dependency.GetName(),
+                    range: project_dependency.GetVersionRange(), libraries: LockFile.Libraries);
+                string? version = null;
+                if (library_version != null)
                 {
-                    var project_dependency =
-                        ParseProjectFileDependencyGroup(project_file_dependency: project_file_dependency);
-                    var library_version = BestLibraryVersion(name: project_dependency.GetName(),
-                        range: project_dependency.GetVersionRange(), libraries: LockFile.Libraries);
-                    string? version = null;
-                    if (library_version != null)
-                    {
-                        version = library_version.ToNormalizedString();
-                    }
-
-                    result.Dependencies.Add(
-                        item: new BasePackage(name: project_dependency.GetName()!, version: version));
+                    version = library_version.ToNormalizedString();
                 }
-            }
 
-            if (result.Dependencies.Count == 0 && Config.TRACE)
-            {
-                Console.WriteLine($"Found no dependencies fo r lock file: {LockFile.Path}");
+                result.Dependencies.Add(
+                    item: new BasePackage(name: project_dependency.GetName()!, version: version));
             }
         }
 
-        result.Packages = builder.GetPackageList();
+        if (result.Dependencies.Count == 0 && Config.TRACE)
+        {
+            Console.WriteLine($"Found no dependencies for lock file: {LockFile.Path}");
+        }
         return result;
     }
 

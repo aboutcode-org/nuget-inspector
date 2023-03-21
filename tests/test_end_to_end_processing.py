@@ -38,7 +38,6 @@ failing_paths = (
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/packagesConfigDir/example.csproj",
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework/no_target_framework.csproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
-    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
     "project-json/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
 )
@@ -61,6 +60,149 @@ project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj"
 @pytest.mark.parametrize("test_path", project_tests)
 def test_nuget_inspector_end_to_end_with_projects(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
+
+
+expected_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*-expected*.json")
+
+#
+# @pytest.mark.parametrize("json_path", expected_tests)
+# def test_fix_nuget_inspector(json_path):
+    # location = test_env.get_test_loc(json_path)
+    #
+    # with open(location) as inp:
+        # text = inp.read()
+    # if text and text.strip():
+        # data = json.loads(text)
+        #
+        # for pkg in data["packages"]:
+            # dependencies = flatten_deps(pkg["dependencies"])
+            # dependencies = {d["purl"]: d for d in dependencies}
+            # dependencies = list(dependencies.values())
+            # sort_deps(dependencies)
+            #
+            # pkg["dependencies"] = dependencies
+            #
+        # with open(location, "w") as o:
+            # o.write(json.dumps(data, indent=2))
+
+DEPS = [
+    {
+        "name": "baz",
+        "dependencies": []
+    },
+    {
+        "name": "foo",
+        "dependencies": [
+            {
+                "name": "foo1",
+                "dependencies": [
+                    {
+                        "name": "foo11",
+                        "dependencies": [
+                            {
+                                "name": "foo111",
+                                "dependencies": [
+                                ]
+                            },
+                            {
+                                "name": "foo112",
+                                "dependencies": [
+                                ]
+                            },
+
+                        ]
+                    },
+
+                ]
+            },
+            {
+                "name": "foo2",
+                "dependencies": [
+                ]
+            },
+        ]
+    },
+    {
+        "name": "bar",
+        "dependencies": [
+            {
+                "name": "bar1",
+                "dependencies": [
+                    {
+                        "name": "bar11",
+                        "dependencies": [
+                            {
+                                "name": "bar111",
+                                "dependencies": [
+                                ]
+                            },
+                            {
+                                "name": "bar112",
+                                "dependencies": [
+                                ]
+                            },
+
+                        ]
+                    },
+
+                ]
+            }
+        ]
+    }
+
+]
+
+EXPECTED_DEPS = [
+    {"name": "baz", "dependencies": []},
+    {"name": "foo", "dependencies": []},
+    {"name": "foo1", "dependencies": []},
+    {"name": "foo11", "dependencies": []},
+    {"name": "foo111", "dependencies": []},
+    {"name": "foo112", "dependencies": []},
+    {"name": "foo2", "dependencies": []},
+    {"name": "bar", "dependencies": []},
+    {"name": "bar1", "dependencies": []},
+    {"name": "bar11", "dependencies": []},
+    {"name": "bar111", "dependencies": []},
+    {"name": "bar112", "dependencies": []}
+]
+
+
+def test_flatten_deps():
+    flat = flatten_deps(DEPS)
+    assert flat == EXPECTED_DEPS
+
+
+def flatten_deps(dependencies):
+    """
+    Flatten recursively a tree of dependencies. Remove subdeps as the flattening goes.
+    """
+
+    flattened = []
+    for dep in dependencies:
+        depdeps = dep["dependencies"]
+        dep["dependencies"] = []
+        flattened.append(dep)
+        flattened.extend(flatten_deps(depdeps))
+    return flattened
+
+
+def sort_deps(lst):
+
+    def purl_key(dep):
+        return (
+            dep["type"] or "",
+            dep["namespace"] or "",
+            (dep["name"] or "").lower(),
+            (dep["version"] or "").lower(),
+            dep["qualifiers"],
+            dep["subpath"]
+        )
+
+    lst.sort(key=purl_key)
+
+    for dep in lst:
+        sort_deps(dep["dependencies"])
 
 
 def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_config_1():

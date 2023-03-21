@@ -19,7 +19,7 @@
       "type": "nuget",
       "namespace": "",
       "name": "multi-target",
-      "version": "1.0.0",
+      "version": null,
       "qualifiers": "",
       "subpath": "",
       "purl": "",
@@ -49,63 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-multiple-target-frameworks/multi-target.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "NLog",
-          "version": "4.3.10",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/NLog@4.3.10",
-          "primary_language": "C#",
-          "description": "NLog is a logging platform for .NET with rich log routing and management capabilities. It can help you produce and manage high-quality logs for your application regardless of its size or complexity.\nThis package installs NLog.dll with includes core logging functionality.\nFor your main project also need to install \"NLog Configuration\" package.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Kim Christensen, Julian Verdurmen",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "logging",
-            "log",
-            "tracing",
-            "logfiles",
-            "NLog",
-            "database",
-            "eventlog",
-            "email",
-            "wcf"
-          ],
-          "homepage_url": "http://nlog-project.org/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nlog/4.3.10/nlog.4.3.10.nupkg",
-          "size": 2003636,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "7C980922CF4CCB35436B0BBFD8307E6EE92022FC54C937FB068AC1FBAAA6D9611F24DF40EA66EFC24C5C8360DA81790C192AC921E6AEDFA6EFE2C458EBBEA868",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: http://raw.github.com/NLog/NLog/master/LICENSE.txt",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NLog/4.3.10?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nlog/4.3.10/nlog.4.3.10.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nlog/4.3.10.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -159,7 +102,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nlog/4.3.10.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         }
       ]

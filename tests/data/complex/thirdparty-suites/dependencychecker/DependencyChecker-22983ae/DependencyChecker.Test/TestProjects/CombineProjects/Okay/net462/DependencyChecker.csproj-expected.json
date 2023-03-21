@@ -19,7 +19,7 @@
       "type": "nuget",
       "namespace": "",
       "name": "DependencyChecker",
-      "version": "1.0.0",
+      "version": null,
       "qualifiers": "",
       "subpath": "",
       "purl": "",
@@ -49,111 +49,6 @@
       "api_data_url": "",
       "datasource_id": "nuget-packages.config",
       "datafile_path": "/complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/CombineProjects/Okay/net462/DependencyChecker.csproj",
-      "packages": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Newtonsoft.Json",
-          "version": "9.0.1",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Newtonsoft.Json@9.0.1",
-          "primary_language": "C#",
-          "description": "Json.NET is a popular high-performance JSON framework for .NET",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "James Newton-King",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "json"
-          ],
-          "homepage_url": "http://www.newtonsoft.com/json",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-          "size": 1613054,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "NUnit",
-          "version": "3.12.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/NUnit@3.12.0",
-          "primary_language": "C#",
-          "description": "NUnit features a fluent assert syntax, parameterized, generic and theory tests and is user-extensible.\n\nThis package includes the NUnit 3 framework assembly, which is referenced by your tests. You will need to install version 3 of the nunit3-console program or a third-party runner that supports NUnit 3 in order to execute tests. Runners intended for use with NUnit 2.x will not run NUnit 3 tests correctly.\n\nSupported platforms:\n- .NET Framework 3.5+\n- .NET Standard 1.4+\n- .NET Core",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Charlie Poole, Rob Prouse",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "nunit",
-            "test",
-            "testing",
-            "tdd",
-            "framework",
-            "fluent",
-            "assert",
-            "theory",
-            "plugin",
-            "addin"
-          ],
-          "homepage_url": "https://nunit.org/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nunit/3.12.0/nunit.3.12.0.nupkg",
-          "size": 3463090,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "1C0870171AFE67E3C97FC857CDCEF8ECD79CBEC0F0119FB75FC480E7E18844CE37180CB5029F9340F307B160A78AC7DEB39BCF675FDADA677FF75BBEB21A13B1",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NUnit/3.12.0/license",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NUnit/3.12.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nunit/3.12.0/nunit.3.12.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/3.12.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "packages": [],
-          "dependencies": []
-        }
-      ],
       "dependencies": [
         {
           "type": "nuget",
@@ -199,7 +94,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         },
         {
@@ -255,7 +149,6 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/3.12.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "packages": [],
           "dependencies": []
         }
       ]
