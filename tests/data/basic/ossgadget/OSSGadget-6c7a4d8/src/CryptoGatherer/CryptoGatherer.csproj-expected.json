@@ -92,7 +92,9 @@
           "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
-          "extra_data": {},
+          "extra_data": {
+            "framework": "net48"
+          },
           "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
