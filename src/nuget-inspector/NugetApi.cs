@@ -453,10 +453,6 @@ public class NugetApi
             }
             else
             {
-                // HttpClient client = new();
-                // string catalog = client.GetStringAsync(package_catalog_url).Result;
-                // catalog_entry = JObject.Parse(catalog);
-
                 // note: this is caching accross runs 
                 RequestCachePolicy policy = new(RequestCacheLevel.Default);
                 WebRequest request = WebRequest.Create(package_catalog_url);
@@ -522,14 +518,15 @@ public class NugetApi
             AllowDowngrades = false,
             ResolutionContext = resolution_context
         };
-
         HashSet<SourcePackageDependencyInfo> gathered_dependencies = ResolverGather.GatherAsync(context: context, token: CancellationToken.None).Result;
-        //var pruned = PrunePackageTree.PrunePreleaseForStableTargets();
         if (Config.TRACE)
         {
-            Console.WriteLine("    all gathered dependencies");
-            foreach (var spdi in gathered_dependencies)
-                Console.WriteLine($"        {spdi.Id}@{spdi.Version}");
+            Console.WriteLine($"    all gathered dependencies: {gathered_dependencies.Count}");
+            if (Config.TRACE_DEEP)
+            {
+                foreach (var spdi in gathered_dependencies)
+                    Console.WriteLine($"        {spdi.Id}@{spdi.Version}");
+            }
         }
         return gathered_dependencies;
     }
@@ -538,16 +535,18 @@ public class NugetApi
     /// Resolve the primary direct_references against all available_dependencies to an effective minimal set of dependencies
     /// </summary>
     public HashSet<SourcePackageDependencyInfo> ResolveDependencies(
-        IEnumerable<string> target_names,
         IEnumerable<PackageReference> target_references,
         IEnumerable<SourcePackageDependencyInfo> available_dependencies)
     {
+        IEnumerable<PackageIdentity> direct_deps = target_references.Select(p => p.PackageIdentity);
+        IEnumerable<string> target_names = new HashSet<string>(direct_deps.Select(p => p.Id));
+
         PackageResolverContext context = new (
             dependencyBehavior: DependencyBehavior.Lowest,
             targetIds: target_names,
-            requiredPackageIds: new List<string>(), //target_ids,
+            requiredPackageIds: target_names,
             packagesConfig: target_references,
-            preferredVersions: new List<PackageIdentity>(),
+            preferredVersions: direct_deps,
             availablePackages: available_dependencies,
             packageSources: source_repositories.Select(s => s.PackageSource),
             log: new NugetLogger());
