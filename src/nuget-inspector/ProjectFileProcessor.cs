@@ -1,5 +1,4 @@
 ﻿using Microsoft.Build.Evaluation;
-//using NuGet.Build.Tasks.Console;
 using NuGet.Common;
 using NuGet.Frameworks;
 using NuGet.LibraryModel;
@@ -69,6 +68,50 @@ internal class ProjectFileProcessor : IDependencyProcessor
     }
 
     /// <summary>
+    /// Return a deduplicated list of PackageReference, selecting the first of each
+    /// duplicated package names in the original order. This is the dotnet behaviour.
+    /// </summary>
+    public static List<PackageReference> DeduplicateReferences(List<PackageReference> references)
+    {
+        var by_name = new Dictionary<string, List<PackageReference>>();
+
+        List<PackageReference> refs;
+        foreach (var reference in references)
+        {
+            var pid = reference.PackageIdentity;
+            if (by_name.ContainsKey(pid.Id))
+            {
+                refs = by_name[pid.Id];
+            }
+            else
+            {
+                refs = new List<PackageReference>();
+                by_name[pid.Id] = refs;
+            }
+            refs.Add(reference);
+        }
+
+        var deduped = new List<PackageReference>();
+        foreach(var dupes in by_name.Values)
+        {
+            if (Config.TRACE)
+            {
+                if (dupes.Count != 1)
+                {
+                    string duplicated = string.Join("; ", dupes.Select(d => string.Join(", ", $"{d.PackageIdentity}")));
+
+                    Console.WriteLine(
+                        "DeduplicateReferences: Remove the duplicate items to ensure a consistent dotnet restore behavior. "
+                        + $"The duplicate 'PackageReference' items are: {duplicated}");
+                }
+            }
+            deduped.Add(dupes[0]);
+        }
+        return deduped;
+    }
+
+
+    /// <summary>
     /// Copied from NuGet.Client/src/NuGet.Core/NuGet.Build.Tasks.Console/MSBuildStaticGraphRestore.cs
     /// Copyright (c) .NET Foundation. All rights reserved.
     /// Licensed under the Apache License, Version 2.0.
@@ -112,30 +155,35 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
         foreach (ProjectItem reference in project.GetItems(itemType: "PackageReference"))
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
             {
                 Console.WriteLine($"    Project reference: EvaluatedInclude: {reference.EvaluatedInclude}");
                 foreach (var meta in reference.Metadata)
-                {
                     Console.WriteLine($"        Metadata: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
-                }
             }
-            // var IncludeAssets = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "IncludeAssets");
-            // var IncludeType? = null;
-            // if (IncludeAssets is not null)
-            //    IncludeType = GetLibraryIncludeFlags(IncludeAssets.EvaluatedValue, LibraryIncludeFlags.All);
 
-            // var IncludeType = GetLibraryIncludeFlags(
-            //     reference.GetProperty("IncludeAssets"), 
-            //     LibraryIncludeFlags.All) & ~GetLibraryIncludeFlags(
-            //     reference.GetProperty("ExcludeAssets"),
-            //     LibraryIncludeFlags.None),
-            // LibraryRange = new LibraryRange(
-            //     packageReferenceItem.Identity,
-            //     string.IsNullOrWhiteSpace(version) ? isCentralPackageVersionManagementEnabled ? null : VersionRange.All : VersionRange.Parse(version),
-            //     LibraryDependencyTarget.Package),
-            // NoWarn = MSBuildStringUtility.GetNuGetLogCodes(packageReferenceItem.GetProperty("NoWarn")).ToList(),
-            // SuppressParent = GetLibraryIncludeFlags(packageReferenceItem.GetProperty("PrivateAssets"), LibraryIncludeFlagUtils.DefaultSuppressParent),
+            // Compute the include and exclude flags
+            LibraryIncludeFlags effective_includes_flag = LibraryIncludeFlags.All;
+            LibraryIncludeFlags private_assets = LibraryIncludeFlags.None;
+
+            foreach (var meta in reference.Metadata)
+            {
+                if (meta.Name == "IncludeAssets")
+                    effective_includes_flag &= GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlags.All);
+                if (meta.Name == "ExcludeAssets")
+                    effective_includes_flag &= ~GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlags.None);
+                // Private assets is treated as an exclude
+                if (meta.Name == "PrivateAssets")
+                    private_assets = GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlagUtils.DefaultSuppressParent);
+            }
+            // Skip fully private assets for package references
+            effective_includes_flag &= ~private_assets;
+            if (effective_includes_flag == LibraryIncludeFlags.None || private_assets == LibraryIncludeFlags.All)
+            {
+                if (Config.TRACE)
+                    Console.WriteLine($"    Skipping private or excluded asset reference for {reference.EvaluatedInclude}");
+                continue;
+            }
 
             var version_metadata = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
             VersionRange? version_range;
@@ -148,7 +196,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
             else
             {
-                if (Config.TRACE)
+                if (Config.TRACE_DEEP)
                     Console.WriteLine($"    Project reference without version: {reference.EvaluatedInclude}");
                 version_range = null;
             }
@@ -265,6 +313,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
 
             var deps_helper = new NugetResolverHelper(nugetApi: nugetApi);
@@ -317,6 +366,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
             List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
 
@@ -396,6 +446,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
             List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
 
@@ -469,13 +520,13 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// </summary>
     private List<PackageIdentity> CollectDirectDeps(List<Dependency> dependencies)
     {
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
             Console.WriteLine("ProjectFileProcessor.CollectDirectDeps for dependencies:");
 
         var direct_deps = new List<PackageIdentity>();
         foreach (var dep in dependencies)
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
                 Console.WriteLine($"    name: {dep.name} version_range: {dep.version_range}");
 
             PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
@@ -483,7 +534,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 versionRange: dep.version_range,
                 include_prerelease: false);
 
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
                 Console.WriteLine($"    psmr1: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
 
             if (psmr == null)
@@ -494,7 +545,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
                     versionRange: dep.version_range,
                     include_prerelease: true);
 
-                if (Config.TRACE)
+                if (Config.TRACE_DEEP)
                     Console.WriteLine($"    psmr2: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
             }
 

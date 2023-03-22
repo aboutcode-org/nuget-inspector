@@ -160,7 +160,7 @@ internal class ProjectScanner
                 try
                 {
                     if (Config.TRACE)
-                        Console.WriteLine($"FetchMetadata for '{package.name}@{package.version}'");
+                        Console.WriteLine($"FetchMetadata for '{dep.name}@{dep.version}'");
                     dep.Update(nugetApi: NugetApiService);
                 }
                 catch (Exception ex)

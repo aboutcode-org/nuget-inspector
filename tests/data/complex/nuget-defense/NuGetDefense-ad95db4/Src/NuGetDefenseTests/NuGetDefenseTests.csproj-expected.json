@@ -53,59 +53,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "coverlet.collector",
-          "version": "3.2.0",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/coverlet.collector@3.2.0",
-          "primary_language": "C#",
-          "description": "Coverlet is a cross platform code coverage library for .NET, with support for line, branch and method coverage.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "tonerdo",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "coverage",
-            "testing",
-            "unit-test",
-            "lcov",
-            "opencover",
-            "quality"
-          ],
-          "homepage_url": "https://github.com/coverlet-coverage/coverlet",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg",
-          "size": 2209480,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "B63D02A5D3233805B42F0B8CC76F40C8D9F5A0117BEB6BDB2AB147F5521BB99919B29D51FF91767CE0BFCAB92D25FC8FE794133CADC60DA3E009AE18D10FC920",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/coverlet.collector/3.2.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/coverlet.collector/3.2.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/coverlet.collector/3.2.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.CodeCoverage",
           "version": "17.3.2",
           "qualifiers": "",
@@ -4290,110 +4237,11 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "xunit.runner.visualstudio",
-          "version": "2.4.5",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
-          "primary_language": "C#",
-          "description": "Visual Studio 2019 16.8+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests. Supports .NET 4.7.2 or later, .NET Core 3.1 or later, and Universal Windows 10.0.16299 or later.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": ".NET Foundation and Contributors",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://github.com/xunit/visualstudio.xunit",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg",
-          "size": 884245,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "6A1900B0364948EA20EF4326297448A011F37603C16E0D63E7FDA3BC1A914AE4A8A39C44DAE488DA4986F21E85650C1B670B608FB67FF5AE8AFE44F47AF8D6E2",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.5/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.5?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.5.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
         }
       ]
     }
   ],
   "dependencies": [
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "coverlet.collector",
-      "version": "3.2.0",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/coverlet.collector@3.2.0",
-      "primary_language": "C#",
-      "description": "Coverlet is a cross platform code coverage library for .NET, with support for line, branch and method coverage.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "tonerdo",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "coverage",
-        "testing",
-        "unit-test",
-        "lcov",
-        "opencover",
-        "quality"
-      ],
-      "homepage_url": "https://github.com/coverlet-coverage/coverlet",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg",
-      "size": 2209480,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "B63D02A5D3233805B42F0B8CC76F40C8D9F5A0117BEB6BDB2AB147F5521BB99919B29D51FF91767CE0BFCAB92D25FC8FE794133CADC60DA3E009AE18D10FC920",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/coverlet.collector/3.2.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/coverlet.collector/3.2.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/coverlet.collector/3.2.0.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
     {
       "type": "nuget",
       "namespace": "",
@@ -8578,52 +8426,6 @@
       "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.2?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.2.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "xunit.runner.visualstudio",
-      "version": "2.4.5",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.5",
-      "primary_language": "C#",
-      "description": "Visual Studio 2019 16.8+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests. Supports .NET 4.7.2 or later, .NET Core 3.1 or later, and Universal Windows 10.0.16299 or later.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": ".NET Foundation and Contributors",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [],
-      "homepage_url": "https://github.com/xunit/visualstudio.xunit",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg",
-      "size": 884245,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "6A1900B0364948EA20EF4326297448A011F37603C16E0D63E7FDA3BC1A914AE4A8A39C44DAE488DA4986F21E85650C1B670B608FB67FF5AE8AFE44F47AF8D6E2",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.5/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.5?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.5.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": []

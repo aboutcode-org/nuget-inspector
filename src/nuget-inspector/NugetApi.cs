@@ -415,7 +415,7 @@ public class NugetApi
         PackageDownload download;
         if (download_by_identity.ContainsKey(identity))
         {
-            if (Config.TRACE)
+            if (Config.TRACE_NET)
                 Console.WriteLine($"    GetPackageDownload Cache Hit for package '{identity}'");
             download = download_by_identity[identity];
             if (download.IsEnhanced())
@@ -432,7 +432,7 @@ public class NugetApi
             };
 
             download_by_identity[identity] = download;
-            if (Config.TRACE)
+            if (Config.TRACE_NET)
                 Console.WriteLine($"    GetPackageDownload Cache miss for package '{identity}'");
         }
         if (!with_details)
