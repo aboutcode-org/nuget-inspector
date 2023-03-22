@@ -497,5 +497,452 @@
         }
       ]
     }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "ConfigureAwaitChecker.Analyzer",
+      "version": "4.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/ConfigureAwaitChecker.Analyzer@4.0.0",
+      "primary_language": "C#",
+      "description": "Checks for `ConfigureAwait(false)` usage.\n\nMore info: \n* https://www.tabsoverspaces.com/id/233523\n* https://www.tabsoverspaces.com/id/233476\n* https://www.tabsoverspaces.com/id/233732",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Ji\u0159\u00ed \u010cin\u010dura",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "ConfigureAwaitChecker",
+        "analyzers",
+        "async",
+        "await",
+        "configureawait"
+      ],
+      "homepage_url": "https://github.com/cincuranet/ConfigureAwaitChecker",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/configureawaitchecker.analyzer/4.0.0/configureawaitchecker.analyzer.4.0.0.nupkg",
+      "size": 23384,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "74740B26A8EF975ED9B65B931619E28D77060AFAB289C464156EC1355368F60A03118CBD2FDDC632F32A02EC0FB6C1CA92427E5497937EAB2C35D9B3693A639E",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/ConfigureAwaitChecker.Analyzer/4.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/configureawaitchecker.analyzer/4.0.0/configureawaitchecker.analyzer.4.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/configureawaitchecker.analyzer/4.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.Build.Tasks.Git",
+      "version": "1.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.Build.Tasks.Git@1.0.0",
+      "primary_language": "C#",
+      "description": "MSBuild tasks providing git repository information.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "MSBuild",
+        "Tasks",
+        "source",
+        "control",
+        "git"
+      ],
+      "homepage_url": "https://github.com/dotnet/sourcelink",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.build.tasks.git/1.0.0/microsoft.build.tasks.git.1.0.0.nupkg",
+      "size": 453975,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "F33713B42DBBDA0CF31C671ED8AA603201270F81FFDFBE4942D5BAE5B47323212C74AB1CD5875F24B8240F02274BBC167C9B0E95B9851B5091025B9A0D42F9E6",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.Build.Tasks.Git/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Build.Tasks.Git/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.build.tasks.git/1.0.0/microsoft.build.tasks.git.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.build.tasks.git/1.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.NETCore.Platforms",
+      "version": "1.1.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+      "primary_language": "C#",
+      "description": "Provides runtime information required to resolve target framework, platform, and runtime specific implementations of .NETCore packages. \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
+      "size": 17960,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "6BF892C274596FE2C7164E3D8503B24E187F64D0B7BEC6D9B05EB95F04086FCEB7A85EA6B2685D42DC465C52F6F0E6F636C0B3FDDAC48F6F0125DFD83E92D106",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=329770",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Platforms/1.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.1.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.NETFramework.ReferenceAssemblies.net461",
+      "version": "1.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.NETFramework.ReferenceAssemblies.net461@1.0.0",
+      "primary_language": "C#",
+      "description": "Microsoft .NET Framework Reference Assemblies",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://github.com/Microsoft/dotnet/tree/master/releases/reference-assemblies",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/1.0.0/microsoft.netframework.referenceassemblies.net461.1.0.0.nupkg",
+      "size": 20140577,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "365CD4012393D95DBB3C84AA18169D59D5EB5EC727EFADA8AF9A2FD5DE621829373EC14CA6DD53F1FB76B769ED2E424CDC9CDEF03A02162B635B56670DB8627F",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/Microsoft/dotnet/blob/master/LICENSE",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETFramework.ReferenceAssemblies.net461/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netframework.referenceassemblies.net461/1.0.0/microsoft.netframework.referenceassemblies.net461.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netframework.referenceassemblies.net461/1.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.SourceLink.Common",
+      "version": "1.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.SourceLink.Common@1.0.0",
+      "primary_language": "C#",
+      "description": "MSBuild tasks providing source control information.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "MSBuild",
+        "Tasks",
+        "source",
+        "control"
+      ],
+      "homepage_url": "https://github.com/dotnet/sourcelink",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
+      "size": 273871,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "AA73A2AA20711EC2B294B56776BDAEA874B1F5C7792F55C150F8EEFF8E474ED1AFD0F8F9388BB9D88DDACDA8DD35E9E5E110CDEB5296594D68D03BADAD157D85",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.SourceLink.Common/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.common/1.0.0/microsoft.sourcelink.common.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.common/1.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.SourceLink.GitHub",
+      "version": "1.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.SourceLink.GitHub@1.0.0",
+      "primary_language": "C#",
+      "description": "Generates source link for GitHub repositories.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "MSBuild",
+        "Tasks",
+        "GitHub",
+        "source",
+        "link"
+      ],
+      "homepage_url": "https://github.com/dotnet/sourcelink",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.github/1.0.0/microsoft.sourcelink.github.1.0.0.nupkg",
+      "size": 287115,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "215368BB85B95201820FDC8E7B5B12220FE7207FBB12842F7FC19A97EDF707CC96D84254A309ED8131A702F5DBD50C205D3183BF9C503A35FBA2E799C58561B4",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.SourceLink.GitHub/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.SourceLink.GitHub/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.sourcelink.github/1.0.0/microsoft.sourcelink.github.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.sourcelink.github/1.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "MinVer",
+      "version": "2.3.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/MinVer@2.3.1",
+      "primary_language": "C#",
+      "description": "Minimalistic versioning for .NET SDK-style projects using Git tags.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "MinVer",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://github.com/adamralph/minver",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/minver/2.3.1/minver.2.3.1.nupkg",
+      "size": 114536,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "35F595B061656A0F75A6E291DCB4313C050665FE43763D30E9147BA73B3500F1DDEA8C0A096C798DD06BAA6F838C2F90A8BF228B57851B30DC1D9764642D0321",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/MinVer/2.3.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/MinVer/2.3.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/minver/2.3.1/minver.2.3.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/minver/2.3.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NETStandard.Library",
+      "version": "2.0.3",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NETStandard.Library@2.0.3",
+      "primary_language": "C#",
+      "description": "A set of standard .NET APIs that are prescribed to be used and supported together. \n18a36291e48808fa7ef2d00a764ceb1ec95645a5 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
+      "size": 3146139,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "E78F0CEA69C14895B1B089644077DBCE8631A626055D96522F4D29E061D8BFC3E48AA1419E74FAF265B998612C03F721F5F0CEF4690F824150A5689764DEE601",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/standard/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NETStandard.Library/2.0.3?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/netstandard.library/2.0.3.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "SharpZipLib.NETStandard",
+      "version": "1.0.7",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/SharpZipLib.NETStandard@1.0.7",
+      "primary_language": "C#",
+      "description": "SharpZipLib (#ziplib, formerly NZipLib) is a compression library for Zip, GZip, BZip2, and Tar written entirely in C# for .NET. It is implemented as an assembly (installable in the GAC), and thus can easily be incorporated into other projects (in any .NET language)",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "ICSharpCode",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "Compression",
+        "Library",
+        "Zip",
+        "GZip",
+        "BZip2",
+        "LZW",
+        "Tar"
+      ],
+      "homepage_url": "https://github.com/PingmanTools/SharpZipLib",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/sharpziplib.netstandard/1.0.7/sharpziplib.netstandard.1.0.7.nupkg",
+      "size": 402856,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "772AC7665134F56DAA3D54AAD42B884BCB7FE5376C4DA94A696FB02B576BD9E35FDF690468669339D4707B45A780100704EB0382144793E04F96612C0545759F",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/PingmanTools/SharpZipLib/blob/master/LICENSE.txt",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/SharpZipLib.NETStandard/1.0.7?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/sharpziplib.netstandard/1.0.7/sharpziplib.netstandard.1.0.7.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/sharpziplib.netstandard/1.0.7.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
   ]
 }

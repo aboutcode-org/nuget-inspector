@@ -204,6 +204,52 @@ namespace NugetInspector
             };
         }
 
+        ///<summary>
+        /// Return a deep clone of this package. Does not clone dependencies.
+        ///</summary>
+        public BasePackage Clone()
+        {
+            return new BasePackage(
+                name: name,
+                version:version,
+                datafile_path: datafile_path
+            )
+            {
+                type = type,
+                namespace_ = namespace_,
+
+                qualifiers = qualifiers,
+                subpath = subpath,
+                purl = purl,
+                primary_language = primary_language,
+                description = description,
+                release_date = release_date,
+                parties = new List<Party>(parties.Select(p => p.Clone())),
+                keywords = new List<string>(keywords),
+                homepage_url = homepage_url,
+                download_url = download_url,
+                size = size,
+                sha1 = sha1,
+                md5 = md5,
+                sha256 = sha256,
+                sha512 = sha512,
+                bug_tracking_url = bug_tracking_url,
+                code_view_url = code_view_url,
+                vcs_url = vcs_url,
+                copyright = copyright,
+                license_expression = license_expression,
+                declared_license = declared_license,
+                notice_text = notice_text,
+                source_packages = new List<string>(source_packages),
+                repository_homepage_url = repository_homepage_url,
+                repository_download_url = repository_download_url,
+                api_data_url = api_data_url,
+                datasource_id = datasource_id,
+
+                extra_data = new Dictionary<string, string>(extra_data),
+            };
+        }
+
         protected bool Equals(BasePackage other)
         {
             return
@@ -426,7 +472,20 @@ namespace NugetInspector
         public string? name { get; set; } = "";
         public string? email { get; set; } = "";
         public string? url { get; set; } = "";
+    
+        public Party Clone()
+        {
+            return new Party(){
+                type=type,
+                role=role,
+                name=name,
+                email=email,
+                url=url
+            };
+        }
     }
+
+
 
     // TODO: unused
     public class DependentPackage
