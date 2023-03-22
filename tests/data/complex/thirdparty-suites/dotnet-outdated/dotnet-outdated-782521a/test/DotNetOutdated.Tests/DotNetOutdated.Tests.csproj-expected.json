@@ -4628,52 +4628,6 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "xunit.runner.visualstudio",
-          "version": "2.4.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
-          "primary_language": "C#",
-          "description": "Visual Studio 2017 15.9+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests. Supports .NET 2.0 or later, .NET Core 2.1 or later, and Universal Windows 10.0.16299 or later.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": ".NET Foundation and Contributors",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://github.com/xunit/visualstudio.xunit",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg",
-          "size": 809588,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "D8B0D124425DB24F98335B332FE55E1A08B39AF55D8834DD4A2717FD4BE45F3A06AE6CB16427A17ADFB31E215DAB622856152BB2DA715ACB1946EC9E935299F4",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.3/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "netcoreapp3.1"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.3?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.3.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
         }
       ]
     }
@@ -9254,52 +9208,6 @@
       "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.1?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.1/xunit.extensibility.execution.2.4.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.1.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "xunit.runner.visualstudio",
-      "version": "2.4.3",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/xunit.runner.visualstudio@2.4.3",
-      "primary_language": "C#",
-      "description": "Visual Studio 2017 15.9+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests. Supports .NET 2.0 or later, .NET Core 2.1 or later, and Universal Windows 10.0.16299 or later.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": ".NET Foundation and Contributors",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [],
-      "homepage_url": "https://github.com/xunit/visualstudio.xunit",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg",
-      "size": 809588,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "D8B0D124425DB24F98335B332FE55E1A08B39AF55D8834DD4A2717FD4BE45F3A06AE6CB16427A17ADFB31E215DAB622856152BB2DA715ACB1946EC9E935299F4",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.3/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "netcoreapp3.1"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.3?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.3/xunit.runner.visualstudio.2.4.3.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.3.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": []

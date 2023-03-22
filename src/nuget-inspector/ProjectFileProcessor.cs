@@ -1,5 +1,4 @@
 ﻿using Microsoft.Build.Evaluation;
-//using NuGet.Build.Tasks.Console;
 using NuGet.Common;
 using NuGet.Frameworks;
 using NuGet.LibraryModel;
@@ -156,30 +155,35 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
         foreach (ProjectItem reference in project.GetItems(itemType: "PackageReference"))
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
             {
                 Console.WriteLine($"    Project reference: EvaluatedInclude: {reference.EvaluatedInclude}");
                 foreach (var meta in reference.Metadata)
-                {
                     Console.WriteLine($"        Metadata: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
-                }
             }
-            // var IncludeAssets = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "IncludeAssets");
-            // var IncludeType? = null;
-            // if (IncludeAssets is not null)
-            //    IncludeType = GetLibraryIncludeFlags(IncludeAssets.EvaluatedValue, LibraryIncludeFlags.All);
 
-            // var IncludeType = GetLibraryIncludeFlags(
-            //     reference.GetProperty("IncludeAssets"), 
-            //     LibraryIncludeFlags.All) & ~GetLibraryIncludeFlags(
-            //     reference.GetProperty("ExcludeAssets"),
-            //     LibraryIncludeFlags.None),
-            // LibraryRange = new LibraryRange(
-            //     packageReferenceItem.Identity,
-            //     string.IsNullOrWhiteSpace(version) ? isCentralPackageVersionManagementEnabled ? null : VersionRange.All : VersionRange.Parse(version),
-            //     LibraryDependencyTarget.Package),
-            // NoWarn = MSBuildStringUtility.GetNuGetLogCodes(packageReferenceItem.GetProperty("NoWarn")).ToList(),
-            // SuppressParent = GetLibraryIncludeFlags(packageReferenceItem.GetProperty("PrivateAssets"), LibraryIncludeFlagUtils.DefaultSuppressParent),
+            // Compute the include and exclude flags
+            LibraryIncludeFlags effective_includes_flag = LibraryIncludeFlags.All;
+            LibraryIncludeFlags private_assets = LibraryIncludeFlags.None;
+
+            foreach (var meta in reference.Metadata)
+            {
+                if (meta.Name == "IncludeAssets")
+                    effective_includes_flag &= GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlags.All);
+                if (meta.Name == "ExcludeAssets")
+                    effective_includes_flag &= ~GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlags.None);
+                // Private assets is treated as an exclude
+                if (meta.Name == "PrivateAssets")
+                    private_assets = GetLibraryIncludeFlags(meta.EvaluatedValue, LibraryIncludeFlagUtils.DefaultSuppressParent);
+            }
+            // Skip fully private assets for package references
+            effective_includes_flag &= ~private_assets;
+            if (effective_includes_flag == LibraryIncludeFlags.None || private_assets == LibraryIncludeFlags.All)
+            {
+                if (Config.TRACE)
+                    Console.WriteLine($"    Skipping private or excluded asset reference for {reference.EvaluatedInclude}");
+                continue;
+            }
 
             var version_metadata = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
             VersionRange? version_range;
@@ -192,7 +196,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
             else
             {
-                if (Config.TRACE)
+                if (Config.TRACE_DEEP)
                     Console.WriteLine($"    Project reference without version: {reference.EvaluatedInclude}");
                 version_range = null;
             }

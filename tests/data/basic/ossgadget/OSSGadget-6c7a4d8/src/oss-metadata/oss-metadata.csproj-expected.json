@@ -289,58 +289,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Nerdbank.GitVersioning",
-          "version": "3.5.119",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
-          "primary_language": "C#",
-          "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Andrew Arnott",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "git",
-            "commit",
-            "versioning",
-            "version",
-            "assemblyinfo"
-          ],
-          "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "size": 12709967,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "NETStandard.Library",
           "version": "1.6.1",
           "qualifiers": "",
@@ -3842,58 +3790,6 @@
       "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Win32.Primitives/4.3.0?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.win32.primitives/4.3.0.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "Nerdbank.GitVersioning",
-      "version": "3.5.119",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
-      "primary_language": "C#",
-      "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Andrew Arnott",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "git",
-        "commit",
-        "versioning",
-        "version",
-        "assemblyinfo"
-      ],
-      "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-      "size": 12709967,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": []

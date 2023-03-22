@@ -99,55 +99,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
-          "version": "0.2.222702",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
-          "primary_language": "C#",
-          "description": "A set of analyzers to assist developers in upgrading .NET Framework applications to .NET 5.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "Upgrade",
-            "analyzers"
-          ],
-          "homepage_url": "https://github.com/dotnet/upgrade-assistant",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702/microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.2.222702.nupkg",
-          "size": 107572,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "EE251EA18AA8516FD497C306B54CC57E39DD44A9D92EE44462C120A1CCB6104B0513B2F88A4610E405A6CF8164220A31FD3AD0FB326CF52737E04CE1C53F5B4B",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "netstandard2.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702/microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.2.222702.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "Microsoft.IdentityModel.Logging",
           "version": "6.8.0",
           "qualifiers": "",
@@ -506,52 +457,6 @@
           "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "NETStandard.Library",
-          "version": "2.0.3",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/NETStandard.Library@2.0.3",
-          "primary_language": "C#",
-          "description": "A set of standard .NET APIs that are prescribed to be used and supported together. \n18a36291e48808fa7ef2d00a764ceb1ec95645a5 \nWhen using NuGet 3.x this package requires at least version 3.4.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
-          "size": 3146139,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "E78F0CEA69C14895B1B089644077DBCE8631A626055D96522F4D29E061D8BFC3E48AA1419E74FAF265B998612C03F721F5F0CEF4690F824150A5689764DEE601",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/standard/blob/master/LICENSE.TXT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "netstandard2.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/NETStandard.Library/2.0.3?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/netstandard.library/2.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": []
@@ -2449,55 +2354,6 @@
     {
       "type": "nuget",
       "namespace": "",
-      "name": "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers",
-      "version": "0.2.222702",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers@0.2.222702",
-      "primary_language": "C#",
-      "description": "A set of analyzers to assist developers in upgrading .NET Framework applications to .NET 5.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Microsoft",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "Upgrade",
-        "analyzers"
-      ],
-      "homepage_url": "https://github.com/dotnet/upgrade-assistant",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702/microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.2.222702.nupkg",
-      "size": 107572,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "EE251EA18AA8516FD497C306B54CC57E39DD44A9D92EE44462C120A1CCB6104B0513B2F88A4610E405A6CF8164220A31FD3AD0FB326CF52737E04CE1C53F5B4B",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "netstandard2.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers/0.2.222702?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702/microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.2.222702.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.dotnet.upgradeassistant.extensions.default.analyzers/0.2.222702.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
       "name": "Microsoft.IdentityModel.Logging",
       "version": "6.8.0",
       "qualifiers": "",
@@ -2856,52 +2712,6 @@
       "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "NETStandard.Library",
-      "version": "2.0.3",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/NETStandard.Library@2.0.3",
-      "primary_language": "C#",
-      "description": "A set of standard .NET APIs that are prescribed to be used and supported together. \n18a36291e48808fa7ef2d00a764ceb1ec95645a5 \nWhen using NuGet 3.x this package requires at least version 3.4.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Microsoft",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [],
-      "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
-      "size": 3146139,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "E78F0CEA69C14895B1B089644077DBCE8631A626055D96522F4D29E061D8BFC3E48AA1419E74FAF265B998612C03F721F5F0CEF4690F824150A5689764DEE601",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://github.com/dotnet/standard/blob/master/LICENSE.TXT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "netstandard2.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/NETStandard.Library/2.0.3?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/netstandard.library/2.0.3.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": []

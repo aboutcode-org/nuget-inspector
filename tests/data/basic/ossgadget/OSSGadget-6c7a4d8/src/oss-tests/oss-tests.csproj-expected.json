@@ -107,59 +107,6 @@
         {
           "type": "nuget",
           "namespace": "",
-          "name": "coverlet.collector",
-          "version": "3.1.2",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/coverlet.collector@3.1.2",
-          "primary_language": "C#",
-          "description": "Coverlet is a cross platform code coverage library for .NET, with support for line, branch and method coverage.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "tonerdo",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "coverage",
-            "testing",
-            "unit-test",
-            "lcov",
-            "opencover",
-            "quality"
-          ],
-          "homepage_url": "https://github.com/coverlet-coverage/coverlet",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg",
-          "size": 2076294,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "F43CDCB6F1A4FCD85BDAD5DD9563974DF306998A8656E717A6EAF45F5EE37B74FAB1C6DB4994B943C0CFA14BD81F2F3DDDE56C102E741369A9DAB319779ADD72",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/coverlet.collector/3.1.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/coverlet.collector/3.1.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/coverlet.collector/3.1.2.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
           "name": "FluentAssertions",
           "version": "6.8.0",
           "qualifiers": "",
@@ -833,58 +780,6 @@
           "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestFramework/2.2.10?_src=template",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testframework/2.2.10/mstest.testframework.2.2.10.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testframework/2.2.10.json",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": []
-        },
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "Nerdbank.GitVersioning",
-          "version": "3.5.119",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
-          "primary_language": "C#",
-          "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
-          "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Andrew Arnott",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "git",
-            "commit",
-            "versioning",
-            "version",
-            "assemblyinfo"
-          ],
-          "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "size": 12709967,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0"
-          },
-          "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": []
@@ -4594,59 +4489,6 @@
     {
       "type": "nuget",
       "namespace": "",
-      "name": "coverlet.collector",
-      "version": "3.1.2",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/coverlet.collector@3.1.2",
-      "primary_language": "C#",
-      "description": "Coverlet is a cross platform code coverage library for .NET, with support for line, branch and method coverage.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "tonerdo",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "coverage",
-        "testing",
-        "unit-test",
-        "lcov",
-        "opencover",
-        "quality"
-      ],
-      "homepage_url": "https://github.com/coverlet-coverage/coverlet",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg",
-      "size": 2076294,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "F43CDCB6F1A4FCD85BDAD5DD9563974DF306998A8656E717A6EAF45F5EE37B74FAB1C6DB4994B943C0CFA14BD81F2F3DDDE56C102E741369A9DAB319779ADD72",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/coverlet.collector/3.1.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/coverlet.collector/3.1.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/coverlet.collector/3.1.2.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
       "name": "FluentAssertions",
       "version": "6.8.0",
       "qualifiers": "",
@@ -5320,58 +5162,6 @@
       "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestFramework/2.2.10?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testframework/2.2.10/mstest.testframework.2.2.10.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testframework/2.2.10.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": []
-    },
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "Nerdbank.GitVersioning",
-      "version": "3.5.119",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/Nerdbank.GitVersioning@3.5.119",
-      "primary_language": "C#",
-      "description": "Stamps your assemblies with semver 2.0 compliant git commit specific version information and provides NuGet versioning information as well.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Andrew Arnott",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "git",
-        "commit",
-        "versioning",
-        "version",
-        "assemblyinfo"
-      ],
-      "homepage_url": "https://github.com/dotnet/Nerdbank.GitVersioning",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-      "size": 12709967,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "815C4B3E4B3DB019B3A43BB7813D139BD77EBFED399E4D5DD998FA008C67B66C2FFF2F183E50010508F7D7F3F9A2CC05791E7B54E206FCA5EADD446620879500",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0"
-      },
-      "repository_homepage_url": "https://www.nuget.org/packages/Nerdbank.GitVersioning/3.5.119?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nerdbank.gitversioning/3.5.119/nerdbank.gitversioning.3.5.119.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nerdbank.gitversioning/3.5.119.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": []
