@@ -69,6 +69,50 @@ internal class ProjectFileProcessor : IDependencyProcessor
     }
 
     /// <summary>
+    /// Return a deduplicated list of PackageReference, selecting the first of each
+    /// duplicated package names in the original order. This is the dotnet behaviour.
+    /// </summary>
+    public static List<PackageReference> DeduplicateReferences(List<PackageReference> references)
+    {
+        var by_name = new Dictionary<string, List<PackageReference>>();
+
+        List<PackageReference> refs;
+        foreach (var reference in references)
+        {
+            var pid = reference.PackageIdentity;
+            if (by_name.ContainsKey(pid.Id))
+            {
+                refs = by_name[pid.Id];
+            }
+            else
+            {
+                refs = new List<PackageReference>();
+                by_name[pid.Id] = refs;
+            }
+            refs.Add(reference);
+        }
+
+        var deduped = new List<PackageReference>();
+        foreach(var dupes in by_name.Values)
+        {
+            if (Config.TRACE)
+            {
+                if (dupes.Count != 1)
+                {
+                    string duplicated = string.Join("; ", dupes.Select(d => string.Join(", ", $"{d.PackageIdentity}")));
+
+                    Console.WriteLine(
+                        "DeduplicateReferences: Remove the duplicate items to ensure a consistent dotnet restore behavior. "
+                        + $"The duplicate 'PackageReference' items are: {duplicated}");
+                }
+            }
+            deduped.Add(dupes[0]);
+        }
+        return deduped;
+    }
+
+
+    /// <summary>
     /// Copied from NuGet.Client/src/NuGet.Core/NuGet.Build.Tasks.Console/MSBuildStaticGraphRestore.cs
     /// Copyright (c) .NET Foundation. All rights reserved.
     /// Licensed under the Apache License, Version 2.0.
@@ -265,6 +309,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
 
             var deps_helper = new NugetResolverHelper(nugetApi: nugetApi);
@@ -317,6 +362,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
             List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
 
@@ -396,6 +442,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         try
         {
             List<PackageReference> references = GetPackageReferences();
+            references = DeduplicateReferences(references);
             List<Dependency> dependencies = GetDependenciesFromReferences(references);
             List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
 
@@ -469,13 +516,13 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// </summary>
     private List<PackageIdentity> CollectDirectDeps(List<Dependency> dependencies)
     {
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
             Console.WriteLine("ProjectFileProcessor.CollectDirectDeps for dependencies:");
 
         var direct_deps = new List<PackageIdentity>();
         foreach (var dep in dependencies)
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
                 Console.WriteLine($"    name: {dep.name} version_range: {dep.version_range}");
 
             PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
@@ -483,7 +530,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 versionRange: dep.version_range,
                 include_prerelease: false);
 
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
                 Console.WriteLine($"    psmr1: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
 
             if (psmr == null)
@@ -494,7 +541,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
                     versionRange: dep.version_range,
                     include_prerelease: true);
 
-                if (Config.TRACE)
+                if (Config.TRACE_DEEP)
                     Console.WriteLine($"    psmr2: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
             }
 

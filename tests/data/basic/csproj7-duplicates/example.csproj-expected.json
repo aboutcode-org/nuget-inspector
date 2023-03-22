@@ -1,0 +1,242 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /basic/csproj7-duplicates/example.csproj"
+      ],
+      "project_framework": "netstandard2.1",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "files": [],
+  "packages": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "example",
+      "version": null,
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "",
+      "primary_language": "C#",
+      "description": "",
+      "release_date": "",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
+      "datasource_id": "dotnet-project-reference",
+      "datafile_path": "/basic/csproj7-duplicates/example.csproj",
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Microsoft.Net.Http",
+          "version": "2.0.20710",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Microsoft.Net.Http@2.0.20710",
+          "primary_language": "C#",
+          "description": "This package provides a programming interface for modern HTTP applications. This package includes HttpClient for sending requests over HTTP, as well as HttpRequestMessage and HttpResponseMessage for processing HTTP messages.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "http://www.asp.net/web-api",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
+          "size": 116143,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "C6083556BBAABE21926858395810D034E0395E992D4A716E559895B6D3AACE0E9B38B7762720F3D463F24A0CCBD5EC23F52FC55ACF0C11DE78D1AE3B7FDE60A4",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/MVC_4_eula_ENU.htm",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.1"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Http/2.0.20710?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.http/2.0.20710.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Net.Http",
+          "version": "2.0.20710",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Net.Http@2.0.20710",
+          "primary_language": "C#",
+          "description": "Legacy package, System.Net.Http is now included in the 'Microsoft.Net.Http' package.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "http://www.asp.net/web-api",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
+          "size": 12219,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "502DAB38BEE576218A4D6A87FA111DF3F10E56B1F29B64D93434740567320F328EE7609523BAE2311410D57FFB061672DF7AF9ABE4FF60A52F4BB9C15E29D502",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/MVC_4_eula_ENU.htm",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.1"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/System.Net.Http/2.0.20710?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/2.0.20710.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.Net.Http",
+      "version": "2.0.20710",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.Net.Http@2.0.20710",
+      "primary_language": "C#",
+      "description": "This package provides a programming interface for modern HTTP applications. This package includes HttpClient for sending requests over HTTP, as well as HttpRequestMessage and HttpResponseMessage for processing HTTP messages.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "http://www.asp.net/web-api",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
+      "size": 116143,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "C6083556BBAABE21926858395810D034E0395E992D4A716E559895B6D3AACE0E9B38B7762720F3D463F24A0CCBD5EC23F52FC55ACF0C11DE78D1AE3B7FDE60A4",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/MVC_4_eula_ENU.htm",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.1"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Net.Http/2.0.20710?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.http/2.0.20710.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.Net.Http",
+      "version": "2.0.20710",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.Net.Http@2.0.20710",
+      "primary_language": "C#",
+      "description": "Legacy package, System.Net.Http is now included in the 'Microsoft.Net.Http' package.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "http://www.asp.net/web-api",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
+      "size": 12219,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "502DAB38BEE576218A4D6A87FA111DF3F10E56B1F29B64D93434740567320F328EE7609523BAE2311410D57FFB061672DF7AF9ABE4FF60A52F4BB9C15E29D502",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/MVC_4_eula_ENU.htm",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.1"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/System.Net.Http/2.0.20710?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/2.0.20710.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
+  ]
+}
