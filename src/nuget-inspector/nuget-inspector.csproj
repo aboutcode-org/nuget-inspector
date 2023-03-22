@@ -23,11 +23,11 @@
         <PackageId>nuget-inspector</PackageId>
         <Product>nuget-inspector</Product>
         <AssemblyName>nuget-inspector</AssemblyName>
-        <Version>0.9.5</Version>
+        <Version>0.9.6-beta1</Version>
         <Authors>nexB Inc.</Authors>
         <Company>nexB Inc</Company>
-        <AssemblyVersion>0.9.5.0</AssemblyVersion>
-        <FileVersion>0.9.5.0</FileVersion>
+        <AssemblyVersion>0.9.6.1</AssemblyVersion>
+        <FileVersion>0.9.6.1</FileVersion>
         <Description>A NuGet and Dotnet package dependency resolver</Description>
         <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
         <PackageLicenseUrl>Apache-2.0 AND MIT</PackageLicenseUrl>
@@ -43,6 +43,7 @@
         <PackageReference Include="Mono.Options" Version="6.12.0.148" />
         <PackageReference Include="NuGet.Common" Version="6.4.0" />
         <PackageReference Include="NuGet.Configuration" Version="6.4.0" />
+        <PackageReference Include="NuGet.Build.Tasks.Console" Version="6.4.0" />
         <PackageReference Include="NuGet.Frameworks" Version="6.4.0" />
         <PackageReference Include="NuGet.LibraryModel" Version="6.4.0" />
         <PackageReference Include="NuGet.PackageManagement" Version="6.4.0" />
