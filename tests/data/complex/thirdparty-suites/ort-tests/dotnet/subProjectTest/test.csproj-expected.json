@@ -144,5 +144,99 @@
         }
       ]
     }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "version": "4.5.3",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.5.3",
+      "primary_language": "C#",
+      "description": "Provides the System.Runtime.CompilerServices.Unsafe class, which provides generic, low-level functionality for manipulating pointers.\n\nCommonly Used Types:\nSystem.Runtime.CompilerServices.Unsafe\n \n7601f4f6225089ffb291dc7d58293c7bbf5c5d4f \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg",
+      "size": 102160,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "765D87D36A7B7415DEE5B6CBD3A08EAD9762915FBFACFAD8A205A78D4A187CEC6677DA2407F7F7C2D1B55FE9F8C0257925C9B0BC193D402972C323979678BAAB",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net45"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/4.5.3?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.3.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.Threading.Tasks.Extensions",
+      "version": "4.5.4",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.4",
+      "primary_language": "C#",
+      "description": "Provides additional types that simplify the work of writing concurrent and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.ValueTask<TResult>\n \n7601f4f6225089ffb291dc7d58293c7bbf5c5d4f",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg",
+      "size": 89582,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "68052086E77D3C7198737A3DA163D67740B7C44F93250C39659B3BF21B6547A9ABF64CBF40481F5C78F24361AF3AAF47D52D188B371554A0928A7F7665C1FC14",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net45"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.5.4?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.4.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
   ]
 }

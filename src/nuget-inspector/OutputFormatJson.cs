@@ -36,6 +36,10 @@ public class ScanOutput
 
     [JsonProperty(propertyName: "packages")]
     public List<BasePackage> Packages { get; set; } = new();
+
+    [JsonProperty(propertyName: "dependencies")]
+    public List<BasePackage> Dependencies { get; set; } = new();
+
 }
 
 internal class OutputFormatJson
@@ -49,13 +53,44 @@ internal class OutputFormatJson
         Result = result;
         scan_output = new ScanOutput
         {
-            Packages = result.Packages!
+            Packages = result.Packages
         };
         ScanHeader scan_header = new(result.Options!)
         {
             project_framework = result.Options!.ProjectFramework!
         };
         scan_output.Headers.Add(scan_header);
+        scan_output.Dependencies = GetDependencies(result.Packages);
+    }
+
+    /// <summary>
+    /// Return a flat list of dependencies collected from a list of top-level packages.
+    /// </summary>
+    public static List<BasePackage> GetDependencies(List<BasePackage> packages)
+    {
+        var flat_deps = new List<BasePackage>();
+        foreach (var package in packages)
+        {
+            flat_deps.AddRange(FlattenDeps(package.dependencies));
+        }
+        flat_deps.Sort();
+        return flat_deps;
+    }
+
+    /// <summary>
+    /// Flatten recursively a tree of dependencies. Remove subdeps as the flattening goes.
+    /// </summary>
+    public static List<BasePackage> FlattenDeps(List<BasePackage> dependencies)
+    {
+        List<BasePackage> flattened = new();
+        List<BasePackage> depdeps;
+        foreach (var dep in dependencies)
+        {
+            depdeps = dep.dependencies;
+            flattened.Add(dep.Clone());
+            flattened.AddRange(FlattenDeps(depdeps));
+        }
+        return flattened;
     }
 
     public void Write()

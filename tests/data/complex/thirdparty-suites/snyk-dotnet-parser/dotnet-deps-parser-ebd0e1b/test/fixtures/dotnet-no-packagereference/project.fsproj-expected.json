@@ -151,5 +151,106 @@
         }
       ]
     }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "FSharp.Core",
+      "version": "6.0.5",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/FSharp.Core@6.0.5",
+      "primary_language": "C#",
+      "description": "FSharp.Core redistributables from F# Tools version 12.0.4 For F# 6.0.  Contains code from the F# Software Foundation.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "Visual",
+        "F#",
+        "Compiler",
+        "FSharp",
+        "functional",
+        "programming"
+      ],
+      "homepage_url": "https://github.com/dotnet/fsharp",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
+      "size": 2970930,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "48B4C96049AB73456A5361A2CFF1B4C516808209F6DFE738873B6F9383C5E8F63D09E5E1D31AF3258449AFC425220A452F635BC0005E57BBAD360A9F713FA9CA",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/FSharp.Core/6.0.5/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netcoreapp2.1"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/FSharp.Core/6.0.5?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/fsharp.core/6.0.5.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Microsoft.NETCore.App",
+      "version": "2.2.8",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
+      "primary_language": "C#",
+      "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
+      "size": 3506907,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "599D288EB5E2D8367AE8C5B176CE2353B65653232028E401EE0C90EF4A2FAEF6EB873BB9D173548E795F4D3ED9A56A312831807E7783A098D31E8264F8E6B544",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/core-setup/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netcoreapp2.1"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.2.8.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
   ]
 }

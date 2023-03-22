@@ -1,6 +1,8 @@
 ﻿using Microsoft.Build.Evaluation;
-using Microsoft.Build.Exceptions;
+//using NuGet.Build.Tasks.Console;
+using NuGet.Common;
 using NuGet.Frameworks;
+using NuGet.LibraryModel;
 using NuGet.PackageManagement;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
@@ -67,6 +69,27 @@ internal class ProjectFileProcessor : IDependencyProcessor
     }
 
     /// <summary>
+    /// Copied from NuGet.Client/src/NuGet.Core/NuGet.Build.Tasks.Console/MSBuildStaticGraphRestore.cs
+    /// Copyright (c) .NET Foundation. All rights reserved.
+    /// Licensed under the Apache License, Version 2.0.
+    /// Gets the <see cref="LibraryIncludeFlags" /> for the specified value.
+    /// </summary>
+    /// <param name="value">A semicolon delimited list of include flags.</param>
+    /// <param name="defaultValue">The default value ot return if the value contains no flags.</param>
+    /// <returns>The <see cref="LibraryIncludeFlags" /> for the specified value, otherwise the <paramref name="defaultValue" />.</returns>
+    private static LibraryIncludeFlags GetLibraryIncludeFlags(string value, LibraryIncludeFlags defaultValue)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return defaultValue;
+        }
+
+        string[] parts = MSBuildStringUtility.Split(value);
+
+        return parts.Length > 0 ? LibraryIncludeFlagUtils.GetFlags(parts) : defaultValue;
+    }
+
+    /// <summary>
     /// Return a list of PackageReference extracted from the project file
     /// using a project model.
     /// </summary>
@@ -87,10 +110,8 @@ internal class ProjectFileProcessor : IDependencyProcessor
             globalProperties: properties,
             toolsVersion: null);
 
-        foreach (ProjectItem? reference in project.GetItems(itemType: "PackageReference"))
+        foreach (ProjectItem reference in project.GetItems(itemType: "PackageReference"))
         {
-            if (reference == null)
-                continue;
             if (Config.TRACE)
             {
                 Console.WriteLine($"    Project reference: EvaluatedInclude: {reference.EvaluatedInclude}");
@@ -98,11 +119,23 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 {
                     Console.WriteLine($"        Metadata: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
                 }
-                foreach (var dmeta in reference.DirectMetadata)
-                {
-                    Console.WriteLine($"        DirectMetadata: name: '{dmeta.Name}' value: '{dmeta.EvaluatedValue}'");
-                }
             }
+            // var IncludeAssets = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "IncludeAssets");
+            // var IncludeType? = null;
+            // if (IncludeAssets is not null)
+            //    IncludeType = GetLibraryIncludeFlags(IncludeAssets.EvaluatedValue, LibraryIncludeFlags.All);
+
+            // var IncludeType = GetLibraryIncludeFlags(
+            //     reference.GetProperty("IncludeAssets"), 
+            //     LibraryIncludeFlags.All) & ~GetLibraryIncludeFlags(
+            //     reference.GetProperty("ExcludeAssets"),
+            //     LibraryIncludeFlags.None),
+            // LibraryRange = new LibraryRange(
+            //     packageReferenceItem.Identity,
+            //     string.IsNullOrWhiteSpace(version) ? isCentralPackageVersionManagementEnabled ? null : VersionRange.All : VersionRange.Parse(version),
+            //     LibraryDependencyTarget.Package),
+            // NoWarn = MSBuildStringUtility.GetNuGetLogCodes(packageReferenceItem.GetProperty("NoWarn")).ToList(),
+            // SuppressParent = GetLibraryIncludeFlags(packageReferenceItem.GetProperty("PrivateAssets"), LibraryIncludeFlagUtils.DefaultSuppressParent),
 
             var version_metadata = reference.Metadata.FirstOrDefault(predicate: meta => meta.Name == "Version");
             VersionRange? version_range;
@@ -481,9 +514,12 @@ internal class ProjectFileProcessor : IDependencyProcessor
 /// </summary>
 internal class ProjectXmlFileProcessor : ProjectFileProcessor
 {
-    new public const string DatasourceId = "dotnet-project-xml";
+    public new const string DatasourceId = "dotnet-project-xml";
 
-    public ProjectXmlFileProcessor(string projectPath, NugetApi nugetApi, NuGetFramework? project_target_framework) : base(projectPath, nugetApi, project_target_framework)
+    public ProjectXmlFileProcessor(
+        string projectPath,
+        NugetApi nugetApi,
+        NuGetFramework? project_target_framework) : base(projectPath, nugetApi, project_target_framework)
     {
     }
 
@@ -493,7 +529,7 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
     /// breadth of attributes as with an MSBuild-based parsing. In particular
     /// this does not handle frameworks and conditions.    /// using a project model.
     /// </summary>
-    new public List<PackageReference> GetPackageReferences()
+    public new List<PackageReference> GetPackageReferences()
     {
         if (Config.TRACE)
             Console.WriteLine($"ProjectXmlFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
