@@ -2,6 +2,19 @@ Changelog
 =========
 
 
+
+v0.9.6
+-------
+
+This is a feature update and bug fix release with these updates:
+
+* Honor again PrivateAssets, IncludeAssets and ExcludeAssets flags of
+  PackageReferences.
+
+* Accept duplicated PackageReferences and use the first one the same way dotnet
+  does it.
+
+
 v0.9.5
 -------
 
