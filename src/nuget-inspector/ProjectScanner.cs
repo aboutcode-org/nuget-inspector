@@ -291,7 +291,7 @@ internal class ProjectScanner
             }
             else
             {
-            // In the case of older proj file we process the bare XML as a last resort option
+                // In the case of older proj file we process the bare XML as a last resort option
                 if (Config.TRACE){
                     Console.WriteLine($"Failed to use ProjectFileProcessor: {dependency_resolution.ErrorMessage}");
                     Console.WriteLine("Using Fallback ProjectXmlFileProcessor reader and resolver.");
