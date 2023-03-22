@@ -5,8 +5,7 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /basic/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/oss-characteristic.csproj",
-        "--verbose"
+        "--project-file /basic/ossgadget/OSSGadget-6c7a4d8/src/oss-characteristics/oss-characteristic.csproj"
       ],
       "project_framework": "net6.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",

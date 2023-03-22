@@ -5,8 +5,7 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /complex/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/netstandard2.1.TestLib.csproj",
-        "--verbose"
+        "--project-file /complex/nuget-defense/NuGetDefense-ad95db4/Src/TestFiles/netstandard2.1.TestLib/netstandard2.1.TestLib.csproj"
       ],
       "project_framework": "netstandard2.1",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",

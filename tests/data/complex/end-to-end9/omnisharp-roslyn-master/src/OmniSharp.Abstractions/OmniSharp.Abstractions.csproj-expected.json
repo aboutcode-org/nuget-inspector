@@ -5,8 +5,7 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /complex/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Abstractions/OmniSharp.Abstractions.csproj",
-        "--verbose"
+        "--project-file /complex/end-to-end9/omnisharp-roslyn-master/src/OmniSharp.Abstractions/OmniSharp.Abstractions.csproj"
       ],
       "project_framework": "net6.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
