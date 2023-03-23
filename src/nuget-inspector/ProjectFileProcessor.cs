@@ -136,7 +136,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// Return a list of PackageReference extracted from the project file
     /// using a project model.
     /// </summary>
-    public List<PackageReference> GetPackageReferences()
+    public virtual List<PackageReference> GetPackageReferences()
     {
         if (Config.TRACE)
             Console.WriteLine($"ProjectFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
@@ -580,7 +580,7 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
     /// breadth of attributes as with an MSBuild-based parsing. In particular
     /// this does not handle frameworks and conditions.    /// using a project model.
     /// </summary>
-    public new List<PackageReference> GetPackageReferences()
+    public override List<PackageReference> GetPackageReferences()
     {
         if (Config.TRACE)
             Console.WriteLine($"ProjectXmlFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
