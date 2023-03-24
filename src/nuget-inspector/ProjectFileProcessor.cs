@@ -35,21 +35,6 @@ internal class ProjectFileProcessor : IDependencyProcessor
         ProjectTargetFramework = project_target_framework;
     }
 
-    // /// <summary>
-    // /// Return a list of Dependency extracted from the project file
-    // /// using a project model.
-    // /// </summary>
-    // public List<Dependency> GetDependencies()
-    // {
-    //     if (Config.TRACE)
-    //         Console.WriteLine($"ProjectFileProcessor.GetDependencies: ProjectPath {ProjectPath}");
-
-    //     List<PackageReference> references = GetPackageReferences();
-    //     List<Dependency> dependencies = GetDependenciesFromReferences(references);
-
-    //     return dependencies;
-    // }
-
     public List<Dependency> GetDependenciesFromReferences(List<PackageReference> references)
     {
         var dependencies = new List<Dependency>();
