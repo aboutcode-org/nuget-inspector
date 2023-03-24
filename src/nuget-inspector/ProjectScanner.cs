@@ -185,7 +185,7 @@ internal class ProjectScanner
             Console.WriteLine($"Processing Project: {Options.ProjectName} using Directory: {Options.ProjectDirectory}");
         }
 
-        var package = new BasePackage(
+        var root_package = new BasePackage(
             name: Options.ProjectName!,
             version: Options.ProjectVersion,
             datafile_path: Options.ProjectFilePath
@@ -231,8 +231,8 @@ internal class ProjectScanner
             var projectAssetsJsonResolver = new ProjectAssetsJsonProcessor(
                 projectAssetsJsonPath: Options.ProjectAssetsJsonPath!);
             var projectAssetsJsonResult = projectAssetsJsonResolver.Resolve();
-            package.datasource_id = ProjectAssetsJsonProcessor.DatasourceId;
-            package.dependencies = projectAssetsJsonResult.Dependencies;
+            root_package.datasource_id = ProjectAssetsJsonProcessor.DatasourceId;
+            root_package.dependencies = projectAssetsJsonResult.Dependencies;
         }
         else if (hasProjectJsonLock)
         {
@@ -242,8 +242,8 @@ internal class ProjectScanner
             var projectJsonLockResolver = new ProjectLockJsonProcessor(
                 projectLockJsonPath: Options.ProjectJsonLockPath!);
             var projectJsonLockResult = projectJsonLockResolver.Resolve();
-            package.datasource_id = ProjectLockJsonProcessor.DatasourceId;
-            package.dependencies = projectJsonLockResult.Dependencies;
+            root_package.datasource_id = ProjectLockJsonProcessor.DatasourceId;
+            root_package.dependencies = projectJsonLockResult.Dependencies;
         }
         else if (hasPackagesConfig)
         {
@@ -255,8 +255,8 @@ internal class ProjectScanner
                 nuget_api: NugetApiService,
                 project_target_framework: project_target_framework!);
             var packagesConfigResult = packagesConfigResolver.Resolve();
-            package.datasource_id = PackagesConfigProcessor.DatasourceId;
-            package.dependencies = packagesConfigResult.Dependencies;
+            root_package.datasource_id = PackagesConfigProcessor.DatasourceId;
+            root_package.dependencies = packagesConfigResult.Dependencies;
         }
         else if (hasProjectJson)
         {
@@ -266,8 +266,8 @@ internal class ProjectScanner
                 projectName: Options.ProjectName,
                 projectJsonPath: Options.ProjectJsonPath!);
             var projectJsonResult = projectJsonResolver.Resolve();
-            package.datasource_id = ProjectJsonProcessor.DatasourceId;
-            package.dependencies = projectJsonResult.Dependencies;
+            root_package.datasource_id = ProjectJsonProcessor.DatasourceId;
+            root_package.dependencies = projectJsonResult.Dependencies;
         }
         else
         {
@@ -286,8 +286,8 @@ internal class ProjectScanner
             if (dependency_resolution.Success)
             {
                 if (Config.TRACE) Console.WriteLine("  ProjectFileProcessor success.");
-                package.datasource_id = ProjectFileProcessor.DatasourceId;
-                package.dependencies = dependency_resolution.Dependencies;
+                root_package.datasource_id = ProjectFileProcessor.DatasourceId;
+                root_package.dependencies = dependency_resolution.Dependencies;
             }
             else
             {
@@ -302,19 +302,19 @@ internal class ProjectScanner
                     project_target_framework: project_target_framework);
 
                 DependencyResolution xml_dependecy_resolution = xmlResolver.Resolve();
-                package.version = xml_dependecy_resolution.ProjectVersion;
-                package.datasource_id = ProjectXmlFileProcessor.DatasourceId;
-                package.dependencies = xml_dependecy_resolution.Dependencies;
+                root_package.version = xml_dependecy_resolution.ProjectVersion;
+                root_package.datasource_id = ProjectXmlFileProcessor.DatasourceId;
+                root_package.dependencies = xml_dependecy_resolution.Dependencies;
             }
         }
 
         if (Config.TRACE)
         {
-            Console.WriteLine($"Found #{package.dependencies.Count} dependencies.");
+            Console.WriteLine($"Found #{root_package.dependencies.Count} dependencies.");
             Console.WriteLine($"Project resolved: {Options.ProjectName} in {stopWatch!.ElapsedMilliseconds} ms.");
         }
 
-        return package;
+        return root_package;
     }
 
     /// <summary>
