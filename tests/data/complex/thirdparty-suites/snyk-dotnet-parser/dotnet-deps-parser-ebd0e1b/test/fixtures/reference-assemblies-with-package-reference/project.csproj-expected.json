@@ -49,8 +49,228 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-xml",
       "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies-with-package-reference/project.csproj",
-      "dependencies": []
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "log4net",
+          "version": "2.0.15",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/log4net@2.0.15",
+          "primary_language": "C#",
+          "description": "log4net is a tool to help the programmer output log statements to a variety of output targets.\n      In case of problems with an application, it is helpful to enable logging so that the problem \n      can be located. With log4net it is possible to enable logging at runtime without modifying the\n      application binary. The log4net package is designed so that log statements can remain in \n      shipped code without incurring a high performance cost. It follows that the speed of logging\n      (or rather not logging) is crucial.\n\n      At the same time, log output can be so voluminous that it quickly becomes overwhelming.\n      One of the distinctive features of log4net is the notion of hierarchical loggers.\n      Using these loggers it is possible to selectively control which log statements are output\n      at arbitrary granularity.\n\n      log4net is designed with two distinct goals in mind: speed and flexibility",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "The Apache Software Foundation",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "logging",
+            "log",
+            "tracing",
+            "logfiles"
+          ],
+          "homepage_url": "https://logging.apache.org/log4net/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/log4net/2.0.15/log4net.2.0.15.nupkg",
+          "size": 1925206,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "E44FA0808300174FDB881B802CEA77FE1D8BE6E7B827FCC4C44AE1B8720B81021678BDD247376B71DBFDC5882B938159EA4E534CCB9C0438026B6FEF16B5CA1E",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/log4net/2.0.15/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net45"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/log4net/2.0.15?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/log4net/2.0.15/log4net.2.0.15.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/log4net/2.0.15.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "MySql.Data",
+          "version": "8.0.32.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/MySql.Data@8.0.32.1",
+          "primary_language": "C#",
+          "description": "MySql.Data.MySqlClient .Net Core Class Library",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Oracle",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "MySql",
+            ".NET",
+            "Connector",
+            "Connector/NET",
+            "netcore",
+            ".Net",
+            "Core",
+            "Conector/Net",
+            "coreclr",
+            "C/NET",
+            "C/Net"
+          ],
+          "homepage_url": "https://dev.mysql.com/downloads/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/mysql.data/8.0.32.1/mysql.data.8.0.32.1.nupkg",
+          "size": 5066797,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "16CAA8F24DE83676DE342D9E113C2D60D5CA2313F15285CD2FACB551C7167B6E660C10B66E27C9BD2FE15E912B02AF39968C522B31F6DFDAB5527DBD51EBE5CD",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/MySql.Data/8.0.32.1/license\nLicenseType: Expression\nLicense: GPL-2.0-only\nLicenseExpression: GPL-2.0-only",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net45"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/MySql.Data/8.0.32.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mysql.data/8.0.32.1/mysql.data.8.0.32.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mysql.data/8.0.32.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        }
+      ]
     }
   ],
-  "dependencies": []
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "log4net",
+      "version": "2.0.15",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/log4net@2.0.15",
+      "primary_language": "C#",
+      "description": "log4net is a tool to help the programmer output log statements to a variety of output targets.\n      In case of problems with an application, it is helpful to enable logging so that the problem \n      can be located. With log4net it is possible to enable logging at runtime without modifying the\n      application binary. The log4net package is designed so that log statements can remain in \n      shipped code without incurring a high performance cost. It follows that the speed of logging\n      (or rather not logging) is crucial.\n\n      At the same time, log output can be so voluminous that it quickly becomes overwhelming.\n      One of the distinctive features of log4net is the notion of hierarchical loggers.\n      Using these loggers it is possible to selectively control which log statements are output\n      at arbitrary granularity.\n\n      log4net is designed with two distinct goals in mind: speed and flexibility",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "The Apache Software Foundation",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "logging",
+        "log",
+        "tracing",
+        "logfiles"
+      ],
+      "homepage_url": "https://logging.apache.org/log4net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/log4net/2.0.15/log4net.2.0.15.nupkg",
+      "size": 1925206,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "E44FA0808300174FDB881B802CEA77FE1D8BE6E7B827FCC4C44AE1B8720B81021678BDD247376B71DBFDC5882B938159EA4E534CCB9C0438026B6FEF16B5CA1E",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/log4net/2.0.15/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net45"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/log4net/2.0.15?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/log4net/2.0.15/log4net.2.0.15.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/log4net/2.0.15.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "MySql.Data",
+      "version": "8.0.32.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/MySql.Data@8.0.32.1",
+      "primary_language": "C#",
+      "description": "MySql.Data.MySqlClient .Net Core Class Library",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Oracle",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "MySql",
+        ".NET",
+        "Connector",
+        "Connector/NET",
+        "netcore",
+        ".Net",
+        "Core",
+        "Conector/Net",
+        "coreclr",
+        "C/NET",
+        "C/Net"
+      ],
+      "homepage_url": "https://dev.mysql.com/downloads/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/mysql.data/8.0.32.1/mysql.data.8.0.32.1.nupkg",
+      "size": 5066797,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "16CAA8F24DE83676DE342D9E113C2D60D5CA2313F15285CD2FACB551C7167B6E660C10B66E27C9BD2FE15E912B02AF39968C522B31F6DFDAB5527DBD51EBE5CD",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/MySql.Data/8.0.32.1/license\nLicenseType: Expression\nLicense: GPL-2.0-only\nLicenseExpression: GPL-2.0-only",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net45"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/MySql.Data/8.0.32.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mysql.data/8.0.32.1/mysql.data.8.0.32.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mysql.data/8.0.32.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
+  ]
 }

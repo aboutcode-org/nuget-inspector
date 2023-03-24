@@ -49,8 +49,106 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-xml",
       "datafile_path": "/complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
-      "dependencies": []
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGet.Frameworks",
+          "version": "6.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGet.Frameworks@6.5.0",
+          "primary_language": "C#",
+          "description": "NuGet's understanding of target frameworks.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg",
+          "size": 131644,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "3F97626AF018FA9B03F06751054BE2C4E8DBD0D5329DE21662B36F3336849838BF5AF7D3721643FAA6EA90935F836CF502661573953176CFF33D4D829D953D56",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.5.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.5.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.5.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": []
+        }
+      ]
     }
   ],
-  "dependencies": []
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NuGet.Frameworks",
+      "version": "6.5.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NuGet.Frameworks@6.5.0",
+      "primary_language": "C#",
+      "description": "NuGet's understanding of target frameworks.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg",
+      "size": 131644,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "3F97626AF018FA9B03F06751054BE2C4E8DBD0D5329DE21662B36F3336849838BF5AF7D3721643FAA6EA90935F836CF502661573953176CFF33D4D829D953D56",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.5.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.5.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.5.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": []
+    }
+  ]
 }
