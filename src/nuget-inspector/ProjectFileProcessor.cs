@@ -11,7 +11,6 @@ using NuGet.Versioning;
 using System.Text;
 using System.Xml;
 
-
 namespace NugetInspector;
 
 /// <summary>
@@ -94,7 +93,6 @@ internal class ProjectFileProcessor : IDependencyProcessor
         }
         return deduped;
     }
-
 
     /// <summary>
     /// Copied from NuGet.Client/src/NuGet.Core/NuGet.Build.Tasks.Console/MSBuildStaticGraphRestore.cs
@@ -474,13 +472,16 @@ internal class ProjectFileProcessor : IDependencyProcessor
             DependencyResolution resolution = new(Success: true);
             foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
             {
+                if (Config.TRACE)
+                {
+                    Console.WriteLine($"    Success resolving: {resolved_dep.Id}@{resolved_dep.Version} with subdeps:");
+                    foreach (var subdep in resolved_dep.Dependencies)
+                        Console.WriteLine($"        {subdep.Id}@{subdep.VersionRange}");
+                }
                 BasePackage dep = new(
                     name: resolved_dep.Id,
                     version: resolved_dep.Version.ToString(),
                     framework: ProjectTargetFramework!.GetShortFolderName());
-
-                if (Config.TRACE)
-                    Console.WriteLine($"    Success to resolve: {resolved_dep.Id}@{resolved_dep.Version}");
 
                 resolution.Dependencies.Add(dep);
             }

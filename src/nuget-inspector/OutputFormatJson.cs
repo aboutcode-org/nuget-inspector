@@ -7,6 +7,7 @@ namespace NugetInspector;
 /// </summary>
 public class ScanHeader
 {
+    #pragma warning disable IDE1006
     public string tool_name { get; set; } = "nuget-inspector";
     public string tool_homepageurl { get; set; } = "https://github.com/nexB/nuget-inspector";
     public string tool_version { get; set; } = Config.NUGET_INSPECTOR_VERSION;
@@ -20,7 +21,7 @@ public class ScanHeader
 
     public List<string> warnings { get; set; } = new();
     public List<string> errors { get; set; } = new();
-
+    #pragma warning restore IDE1006
     public ScanHeader(Options options)
     {
         this.options = options.AsCliList();
@@ -39,7 +40,6 @@ public class ScanOutput
 
     [JsonProperty(propertyName: "dependencies")]
     public List<BasePackage> Dependencies { get; set; } = new();
-
 }
 
 internal class OutputFormatJson

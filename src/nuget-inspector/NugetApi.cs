@@ -29,7 +29,6 @@ public class NugetApi
     private readonly GatherCache gather_cache = new();
     private readonly Dictionary<string, JObject> catalog_cache = new();
 
-
     public NugetApi(string nugetApiFeedUrl, string nugetConfig)
     {
         var providers = new List<Lazy<INuGetResourceProvider>>();
@@ -484,7 +483,7 @@ public class NugetApi
 
         if (Config.TRACE)
         {
-            Console.WriteLine($"    direct_dependencies");
+            Console.WriteLine("    direct_dependencies");
             foreach (var id in direct_dependencies)
                 Console.WriteLine($"        {id.Id}@{id.Version}");
         }

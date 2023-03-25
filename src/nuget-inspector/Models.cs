@@ -8,6 +8,7 @@ using NuGet.Versioning;
 
 namespace NugetInspector
 {
+    #pragma warning disable IDE1006
     public class Dependency
     {
         public string? name;
@@ -179,7 +180,6 @@ namespace NugetInspector
         public List<BasePackage> dependencies { get; set; } = new();
 
         // Track if we updated this package metadata
-
         [JsonIgnore]
         public bool has_updated_metadata;
 
@@ -472,7 +472,7 @@ namespace NugetInspector
         public string? name { get; set; } = "";
         public string? email { get; set; } = "";
         public string? url { get; set; } = "";
-    
+
         public Party Clone()
         {
             return new Party(){
@@ -484,8 +484,6 @@ namespace NugetInspector
             };
         }
     }
-
-
 
     // TODO: unused
     public class DependentPackage

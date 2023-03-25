@@ -17,7 +17,7 @@ public class Options
     [CommandLineArg(key: "json", description: "JSON output file path.")]
     public string OutputFilePath = "";
 
-    [CommandLineArg(key: "nuget-config", description: "Path to a NuGet.config file")]
+    [CommandLineArg(key: "nuget-config", description: "Path to a NuGet.config file. Ignore other settings if provided.")]
     public string NugetConfigPath = "";
 
     [CommandLineArg(key: "nuget-url",
@@ -65,7 +65,7 @@ public class Options
             options.Add($"--nuget-url {NugetApiFeedUrl}");
 
         if (Verbose)
-            options.Add($"--verbose");
+            options.Add("--verbose");
 
         return options;
     }
@@ -124,13 +124,12 @@ public class Options
         }
         if (options.ShowAbout)
         {
-            string message = (
+            Console.Error.WriteLine(
                 $"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
-                + "Inspect .NET code and NuGet package manifests. Resolve NuGet dependencies.\n"
+                + "Inspect .NET and NuGet projects and package manifests. Resolve NuGet dependencies.\n"
                 + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
                 + "Copyright (c) nexB Inc. and others.\n"
                 + "https://github.com/nexB/nuget-inspector");
-            Console.Error.WriteLine(message);
             return null;
         }
 
