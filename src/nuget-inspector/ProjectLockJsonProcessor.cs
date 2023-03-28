@@ -23,7 +23,7 @@ internal class ProjectLockJsonProcessor : IDependencyProcessor
             throw new Exception(message: "Failed to get GetLockFile at path: ProjectLockJsonPath");
         }
 
-        var resolver = new LockFileHelper(lockFile: lockFile);
+        var resolver = new LockFileHelper(lockfile: lockFile);
         if (Config.TRACE)
         {
             Console.WriteLine($"resolver: {resolver}");

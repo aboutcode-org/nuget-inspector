@@ -33,7 +33,8 @@ public class ScanOutput
     [JsonProperty(propertyName: "headers")]
     public List<ScanHeader> Headers { get; set; } = new();
 
-    [JsonProperty(propertyName: "files")] public List<BasePackage> Files { get; set; } = new();
+    [JsonProperty(propertyName: "files")]
+    public List<ScannedFile> Files { get; set; } = new();
 
     [JsonProperty(propertyName: "packages")]
     public List<BasePackage> Packages { get; set; } = new();
@@ -44,58 +45,30 @@ public class ScanOutput
 
 internal class OutputFormatJson
 {
-    private readonly ScanOutput scan_output;
-    private readonly ScanResult Result;
+    public readonly ScanOutput scan_output;
+    public readonly ScanResult scan_result;
 
-    public OutputFormatJson(ScanResult result)
+    public OutputFormatJson(ScanResult scan_result)
     {
-        result.Sort();
-        Result = result;
-        scan_output = new ScanOutput
+        scan_result.Sort();
+        this.scan_result = scan_result;
+
+        scan_output = new ScanOutput();
+        scan_output.Packages.Add(scan_result.project_package);
+
+        ScanHeader scan_header = new(scan_result.Options!)
         {
-            Packages = result.Packages
-        };
-        ScanHeader scan_header = new(result.Options!)
-        {
-            project_framework = result.Options!.ProjectFramework!
+            project_framework = scan_result.Options!.ProjectFramework!,
+            warnings = scan_result.warnings,
+            errors = scan_result.errors
         };
         scan_output.Headers.Add(scan_header);
-        scan_output.Dependencies = GetDependencies(result.Packages);
-    }
-
-    /// <summary>
-    /// Return a flat list of dependencies collected from a list of top-level packages.
-    /// </summary>
-    public static List<BasePackage> GetDependencies(List<BasePackage> packages)
-    {
-        var flat_deps = new List<BasePackage>();
-        foreach (var package in packages)
-        {
-            flat_deps.AddRange(FlattenDeps(package.dependencies));
-        }
-        flat_deps.Sort();
-        return flat_deps;
-    }
-
-    /// <summary>
-    /// Flatten recursively a tree of dependencies. Remove subdeps as the flattening goes.
-    /// </summary>
-    public static List<BasePackage> FlattenDeps(List<BasePackage> dependencies)
-    {
-        List<BasePackage> flattened = new();
-        List<BasePackage> depdeps;
-        foreach (var dep in dependencies)
-        {
-            depdeps = dep.dependencies;
-            flattened.Add(dep.Clone());
-            flattened.AddRange(FlattenDeps(depdeps));
-        }
-        return flattened;
+        scan_output.Dependencies = scan_result.project_package.GetFlatDependencies();
     }
 
     public void Write()
     {
-        var output_file_path = Result.Options!.OutputFilePath;
+        var output_file_path = scan_result.Options!.OutputFilePath;
         using var fs = new FileStream(path: output_file_path!, mode: FileMode.Create);
         using var sw = new StreamWriter(stream: fs);
         var serializer = new JsonSerializer

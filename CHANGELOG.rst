@@ -3,6 +3,42 @@ Changelog
 
 
 
+v0.9.7
+-------
+
+This is a major feature update release with these updates and API breaking changes:
+
+
+* Remove the "--nuget-url" command line option to configure an alternative
+  NuGet API URL. A nuget.config should be used instead, either the standard one,
+  or a provided one with the proper NuGet API repository sources
+
+* Add new "--with-details" command line option to "Optionally include package
+  metadata details (such as checksum and size) when available."
+  The SHA512 and size are no longer automatically.
+
+* Add new "--with-fallback" command line option to "Optionally use a plain XML
+  project file parser as fallback from failures." when parsing a project file
+  using the NuGet and MSBuild APIs and this parsing fails. As a result the
+  processing of some project file will fail without this option.
+
+
+* Use the full tree of nuget.config files that exist, including any package mapping.
+  See details on how to create nuget config files:
+  * https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file
+  * https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior
+
+* Report and fail on warning and errors. We now collect errors and warnings
+  in the JSON output and fail the execution if there is a problem reported.
+
+* Improve caching of NuGet API calls.
+
+* Drop one-at-a-time dependency resolution.
+
+* Use a cleaner build that does not include path to the original build machine
+  in the binaries: we strip paths from the build now.
+
+
 v0.9.6
 -------
 
