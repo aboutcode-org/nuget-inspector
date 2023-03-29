@@ -35,22 +35,19 @@ internal class PackagesConfigProcessor : IDependencyProcessor
     /// </summary>
     public DependencyResolution Resolve()
     {
-        var dependencies = GetDependencies();
-
-        DependencyResolution result = new()
+        DependencyResolution resolution = new()
         {
             Dependencies = new List<BasePackage>()
         };
-
+        var dependencies = GetDependencies();
         var packages = CreateBasePackage(dependencies: dependencies);
         foreach (var package in packages)
         {
             var has_package_references = packages.Any(pkg => pkg.dependencies.Contains(item: package));
             if (!has_package_references && package != null)
-                result.Dependencies.Add(item: package);
+                resolution.Dependencies.Add(item: package);
         }
-
-        return result;
+        return resolution;
     }
 
     /// <summary>

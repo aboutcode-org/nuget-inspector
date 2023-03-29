@@ -22,7 +22,7 @@ public class NugetApi
     private readonly SourceCacheContext cache_context = new(){
         NoCache=false,
         DirectDownload=false,
-        MaxAge= new DateTimeOffset(DateTime.Now.AddDays(1))
+        MaxAge= new DateTimeOffset(DateTime.Now.AddDays(2))
     };
     private readonly GatherCache gather_cache = new();
 
@@ -63,6 +63,9 @@ public class NugetApi
     /// <returns>PackageSearchMetadataRegistration or null</returns>
     public PackageSearchMetadataRegistration? FindPackageVersion(string name, VersionRange? versionRange)
     {
+        if (Config.TRACE_NET)
+            Console.WriteLine($"FindPackageVersion for {name} range: {versionRange}");
+
         if (name == null)
             return null;
 
@@ -188,8 +191,13 @@ public class NugetApi
                 {
                     List<PackageSearchMetadataRegistration> psmrs2 = psmrs.ToList();
                     if (Config.TRACE)
-                        Console.WriteLine($"    Fetched metadata for '{name}' from: {metadata_resource}");
+                    {
+                        PackageMetadataResourceV3 mr = (PackageMetadataResourceV3)metadata_resource;
+                        Console.WriteLine($"    Fetched #{psmrs2.Count} metadata for '{name}' from: {mr.ToJson}");
+                    }
+
                     found_psrms.AddRange(psmrs2);
+
                     if (Config.TRACE_NET)
                     {
                         foreach (var psmr in psmrs2)
@@ -407,7 +415,6 @@ public class NugetApi
         if (Config.TRACE)
             Console.WriteLine($"    GetPackageDownload: {identity}, with_details: {with_details} project_framework: {project_framework}");
 
-
         // try the cache
         if (download_by_identity.TryGetValue((identity, project_framework), out PackageDownload? download))
         {
@@ -458,37 +465,41 @@ public class NugetApi
             Console.WriteLine($"       Fetching registration for package '{identity}'");
 
         PackageSearchMetadataRegistration? registration = FindPackageVersion(identity);
-        if (registration != null)
-        {
-            var package_catalog_url = registration.CatalogUri.ToString();
-            if (Config.TRACE_NET)
-                Console.WriteLine($"       Fetching catalog for package_catalog_url: {package_catalog_url}");
+        if (registration == null)
+            return download;
 
-            JObject catalog_entry;
-            if (catalog_entry_by_catalog_url.ContainsKey(package_catalog_url))
-            {
-                catalog_entry = catalog_entry_by_catalog_url[package_catalog_url];
-            }
-            else
-            {
-                // note: this is caching accross runs 
-                RequestCachePolicy policy = new(RequestCacheLevel.Default);
-                WebRequest request = WebRequest.Create(package_catalog_url);
-                request.CachePolicy = policy;
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
-                catalog_entry = JObject.Parse(catalog);
-                // note: this is caching accross calls in a run 
-                catalog_entry_by_catalog_url[package_catalog_url] = catalog_entry;
-            }
+        var package_catalog_url = registration.CatalogUri.ToString();
+        if (string.IsNullOrWhiteSpace(package_catalog_url))
+            return download;
 
-            string hash = catalog_entry["packageHash"]!.ToString();
-            download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
-            download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
-            download.size = (int)catalog_entry["packageSize"]!;
-        }
         if (Config.TRACE_NET)
-            Console.WriteLine($"        download: {download.ToString()}");
+            Console.WriteLine($"       Fetching catalog for package_catalog_url: {package_catalog_url}");
+
+        JObject catalog_entry;
+        if (catalog_entry_by_catalog_url.ContainsKey(package_catalog_url))
+        {
+            catalog_entry = catalog_entry_by_catalog_url[package_catalog_url];
+        }
+        else
+        {
+            // note: this is caching accross runs 
+            RequestCachePolicy policy = new(RequestCacheLevel.Default);
+            WebRequest request = WebRequest.Create(package_catalog_url);
+            request.CachePolicy = policy;
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            catalog_entry = JObject.Parse(catalog);
+            // note: this is caching accross calls in a run 
+            catalog_entry_by_catalog_url[package_catalog_url] = catalog_entry;
+        }
+
+        string hash = catalog_entry["packageHash"]!.ToString();
+        download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
+        download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
+        download.size = (int)catalog_entry["packageSize"]!;
+
+        if (Config.TRACE_NET)
+            Console.WriteLine($"        download: {download}");
         download_by_identity[(identity, project_framework)] = download;
         return download;
     }
@@ -498,7 +509,7 @@ public class NugetApi
     /// identities. Use the configured source_repositories for gathering.
     /// </summary>
     public ISet<SourcePackageDependencyInfo> GatherPotentialDependencies(
-        IEnumerable<PackageIdentity> direct_dependencies,
+        List<PackageIdentity> direct_dependencies,
         NuGetFramework framework)
     {
         if (Config.TRACE) Console.WriteLine("\nNugetApi.GatherPotentialDependencies:");
@@ -506,8 +517,8 @@ public class NugetApi
         if (Config.TRACE)
         {
             Console.WriteLine("    direct_dependencies");
-            foreach (var id in direct_dependencies)
-                Console.WriteLine($"        {id.Id}@{id.Version}");
+            foreach (var pid in direct_dependencies)
+                Console.WriteLine($"        {pid}");
         }
 
         var resolution_context = new ResolutionContext(
@@ -518,8 +529,6 @@ public class NugetApi
             gatherCache: gather_cache,
             sourceCacheContext: cache_context
         );
-
-        var target_names = new HashSet<string>(direct_dependencies.Select(p => p.Id)).ToList();
 
         PackageSourceMapping psm = PackageSourceMapping.GetPackageSourceMapping(settings);
         var context = new GatherContext(psm)
@@ -532,8 +541,8 @@ public class NugetApi
                 source: new NuGet.Configuration.PackageSource("installed"),
                 providers: new List<Lazy<INuGetResourceProvider>>()),
 
-            PrimaryTargetIds = target_names,
-            PrimaryTargets = new List<PackageIdentity>(), //direct_dependencies.ToList(),
+            //PrimaryTargetIds = direct_dependency_names,
+            PrimaryTargets = direct_dependencies.ToList(),
 
             // skip/ignore any InstalledPackages
             InstalledPackages = new List<PackageIdentity>(),

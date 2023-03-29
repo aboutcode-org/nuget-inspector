@@ -28,7 +28,7 @@ public class LockFileHelper
         if (versions.Count == 1)
             return versions[0];
 
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
         {
             Console.WriteLine($"GetBestVersion: WARNING: Unable to find a '{name}' version that satisfies range {range.PrettyPrint()}");
             Console.WriteLine($"    Using min version in range: {range.MinVersion.ToFullString()}");

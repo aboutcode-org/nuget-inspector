@@ -28,7 +28,7 @@ public static class FrameworkFinder
         }
         else
         {
-            // TODO: Use the project model instead to obtain the framewokrd 
+            // TODO: Use the project model instead to obtain the framework
             // Or use the first framework found in the project
             string framework_moniker;
             (framework_moniker, project_framework) = FindProjectTargetFramework(ProjectFilePath);

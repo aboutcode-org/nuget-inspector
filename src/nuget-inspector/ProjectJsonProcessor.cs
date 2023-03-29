@@ -23,8 +23,7 @@ internal class ProjectJsonProcessor : IDependencyProcessor
     {
         var resolution = new DependencyResolution();
         var model = JsonPackageSpecReader.GetPackageSpec(name: ProjectName, packageSpecPath: ProjectJsonPath);
-        IList<LibraryDependency> packages = model.Dependencies;
-        foreach (var package in packages)
+        foreach (var package in (IList<LibraryDependency>)model.Dependencies)
         {
             var bpwd = new BasePackage(
                 name: package.Name,
@@ -32,7 +31,6 @@ internal class ProjectJsonProcessor : IDependencyProcessor
             );
             resolution.Dependencies.Add(item: bpwd);
         }
-
         return resolution;
     }
 }

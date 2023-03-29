@@ -56,7 +56,6 @@ internal class ProjectScanner
     public NugetApi NugetApiService;
     public NuGetFramework project_framework;
 
-
     /// <summary>
     /// A Scanner for project "*proj" project file input such as .csproj file
     /// </summary>
@@ -252,7 +251,7 @@ internal class ProjectScanner
             }
             catch (Exception ex)
             {
-                string message = $"    Failed to process packages.config references: {ScannerOptions.PackagesConfigPath} with: {ex}";
+                string message = $"Failed to process packages.config references: {ScannerOptions.PackagesConfigPath} with: {ex}";
                 scan_result.errors.Add(message);
                 if (Config.TRACE) Console.WriteLine($"    {message}");
             }
@@ -279,7 +278,7 @@ internal class ProjectScanner
             }
             catch (Exception ex)
             {
-                string message = $"    Failed to process project.json lockfile: {ScannerOptions.ProjectJsonPath} with: {ex}";
+                string message = $"Failed to process project.json lockfile: {ScannerOptions.ProjectJsonPath} with: {ex}";
                 scan_result.warnings.Add(message);
                 if (Config.TRACE) Console.WriteLine($"    {message}");
             }
@@ -315,7 +314,7 @@ internal class ProjectScanner
         }
         catch (Exception ex)
         {
-            string message = $"    Failed to process project file: {ScannerOptions.ProjectFilePath} with: {ex}";
+            string message = $"Failed to process project file: {ScannerOptions.ProjectFilePath} with: {ex}";
             scan_result.errors.Add(message);
             scan_result.Status = ScanResult.ResultStatus.Error;
             if (Config.TRACE) Console.WriteLine($"    {message}");
@@ -337,7 +336,7 @@ internal class ProjectScanner
             project_framework: project_framework);
 
             resolution = resolver.Resolve();
-            project.version = resolution.ProjectVersion;
+
             project.datasource_id = ProjectXmlFileProcessor.DatasourceId;
             project.dependencies = resolution.Dependencies;
 
@@ -357,7 +356,7 @@ internal class ProjectScanner
         }
         catch (Exception ex)
         {
-            string message = $"    Failed to process *.*proj project file as bare XML: {ScannerOptions.ProjectFilePath} with: {ex}";
+            string message = $"Failed to process *.*proj project file as bare XML: {ScannerOptions.ProjectFilePath} with: {ex}";
             scan_result.errors.Add(message);
             scan_result.Status = ScanResult.ResultStatus.Error;
             if (Config.TRACE) Console.WriteLine($"    {message}");
@@ -375,5 +374,4 @@ internal class ProjectScanner
     {
         return !string.IsNullOrWhiteSpace(value: path) && File.Exists(path: path);
     }
-
 }

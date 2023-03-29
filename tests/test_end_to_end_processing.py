@@ -54,6 +54,10 @@ paths_expected_to_return_an_error_and_output = set([
 paths_expected_to_return_an_error_and_no_output = set([
     "nuget-config/private-nuget/example.csproj",
     "nuget-config/api-v2-sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
+    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    "basic/csproj5/mini.csproj",
+    "properties/project-with-packages.props1/Foo.csproj",
+    
 ])
 
 # These test path are launched with extra nuget-inspector CLI arguments

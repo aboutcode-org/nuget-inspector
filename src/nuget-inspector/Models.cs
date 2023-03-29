@@ -570,7 +570,7 @@ namespace NugetInspector
             return download;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return $"{download_url} hash: {hash} hash_algorithm: {hash_algorithm} size: {size}";
         }

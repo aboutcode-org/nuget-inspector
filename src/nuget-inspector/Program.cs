@@ -37,26 +37,47 @@ internal static class Program
     }
 
     /// <summary>
-    /// Return True if there is an error or warning in the results.
+    /// Return True if there is an warning in the results.
     /// </summary>
-    public static bool Has_errors_or_warnings(OutputFormatJson output)
+    public static bool Has_warnings(OutputFormatJson output)
     {
-        var has_top_level = output.scan_result.warnings.Any() || output.scan_result.errors.Any();
+        var has_top_level = output.scan_result.warnings.Any();
         if (has_top_level)
             return true;
-        bool has_package_level =  output.scan_result.project_package.warnings.Any() || output.scan_result.project_package.errors.Any();
+        bool has_package_level =  output.scan_result.project_package.warnings.Any();
         if (has_package_level)
             return true;
         bool has_dep_level = false;
         foreach (var dep in output.scan_output.Dependencies)
         {
-            if (dep.warnings.Any() || dep.errors.Any())
+            if (dep.warnings.Any())
                 has_dep_level = true;
                 break;
         }
         return has_dep_level;
     }
- 
+
+    /// <summary>
+    /// Return True if there is an error in the results.
+    /// </summary>
+    public static bool Has_errors(OutputFormatJson output)
+    {
+        var has_top_level = output.scan_result.errors.Any();
+        if (has_top_level)
+            return true;
+        bool has_package_level =  output.scan_result.project_package.errors.Any();
+        if (has_package_level)
+            return true;
+        bool has_dep_level = false;
+        foreach (var dep in output.scan_output.Dependencies)
+        {
+            if (dep.errors.Any())
+                has_dep_level = true;
+                break;
+        }
+        return has_dep_level;
+    }
+
     private static ExecutionResult ExecuteInspector(Options options)
     {
         if (Config.TRACE)
@@ -116,42 +137,87 @@ internal static class Program
             BasePackage project_package = scan_result.project_package;
 
             bool success = scan_result.Status == ScanResult.ResultStatus.Success;
+
+            var with_warnings = Has_warnings(output_formatter);
+            var with_errors = Has_errors(output_formatter);
+
             // also consider other errors
-            if (success && Has_errors_or_warnings(output_formatter))
+            if (success && with_errors)
                 success = false;
 
             if (success)
             {
-                Console.WriteLine($"Scan Result: success: JSON file created at: {scan_result.Options!.OutputFilePath}");
-                return ExecutionResult.Succeeded();
+                Console.WriteLine($"\nScan Result: success: JSON file created at: {scan_result.Options!.OutputFilePath}");
+                if (with_warnings)
+                    PrintWarnings(scan_result, project_package);
+
+               return ExecutionResult.Succeeded();
             }
             else
             {
-                Console.WriteLine($"Scan Result: Error or Warning: JSON file created at: {scan_result.Options!.OutputFilePath}");
-                if (scan_result.warnings.Any()) Console.WriteLine("   WARNING: " + string.Join(", ", scan_result.warnings));
-                if (scan_result.errors.Any()) Console.WriteLine("   ERROR: " + string.Join(", ", scan_result.errors));
- 
-                Console.WriteLine("Error or Warning at the package level");
-                Console.WriteLine($"   {project_package.name}@{project_package.version} with purl: {project_package.purl}");
-                if (project_package.warnings.Any()) Console.WriteLine("        WARNING: " + string.Join(", ", project_package.warnings));
-                if (project_package.errors.Any()) Console.WriteLine("        ERROR: " + string.Join(", ", project_package.errors));
-                Console.WriteLine("Error or Warning at the dependencies level");
-                foreach (var dep in project_package.GetFlatDependencies())
-                {
-                    if (dep.warnings.Any() || dep.errors.Any())
-                    {
-                        Console.WriteLine($"   {dep.name}@{dep.version} with purl: {dep.purl}");
-                        if (dep.warnings.Any()) Console.WriteLine("        WARNING: " + string.Join(", ", dep.warnings));
-                        if (dep.errors.Any()) Console.WriteLine("        ERROR: " + string.Join(", ", dep.errors));
-                    }
-                }
+                Console.WriteLine($"\nScan completed with Errors or Warnings: JSON file created at: {scan_result.Options!.OutputFilePath}");
+                if (with_warnings)
+                    PrintWarnings(scan_result, project_package);
+                if (with_errors)
+                    PrintErrors(scan_result, project_package);
+
                 return ExecutionResult.Failed();
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"ERROR: scan failed:  {ex}");
+            Console.WriteLine($"\nERROR: scan failed:  {ex}");
             return ExecutionResult.Failed();
+        }
+
+        static void PrintWarnings(ScanResult scan_result, BasePackage project_package)
+        {
+            if (scan_result.warnings.Any())
+                Console.WriteLine("    WARNING: " + string.Join(", ", scan_result.warnings));
+            if (scan_result.errors.Any())
+                Console.WriteLine("    ERROR: " + string.Join(", ", scan_result.errors));
+
+            Console.WriteLine("\n    Errors or Warnings at the package level");
+            Console.WriteLine($"       {project_package.name}@{project_package.version} with purl: {project_package.purl}");
+            if (project_package.warnings.Any())
+                Console.WriteLine("        WARNING: " + string.Join(", ", project_package.warnings));
+            if (project_package.errors.Any())
+                Console.WriteLine("        ERROR: " + string.Join(", ", project_package.errors));
+
+            Console.WriteLine("\n        Errors or Warnings at the dependencies level");
+            foreach (var dep in project_package.GetFlatDependencies())
+            {
+                if (dep.warnings.Any() || dep.errors.Any())
+                {
+                    Console.WriteLine($"            {dep.name}@{dep.version} with purl: {dep.purl}");
+                    if (dep.warnings.Any())
+                        Console.WriteLine("            WARNING: " + string.Join(", ", dep.warnings));
+                    if (dep.errors.Any())
+                        Console.WriteLine("            ERROR: " + string.Join(", ", dep.errors));
+                }
+            }
+        }
+
+        static void PrintErrors(ScanResult scan_result, BasePackage project_package)
+        {
+            if (scan_result.errors.Any())
+                Console.WriteLine("    ERROR: " + string.Join(", ", scan_result.errors));
+
+            Console.WriteLine("    Errors at the package level");
+            Console.WriteLine($"       {project_package.name}@{project_package.version} with purl: {project_package.purl}");
+            if (project_package.errors.Any())
+                Console.WriteLine("        ERROR: " + string.Join(", ", project_package.errors));
+
+            Console.WriteLine("        Errors at the dependencies level");
+            foreach (var dep in project_package.GetFlatDependencies())
+            {
+                if (dep.errors.Any())
+                {
+                    Console.WriteLine($"            {dep.name}@{dep.version} with purl: {dep.purl}");
+                    if (dep.errors.Any())
+                        Console.WriteLine("            ERROR: " + string.Join(", ", dep.errors));
+                }
+            }
         }
     }
 
