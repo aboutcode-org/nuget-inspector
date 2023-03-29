@@ -102,7 +102,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/castle.core/4.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -159,7 +161,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codecoverage/15.8.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -214,7 +218,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/15.8.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -268,7 +274,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.7.8.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -314,7 +322,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -360,7 +370,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -412,7 +424,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -458,7 +472,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -504,7 +520,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -550,7 +568,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -596,7 +616,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -642,9 +664,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -700,7 +726,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/castle.core/4.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -757,7 +785,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codecoverage/15.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -812,7 +842,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/15.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -866,7 +898,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.7.8.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -912,7 +946,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -958,7 +994,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1010,7 +1048,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1056,7 +1096,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1102,7 +1144,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1148,7 +1192,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1194,7 +1240,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1240,7 +1288,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

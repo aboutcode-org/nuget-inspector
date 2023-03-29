@@ -99,7 +99,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -151,7 +153,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter.analytics/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -203,7 +207,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter.crashes/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -251,7 +257,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -297,7 +305,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -343,7 +353,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.7.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -389,7 +401,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.7.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -435,7 +449,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -481,7 +497,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.4.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -527,7 +545,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.communitytoolkit/2.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -586,7 +606,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.essentials/1.7.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -637,9 +659,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.forms/5.0.0.2401.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -692,7 +718,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter/4.3.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -744,7 +772,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter.analytics/4.3.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -796,7 +826,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.appcenter.crashes/4.3.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -844,7 +876,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -890,7 +924,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.5.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -936,7 +972,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.7.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -982,7 +1020,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.7.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1028,7 +1068,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.3.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1074,7 +1116,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.4.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1120,7 +1164,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.communitytoolkit/2.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1179,7 +1225,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.essentials/1.7.3.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1230,7 +1278,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xamarin.forms/5.0.0.2401.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

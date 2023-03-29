@@ -99,7 +99,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/datatables.aspnet.core/2.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -135,7 +137,9 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -187,7 +191,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.6.38-alpha.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -231,9 +237,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.2.0-beta5-build3474.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -286,7 +296,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/datatables.aspnet.core/2.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -322,7 +334,9 @@
       "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -374,7 +388,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.6.38-alpha.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -418,7 +434,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.2.0-beta5-build3474.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

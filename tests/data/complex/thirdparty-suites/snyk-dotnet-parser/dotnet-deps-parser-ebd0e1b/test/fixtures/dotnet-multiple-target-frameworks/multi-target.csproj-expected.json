@@ -102,9 +102,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nlog/4.3.10.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -160,7 +164,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nlog/4.3.10.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

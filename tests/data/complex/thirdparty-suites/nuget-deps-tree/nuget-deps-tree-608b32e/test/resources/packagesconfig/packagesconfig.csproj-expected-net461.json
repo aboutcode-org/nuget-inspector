@@ -246,7 +246,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bootstrap/4.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -292,7 +294,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -336,7 +340,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/popper.js/1.12.9.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

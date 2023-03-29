@@ -243,9 +243,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/7.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -296,7 +300,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnet.mvc/5.2.7.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -346,7 +352,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnet.razor/3.2.7.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -395,7 +403,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnet.webpages/3.2.7.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -441,7 +451,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/7.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

@@ -102,7 +102,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/commandlineparser/1.9.71.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -146,7 +148,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge/2.14.1208.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -193,9 +197,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge.msbuild.tasks/1.0.0.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -251,7 +259,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/commandlineparser/1.9.71.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -295,7 +305,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge/2.14.1208.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -342,7 +354,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ilmerge.msbuild.tasks/1.0.0.3.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

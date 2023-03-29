@@ -101,7 +101,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/communitytoolkit.maui/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -149,9 +151,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -206,7 +212,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/communitytoolkit.maui/5.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -254,7 +262,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

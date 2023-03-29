@@ -100,9 +100,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers/1.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -156,7 +160,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers/1.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

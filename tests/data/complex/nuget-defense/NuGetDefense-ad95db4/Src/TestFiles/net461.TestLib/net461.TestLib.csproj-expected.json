@@ -108,7 +108,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bogus/33.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -254,7 +256,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/2.1.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -407,7 +411,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bogus/33.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -460,7 +466,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bootstrap/3.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -506,7 +514,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.9.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -552,7 +562,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nugetdefense/2.1.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -596,7 +608,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/4.3.4.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -640,7 +654,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.x509certificates/4.3.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

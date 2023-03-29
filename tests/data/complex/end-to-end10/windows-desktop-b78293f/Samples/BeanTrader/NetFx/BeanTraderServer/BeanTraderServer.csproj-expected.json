@@ -199,7 +199,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog/2.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -247,7 +249,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog.sinks.console/3.1.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

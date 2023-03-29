@@ -98,9 +98,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -152,7 +156,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

@@ -99,7 +99,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/log4net/2.0.15.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -157,9 +159,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mysql.data/8.0.32.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -212,7 +218,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/log4net/2.0.15.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -270,7 +278,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mysql.data/8.0.32.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }
