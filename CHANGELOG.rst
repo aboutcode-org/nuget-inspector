@@ -8,32 +8,37 @@ v0.9.7
 
 This is a major feature update release with these updates and API breaking changes:
 
+* Use the full tree of nuget.config files that exist, including any package
+  mappings. See details on how to create nuget config files:
+
+  * https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file
+  * https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior
+
+* Report and fail on errors. We now collect errors and warnings in the JSON
+  output at the top level or at the dependency level and fail the execution if
+  there is a problem reported.
+
+* Add new dependency resolver that works best for modern PackageReference-based
+  projects. 
 
 * Remove the "--nuget-url" command line option to configure an alternative
   NuGet API URL. A nuget.config should be used instead, either the standard one,
   or a provided one with the proper NuGet API repository sources
 
-* Add new "--with-details" command line option to "Optionally include package
-  metadata details (such as checksum and size) when available."
-  The SHA512 and size are no longer automatically.
+* Add new "--with-details" command line option to optionally include package
+  metadata details (such as checksum and size) when available.
+  The SHA512 and size are no longer automatically provided. These are
+  expensive API calls that are not used by NuGet as explained in this issue
+  https://github.com/NuGet/NuGetGallery/issues/9433
 
-* Add new "--with-fallback" command line option to "Optionally use a plain XML
+* Add new "--with-fallback" command line option to optionally use a plain XML
   project file parser as fallback from failures." when parsing a project file
   using the NuGet and MSBuild APIs and this parsing fails. As a result the
   processing of some project file will fail without this option.
 
-
-* Use the full tree of nuget.config files that exist, including any package mapping.
-  See details on how to create nuget config files:
-  * https://learn.microsoft.com/en-us/nuget/reference/nuget-config-file
-  * https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior
-
-* Report and fail on warning and errors. We now collect errors and warnings
-  in the JSON output and fail the execution if there is a problem reported.
-
 * Improve caching of NuGet API calls.
 
-* Drop one-at-a-time dependency resolution.
+* Drop one-at-a-time dependency resolution which is mostly useless in practice.
 
 * Use a cleaner build that does not include path to the original build machine
   in the binaries: we strip paths from the build now.
