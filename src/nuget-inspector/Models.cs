@@ -315,7 +315,7 @@ namespace NugetInspector
             {
                 var message = $"Failed to get remote metadata for name: '{name}' version: '{version}'. ";
                 if (Config.TRACE) Console.WriteLine($"        {message}");
-                errors.Add(message + ex.ToString());
+                warnings.Add(message + ex.ToString());
             }
             has_updated_metadata = true;
 
@@ -351,87 +351,116 @@ namespace NugetInspector
             PackageDownload? download,
             SourcePackageDependencyInfo? spdi)
         {
-            if (metadata == null)
-                return;
+            string? synthetic_api_data_url = null;
 
-            // set the purl
-            string meta_name = metadata.Identity.Id;
-            string meta_version = metadata.Identity.Version.ToString();
-            if (string.IsNullOrWhiteSpace(meta_version))
-                purl = $"pkg:nuget/{meta_name}";
-            else
-                purl = $"pkg:nuget/{meta_name}@{meta_version}";
-
-            // Update the declared license
-            List<string> meta_declared_licenses = new();
-            Uri license_url = metadata.LicenseUrl;
-            if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
-                meta_declared_licenses.Add($"LicenseUrl: {license_url}");
-
-            LicenseMetadata license_meta = metadata.LicenseMetadata;
-            if (license_meta != null)
+            if (metadata != null)
             {
-                meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
-                if (!string.IsNullOrWhiteSpace(license_meta.License))
-                    meta_declared_licenses.Add($"License: {license_meta.License}");
-                var expression = license_meta.LicenseExpression;
-                if (expression != null)
-                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
+                // set the purl
+                string meta_name = metadata.Identity.Id;
+                string meta_version = metadata.Identity.Version.ToString();
+                if (string.IsNullOrWhiteSpace(meta_version))
+                    purl = $"pkg:nuget/{meta_name}";
+                else
+                    purl = $"pkg:nuget/{meta_name}@{meta_version}";
+
+                // Update the declared license
+                List<string> meta_declared_licenses = new();
+                Uri license_url = metadata.LicenseUrl;
+                if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
+                    meta_declared_licenses.Add($"LicenseUrl: {license_url}");
+
+                LicenseMetadata license_meta = metadata.LicenseMetadata;
+                if (license_meta != null)
+                {
+                    meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
+                    if (!string.IsNullOrWhiteSpace(license_meta.License))
+                        meta_declared_licenses.Add($"License: {license_meta.License}");
+                    var expression = license_meta.LicenseExpression;
+                    if (expression != null)
+                        meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
+                }
+
+                declared_license = string.Join("\n", meta_declared_licenses);
+
+                // Update the parties
+                string authors = metadata.Authors;
+                if (!string.IsNullOrWhiteSpace(authors) && !parties.Any(p => p.name == authors && p.role == "author"))
+                {
+                    Party item = new() { type = "organization", role = "author", name = authors };
+                    parties.Add(item);
+                }
+
+                string owners = metadata.Owners;
+                if (!string.IsNullOrWhiteSpace(owners) && !parties.Any(p => p.name == owners && p.role == "owner"))
+                {
+                    Party item = new() { type = "organization", role = "owner", name = owners };
+                    parties.Add(item);
+                }
+
+                // Update misc and URL fields
+                primary_language = "C#";
+                description = metadata.Description;
+
+                string tags = metadata.Tags;
+                if (!string.IsNullOrWhiteSpace(tags))
+                {
+                    tags = tags.Trim();
+                    keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
+                }
+
+                if (metadata.ProjectUrl != null)
+                    homepage_url = metadata.ProjectUrl.ToString();
+
+                string name_lower = meta_name.ToLower();
+                string version_lower = meta_version.ToLower();
+
+                if (metadata.PackageDetailsUrl != null)
+                    repository_homepage_url = metadata.PackageDetailsUrl.ToString();
+
+                synthetic_api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
             }
 
-            declared_license = string.Join("\n", meta_declared_licenses);
-
-            // Update the parties
-            string authors = metadata.Authors;
-            if (!string.IsNullOrWhiteSpace(authors) && !parties.Any(p => p.name == authors && p.role == "author"))
+            if (download != null)
             {
-                Party item = new() { type = "organization", role = "author", name = authors };
-                parties.Add(item);
+                // Download data
+                if (string.IsNullOrWhiteSpace(sha512))
+                    sha512 = download.hash;
+
+                if (size == 0 && download.size != null && download.size > 0)
+                    size = (int)download.size;
+
+                if (!string.IsNullOrWhiteSpace(download.download_url))
+                {
+                    download_url = download.download_url;
+                    repository_download_url = download_url;
+                }
+
+                if (Config.TRACE_NET) Console.WriteLine($"        download_url:{download_url}");
+
+                // other URLs
+
+                if (
+                    string.IsNullOrWhiteSpace(api_data_url)
+                    && download_url.StartsWith("https://api.nuget.org/")
+                    && !string.IsNullOrWhiteSpace(synthetic_api_data_url)
+                )
+                {
+                    api_data_url = synthetic_api_data_url;
+                }
+                else
+                {
+                    try
+                    {
+                        if (spdi != null && metadata != null)
+                            api_data_url = GetApiDataUrl(pid: metadata.Identity, spdi: spdi);
+                    }
+                    catch (Exception ex)
+                    {
+                        warnings.Add(ex.ToString());
+                    }
+                }
+                if (Config.TRACE_NET) Console.WriteLine($"         api_data_url:{api_data_url}");
             }
-
-            string owners = metadata.Owners;
-            if (!string.IsNullOrWhiteSpace(owners) && !parties.Any(p => p.name == owners && p.role == "owner"))
-            {
-                Party item = new() { type = "organization", role = "owner", name = owners };
-                parties.Add(item);
-            }
-
-            // Update misc and URL fields
-            primary_language = "C#";
-            description = metadata.Description;
-
-            string tags = metadata.Tags;
-            if (!string.IsNullOrWhiteSpace(tags))
-            {
-                tags = tags.Trim();
-                keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
-            }
-
-            if (metadata.ProjectUrl != null)
-                homepage_url = metadata.ProjectUrl.ToString();
-
-            string name_lower = meta_name.ToLower();
-            string version_lower = meta_version.ToLower();
-
-            if (metadata.PackageDetailsUrl != null)
-                repository_homepage_url = metadata.PackageDetailsUrl.ToString();
-
-            if (download == null)
-                return;
-
-            // Download data
-            sha512 = download.hash;
-            size = download.size ?? 0;
-            download_url = download.download_url;
-            repository_download_url = download_url;
-
-            if (Config.TRACE_NET) Console.WriteLine($"        download_url:{download_url}");
-
-            // other URLs
-            api_data_url = GetApiDataUrl(pid: metadata.Identity, spdi: spdi);
-            if (string.IsNullOrWhiteSpace(api_data_url) && download_url.StartsWith("https://api.nuget.org/"))
-               api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
-            if (Config.TRACE_NET) Console.WriteLine($"         api_data_url:{api_data_url}");
 
             // TODO consider also: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.nuspec
         }

@@ -143,52 +143,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.core/2.14.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Microsoft.Web.Xdt",
-              "version": "2.1.1",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
-              "primary_language": "C#",
-              "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Microsoft Corporation",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [],
-              "homepage_url": "",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-              "size": 0,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=273778",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.1?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.1.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "dependencies": []
-            }
-          ]
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -242,52 +199,6 @@
     }
   ],
   "dependencies": [
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "Microsoft.Web.Xdt",
-      "version": "2.1.1",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
-      "primary_language": "C#",
-      "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
-      "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Microsoft Corporation",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [],
-      "homepage_url": "",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-      "size": 0,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "LicenseUrl: http://go.microsoft.com/fwlink/?LinkId=273778",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.1?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.1.json",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": [],
-      "warnings": [],
-      "errors": []
-    },
     {
       "type": "nuget",
       "namespace": "",

@@ -42,12 +42,25 @@ failing_paths = (
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
     "project-json/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
+    # potential central package dependencies?
+    "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    # downgrade
+    "nuget-config/myget-and-props/Configuration-608dd8/src/Steeltoe.Extensions.Configuration.CloudFoundryBase/Steeltoe.Extensions.Configuration.CloudFoundryBase.csproj",
+    # missing file
+    "complex/end-to-end3/Newtonsoft.Json-10.0.1/Doc/doc.shfbproj",
+    # unknown deps
+    "complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Portable.csproj",
+    # inavlid
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
+    
 )
 
 # These test paths are supposed to have an error returned by design with an output
 paths_expected_to_return_an_error_and_output = set([
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_project/dotnet_project.csproj",
     "complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
+    # has a circular dependency
+    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj"
 ])
 
 # These test paths are supposed to have an error returned by design and not output

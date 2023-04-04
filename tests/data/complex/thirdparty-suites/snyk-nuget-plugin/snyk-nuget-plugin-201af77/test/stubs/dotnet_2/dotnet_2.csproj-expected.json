@@ -1057,30 +1057,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+          "purl": "",
           "primary_language": "C#",
-          "description": "Middleware to expose an embedded version of the swagger-ui from an ASP.NET Core application",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Swashbuckle.AspNetCore.SwaggerUI",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "swagger",
-            "documentation",
-            "discovery",
-            "help",
-            "webapi",
-            "aspnet",
-            "aspnetcore"
-          ],
-          "homepage_url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1091,18 +1075,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/6.5.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/6.5.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/swashbuckle.aspnetcore.swaggerui/6.5.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -2355,30 +2341,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+      "purl": "",
       "primary_language": "C#",
-      "description": "Middleware to expose an embedded version of the swagger-ui from an ASP.NET Core application",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Swashbuckle.AspNetCore.SwaggerUI",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "swagger",
-        "documentation",
-        "discovery",
-        "help",
-        "webapi",
-        "aspnet",
-        "aspnetcore"
-      ],
-      "homepage_url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2389,18 +2359,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/6.5.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/6.5.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/swashbuckle.aspnetcore.swaggerui/6.5.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",

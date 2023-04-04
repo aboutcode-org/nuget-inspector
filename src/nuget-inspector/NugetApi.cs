@@ -2,14 +2,18 @@
 using System.Net;
 using System.Net.Cache;
 using Newtonsoft.Json.Linq;
+using NuGet.Commands;
 using NuGet.Configuration;
+using NuGet.DependencyResolver;
 using NuGet.Frameworks;
+using NuGet.LibraryModel;
 using NuGet.PackageManagement;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
 using NuGet.Protocol;
 using NuGet.Protocol.Core.Types;
 using NuGet.Resolver;
+using NuGet.RuntimeModel;
 using NuGet.Versioning;
 
 namespace NugetInspector;
@@ -19,10 +23,10 @@ namespace NugetInspector;
 /// </summary>
 public class NugetApi
 {
-    private readonly SourceCacheContext cache_context = new(){
+    private readonly SourceCacheContext source_cache_context = new(){
         NoCache=false,
         DirectDownload=false,
-        MaxAge= new DateTimeOffset(DateTime.Now.AddDays(2))
+        MaxAge= new DateTimeOffset(DateTime.Now.AddDays(5))
     };
     private readonly GatherCache gather_cache = new();
 
@@ -59,12 +63,12 @@ public class NugetApi
     /// Return PackageSearchMetadataRegistration querying the API
     /// </summary>
     /// <param name="name"></pa   ram>
-    /// <param name="versionRange"></param>
+    /// <param name="version_range"></param>
     /// <returns>PackageSearchMetadataRegistration or null</returns>
-    public PackageSearchMetadataRegistration? FindPackageVersion(string name, VersionRange? versionRange)
+    public PackageSearchMetadataRegistration? FindPackageVersion(string name, VersionRange? version_range)
     {
         if (Config.TRACE_NET)
-            Console.WriteLine($"FindPackageVersion for {name} range: {versionRange}");
+            Console.WriteLine($"FindPackageVersion for {name} range: {version_range}");
 
         if (name == null)
             return null;
@@ -74,7 +78,7 @@ public class NugetApi
         if (!package_versions.Any())
             return null;
         IEnumerable<NuGetVersion> versions = package_versions.Select(selector: package => package.Identity.Version);
-        var best_version = versionRange?.FindBestMatch(versions: versions);
+        var best_version = version_range?.FindBestMatch(versions: versions);
         return package_versions.Find(package => package.Identity.Version == best_version);
     }
 
@@ -110,7 +114,7 @@ public class NugetApi
     /// <returns>PackageSearchMetadataRegistration or null</returns>
     public PackageSearchMetadataRegistration? FindPackageVersion(PackageIdentity pid)
     {
-        if (Config.TRACE)
+        if (Config.TRACE_NET)
             Console.WriteLine($"FindPackageVersion: {pid}");
 
         if (psmr_by_identity.TryGetValue(key: pid, out PackageSearchMetadataRegistration? psmr))
@@ -128,14 +132,15 @@ public class NugetApi
             {
                 psmr = (PackageSearchMetadataRegistration)metadata_resource.GetMetadataAsync(
                     package: pid,
-                    sourceCacheContext: cache_context,
+                    sourceCacheContext: source_cache_context,
                     log: new NugetLogger(),
                     token: CancellationToken.None
                 ).Result;
 
                 if (psmr != null)
                 {
-                    if (Config.TRACE) Console.WriteLine($"    Found metadata for '{pid}' from: {metadata_resources}");
+                    if (Config.TRACE_NET)
+                        Console.WriteLine($"    Found metadata for '{pid}' from: {metadata_resources}");
                     psmr_by_identity[pid] = psmr;
                     return psmr;
                 }
@@ -182,7 +187,7 @@ public class NugetApi
                         packageId: name,
                         includePrerelease: true,
                         includeUnlisted: true,
-                        sourceCacheContext: cache_context,
+                        sourceCacheContext: source_cache_context,
                         log: new NugetLogger(),
                         token: CancellationToken.None
                     ).Result;
@@ -255,12 +260,13 @@ public class NugetApi
                 configFileName: null,
                 machineWideSettings: null);
         }
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
         {
             Console.WriteLine("\nLoadNugetConfigSettings");
             var section_names = new List<string> {
                 "packageSources",
-                "disabledPackageSources", "activePackageSource",
+                "disabledPackageSources",
+                "activePackageSource",
                 "packageSourceMapping",
                 "packageManagement"};
 
@@ -293,8 +299,20 @@ public class NugetApi
         if (Config.TRACE)
             Console.WriteLine($"\nPopulateResources: Loaded {package_sources.Count} package sources from nuget.config");
 
+        // always nuget.org as last resort
+        var nuget_source = new PackageSource(source: "https://api.nuget.org/v3/index.json", name : "nuget.org");
+        package_sources.Add(nuget_source);
+
+        HashSet<string> seen = new();
         foreach (PackageSource package_source in package_sources)
-            AddPackageSource(providers: providers, package_source: package_source);
+        {
+            var uri = package_source.SourceUri.ToString();
+            if (seen.Contains(uri))
+                continue;
+            SourceRepository source_repository = new(source: package_source, providers: providers);
+            AddSourceRepo(source_repo: source_repository);
+            seen.Add(uri);
+        }
     }
 
     /// <summary>
@@ -302,26 +320,25 @@ public class NugetApi
     /// Also keep track of SourceRepository in source_repositories.
     /// </summary>
     /// <param name="providers">providers</param>
-    /// <param name="package_source">package_source</param>
-    private void AddPackageSource(List<Lazy<INuGetResourceProvider>> providers, PackageSource package_source)
+    /// <param name="source_repo">package_source</param>
+    private void AddSourceRepo(SourceRepository source_repo)
     {
         if (Config.TRACE)
-            Console.WriteLine($"    AddPackageSource: adding new {package_source.SourceUri}");
+            Console.WriteLine($"    AddSourceRepo: adding new {source_repo.PackageSource.SourceUri}");
 
-        SourceRepository nuget_repository = new(source: package_source, providers: providers);
         try
         {
-            source_repositories.Add(item: nuget_repository);
+            source_repositories.Add(item: source_repo);
 
-            PackageMetadataResource package_metadata_endpoint = nuget_repository.GetResource<PackageMetadataResource>();
+            PackageMetadataResource package_metadata_endpoint = source_repo.GetResource<PackageMetadataResource>();
             metadata_resources.Add(item: package_metadata_endpoint);
 
-            DependencyInfoResource dependency_info_endpoint = nuget_repository.GetResource<DependencyInfoResource>();
+            DependencyInfoResource dependency_info_endpoint = source_repo.GetResource<DependencyInfoResource>();
             dependency_info_resources.Add(item: dependency_info_endpoint);
         }
         catch (Exception e)
         {
-            string message = $"Error loading NuGet API Resource from url: {package_source.SourceUri}";
+            string message = $"Error loading NuGet API Resource from url: {source_repo.PackageSource.SourceUri}";
             if (Config.TRACE)
             {
                 Console.WriteLine($"    {message}");
@@ -366,7 +383,7 @@ public class NugetApi
             return spdi;
         }
 
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
             Console.WriteLine($"    GetPackageInfo: {identity} framework: {framework}");
 
         foreach (var dir in dependency_info_resources)
@@ -376,7 +393,7 @@ public class NugetApi
                 Task<SourcePackageDependencyInfo>? infoTask = dir.ResolvePackage(
                     package: identity,
                     projectFramework: framework,
-                    cacheContext: cache_context,
+                    cacheContext: source_cache_context,
                     log: new NugetLogger(),
                     token: CancellationToken.None);
 
@@ -412,7 +429,7 @@ public class NugetApi
     {
         // Get download with download URL and checksum (not always there per https://github.com/NuGet/NuGetGallery/issues/9433)
 
-        if (Config.TRACE)
+        if (Config.TRACE_NET)
             Console.WriteLine($"    GetPackageDownload: {identity}, with_details: {with_details} project_framework: {project_framework}");
 
         // try the cache
@@ -512,24 +529,23 @@ public class NugetApi
         List<PackageIdentity> direct_dependencies,
         NuGetFramework framework)
     {
-        if (Config.TRACE) Console.WriteLine("\nNugetApi.GatherPotentialDependencies:");
-
         if (Config.TRACE)
         {
+            Console.WriteLine("\nNugetApi.GatherPotentialDependencies:");
             Console.WriteLine("    direct_dependencies");
             foreach (var pid in direct_dependencies)
-                Console.WriteLine($"        {pid}");
+                Console.WriteLine($"        {pid} IsPrerelease: {pid.Version.IsPrerelease}");
         }
-
         var resolution_context = new ResolutionContext(
             dependencyBehavior: DependencyBehavior.Lowest,
-            includePrelease: false,
-            includeUnlisted: false,
+            includePrelease: true,
+            includeUnlisted: true,
             versionConstraints: VersionConstraints.None,
             gatherCache: gather_cache,
-            sourceCacheContext: cache_context
+            sourceCacheContext: source_cache_context
         );
 
+        var target_names = new HashSet<string>(direct_dependencies.Select(p => p.Id)).ToList();
         PackageSourceMapping psm = PackageSourceMapping.GetPackageSourceMapping(settings);
         var context = new GatherContext(psm)
         {
@@ -541,7 +557,7 @@ public class NugetApi
                 source: new NuGet.Configuration.PackageSource("installed"),
                 providers: new List<Lazy<INuGetResourceProvider>>()),
 
-            //PrimaryTargetIds = direct_dependency_names,
+            PrimaryTargetIds = target_names,
             PrimaryTargets = direct_dependencies.ToList(),
 
             // skip/ignore any InstalledPackages
@@ -573,9 +589,10 @@ public class NugetApi
     }
 
     /// <summary>
-    /// Resolve the primary direct_references against all available_dependencies to an effective minimal set of dependencies
+    /// Resolve the primary direct_references against all available_dependencies to an
+    /// effective minimal set of dependencies
     /// </summary>
-    public HashSet<SourcePackageDependencyInfo> ResolveDependencies(
+    public HashSet<SourcePackageDependencyInfo> ResolveDependenciesForPackageConfig(
         IEnumerable<PackageReference> target_references,
         IEnumerable<SourcePackageDependencyInfo> available_dependencies)
     {
@@ -621,5 +638,286 @@ public class NugetApi
             }
         }
         return effective_dependencies;
+    }
+
+    /// <summary>
+    /// Resolve the primary direct_references against all available_dependencies to an
+    /// effective minimal set of dependencies using the PackageReference approach.
+    /// </summary>
+    public HashSet<SourcePackageDependencyInfo> ResolveDependenciesForPackageReference(
+        IEnumerable<PackageReference> target_references)
+    {
+        var nuget_logger = new NugetLogger();
+        var psm = PackageSourceMapping.GetPackageSourceMapping(settings);
+        var walk_context = new RemoteWalkContext(
+            cacheContext: source_cache_context,
+            packageSourceMapping: psm,
+            logger: nuget_logger);
+
+        var packages = new List<PackageId>();
+        foreach (var targetref in target_references)
+            packages.Add(PackageId.FromReference(targetref));
+
+        walk_context.ProjectLibraryProviders.Add(new ProjectLibraryProvider(packages));
+
+        foreach (var source_repo in source_repositories)
+        {
+            var provider = new SourceRepositoryDependencyProvider(
+                sourceRepository: source_repo,
+                logger: nuget_logger,
+                cacheContext: source_cache_context,
+                ignoreFailedSources: true,
+                ignoreWarning: true);
+
+            walk_context.RemoteLibraryProviders.Add(provider);
+        }
+
+        // we need a fake root lib as this is the only allowed input
+        var rootlib = new LibraryRange(
+            name: "root_project",
+            versionRange: VersionRange.Parse("1.0.0"),
+            typeConstraint: LibraryDependencyTarget.Project);
+
+        var walker = new RemoteDependencyWalker(walk_context);
+
+        var results = walker.WalkAsync(
+            library: rootlib,
+            framework: project_framework,
+            runtimeIdentifier: null,
+            runtimeGraph: RuntimeGraph.Empty,
+            recursive: true);
+        var resolved_graph = results.Result;
+        CheckGraphForErrors(resolved_graph);
+
+        var resolved_package_info_by_package_id = new Dictionary<PackageId, ResolvedPackageInfo>();
+
+        foreach (GraphNode<RemoteResolveResult> inner in resolved_graph.InnerNodes)
+        {
+            if (Config.TRACE)
+                Console.WriteLine($"  inner.Key.TypeConstraint: {inner.Key.TypeConstraint} name: {inner.Item.Key.Name} version: {inner.Item.Key.Version}");
+
+            FlattenGraph(inner, resolved_package_info_by_package_id);
+        }
+
+        HashSet<SourcePackageDependencyInfo> flat_dependencies = new();
+        foreach (KeyValuePair<PackageId, ResolvedPackageInfo> item in resolved_package_info_by_package_id)
+        {
+            var dependency = item.Key;
+            var dpi = item.Value;
+            var source_repo = dpi.remote_match?.Provider.Source;
+            if (Config.TRACE)
+                Console.WriteLine($"        flat_dependency: {dependency.Name} {dependency.Version} repo: {source_repo?.SourceUri}");
+
+            var spdi = new SourcePackageDependencyInfo(
+                id: dependency.Name,
+                version: new NuGetVersion(dependency.Version),
+                dependencies: new List<PackageDependency>(),
+                listed: true,
+                source: null
+            );
+            flat_dependencies.Add(spdi);
+        }
+        return flat_dependencies;
+    }
+
+    public static void FlattenGraph(
+        GraphNode<RemoteResolveResult> node,
+        Dictionary<PackageId, ResolvedPackageInfo> resolved_package_info_by_package_id)
+    {
+        if (node.Key.TypeConstraint != LibraryDependencyTarget.Package &&
+            node.Key.TypeConstraint != LibraryDependencyTarget.PackageProjectExternal)
+        {
+            throw new ArgumentException($"Package {node.Key.Name} cannot be resolved from the sources");
+        }
+
+        try
+        {
+            GraphItem<RemoteResolveResult> item = node.Item;
+            if (item == null)
+            {
+                string message = $"FlattenGraph: node Item is null '{node}'";
+                if (Config.TRACE)
+                {
+                    Console.WriteLine($"        {message}");
+                }
+                throw new Exception(message);
+            }
+            LibraryIdentity key = item.Key;
+            string name = key.Name;
+            string version = key.Version.ToNormalizedString();
+            bool isPrerelease = key.Version.IsPrerelease;
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: node.Item {node.Item} LibraryId: {key}");
+
+            var pid = new PackageId(
+                id: name,
+                version: version,
+                allow_prerelease_versions: isPrerelease);
+
+            var resolved_package_info = new ResolvedPackageInfo
+            {
+                package_id = pid,
+                remote_match = (RemoteMatch?)item.Data.Match
+            };
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: {pid} Library: {item.Data.Match.Library}");
+            if (!resolved_package_info_by_package_id.ContainsKey(resolved_package_info.package_id))
+                resolved_package_info_by_package_id.Add(resolved_package_info.package_id, resolved_package_info);
+
+            foreach (var nd in node.InnerNodes)
+            {
+                FlattenGraph(nd, resolved_package_info_by_package_id);
+            }
+        }
+        catch (Exception ex)
+        {
+            var message = $"Failed to resolve graph with: {node}";
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: {message}: {ex}");
+            throw new Exception(message, ex);
+        }
+    }
+
+    public static void CheckGraphForErrors(GraphNode<RemoteResolveResult> resolved_graph)
+    {
+        var analysis = resolved_graph.Analyze();
+        const bool allow_downgrades = false;
+        if (analysis.Downgrades.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var item in analysis.Downgrades)
+                    Console.WriteLine($"Downgrade from {item.DowngradedFrom.Key} to {item.DowngradedTo.Key}");
+            }
+
+            if (!allow_downgrades)
+            {
+                var name = analysis.Downgrades[0].DowngradedFrom.Item.Key.Name;
+                throw new InvalidOperationException($"Downgrade not allowed: {name}");
+            }
+        }
+
+        if (analysis.Cycles.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var item in analysis.Cycles)
+                    Console.WriteLine($"Cycle in dependencies: {item.Item.Key.Name},{item.Item.Key.Version.ToNormalizedString()}");
+            }
+
+            var name = analysis.Cycles[0].Key.Name;
+            throw new InvalidOperationException($"One package has dependency cycle: {name}");
+        }
+
+        if (analysis.VersionConflicts.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var itm in analysis.VersionConflicts)
+                {
+                    Console.WriteLine(
+                        $"Conflict for {itm.Conflicting.Key.Name},{itm.Conflicting.Key.VersionRange.ToNormalizedString()} resolved as "
+                        + $"{itm.Selected.Item.Key.Name},{itm.Selected.Item.Key.Version.ToNormalizedString()}");
+                }
+            }
+            var item = analysis.VersionConflicts[0];
+            var requested = $"{item.Conflicting.Key.Name},{item.Conflicting.Key.VersionRange.ToNormalizedString()}";
+            var selected = $"{item.Selected.Item.Key.Name},{item.Selected.Item.Key.Version.ToNormalizedString()}";
+            throw new InvalidOperationException($"One package has version conflict: requested: {requested}, selected: {selected}");
+        }
+    }
+}
+
+public class ResolvedPackageInfo
+{
+    public PackageId? package_id;
+
+    /// <summary>
+    /// The NuGet package resolution match.
+    /// </summary>
+    public RemoteMatch? remote_match;
+}
+
+internal class ProjectLibraryProvider : NuGet.DependencyResolver.IDependencyProvider
+{
+    private readonly ICollection<PackageId> package_ids;
+
+    public ProjectLibraryProvider(ICollection<PackageId> package_ids)
+    {
+        this.package_ids = package_ids;
+    }
+
+    public bool SupportsType(LibraryDependencyTarget libraryTypeFlag)
+    {
+        return libraryTypeFlag == LibraryDependencyTarget.Project;
+    }
+
+    public Library GetLibrary(LibraryRange library_range, NuGetFramework framework)
+    {
+        var dependencies = new List<LibraryDependency>();
+
+        foreach (var package in package_ids)
+        {
+            var lib = new LibraryDependency
+            {
+                LibraryRange =
+                    new LibraryRange(
+                        name: package.Name,
+                        versionRange: VersionRange.Parse(package.Version),
+                        typeConstraint: LibraryDependencyTarget.Package)
+            };
+
+            dependencies.Add(lib);
+        }
+
+        var root_project = new LibraryIdentity(
+            name: library_range.Name,
+            version: NuGetVersion.Parse("1.0.0"),
+            type: LibraryType.Project);
+
+        return new Library
+        {
+            LibraryRange = library_range,
+            Identity = root_project,
+            Dependencies = dependencies,
+            Resolved = true
+        };
+    }
+}
+
+/// <summary>
+/// A package with name and version or version range
+/// </summary>
+public class PackageId
+{
+    public string Name { get; }
+
+    /// <summary>
+    /// Version or version range as a string
+    /// </summary>
+    public string Version { get; }
+
+    public bool AllowPrereleaseVersions { get; }
+
+    public PackageId(string id, string version, bool allow_prerelease_versions = false)
+    {
+        Name = id;
+        Version = version;
+        AllowPrereleaseVersions = allow_prerelease_versions;
+    }
+
+    public override string ToString()
+    {
+        return $"{Name}@{Version}";
+    }
+
+    public static PackageId FromReference(PackageReference reference)
+    {
+        bool allow_prerel = reference.HasAllowedVersions && reference.AllowedVersions.MinVersion.IsPrerelease;
+        return new PackageId(
+            id:reference.PackageIdentity.Id,
+            version: reference.AllowedVersions.ToNormalizedString(),
+            allow_prerelease_versions: allow_prerel
+        );
     }
 }

@@ -57,24 +57,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/jQuery@3.6.4",
+          "purl": "",
           "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery Foundation, Inc.",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -85,18 +75,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -451,24 +443,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/jQuery@3.6.4",
+      "purl": "",
       "primary_language": "C#",
-      "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "jQuery Foundation, Inc.",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "jQuery"
-      ],
-      "homepage_url": "http://jquery.com/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -479,18 +461,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: http://jquery.org/license",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",

@@ -83,13 +83,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CSharp/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CSharp/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.7.0.json",
           "datasource_id": "",
@@ -137,13 +137,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/6.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.8.0/microsoft.identitymodel.logging.6.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.logging/6.8.0.json",
           "datasource_id": "",
@@ -191,13 +191,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.wstrust/6.8.0/microsoft.identitymodel.protocols.wstrust.6.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.protocols.wstrust/6.8.0.json",
           "datasource_id": "",
@@ -251,13 +251,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/6.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.8.0/microsoft.identitymodel.tokens.6.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.tokens/6.8.0.json",
           "datasource_id": "",
@@ -294,7 +294,8 @@
             "SamlTokens",
             "Saml",
             "Token",
-            "Saml2"
+            "Saml2",
+            "Token"
           ],
           "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens.saml/6.8.0/microsoft.identitymodel.tokens.saml.6.8.0.nupkg",
@@ -308,13 +309,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens.Saml/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens.Saml/6.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens.saml/6.8.0/microsoft.identitymodel.tokens.saml.6.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.tokens.saml/6.8.0.json",
           "datasource_id": "",
@@ -351,6 +352,7 @@
             "Reading",
             "XML",
             "Writing",
+            "XML",
             "Enveloped",
             "Signatures"
           ],
@@ -366,13 +368,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Xml/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Xml/6.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.xml/6.8.0/microsoft.identitymodel.xml.6.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.xml/6.8.0.json",
           "datasource_id": "",
@@ -420,7 +422,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Platforms/1.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.1.0.json",
           "datasource_id": "",
@@ -468,7 +470,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
           "datasource_id": "",
@@ -516,7 +518,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Buffers/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.buffers/4.5.0/system.buffers.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.buffers/4.5.0.json",
           "datasource_id": "",
@@ -564,7 +566,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Collections/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.collections/4.3.0/system.collections.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections/4.3.0.json",
           "datasource_id": "",
@@ -612,7 +614,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
           "datasource_id": "",
@@ -660,7 +662,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Debug/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.debug/4.3.0.json",
           "datasource_id": "",
@@ -708,7 +710,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Globalization/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.globalization/4.3.0/system.globalization.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.globalization/4.3.0.json",
           "datasource_id": "",
@@ -756,7 +758,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.3.0.json",
           "datasource_id": "",
@@ -804,7 +806,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem/4.3.0/system.io.filesystem.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem/4.3.0.json",
           "datasource_id": "",
@@ -852,7 +854,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem.Primitives/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem.primitives/4.3.0.json",
           "datasource_id": "",
@@ -900,7 +902,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Memory/4.5.3?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.memory/4.5.3/system.memory.4.5.3.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.memory/4.5.3.json",
           "datasource_id": "",
@@ -948,7 +950,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Numerics.Vectors/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.5.0.json",
           "datasource_id": "",
@@ -990,13 +992,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Private.ServiceModel/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Private.ServiceModel/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.private.servicemodel/4.8.1/system.private.servicemodel.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.private.servicemodel/4.8.1.json",
           "datasource_id": "",
@@ -1044,7 +1046,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.3.0.json",
           "datasource_id": "",
@@ -1086,13 +1088,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Reflection.DispatchProxy/4.7.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.DispatchProxy/4.7.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.dispatchproxy/4.7.1/system.reflection.dispatchproxy.4.7.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.dispatchproxy/4.7.1.json",
           "datasource_id": "",
@@ -1140,7 +1142,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Primitives/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.3.0.json",
           "datasource_id": "",
@@ -1188,7 +1190,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Resources.ResourceManager/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.resourcemanager/4.3.0.json",
           "datasource_id": "",
@@ -1236,7 +1238,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.3.0.json",
           "datasource_id": "",
@@ -1284,7 +1286,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/4.5.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.2.json",
           "datasource_id": "",
@@ -1332,7 +1334,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Extensions/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.extensions/4.3.0.json",
           "datasource_id": "",
@@ -1380,7 +1382,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Handles/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.handles/4.3.0.json",
           "datasource_id": "",
@@ -1428,7 +1430,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.InteropServices/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.interopservices/4.3.0.json",
           "datasource_id": "",
@@ -1470,15 +1472,63 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.AccessControl/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.AccessControl/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.accesscontrol/4.7.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Security.Cryptography.Cng",
+          "version": "4.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+          "primary_language": "C#",
+          "description": "Provides cryptographic algorithm implementations and key management with Windows Cryptographic Next Generation API (CNG).\n\nCommonly Used Types:\nSystem.Security.Cryptography.RSACng\nSystem.Security.Cryptography.ECDsaCng\nSystem.Security.Cryptography.CngKey\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://dot.net/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1518,13 +1568,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.7.0/system.security.cryptography.cng.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/4.7.0.json",
           "datasource_id": "",
@@ -1566,13 +1616,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.pkcs/4.7.0/system.security.cryptography.pkcs.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.pkcs/4.7.0.json",
           "datasource_id": "",
@@ -1614,13 +1664,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Xml/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Xml/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/4.7.0/system.security.cryptography.xml.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.xml/4.7.0.json",
           "datasource_id": "",
@@ -1662,13 +1712,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Permissions/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Permissions/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.permissions/4.7.0.json",
           "datasource_id": "",
@@ -1710,13 +1760,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Principal.Windows/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Principal.Windows/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.principal.windows/4.7.0.json",
           "datasource_id": "",
@@ -1758,13 +1808,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Duplex/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Duplex/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.duplex/4.8.1/system.servicemodel.duplex.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.duplex/4.8.1.json",
           "datasource_id": "",
@@ -1806,13 +1856,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Federation/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Federation/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.federation/4.8.1/system.servicemodel.federation.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.federation/4.8.1.json",
           "datasource_id": "",
@@ -1854,13 +1904,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Http/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Http/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.http/4.8.1/system.servicemodel.http.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.http/4.8.1.json",
           "datasource_id": "",
@@ -1902,13 +1952,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.NetTcp/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.NetTcp/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.nettcp/4.8.1/system.servicemodel.nettcp.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.nettcp/4.8.1.json",
           "datasource_id": "",
@@ -1950,13 +2000,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Primitives/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Primitives/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.primitives/4.8.1/system.servicemodel.primitives.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.primitives/4.8.1.json",
           "datasource_id": "",
@@ -1998,13 +2048,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Security/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Security/4.8.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.security/4.8.1/system.servicemodel.security.4.8.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.security/4.8.1.json",
           "datasource_id": "",
@@ -2052,7 +2102,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.3.0.json",
           "datasource_id": "",
@@ -2100,7 +2150,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding.Extensions/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.extensions/4.3.0.json",
           "datasource_id": "",
@@ -2148,7 +2198,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.RegularExpressions/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.regularexpressions/4.3.0.json",
           "datasource_id": "",
@@ -2196,7 +2246,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading/4.3.0/system.threading.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading/4.3.0.json",
           "datasource_id": "",
@@ -2244,7 +2294,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.3.0.json",
           "datasource_id": "",
@@ -2292,7 +2342,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.3.0/system.threading.tasks.extensions.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.3.0.json",
           "datasource_id": "",
@@ -2340,7 +2390,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.ReaderWriter/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.readerwriter/4.3.0.json",
           "datasource_id": "",
@@ -2388,7 +2438,7 @@
           "extra_data": {
             "framework": "netstandard2.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.XmlDocument/4.3.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xmldocument/4.3.0.json",
           "datasource_id": "",
@@ -2436,13 +2486,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CSharp/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CSharp/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.7.0.json",
       "datasource_id": "",
@@ -2490,13 +2540,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Logging/6.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.8.0/microsoft.identitymodel.logging.6.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.logging/6.8.0.json",
       "datasource_id": "",
@@ -2544,13 +2594,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols.WsTrust/6.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.wstrust/6.8.0/microsoft.identitymodel.protocols.wstrust.6.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.protocols.wstrust/6.8.0.json",
       "datasource_id": "",
@@ -2604,13 +2654,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens/6.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.8.0/microsoft.identitymodel.tokens.6.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.tokens/6.8.0.json",
       "datasource_id": "",
@@ -2647,7 +2697,8 @@
         "SamlTokens",
         "Saml",
         "Token",
-        "Saml2"
+        "Saml2",
+        "Token"
       ],
       "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens.saml/6.8.0/microsoft.identitymodel.tokens.saml.6.8.0.nupkg",
@@ -2661,13 +2712,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens.Saml/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Tokens.Saml/6.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens.saml/6.8.0/microsoft.identitymodel.tokens.saml.6.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.tokens.saml/6.8.0.json",
       "datasource_id": "",
@@ -2704,6 +2755,7 @@
         "Reading",
         "XML",
         "Writing",
+        "XML",
         "Enveloped",
         "Signatures"
       ],
@@ -2719,13 +2771,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.IdentityModel.Xml/6.8.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.IdentityModel.Xml/6.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.xml/6.8.0/microsoft.identitymodel.xml.6.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.identitymodel.xml/6.8.0.json",
       "datasource_id": "",
@@ -2773,7 +2825,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Platforms/1.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.1.0.json",
       "datasource_id": "",
@@ -2821,7 +2873,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
       "datasource_id": "",
@@ -2869,7 +2921,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Buffers/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.buffers/4.5.0/system.buffers.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.buffers/4.5.0.json",
       "datasource_id": "",
@@ -2917,7 +2969,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Collections/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.collections/4.3.0/system.collections.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections/4.3.0.json",
       "datasource_id": "",
@@ -2965,7 +3017,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
       "datasource_id": "",
@@ -3013,7 +3065,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Debug/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.debug/4.3.0.json",
       "datasource_id": "",
@@ -3061,7 +3113,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Globalization/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.globalization/4.3.0/system.globalization.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.globalization/4.3.0.json",
       "datasource_id": "",
@@ -3109,7 +3161,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.3.0.json",
       "datasource_id": "",
@@ -3157,7 +3209,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem/4.3.0/system.io.filesystem.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem/4.3.0.json",
       "datasource_id": "",
@@ -3205,7 +3257,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem.Primitives/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem.primitives/4.3.0.json",
       "datasource_id": "",
@@ -3253,7 +3305,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Memory/4.5.3?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.memory/4.5.3/system.memory.4.5.3.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.memory/4.5.3.json",
       "datasource_id": "",
@@ -3301,7 +3353,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Numerics.Vectors/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.5.0.json",
       "datasource_id": "",
@@ -3343,13 +3395,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Private.ServiceModel/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Private.ServiceModel/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.private.servicemodel/4.8.1/system.private.servicemodel.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.private.servicemodel/4.8.1.json",
       "datasource_id": "",
@@ -3397,7 +3449,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.3.0.json",
       "datasource_id": "",
@@ -3439,13 +3491,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Reflection.DispatchProxy/4.7.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.DispatchProxy/4.7.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.dispatchproxy/4.7.1/system.reflection.dispatchproxy.4.7.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.dispatchproxy/4.7.1.json",
       "datasource_id": "",
@@ -3493,7 +3545,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Primitives/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.3.0.json",
       "datasource_id": "",
@@ -3541,7 +3593,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Resources.ResourceManager/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.resourcemanager/4.3.0.json",
       "datasource_id": "",
@@ -3589,7 +3641,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.3.0.json",
       "datasource_id": "",
@@ -3637,7 +3689,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/4.5.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.2.json",
       "datasource_id": "",
@@ -3685,7 +3737,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Extensions/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.extensions/4.3.0.json",
       "datasource_id": "",
@@ -3733,7 +3785,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Handles/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.handles/4.3.0.json",
       "datasource_id": "",
@@ -3781,7 +3833,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.InteropServices/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.interopservices/4.3.0.json",
       "datasource_id": "",
@@ -3823,15 +3875,63 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.AccessControl/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.AccessControl/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.accesscontrol/4.7.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.Security.Cryptography.Cng",
+      "version": "4.5.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.Security.Cryptography.Cng@4.5.0",
+      "primary_language": "C#",
+      "description": "Provides cryptographic algorithm implementations and key management with Windows Cryptographic Next Generation API (CNG).\n\nCommonly Used Types:\nSystem.Security.Cryptography.RSACng\nSystem.Security.Cryptography.ECDsaCng\nSystem.Security.Cryptography.CngKey\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/4.5.0.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -3871,13 +3971,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.7.0/system.security.cryptography.cng.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/4.7.0.json",
       "datasource_id": "",
@@ -3919,13 +4019,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Pkcs/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.pkcs/4.7.0/system.security.cryptography.pkcs.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.pkcs/4.7.0.json",
       "datasource_id": "",
@@ -3967,13 +4067,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Cryptography.Xml/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Cryptography.Xml/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/4.7.0/system.security.cryptography.xml.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.xml/4.7.0.json",
       "datasource_id": "",
@@ -4015,13 +4115,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Permissions/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Permissions/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.permissions/4.7.0.json",
       "datasource_id": "",
@@ -4063,13 +4163,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.Security.Principal.Windows/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Security.Principal.Windows/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.principal.windows/4.7.0.json",
       "datasource_id": "",
@@ -4111,13 +4211,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Duplex/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Duplex/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.duplex/4.8.1/system.servicemodel.duplex.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.duplex/4.8.1.json",
       "datasource_id": "",
@@ -4159,13 +4259,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Federation/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Federation/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.federation/4.8.1/system.servicemodel.federation.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.federation/4.8.1.json",
       "datasource_id": "",
@@ -4207,13 +4307,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Http/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Http/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.http/4.8.1/system.servicemodel.http.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.http/4.8.1.json",
       "datasource_id": "",
@@ -4255,13 +4355,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.NetTcp/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.NetTcp/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.nettcp/4.8.1/system.servicemodel.nettcp.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.nettcp/4.8.1.json",
       "datasource_id": "",
@@ -4303,13 +4403,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Primitives/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Primitives/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.primitives/4.8.1/system.servicemodel.primitives.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.primitives/4.8.1.json",
       "datasource_id": "",
@@ -4351,13 +4451,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.ServiceModel.Security/4.8.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ServiceModel.Security/4.8.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.servicemodel.security/4.8.1/system.servicemodel.security.4.8.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.servicemodel.security/4.8.1.json",
       "datasource_id": "",
@@ -4405,7 +4505,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.3.0.json",
       "datasource_id": "",
@@ -4453,7 +4553,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding.Extensions/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.extensions/4.3.0.json",
       "datasource_id": "",
@@ -4501,7 +4601,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.RegularExpressions/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.regularexpressions/4.3.0.json",
       "datasource_id": "",
@@ -4549,7 +4649,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading/4.3.0/system.threading.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading/4.3.0.json",
       "datasource_id": "",
@@ -4597,7 +4697,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.3.0.json",
       "datasource_id": "",
@@ -4645,7 +4745,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.3.0/system.threading.tasks.extensions.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.3.0.json",
       "datasource_id": "",
@@ -4693,7 +4793,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.ReaderWriter/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.readerwriter/4.3.0.json",
       "datasource_id": "",
@@ -4741,7 +4841,7 @@
       "extra_data": {
         "framework": "netstandard2.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.XmlDocument/4.3.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xmldocument/4.3.0.json",
       "datasource_id": "",

@@ -104,7 +104,7 @@ public class PackagesConfigHelper
         var allVersions = FindAllVersionRangesFor(id: id);
         if (data.ExternalVersionRange != null) allVersions.Add(item: data.ExternalVersionRange);
         var combo = VersionRange.CommonSubSet(ranges: allVersions);
-        var best = NugetApi.FindPackageVersion(name: id, versionRange: combo);
+        var best = NugetApi.FindPackageVersion(name: id, version_range: combo);
 
         if (best == null)
         {

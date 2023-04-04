@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <GlobalPackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.321" /> <!-- Missing in analysis -->
+    <PackageReference Update="System.Composition" Version="6.0.0" />
+    <PackageReference Update="FooBar.Rss " Version="1.0.0" />
+  </ItemGroup>
+</Project>

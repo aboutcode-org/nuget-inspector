@@ -9,7 +9,9 @@
       ],
       "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
-      "warnings": [],
+      "warnings": [
+        "Unsupported framework found: $(DefaultTestFrameworks) in /complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj, falling back to 'any' framework."
+      ],
       "errors": []
     }
   ],
@@ -90,7 +92,7 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/CmdLine/1.0.7.509?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
           "datasource_id": "",
@@ -138,7 +140,7 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
@@ -193,7 +195,7 @@
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/CmdLine/1.0.7.509?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
       "datasource_id": "",
@@ -241,7 +243,7 @@
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
       "datasource_id": "",

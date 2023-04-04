@@ -1903,28 +1903,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/YamlDotNet@13.0.2",
+          "purl": "",
           "primary_language": "C#",
-          "description": "A .NET library for YAML. YamlDotNet provides low level parsing and emitting of YAML as well as a high level object model similar to XmlDocument.",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Antoine Aubry",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "yaml",
-            "parser",
-            "development",
-            "library",
-            "serialization"
-          ],
-          "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/yamldotnet/13.0.2/yamldotnet.13.0.2.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1935,18 +1921,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/YamlDotNet/13.0.2/license",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/YamlDotNet/13.0.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/yamldotnet/13.0.2/yamldotnet.13.0.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/yamldotnet/13.0.2.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -3859,28 +3847,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/YamlDotNet@13.0.2",
+      "purl": "",
       "primary_language": "C#",
-      "description": "A .NET library for YAML. YamlDotNet provides low level parsing and emitting of YAML as well as a high level object model similar to XmlDocument.",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Antoine Aubry",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "yaml",
-        "parser",
-        "development",
-        "library",
-        "serialization"
-      ],
-      "homepage_url": "https://github.com/aaubry/YamlDotNet/wiki",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/yamldotnet/13.0.2/yamldotnet.13.0.2.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -3891,18 +3865,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/YamlDotNet/13.0.2/license",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/YamlDotNet/13.0.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/yamldotnet/13.0.2/yamldotnet.13.0.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/yamldotnet/13.0.2.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",

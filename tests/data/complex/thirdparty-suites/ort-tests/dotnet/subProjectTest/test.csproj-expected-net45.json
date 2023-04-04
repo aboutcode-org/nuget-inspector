@@ -7,7 +7,7 @@
       "options": [
         "--project-file /complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj",
         "--target-framework net45",
-        "--nuget-config complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
+        "--nuget-config /complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
       ],
       "project_framework": "net45",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",

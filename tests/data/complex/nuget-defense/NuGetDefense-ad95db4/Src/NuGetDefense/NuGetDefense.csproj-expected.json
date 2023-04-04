@@ -49,10 +49,204 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense/NuGetDefense.csproj",
-      "dependencies": [],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.CommandLine",
+          "version": "2.0.0-beta4.22272.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+          "primary_language": "C#",
+          "description": "This package includes a powerful command line parser and other tools for building command line applications, including:\n    \n    * Shell-agnostic support for command line completions\n    * Method invocation and an extensible middleware pipeline\n    * Constructor- and property-based model binding for complex types\n    * Test and debug support",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://github.com/dotnet/command-line-api",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.commandline/2.0.0-beta4.22272.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.CommandLine.NamingConventionBinder",
+          "version": "2.0.0-beta4.22272.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+          "primary_language": "C#",
+          "description": "This package provides command handler support for System.CommandLine performs parameter and model binding by matching option and argument names to parameter and property names.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://github.com/dotnet/command-line-api",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1/system.commandline.namingconventionbinder.2.0.0-beta4.22272.1.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1/system.commandline.namingconventionbinder.2.0.0-beta4.22272.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        }
+      ],
       "warnings": [],
       "errors": []
     }
   ],
-  "dependencies": []
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.CommandLine",
+      "version": "2.0.0-beta4.22272.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.CommandLine@2.0.0-beta4.22272.1",
+      "primary_language": "C#",
+      "description": "This package includes a powerful command line parser and other tools for building command line applications, including:\n    \n    * Shell-agnostic support for command line completions\n    * Method invocation and an extensible middleware pipeline\n    * Constructor- and property-based model binding for complex types\n    * Test and debug support",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://github.com/dotnet/command-line-api",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine/2.0.0-beta4.22272.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.commandline/2.0.0-beta4.22272.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.CommandLine.NamingConventionBinder",
+      "version": "2.0.0-beta4.22272.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.CommandLine.NamingConventionBinder@2.0.0-beta4.22272.1",
+      "primary_language": "C#",
+      "description": "This package provides command handler support for System.CommandLine performs parameter and model binding by matching option and argument names to parameter and property names.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://github.com/dotnet/command-line-api",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1/system.commandline.namingconventionbinder.2.0.0-beta4.22272.1.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/System.CommandLine.NamingConventionBinder/2.0.0-beta4.22272.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1/system.commandline.namingconventionbinder.2.0.0-beta4.22272.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.commandline.namingconventionbinder/2.0.0-beta4.22272.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    }
+  ]
 }

@@ -83,13 +83,13 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CSharp/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CSharp/4.7.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.7.0.json",
           "datasource_id": "",
@@ -102,10 +102,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.NETCore.Platforms",
-          "version": "1.1.0",
+          "version": "1.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+          "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.0.1",
           "primary_language": "C#",
           "description": "Provides runtime information required to resolve target framework, platform, and runtime specific implementations of .NETCore packages. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -120,7 +120,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -137,9 +137,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Platforms/1.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.1.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -150,10 +150,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.NETCore.Targets",
-          "version": "1.1.0",
+          "version": "1.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+          "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.0.1",
           "primary_language": "C#",
           "description": "Provides supporting infrastructure for portable projects: support identifiers that define framework and runtime for support targets and packages that reference the minimum supported package versions when targeting these. \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -168,7 +168,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -185,9 +185,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -235,7 +235,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
@@ -283,7 +283,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Collections/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.collections/4.0.11/system.collections.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections/4.0.11.json",
           "datasource_id": "",
@@ -331,7 +331,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
           "datasource_id": "",
@@ -379,7 +379,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Debug/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.debug/4.0.11.json",
           "datasource_id": "",
@@ -427,7 +427,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Tools/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.tools/4.0.1.json",
           "datasource_id": "",
@@ -475,7 +475,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Dynamic.Runtime/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.dynamic.runtime/4.0.11.json",
           "datasource_id": "",
@@ -523,7 +523,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Globalization/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.globalization/4.0.11/system.globalization.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.globalization/4.0.11.json",
           "datasource_id": "",
@@ -536,10 +536,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.IO",
-          "version": "4.3.0",
+          "version": "4.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.IO@4.3.0",
+          "purl": "pkg:nuget/System.IO@4.1.0",
           "primary_language": "C#",
           "description": "Provides base input and output (I/O) types, including System.IO.Stream, System.IO.StreamReader and System.IO.StreamWriter, that allow reading and writing to data streams\n\nCommonly Used Types:\nSystem.IO.Stream\nSystem.IO.EndOfStreamException\nSystem.IO.MemoryStream\nSystem.IO.StreamReader\nSystem.IO.StreamWriter\nSystem.IO.StringWriter\nSystem.IO.TextWriter\nSystem.IO.TextReader\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -554,7 +554,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.1.0/system.io.4.1.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -571,9 +571,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.1.0/system.io.4.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -619,7 +619,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem/4.0.1/system.io.filesystem.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem/4.0.1.json",
           "datasource_id": "",
@@ -667,7 +667,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem.Primitives/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/4.0.1/system.io.filesystem.primitives.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem.primitives/4.0.1.json",
           "datasource_id": "",
@@ -715,7 +715,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Linq/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.linq/4.1.0/system.linq.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq/4.1.0.json",
           "datasource_id": "",
@@ -763,7 +763,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Linq.Expressions/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.linq.expressions/4.1.0/system.linq.expressions.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq.expressions/4.1.0.json",
           "datasource_id": "",
@@ -811,7 +811,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.ObjectModel/4.0.12?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.objectmodel/4.0.12/system.objectmodel.4.0.12.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.objectmodel/4.0.12.json",
           "datasource_id": "",
@@ -824,10 +824,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Reflection",
-          "version": "4.3.0",
+          "version": "4.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Reflection@4.3.0",
+          "purl": "pkg:nuget/System.Reflection@4.1.0",
           "primary_language": "C#",
           "description": "Provides types that retrieve information about assemblies, modules, members, parameters, and other entities in managed code by examining their metadata. These types also can be used to manipulate instances of loaded types, for example to hook up events or to invoke methods.\n\nCommonly Used Types:\nSystem.Reflection.MethodInfo\nSystem.Reflection.PropertyInfo\nSystem.Reflection.ParameterInfo\nSystem.Reflection.FieldInfo\nSystem.Reflection.ConstructorInfo\nSystem.Reflection.Assembly\nSystem.Reflection.MemberInfo\nSystem.Reflection.EventInfo\nSystem.Reflection.Module\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -842,7 +842,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0/system.reflection.4.1.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -859,9 +859,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0/system.reflection.4.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -872,10 +872,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Reflection.Emit",
-          "version": "4.3.0",
+          "version": "4.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+          "purl": "pkg:nuget/System.Reflection.Emit@4.0.1",
           "primary_language": "C#",
           "description": "Provides classes that allow a compiler or tool to emit metadata and optionally generate a PE file on disk. The primary clients of these classes are script engines and compilers.\n\nCommonly Used Types:\nSystem.Reflection.Emit.AssemblyBuilder\nSystem.Reflection.Emit.FieldBuilder\nSystem.Reflection.Emit.TypeBuilder\nSystem.Reflection.Emit.MethodBuilder\nSystem.Reflection.Emit.ConstructorBuilder\nSystem.Reflection.Emit.GenericTypeParameterBuilder\nSystem.Reflection.Emit.ModuleBuilder\nSystem.Reflection.Emit.PropertyBuilder\nSystem.Reflection.Emit.AssemblyBuilderAccess\nSystem.Reflection.Emit.EventBuilder\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -890,7 +890,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.0.1/system.reflection.emit.4.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -907,9 +907,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.0.1/system.reflection.emit.4.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit/4.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -920,10 +920,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Reflection.Emit.ILGeneration",
-          "version": "4.3.0",
+          "version": "4.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+          "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.0.1",
           "primary_language": "C#",
           "description": "Provides classes that allow a compiler or tool to emit Microsoft intermediate language (MSIL). The primary clients of these classes are script engines and compilers.\n\nCommonly Used Types:\nSystem.Reflection.Emit.ILGenerator\nSystem.Reflection.Emit.Label\nSystem.Reflection.Emit.CustomAttributeBuilder\nSystem.Reflection.Emit.LocalBuilder\nSystem.Reflection.Emit.ParameterBuilder\nSystem.Reflection.Emit.SignatureHelper\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -938,7 +938,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.0.1/system.reflection.emit.ilgeneration.4.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -955,9 +955,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit.ILGeneration/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.0.1/system.reflection.emit.ilgeneration.4.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -968,10 +968,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Reflection.Emit.Lightweight",
-          "version": "4.3.0",
+          "version": "4.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+          "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.0.1",
           "primary_language": "C#",
           "description": "Provides the System.Reflection.Emit.DynamicMethod class, which represents a dynamic method that can be compiled, executed, and discarded. Discarded methods are available for garbage collection.\n\nCommonly Used Types:\nSystem.Reflection.Emit.DynamicMethod\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -986,7 +986,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.0.1/system.reflection.emit.lightweight.4.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1003,9 +1003,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit.Lightweight/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.0.1/system.reflection.emit.lightweight.4.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1051,7 +1051,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Extensions/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/4.0.1/system.reflection.extensions.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.extensions/4.0.1.json",
           "datasource_id": "",
@@ -1064,10 +1064,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Reflection.Primitives",
-          "version": "4.3.0",
+          "version": "4.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+          "purl": "pkg:nuget/System.Reflection.Primitives@4.0.1",
           "primary_language": "C#",
           "description": "Provides common enumerations for reflection-based libraries.\n\nCommonly Used Types:\nSystem.Reflection.FieldAttributes\nSystem.Reflection.Emit.OpCode\nSystem.Reflection.TypeAttributes\nSystem.Reflection.MethodAttributes\nSystem.Reflection.CallingConventions\nSystem.Reflection.PropertyAttributes\nSystem.Reflection.EventAttributes\nSystem.Reflection.ParameterAttributes\nSystem.Reflection.GenericParameterAttributes\nSystem.Reflection.MethodImplAttributes\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -1082,7 +1082,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.0.1/system.reflection.primitives.4.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1099,9 +1099,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Primitives/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.0.1/system.reflection.primitives.4.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1147,7 +1147,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.TypeExtensions/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/4.1.0/system.reflection.typeextensions.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.typeextensions/4.1.0.json",
           "datasource_id": "",
@@ -1195,7 +1195,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Resources.ResourceManager/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.0.1/system.resources.resourcemanager.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.resourcemanager/4.0.1.json",
           "datasource_id": "",
@@ -1208,10 +1208,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Runtime",
-          "version": "4.3.0",
+          "version": "4.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Runtime@4.3.0",
+          "purl": "pkg:nuget/System.Runtime@4.1.0",
           "primary_language": "C#",
           "description": "Provides the fundamental primitives, classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and exceptions. This packages represents the core package, and provides the minimal set of types required to build a managed application.\n\nCommonly Used Types:\nSystem.Object\nSystem.Exception\nSystem.Int16\nSystem.Int32\nSystem.Int64\nSystem.Enum\nSystem.String\nSystem.Char\nSystem.Boolean\nSystem.SByte\nSystem.Byte\nSystem.DateTime\nSystem.DateTimeOffset\nSystem.Single\nSystem.Double\nSystem.UInt16\nSystem.UInt32\nSystem.UInt64\nSystem.IDisposable\nSystem.Uri\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -1226,7 +1226,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0/system.runtime.4.1.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1243,9 +1243,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0/system.runtime.4.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1291,7 +1291,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Extensions/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.1.0/system.runtime.extensions.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.extensions/4.1.0.json",
           "datasource_id": "",
@@ -1339,7 +1339,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Handles/4.0.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.handles/4.0.1/system.runtime.handles.4.0.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.handles/4.0.1.json",
           "datasource_id": "",
@@ -1387,7 +1387,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.InteropServices/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/4.1.0/system.runtime.interopservices.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.interopservices/4.1.0.json",
           "datasource_id": "",
@@ -1435,7 +1435,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Serialization.Primitives/4.1.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.serialization.primitives/4.1.1/system.runtime.serialization.primitives.4.1.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.primitives/4.1.1.json",
           "datasource_id": "",
@@ -1448,10 +1448,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Text.Encoding",
-          "version": "4.3.0",
+          "version": "4.0.11",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+          "purl": "pkg:nuget/System.Text.Encoding@4.0.11",
           "primary_language": "C#",
           "description": "Provides base abstract encoding classes for converting blocks of characters to and from blocks of bytes.\n\nCommonly Used Types:\nSystem.Text.Encoding\nSystem.Text.DecoderFallbackException\nSystem.Text.Decoder\nSystem.Text.EncoderFallbackException\nSystem.Text.Encoder\nSystem.Text.EncoderFallback\nSystem.Text.EncoderFallbackBuffer\nSystem.Text.DecoderFallback\nSystem.Text.DecoderFallbackBuffer\nSystem.Text.DecoderExceptionFallback\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -1466,7 +1466,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1483,9 +1483,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.0.11.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1531,7 +1531,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding.Extensions/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/4.0.11/system.text.encoding.extensions.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.extensions/4.0.11.json",
           "datasource_id": "",
@@ -1579,7 +1579,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Text.RegularExpressions/4.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/4.1.0/system.text.regularexpressions.4.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.regularexpressions/4.1.0.json",
           "datasource_id": "",
@@ -1627,7 +1627,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading/4.0.11/system.threading.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading/4.0.11.json",
           "datasource_id": "",
@@ -1640,10 +1640,10 @@
           "type": "nuget",
           "namespace": "",
           "name": "System.Threading.Tasks",
-          "version": "4.3.0",
+          "version": "4.0.11",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+          "purl": "pkg:nuget/System.Threading.Tasks@4.0.11",
           "primary_language": "C#",
           "description": "Provides types that simplify the work of writing concurrent and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.Task<TResult>\nSystem.Runtime.CompilerServices.TaskAwaiter<TResult>\nSystem.Threading.Tasks.TaskCompletionSource<TResult>\nSystem.Threading.Tasks.Task\nSystem.OperationCanceledException\nSystem.AggregateException\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
           "release_date": "",
@@ -1658,7 +1658,7 @@
           ],
           "keywords": [],
           "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -1675,9 +1675,9 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks/4.3.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.3.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.0.11.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1723,7 +1723,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.0.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.0.0/system.threading.tasks.extensions.4.0.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.0.0.json",
           "datasource_id": "",
@@ -1771,7 +1771,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.ReaderWriter/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/4.0.11/system.xml.readerwriter.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.readerwriter/4.0.11.json",
           "datasource_id": "",
@@ -1819,7 +1819,7 @@
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.XDocument/4.0.11?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.xdocument/4.0.11/system.xml.xdocument.4.0.11.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xdocument/4.0.11.json",
           "datasource_id": "",
@@ -1867,13 +1867,13 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/Microsoft.CSharp/4.7.0/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://licenses.nuget.org/MIT\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CSharp/4.7.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.csharp/4.7.0.json",
       "datasource_id": "",
@@ -1886,10 +1886,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "Microsoft.NETCore.Platforms",
-      "version": "1.1.0",
+      "version": "1.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.1.0",
+      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@1.0.1",
       "primary_language": "C#",
       "description": "Provides runtime information required to resolve target framework, platform, and runtime specific implementations of .NETCore packages. \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -1904,7 +1904,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -1921,9 +1921,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Platforms/1.1.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.1.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.platforms/1.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -1934,10 +1934,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "Microsoft.NETCore.Targets",
-      "version": "1.1.0",
+      "version": "1.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.1.0",
+      "purl": "pkg:nuget/Microsoft.NETCore.Targets@1.0.1",
       "primary_language": "C#",
       "description": "Provides supporting infrastructure for portable projects: support identifiers that define framework and runtime for support targets and packages that reference the minimum supported package versions when targeting these. \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -1952,7 +1952,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -1969,9 +1969,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.0.1/microsoft.netcore.targets.1.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2019,7 +2019,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/9.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
       "datasource_id": "",
@@ -2067,7 +2067,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Collections/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.collections/4.0.11/system.collections.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.collections/4.0.11.json",
       "datasource_id": "",
@@ -2115,7 +2115,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Data.DataSetExtensions/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.data.datasetextensions/4.5.0/system.data.datasetextensions.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.data.datasetextensions/4.5.0.json",
       "datasource_id": "",
@@ -2163,7 +2163,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Debug/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.0.11/system.diagnostics.debug.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.debug/4.0.11.json",
       "datasource_id": "",
@@ -2211,7 +2211,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.Tools/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.tools/4.0.1/system.diagnostics.tools.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.tools/4.0.1.json",
       "datasource_id": "",
@@ -2259,7 +2259,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Dynamic.Runtime/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.dynamic.runtime/4.0.11.json",
       "datasource_id": "",
@@ -2307,7 +2307,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Globalization/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.globalization/4.0.11/system.globalization.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.globalization/4.0.11.json",
       "datasource_id": "",
@@ -2320,10 +2320,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.IO",
-      "version": "4.3.0",
+      "version": "4.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.IO@4.3.0",
+      "purl": "pkg:nuget/System.IO@4.1.0",
       "primary_language": "C#",
       "description": "Provides base input and output (I/O) types, including System.IO.Stream, System.IO.StreamReader and System.IO.StreamWriter, that allow reading and writing to data streams\n\nCommonly Used Types:\nSystem.IO.Stream\nSystem.IO.EndOfStreamException\nSystem.IO.MemoryStream\nSystem.IO.StreamReader\nSystem.IO.StreamWriter\nSystem.IO.StringWriter\nSystem.IO.TextWriter\nSystem.IO.TextReader\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2338,7 +2338,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.1.0/system.io.4.1.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2355,9 +2355,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io/4.1.0/system.io.4.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io/4.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2403,7 +2403,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem/4.0.1/system.io.filesystem.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem/4.0.1.json",
       "datasource_id": "",
@@ -2451,7 +2451,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO.FileSystem.Primitives/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/4.0.1/system.io.filesystem.primitives.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.filesystem.primitives/4.0.1.json",
       "datasource_id": "",
@@ -2499,7 +2499,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Linq/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.linq/4.1.0/system.linq.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq/4.1.0.json",
       "datasource_id": "",
@@ -2547,7 +2547,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Linq.Expressions/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.linq.expressions/4.1.0/system.linq.expressions.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.linq.expressions/4.1.0.json",
       "datasource_id": "",
@@ -2595,7 +2595,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.ObjectModel/4.0.12?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.objectmodel/4.0.12/system.objectmodel.4.0.12.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.objectmodel/4.0.12.json",
       "datasource_id": "",
@@ -2608,10 +2608,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Reflection",
-      "version": "4.3.0",
+      "version": "4.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Reflection@4.3.0",
+      "purl": "pkg:nuget/System.Reflection@4.1.0",
       "primary_language": "C#",
       "description": "Provides types that retrieve information about assemblies, modules, members, parameters, and other entities in managed code by examining their metadata. These types also can be used to manipulate instances of loaded types, for example to hook up events or to invoke methods.\n\nCommonly Used Types:\nSystem.Reflection.MethodInfo\nSystem.Reflection.PropertyInfo\nSystem.Reflection.ParameterInfo\nSystem.Reflection.FieldInfo\nSystem.Reflection.ConstructorInfo\nSystem.Reflection.Assembly\nSystem.Reflection.MemberInfo\nSystem.Reflection.EventInfo\nSystem.Reflection.Module\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2626,7 +2626,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0/system.reflection.4.1.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2643,9 +2643,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.1.0/system.reflection.4.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection/4.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2656,10 +2656,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Reflection.Emit",
-      "version": "4.3.0",
+      "version": "4.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Reflection.Emit@4.3.0",
+      "purl": "pkg:nuget/System.Reflection.Emit@4.0.1",
       "primary_language": "C#",
       "description": "Provides classes that allow a compiler or tool to emit metadata and optionally generate a PE file on disk. The primary clients of these classes are script engines and compilers.\n\nCommonly Used Types:\nSystem.Reflection.Emit.AssemblyBuilder\nSystem.Reflection.Emit.FieldBuilder\nSystem.Reflection.Emit.TypeBuilder\nSystem.Reflection.Emit.MethodBuilder\nSystem.Reflection.Emit.ConstructorBuilder\nSystem.Reflection.Emit.GenericTypeParameterBuilder\nSystem.Reflection.Emit.ModuleBuilder\nSystem.Reflection.Emit.PropertyBuilder\nSystem.Reflection.Emit.AssemblyBuilderAccess\nSystem.Reflection.Emit.EventBuilder\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2674,7 +2674,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.0.1/system.reflection.emit.4.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2691,9 +2691,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.0.1/system.reflection.emit.4.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit/4.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2704,10 +2704,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Reflection.Emit.ILGeneration",
-      "version": "4.3.0",
+      "version": "4.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.3.0",
+      "purl": "pkg:nuget/System.Reflection.Emit.ILGeneration@4.0.1",
       "primary_language": "C#",
       "description": "Provides classes that allow a compiler or tool to emit Microsoft intermediate language (MSIL). The primary clients of these classes are script engines and compilers.\n\nCommonly Used Types:\nSystem.Reflection.Emit.ILGenerator\nSystem.Reflection.Emit.Label\nSystem.Reflection.Emit.CustomAttributeBuilder\nSystem.Reflection.Emit.LocalBuilder\nSystem.Reflection.Emit.ParameterBuilder\nSystem.Reflection.Emit.SignatureHelper\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2722,7 +2722,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.0.1/system.reflection.emit.ilgeneration.4.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2739,9 +2739,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit.ILGeneration/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.0.1/system.reflection.emit.ilgeneration.4.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.ilgeneration/4.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2752,10 +2752,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Reflection.Emit.Lightweight",
-      "version": "4.3.0",
+      "version": "4.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.3.0",
+      "purl": "pkg:nuget/System.Reflection.Emit.Lightweight@4.0.1",
       "primary_language": "C#",
       "description": "Provides the System.Reflection.Emit.DynamicMethod class, which represents a dynamic method that can be compiled, executed, and discarded. Discarded methods are available for garbage collection.\n\nCommonly Used Types:\nSystem.Reflection.Emit.DynamicMethod\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2770,7 +2770,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.0.1/system.reflection.emit.lightweight.4.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2787,9 +2787,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Emit.Lightweight/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.0.1/system.reflection.emit.lightweight.4.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.emit.lightweight/4.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2835,7 +2835,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Extensions/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/4.0.1/system.reflection.extensions.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.extensions/4.0.1.json",
       "datasource_id": "",
@@ -2848,10 +2848,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Reflection.Primitives",
-      "version": "4.3.0",
+      "version": "4.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Reflection.Primitives@4.3.0",
+      "purl": "pkg:nuget/System.Reflection.Primitives@4.0.1",
       "primary_language": "C#",
       "description": "Provides common enumerations for reflection-based libraries.\n\nCommonly Used Types:\nSystem.Reflection.FieldAttributes\nSystem.Reflection.Emit.OpCode\nSystem.Reflection.TypeAttributes\nSystem.Reflection.MethodAttributes\nSystem.Reflection.CallingConventions\nSystem.Reflection.PropertyAttributes\nSystem.Reflection.EventAttributes\nSystem.Reflection.ParameterAttributes\nSystem.Reflection.GenericParameterAttributes\nSystem.Reflection.MethodImplAttributes\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -2866,7 +2866,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.0.1/system.reflection.primitives.4.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -2883,9 +2883,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.Primitives/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.0.1/system.reflection.primitives.4.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.primitives/4.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -2931,7 +2931,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Reflection.TypeExtensions/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/4.1.0/system.reflection.typeextensions.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.reflection.typeextensions/4.1.0.json",
       "datasource_id": "",
@@ -2979,7 +2979,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Resources.ResourceManager/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.0.1/system.resources.resourcemanager.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.resources.resourcemanager/4.0.1.json",
       "datasource_id": "",
@@ -2992,10 +2992,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Runtime",
-      "version": "4.3.0",
+      "version": "4.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Runtime@4.3.0",
+      "purl": "pkg:nuget/System.Runtime@4.1.0",
       "primary_language": "C#",
       "description": "Provides the fundamental primitives, classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and exceptions. This packages represents the core package, and provides the minimal set of types required to build a managed application.\n\nCommonly Used Types:\nSystem.Object\nSystem.Exception\nSystem.Int16\nSystem.Int32\nSystem.Int64\nSystem.Enum\nSystem.String\nSystem.Char\nSystem.Boolean\nSystem.SByte\nSystem.Byte\nSystem.DateTime\nSystem.DateTimeOffset\nSystem.Single\nSystem.Double\nSystem.UInt16\nSystem.UInt32\nSystem.UInt64\nSystem.IDisposable\nSystem.Uri\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -3010,7 +3010,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0/system.runtime.4.1.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -3027,9 +3027,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.1.0/system.runtime.4.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime/4.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -3075,7 +3075,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Extensions/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.1.0/system.runtime.extensions.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.extensions/4.1.0.json",
       "datasource_id": "",
@@ -3123,7 +3123,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Handles/4.0.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.handles/4.0.1/system.runtime.handles.4.0.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.handles/4.0.1.json",
       "datasource_id": "",
@@ -3171,7 +3171,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.InteropServices/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/4.1.0/system.runtime.interopservices.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.interopservices/4.1.0.json",
       "datasource_id": "",
@@ -3219,7 +3219,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.Serialization.Primitives/4.1.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.serialization.primitives/4.1.1/system.runtime.serialization.primitives.4.1.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.serialization.primitives/4.1.1.json",
       "datasource_id": "",
@@ -3232,10 +3232,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Text.Encoding",
-      "version": "4.3.0",
+      "version": "4.0.11",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Text.Encoding@4.3.0",
+      "purl": "pkg:nuget/System.Text.Encoding@4.0.11",
       "primary_language": "C#",
       "description": "Provides base abstract encoding classes for converting blocks of characters to and from blocks of bytes.\n\nCommonly Used Types:\nSystem.Text.Encoding\nSystem.Text.DecoderFallbackException\nSystem.Text.Decoder\nSystem.Text.EncoderFallbackException\nSystem.Text.Encoder\nSystem.Text.EncoderFallback\nSystem.Text.EncoderFallbackBuffer\nSystem.Text.DecoderFallback\nSystem.Text.DecoderFallbackBuffer\nSystem.Text.DecoderExceptionFallback\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -3250,7 +3250,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -3267,9 +3267,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.0.11/system.text.encoding.4.0.11.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding/4.0.11.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -3315,7 +3315,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.Encoding.Extensions/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/4.0.11/system.text.encoding.extensions.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encoding.extensions/4.0.11.json",
       "datasource_id": "",
@@ -3363,7 +3363,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Text.RegularExpressions/4.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/4.1.0/system.text.regularexpressions.4.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.regularexpressions/4.1.0.json",
       "datasource_id": "",
@@ -3411,7 +3411,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading/4.0.11/system.threading.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading/4.0.11.json",
       "datasource_id": "",
@@ -3424,10 +3424,10 @@
       "type": "nuget",
       "namespace": "",
       "name": "System.Threading.Tasks",
-      "version": "4.3.0",
+      "version": "4.0.11",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/System.Threading.Tasks@4.3.0",
+      "purl": "pkg:nuget/System.Threading.Tasks@4.0.11",
       "primary_language": "C#",
       "description": "Provides types that simplify the work of writing concurrent and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.Task<TResult>\nSystem.Runtime.CompilerServices.TaskAwaiter<TResult>\nSystem.Threading.Tasks.TaskCompletionSource<TResult>\nSystem.Threading.Tasks.Task\nSystem.OperationCanceledException\nSystem.AggregateException\n \nWhen using NuGet 3.x this package requires at least version 3.4.",
       "release_date": "",
@@ -3442,7 +3442,7 @@
       ],
       "keywords": [],
       "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -3459,9 +3459,9 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks/4.3.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.3.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.0.11/system.threading.tasks.4.0.11.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks/4.0.11.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -3507,7 +3507,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.0.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.0.0/system.threading.tasks.extensions.4.0.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.0.0.json",
       "datasource_id": "",
@@ -3555,7 +3555,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.ReaderWriter/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/4.0.11/system.xml.readerwriter.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.readerwriter/4.0.11.json",
       "datasource_id": "",
@@ -3603,7 +3603,7 @@
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Xml.XDocument/4.0.11?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.xml.xdocument/4.0.11/system.xml.xdocument.4.0.11.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.xml.xdocument/4.0.11.json",
       "datasource_id": "",

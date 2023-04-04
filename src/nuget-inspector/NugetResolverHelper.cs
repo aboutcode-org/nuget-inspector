@@ -43,7 +43,7 @@ public class NugetResolverHelper
 
         PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
             name: dependency.name,
-            versionRange: dependency.version_range);
+            version_range: dependency.version_range);
 
         if (psmr == null)
         {
@@ -83,7 +83,7 @@ public class NugetResolverHelper
             {
                 PackageSearchMetadataRegistration? psrm = nugetApi.FindPackageVersion(
                     name: pkg.Id,
-                    versionRange: pkg.VersionRange);
+                    version_range: pkg.VersionRange);
                 if (psrm == null)
                 {
                     if (Config.TRACE)

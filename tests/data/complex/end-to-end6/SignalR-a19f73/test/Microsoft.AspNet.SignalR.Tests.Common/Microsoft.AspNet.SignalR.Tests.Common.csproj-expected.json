@@ -9,7 +9,9 @@
       ],
       "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
-      "warnings": [],
+      "warnings": [
+        "Unsupported framework found: $(DefaultTestFrameworks) in /complex/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj, falling back to 'any' framework."
+      ],
       "errors": []
     }
   ],
@@ -95,7 +97,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Cors/5.0.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.cors/5.0.0/microsoft.aspnet.cors.5.0.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnet.cors/5.0.0.json",
           "datasource_id": "",
@@ -147,7 +149,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
           "datasource_id": "",
@@ -199,7 +201,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Cors/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.cors/2.1.0/microsoft.owin.cors.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.cors/2.1.0.json",
           "datasource_id": "",
@@ -251,7 +253,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Hosting/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.hosting/2.1.0/microsoft.owin.hosting.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.hosting/2.1.0.json",
           "datasource_id": "",
@@ -303,7 +305,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Security/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/2.1.0/microsoft.owin.security.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.security/2.1.0.json",
           "datasource_id": "",
@@ -355,7 +357,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Security.Cookies/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.cookies/2.1.0/microsoft.owin.security.cookies.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.security.cookies/2.1.0.json",
           "datasource_id": "",
@@ -407,7 +409,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Testing/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.testing/2.1.0/microsoft.owin.testing.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.testing/2.1.0.json",
           "datasource_id": "",
@@ -457,7 +459,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
@@ -507,7 +509,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
           "datasource_id": "",
@@ -555,7 +557,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
           "datasource_id": "",
@@ -603,7 +605,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.assert/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
           "datasource_id": "",
@@ -651,7 +653,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.core/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
           "datasource_id": "",
@@ -699,7 +701,7 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
           "datasource_id": "",
@@ -759,7 +761,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNet.Cors/5.0.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.cors/5.0.0/microsoft.aspnet.cors.5.0.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnet.cors/5.0.0.json",
       "datasource_id": "",
@@ -811,7 +813,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin/2.1.0.json",
       "datasource_id": "",
@@ -863,7 +865,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Cors/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.cors/2.1.0/microsoft.owin.cors.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.cors/2.1.0.json",
       "datasource_id": "",
@@ -915,7 +917,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Hosting/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.hosting/2.1.0/microsoft.owin.hosting.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.hosting/2.1.0.json",
       "datasource_id": "",
@@ -967,7 +969,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Security/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/2.1.0/microsoft.owin.security.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.security/2.1.0.json",
       "datasource_id": "",
@@ -1019,7 +1021,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Security.Cookies/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.cookies/2.1.0/microsoft.owin.security.cookies.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.security.cookies/2.1.0.json",
       "datasource_id": "",
@@ -1071,7 +1073,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Owin.Testing/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.testing/2.1.0/microsoft.owin.testing.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.owin.testing/2.1.0.json",
       "datasource_id": "",
@@ -1121,7 +1123,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
       "datasource_id": "",
@@ -1171,7 +1173,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Owin/1.0.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/owin/1.0.0.json",
       "datasource_id": "",
@@ -1219,7 +1221,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
       "datasource_id": "",
@@ -1267,7 +1269,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.assert/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
       "datasource_id": "",
@@ -1315,7 +1317,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.core/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
       "datasource_id": "",
@@ -1363,7 +1365,7 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
       "datasource_id": "",

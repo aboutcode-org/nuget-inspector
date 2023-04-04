@@ -89,7 +89,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Pipelines.Sockets.Unofficial/1.0.7?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/1.0.7/pipelines.sockets.unofficial.1.0.7.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/pipelines.sockets.unofficial/1.0.7.json",
           "datasource_id": "",
@@ -143,7 +143,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/StackExchange.Redis/2.0.513?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.0.513/stackexchange.redis.2.0.513.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/2.0.513.json",
           "datasource_id": "",
@@ -191,7 +191,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Buffers/4.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.buffers/4.4.0/system.buffers.4.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.buffers/4.4.0.json",
           "datasource_id": "",
@@ -239,7 +239,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.PerformanceCounter/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.performancecounter/4.5.0/system.diagnostics.performancecounter.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.performancecounter/4.5.0.json",
           "datasource_id": "",
@@ -287,7 +287,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.IO.Pipelines/4.5.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.pipelines/4.5.1/system.io.pipelines.4.5.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.pipelines/4.5.1.json",
           "datasource_id": "",
@@ -335,7 +335,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Memory/4.5.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.memory/4.5.1/system.memory.4.5.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.memory/4.5.1.json",
           "datasource_id": "",
@@ -383,7 +383,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Numerics.Vectors/4.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.4.0.json",
           "datasource_id": "",
@@ -431,7 +431,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.0.json",
           "datasource_id": "",
@@ -479,9 +479,57 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Channels/4.5.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.channels/4.5.0/system.threading.channels.4.5.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.channels/4.5.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "System.Threading.Tasks.Extensions",
+          "version": "4.5.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.0",
+          "primary_language": "C#",
+          "description": "Provides additional types that simplify the work of writing concurrent and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.ValueTask<TResult>\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "https://dot.net/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.0/system.threading.tasks.extensions.4.5.0.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net461"
+          },
+          "repository_homepage_url": "",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.0/system.threading.tasks.extensions.4.5.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.0.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -527,7 +575,7 @@
           "extra_data": {
             "framework": "net461"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.5.1?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.1.json",
           "datasource_id": "",
@@ -581,7 +629,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Pipelines.Sockets.Unofficial/1.0.7?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/pipelines.sockets.unofficial/1.0.7/pipelines.sockets.unofficial.1.0.7.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/pipelines.sockets.unofficial/1.0.7.json",
       "datasource_id": "",
@@ -635,7 +683,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/StackExchange.Redis/2.0.513?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis/2.0.513/stackexchange.redis.2.0.513.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis/2.0.513.json",
       "datasource_id": "",
@@ -683,7 +731,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Buffers/4.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.buffers/4.4.0/system.buffers.4.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.buffers/4.4.0.json",
       "datasource_id": "",
@@ -731,7 +779,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Diagnostics.PerformanceCounter/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.performancecounter/4.5.0/system.diagnostics.performancecounter.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.diagnostics.performancecounter/4.5.0.json",
       "datasource_id": "",
@@ -779,7 +827,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.IO.Pipelines/4.5.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.io.pipelines/4.5.1/system.io.pipelines.4.5.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.pipelines/4.5.1.json",
       "datasource_id": "",
@@ -827,7 +875,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Memory/4.5.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.memory/4.5.1/system.memory.4.5.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.memory/4.5.1.json",
       "datasource_id": "",
@@ -875,7 +923,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Numerics.Vectors/4.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.numerics.vectors/4.4.0.json",
       "datasource_id": "",
@@ -923,7 +971,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/4.5.0.json",
       "datasource_id": "",
@@ -971,9 +1019,57 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Channels/4.5.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.channels/4.5.0/system.threading.channels.4.5.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.channels/4.5.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "System.Threading.Tasks.Extensions",
+      "version": "4.5.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/System.Threading.Tasks.Extensions@4.5.0",
+      "primary_language": "C#",
+      "description": "Provides additional types that simplify the work of writing concurrent and asynchronous code.\n\nCommonly Used Types:\nSystem.Threading.Tasks.ValueTask<TResult>\n \n30ab651fcb4354552bd4891619a0bdd81e0ebdbf",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "https://dot.net/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.0/system.threading.tasks.extensions.4.5.0.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net461"
+      },
+      "repository_homepage_url": "",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.0/system.threading.tasks.extensions.4.5.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.0.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
@@ -1019,7 +1115,7 @@
       "extra_data": {
         "framework": "net461"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/System.Threading.Tasks.Extensions/4.5.1?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.threading.tasks.extensions/4.5.1.json",
       "datasource_id": "",

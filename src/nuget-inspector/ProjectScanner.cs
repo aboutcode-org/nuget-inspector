@@ -129,11 +129,13 @@ internal class ProjectScanner
     /// <param name="scan_result"></param>
     public void FetchDependenciesMetadata(ScanResult scan_result, bool with_details = false)
     {
-        if (Config.TRACE) Console.WriteLine($"\nFetchDependenciesMetadata: with_details: {with_details}");
+        if (Config.TRACE_META)
+            Console.WriteLine($"\nFetchDependenciesMetadata: with_details: {with_details}");
         foreach (BasePackage dep in scan_result.project_package.dependencies)
         {
             dep.Update(nugetApi: NugetApiService, with_details: with_details);
-            if (Config.TRACE) Console.WriteLine($"    Fetched for {dep.name}@{dep.version}");
+            if (Config.TRACE_META)
+                Console.WriteLine($"    Fetched for {dep.name}@{dep.version}");
         }
     }
 
