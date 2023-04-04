@@ -11,7 +11,6 @@ using NuGet.Versioning;
 using System.Text;
 using System.Xml;
 
-
 namespace NugetInspector;
 
 /// <summary>
@@ -21,34 +20,19 @@ namespace NugetInspector;
 internal class ProjectFileProcessor : IDependencyProcessor
 {
     public const string DatasourceId = "dotnet-project-reference";
-    public NuGetFramework? ProjectTargetFramework;
+    public NuGetFramework? ProjectFramework;
     public NugetApi nugetApi;
     public string ProjectPath;
 
     public ProjectFileProcessor(
         string projectPath,
         NugetApi nugetApi,
-        NuGetFramework? project_target_framework)
+        NuGetFramework? project_framework)
     {
         ProjectPath = projectPath;
         this.nugetApi = nugetApi;
-        ProjectTargetFramework = project_target_framework;
+        ProjectFramework = project_framework;
     }
-
-    // /// <summary>
-    // /// Return a list of Dependency extracted from the project file
-    // /// using a project model.
-    // /// </summary>
-    // public List<Dependency> GetDependencies()
-    // {
-    //     if (Config.TRACE)
-    //         Console.WriteLine($"ProjectFileProcessor.GetDependencies: ProjectPath {ProjectPath}");
-
-    //     List<PackageReference> references = GetPackageReferences();
-    //     List<Dependency> dependencies = GetDependenciesFromReferences(references);
-
-    //     return dependencies;
-    // }
 
     public List<Dependency> GetDependenciesFromReferences(List<PackageReference> references)
     {
@@ -59,7 +43,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             var dep = new Dependency(
                 name: rpid.Id,
                 version_range: reference.AllowedVersions ?? new VersionRange(rpid.Version),
-                framework: ProjectTargetFramework,
+                framework: ProjectFramework,
                 is_direct: true);
             dependencies.Add(item: dep);
         }
@@ -110,7 +94,6 @@ internal class ProjectFileProcessor : IDependencyProcessor
         return deduped;
     }
 
-
     /// <summary>
     /// Copied from NuGet.Client/src/NuGet.Core/NuGet.Build.Tasks.Console/MSBuildStaticGraphRestore.cs
     /// Copyright (c) .NET Foundation. All rights reserved.
@@ -136,7 +119,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
     /// Return a list of PackageReference extracted from the project file
     /// using a project model.
     /// </summary>
-    public List<PackageReference> GetPackageReferences()
+    public virtual List<PackageReference> GetPackageReferences()
     {
         if (Config.TRACE)
             Console.WriteLine($"ProjectFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
@@ -145,8 +128,8 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
         // TODO: consider reading global.json if present?
         Dictionary<string, string> properties = new();
-        if (ProjectTargetFramework != null)
-            properties["TargetFramework"] = ProjectTargetFramework.GetShortFolderName();
+        if (ProjectFramework != null)
+            properties["TargetFramework"] = ProjectFramework.GetShortFolderName();
 
         var project = new Microsoft.Build.Evaluation.Project(
             projectFile: ProjectPath,
@@ -155,14 +138,30 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
         foreach (ProjectItem reference in project.GetItems(itemType: "PackageReference"))
         {
+            var name = reference.EvaluatedInclude;
+
             if (Config.TRACE_DEEP)
             {
-                Console.WriteLine($"    Project reference: EvaluatedInclude: {reference.EvaluatedInclude}");
+                Console.WriteLine($"    Project reference: name: {name}");
                 foreach (var meta in reference.Metadata)
                     Console.WriteLine($"        Metadata: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
             }
 
-            // Compute the include and exclude flags
+            // Skip implicit references
+            bool is_implicit = false;
+            foreach (var meta in reference.Metadata)
+            {
+                if  (meta.Name == "IsImplicitlyDefined" && meta.EvaluatedValue=="true")
+                    is_implicit = true;
+            }
+            if (is_implicit)
+            {
+                if (Config.TRACE)
+                    Console.WriteLine($"    Skipping implicit package reference for {name}");
+                continue;
+            }
+
+            // Compute the include and exclude flags to skip private assets
             LibraryIncludeFlags effective_includes_flag = LibraryIncludeFlags.All;
             LibraryIncludeFlags private_assets = LibraryIncludeFlags.None;
 
@@ -181,7 +180,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             if (effective_includes_flag == LibraryIncludeFlags.None || private_assets == LibraryIncludeFlags.All)
             {
                 if (Config.TRACE)
-                    Console.WriteLine($"    Skipping private or excluded asset reference for {reference.EvaluatedInclude}");
+                    Console.WriteLine($"    Skipping private or excluded asset reference for {name}");
                 continue;
             }
 
@@ -196,25 +195,41 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
             else
             {
-                if (Config.TRACE_DEEP)
-                    Console.WriteLine($"    Project reference without version: {reference.EvaluatedInclude}");
-                version_range = null;
+                if (Config.TRACE)
+                    Console.WriteLine($"    Project reference without version: {name}");
+                version_range = VersionRange.All;
+                // // find the minimum version in the range
+                // var psmr = nugetApi.FindPackageVersion(name: name, version_range: version_range);
+                // if (psmr != null)
+                // {
+                //     version_range = new VersionRange(new NuGetVersion(psmr.Version));
+                // }
+                // else
+                // {
+                //     continue;
+                // }
             }
 
             PackageReference packref;
-            var name = reference.EvaluatedInclude;
 
             if (version_range == null)
             {
+                if (Config.TRACE)
+                    Console.WriteLine($"    Project reference without version range: {name}");
+
                 packref = new PackageReference(
                     identity: new PackageIdentity(id: name, version: null),
-                    targetFramework: ProjectTargetFramework);
+                    targetFramework: ProjectFramework,
+                    userInstalled: false,
+                    developmentDependency: false,
+                    requireReinstallation: false,
+                    allowedVersions: VersionRange.All);
             }
             else
             {
                 packref = new PackageReference(
-                    identity: new PackageIdentity(id: name, version: (NuGetVersion?)version_range.MinVersion),
-                    targetFramework: ProjectTargetFramework,
+                    identity: new PackageIdentity(id: name, version: null),//(NuGetVersion?)version_range.MinVersion),
+                    targetFramework: ProjectFramework,
                     userInstalled: false,
                     developmentDependency: false,
                     requireReinstallation: false,
@@ -274,7 +289,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
                 PackageReference plainref = new (
                     identity: new PackageIdentity(id: artifact, version: vers),
-                    targetFramework: ProjectTargetFramework,
+                    targetFramework: ProjectFramework,
                     userInstalled: false,
                     developmentDependency: false,
                     requireReinstallation: false,
@@ -285,7 +300,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
                 if (Config.TRACE)
                 {
                     Console.WriteLine(
-                        $"    Add Direct dependency from Reference: id: {plainref.PackageIdentity} "
+                        $"    Add Direct dependency from plain Reference: id: {plainref.PackageIdentity} "
                         + $"version_range: {plainref.AllowedVersions}");
                 }
             }
@@ -295,267 +310,159 @@ internal class ProjectFileProcessor : IDependencyProcessor
     }
 
     /// <summary>
-    /// Resolve the dependencies one at a time.
+    /// Resolve the dependencies resolving all direct dependencies at once.
     /// </summary>
     public DependencyResolution Resolve()
     {
-        //return ResolveOneAtATime()  ;
-        return ResolveManyAtOnce();
-    }
-
-    /// <summary>
-    /// Resolve the dependencies one at a time.
-    /// </summary>
-    public DependencyResolution ResolveOneAtATime()
-    {
-        if (Config.TRACE)
-            Console.WriteLine("\nProjectFileResolver.ResolveOneAtATime: starting resolution");
-        try
-        {
-            List<PackageReference> references = GetPackageReferences();
-            references = DeduplicateReferences(references);
-            List<Dependency> dependencies = GetDependenciesFromReferences(references);
-
-            var deps_helper = new NugetResolverHelper(nugetApi: nugetApi);
-            foreach (var dep in dependencies)
-            {
-                deps_helper.ResolveOne(dependency: dep);
-            }
-            List<BasePackage> gathered_packages = deps_helper.GetPackageList();
-            List<BasePackage> gathered_dependencies = new();
-
-            foreach (BasePackage gathered_package in gathered_packages)
-            {
-                if (gathered_package == null)
-                    continue;
-
-                bool is_referenced = gathered_packages.Any(pkg => pkg.dependencies.Contains(gathered_package));
-                if (!is_referenced)
-                    gathered_dependencies.Add(item: gathered_package);
-            }
-
-            var resolution = new DependencyResolution
-            {
-                Success = true,
-                Dependencies = gathered_dependencies
-            };
-
-            return resolution;
-        }
-        catch (Exception ex)
-        {
-            if (Config.TRACE)
-                Console.WriteLine($"    Failed to resolve: {ex}");
-
-            return new DependencyResolution
-            {
-                Success = false,
-                ErrorMessage = ex.ToString()
-            };
-        }
-    }
-
-    /// <summary>
-    /// Resolve the dependencies one at a time, then apply a second pass
-    /// resolution to reduce the dependency set to a smaller set.
-    /// </summary>
-    public DependencyResolution ResolveOneAtATimeEnhanced()
-    {
-        if (Config.TRACE)
-            Console.WriteLine("\nProjectFileResolver.ResolveOneAtATime: starting resolution");
-        try
-        {
-            List<PackageReference> references = GetPackageReferences();
-            references = DeduplicateReferences(references);
-            List<Dependency> dependencies = GetDependenciesFromReferences(references);
-            List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
-
-            if (direct_deps.Count == 0)
-                return new DependencyResolution(Success: true);
-
-            // Use the one at a time approach to gather all possible deps
-            var deps_helper = new NugetResolverHelper(nugetApi: nugetApi);
-            foreach (var dep in dependencies)
-            {
-                deps_helper.ResolveOne(dependency: dep);
-            }
-            List<BasePackage> gathered_packages = deps_helper.GetPackageList();
-
-            HashSet<BasePackage> available_dependent_packages = new();
-            CollectAllDependencies(packages: gathered_packages, dependencies: available_dependent_packages);
-
-            HashSet<SourcePackageDependencyInfo> available_dependencies = new ();
-            foreach (var available_dependency in available_dependent_packages)
-            {
-                var identity = available_dependency.GetPackageIdentity();
-                SourcePackageDependencyInfo? spdi = nugetApi.GetResolvedSourcePackageDependencyInfo(
-                    identity: identity,
-                    framework: ProjectTargetFramework);
-                if (spdi != null)
-                    available_dependencies.Add(spdi);
-            }
-
-            HashSet<SourcePackageDependencyInfo> resolved_deps = nugetApi.ResolveDependencies(
-                target_references: references,
-                available_dependencies: available_dependencies);
-
-            DependencyResolution resolution = new(Success: true);
-            foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
-            {
-                BasePackage dep = new(
-                    name: resolved_dep.Id,
-                    version: resolved_dep.Version.ToString(),
-                    framework: ProjectTargetFramework!.GetShortFolderName());
-                resolution.Dependencies.Add(dep);
-            }
-
-            return resolution;
-        }
-        catch (Exception ex)
-        {
-            if (Config.TRACE)
-                Console.WriteLine($"    Failed to resolve: {ex}");
-
-            return new DependencyResolution
-            {
-                Success = false,
-                ErrorMessage = ex.ToString()
-            };
-        }
-    }
-
-    /// <summary>
-    /// Update recursively a dependencies set with all the dependencies of the provided packages list, at full depth.
-    /// </summary>
-    private static void CollectAllDependencies(IEnumerable<BasePackage> packages, ISet<BasePackage> dependencies)
-    {
-        foreach (var package in packages)
-        {
-            dependencies.UnionWith(package.dependencies);
-            CollectAllDependencies(packages: package.dependencies, dependencies: dependencies);
-        }
+        return ResolveUsingLib();
     }
 
     /// <summary>
     /// Resolve the dependencies resolving all direct dependencies at once.
     /// </summary>
-    public DependencyResolution ResolveManyAtOnce()
+    public DependencyResolution ResolveUseGather()
     {
         if (Config.TRACE)
-            Console.WriteLine("\nProjectFileResolver.ResolveManyAtOnce: starting resolution");
-        try
+            Console.WriteLine("\nProjectFileProcssor.Resolve: starting resolution");
+
+        List<PackageReference> references = GetPackageReferences();
+        if (references.Count == 0)
         {
-            List<PackageReference> references = GetPackageReferences();
-            references = DeduplicateReferences(references);
-            List<Dependency> dependencies = GetDependenciesFromReferences(references);
-            List<PackageIdentity> direct_deps = CollectDirectDeps(dependencies);
-
-            if (direct_deps.Count == 0)
-                return new DependencyResolution(Success: true);
-
-            // Use the gather approach to gather all possible deps
-            ISet<SourcePackageDependencyInfo> available_dependencies = nugetApi.GatherPotentialDependencies(
-                direct_dependencies: direct_deps,
-                framework: ProjectTargetFramework!
-            );
-
-            if (Config.TRACE_DEEP)
-            {
-                foreach (var spdi in available_dependencies)
-                    Console.WriteLine($"    potential_dependencies: {spdi.Id}@{spdi.Version} prerel:{spdi.Version.IsPrerelease}");
-            }
-
-            // Prune the potential dependencies from prereleases
-
-            var pruned_dependencies = PrunePackageTree.PrunePreleaseForStableTargets(
-                packages: available_dependencies,
-                targets: direct_deps,
-                packagesToInstall: direct_deps
-            );
-
-            if (Config.TRACE_DEEP)
-                foreach (var spdi in pruned_dependencies) Console.WriteLine($"    pruned_dependencies3: {spdi.Id}@{spdi.Version}");
-
-            pruned_dependencies = PrunePackageTree.PruneDowngrades(pruned_dependencies, references);
-
-            if (Config.TRACE_DEEP)
-                foreach (var spdi in pruned_dependencies) Console.WriteLine($"    pruned_dependencies3: {spdi.Id}@{spdi.Version}");
-
-            // Resolve proper
-            HashSet<SourcePackageDependencyInfo> resolved_deps = nugetApi.ResolveDependencies(
-                target_references: references,
-                available_dependencies: pruned_dependencies);
-
-            DependencyResolution resolution = new(Success: true);
-            foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
-            {
-                BasePackage dep = new(
-                    name: resolved_dep.Id,
-                    version: resolved_dep.Version.ToString(),
-                    framework: ProjectTargetFramework!.GetShortFolderName());
-
-                if (Config.TRACE)
-                    Console.WriteLine($"    Success to resolve: {resolved_dep.Id}@{resolved_dep.Version}");
-
-                resolution.Dependencies.Add(dep);
-            }
-
-            return resolution;
+            return new DependencyResolution(success: true);
         }
-        catch (Exception ex)
+        else if (Config.TRACE)
+        {
+            foreach (var reference in references)
+                Console.WriteLine($"    reference: {reference}");
+        }
+
+        references = DeduplicateReferences(references);
+        List<Dependency> dependencies = GetDependenciesFromReferences(references);
+
+        // FIXME: was using CollectDirectDeps(dependencies);
+        List<PackageIdentity> direct_dependency_pids = references.ConvertAll(r => r.PackageIdentity);
+
+        // Use the gather approach to gather all possible deps
+        ISet<SourcePackageDependencyInfo> available_dependencies  = nugetApi.GatherPotentialDependencies(
+            direct_dependencies: direct_dependency_pids,
+            framework: ProjectFramework!
+        );
+
+        if (Config.TRACE_DEEP)
+        {
+            foreach (var spdi in available_dependencies)
+                Console.WriteLine($"    available_dependencies: {spdi.Id}@{spdi.Version} prerel:{spdi.Version.IsPrerelease}");
+        }
+
+        IEnumerable<SourcePackageDependencyInfo> pruned_dependencies = available_dependencies.ToList();
+
+        // Prune the potential dependencies from prereleases
+        pruned_dependencies = PrunePackageTree.PrunePreleaseForStableTargets(
+            packages: pruned_dependencies,
+            targets: direct_dependency_pids,
+            packagesToInstall: direct_dependency_pids
+        );
+        if (Config.TRACE_DEEP)
+        {
+            foreach (var spdi in pruned_dependencies)
+                Console.WriteLine($"    After PrunePreleaseForStableTargets: {spdi.Id}@{spdi.Version} IsPrerelease: {spdi.Version.IsPrerelease}");
+        }
+
+        // prune prerelease versions
+        pruned_dependencies = PrunePackageTree.PrunePrereleaseExceptAllowed(
+            packages: pruned_dependencies,
+            installedPackages: direct_dependency_pids,
+            isUpdateAll: false).ToList();
+        if (Config.TRACE_DEEP)
+            foreach (var spdi in pruned_dependencies) Console.WriteLine($"    After PrunePrereleaseExceptAllowed: {spdi.Id}@{spdi.Version}");
+
+        // prune versions that do not match version range constraints
+        pruned_dependencies = PrunePackageTree.PruneDisallowedVersions(
+            packages: pruned_dependencies,
+            packageReferences: references);
+        if (Config.TRACE_DEEP)
+            foreach (var spdi in pruned_dependencies) Console.WriteLine($"    After PruneDisallowedVersions: {spdi.Id}@{spdi.Version}");
+
+        // prune downgrades as we always targetted min versions and no downgrade is OK
+        pruned_dependencies = PrunePackageTree.PruneDowngrades(pruned_dependencies, references).ToList();
+        if (Config.TRACE_DEEP)
+            foreach (var spdi in pruned_dependencies) Console.WriteLine($"    PruneDowngrades: {spdi.Id}@{spdi.Version}");
+
+        pruned_dependencies = pruned_dependencies.ToList();
+        if (Config.TRACE)
+            Console.WriteLine($"    Resolving: {references.Count} references with {pruned_dependencies.Count()} dependencies");
+
+        HashSet<SourcePackageDependencyInfo> resolved_deps = nugetApi.ResolveDependenciesForPackageConfig(
+        target_references: references,
+        available_dependencies: pruned_dependencies);
+
+        DependencyResolution resolution = new(success: true);
+        foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
         {
             if (Config.TRACE)
-                Console.WriteLine($"    Failed to resolve: {ex}");
-
-            return new DependencyResolution
             {
-                Success = false,
-                ErrorMessage = ex.ToString()
-            };
+                Console.WriteLine($"     resolved: {resolved_dep.Id}@{resolved_dep.Version}");
+                foreach (var subdep in resolved_dep.Dependencies)
+                    Console.WriteLine($"        subdep: {subdep.Id}@{subdep.VersionRange}");
+            }
+            BasePackage dep = new(
+                name: resolved_dep.Id,
+                version: resolved_dep.Version.ToString(),
+                framework: ProjectFramework!.GetShortFolderName());
+
+            resolution.Dependencies.Add(dep);
         }
+
+        return resolution;
     }
-
     /// <summary>
-    /// Return a list of PackageIdentity built from a list of Dependency
+    /// Resolve the dependencies resolving all direct dependencies at once using a new resolver
     /// </summary>
-    private List<PackageIdentity> CollectDirectDeps(List<Dependency> dependencies)
+    public DependencyResolution ResolveUsingLib()
     {
-        if (Config.TRACE_DEEP)
-            Console.WriteLine("ProjectFileProcessor.CollectDirectDeps for dependencies:");
+        if (Config.TRACE)
+            Console.WriteLine("\nProjectFileProcessor.ResolveUsingLib: starting resolution");
 
-        var direct_deps = new List<PackageIdentity>();
-        foreach (var dep in dependencies)
+        List<PackageReference> references = GetPackageReferences();
+        if (references.Count == 0)
         {
-            if (Config.TRACE_DEEP)
-                Console.WriteLine($"    name: {dep.name} version_range: {dep.version_range}");
+            if (Config.TRACE)
+                Console.WriteLine("     no references");
 
-            PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
-                id: dep.name,
-                versionRange: dep.version_range,
-                include_prerelease: false);
-
-            if (Config.TRACE_DEEP)
-                Console.WriteLine($"    psmr1: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
-
-            if (psmr == null)
-            {
-                // try again using pre-release
-                psmr = nugetApi.FindPackageVersion(
-                    id: dep.name,
-                    versionRange: dep.version_range,
-                    include_prerelease: true);
-
-                if (Config.TRACE_DEEP)
-                    Console.WriteLine($"    psmr2: '{psmr}' for dep.name: {dep.name} dep.version_range: {dep.version_range}");
-            }
-
-            if (psmr != null)
-            {
-                direct_deps.Add(psmr.Identity);
-            }
+            return new DependencyResolution(success: true);
+        }
+        else if (Config.TRACE)
+        {
+            foreach (var reference in references)
+                Console.WriteLine($"    found reference: {reference}");
         }
 
-        return direct_deps;
+        references = DeduplicateReferences(references);
+        if (Config.TRACE)
+        {
+            foreach (var reference in references)
+                Console.WriteLine($"    found dedup reference: {reference}");
+        }
+        HashSet<SourcePackageDependencyInfo> resolved_deps = nugetApi.ResolveDependenciesForPackageReference(target_references: references);
+
+        DependencyResolution resolution = new(success: true);
+        foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
+        {
+            if (Config.TRACE)
+            {
+                Console.WriteLine($"     resolved: {resolved_dep.Id}@{resolved_dep.Version}");
+                foreach (var subdep in resolved_dep.Dependencies)
+                    Console.WriteLine($"        subdep: {subdep.Id}@{subdep.VersionRange}");
+            }
+            BasePackage dep = new(
+                name: resolved_dep.Id,
+                version: resolved_dep.Version.ToString(),
+                framework: ProjectFramework!.GetShortFolderName());
+
+            resolution.Dependencies.Add(dep);
+        }
+
+        return resolution;
     }
 }
 
@@ -570,7 +477,7 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
     public ProjectXmlFileProcessor(
         string projectPath,
         NugetApi nugetApi,
-        NuGetFramework? project_target_framework) : base(projectPath, nugetApi, project_target_framework)
+        NuGetFramework? project_framework) : base(projectPath, nugetApi, project_framework)
     {
     }
 
@@ -580,7 +487,7 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
     /// breadth of attributes as with an MSBuild-based parsing. In particular
     /// this does not handle frameworks and conditions.    /// using a project model.
     /// </summary>
-    public new List<PackageReference> GetPackageReferences()
+    public override List<PackageReference> GetPackageReferences()
     {
         if (Config.TRACE)
             Console.WriteLine($"ProjectXmlFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
@@ -601,7 +508,7 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
                 continue;
 
             if (Config.TRACE)
-                Console.WriteLine($"    attributes {attributes}");
+                Console.WriteLine($"    attributes {attributes.ToJson()}");
 
             var include = attributes[name: "Include"];
             if (include == null)
@@ -626,8 +533,8 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
                 }
             }
 
-            if (Config.TRACE)
-                Console.WriteLine($"    version_value: {version_value}");
+            if (Config.TRACE_DEEP)
+                Console.WriteLine($"        version_value: {version_value}");
 
             PackageReference packref;
             string name = include.Value;
@@ -642,11 +549,11 @@ internal class ProjectXmlFileProcessor : ProjectFileProcessor
             {
                 packref = new PackageReference(
                     identity: identity,
-                    targetFramework: ProjectTargetFramework);
+                    targetFramework: ProjectFramework);
             } else {
                 packref = new PackageReference(
                     identity: identity,
-                    targetFramework: ProjectTargetFramework,
+                    targetFramework: ProjectFramework,
                     userInstalled: false,
                     developmentDependency: false,
                     requireReinstallation: false,

@@ -1,0 +1,158 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj"
+      ],
+      "project_framework": "netstandard2.0",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [
+        "    Failed to process project-assets.json lockfile: /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/obj/project.assets.json with: System.NullReferenceException: Object reference not set to an instance of an object.\n   at NuGet.ProjectModel.LockFileFormat.Read(TextReader reader, ILogger log, String path)\n   at NuGet.ProjectModel.LockFileFormat.Read(Stream stream, ILogger log, String path)\n   at NuGet.ProjectModel.LockFileUtilities.<>c__DisplayClass0_0.<GetLockFile>b__0(FileStream stream, String path)\n   at NuGet.Common.FileUtility.SafeRead[T](String filePath, Func`3 read)\n   at NuGet.ProjectModel.LockFileUtilities.GetLockFile(String lockFilePath, ILogger logger)\n   at NugetInspector.ProjectAssetsJsonProcessor.Resolve() in ./nuget-inspector/ProjectAssetsJsonProcessor.cs:line 17\n   at NugetInspector.ProjectScanner.RunScan() in ./nuget-inspector/ProjectScanner.cs:line 188"
+      ],
+      "errors": []
+    }
+  ],
+  "files": [],
+  "packages": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "SampleProject",
+      "version": null,
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "",
+      "primary_language": "C#",
+      "description": "",
+      "release_date": "",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
+      "datasource_id": "dotnet-project-reference",
+      "datafile_path": "/complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Newtonsoft.Json",
+          "version": "3.5.8",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@3.5.8",
+          "primary_language": "C#",
+          "description": "Json.NET is a popular high-performance JSON framework for .NET",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newton-King",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/3.5.8?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/3.5.8.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Newtonsoft.Json",
+      "version": "3.5.8",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Newtonsoft.Json@3.5.8",
+      "primary_language": "C#",
+      "description": "Json.NET is a popular high-performance JSON framework for .NET",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "James Newton-King",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/3.5.8?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/3.5.8.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

@@ -36,13 +36,16 @@ public class NugetResolverHelper
     public void ResolveOne(Dependency dependency)
     {
         if (Config.TRACE)
-            Console.WriteLine($"\nNugetApiHelper.ResolveOne: FOR name: {dependency.name} range: {dependency.version_range}");
+            Console.WriteLine($"\nNugetApiHelper.ResolveOne: name: {dependency.name} range: {dependency.version_range}");
 
-        PackageSearchMetadataRegistration? package = nugetApi.FindPackageVersion(
-            id: dependency.name,
-            versionRange: dependency.version_range);
+        if (string.IsNullOrWhiteSpace(dependency.name))
+            throw new ArgumentNullException($"Dependency: {dependency} name cannot be null");
 
-        if (package == null)
+        PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(
+            name: dependency.name,
+            version_range: dependency.version_range);
+
+        if (psmr == null)
         {
             string? version = dependency.version_range?.MinVersion.ToNormalizedString();
             if (Config.TRACE)
@@ -57,12 +60,12 @@ public class NugetResolverHelper
             return;
         }
 
-        var package_id = new BasePackage(
+        var base_package = new BasePackage(
             name: dependency.name!,
-            version: package.Identity.Version.ToNormalizedString());
+            version: psmr.Identity.Version.ToNormalizedString());
 
         IEnumerable<NuGet.Packaging.Core.PackageDependency> packages = nugetApi.GetPackageDependenciesForPackage(
-            identity: package.Identity,
+            identity: psmr.Identity,
             framework: dependency.framework);
 
         var dependencies = new List<BasePackage>();
@@ -78,23 +81,23 @@ public class NugetResolverHelper
             }
             else
             {
-                PackageSearchMetadataRegistration? api_package_metadata = nugetApi.FindPackageVersion(
-                    id: pkg.Id,
-                    versionRange: pkg.VersionRange);
-                if (api_package_metadata == null)
+                PackageSearchMetadataRegistration? psrm = nugetApi.FindPackageVersion(
+                    name: pkg.Id,
+                    version_range: pkg.VersionRange);
+                if (psrm == null)
                 {
                     if (Config.TRACE)
                         Console.WriteLine($"        Unable to find package for '{pkg.Id}' version '{pkg.VersionRange}'");
                     continue;
                 }
 
-                var base_package = new BasePackage(
-                    name: api_package_metadata.Identity.Id,
-                    version: api_package_metadata.Identity.Version.ToNormalizedString());
+                var dependent_package = new BasePackage(
+                    name: psrm.Identity.Id,
+                    version: psrm.Identity.Version.ToNormalizedString());
 
-                dependencies.Add(item: base_package);
+                dependencies.Add(item: dependent_package);
 
-                if (!package_tree.DoesPackageExist(package: base_package))
+                if (!package_tree.DoesPackageExist(package: dependent_package))
                 {
                     Dependency pd = new(
                         name: pkg.Id,
@@ -108,6 +111,6 @@ public class NugetResolverHelper
             }
         }
 
-        package_tree.AddOrUpdatePackage(base_package: package_id, dependencies: dependencies!);
+        package_tree.AddOrUpdatePackage(base_package: base_package, dependencies: dependencies!);
     }
 }

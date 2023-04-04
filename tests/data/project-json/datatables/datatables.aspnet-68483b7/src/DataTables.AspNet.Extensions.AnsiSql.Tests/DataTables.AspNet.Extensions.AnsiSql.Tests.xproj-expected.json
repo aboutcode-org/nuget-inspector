@@ -80,11 +80,11 @@
           ],
           "homepage_url": "https://github.com/ALMMa/datatables.aspnet",
           "download_url": "https://api.nuget.org/v3-flatcontainer/datatables.aspnet.core/2.0.2/datatables.aspnet.core.2.0.2.nupkg",
-          "size": 16497,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "B87E4B096A8838F46A113A7463F7BD068BF0E77A83670E4262634904A70DAB821D702ADE68114A5E3B1536F705FC3B21CB96EBC33DEB959576FEFA2BEF93C701",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -99,7 +99,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/datatables.aspnet.core/2.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -108,14 +110,22 @@
           "version": "2.2.0-preview2-build1029",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/dotnet-test-xunit@2.2.0-preview2-build1029",
           "primary_language": "C#",
-          "description": "",
+          "description": "Console and Visual Studio runner for xUnit.net for .NET CLI projects.",
           "release_date": "",
-          "parties": [],
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newkirk,Brad Wilson",
+              "email": "",
+              "url": ""
+            }
+          ],
           "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
+          "homepage_url": "https://github.com/xunit/dotnet-test-xunit",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/dotnet-test-xunit/2.2.0-preview2-build1029/dotnet-test-xunit.2.2.0-preview2-build1029.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -126,16 +136,18 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/dotnet-test-xunit/2.2.0-preview2-build1029?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/dotnet-test-xunit/2.2.0-preview2-build1029/dotnet-test-xunit.2.2.0-preview2-build1029.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/dotnet-test-xunit/2.2.0-preview2-build1029.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -168,11 +180,11 @@
           ],
           "homepage_url": "http://www.moqthis.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.6.38-alpha/moq.4.6.38-alpha.nupkg",
-          "size": 209979,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "22623CB1CC5B5F681C0EA56D3292A3F37FA747F25DB55B8A6DFE2769E075A079129B40E9D06FB5332FDE20F52714099CC7D406B4380AB70C08F0C5A42CFF0AC8",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -187,7 +199,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.6.38-alpha.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -212,11 +226,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.2.0-beta5-build3474/xunit.2.2.0-beta5-build3474.nupkg",
-          "size": 11704,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "3B9AE24158B04FF4190D00A077CEE85DAF854B05D586C7F21080652D1F2F2955F74AB02A708ABDD57D116ABAEEECF00DDE9C797293911F85306D545C7DAC1CA7",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -231,9 +245,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.2.0-beta5-build3474.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -267,11 +285,11 @@
       ],
       "homepage_url": "https://github.com/ALMMa/datatables.aspnet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/datatables.aspnet.core/2.0.2/datatables.aspnet.core.2.0.2.nupkg",
-      "size": 16497,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "B87E4B096A8838F46A113A7463F7BD068BF0E77A83670E4262634904A70DAB821D702ADE68114A5E3B1536F705FC3B21CB96EBC33DEB959576FEFA2BEF93C701",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -286,7 +304,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/datatables.aspnet.core/2.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -295,14 +315,22 @@
       "version": "2.2.0-preview2-build1029",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/dotnet-test-xunit@2.2.0-preview2-build1029",
       "primary_language": "C#",
-      "description": "",
+      "description": "Console and Visual Studio runner for xUnit.net for .NET CLI projects.",
       "release_date": "",
-      "parties": [],
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "James Newkirk,Brad Wilson",
+          "email": "",
+          "url": ""
+        }
+      ],
       "keywords": [],
-      "homepage_url": "",
-      "download_url": "",
+      "homepage_url": "https://github.com/xunit/dotnet-test-xunit",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/dotnet-test-xunit/2.2.0-preview2-build1029/dotnet-test-xunit.2.2.0-preview2-build1029.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -313,16 +341,18 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: https://raw.githubusercontent.com/xunit/xunit/master/license.txt",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/dotnet-test-xunit/2.2.0-preview2-build1029?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/dotnet-test-xunit/2.2.0-preview2-build1029/dotnet-test-xunit.2.2.0-preview2-build1029.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/dotnet-test-xunit/2.2.0-preview2-build1029.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -355,11 +385,11 @@
       ],
       "homepage_url": "http://www.moqthis.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.6.38-alpha/moq.4.6.38-alpha.nupkg",
-      "size": 209979,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "22623CB1CC5B5F681C0EA56D3292A3F37FA747F25DB55B8A6DFE2769E075A079129B40E9D06FB5332FDE20F52714099CC7D406B4380AB70C08F0C5A42CFF0AC8",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -374,7 +404,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.6.38-alpha.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -399,11 +431,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.2.0-beta5-build3474/xunit.2.2.0-beta5-build3474.nupkg",
-      "size": 11704,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "3B9AE24158B04FF4190D00A077CEE85DAF854B05D586C7F21080652D1F2F2955F74AB02A708ABDD57D116ABAEEECF00DDE9C797293911F85306D545C7DAC1CA7",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -418,7 +450,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.2.0-beta5-build3474.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

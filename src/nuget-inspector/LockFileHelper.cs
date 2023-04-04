@@ -4,176 +4,164 @@ using NuGet.Versioning;
 namespace NugetInspector;
 
 /// <summary>
-/// Parse legacy and new style lock files (project.assets.json)
+/// Parse legacy style (project-lock.json) and new style lock files (project.assets.json)
 /// See https://learn.microsoft.com/en-us/nuget/archive/project-json#projectlockjson
 /// See https://kimsereyblog.blogspot.com/2018/08/sdk-style-project-and-projectassetsjson.html
 /// See https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build?tabs=netcore2x#implicit-restore
 /// </summary>
 public class LockFileHelper
 {
-    private readonly LockFile LockFile;
+    private readonly LockFile ProjectLockFile;
 
-    public LockFileHelper(LockFile lockFile)
+    public LockFileHelper(LockFile lockfile)
     {
-        LockFile = lockFile;
+        ProjectLockFile = lockfile;
     }
 
-    private static NuGetVersion BestVersion(string name, VersionRange range, IList<LockFileTargetLibrary> libraries)
+    private static NuGetVersion GetBestVersion(string name, VersionRange range, IList<LockFileTargetLibrary> libraries)
     {
-        var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version);
-        var nuGetVersions = versions.ToList();
-        var bestMatch = range.FindBestMatch(versions: nuGetVersions);
-        if (bestMatch == null)
+        var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version).ToList();
+        var best_version = range.FindBestMatch(versions: versions);
+        if (best_version != null)
+            return best_version;
+
+        if (versions.Count == 1)
+            return versions[0];
+
+        if (Config.TRACE_DEEP)
         {
-            if (nuGetVersions.Count == 1)
-                return nuGetVersions[0];
-
-            if (Config.TRACE)
-            {
-                Console.WriteLine($"WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
-                Console.WriteLine($"Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
-            }
-
-            return range.MinVersion;
+            Console.WriteLine($"GetBestVersion: WARNING: Unable to find a '{name}' version that satisfies range {range.PrettyPrint()}");
+            Console.WriteLine($"    Using min version in range: {range.MinVersion.ToFullString()}");
         }
 
-        return bestMatch;
+        return range.MinVersion;
     }
 
-    private static NuGetVersion BestLibraryVersion(string? name, VersionRange range, IList<LockFileLibrary> libraries)
+    private static NuGetVersion GetBestLibraryVersion(string? name, VersionRange range, IList<LockFileLibrary> libraries)
     {
-        var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version);
-        var nuGetVersions = versions.ToList();
-        var bestMatch = range.FindBestMatch(versions: nuGetVersions);
-        if (bestMatch == null)
+        var versions = libraries.Where(predicate: lib => lib.Name == name).Select(selector: lib => lib.Version).ToList();
+        var best_version = range.FindBestMatch(versions: versions);
+        if (best_version != null)
+            return best_version;
+
+        if (versions.Count == 1)
+            return versions[0];
+
+        if (Config.TRACE)
+            Console.WriteLine($"GetBestLibraryVersion: WARNING: Unable to find a '{name}' version that satisfies range {range.PrettyPrint()}");
+
+        if (range.HasUpperBound && !range.HasLowerBound)
         {
-            if (nuGetVersions.Count == 1)
-                return nuGetVersions[0];
-
             if (Config.TRACE)
-                Console.WriteLine($"BestLibraryVersion: WARNING: Unable to find a version to satisfy range {range.PrettyPrint()} for the dependency {name}");
+                Console.WriteLine($"    Using max version in range: {range.MaxVersion.ToFullString()}");
 
-            if (range.HasUpperBound && !range.HasLowerBound)
-            {
-                if (Config.TRACE)
-                    Console.WriteLine($"BestLibraryVersion: Instead will return the maximum range demanded: {range.MaxVersion.ToFullString()}");
-
-                return range.MaxVersion;
-            }
-
-            if (Config.TRACE)
-                Console.WriteLine($"BestLibraryVersion: Instead will return the minimum range demanded: {range.MinVersion.ToFullString()}");
-            return range.MinVersion;
+            return range.MaxVersion;
         }
 
-        return bestMatch;
+        if (Config.TRACE)
+            Console.WriteLine($"    Using min version in range: {range.MinVersion.ToFullString()}");
+        return range.MinVersion;
     }
 
     public DependencyResolution Process()
     {
-        var builder = new PackageTree();
-        var result = new DependencyResolution();
+        var tree_builder = new PackageTree();
+        var resolution = new DependencyResolution();
 
-        foreach (var target in LockFile.Targets)
+        foreach (var target in ProjectLockFile.Targets)
         {
             foreach (var library in target.Libraries)
             {
                 var name = library.Name;
                 var version = library.Version.ToNormalizedString();
-                var packageId = new BasePackage(name: name, version: version);
-
-                var dependencies = new List<BasePackage?>();
+                var package = new BasePackage(name: name, version: version);
+                var dependencies = new List<BasePackage>();
                 foreach (var dependency in library.Dependencies)
                 {
-                    var dep_id = dependency.Id;
-                    var vr = dependency.VersionRange;
+                    var dep_name = dependency.Id;
+                    var dep_version_range = dependency.VersionRange;
                     //vr.Float.FloatBehavior = NuGet.Versioning.NuGetVersionFloatBehavior.
-                    var lb = target.Libraries;
-                    var bs = BestVersion(name: dep_id, range: vr, libraries: lb);
-                    if (bs == null)
+                    var libraries = target.Libraries;
+                    var best_version = GetBestVersion(name: dep_name, range: dep_version_range, libraries: libraries);
+                    if (best_version == null)
                     {
-                        if (Config.TRACE)
-                            Console.WriteLine(dependency.Id);
-                        _ = BestVersion(name: dep_id, range: vr, libraries: lb);
+                        if (Config.TRACE) Console.WriteLine(dependency.Id);
+                        _ = GetBestVersion(name: dep_name, range: dep_version_range, libraries: libraries);
                     }
                     else
                     {
-                        var depId = new BasePackage(name: dep_id, version: bs.ToNormalizedString());
+                        var depId = new BasePackage(name: dep_name, version: best_version.ToNormalizedString());
                         dependencies.Add(item: depId);
                     }
                 }
 
-                builder.AddOrUpdatePackage(base_package: packageId, dependencies: dependencies);
+                tree_builder.AddOrUpdatePackage(base_package: package, dependencies: dependencies);
             }
         }
 
         if (Config.TRACE)
         {
-            Console.WriteLine($"LockFile: {LockFile}");
-            Console.WriteLine($"LockFile.Path: {LockFile.Path}");
+            Console.WriteLine($"LockFile: {ProjectLockFile}");
+            Console.WriteLine($"LockFile.Path: {ProjectLockFile.Path}");
         }
 
-        if (LockFile?.PackageSpec?.Dependencies != null
-            && LockFile.PackageSpec.Dependencies.Count != 0)
+        if (ProjectLockFile?.PackageSpec?.Dependencies != null
+            && ProjectLockFile.PackageSpec.Dependencies.Count > 0)
         {
-            foreach (var dep in LockFile.PackageSpec.Dependencies)
+            foreach (var dep in ProjectLockFile.PackageSpec.Dependencies)
             {
-                var version = builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
-                result.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
+                var version = tree_builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
+                resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
             }
         }
         else
         {
             if (Config.TRACE)
             {
-                Console.WriteLine($"LockFile.PackageSpec: {LockFile?.PackageSpec}");
+                Console.WriteLine($"LockFile.PackageSpec: {ProjectLockFile?.PackageSpec}");
                 Console.WriteLine(
-                    value: $"LockFile.PackageSpec.TargetFrameworks: {LockFile?.PackageSpec?.TargetFrameworks}");
+                    value: $"LockFile.PackageSpec.TargetFrameworks: {ProjectLockFile?.PackageSpec?.TargetFrameworks}");
             }
 
-            var target_frameworks = LockFile?.PackageSpec?.TargetFrameworks;
-
-            if (target_frameworks != null)
+            var target_frameworks = ProjectLockFile?.PackageSpec?.TargetFrameworks ?? new List<TargetFrameworkInformation>();
+            foreach (var framework in target_frameworks)
             {
-                foreach (var framework in target_frameworks)
+                foreach (var dep in framework.Dependencies)
                 {
-                    foreach (var dep in framework.Dependencies)
-                    {
-                        var version = builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
-                        result.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
-                    }
+                    var version = tree_builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
+                    resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
                 }
             }
         }
 
-        if (LockFile == null)
+        if (ProjectLockFile == null)
         {
-            return result;
+            return resolution;
         }
 
-        foreach (var dependency_group in LockFile.ProjectFileDependencyGroups)
+        foreach (var dependency_group in ProjectLockFile.ProjectFileDependencyGroups)
         {
             foreach (var dependency in dependency_group.Dependencies)
             {
                 var project_dependency = ParseProjectFileDependencyGroup(project_file_dependency: dependency);
-                var library_version = BestLibraryVersion(name: project_dependency.GetName(),
-                    range: project_dependency.GetVersionRange(), libraries: LockFile.Libraries);
+                var library_version = GetBestLibraryVersion(name: project_dependency.GetName(),
+                    range: project_dependency.GetVersionRange(), libraries: ProjectLockFile.Libraries);
                 string? version = null;
                 if (library_version != null)
                 {
                     version = library_version.ToNormalizedString();
                 }
 
-                result.Dependencies.Add(
+                resolution.Dependencies.Add(
                     item: new BasePackage(name: project_dependency.GetName()!, version: version));
             }
         }
 
-        if (result.Dependencies.Count == 0 && Config.TRACE)
+        if (resolution.Dependencies.Count == 0 && Config.TRACE)
         {
-            Console.WriteLine($"Found no dependencies for lock file: {LockFile.Path}");
+            Console.WriteLine($"Found no dependencies for lock file: {ProjectLockFile.Path}");
         }
-        return result;
+        return resolution;
     }
 
     /// <summary>

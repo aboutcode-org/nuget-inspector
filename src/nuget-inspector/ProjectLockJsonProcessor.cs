@@ -19,16 +19,9 @@ internal class ProjectLockJsonProcessor : IDependencyProcessor
     {
         var lockFile = LockFileUtilities.GetLockFile(lockFilePath: ProjectLockJsonPath, logger: new NugetLogger());
         if (lockFile == null)
-        {
-            throw new Exception(message: "Failed to get GetLockFile at path: ProjectLockJsonPath");
-        }
-
-        var resolver = new LockFileHelper(lockFile: lockFile);
-        if (Config.TRACE)
-        {
-            Console.WriteLine($"resolver: {resolver}");
-        }
-
+            throw new Exception($"Failed to get parse lockfile at path: {ProjectLockJsonPath}");
+        var resolver = new LockFileHelper(lockfile: lockFile);
+        if (Config.TRACE) Console.WriteLine($"resolver: {resolver}");
         return resolver.Process();
     }
 }

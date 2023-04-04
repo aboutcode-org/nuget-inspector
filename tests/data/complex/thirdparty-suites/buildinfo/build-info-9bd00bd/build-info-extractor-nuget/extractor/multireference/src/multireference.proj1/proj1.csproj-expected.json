@@ -80,11 +80,11 @@
           ],
           "homepage_url": "https://getbootstrap.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/bootstrap/4.0.0/bootstrap.4.0.0.nupkg",
-          "size": 609037,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "0D0FA5389AC92F0B0D94F649A175871D408EEDBD6CD6B8BCDB819F3CA900317696E1381A53E483C3073D9068A8CFA91549A14A8B9D8C6ACECF9E1F3206E34EDB",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -101,7 +101,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bootstrap/4.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -128,11 +130,11 @@
           ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
-          "size": 368314,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "15700D8D989AFEFBB1F7F39B3623F0876CCD5AECDC80730A5E26B5390AEF8AE7F438A3C1581D9304854020282D39BBB3116F972F268112856E39494C5F2D2434",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -149,16 +151,18 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "Microsoft.Web.Xdt",
-          "version": "2.1.1",
+          "version": "2.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
+          "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
           "primary_language": "C#",
           "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
           "release_date": "",
@@ -173,12 +177,12 @@
           ],
           "keywords": [],
           "homepage_url": "",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-          "size": 48057,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.0/microsoft.web.xdt.2.1.0.nupkg",
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "F1A0A069ACBA7209EB4B049E203094D2A1BA822E55751FCB66E1D2CB2347FDD9AD38CABCF674982845E2B1CBD034F4CD9B608BEECF494555345A5DB87FAA7892",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -190,12 +194,14 @@
           "extra_data": {
             "framework": "net45"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.1?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.1.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.0/microsoft.web.xdt.2.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -222,11 +228,11 @@
           ],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.core/2.14.0/nuget.core.2.14.0.nupkg",
-          "size": 250189,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "3F4AF30C180E0D3456C9A915901DDEBEDA1F0DC2FA81F217789AA5B93C17011656B3325A92630ECAB9A75DFE44DD97E53BA1BD7F18A81A2C1FA2FEA67E0CD7B9",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -243,7 +249,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.core/2.14.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -268,11 +276,11 @@
           "keywords": [],
           "homepage_url": "https://popper.js.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/popper.js/1.12.9/popper.js.1.12.9.nupkg",
-          "size": 438258,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "4B79E26FF02AF14BBC02F07DB2D1E3823F84A5685A50EC3168788A63727D369C9D506DD2BB050508DB3E000F9DBCBB78444A0C3363780DA5AF596922F15272A9",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -289,9 +297,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/popper.js/1.12.9.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -325,11 +337,11 @@
       ],
       "homepage_url": "https://getbootstrap.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/bootstrap/4.0.0/bootstrap.4.0.0.nupkg",
-      "size": 609037,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "0D0FA5389AC92F0B0D94F649A175871D408EEDBD6CD6B8BCDB819F3CA900317696E1381A53E483C3073D9068A8CFA91549A14A8B9D8C6ACECF9E1F3206E34EDB",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -346,7 +358,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/bootstrap/4.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -373,11 +387,11 @@
       ],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
-      "size": 368314,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "15700D8D989AFEFBB1F7F39B3623F0876CCD5AECDC80730A5E26B5390AEF8AE7F438A3C1581D9304854020282D39BBB3116F972F268112856E39494C5F2D2434",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -394,16 +408,18 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "Microsoft.Web.Xdt",
-      "version": "2.1.1",
+      "version": "2.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.1",
+      "purl": "pkg:nuget/Microsoft.Web.Xdt@2.1.0",
       "primary_language": "C#",
       "description": "Microsoft Xml Document Transformation (XDT) library. For more info on XDT please visit http://msdn.microsoft.com/en-us/library/dd465326.aspx.",
       "release_date": "",
@@ -418,12 +434,12 @@
       ],
       "keywords": [],
       "homepage_url": "",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-      "size": 48057,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.0/microsoft.web.xdt.2.1.0.nupkg",
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "F1A0A069ACBA7209EB4B049E203094D2A1BA822E55751FCB66E1D2CB2347FDD9AD38CABCF674982845E2B1CBD034F4CD9B608BEECF494555345A5DB87FAA7892",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -435,12 +451,14 @@
       "extra_data": {
         "framework": "net45"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.1?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.1/microsoft.web.xdt.2.1.1.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.1.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.Web.Xdt/2.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.xdt/2.1.0/microsoft.web.xdt.2.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.web.xdt/2.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -467,11 +485,11 @@
       ],
       "homepage_url": "https://github.com/NuGet/NuGet2",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.core/2.14.0/nuget.core.2.14.0.nupkg",
-      "size": 250189,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "3F4AF30C180E0D3456C9A915901DDEBEDA1F0DC2FA81F217789AA5B93C17011656B3325A92630ECAB9A75DFE44DD97E53BA1BD7F18A81A2C1FA2FEA67E0CD7B9",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -488,7 +506,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.core/2.14.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -513,11 +533,11 @@
       "keywords": [],
       "homepage_url": "https://popper.js.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/popper.js/1.12.9/popper.js.1.12.9.nupkg",
-      "size": 438258,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "4B79E26FF02AF14BBC02F07DB2D1E3823F84A5685A50EC3168788A63727D369C9D506DD2BB050508DB3E000F9DBCBB78444A0C3363780DA5AF596922F15272A9",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -534,7 +554,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/popper.js/1.12.9.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

@@ -9,7 +9,9 @@
       ],
       "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
-      "warnings": [],
+      "warnings": [
+        "Unsupported framework found: $(DefaultTestFrameworks) in /complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj, falling back to 'any' framework."
+      ],
       "errors": []
     }
   ],
@@ -76,11 +78,11 @@
           ],
           "homepage_url": "http://code.msdn.microsoft.com/Command-Line-Parser-Library-a8ba828a",
           "download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
-          "size": 26440,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "FB6403EBDEA1FEC9D6DFB02FCCB9688E0DB947C3EB3FE72C548E75CB2C6C1EF533B467B2843C9FB3417916E8E608A4F8AAA914176EE70CF6E1C64A32BECC394B",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -90,12 +92,14 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/CmdLine/1.0.7.509?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -122,11 +126,11 @@
           ],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
-          "size": 2409669,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "CE76466F0B3B138040F63C4D67B16E888448DC2F61AE06AD5504932A121865834EB9DE0CE557C6953622E917583B9B10ADE6C5B85FE0F54115DE13B10CC5C5E9",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -136,14 +140,18 @@
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -173,11 +181,11 @@
       ],
       "homepage_url": "http://code.msdn.microsoft.com/Command-Line-Parser-Library-a8ba828a",
       "download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
-      "size": 26440,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "FB6403EBDEA1FEC9D6DFB02FCCB9688E0DB947C3EB3FE72C548E75CB2C6C1EF533B467B2843C9FB3417916E8E608A4F8AAA914176EE70CF6E1C64A32BECC394B",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -187,12 +195,14 @@
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/CmdLine/1.0.7.509?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/cmdline/1.0.7.509/cmdline.1.0.7.509.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cmdline/1.0.7.509.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -219,11 +229,11 @@
       ],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
-      "size": 2409669,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "CE76466F0B3B138040F63C4D67B16E888448DC2F61AE06AD5504932A121865834EB9DE0CE557C6953622E917583B9B10ADE6C5B85FE0F54115DE13B10CC5C5E9",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -233,12 +243,14 @@
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/11.0.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/11.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

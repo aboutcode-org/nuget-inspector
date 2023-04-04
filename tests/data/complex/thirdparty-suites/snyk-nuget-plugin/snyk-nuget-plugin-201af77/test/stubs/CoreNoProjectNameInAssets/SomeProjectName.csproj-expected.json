@@ -73,11 +73,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-          "size": 4072688,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -92,7 +92,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -117,11 +119,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-          "size": 4072688,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -136,7 +138,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -163,11 +167,11 @@
           ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-          "size": 1613054,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -182,7 +186,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -209,11 +215,11 @@
           ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-          "size": 1613054,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -228,7 +234,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -237,14 +245,25 @@
           "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/NuGet.Protocol@4.4.0",
           "primary_language": "C#",
-          "description": "",
+          "description": "NuGet client library.",
           "release_date": "",
-          "parties": [],
-          "keywords": [],
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "NuGet",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -255,16 +274,18 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/4.4.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -273,14 +294,25 @@
           "version": "4.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/NuGet.Protocol@4.4.0",
           "primary_language": "C#",
-          "description": "",
+          "description": "NuGet client library.",
           "release_date": "",
-          "parties": [],
-          "keywords": [],
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "NuGet",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
           "homepage_url": "",
-          "download_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -291,18 +323,22 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/4.4.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -329,11 +365,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-      "size": 4072688,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -348,7 +384,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -373,11 +411,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-      "size": 4072688,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -392,7 +430,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -419,11 +459,11 @@
       ],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-      "size": 1613054,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -438,7 +478,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -465,11 +507,11 @@
       ],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-      "size": 1613054,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -484,7 +526,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -493,14 +537,25 @@
       "version": "4.4.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/NuGet.Protocol@4.4.0",
       "primary_language": "C#",
-      "description": "",
+      "description": "NuGet client library.",
       "release_date": "",
-      "parties": [],
-      "keywords": [],
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "NuGet",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget",
+        "protocol"
+      ],
       "homepage_url": "",
-      "download_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -511,16 +566,18 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/4.4.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/4.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -529,14 +586,25 @@
       "version": "4.4.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/NuGet.Protocol@4.4.0",
       "primary_language": "C#",
-      "description": "",
+      "description": "NuGet client library.",
       "release_date": "",
-      "parties": [],
-      "keywords": [],
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "NuGet",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget",
+        "protocol"
+      ],
       "homepage_url": "",
-      "download_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -547,16 +615,18 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: https://raw.githubusercontent.com/NuGet/NuGet.Client/dev/LICENSE.txt",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/4.4.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.4.0/nuget.protocol.4.4.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/4.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

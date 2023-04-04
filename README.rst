@@ -62,6 +62,8 @@ Portions Copyright (c) 2018 Black Duck Software, Inc.
 
 Portions Copyright (c) Mario Rivis https://github.com/dxworks
 
+Portions Copyright (c) 2016 Andrei Marukovich https://github.com/Dropcraft/Dropcraft
+
 SPDX-License-Identifier: Apache-2.0 AND MIT
 
 
@@ -113,6 +115,8 @@ Here are credits for some of these key projects without which it would not exist
   https://github.com/veracode/verademo-dotnet
   https://github.com/veracode/verademo-dotnetcore
 
+- ``dropcraft`` from Andrei Marukovich
+  https://github.com/Dropcraft/Dropcraft
 
 These projects are used either in the built executables, at build time or for
 testing. The built executables are designed to be self-contained exes that do

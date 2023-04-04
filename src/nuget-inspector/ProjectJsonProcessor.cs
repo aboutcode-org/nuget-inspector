@@ -21,18 +21,16 @@ internal class ProjectJsonProcessor : IDependencyProcessor
 
     public DependencyResolution Resolve()
     {
-        var result = new DependencyResolution();
+        var resolution = new DependencyResolution();
         var model = JsonPackageSpecReader.GetPackageSpec(name: ProjectName, packageSpecPath: ProjectJsonPath);
-        IList<LibraryDependency> packages = model.Dependencies;
-        foreach (var package in packages)
+        foreach (var package in (IList<LibraryDependency>)model.Dependencies)
         {
             var bpwd = new BasePackage(
                 name: package.Name,
                 version: package.LibraryRange.VersionRange.OriginalString
             );
-            result.Dependencies.Add(item: bpwd);
+            resolution.Dependencies.Add(item: bpwd);
         }
-
-        return result;
+        return resolution;
     }
 }

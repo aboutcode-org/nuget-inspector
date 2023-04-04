@@ -57,14 +57,25 @@
           "version": "1.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/MyLogger@1.0.0",
           "primary_language": "C#",
-          "description": "",
+          "description": "Hallo",
           "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Capgemini",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nl",
+            "frats"
+          ],
+          "homepage_url": "http://localhost/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -75,16 +86,18 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: http://localhost/",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/MyLogger/1.0.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mylogger/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -93,14 +106,25 @@
           "version": "1.0.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/MyLogger@1.0.0",
           "primary_language": "C#",
-          "description": "",
+          "description": "Hallo",
           "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Capgemini",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nl",
+            "frats"
+          ],
+          "homepage_url": "http://localhost/",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -111,18 +135,22 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: http://localhost/",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/MyLogger/1.0.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mylogger/1.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -133,14 +161,25 @@
       "version": "1.0.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/MyLogger@1.0.0",
       "primary_language": "C#",
-      "description": "",
+      "description": "Hallo",
       "release_date": "",
-      "parties": [],
-      "keywords": [],
-      "homepage_url": "",
-      "download_url": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Capgemini",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nl",
+        "frats"
+      ],
+      "homepage_url": "http://localhost/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -151,16 +190,18 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: http://localhost/",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/MyLogger/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mylogger/1.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -169,14 +210,25 @@
       "version": "1.0.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/MyLogger@1.0.0",
       "primary_language": "C#",
-      "description": "",
+      "description": "Hallo",
       "release_date": "",
-      "parties": [],
-      "keywords": [],
-      "homepage_url": "",
-      "download_url": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Capgemini",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nl",
+        "frats"
+      ],
+      "homepage_url": "http://localhost/",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -187,16 +239,18 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: http://localhost/",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/MyLogger/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mylogger/1.0.0/mylogger.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mylogger/1.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

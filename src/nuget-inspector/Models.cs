@@ -8,6 +8,7 @@ using NuGet.Versioning;
 
 namespace NugetInspector
 {
+    #pragma warning disable IDE1006
     public class Dependency
     {
         public string? name;
@@ -53,7 +54,7 @@ namespace NugetInspector
                 return package_with_deps;
             }
 
-            package_with_deps = BasePackage.FromBasePackage(package: package, dependencies: new List<BasePackage>());
+            package_with_deps = BasePackage.FromPackage(package: package, dependencies: new List<BasePackage>());
             base_package_deps_by_base_package[key: package] = package_with_deps;
 
             _ = NuGetVersion.TryParse(value: package.version, version: out NuGetVersion version);
@@ -89,7 +90,7 @@ namespace NugetInspector
         /// </summary>
         /// <param name="base_package"></param>
         /// <param name="dependencies"></param>
-        public void AddOrUpdatePackage(BasePackage base_package, List<BasePackage?> dependencies)
+        public void AddOrUpdatePackage(BasePackage base_package, List<BasePackage> dependencies)
         {
             var packageWithDeps = GetOrCreateBasePackage(package: base_package);
             foreach (var dep in dependencies)
@@ -177,11 +178,14 @@ namespace NugetInspector
         public string datasource_id { get; set; } = "";
         public string datafile_path { get; set; } = "";
         public List<BasePackage> dependencies { get; set; } = new();
+        public List<string> warnings { get; set; } = new();
+        public List<string> errors { get; set; } = new();
 
         // Track if we updated this package metadata
-
         [JsonIgnore]
         public bool has_updated_metadata;
+
+       public BasePackage(){}
 
         public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
         {
@@ -195,7 +199,7 @@ namespace NugetInspector
                 extra_data["framework"] = framework;
         }
 
-        public static BasePackage FromBasePackage(BasePackage package, List<BasePackage> dependencies)
+        public static BasePackage FromPackage(BasePackage package, List<BasePackage> dependencies)
         {
             return new(name: package.name, version: package.version)
             {
@@ -205,10 +209,12 @@ namespace NugetInspector
         }
 
         ///<summary>
-        /// Return a deep clone of this package. Does not clone dependencies.
+        /// Return a deep clone of this package. Optionally clone dependencies.
         ///</summary>
-        public BasePackage Clone()
+        public BasePackage Clone(bool with_deps=false)
         {
+            List<BasePackage> deps = with_deps ? dependencies : new List<BasePackage>();
+
             return new BasePackage(
                 name: name,
                 version:version,
@@ -245,8 +251,12 @@ namespace NugetInspector
                 repository_download_url = repository_download_url,
                 api_data_url = api_data_url,
                 datasource_id = datasource_id,
-
+                datafile_path = datafile_path,
+                warnings = warnings,
+                errors = errors,
+                dependencies = deps,
                 extra_data = new Dictionary<string, string>(extra_data),
+                has_updated_metadata = has_updated_metadata
             };
         }
 
@@ -277,157 +287,197 @@ namespace NugetInspector
         public PackageIdentity GetPackageIdentity()
         {
             if (!string.IsNullOrWhiteSpace(version))
-            {
                 return new PackageIdentity(id: name, version: new NuGetVersion(version));
-            }
             else
-            {
                 return new PackageIdentity(id: name, version: null);
-            }
         }
 
         /// <summary>
         /// Update this Package instance using the NuGet API to fetch extra metadata
         /// and also update all its dependencies recursively.
         /// </summary>
-        public void Update(NugetApi nugetApi)
-        {
-            UpdateWithRemoteMetadata(nugetApi);
-            foreach (var dep in dependencies)
-                dep.Update(nugetApi);
-        }
-
-        /// <summary>
-        /// Update this Package instance using the NuGet API to fetch extra metadata
-        /// </summary>
-        public void UpdateWithRemoteMetadata(NugetApi nugetApi)
+        public void Update(NugetApi nugetApi, bool with_details = false)
         {
             if (has_updated_metadata)
                 return;
 
-            PackageSearchMetadataRegistration? meta = nugetApi.FindPackageVersion(
-                name: name,
-                version: version,
-                use_cache: true,
-                include_prerelease: true);
-
-            if (meta == null)
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(version))
             {
-                // Try again this time bypassing cache and also looking for pre-releases
-                meta = nugetApi.FindPackageVersion(
-                    name: name,
-                    version: version,
-                    use_cache: false,
-                    include_prerelease: true);
-                if (meta == null)
-                    return;
+                errors.Add("ERROR: Cannot fetch remote metadata: Name or version cannot be empty");
+                return;
             }
 
-            Update(meta);
-
-            // also fetch API-provided download URL and package hash
-            PackageIdentity identity = new(id: name , version: new NuGetVersion(version));
-            var download = nugetApi.GetPackageDownload(identity: identity);
-            if (download != null)
+            try
             {
-                download_url = download.download_url;
-                if (download.hash_algorithm == "SHA512")
-                    sha512 = download.hash;
-                if (download.size != null)
-                    size = (int)download.size;
+                UpdateWithRemoteMetadata(nugetApi, with_details: with_details);
+            }
+            catch (Exception ex)
+            {
+                var message = $"Failed to get remote metadata for name: '{name}' version: '{version}'. ";
+                if (Config.TRACE) Console.WriteLine($"        {message}");
+                warnings.Add(message + ex.ToString());
             }
             has_updated_metadata = true;
+
+            foreach (var dep in dependencies)
+                dep.Update(nugetApi, with_details: with_details);
         }
 
         /// <summary>
-        /// Update this Package instance from an PackageSearchMetadataRegistration
+        /// Update this Package instance using the NuGet API to fetch metadata
         /// </summary>
-        /// <param name="metadata"></param>
-        public void Update(PackageSearchMetadataRegistration? metadata)
+        public void UpdateWithRemoteMetadata(NugetApi nugetApi, bool with_details = false)
         {
-            if (metadata == null)
-                return;
-
-            // set the purl
-            string meta_name = metadata.Identity.Id;
-            string meta_version = metadata.Identity.Version.ToString();
-            if (string.IsNullOrWhiteSpace(meta_version))
-                purl = $"pkg:nuget/{meta_name}";
-            else
-                purl = $"pkg:nuget/{meta_name}@{meta_version}";
-
-            // Update the declared license
-            List<string> meta_declared_licenses = new();
-            Uri license_url = metadata.LicenseUrl;
-            if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
             {
-                meta_declared_licenses.Add($"LicenseUrl: {license_url}");
+                PackageIdentity pid = GetPackageIdentity();
+                PackageSearchMetadataRegistration? psmr = nugetApi.FindPackageVersion(pid: pid);
+
+                // TODO: need to add an error to errors
+                if (psmr == null)
+                    return;
+
+                // Also fetch download URL and package hash
+                PackageDownload? download = nugetApi.GetPackageDownload(identity: pid, with_details: with_details);
+                SourcePackageDependencyInfo? spdi = nugetApi.GetResolvedSourcePackageDependencyInfo(pid, framework: null);
+                UpdateAttributes(metadata: psmr, download: download, spdi: spdi);
             }
+        }
 
-            LicenseMetadata license_meta = metadata.LicenseMetadata;
-            if (license_meta != null)
+        /// <summary>
+        /// Update this Package instance
+        /// </summary>
+        public void UpdateAttributes(
+            PackageSearchMetadataRegistration? metadata,
+            PackageDownload? download,
+            SourcePackageDependencyInfo? spdi)
+        {
+            string? synthetic_api_data_url = null;
+
+            if (metadata != null)
             {
-                meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
-                if (!string.IsNullOrWhiteSpace(license_meta.License))
-                    meta_declared_licenses.Add($"License: {license_meta.License}");
-                var expression = license_meta.LicenseExpression;
-                if (expression != null)
-                    meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
-            }
+                // set the purl
+                string meta_name = metadata.Identity.Id;
+                string meta_version = metadata.Identity.Version.ToString();
+                if (string.IsNullOrWhiteSpace(meta_version))
+                    purl = $"pkg:nuget/{meta_name}";
+                else
+                    purl = $"pkg:nuget/{meta_name}@{meta_version}";
 
-            declared_license = string.Join("\n", meta_declared_licenses);
+                // Update the declared license
+                List<string> meta_declared_licenses = new();
+                Uri license_url = metadata.LicenseUrl;
+                if (license_url != null && !string.IsNullOrWhiteSpace(license_url.ToString()))
+                    meta_declared_licenses.Add($"LicenseUrl: {license_url}");
 
-            // Update the parties
-            string authors = metadata.Authors;
-            if (!string.IsNullOrWhiteSpace(authors))
-            {
-                if (!parties.Any(p => p.name == authors && p.role == "author"))
+                LicenseMetadata license_meta = metadata.LicenseMetadata;
+                if (license_meta != null)
+                {
+                    meta_declared_licenses.Add($"LicenseType: {license_meta.Type}");
+                    if (!string.IsNullOrWhiteSpace(license_meta.License))
+                        meta_declared_licenses.Add($"License: {license_meta.License}");
+                    var expression = license_meta.LicenseExpression;
+                    if (expression != null)
+                        meta_declared_licenses.Add($"LicenseExpression: {license_meta.LicenseExpression}");
+                }
+
+                declared_license = string.Join("\n", meta_declared_licenses);
+
+                // Update the parties
+                string authors = metadata.Authors;
+                if (!string.IsNullOrWhiteSpace(authors) && !parties.Any(p => p.name == authors && p.role == "author"))
                 {
                     Party item = new() { type = "organization", role = "author", name = authors };
                     parties.Add(item);
                 }
-            }
 
-            string owners = metadata.Owners;
-            if (!string.IsNullOrWhiteSpace(owners))
-            {
-                if (!parties.Any(p => p.name == owners && p.role == "owner"))
+                string owners = metadata.Owners;
+                if (!string.IsNullOrWhiteSpace(owners) && !parties.Any(p => p.name == owners && p.role == "owner"))
                 {
                     Party item = new() { type = "organization", role = "owner", name = owners };
                     parties.Add(item);
                 }
+
+                // Update misc and URL fields
+                primary_language = "C#";
+                description = metadata.Description;
+
+                string tags = metadata.Tags;
+                if (!string.IsNullOrWhiteSpace(tags))
+                {
+                    tags = tags.Trim();
+                    keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
+                }
+
+                if (metadata.ProjectUrl != null)
+                    homepage_url = metadata.ProjectUrl.ToString();
+
+                string name_lower = meta_name.ToLower();
+                string version_lower = meta_version.ToLower();
+
+                if (metadata.PackageDetailsUrl != null)
+                    repository_homepage_url = metadata.PackageDetailsUrl.ToString();
+
+                synthetic_api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
             }
 
-            // Update misc and URL fields
-            primary_language = "C#";
-            description = metadata.Description;
-
-            string tags = metadata.Tags.Trim();
-            if (!string.IsNullOrWhiteSpace(tags))
+            if (download != null)
             {
-                keywords = tags.Split(separator: ", ", options: StringSplitOptions.RemoveEmptyEntries).ToList();
+                // Download data
+                if (string.IsNullOrWhiteSpace(sha512))
+                    sha512 = download.hash;
+
+                if (size == 0 && download.size != null && download.size > 0)
+                    size = (int)download.size;
+
+                if (!string.IsNullOrWhiteSpace(download.download_url))
+                {
+                    download_url = download.download_url;
+                    repository_download_url = download_url;
+                }
+
+                if (Config.TRACE_NET) Console.WriteLine($"        download_url:{download_url}");
+
+                // other URLs
+
+                if (
+                    string.IsNullOrWhiteSpace(api_data_url)
+                    && download_url.StartsWith("https://api.nuget.org/")
+                    && !string.IsNullOrWhiteSpace(synthetic_api_data_url)
+                )
+                {
+                    api_data_url = synthetic_api_data_url;
+                }
+                else
+                {
+                    try
+                    {
+                        if (spdi != null && metadata != null)
+                            api_data_url = GetApiDataUrl(pid: metadata.Identity, spdi: spdi);
+                    }
+                    catch (Exception ex)
+                    {
+                        warnings.Add(ex.ToString());
+                    }
+                }
+                if (Config.TRACE_NET) Console.WriteLine($"         api_data_url:{api_data_url}");
             }
-            if (metadata.ProjectUrl != null)
-                homepage_url = metadata.ProjectUrl.ToString();
 
-            string name_lower = meta_name.ToLower();
-            string version_lower = meta_version.ToLower();
-
-            // TODO consider also: https://www.nuget.org/api/v2/package/{meta_name}/{meta_version}
             // TODO consider also: https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.nuspec
-            // TODO consider instead: https://api.nuget.org/packages/{name_lower}.{version_lower}.nupkg
-            // this is the URL from the home page
-            download_url = $"https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg";
-            repository_download_url = download_url;
+        }
 
-            repository_homepage_url = metadata.PackageDetailsUrl.ToString();
-            api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
-
-            // source_packages = null;
+        public static string GetApiDataUrl(PackageIdentity pid, SourcePackageDependencyInfo? spdi)
+        {
+            if (spdi != null)
+            {
+                RegistrationResourceV3 rrv3 = spdi.Source.GetResource<RegistrationResourceV3>(CancellationToken.None);
+                if (rrv3 != null)
+                    return rrv3.GetUri(pid).ToString();
+            }
+            return "";
         }
 
         /// <summary>
-        /// Sort recursively the dependencies.
+        /// Sort recursively the dependencies of this package.
         /// </summary>
         public void Sort() {
             dependencies.Sort();
@@ -459,6 +509,32 @@ namespace NugetInspector
                 return 1;
             return AsTuple().CompareTo(other.AsTuple());
         }
+
+        /// <summary>
+        /// Return a flat list of dependencies collected from a list of top-level packages.
+        /// </summary>
+        public List<BasePackage> GetFlatDependencies()
+        {
+            var flat_deps = FlattenDeps(dependencies);
+            flat_deps.Sort();
+            return flat_deps;
+        }
+
+        /// <summary>
+        /// Flatten recursively a tree of dependencies. Remove subdeps as the flattening goes.
+        /// </summary>
+        public static List<BasePackage> FlattenDeps(List<BasePackage> dependencies)
+        {
+            List<BasePackage> flattened = new();
+            List<BasePackage> depdeps;
+            foreach (var dep in dependencies)
+            {
+                depdeps = dep.dependencies;
+                flattened.Add(dep.Clone());
+                flattened.AddRange(FlattenDeps(depdeps));
+            }
+            return flattened;
+        }
     }
 
     /// <summary>
@@ -472,7 +548,7 @@ namespace NugetInspector
         public string? name { get; set; } = "";
         public string? email { get; set; } = "";
         public string? url { get; set; } = "";
-    
+
         public Party Clone()
         {
             return new Party(){
@@ -484,8 +560,6 @@ namespace NugetInspector
             };
         }
     }
-
-
 
     // TODO: unused
     public class DependentPackage
@@ -509,11 +583,36 @@ namespace NugetInspector
         public string hash { get; set; } = "";
         public string hash_algorithm { get; set; } = "";
         public int? size { get; set; } = 0;
-        public SourcePackageDependencyInfo? package_info = null;
-
         public bool IsEnhanced(){
-            return !string.IsNullOrWhiteSpace(download_url)
-            && !string.IsNullOrWhiteSpace(hash);
+            return !string.IsNullOrWhiteSpace(download_url) && !string.IsNullOrWhiteSpace(hash);
         }
+
+        public static PackageDownload FromSpdi(SourcePackageDependencyInfo spdi)
+        {
+            PackageDownload download = new(){ download_url = spdi.DownloadUri.ToString() };
+            /// Note that this hash is unlikely there per https://github.com/NuGet/NuGetGallery/issues/9433
+            if (!string.IsNullOrEmpty(spdi.PackageHash))
+            {
+                download.hash = spdi.PackageHash;
+                download.hash_algorithm = "SHA512";
+            }
+            return download;
+        }
+
+        public override string ToString()
+        {
+            return $"{download_url} hash: {hash} hash_algorithm: {hash_algorithm} size: {size}";
+        }
+    }
+
+    public class ScannedFile
+    {
+        public string path { get; set; } = "";
+        // file or directory
+        public string type { get; set; } = "file";
+        public string name { get; set; } = "";
+        public string base_name { get; set; } = "";
+        public string extension { get; set; } = "";
+        public int? size { get; set; } = 0;
     }
 }

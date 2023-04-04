@@ -92,11 +92,11 @@
           ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
           "download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/3.4.5/windowsazure.servicebus.3.4.5.nupkg",
-          "size": 1346176,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "A3C716A09392A0AE110FD3D3986BE069BB92EBC32B59C764AFF44E9601CE93F0DF419A01485CDA2F45FC8D75D2FB8136539BC14284E5B3B5751301695B7F5A1F",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -108,14 +108,18 @@
           "extra_data": {
             "framework": "net45"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/WindowsAzure.ServiceBus/3.4.5?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/3.4.5/windowsazure.servicebus.3.4.5.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/windowsazure.servicebus/3.4.5.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -161,11 +165,11 @@
       ],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
       "download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/3.4.5/windowsazure.servicebus.3.4.5.nupkg",
-      "size": 1346176,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "A3C716A09392A0AE110FD3D3986BE069BB92EBC32B59C764AFF44E9601CE93F0DF419A01485CDA2F45FC8D75D2FB8136539BC14284E5B3B5751301695B7F5A1F",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -177,12 +181,14 @@
       "extra_data": {
         "framework": "net45"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/WindowsAzure.ServiceBus/3.4.5?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/3.4.5/windowsazure.servicebus.3.4.5.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/windowsazure.servicebus/3.4.5.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

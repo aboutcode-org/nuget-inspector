@@ -79,11 +79,11 @@
           ],
           "homepage_url": "https://github.com/StackExchange/StackExchange.Redis",
           "download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
-          "size": 741118,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "3E845E9AE3D27D6A26FD2AC164089B6612258FDCBDDE8E38966B966E620C62A60D690A1B8A7C5D4F35AEBF773A059206E98C9608280A2F0A84B2C4BDBB768FB4",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -95,14 +95,18 @@
           "extra_data": {
             "framework": "net45"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/StackExchange.Redis.StrongName/1.1.608?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis.strongname/1.1.608.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -135,11 +139,11 @@
       ],
       "homepage_url": "https://github.com/StackExchange/StackExchange.Redis",
       "download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
-      "size": 741118,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "3E845E9AE3D27D6A26FD2AC164089B6612258FDCBDDE8E38966B966E620C62A60D690A1B8A7C5D4F35AEBF773A059206E98C9608280A2F0A84B2C4BDBB768FB4",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -151,12 +155,14 @@
       "extra_data": {
         "framework": "net45"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/StackExchange.Redis.StrongName/1.1.608?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stackexchange.redis.strongname/1.1.608.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

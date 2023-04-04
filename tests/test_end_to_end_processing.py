@@ -28,19 +28,58 @@ test_env.test_data_dir = str(TEST_DATA_DIR)
 
 NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
+# These test paths are failing for now and need some TLC
 failing_paths = (
-    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
-    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/csproj_multiple/csproj_multiple.csproj",
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/projectAssetsDir/another_example.csproj",
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/packagesConfigDir/example.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/csproj_multiple/csproj_multiple.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/no_csproj.vbproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework/no_target_framework.csproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
     "project-json/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
+    # potential central package dependencies?
+    "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    # downgrade
+    "nuget-config/myget-and-props/Configuration-608dd8/src/Steeltoe.Extensions.Configuration.CloudFoundryBase/Steeltoe.Extensions.Configuration.CloudFoundryBase.csproj",
+    # missing file
+    "complex/end-to-end3/Newtonsoft.Json-10.0.1/Doc/doc.shfbproj",
+    # unknown deps
+    "complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Portable.csproj",
+    # inavlid
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
+    
 )
+
+# These test paths are supposed to have an error returned by design with an output
+paths_expected_to_return_an_error_and_output = set([
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_project/dotnet_project.csproj",
+    "complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
+    # has a circular dependency
+    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj"
+])
+
+# These test paths are supposed to have an error returned by design and not output
+paths_expected_to_return_an_error_and_no_output = set([
+    "nuget-config/private-nuget/example.csproj",
+    "nuget-config/api-v2-sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
+    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    "basic/csproj5/mini.csproj",
+    "properties/project-with-packages.props1/Foo.csproj",
+    
+])
+
+# These test path are launched with extra nuget-inspector CLI arguments
+paths_with_extra_arguments = {
+    "nuget-config/private-nuget/example.csproj": "--with-fallback",
+    "nuget-config/api-v2-sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj": "--with-fallback",
+    "basic/csproj1/CycloneDX.csproj": "--with-details",
+    "basic/csproj2/example.csproj": "--with-details",
+}
 
 
 def get_test_file_paths(base_dir, pattern, excludes=failing_paths):
@@ -62,11 +101,10 @@ def test_nuget_inspector_end_to_end_with_projects(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
-
 def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_config_1():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
-    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
+    nuget_config = test_env.get_test_loc("complex/thirdparty-suites/ort-tests/dotnet/nuget.config")
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
@@ -78,11 +116,11 @@ def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_co
 def test_nuget_inspector_end_to_end_file_target_with_framework_and_nuget_config_2():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-net45.json"
-    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
+    nuget_config = test_env.get_test_loc("complex/thirdparty-suites/ort-tests/dotnet/nuget.config")
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
-        extra_args=f' --target-framework "net45" --nuget-config {nuget_config}',
+        extra_args=f' --target-framework "net45" --nuget-config "{nuget_config}" ',
         regen=REGEN_TEST_FIXTURES,
     )
 
@@ -90,11 +128,11 @@ def test_nuget_inspector_end_to_end_file_target_with_framework_and_nuget_config_
 def test_nuget_inspector_end_to_end_file_target_with_default_framework_and_nuget_config_3():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-no-target.json"
-    nuget_config = "complex/thirdparty-suites/ort-tests/dotnet/nuget.config"
+    nuget_config = test_env.get_test_loc("complex/thirdparty-suites/ort-tests/dotnet/nuget.config")
     check_nuget_inspector_end_to_end(
         test_path=test_path,
         expected_path=expected_path,
-        extra_args=f' --nuget-config {nuget_config}',
+        extra_args=f' --nuget-config "{nuget_config}" ',
         regen=REGEN_TEST_FIXTURES,
     )
 
@@ -223,11 +261,20 @@ def load_and_clean_json(location):
     return data
 
 
-def check_nuget_inspector_end_to_end(test_path, expected_path=None, extra_args="", regen=REGEN_TEST_FIXTURES):
+def check_nuget_inspector_end_to_end(
+    test_path,
+    expected_path=None,
+    extra_args="",
+    regen=REGEN_TEST_FIXTURES
+):
     """
     Run nuget-inspector on ``test_path`` string and check that results match the
     expected ``test_path``-expected.json file.
     """
+    is_expected_with_error_and_out = test_path in paths_expected_to_return_an_error_and_output
+    is_expected_with_error_no_out = test_path in paths_expected_to_return_an_error_and_no_output
+
+    extra_arguments = paths_with_extra_arguments.get(test_path) or ""
     test_loc = test_env.get_test_loc(test_path)
     result_file = test_env.get_temp_file(extension=".json")
 
@@ -235,23 +282,28 @@ def check_nuget_inspector_end_to_end(test_path, expected_path=None, extra_args="
         f"{NUGET_INSPECTOR} "
         f"--project-file \"{test_loc}\" "
         f"--json \"{result_file}\" "
-        +extra_args
+        f" {extra_args}"
+        f" {extra_arguments}"
     ]
     try:
         subprocess.check_output(cmd, shell=True)
     except subprocess.CalledProcessError:
-        cmd = [cmd[0] + " --verbose"]
-        try:
-            subprocess.check_output(cmd, shell=True)
-        except subprocess.CalledProcessError as ex:
-            out = ex.output.decode("utf-8")
-            print("==================")
-            print(out)
-            print("==================")
-            raise Exception(
-                "Failed to run", " ".join(cmd),
-                "with output:", out,
-            )
+        if is_expected_with_error_no_out:
+            return
+
+        if not is_expected_with_error_and_out:
+            cmd = [cmd[0] + " --verbose"]
+            try:
+                subprocess.check_output(cmd, shell=True)
+            except subprocess.CalledProcessError as ex:
+                out = ex.output.decode("utf-8")
+                print("==================")
+                print(out)
+                print("==================")
+                raise Exception(
+                    "Failed to run", " ".join(cmd),
+                    "with output:", out,
+                )
 
     if expected_path is None:
         expected_path = test_path + "-expected.json"

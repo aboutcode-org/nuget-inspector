@@ -40,7 +40,9 @@ let tree = NugetDepsTree.generate(pathToSlnFile);
         {
           "id": "dependency.Two",
           "version": "2.0.0",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
       ]
     },
@@ -50,7 +52,9 @@ let tree = NugetDepsTree.generate(pathToSlnFile);
         {
           "id": "dependency.Three",
           "version": "3.0.0",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
       ]
     }

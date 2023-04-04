@@ -2,14 +2,18 @@
 using System.Net;
 using System.Net.Cache;
 using Newtonsoft.Json.Linq;
+using NuGet.Commands;
 using NuGet.Configuration;
+using NuGet.DependencyResolver;
 using NuGet.Frameworks;
+using NuGet.LibraryModel;
 using NuGet.PackageManagement;
 using NuGet.Packaging;
 using NuGet.Packaging.Core;
 using NuGet.Protocol;
 using NuGet.Protocol.Core.Types;
 using NuGet.Resolver;
+using NuGet.RuntimeModel;
 using NuGet.Versioning;
 
 namespace NugetInspector;
@@ -19,237 +23,268 @@ namespace NugetInspector;
 /// </summary>
 public class NugetApi
 {
-    private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> lookupCache = new();
-    private readonly Dictionary<PackageIdentity, PackageDownload> download_by_identity = new();
-    private readonly List<SourceRepository> source_repositories = new();
-    private readonly List<PackageMetadataResource> MetadataResourceList = new();
-    private readonly List<DependencyInfoResource> DependencyInfoResourceList = new();
-
-    private readonly SourceCacheContext cache_context = new();
+    private readonly SourceCacheContext source_cache_context = new(){
+        NoCache=false,
+        DirectDownload=false,
+        MaxAge= new DateTimeOffset(DateTime.Now.AddDays(5))
+    };
     private readonly GatherCache gather_cache = new();
-    private readonly Dictionary<string, JObject> catalog_cache = new();
 
+    private readonly Dictionary<string, JObject> catalog_entry_by_catalog_url = new();
+    private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> psmrs_by_package_name = new();
+    private readonly Dictionary<PackageIdentity, PackageSearchMetadataRegistration?> psmr_by_identity = new();
+    private readonly Dictionary<(PackageIdentity, NuGetFramework), PackageDownload> download_by_identity = new();
+    private readonly Dictionary<(PackageIdentity, NuGetFramework), SourcePackageDependencyInfo> spdi_by_identity = new();
 
-    public NugetApi(string nugetApiFeedUrl, string nugetConfig)
+    private readonly List<SourceRepository> source_repositories = new();
+    private readonly List<PackageMetadataResource> metadata_resources = new();
+    private readonly List<DependencyInfoResource> dependency_info_resources = new();
+
+    private readonly ISettings settings;
+
+    private readonly NuGetFramework project_framework;
+
+    public NugetApi(string nuget_config_path, string project_root_path, NuGetFramework project_framework)
     {
-        var providers = new List<Lazy<INuGetResourceProvider>>();
-        providers.AddRange(collection: Repository.Provider.GetCoreV3());
-        CreateResourceLists(
+        this.project_framework = project_framework;
+        List<Lazy<INuGetResourceProvider>> providers = new();
+        providers.AddRange(Repository.Provider.GetCoreV3());
+
+        settings = LoadNugetConfigSettings(
+            nuget_config_path: nuget_config_path,
+            project_root_path: project_root_path);
+
+        PopulateResources(
             providers: providers,
-            nuget_api_feed_url: nugetApiFeedUrl,
-            nuget_config_path: nugetConfig);
+            settings: settings);
     }
 
     /// <summary>
     /// Return PackageSearchMetadataRegistration querying the API
     /// </summary>
-    /// <param name="id"></pa   ram>
-    /// <param name="versionRange"></param>
-    /// <param name="use_cache">use_cache</param>
-    /// <param name="include_prerelease">include_prerelease</param>
+    /// <param name="name"></pa   ram>
+    /// <param name="version_range"></param>
     /// <returns>PackageSearchMetadataRegistration or null</returns>
-    public PackageSearchMetadataRegistration? FindPackageVersion(
-        string? id,
-        VersionRange? versionRange,
-        bool use_cache = true,
-        bool include_prerelease = false)
+    public PackageSearchMetadataRegistration? FindPackageVersion(string name, VersionRange? version_range)
     {
-        var package_versions = FindPackageVersionsThroughCache(
-            id: id,
-            use_cache: use_cache,
-            include_prerelease: include_prerelease);
+        if (Config.TRACE_NET)
+            Console.WriteLine($"FindPackageVersion for {name} range: {version_range}");
 
+        if (name == null)
+            return null;
+
+        var package_versions = FindPackageVersionsThroughCache(name: name);
         // TODO: we may need to error out if version is not known/existing upstream
-        if (package_versions.Count == 0)
+        if (!package_versions.Any())
             return null;
         IEnumerable<NuGetVersion> versions = package_versions.Select(selector: package => package.Identity.Version);
-        var best_version = versionRange?.FindBestMatch(versions: versions);
+        var best_version = version_range?.FindBestMatch(versions: versions);
         return package_versions.Find(package => package.Identity.Version == best_version);
     }
 
     /// <summary>
-    /// Return an PackageSearchMetadataRegistration querying the API using a name and version, or null.
-    /// Return the latest version when no version is provided.
-    /// Bypass the cache if no_cache is true.
-    /// Include prereleases if include_prerelease is true.
+    /// Return a list of NuGet package metadata and cache it.
     /// </summary>
-    /// <param name="name">name</param>
-    /// <param name="version">version</param>
-    /// <param name="use_cache">use_cache</param>
-    /// <param name="include_prerelease">include_prerelease</param>
-    /// <returns>PackageSearchMetadataRegistration or null</returns>
-    public PackageSearchMetadataRegistration? FindPackageVersion(
-        string name,
-        string? version,
-        bool use_cache = true,
-        bool include_prerelease = false)
+    /// <param name="name">id (e.g., the name)</param>
+    private List<PackageSearchMetadataRegistration> FindPackageVersionsThroughCache(string name)
     {
-        PackageSearchMetadataRegistration? last_package = null;
-        List<PackageSearchMetadataRegistration> packages = FindPackageVersionsThroughCache(
-            id: name,
-            use_cache: use_cache,
-            include_prerelease: include_prerelease);
-
-        foreach (var package in packages)
+        if (psmrs_by_package_name.TryGetValue(key: name, out var psmrs))
         {
-            last_package = package;
-            if (package.Identity.Version.ToString() == version)
-                return package;
+            if (Config.TRACE_NET)
+                Console.WriteLine($"Metadata Cache hit for '{name}'");
+            return psmrs;
         }
 
-        if (last_package != null && version == null)
-            return last_package;
+        if (Config.TRACE_NET)
+            Console.WriteLine($"Metadata Cache miss for '{name}'");
 
-        return null;
+        psmrs = FindPackagesOnline(name: name);
+        // Update caches
+        psmrs_by_package_name[name] = psmrs;
+        foreach (var psmr in psmrs)
+            psmr_by_identity[psmr.Identity] = psmr;
+        return psmrs;
     }
 
     /// <summary>
-    /// Return an PackageSearchMetadataRegistration querying the API using aPackageIdentity, or null.
-    /// Return the latest version when no version is provided.
-    /// Bypass the cache if no_cache is true.
-    /// Include prereleases if include_prerelease is true.
+    /// Return a single NuGet package PackageSearchMetadataRegistration querying the API
+    /// using a PackageIdentity, or null. Cache calls.
     /// </summary>
-    /// <param name="identity">identity  as</param>
-    /// <param name="use_cache">use_cache</param>
-    /// <param name="include_prerelease">include_prerelease</param>
+    /// <param name="pid">identity</param>
     /// <returns>PackageSearchMetadataRegistration or null</returns>
-    public PackageSearchMetadataRegistration? FindPackageVersion(
-        PackageIdentity identity,
-        bool use_cache = true,
-        bool include_prerelease = false)
+    public PackageSearchMetadataRegistration? FindPackageVersion(PackageIdentity pid)
     {
-        return FindPackageVersion(
-           name: identity.Id,
-           version: identity.Version.ToString(),
-           use_cache: use_cache,
-           include_prerelease: include_prerelease);
-    }
+        if (Config.TRACE_NET)
+            Console.WriteLine($"FindPackageVersion: {pid}");
 
-    /// <summary>
-    /// Return a list of NuGet package metadata and cache if use_cache is true.
-    /// </summary>
-    /// <param name="id">id (e.g., the name)</param>
-    /// <param name="use_cache">use_cache</param>
-    /// <param name="include_prerelease">include_prerelease</param>
-    private List<PackageSearchMetadataRegistration> FindPackageVersionsThroughCache(
-        string? id,
-        bool use_cache = true,
-        bool include_prerelease = false)
-    {
-        if (id == null)
+        if (psmr_by_identity.TryGetValue(key: pid, out PackageSearchMetadataRegistration? psmr))
         {
-            return new List<PackageSearchMetadataRegistration>();
+            if (Config.TRACE_NET)
+                Console.WriteLine($"Metadata Cache hit for '{pid}'");
+            return psmr;
         }
 
-        if (use_cache)
+        var exceptions = new List<Exception>();
+
+        foreach (PackageMetadataResource metadata_resource in metadata_resources)
         {
-            if (!lookupCache.ContainsKey(id))
+            try
+            {
+                psmr = (PackageSearchMetadataRegistration)metadata_resource.GetMetadataAsync(
+                    package: pid,
+                    sourceCacheContext: source_cache_context,
+                    log: new NugetLogger(),
+                    token: CancellationToken.None
+                ).Result;
+
+                if (psmr != null)
+                {
+                    if (Config.TRACE_NET)
+                        Console.WriteLine($"    Found metadata for '{pid}' from: {metadata_resources}");
+                    psmr_by_identity[pid] = psmr;
+                    return psmr;
+                }
+            }
+            catch (Exception ex)
             {
                 if (Config.TRACE_NET)
-                    Console.WriteLine($"API Cache miss package '{id}'");
+                    Console.WriteLine($"FAILED to Fetch metadata for '{pid}' with: {ex.StackTrace}");
 
-                List<PackageSearchMetadataRegistration> metadatas = FindPackagesOnline(
-                    name: id,
-                    include_prerelease: include_prerelease);
-                lookupCache[id] = metadatas;
-                return metadatas;
-            }
-            else
-            {
-                return lookupCache[key: id];
+                exceptions.Add(item: ex);
             }
         }
-        else
+
+        if (Config.TRACE_NET && exceptions.Any())
         {
-            return FindPackagesOnline(name: id, include_prerelease: include_prerelease);
+            Console.WriteLine($"ERROR: No package found for {pid}.");
+            foreach (var ex in exceptions)
+                Console.WriteLine($"    {ex}");
         }
+        // cache this null too
+        psmr_by_identity[pid] = null;
+        return null;
     }
 
     /// <summary>
     /// Find NuGet packages online using the configured NuGet APIs
     /// </summary>
     /// <param name="name"></param>
-    /// <param name="include_prerelease">include_prerelease</param>
     /// <returns>List of PackageSearchMetadataRegistration</returns>
-    private List<PackageSearchMetadataRegistration> FindPackagesOnline(
-        string? name,
-        bool include_prerelease = false)
+    private List<PackageSearchMetadataRegistration> FindPackagesOnline(string name)
     {
-        if (Config.TRACE_NET)
-            Console.WriteLine($"FindPackagesOnline: {name} include_prerelease: {include_prerelease}");
+        if (Config.TRACE)
+            Console.WriteLine($"Find package versions online for: {name}");
 
-        var matching_packages = new List<PackageSearchMetadataRegistration>();
+        var found_psrms = new List<PackageSearchMetadataRegistration>();
         var exceptions = new List<Exception>();
 
-        Stopwatch? stop_watch = null;
-
-        foreach (PackageMetadataResource metadata_resource in MetadataResourceList)
+        foreach (PackageMetadataResource metadata_resource in metadata_resources)
         {
             try
             {
-                if (Config.TRACE)
-                    stop_watch = Stopwatch.StartNew();
-
-                IEnumerable<PackageSearchMetadataRegistration>? package_metadata =
-                    (IEnumerable<PackageSearchMetadataRegistration>)metadata_resource.GetMetadataAsync(
+                IEnumerable<PackageSearchMetadataRegistration>? psmrs =
+                    (IEnumerable<PackageSearchMetadataRegistration>) metadata_resource.GetMetadataAsync(
                         packageId: name,
-                        includePrerelease: include_prerelease,
-                        includeUnlisted: false,
-                        sourceCacheContext: cache_context,
+                        includePrerelease: true,
+                        includeUnlisted: true,
+                        sourceCacheContext: source_cache_context,
                         log: new NugetLogger(),
                         token: CancellationToken.None
                     ).Result;
 
-                if (Config.TRACE_NET)
-                    Console.WriteLine($"Fetch metadata for '{name}' in: {stop_watch!.ElapsedMilliseconds} ms");
-
-                if (package_metadata != null)
+                if (psmrs != null)
                 {
-                    List<PackageSearchMetadataRegistration> metadata = package_metadata.ToList();
-                    if (metadata.Any())
-                        matching_packages.AddRange(collection: metadata);
+                    List<PackageSearchMetadataRegistration> psmrs2 = psmrs.ToList();
+                    if (Config.TRACE)
+                    {
+                        PackageMetadataResourceV3 mr = (PackageMetadataResourceV3)metadata_resource;
+                        Console.WriteLine($"    Fetched #{psmrs2.Count} metadata for '{name}' from: {mr.ToJson}");
+                    }
+
+                    found_psrms.AddRange(psmrs2);
+
                     if (Config.TRACE_NET)
                     {
-                        foreach (var meta in metadata)
-                        {
-                            Console.WriteLine($"    Fetched: {meta.PackageId}@{meta.Version}");
-                        }
+                        foreach (var psmr in psmrs2)
+                            Console.WriteLine($"        Fetched: {psmr.PackageId}@{psmr.Version}");
                     }
+                    break;
                 }
             }
             catch (Exception ex)
             {
-                if (Config.TRACE_NET)
-                    Console.WriteLine($"FAILED to Fetch metadata for '{name}' with: {ex.StackTrace}");
+                if (Config.TRACE)
+                    Console.WriteLine($"        FAILED to Fetch metadata for '{name}' with: {ex.StackTrace}");
 
                 exceptions.Add(item: ex);
             }
         }
 
-        if (matching_packages.Count > 0)
-            return matching_packages;
-
-        if (exceptions.Count > 0)
+        if (Config.TRACE && exceptions.Any())
         {
-            if (Config.TRACE_NET)
+            Console.WriteLine($"ERROR: No package found for {name}.");
+            foreach (var ex in exceptions)
+                Console.WriteLine($"    {ex}");
+        }
+        return found_psrms;
+    }
+
+    /// <summary>
+    /// Return settings loaded from a specific nuget.config file if provided or from the
+    /// nuget.config in the code tree, using the NuGet search procedure otherwise.
+    /// </summary>
+    public static ISettings LoadNugetConfigSettings(
+        string nuget_config_path,
+        string project_root_path)
+    {
+        ISettings settings;
+        if (!string.IsNullOrWhiteSpace(value: nuget_config_path))
+        {
+            if (!File.Exists(path: nuget_config_path))
+                throw new FileNotFoundException(message: "Missing requested nuget.config", fileName: nuget_config_path);
+
+            if (Config.TRACE)
+                Console.WriteLine($"Loading nuget.config: {nuget_config_path}");
+
+            string root = Directory.GetParent(path: nuget_config_path)!.FullName;
+            string nuget_config_file_name = Path.GetFileName(path: nuget_config_path);
+            settings = Settings.LoadSpecificSettings(root: root, configFileName: nuget_config_file_name);
+        }
+        else
+        {
+            // Load defaults settings the NuGet way.
+            // Note that we ignore machine-wide settings by design as they are not be relevant to
+            // the resolution at hand.
+            settings = Settings.LoadDefaultSettings(
+                root: project_root_path,
+                configFileName: null,
+                machineWideSettings: null);
+        }
+        if (Config.TRACE_DEEP)
+        {
+            Console.WriteLine("\nLoadNugetConfigSettings");
+            var section_names = new List<string> {
+                "packageSources",
+                "disabledPackageSources",
+                "activePackageSource",
+                "packageSourceMapping",
+                "packageManagement"};
+
+            if (Config.TRACE_DEEP)
             {
-                Console.WriteLine($"No packages were found for {name}, and an exception occured in one or more metadata resources.");
-                foreach (var ex in exceptions)
+                foreach (var sn in section_names)
                 {
-                    Console.WriteLine($"Failed to fetch metadata for packages: {ex.Message}");
-                    if (ex.InnerException != null)
-                    {
-                        Console.WriteLine($"Error: {ex.InnerException.Message}");
-                    }
+                    SettingSection section =  settings.GetSection(sectionName: sn);
+                    if (section == null)
+                        continue;
+
+                    Console.WriteLine($"    section: {section.ElementName}");
+                    foreach (var item in section.Items)
+                        Console.WriteLine($"        item:{item}, ename: {item.ElementName} {item.ToJson()}");
                 }
             }
-
-            return new List<PackageSearchMetadataRegistration>();
         }
-
-        if (Config.TRACE)
-            Console.WriteLine($"No package found for {name} in any meta data resources.");
-        return new List<PackageSearchMetadataRegistration>();
+        return settings;
     }
 
     /// <summary>
@@ -257,46 +292,26 @@ public class NugetApi
     /// from a feed URL and a nuget.config file path.
     /// These are MetadataResourceList and DependencyInfoResourceList attributes.
     /// </summary>
-    private void CreateResourceLists(
-        List<Lazy<INuGetResourceProvider>> providers,
-        string nuget_api_feed_url,
-        string nuget_config_path)
+    private void PopulateResources(List<Lazy<INuGetResourceProvider>> providers, ISettings settings)
     {
-        if (!string.IsNullOrWhiteSpace(value: nuget_config_path))
+        PackageSourceProvider package_source_provider = new(settings: settings);
+        List<PackageSource> package_sources = package_source_provider.LoadPackageSources().ToList();
+        if (Config.TRACE)
+            Console.WriteLine($"\nPopulateResources: Loaded {package_sources.Count} package sources from nuget.config");
+
+        // always nuget.org as last resort
+        var nuget_source = new PackageSource(source: "https://api.nuget.org/v3/index.json", name : "nuget.org");
+        package_sources.Add(nuget_source);
+
+        HashSet<string> seen = new();
+        foreach (PackageSource package_source in package_sources)
         {
-            if (File.Exists(path: nuget_config_path))
-            {
-                string parent = Directory.GetParent(path: nuget_config_path)!.FullName;
-                string nugetFile = Path.GetFileName(path: nuget_config_path);
-
-                if (Config.TRACE) Console.WriteLine($"Loading nuget config {nugetFile} at {parent}.");
-                ISettings? setting = Settings.LoadSpecificSettings(root: parent, configFileName: nugetFile);
-
-                PackageSourceProvider package_source_provider = new(settings: setting);
-                IEnumerable<PackageSource> package_sources = package_source_provider.LoadPackageSources();
-                List<PackageSource> packageSources = package_sources.ToList();
-                if (Config.TRACE)
-                    Console.WriteLine($"Loaded {packageSources.Count} package sources from nuget config.");
-
-                foreach (var package_source in packageSources)
-                {
-                    if (Config.TRACE) Console.WriteLine($"Found package source: {package_source.Source}");
-                    AddPackageSource(providers: providers, package_source: package_source);
-                }
-            }
-            else
-            {
-                if (Config.TRACE) Console.WriteLine($"nuget.config file missing at path: {nuget_config_path}.");
-            }
-        }
-
-        foreach (var repoUrl in nuget_api_feed_url.Split(","))
-        {
-            var url = repoUrl.Trim();
-            if (string.IsNullOrWhiteSpace(value: url))
+            var uri = package_source.SourceUri.ToString();
+            if (seen.Contains(uri))
                 continue;
-            var packageSource = new PackageSource(source: url);
-            AddPackageSource(providers: providers, package_source: packageSource);
+            SourceRepository source_repository = new(source: package_source, providers: providers);
+            AddSourceRepo(source_repo: source_repository);
+            seen.Add(uri);
         }
     }
 
@@ -305,34 +320,33 @@ public class NugetApi
     /// Also keep track of SourceRepository in source_repositories.
     /// </summary>
     /// <param name="providers">providers</param>
-    /// <param name="package_source">package_source</param>
-    private void AddPackageSource(List<Lazy<INuGetResourceProvider>> providers, PackageSource package_source)
+    /// <param name="source_repo">package_source</param>
+    private void AddSourceRepo(SourceRepository source_repo)
     {
         if (Config.TRACE)
-            Console.WriteLine($"AddPackageSource: adding new {package_source.SourceUri}");
+            Console.WriteLine($"    AddSourceRepo: adding new {source_repo.PackageSource.SourceUri}");
 
-        SourceRepository nuget_repository = new(source: package_source, providers: providers);
         try
         {
-            source_repositories.Add(item: nuget_repository);
+            source_repositories.Add(item: source_repo);
 
-            PackageMetadataResource package_metadata_endpoint = nuget_repository.GetResource<PackageMetadataResource>();
-            MetadataResourceList.Add(item: package_metadata_endpoint);
+            PackageMetadataResource package_metadata_endpoint = source_repo.GetResource<PackageMetadataResource>();
+            metadata_resources.Add(item: package_metadata_endpoint);
 
-            DependencyInfoResource dependency_info_endpoint = nuget_repository.GetResource<DependencyInfoResource>();
-            DependencyInfoResourceList.Add(item: dependency_info_endpoint);
+            DependencyInfoResource dependency_info_endpoint = source_repo.GetResource<DependencyInfoResource>();
+            dependency_info_resources.Add(item: dependency_info_endpoint);
         }
         catch (Exception e)
         {
+            string message = $"Error loading NuGet API Resource from url: {source_repo.PackageSource.SourceUri}";
             if (Config.TRACE)
             {
-                Console.WriteLine($"AddPackageSource: Error loading Resource from url: {package_source.SourceUri}");
+                Console.WriteLine($"    {message}");
                 if (e.InnerException != null)
                     Console.WriteLine(e.InnerException.Message);
             }
+            throw new Exception (message, e);
         }
-        if (Config.TRACE)
-            Console.WriteLine("    Added");
     }
 
     /// <summary>
@@ -340,22 +354,12 @@ public class NugetApi
     /// </summary>
     public IEnumerable<PackageDependency> GetPackageDependenciesForPackage(PackageIdentity identity, NuGetFramework? framework)
     {
+        if (framework == null)
+            framework = project_framework;
+
         SourcePackageDependencyInfo? spdi = GetResolvedSourcePackageDependencyInfo(identity: identity, framework: framework);
         if (spdi != null)
         {
-            PackageDownload download = new()
-            {
-                download_url = spdi.DownloadUri.ToString(),
-                package_info = spdi,
-            };
-            if (!string.IsNullOrEmpty(spdi.PackageHash))
-            {
-                download.hash = spdi.PackageHash;
-                download.hash_algorithm = "SHA512";
-            }
-
-            download_by_identity[identity] = download;
-
             return spdi.Dependencies;
         }
         else
@@ -371,31 +375,43 @@ public class NugetApi
         PackageIdentity identity,
         NuGetFramework? framework)
     {
-        if (Config.TRACE)
-            Console.WriteLine($"    GetPackageInfo: {identity}");
-        foreach (var dir in DependencyInfoResourceList)
+        if (framework == null)
+            framework = project_framework;
+
+        if (spdi_by_identity.TryGetValue(key: (identity, framework), out SourcePackageDependencyInfo? spdi))
+        {
+            return spdi;
+        }
+
+        if (Config.TRACE_DEEP)
+            Console.WriteLine($"    GetPackageInfo: {identity} framework: {framework}");
+
+        foreach (var dir in dependency_info_resources)
         {
             try
             {
                 Task<SourcePackageDependencyInfo>? infoTask = dir.ResolvePackage(
                     package: identity,
                     projectFramework: framework,
-                    cacheContext: cache_context,
+                    cacheContext: source_cache_context,
                     log: new NugetLogger(),
                     token: CancellationToken.None);
 
-                SourcePackageDependencyInfo spdi = infoTask.Result;
+                spdi = infoTask.Result;
 
                 if (Config.TRACE && spdi != null)
                     Console.WriteLine($"         url: {spdi.DownloadUri} hash: {spdi.PackageHash}");
-                return spdi;
+
+                if (spdi != null)
+                    spdi_by_identity[(identity, project_framework)] = spdi;
             }
             catch (Exception e)
             {
                 if (Config.TRACE)
                 {
-                    Console.WriteLine($"        Failed to collect SourcePackageDependencyInfo for package: {identity}");
-                    if (e.InnerException != null) Console.WriteLine(e.InnerException.Message);
+                    Console.WriteLine($"        Failed to collect SourcePackageDependencyInfo for package: {identity} from source: {dir}");
+                    if (e.InnerException != null)
+                        Console.WriteLine(e.InnerException.Message);
                 }
             }
         }
@@ -409,66 +425,99 @@ public class NugetApi
     /// </summary>
     /// <param name="identity">a PackageIdentity</param>
     /// <param name="with_details">if true, all fetches the download size, and SHA512 hash. Very slow!!</param>
-    public PackageDownload? GetPackageDownload(PackageIdentity identity, bool with_details = true)
+    public PackageDownload? GetPackageDownload(PackageIdentity identity, bool with_details = false)
     {
-        // Get download with download URL
-        PackageDownload download;
-        if (download_by_identity.ContainsKey(identity))
+        // Get download with download URL and checksum (not always there per https://github.com/NuGet/NuGetGallery/issues/9433)
+
+        if (Config.TRACE_NET)
+            Console.WriteLine($"    GetPackageDownload: {identity}, with_details: {with_details} project_framework: {project_framework}");
+
+        // try the cache
+        if (download_by_identity.TryGetValue((identity, project_framework), out PackageDownload? download))
         {
             if (Config.TRACE_NET)
-                Console.WriteLine($"    GetPackageDownload Cache Hit for package '{identity}'");
-            download = download_by_identity[identity];
-            if (download.IsEnhanced())
-                return download;
+                Console.WriteLine($"        Caching hit for package '{identity}'");
+            return download;
         }
         else
         {
-            string name_lower = identity.Id.ToLower();
-            string version_lower = identity.Version.ToString().ToLower();
-
-            download = new PackageDownload()
-            {
-                download_url = $"https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg"
-            };
-
-            download_by_identity[identity] = download;
+            // fetch from the API otherwise: this is the dependency info that contains these details
             if (Config.TRACE_NET)
-                Console.WriteLine($"    GetPackageDownload Cache miss for package '{identity}'");
-        }
-        if (!with_details)
-            return download;
+                Console.WriteLine($"        Caching miss: Fetching SPDI for package '{identity}'");
+            var spdi = GetResolvedSourcePackageDependencyInfo(
+                identity: identity,
+                framework: project_framework);
 
-        /// Fetch catalog-only data
-        PackageSearchMetadataRegistration? registration = FindPackageVersion(identity);
-        if (registration != null)
-        {
-            var package_catalog_url = registration.CatalogUri.ToString();
-            if (Config.TRACE_NET)
-                Console.WriteLine($"    Fetching catalog for package_catalog_url: {package_catalog_url}");
-
-            JObject catalog_entry;
-            if (catalog_cache.ContainsKey(package_catalog_url))
+            if (spdi != null)
             {
-                catalog_entry = catalog_cache[package_catalog_url];
+                download = PackageDownload.FromSpdi(spdi);
             }
             else
             {
-                // note: this is caching accross runs 
-                RequestCachePolicy policy = new(RequestCacheLevel.Default);
-                WebRequest request = WebRequest.Create(package_catalog_url);
-                request.CachePolicy = policy;
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
-                catalog_entry = JObject.Parse(catalog);
-                // note: this is caching accross calls in a run 
-                catalog_cache[package_catalog_url] = catalog_entry;
-            }
+                if (Config.TRACE_NET)
+                    Console.WriteLine($"        Crafting plain download for package '{identity}'");
 
-            string hash = catalog_entry["packageHash"]!.ToString();
-            download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
-            download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
-            download.size = (int)catalog_entry["packageSize"]!;
+                // Last resort we craft a synthetic download URL
+                string name_lower = identity.Id.ToLower();
+                string version_lower = identity.Version.ToString().ToLower();
+                download = new()
+                {
+                    download_url = $"https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg"
+                };
+            }
+            download_by_identity[(identity, project_framework)] = download;
         }
+
+        if (!with_details || (with_details && download.IsEnhanced()))
+            return download;
+
+        // We need to fetch the SHA512 (and the size)
+        // Note: we fetch catalog-only data, such as the SHA512, but the "catalog" is not used by
+        // the NuGet client and typically not available with other NuGet servers beyond nuget.org
+        // For now we do this ugly cooking. We could use instead the NuGet.Protocol.Catalog experimental library
+        // we should instead consider a HEAD request as explained at
+        // https://github.com/NuGet/NuGetGallery/issues/9433#issuecomment-1472286080
+        // which is going to be lighter weight! but will NOT work anywhere but on NuGet.org 
+        if (Config.TRACE_NET)
+            Console.WriteLine($"       Fetching registration for package '{identity}'");
+
+        PackageSearchMetadataRegistration? registration = FindPackageVersion(identity);
+        if (registration == null)
+            return download;
+
+        var package_catalog_url = registration.CatalogUri.ToString();
+        if (string.IsNullOrWhiteSpace(package_catalog_url))
+            return download;
+
+        if (Config.TRACE_NET)
+            Console.WriteLine($"       Fetching catalog for package_catalog_url: {package_catalog_url}");
+
+        JObject catalog_entry;
+        if (catalog_entry_by_catalog_url.ContainsKey(package_catalog_url))
+        {
+            catalog_entry = catalog_entry_by_catalog_url[package_catalog_url];
+        }
+        else
+        {
+            // note: this is caching accross runs 
+            RequestCachePolicy policy = new(RequestCacheLevel.Default);
+            WebRequest request = WebRequest.Create(package_catalog_url);
+            request.CachePolicy = policy;
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            catalog_entry = JObject.Parse(catalog);
+            // note: this is caching accross calls in a run 
+            catalog_entry_by_catalog_url[package_catalog_url] = catalog_entry;
+        }
+
+        string hash = catalog_entry["packageHash"]!.ToString();
+        download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
+        download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
+        download.size = (int)catalog_entry["packageSize"]!;
+
+        if (Config.TRACE_NET)
+            Console.WriteLine($"        download: {download}");
+        download_by_identity[(identity, project_framework)] = download;
         return download;
     }
 
@@ -477,30 +526,28 @@ public class NugetApi
     /// identities. Use the configured source_repositories for gathering.
     /// </summary>
     public ISet<SourcePackageDependencyInfo> GatherPotentialDependencies(
-        IEnumerable<PackageIdentity> direct_dependencies,
+        List<PackageIdentity> direct_dependencies,
         NuGetFramework framework)
     {
-        Console.WriteLine("\nNugetApi.GatherPotentialDependencies:");
-
         if (Config.TRACE)
         {
-            Console.WriteLine($"    direct_dependencies");
-            foreach (var id in direct_dependencies)
-                Console.WriteLine($"        {id.Id}@{id.Version}");
+            Console.WriteLine("\nNugetApi.GatherPotentialDependencies:");
+            Console.WriteLine("    direct_dependencies");
+            foreach (var pid in direct_dependencies)
+                Console.WriteLine($"        {pid} IsPrerelease: {pid.Version.IsPrerelease}");
         }
-
         var resolution_context = new ResolutionContext(
             dependencyBehavior: DependencyBehavior.Lowest,
-            includePrelease: false,
-            includeUnlisted: false,
+            includePrelease: true,
+            includeUnlisted: true,
             versionConstraints: VersionConstraints.None,
             gatherCache: gather_cache,
-            sourceCacheContext: cache_context
+            sourceCacheContext: source_cache_context
         );
 
         var target_names = new HashSet<string>(direct_dependencies.Select(p => p.Id)).ToList();
-
-        var context = new GatherContext
+        PackageSourceMapping psm = PackageSourceMapping.GetPackageSourceMapping(settings);
+        var context = new GatherContext(psm)
         {
             TargetFramework = framework,
             PrimarySources = source_repositories,
@@ -511,14 +558,18 @@ public class NugetApi
                 providers: new List<Lazy<INuGetResourceProvider>>()),
 
             PrimaryTargetIds = target_names,
-            PrimaryTargets = new List<PackageIdentity>(), //direct_dependencies.ToList(),
+            PrimaryTargets = direct_dependencies.ToList(),
 
             // skip/ignore any InstalledPackages
             InstalledPackages = new List<PackageIdentity>(),
             AllowDowngrades = false,
             ResolutionContext = resolution_context
         };
-        HashSet<SourcePackageDependencyInfo> gathered_dependencies = ResolverGather.GatherAsync(context: context, token: CancellationToken.None).Result;
+        HashSet<SourcePackageDependencyInfo> gathered_dependencies = ResolverGather.GatherAsync(
+            context: context,
+            token: CancellationToken.None
+        ).Result;
+
         if (Config.TRACE)
         {
             Console.WriteLine($"    all gathered dependencies: {gathered_dependencies.Count}");
@@ -528,13 +579,20 @@ public class NugetApi
                     Console.WriteLine($"        {spdi.Id}@{spdi.Version}");
             }
         }
+        foreach (var spdi in gathered_dependencies)
+        {
+            PackageIdentity identity = new(id: spdi.Id, version: spdi.Version);
+            spdi_by_identity[(identity, project_framework)] = spdi;
+        }
+
         return gathered_dependencies;
     }
 
     /// <summary>
-    /// Resolve the primary direct_references against all available_dependencies to an effective minimal set of dependencies
+    /// Resolve the primary direct_references against all available_dependencies to an
+    /// effective minimal set of dependencies
     /// </summary>
-    public HashSet<SourcePackageDependencyInfo> ResolveDependencies(
+    public HashSet<SourcePackageDependencyInfo> ResolveDependenciesForPackageConfig(
         IEnumerable<PackageReference> target_references,
         IEnumerable<SourcePackageDependencyInfo> available_dependencies)
     {
@@ -580,5 +638,286 @@ public class NugetApi
             }
         }
         return effective_dependencies;
+    }
+
+    /// <summary>
+    /// Resolve the primary direct_references against all available_dependencies to an
+    /// effective minimal set of dependencies using the PackageReference approach.
+    /// </summary>
+    public HashSet<SourcePackageDependencyInfo> ResolveDependenciesForPackageReference(
+        IEnumerable<PackageReference> target_references)
+    {
+        var nuget_logger = new NugetLogger();
+        var psm = PackageSourceMapping.GetPackageSourceMapping(settings);
+        var walk_context = new RemoteWalkContext(
+            cacheContext: source_cache_context,
+            packageSourceMapping: psm,
+            logger: nuget_logger);
+
+        var packages = new List<PackageId>();
+        foreach (var targetref in target_references)
+            packages.Add(PackageId.FromReference(targetref));
+
+        walk_context.ProjectLibraryProviders.Add(new ProjectLibraryProvider(packages));
+
+        foreach (var source_repo in source_repositories)
+        {
+            var provider = new SourceRepositoryDependencyProvider(
+                sourceRepository: source_repo,
+                logger: nuget_logger,
+                cacheContext: source_cache_context,
+                ignoreFailedSources: true,
+                ignoreWarning: true);
+
+            walk_context.RemoteLibraryProviders.Add(provider);
+        }
+
+        // we need a fake root lib as this is the only allowed input
+        var rootlib = new LibraryRange(
+            name: "root_project",
+            versionRange: VersionRange.Parse("1.0.0"),
+            typeConstraint: LibraryDependencyTarget.Project);
+
+        var walker = new RemoteDependencyWalker(walk_context);
+
+        var results = walker.WalkAsync(
+            library: rootlib,
+            framework: project_framework,
+            runtimeIdentifier: null,
+            runtimeGraph: RuntimeGraph.Empty,
+            recursive: true);
+        var resolved_graph = results.Result;
+        CheckGraphForErrors(resolved_graph);
+
+        var resolved_package_info_by_package_id = new Dictionary<PackageId, ResolvedPackageInfo>();
+
+        foreach (GraphNode<RemoteResolveResult> inner in resolved_graph.InnerNodes)
+        {
+            if (Config.TRACE)
+                Console.WriteLine($"  inner.Key.TypeConstraint: {inner.Key.TypeConstraint} name: {inner.Item.Key.Name} version: {inner.Item.Key.Version}");
+
+            FlattenGraph(inner, resolved_package_info_by_package_id);
+        }
+
+        HashSet<SourcePackageDependencyInfo> flat_dependencies = new();
+        foreach (KeyValuePair<PackageId, ResolvedPackageInfo> item in resolved_package_info_by_package_id)
+        {
+            var dependency = item.Key;
+            var dpi = item.Value;
+            var source_repo = dpi.remote_match?.Provider.Source;
+            if (Config.TRACE)
+                Console.WriteLine($"        flat_dependency: {dependency.Name} {dependency.Version} repo: {source_repo?.SourceUri}");
+
+            var spdi = new SourcePackageDependencyInfo(
+                id: dependency.Name,
+                version: new NuGetVersion(dependency.Version),
+                dependencies: new List<PackageDependency>(),
+                listed: true,
+                source: null
+            );
+            flat_dependencies.Add(spdi);
+        }
+        return flat_dependencies;
+    }
+
+    public static void FlattenGraph(
+        GraphNode<RemoteResolveResult> node,
+        Dictionary<PackageId, ResolvedPackageInfo> resolved_package_info_by_package_id)
+    {
+        if (node.Key.TypeConstraint != LibraryDependencyTarget.Package &&
+            node.Key.TypeConstraint != LibraryDependencyTarget.PackageProjectExternal)
+        {
+            throw new ArgumentException($"Package {node.Key.Name} cannot be resolved from the sources");
+        }
+
+        try
+        {
+            GraphItem<RemoteResolveResult> item = node.Item;
+            if (item == null)
+            {
+                string message = $"FlattenGraph: node Item is null '{node}'";
+                if (Config.TRACE)
+                {
+                    Console.WriteLine($"        {message}");
+                }
+                throw new Exception(message);
+            }
+            LibraryIdentity key = item.Key;
+            string name = key.Name;
+            string version = key.Version.ToNormalizedString();
+            bool isPrerelease = key.Version.IsPrerelease;
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: node.Item {node.Item} LibraryId: {key}");
+
+            var pid = new PackageId(
+                id: name,
+                version: version,
+                allow_prerelease_versions: isPrerelease);
+
+            var resolved_package_info = new ResolvedPackageInfo
+            {
+                package_id = pid,
+                remote_match = (RemoteMatch?)item.Data.Match
+            };
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: {pid} Library: {item.Data.Match.Library}");
+            if (!resolved_package_info_by_package_id.ContainsKey(resolved_package_info.package_id))
+                resolved_package_info_by_package_id.Add(resolved_package_info.package_id, resolved_package_info);
+
+            foreach (var nd in node.InnerNodes)
+            {
+                FlattenGraph(nd, resolved_package_info_by_package_id);
+            }
+        }
+        catch (Exception ex)
+        {
+            var message = $"Failed to resolve graph with: {node}";
+            if (Config.TRACE)
+                Console.WriteLine($"        FlattenGraph: {message}: {ex}");
+            throw new Exception(message, ex);
+        }
+    }
+
+    public static void CheckGraphForErrors(GraphNode<RemoteResolveResult> resolved_graph)
+    {
+        var analysis = resolved_graph.Analyze();
+        const bool allow_downgrades = false;
+        if (analysis.Downgrades.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var item in analysis.Downgrades)
+                    Console.WriteLine($"Downgrade from {item.DowngradedFrom.Key} to {item.DowngradedTo.Key}");
+            }
+
+            if (!allow_downgrades)
+            {
+                var name = analysis.Downgrades[0].DowngradedFrom.Item.Key.Name;
+                throw new InvalidOperationException($"Downgrade not allowed: {name}");
+            }
+        }
+
+        if (analysis.Cycles.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var item in analysis.Cycles)
+                    Console.WriteLine($"Cycle in dependencies: {item.Item.Key.Name},{item.Item.Key.Version.ToNormalizedString()}");
+            }
+
+            var name = analysis.Cycles[0].Key.Name;
+            throw new InvalidOperationException($"One package has dependency cycle: {name}");
+        }
+
+        if (analysis.VersionConflicts.Any())
+        {
+            if (Config.TRACE)
+            {
+                foreach (var itm in analysis.VersionConflicts)
+                {
+                    Console.WriteLine(
+                        $"Conflict for {itm.Conflicting.Key.Name},{itm.Conflicting.Key.VersionRange.ToNormalizedString()} resolved as "
+                        + $"{itm.Selected.Item.Key.Name},{itm.Selected.Item.Key.Version.ToNormalizedString()}");
+                }
+            }
+            var item = analysis.VersionConflicts[0];
+            var requested = $"{item.Conflicting.Key.Name},{item.Conflicting.Key.VersionRange.ToNormalizedString()}";
+            var selected = $"{item.Selected.Item.Key.Name},{item.Selected.Item.Key.Version.ToNormalizedString()}";
+            throw new InvalidOperationException($"One package has version conflict: requested: {requested}, selected: {selected}");
+        }
+    }
+}
+
+public class ResolvedPackageInfo
+{
+    public PackageId? package_id;
+
+    /// <summary>
+    /// The NuGet package resolution match.
+    /// </summary>
+    public RemoteMatch? remote_match;
+}
+
+internal class ProjectLibraryProvider : NuGet.DependencyResolver.IDependencyProvider
+{
+    private readonly ICollection<PackageId> package_ids;
+
+    public ProjectLibraryProvider(ICollection<PackageId> package_ids)
+    {
+        this.package_ids = package_ids;
+    }
+
+    public bool SupportsType(LibraryDependencyTarget libraryTypeFlag)
+    {
+        return libraryTypeFlag == LibraryDependencyTarget.Project;
+    }
+
+    public Library GetLibrary(LibraryRange library_range, NuGetFramework framework)
+    {
+        var dependencies = new List<LibraryDependency>();
+
+        foreach (var package in package_ids)
+        {
+            var lib = new LibraryDependency
+            {
+                LibraryRange =
+                    new LibraryRange(
+                        name: package.Name,
+                        versionRange: VersionRange.Parse(package.Version),
+                        typeConstraint: LibraryDependencyTarget.Package)
+            };
+
+            dependencies.Add(lib);
+        }
+
+        var root_project = new LibraryIdentity(
+            name: library_range.Name,
+            version: NuGetVersion.Parse("1.0.0"),
+            type: LibraryType.Project);
+
+        return new Library
+        {
+            LibraryRange = library_range,
+            Identity = root_project,
+            Dependencies = dependencies,
+            Resolved = true
+        };
+    }
+}
+
+/// <summary>
+/// A package with name and version or version range
+/// </summary>
+public class PackageId
+{
+    public string Name { get; }
+
+    /// <summary>
+    /// Version or version range as a string
+    /// </summary>
+    public string Version { get; }
+
+    public bool AllowPrereleaseVersions { get; }
+
+    public PackageId(string id, string version, bool allow_prerelease_versions = false)
+    {
+        Name = id;
+        Version = version;
+        AllowPrereleaseVersions = allow_prerelease_versions;
+    }
+
+    public override string ToString()
+    {
+        return $"{Name}@{Version}";
+    }
+
+    public static PackageId FromReference(PackageReference reference)
+    {
+        bool allow_prerel = reference.HasAllowedVersions && reference.AllowedVersions.MinVersion.IsPrerelease;
+        return new PackageId(
+            id:reference.PackageIdentity.Id,
+            version: reference.AllowedVersions.ToNormalizedString(),
+            allow_prerelease_versions: allow_prerel
+        );
     }
 }

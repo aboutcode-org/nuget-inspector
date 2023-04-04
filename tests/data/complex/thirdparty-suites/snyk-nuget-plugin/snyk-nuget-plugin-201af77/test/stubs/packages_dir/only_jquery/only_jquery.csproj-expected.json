@@ -75,11 +75,11 @@
           ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.2.1/jquery.3.2.1.nupkg",
-          "size": 372031,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "E137A7A3B34011A8C9C07321BB5909AA7E0841ADCC48B24A54F6B4846884A4DC1DB678849B7A1C4883A5123191B871C177D13B65CC0A8BDA18275EE753284949",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -94,9 +94,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -125,11 +129,11 @@
       ],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.2.1/jquery.3.2.1.nupkg",
-      "size": 372031,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "E137A7A3B34011A8C9C07321BB5909AA7E0841ADCC48B24A54F6B4846884A4DC1DB678849B7A1C4883A5123191B871C177D13B65CC0A8BDA18275EE753284949",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -144,7 +148,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.2.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

@@ -94,7 +94,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cyclonedx.core/5.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -146,7 +148,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jetbrains.annotations/2021.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -196,7 +200,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/json.more.net/1.4.4.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -246,7 +252,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jsonpointer.net/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -297,7 +305,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jsonschema.net/2.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -346,7 +356,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mcmaster.extensions.commandlineutils/4.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -394,16 +406,18 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Common",
-          "version": "6.2.2",
+          "version": "6.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Common@6.2.2",
+          "purl": "pkg:nuget/NuGet.Common@6.1.0",
           "primary_language": "C#",
           "description": "Common utilities and interfaces for all NuGet libraries.",
           "release_date": "",
@@ -420,38 +434,90 @@
             "nuget"
           ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.2/nuget.common.6.2.2.nupkg",
-          "size": 263883,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.1.0/nuget.common.6.1.0.nupkg",
+          "size": 252941,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "CB175FFE6E302492D4DF8014D70484101082CCE74F30ED9A8A523845841F569CED75C35A4660221D20142EAF78C967D6EDA1F0400432E175388D5ABA0EC9F829",
+          "sha512": "64D60D760F78F830B9E386C6701EAC653024B9DF56DD958287E3A896339F4AE9FF6CB5F4BE23C5E1586E1A168DE39D840655AC9947F0B0DBDDFD323150DB74BF",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.2.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.2/nuget.common.6.2.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.2.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.1.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.1.0/nuget.common.6.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGet.Common",
+          "version": "6.2.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGet.Common@6.2.1",
+          "primary_language": "C#",
+          "description": "Common utilities and interfaces for all NuGet libraries.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.1/nuget.common.6.2.1.nupkg",
+          "size": 257858,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "5A8290C750A9EE7EA2E729FCF4BD9FDC153DE0F6A4022C13FEDEEA8DA08A779402CC0082A938A2D7938A14B9CB7D64EF97E03026880412C131CB9508F8CC0B90",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.1/nuget.common.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.2.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Configuration",
-          "version": "6.2.2",
+          "version": "6.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Configuration@6.2.2",
+          "purl": "pkg:nuget/NuGet.Configuration@6.1.0",
           "primary_language": "C#",
           "description": "NuGet's configuration settings implementation.",
           "release_date": "",
@@ -468,29 +534,81 @@
             "nuget"
           ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.2/nuget.configuration.6.2.2.nupkg",
-          "size": 301838,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.1.0/nuget.configuration.6.1.0.nupkg",
+          "size": 298384,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "8CBAED961F71617EDA14441DDCB335D314173BC8F857EFDD842F1320F0955D5F3397CC1BAE01D8C788431DCC18A3B1549ACBEE0720CFF59EEA6FBD6364208272",
+          "sha512": "B22272C789C60D498160C88A7CF7A925CB364BEB7FB8519E269EB01897830D5634EC0782AF17996D1E0B6264C5C373B859C58E0A6271D4D8E0CCD78F974BEF46",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.2.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.2/nuget.configuration.6.2.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.2.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.1.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.1.0/nuget.configuration.6.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGet.Configuration",
+          "version": "6.2.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGet.Configuration@6.2.1",
+          "primary_language": "C#",
+          "description": "NuGet's configuration settings implementation.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.1/nuget.configuration.6.2.1.nupkg",
+          "size": 299820,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "35C41F7635C04F8DE833B5DEA8757F22D3A512EDA56DE669F3820D45D4F2C862238382A36755402A8AA9D8C96B685858C39DEDBCB3A2C2FB72E5A1886DC7EAB1",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.1/nuget.configuration.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.2.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -538,16 +656,18 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.dependencyresolver.core/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Frameworks",
-          "version": "6.2.2",
+          "version": "6.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Frameworks@6.2.2",
+          "purl": "pkg:nuget/NuGet.Frameworks@6.1.0",
           "primary_language": "C#",
           "description": "NuGet's understanding of target frameworks.",
           "release_date": "",
@@ -564,29 +684,81 @@
             "nuget"
           ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.2/nuget.frameworks.6.2.2.nupkg",
-          "size": 238850,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.1.0/nuget.frameworks.6.1.0.nupkg",
+          "size": 231566,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "17BE98945913F5C7776CF128B59311B816AF093E6C2ECCC8519130AC8AA8BBDAC3ADAB0373D741C3A3D8227AC890872468EBD9AF1718E4C23D3F4C2C3D4886C9",
+          "sha512": "CDF1F2B4A686F3F1B9401923C262486617126B4DE8DA2754109154CFC2BB5F19A7D11A47015C3CB5E918C077BEA523F2805D2637E31244224AFEA7B6094071CE",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.2.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.2/nuget.frameworks.6.2.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.2.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.1.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.1.0/nuget.frameworks.6.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGet.Frameworks",
+          "version": "6.2.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGet.Frameworks@6.2.1",
+          "primary_language": "C#",
+          "description": "NuGet's understanding of target frameworks.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.1/nuget.frameworks.6.2.1.nupkg",
+          "size": 238839,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "6ED3D889370FFA533E2D08D1A70DF0834BC90CB0D83C5CB406A4A0760139590A43132BF858FA7004E6DFC99985437EE273636AEC093F5E38AF0D3F5618FD5FF3",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.1/nuget.frameworks.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.2.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -634,16 +806,18 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.librarymodel/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Packaging",
-          "version": "6.2.2",
+          "version": "6.2.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Packaging@6.2.2",
+          "purl": "pkg:nuget/NuGet.Packaging@6.2.1",
           "primary_language": "C#",
           "description": "NuGet's understanding of packages. Reading nuspec, nupkgs and package signing.",
           "release_date": "",
@@ -660,29 +834,31 @@
             "nuget"
           ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.2/nuget.packaging.6.2.2.nupkg",
-          "size": 930086,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.1/nuget.packaging.6.2.1.nupkg",
+          "size": 930044,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "2056E73544CBDF3A660B48A688A872299A72EC0FD76034630890B12A9CB71727C24EFABC0A184DF21D1CC32A2D147336292A5D660002E4A28648572AE5F9A2BE",
+          "sha512": "0F946BF7DF38DEAD7DEFA5392085E43855FFFE7728224ABF88768734926A3E6C9FD4A54CD9C997067E17050D8F6E3D314B02F2864C66FA52996A0D23BC411792",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Packaging/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Packaging/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/6.2.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.2/nuget.packaging.6.2.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.packaging/6.2.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.1/nuget.packaging.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.packaging/6.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -730,7 +906,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.projectmodel/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -739,45 +917,58 @@
           "version": "6.2.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "",
+          "purl": "pkg:nuget/NuGet.Protocol@6.2.1",
           "primary_language": "C#",
-          "description": "",
+          "description": "NuGet's implementation for interacting with feeds. Contains functionality for all feed types.",
           "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
-          "size": 0,
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "nuget",
+            "protocol"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.2.1/nuget.protocol.6.2.1.nupkg",
+          "size": 1040791,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "",
+          "sha512": "07A5055DD9493331A55A195B0B1C89D98811F6B8F32F80F3CED1BC4F32A43DE81178EE962DA584B9A59D62B8A6793A81431C8C707416BDE0DF7CBE97F038D314",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Protocol/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.2.1/nuget.protocol.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/6.2.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
           "namespace": "",
           "name": "NuGet.Versioning",
-          "version": "6.2.2",
+          "version": "6.1.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NuGet.Versioning@6.2.2",
+          "purl": "pkg:nuget/NuGet.Versioning@6.1.0",
           "primary_language": "C#",
           "description": "NuGet's implementation of Semantic Versioning.",
           "release_date": "",
@@ -796,29 +987,83 @@
             "versioning"
           ],
           "homepage_url": "https://aka.ms/nugetprj",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.2/nuget.versioning.6.2.2.nupkg",
-          "size": 166982,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.1.0/nuget.versioning.6.1.0.nupkg",
+          "size": 159387,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "BAF504E849E5DC043C58ACE1AC723F54337702907DA6AC5934502D7BDA40BF2449B4B2EA51C95E3A3DBD8455F8DBEB9F81733B6EF893CFA94691F90E742B69E9",
+          "sha512": "243721304248D6364D7A889C350313F35C33261592B00057EC77081F3DA56DEA718E2958041B91DF5F3A8B6377210AD686AAC23D767A603E3E4B12D71E5AE758",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net6.0"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.2.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.2/nuget.versioning.6.2.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.2.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.1.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.1.0/nuget.versioning.6.1.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NuGet.Versioning",
+          "version": "6.2.1",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NuGet.Versioning@6.2.1",
+          "primary_language": "C#",
+          "description": "NuGet's implementation of Semantic Versioning.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Microsoft",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "semver",
+            "semantic",
+            "versioning"
+          ],
+          "homepage_url": "https://aka.ms/nugetprj",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.1/nuget.versioning.6.2.1.nupkg",
+          "size": 163080,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "C74F2C3C8DD97FC0F6D850437CB7245D480EB91214AB793012D16F33B06F16516FB5F75E6D4B823E191F520AAC20053204140AD729BE9295DAC1DA5D10A0D50D",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.2.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.1/nuget.versioning.6.2.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.2.1.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -868,7 +1113,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/protobuf-net/3.0.101.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -918,7 +1165,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/protobuf-net.core/3.0.101.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -964,7 +1213,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.componentmodel.annotations/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1010,7 +1261,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.formats.asn1/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1058,7 +1311,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.abstractions/17.0.24.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1104,7 +1359,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/6.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1150,7 +1407,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1196,7 +1455,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.pkcs/5.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1242,7 +1503,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.protecteddata/4.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1288,7 +1551,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encodings.web/6.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -1334,9 +1599,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/6.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -1384,7 +1653,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/cyclonedx.core/5.2.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1436,7 +1707,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jetbrains.annotations/2021.2.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1486,7 +1759,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/json.more.net/1.4.4.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1536,7 +1811,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jsonpointer.net/2.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1587,7 +1864,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jsonschema.net/2.2.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1636,7 +1915,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mcmaster.extensions.commandlineutils/4.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1684,16 +1965,18 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/13.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "NuGet.Common",
-      "version": "6.2.2",
+      "version": "6.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGet.Common@6.2.2",
+      "purl": "pkg:nuget/NuGet.Common@6.1.0",
       "primary_language": "C#",
       "description": "Common utilities and interfaces for all NuGet libraries.",
       "release_date": "",
@@ -1710,38 +1993,90 @@
         "nuget"
       ],
       "homepage_url": "https://aka.ms/nugetprj",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.2/nuget.common.6.2.2.nupkg",
-      "size": 263883,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.1.0/nuget.common.6.1.0.nupkg",
+      "size": 252941,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "CB175FFE6E302492D4DF8014D70484101082CCE74F30ED9A8A523845841F569CED75C35A4660221D20142EAF78C967D6EDA1F0400432E175388D5ABA0EC9F829",
+      "sha512": "64D60D760F78F830B9E386C6701EAC653024B9DF56DD958287E3A896339F4AE9FF6CB5F4BE23C5E1586E1A168DE39D840655AC9947F0B0DBDDFD323150DB74BF",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.2.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.2/nuget.common.6.2.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.2.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.1.0/nuget.common.6.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NuGet.Common",
+      "version": "6.2.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NuGet.Common@6.2.1",
+      "primary_language": "C#",
+      "description": "Common utilities and interfaces for all NuGet libraries.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.1/nuget.common.6.2.1.nupkg",
+      "size": 257858,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "5A8290C750A9EE7EA2E729FCF4BD9FDC153DE0F6A4022C13FEDEEA8DA08A779402CC0082A938A2D7938A14B9CB7D64EF97E03026880412C131CB9508F8CC0B90",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Common/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Common/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.2.1/nuget.common.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/6.2.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "NuGet.Configuration",
-      "version": "6.2.2",
+      "version": "6.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGet.Configuration@6.2.2",
+      "purl": "pkg:nuget/NuGet.Configuration@6.1.0",
       "primary_language": "C#",
       "description": "NuGet's configuration settings implementation.",
       "release_date": "",
@@ -1758,29 +2093,81 @@
         "nuget"
       ],
       "homepage_url": "https://aka.ms/nugetprj",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.2/nuget.configuration.6.2.2.nupkg",
-      "size": 301838,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.1.0/nuget.configuration.6.1.0.nupkg",
+      "size": 298384,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "8CBAED961F71617EDA14441DDCB335D314173BC8F857EFDD842F1320F0955D5F3397CC1BAE01D8C788431DCC18A3B1549ACBEE0720CFF59EEA6FBD6364208272",
+      "sha512": "B22272C789C60D498160C88A7CF7A925CB364BEB7FB8519E269EB01897830D5634EC0782AF17996D1E0B6264C5C373B859C58E0A6271D4D8E0CCD78F974BEF46",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.2.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.2/nuget.configuration.6.2.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.2.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.1.0/nuget.configuration.6.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NuGet.Configuration",
+      "version": "6.2.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NuGet.Configuration@6.2.1",
+      "primary_language": "C#",
+      "description": "NuGet's configuration settings implementation.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.1/nuget.configuration.6.2.1.nupkg",
+      "size": 299820,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "35C41F7635C04F8DE833B5DEA8757F22D3A512EDA56DE669F3820D45D4F2C862238382A36755402A8AA9D8C96B685858C39DEDBCB3A2C2FB72E5A1886DC7EAB1",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Configuration/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Configuration/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.2.1/nuget.configuration.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.configuration/6.2.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1828,16 +2215,18 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.dependencyresolver.core/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "NuGet.Frameworks",
-      "version": "6.2.2",
+      "version": "6.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGet.Frameworks@6.2.2",
+      "purl": "pkg:nuget/NuGet.Frameworks@6.1.0",
       "primary_language": "C#",
       "description": "NuGet's understanding of target frameworks.",
       "release_date": "",
@@ -1854,29 +2243,81 @@
         "nuget"
       ],
       "homepage_url": "https://aka.ms/nugetprj",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.2/nuget.frameworks.6.2.2.nupkg",
-      "size": 238850,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.1.0/nuget.frameworks.6.1.0.nupkg",
+      "size": 231566,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "17BE98945913F5C7776CF128B59311B816AF093E6C2ECCC8519130AC8AA8BBDAC3ADAB0373D741C3A3D8227AC890872468EBD9AF1718E4C23D3F4C2C3D4886C9",
+      "sha512": "CDF1F2B4A686F3F1B9401923C262486617126B4DE8DA2754109154CFC2BB5F19A7D11A47015C3CB5E918C077BEA523F2805D2637E31244224AFEA7B6094071CE",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.2.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.2/nuget.frameworks.6.2.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.2.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.1.0/nuget.frameworks.6.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NuGet.Frameworks",
+      "version": "6.2.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NuGet.Frameworks@6.2.1",
+      "primary_language": "C#",
+      "description": "NuGet's understanding of target frameworks.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.1/nuget.frameworks.6.2.1.nupkg",
+      "size": 238839,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "6ED3D889370FFA533E2D08D1A70DF0834BC90CB0D83C5CB406A4A0760139590A43132BF858FA7004E6DFC99985437EE273636AEC093F5E38AF0D3F5618FD5FF3",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Frameworks/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Frameworks/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.2.1/nuget.frameworks.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.frameworks/6.2.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1924,16 +2365,18 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.librarymodel/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "NuGet.Packaging",
-      "version": "6.2.2",
+      "version": "6.2.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGet.Packaging@6.2.2",
+      "purl": "pkg:nuget/NuGet.Packaging@6.2.1",
       "primary_language": "C#",
       "description": "NuGet's understanding of packages. Reading nuspec, nupkgs and package signing.",
       "release_date": "",
@@ -1950,29 +2393,31 @@
         "nuget"
       ],
       "homepage_url": "https://aka.ms/nugetprj",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.2/nuget.packaging.6.2.2.nupkg",
-      "size": 930086,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.1/nuget.packaging.6.2.1.nupkg",
+      "size": 930044,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "2056E73544CBDF3A660B48A688A872299A72EC0FD76034630890B12A9CB71727C24EFABC0A184DF21D1CC32A2D147336292A5D660002E4A28648572AE5F9A2BE",
+      "sha512": "0F946BF7DF38DEAD7DEFA5392085E43855FFFE7728224ABF88768734926A3E6C9FD4A54CD9C997067E17050D8F6E3D314B02F2864C66FA52996A0D23BC411792",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Packaging/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Packaging/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/6.2.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.2/nuget.packaging.6.2.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.packaging/6.2.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Packaging/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.2.1/nuget.packaging.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.packaging/6.2.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2020,7 +2465,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.projectmodel/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2029,45 +2476,58 @@
       "version": "6.2.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "",
+      "purl": "pkg:nuget/NuGet.Protocol@6.2.1",
       "primary_language": "C#",
-      "description": "",
+      "description": "NuGet's implementation for interacting with feeds. Contains functionality for all feed types.",
       "release_date": "",
-      "parties": [],
-      "keywords": [],
-      "homepage_url": "",
-      "download_url": "",
-      "size": 0,
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "nuget",
+        "protocol"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.2.1/nuget.protocol.6.2.1.nupkg",
+      "size": 1040791,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "",
+      "sha512": "07A5055DD9493331A55A195B0B1C89D98811F6B8F32F80F3CED1BC4F32A43DE81178EE962DA584B9A59D62B8A6793A81431C8C707416BDE0DF7CBE97F038D314",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Protocol/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Protocol/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.2.1/nuget.protocol.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.protocol/6.2.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
       "namespace": "",
       "name": "NuGet.Versioning",
-      "version": "6.2.2",
+      "version": "6.1.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NuGet.Versioning@6.2.2",
+      "purl": "pkg:nuget/NuGet.Versioning@6.1.0",
       "primary_language": "C#",
       "description": "NuGet's implementation of Semantic Versioning.",
       "release_date": "",
@@ -2086,29 +2546,83 @@
         "versioning"
       ],
       "homepage_url": "https://aka.ms/nugetprj",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.2/nuget.versioning.6.2.2.nupkg",
-      "size": 166982,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.1.0/nuget.versioning.6.1.0.nupkg",
+      "size": 159387,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "BAF504E849E5DC043C58ACE1AC723F54337702907DA6AC5934502D7BDA40BF2449B4B2EA51C95E3A3DBD8455F8DBEB9F81733B6EF893CFA94691F90E742B69E9",
+      "sha512": "243721304248D6364D7A889C350313F35C33261592B00057EC77081F3DA56DEA718E2958041B91DF5F3A8B6377210AD686AAC23D767A603E3E4B12D71E5AE758",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.2.2/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.1.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net6.0"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.2.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.2/nuget.versioning.6.2.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.2.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.1.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.1.0/nuget.versioning.6.1.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NuGet.Versioning",
+      "version": "6.2.1",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NuGet.Versioning@6.2.1",
+      "primary_language": "C#",
+      "description": "NuGet's implementation of Semantic Versioning.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Microsoft",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "semver",
+        "semantic",
+        "versioning"
+      ],
+      "homepage_url": "https://aka.ms/nugetprj",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.1/nuget.versioning.6.2.1.nupkg",
+      "size": 163080,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "C74F2C3C8DD97FC0F6D850437CB7245D480EB91214AB793012D16F33B06F16516FB5F75E6D4B823E191F520AAC20053204140AD729BE9295DAC1DA5D10A0D50D",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NuGet.Versioning/6.2.1/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NuGet.Versioning/6.2.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.2.1/nuget.versioning.6.2.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.versioning/6.2.1.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2158,7 +2672,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/protobuf-net/3.0.101.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2208,7 +2724,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/protobuf-net.core/3.0.101.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2254,7 +2772,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.componentmodel.annotations/5.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2300,7 +2820,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.formats.asn1/5.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2348,7 +2870,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.io.abstractions/17.0.24.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2394,7 +2918,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.compilerservices.unsafe/6.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2440,7 +2966,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.cng/5.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2486,7 +3014,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.pkcs/5.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2532,7 +3062,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.security.cryptography.protecteddata/4.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2578,7 +3110,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.encodings.web/6.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -2624,7 +3158,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.text.json/6.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

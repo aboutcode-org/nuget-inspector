@@ -73,11 +73,11 @@
           "keywords": [],
           "homepage_url": "http://extcore.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/extcore.infrastructure/5.1.0/extcore.infrastructure.5.1.0.nupkg",
-          "size": 15308,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "F7403D403AE0A3D049CE76A48E9849110E2800ABEFACEBE650C606EC5252C3E0A9A1FDE9DB2D3FD3FADCFFE0E77F41D5BDD2F85B90E909E37A78C241269FBBAC",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -92,7 +92,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/extcore.infrastructure/5.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -117,11 +119,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/3.0.0/microsoft.extensions.dependencymodel.3.0.0.nupkg",
-          "size": 152079,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "741263BF98C1739B8FA218CF70898079E5A0BAA326B06E8985FBC6FEB11B31B6E48BB4CC6CFBB9EED463E514F4774A9B32A3D5CDA97A78F2343B2FDFEA479337",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -136,7 +138,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencymodel/3.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -161,11 +165,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/3.0.0/microsoft.extensions.dependencymodel.3.0.0.nupkg",
-          "size": 152079,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "741263BF98C1739B8FA218CF70898079E5A0BAA326B06E8985FBC6FEB11B31B6E48BB4CC6CFBB9EED463E514F4774A9B32A3D5CDA97A78F2343B2FDFEA479337",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -180,7 +184,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencymodel/3.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -205,11 +211,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.loader/4.3.0/system.runtime.loader.4.3.0.nupkg",
-          "size": 48094,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "1BA5A6BC023DC8E122E46396B594F7FA92561D719A6ADE7DA99290ED9EF97C6A5A72594F98B8B334566F6578F70B2B12C8C91006C9B9D1BF714CCFF1F4BDF209",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -224,7 +230,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.loader/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -249,11 +257,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.loader/4.3.0/system.runtime.loader.4.3.0.nupkg",
-          "size": 48094,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "1BA5A6BC023DC8E122E46396B594F7FA92561D719A6ADE7DA99290ED9EF97C6A5A72594F98B8B334566F6578F70B2B12C8C91006C9B9D1BF714CCFF1F4BDF209",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -268,9 +276,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.loader/4.3.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -297,11 +309,11 @@
       "keywords": [],
       "homepage_url": "http://extcore.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/extcore.infrastructure/5.1.0/extcore.infrastructure.5.1.0.nupkg",
-      "size": 15308,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "F7403D403AE0A3D049CE76A48E9849110E2800ABEFACEBE650C606EC5252C3E0A9A1FDE9DB2D3FD3FADCFFE0E77F41D5BDD2F85B90E909E37A78C241269FBBAC",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -316,7 +328,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/extcore.infrastructure/5.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -341,11 +355,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/3.0.0/microsoft.extensions.dependencymodel.3.0.0.nupkg",
-      "size": 152079,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "741263BF98C1739B8FA218CF70898079E5A0BAA326B06E8985FBC6FEB11B31B6E48BB4CC6CFBB9EED463E514F4774A9B32A3D5CDA97A78F2343B2FDFEA479337",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -360,7 +374,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencymodel/3.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -385,11 +401,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/3.0.0/microsoft.extensions.dependencymodel.3.0.0.nupkg",
-      "size": 152079,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "741263BF98C1739B8FA218CF70898079E5A0BAA326B06E8985FBC6FEB11B31B6E48BB4CC6CFBB9EED463E514F4774A9B32A3D5CDA97A78F2343B2FDFEA479337",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -404,7 +420,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.extensions.dependencymodel/3.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -429,11 +447,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.loader/4.3.0/system.runtime.loader.4.3.0.nupkg",
-      "size": 48094,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "1BA5A6BC023DC8E122E46396B594F7FA92561D719A6ADE7DA99290ED9EF97C6A5A72594F98B8B334566F6578F70B2B12C8C91006C9B9D1BF714CCFF1F4BDF209",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -448,7 +466,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.loader/4.3.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -473,11 +493,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.runtime.loader/4.3.0/system.runtime.loader.4.3.0.nupkg",
-      "size": 48094,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "1BA5A6BC023DC8E122E46396B594F7FA92561D719A6ADE7DA99290ED9EF97C6A5A72594F98B8B334566F6578F70B2B12C8C91006C9B9D1BF714CCFF1F4BDF209",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -492,7 +512,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.runtime.loader/4.3.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

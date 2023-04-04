@@ -71,20 +71,21 @@
             }
           ],
           "keywords": [
-            "Microsoft",
-            "Azure",
+            "Microsoft,",
+            "Azure,",
+            "Configuration,",
             "Configuration",
-            "Manager",
+            "Manager,",
             "Cloud",
             "windowsazureofficial"
           ],
           "homepage_url": "http://go.microsoft.com/fwlink/?linkid=252450",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.windowsazure.configurationmanager/2.0.0/microsoft.windowsazure.configurationmanager.2.0.0.nupkg",
-          "size": 22850,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "C15924475369DF1727CC55EDB822BFE6EA0C9564B44DCD557E57B3A79A012B475B40545DC4C19F28AF981E084AAAEF3DB97BCE96750E912C86132CAB778B938B",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -96,12 +97,14 @@
           "extra_data": {
             "framework": "net45"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.WindowsAzure.ConfigurationManager/2.0.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.windowsazure.configurationmanager/2.0.0/microsoft.windowsazure.configurationmanager.2.0.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.windowsazure.configurationmanager/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -143,11 +146,11 @@
           ],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
           "download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/2.1.0/windowsazure.servicebus.2.1.0.nupkg",
-          "size": 1045934,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6D51456D06D9128E535DA42DE102419A162751EF832E81A1F7F22EF6E02C550DF5C3F2F47C7B89D776040B605867E7E9366E21D6F2D7B1B8441740C8F0BF0114",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -159,14 +162,18 @@
           "extra_data": {
             "framework": "net45"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/WindowsAzure.ServiceBus/2.1.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/2.1.0/windowsazure.servicebus.2.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/windowsazure.servicebus/2.1.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -191,20 +198,21 @@
         }
       ],
       "keywords": [
-        "Microsoft",
-        "Azure",
+        "Microsoft,",
+        "Azure,",
+        "Configuration,",
         "Configuration",
-        "Manager",
+        "Manager,",
         "Cloud",
         "windowsazureofficial"
       ],
       "homepage_url": "http://go.microsoft.com/fwlink/?linkid=252450",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.windowsazure.configurationmanager/2.0.0/microsoft.windowsazure.configurationmanager.2.0.0.nupkg",
-      "size": 22850,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "C15924475369DF1727CC55EDB822BFE6EA0C9564B44DCD557E57B3A79A012B475B40545DC4C19F28AF981E084AAAEF3DB97BCE96750E912C86132CAB778B938B",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -216,12 +224,14 @@
       "extra_data": {
         "framework": "net45"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.WindowsAzure.ConfigurationManager/2.0.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.windowsazure.configurationmanager/2.0.0/microsoft.windowsazure.configurationmanager.2.0.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.windowsazure.configurationmanager/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -263,11 +273,11 @@
       ],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=218964",
       "download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/2.1.0/windowsazure.servicebus.2.1.0.nupkg",
-      "size": 1045934,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6D51456D06D9128E535DA42DE102419A162751EF832E81A1F7F22EF6E02C550DF5C3F2F47C7B89D776040B605867E7E9366E21D6F2D7B1B8441740C8F0BF0114",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -279,12 +289,14 @@
       "extra_data": {
         "framework": "net45"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/WindowsAzure.ServiceBus/2.1.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/windowsazure.servicebus/2.1.0/windowsazure.servicebus.2.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/windowsazure.servicebus/2.1.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

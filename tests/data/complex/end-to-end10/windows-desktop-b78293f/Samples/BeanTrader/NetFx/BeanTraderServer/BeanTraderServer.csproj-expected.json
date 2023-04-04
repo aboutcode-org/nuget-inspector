@@ -53,6 +53,57 @@
         {
           "type": "nuget",
           "namespace": "",
+          "name": "Serilog",
+          "version": "2.8.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Serilog@2.8.0",
+          "primary_language": "C#",
+          "description": "Simple .NET logging with fully-structured events",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Serilog Contributors",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "serilog",
+            "logging",
+            "semantic",
+            "structured"
+          ],
+          "homepage_url": "https://github.com/serilog/serilog",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.8.0/serilog.2.8.0.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.apache.org/licenses/LICENSE-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {},
+          "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.8.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.8.0/serilog.2.8.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog/2.8.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
           "name": "Serilog.Sinks.Console",
           "version": "3.1.1",
           "qualifiers": "",
@@ -77,11 +128,11 @@
           ],
           "homepage_url": "https://github.com/serilog/serilog-sinks-console",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.console/3.1.1/serilog.sinks.console.3.1.1.nupkg",
-          "size": 60982,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "7C8D1FC4AFDD715D3261D02A76B2781164BB0274B2BE5C83355D07919177D8060D1EEED35CA9E637A410C85262C021D9169EA0864B15021C21FAD1ECA651C314",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -96,59 +147,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog.sinks.console/3.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": [
-            {
-              "type": "nuget",
-              "namespace": "",
-              "name": "Serilog",
-              "version": "2.8.0",
-              "qualifiers": "",
-              "subpath": "",
-              "purl": "pkg:nuget/Serilog@2.8.0",
-              "primary_language": "C#",
-              "description": "Simple .NET logging with fully-structured events",
-              "release_date": "",
-              "parties": [
-                {
-                  "type": "organization",
-                  "role": "author",
-                  "name": "Serilog Contributors",
-                  "email": "",
-                  "url": ""
-                }
-              ],
-              "keywords": [
-                "serilog",
-                "logging",
-                "semantic",
-                "structured"
-              ],
-              "homepage_url": "https://github.com/serilog/serilog",
-              "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.8.0/serilog.2.8.0.nupkg",
-              "size": 481573,
-              "sha1": "",
-              "md5": "",
-              "sha256": "",
-              "sha512": "DE3B653692C51B3D7A644619D25A217D49552ECA60F835BA91154D0B6ACEB627BA5F2F9F2226EDA85499EA5411751295E8447D58BC60F90DDE9BA7FA65C709DC",
-              "bug_tracking_url": "",
-              "code_view_url": "",
-              "vcs_url": "",
-              "copyright": "",
-              "license_expression": "",
-              "declared_license": "LicenseUrl: https://www.apache.org/licenses/LICENSE-2.0",
-              "notice_text": "",
-              "source_packages": [],
-              "extra_data": {},
-              "repository_homepage_url": "https://www.nuget.org/packages/Serilog/2.8.0?_src=template",
-              "repository_download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.8.0/serilog.2.8.0.nupkg",
-              "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog/2.8.0.json",
-              "datasource_id": "",
-              "datafile_path": "",
-              "dependencies": []
-            }
-          ]
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -180,11 +185,11 @@
       ],
       "homepage_url": "https://github.com/serilog/serilog",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.8.0/serilog.2.8.0.nupkg",
-      "size": 481573,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "DE3B653692C51B3D7A644619D25A217D49552ECA60F835BA91154D0B6ACEB627BA5F2F9F2226EDA85499EA5411751295E8447D58BC60F90DDE9BA7FA65C709DC",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -199,7 +204,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog/2.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -228,11 +235,11 @@
       ],
       "homepage_url": "https://github.com/serilog/serilog-sinks-console",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.console/3.1.1/serilog.sinks.console.3.1.1.nupkg",
-      "size": 60982,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "7C8D1FC4AFDD715D3261D02A76B2781164BB0274B2BE5C83355D07919177D8060D1EEED35CA9E637A410C85262C021D9169EA0864B15021C21FAD1ECA651C314",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -247,7 +254,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/serilog.sinks.console/3.1.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

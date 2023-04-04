@@ -75,11 +75,11 @@
           ],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-          "size": 1613054,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -94,7 +94,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -130,11 +132,11 @@
           ],
           "homepage_url": "https://nunit.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nunit/3.12.0/nunit.3.12.0.nupkg",
-          "size": 3463090,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "1C0870171AFE67E3C97FC857CDCEF8ECD79CBEC0F0119FB75FC480E7E18844CE37180CB5029F9340F307B160A78AC7DEB39BCF675FDADA677FF75BBEB21A13B1",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -149,9 +151,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/3.12.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -180,11 +186,11 @@
       ],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
-      "size": 1613054,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "DA8917A5347051C8106F4EA9BADE4BC300A3B60A05A3BE3390F92C8DCBCEA67223C7B4DA8065B9228042000E25B99C75FAD7E2221A0DAA8888ED8EF3C161B228",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -199,7 +205,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/9.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -235,11 +243,11 @@
       ],
       "homepage_url": "https://nunit.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nunit/3.12.0/nunit.3.12.0.nupkg",
-      "size": 3463090,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "1C0870171AFE67E3C97FC857CDCEF8ECD79CBEC0F0119FB75FC480E7E18844CE37180CB5029F9340F307B160A78AC7DEB39BCF675FDADA677FF75BBEB21A13B1",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -254,7 +262,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/3.12.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

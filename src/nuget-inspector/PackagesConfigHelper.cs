@@ -35,11 +35,11 @@ public class PackagesConfigHelper
         return result;
     }
 
-    public List<BasePackage> ProcessAll(List<Dependency> packages)
+    public List<BasePackage> ProcessAll(List<Dependency> dependencies)
     {
-        foreach (var package in packages)
+        foreach (var dependency in dependencies)
         {
-            Add(id: package.name!, name: package.name, range: package.version_range, framework: package.framework);
+            Add(id: dependency.name!, name: dependency.name, range: dependency.version_range, framework: dependency.framework);
         }
 
         var builder = new PackageTree();
@@ -50,8 +50,7 @@ public class PackagesConfigHelper
             {
                 if (!ResolutionDatas.ContainsKey(key: dep))
                 {
-                    throw new Exception(
-                                        message: $"Encountered a dependency but was unable to resolve a package for it: {dep}");
+                    throw new Exception($"Unable to resolve dependencies: {dep}");
                 }
                 else
                 {
@@ -63,8 +62,8 @@ public class PackagesConfigHelper
 
             builder.AddOrUpdatePackage(
                 base_package: new BasePackage(name: data.Name!,
-                version: data.CurrentVersion?.ToNormalizedString()),
-                dependencies: deps!);
+                    version: data.CurrentVersion?.ToNormalizedString()),
+                    dependencies: deps!);
         }
 
         return builder.GetPackageList();
@@ -105,7 +104,7 @@ public class PackagesConfigHelper
         var allVersions = FindAllVersionRangesFor(id: id);
         if (data.ExternalVersionRange != null) allVersions.Add(item: data.ExternalVersionRange);
         var combo = VersionRange.CommonSubSet(ranges: allVersions);
-        var best = NugetApi.FindPackageVersion(id: id, versionRange: combo);
+        var best = NugetApi.FindPackageVersion(name: id, version_range: combo);
 
         if (best == null)
         {

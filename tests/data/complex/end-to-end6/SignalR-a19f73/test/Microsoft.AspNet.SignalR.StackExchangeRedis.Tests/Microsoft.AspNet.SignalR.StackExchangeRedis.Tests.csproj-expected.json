@@ -9,7 +9,9 @@
       ],
       "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
-      "warnings": [],
+      "warnings": [
+        "Unsupported framework found: $(DefaultTestFrameworks) in /complex/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests/Microsoft.AspNet.SignalR.StackExchangeRedis.Tests.csproj, falling back to 'any' framework."
+      ],
       "errors": []
     }
   ],
@@ -81,11 +83,11 @@
           ],
           "homepage_url": "http://www.castleproject.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/castle.core/4.0.0/castle.core.4.0.0.nupkg",
-          "size": 759090,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "B10C8CA39DE4C94D0744383F54B62084DD53458F0FAA82E24BD9A93239B6D753114D1B96E904CE3D09FB5EF8FBE172915E0CF4317595B0D34CB95B4A706660DB",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -97,12 +99,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Castle.Core/4.0.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/castle.core/4.0.0/castle.core.4.0.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/castle.core/4.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -138,11 +142,11 @@
           ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.8.0/microsoft.codecoverage.15.8.0.nupkg",
-          "size": 3135998,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "720717D9CFCADF91AB2235E45305A8A761B21BF62C2D5A36C272FFD844B33AAAF8576D45AEB09562E8690A5BFF6C3F34FABC17C88A72BA5A925F534135E02D30",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -154,12 +158,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeCoverage/15.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.8.0/microsoft.codecoverage.15.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codecoverage/15.8.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -193,11 +199,11 @@
           ],
           "homepage_url": "https://github.com/microsoft/vstest/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.8.0/microsoft.net.test.sdk.15.8.0.nupkg",
-          "size": 26927,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "C919E486FCF44574469A82D9A9C2FDD7B680F06A04809472C619A57F50A817153FEA6B187883F15496C11673298923A6F2BAD8DA325E7569C950E0D045B6A56B",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -209,12 +215,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/15.8.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.8.0/microsoft.net.test.sdk.15.8.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/15.8.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -247,11 +255,11 @@
           ],
           "homepage_url": "http://www.moqthis.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.7.8/moq.4.7.8.nupkg",
-          "size": 222221,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "1B9023594F80B63A17D7E13A4ED886C43F511BEE5CFBFD1D4B6674B4E082B154622B4C79460F738204F9ADC61CC4FE164C622B90712A211FEFDE56DB3FE567E5",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -263,12 +271,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/Moq/4.7.8?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.7.8/moq.4.7.8.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.7.8.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -293,11 +303,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg",
-          "size": 20737,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "A91F01401F04564288F9F3E956F2CB0DD73911FFC67C752BB101585DE39A08DA80D628E1649097965155B997C87F447F5A9675509B683618EB1C1F310BC7CF26",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -309,12 +319,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -339,11 +351,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
-          "size": 75852,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "957D3A0C6D048F30BA53E4155424E16838C6047324F6A6289A7128B4AEE8C6382F5B78F1156E201164AF45EDBF1A5C818C8D08086076D55826BD2E4BE4C33A5A",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -355,12 +367,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.2?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -383,19 +397,19 @@
             }
           ],
           "keywords": [
-            "xunit.analyzers",
-            "analyzers",
-            "roslyn",
-            "xunit",
+            "xunit.analyzers,",
+            "analyzers,",
+            "roslyn,",
+            "xunit,",
             "xunit.net"
           ],
           "homepage_url": "https://github.com/xunit/xunit.analyzers",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg",
-          "size": 107050,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "530E84AA43A6B74232B2D52DCE453853C8B1084CFEA62AA0733CA83D3D344703C3B161ED5B0CDE763B014134BA3F5876FAEC0317AC3952962DE7F49213B79EC5",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -407,12 +421,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.analyzers/0.10.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -437,11 +453,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
-          "size": 113966,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "DD01225C4547C4B87E351BE13E28DC631FBBA277CE862ABCACA5657610ED549F5AFEB2C06F09D1D035119FC83832207081E8EEAAD6BE00F6BAD4465D182F8BF1",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -453,12 +469,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.assert/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -483,11 +501,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg",
-          "size": 22662,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "A69D1FD5FA55AA803E7B22D63D1DDB42C8FC97B71B1595C44EA35AD5A04658EDDEC15DE5F3D5AFADE750B8480EB0D23D7DFC3B4C1DB8A14FE218AC0156BEF15A",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -499,12 +517,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.core/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -529,11 +549,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
-          "size": 278959,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "4D3C560932A8B0785FBC7D7DE47E8D848BF8D265D9A5A88153904822378C1C378A4F776BCE00B8DFA1C7E1314728CF6135518C9D81B87FE8D48C4B6020BD03EF",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -545,12 +565,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.core/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -575,11 +597,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
-          "size": 481651,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "ADC865D290201F1DBDD5BBE678ED880F9DD39DA42AD3A90DB09DDA95A0448A7BF3CF23AD92F9A8C463ECD408042E383D4914D394EBA10077494D325ED0DDB361",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -591,12 +613,14 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -621,11 +645,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/xunit/xunit",
           "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg",
-          "size": 699714,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "D24EBA406BD5643D37180E7F19585C20DCC0BBF24F345633CF2F437B3E0A199280ABAAAC615EDA8CDDB64B24FC99B5749239C940361FEC86993FB9FFD76952A1",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -637,14 +661,18 @@
           "extra_data": {
             "framework": "any"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.0?_src=template",
+          "repository_homepage_url": "",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -679,11 +707,11 @@
       ],
       "homepage_url": "http://www.castleproject.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/castle.core/4.0.0/castle.core.4.0.0.nupkg",
-      "size": 759090,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "B10C8CA39DE4C94D0744383F54B62084DD53458F0FAA82E24BD9A93239B6D753114D1B96E904CE3D09FB5EF8FBE172915E0CF4317595B0D34CB95B4A706660DB",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -695,12 +723,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Castle.Core/4.0.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/castle.core/4.0.0/castle.core.4.0.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/castle.core/4.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -736,11 +766,11 @@
       ],
       "homepage_url": "https://github.com/microsoft/vstest/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.8.0/microsoft.codecoverage.15.8.0.nupkg",
-      "size": 3135998,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "720717D9CFCADF91AB2235E45305A8A761B21BF62C2D5A36C272FFD844B33AAAF8576D45AEB09562E8690A5BFF6C3F34FABC17C88A72BA5A925F534135E02D30",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -752,12 +782,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.CodeCoverage/15.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/15.8.0/microsoft.codecoverage.15.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.codecoverage/15.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -791,11 +823,11 @@
       ],
       "homepage_url": "https://github.com/microsoft/vstest/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.8.0/microsoft.net.test.sdk.15.8.0.nupkg",
-      "size": 26927,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "C919E486FCF44574469A82D9A9C2FDD7B680F06A04809472C619A57F50A817153FEA6B187883F15496C11673298923A6F2BAD8DA325E7569C950E0D045B6A56B",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -807,12 +839,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/15.8.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/15.8.0/microsoft.net.test.sdk.15.8.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.test.sdk/15.8.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -845,11 +879,11 @@
       ],
       "homepage_url": "http://www.moqthis.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.7.8/moq.4.7.8.nupkg",
-      "size": 222221,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "1B9023594F80B63A17D7E13A4ED886C43F511BEE5CFBFD1D4B6674B4E082B154622B4C79460F738204F9ADC61CC4FE164C622B90712A211FEFDE56DB3FE567E5",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -861,12 +895,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/Moq/4.7.8?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/moq/4.7.8/moq.4.7.8.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moq/4.7.8.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -891,11 +927,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg",
-      "size": 20737,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "A91F01401F04564288F9F3E956F2CB0DD73911FFC67C752BB101585DE39A08DA80D628E1649097965155B997C87F447F5A9675509B683618EB1C1F310BC7CF26",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -907,12 +943,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit/2.4.0/xunit.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -937,11 +975,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
-      "size": 75852,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "957D3A0C6D048F30BA53E4155424E16838C6047324F6A6289A7128B4AEE8C6382F5B78F1156E201164AF45EDBF1A5C818C8D08086076D55826BD2E4BE4C33A5A",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -953,12 +991,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.abstractions/2.0.2?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.2/xunit.abstractions.2.0.2.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.abstractions/2.0.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -981,19 +1021,19 @@
         }
       ],
       "keywords": [
-        "xunit.analyzers",
-        "analyzers",
-        "roslyn",
-        "xunit",
+        "xunit.analyzers,",
+        "analyzers,",
+        "roslyn,",
+        "xunit,",
         "xunit.net"
       ],
       "homepage_url": "https://github.com/xunit/xunit.analyzers",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg",
-      "size": 107050,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "530E84AA43A6B74232B2D52DCE453853C8B1084CFEA62AA0733CA83D3D344703C3B161ED5B0CDE763B014134BA3F5876FAEC0317AC3952962DE7F49213B79EC5",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1005,12 +1045,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.analyzers/0.10.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/0.10.0/xunit.analyzers.0.10.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/0.10.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1035,11 +1077,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
-      "size": 113966,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "DD01225C4547C4B87E351BE13E28DC631FBBA277CE862ABCACA5657610ED549F5AFEB2C06F09D1D035119FC83832207081E8EEAAD6BE00F6BAD4465D182F8BF1",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1051,12 +1093,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.assert/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.4.0/xunit.assert.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.assert/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1081,11 +1125,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg",
-      "size": 22662,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "A69D1FD5FA55AA803E7B22D63D1DDB42C8FC97B71B1595C44EA35AD5A04658EDDEC15DE5F3D5AFADE750B8480EB0D23D7DFC3B4C1DB8A14FE218AC0156BEF15A",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1097,12 +1141,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.core/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.4.0/xunit.core.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.core/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1127,11 +1173,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
-      "size": 278959,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "4D3C560932A8B0785FBC7D7DE47E8D848BF8D265D9A5A88153904822378C1C378A4F776BCE00B8DFA1C7E1314728CF6135518C9D81B87FE8D48C4B6020BD03EF",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1143,12 +1189,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.core/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.4.0/xunit.extensibility.core.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.core/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1173,11 +1221,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
-      "size": 481651,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "ADC865D290201F1DBDD5BBE678ED880F9DD39DA42AD3A90DB09DDA95A0448A7BF3CF23AD92F9A8C463ECD408042E383D4914D394EBA10077494D325ED0DDB361",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1189,12 +1237,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.extensibility.execution/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.4.0/xunit.extensibility.execution.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.extensibility.execution/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -1219,11 +1269,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/xunit/xunit",
       "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg",
-      "size": 699714,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "D24EBA406BD5643D37180E7F19585C20DCC0BBF24F345633CF2F437B3E0A199280ABAAAC615EDA8CDDB64B24FC99B5749239C940361FEC86993FB9FFD76952A1",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -1235,12 +1285,14 @@
       "extra_data": {
         "framework": "any"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/xunit.runner.visualstudio/2.4.0?_src=template",
+      "repository_homepage_url": "",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.4.0/xunit.runner.visualstudio.2.4.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.runner.visualstudio/2.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

@@ -79,11 +79,11 @@
           ],
           "homepage_url": "http://momentjs.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/moment.js/2.20.1/moment.js.2.20.1.nupkg",
-          "size": 220640,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "5892A3FC8A3429F40B6FE70A3A46B7DDC3DB077BDB87FB7E90AB6E1D059D6B60F1DADF708BB3E615C38B0A594A99C4ECC4DC9ABC79B7BFEB52340E4CF2BBD331",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -98,9 +98,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -133,11 +137,11 @@
       ],
       "homepage_url": "http://momentjs.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/moment.js/2.20.1/moment.js.2.20.1.nupkg",
-      "size": 220640,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "5892A3FC8A3429F40B6FE70A3A46B7DDC3DB077BDB87FB7E90AB6E1D059D6B60F1DADF708BB3E615C38B0A594A99C4ECC4DC9ABC79B7BFEB52340E4CF2BBD331",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -152,7 +156,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/moment.js/2.20.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

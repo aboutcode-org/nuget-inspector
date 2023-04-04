@@ -73,11 +73,11 @@
           "keywords": [],
           "homepage_url": "https://automapper.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/automapper/10.1.1/automapper.10.1.1.nupkg",
-          "size": 272851,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "9D0CED6DECC648A2CEB685BB7C0E2E203EF100EF7A8C08B9E1141644A0765A2E7027D5B417E048FAB2B84F9677357CBADA37A835D310BFAA99BBEF85C8413C8A",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -92,7 +92,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/automapper/10.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -117,11 +119,11 @@
           "keywords": [],
           "homepage_url": "https://automapper.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/automapper/10.1.1/automapper.10.1.1.nupkg",
-          "size": 272851,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "9D0CED6DECC648A2CEB685BB7C0E2E203EF100EF7A8C08B9E1141644A0765A2E7027D5B417E048FAB2B84F9677357CBADA37A835D310BFAA99BBEF85C8413C8A",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -136,7 +138,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/automapper/10.1.1.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -172,7 +176,9 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -208,7 +214,9 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -244,9 +252,13 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -273,11 +285,11 @@
       "keywords": [],
       "homepage_url": "https://automapper.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/automapper/10.1.1/automapper.10.1.1.nupkg",
-      "size": 272851,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "9D0CED6DECC648A2CEB685BB7C0E2E203EF100EF7A8C08B9E1141644A0765A2E7027D5B417E048FAB2B84F9677357CBADA37A835D310BFAA99BBEF85C8413C8A",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -292,7 +304,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/automapper/10.1.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -317,11 +331,11 @@
       "keywords": [],
       "homepage_url": "https://automapper.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/automapper/10.1.1/automapper.10.1.1.nupkg",
-      "size": 272851,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "9D0CED6DECC648A2CEB685BB7C0E2E203EF100EF7A8C08B9E1141644A0765A2E7027D5B417E048FAB2B84F9677357CBADA37A835D310BFAA99BBEF85C8413C8A",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -336,7 +350,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/automapper/10.1.1.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -372,7 +388,9 @@
       "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -408,7 +426,9 @@
       "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -444,7 +464,9 @@
       "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

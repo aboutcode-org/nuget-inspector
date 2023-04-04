@@ -57,24 +57,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/jQuery@3.6.4",
+          "purl": "",
           "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery Foundation, Inc.",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -85,16 +75,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -121,11 +115,11 @@
           ],
           "homepage_url": "http://jquery.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.10.2/jquery.1.10.2.nupkg",
-          "size": 248297,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "79F0BB49C6BECE8D14E15C65526A963B992F5F46872DDDE8CA5927AA02825A5B039BB0427428E01F1EA6DFA195AD4050F86F322B162B727F951F122B8F669868",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -140,7 +134,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.10.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -167,11 +163,11 @@
           ],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.0.0/microsoft.aspnetcore.all.2.0.0.nupkg",
-          "size": 20868,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "0EE2BA8A2F6C7730D63C413ADAB6105886DEBF4793F3D1D6A958C2DB5529D727EEDC95C3E0A495F4E97C73EFBAF6BA296E9C298630200CD1A734C84469610A86",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -186,7 +182,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -213,11 +211,11 @@
           ],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.0.0/microsoft.aspnetcore.all.2.0.0.nupkg",
-          "size": 20868,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "0EE2BA8A2F6C7730D63C413ADAB6105886DEBF4793F3D1D6A958C2DB5529D727EEDC95C3E0A495F4E97C73EFBAF6BA296E9C298630200CD1A734C84469610A86",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -232,7 +230,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -257,11 +257,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-          "size": 4072688,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -276,7 +276,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -301,11 +303,11 @@
           "keywords": [],
           "homepage_url": "https://dot.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-          "size": 4072688,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -320,7 +322,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -351,11 +355,11 @@
           ],
           "homepage_url": "http://nunit.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.7.0/nunit.runners.3.7.0.nupkg",
-          "size": 12218,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6D902C184657D764478F9C84E9BA9CEE175C7F5F8B27E5E9042EF4C457C65A14FA87CB81477ACFC2057921B30EE33E62136F8BDA62CE4A9FDC829C80B5D03256",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -370,7 +374,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.7.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -401,11 +407,11 @@
           ],
           "homepage_url": "http://nunit.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.7.0/nunit.runners.3.7.0.nupkg",
-          "size": 12218,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "6D902C184657D764478F9C84E9BA9CEE175C7F5F8B27E5E9042EF4C457C65A14FA87CB81477ACFC2057921B30EE33E62136F8BDA62CE4A9FDC829C80B5D03256",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -420,9 +426,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.7.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -433,24 +443,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/jQuery@3.6.4",
+      "purl": "",
       "primary_language": "C#",
-      "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "jQuery Foundation, Inc.",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "jQuery"
-      ],
-      "homepage_url": "http://jquery.com/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -461,16 +461,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: http://jquery.org/license",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",
@@ -497,11 +501,11 @@
       ],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/1.10.2/jquery.1.10.2.nupkg",
-      "size": 248297,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "79F0BB49C6BECE8D14E15C65526A963B992F5F46872DDDE8CA5927AA02825A5B039BB0427428E01F1EA6DFA195AD4050F86F322B162B727F951F122B8F669868",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -516,7 +520,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/1.10.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -543,11 +549,11 @@
       ],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.0.0/microsoft.aspnetcore.all.2.0.0.nupkg",
-      "size": 20868,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "0EE2BA8A2F6C7730D63C413ADAB6105886DEBF4793F3D1D6A958C2DB5529D727EEDC95C3E0A495F4E97C73EFBAF6BA296E9C298630200CD1A734C84469610A86",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -562,7 +568,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -589,11 +597,11 @@
       ],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.0.0/microsoft.aspnetcore.all.2.0.0.nupkg",
-      "size": 20868,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "0EE2BA8A2F6C7730D63C413ADAB6105886DEBF4793F3D1D6A958C2DB5529D727EEDC95C3E0A495F4E97C73EFBAF6BA296E9C298630200CD1A734C84469610A86",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -608,7 +616,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -633,11 +643,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-      "size": 4072688,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -652,7 +662,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -677,11 +689,11 @@
       "keywords": [],
       "homepage_url": "https://dot.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg",
-      "size": 4072688,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6848F8E3211BB0AF97943C0F35233B09E6980E0DF734C938F76CB690544838C3CE5665EF5CD3B42D30E6F255214B82659B6B8D16C2030C7E2082DF659D20DE8D",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -696,7 +708,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.0.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -727,11 +741,11 @@
       ],
       "homepage_url": "http://nunit.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.7.0/nunit.runners.3.7.0.nupkg",
-      "size": 12218,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6D902C184657D764478F9C84E9BA9CEE175C7F5F8B27E5E9042EF4C457C65A14FA87CB81477ACFC2057921B30EE33E62136F8BDA62CE4A9FDC829C80B5D03256",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -746,7 +760,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.7.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -777,11 +793,11 @@
       ],
       "homepage_url": "http://nunit.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.7.0/nunit.runners.3.7.0.nupkg",
-      "size": 12218,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "6D902C184657D764478F9C84E9BA9CEE175C7F5F8B27E5E9042EF4C457C65A14FA87CB81477ACFC2057921B30EE33E62136F8BDA62CE4A9FDC829C80B5D03256",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -796,7 +812,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.7.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

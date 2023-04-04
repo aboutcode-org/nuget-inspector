@@ -76,11 +76,11 @@
           ],
           "homepage_url": "http://ajaxcontroltoolkit.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/ajaxcontroltoolkit/15.1.4/ajaxcontroltoolkit.15.1.4.nupkg",
-          "size": 1456437,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "E45B2CCF4B7ACD7B30D1820D38752D71E1F8F4D72654198B60E070E78CF60EC389635DA90C38AF626CB48C550FE48B99E0731A46055379410EADBD6215FABD42",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -95,7 +95,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ajaxcontroltoolkit/15.1.4.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -131,7 +133,9 @@
           "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -162,11 +166,11 @@
           ],
           "homepage_url": "http://restsharp.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/restsharp/105.2.3/restsharp.105.2.3.nupkg",
-          "size": 1161714,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "BF33B19941C7BAB05282BC09157AC82D3DBB6DA67FFDEF3684858200137280D2BDE7F4AA689C3EB1892945B5AAF89113DFB1179F4383C16403C979588A6A544C",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -181,9 +185,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/restsharp/105.2.3.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -213,11 +221,11 @@
       ],
       "homepage_url": "http://ajaxcontroltoolkit.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/ajaxcontroltoolkit/15.1.4/ajaxcontroltoolkit.15.1.4.nupkg",
-      "size": 1456437,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "E45B2CCF4B7ACD7B30D1820D38752D71E1F8F4D72654198B60E070E78CF60EC389635DA90C38AF626CB48C550FE48B99E0731A46055379410EADBD6215FABD42",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -232,7 +240,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/ajaxcontroltoolkit/15.1.4.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -268,7 +278,9 @@
       "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -299,11 +311,11 @@
       ],
       "homepage_url": "http://restsharp.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/restsharp/105.2.3/restsharp.105.2.3.nupkg",
-      "size": 1161714,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "BF33B19941C7BAB05282BC09157AC82D3DBB6DA67FFDEF3684858200137280D2BDE7F4AA689C3EB1892945B5AAF89113DFB1179F4383C16403C979588A6A544C",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -318,7 +330,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/restsharp/105.2.3.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

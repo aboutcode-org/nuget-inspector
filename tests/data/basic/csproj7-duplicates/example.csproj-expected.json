@@ -73,11 +73,11 @@
           "keywords": [],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
-          "size": 116143,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "C6083556BBAABE21926858395810D034E0395E992D4A716E559895B6D3AACE0E9B38B7762720F3D463F24A0CCBD5EC23F52FC55ACF0C11DE78D1AE3B7FDE60A4",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -94,7 +94,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.http/2.0.20710.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -119,11 +121,11 @@
           "keywords": [],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
-          "size": 12219,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "502DAB38BEE576218A4D6A87FA111DF3F10E56B1F29B64D93434740567320F328EE7609523BAE2311410D57FFB061672DF7AF9ABE4FF60A52F4BB9C15E29D502",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -140,9 +142,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/2.0.20710.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -169,11 +175,11 @@
       "keywords": [],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http/2.0.20710/microsoft.net.http.2.0.20710.nupkg",
-      "size": 116143,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "C6083556BBAABE21926858395810D034E0395E992D4A716E559895B6D3AACE0E9B38B7762720F3D463F24A0CCBD5EC23F52FC55ACF0C11DE78D1AE3B7FDE60A4",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -190,7 +196,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.http/2.0.20710.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -215,11 +223,11 @@
       "keywords": [],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.net.http/2.0.20710/system.net.http.2.0.20710.nupkg",
-      "size": 12219,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "502DAB38BEE576218A4D6A87FA111DF3F10E56B1F29B64D93434740567320F328EE7609523BAE2311410D57FFB061672DF7AF9ABE4FF60A52F4BB9C15E29D502",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -236,7 +244,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/system.net.http/2.0.20710.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

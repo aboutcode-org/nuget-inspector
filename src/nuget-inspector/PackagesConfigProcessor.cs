@@ -22,11 +22,11 @@ internal class PackagesConfigProcessor : IDependencyProcessor
     public PackagesConfigProcessor(
         string packages_config_path,
         NugetApi nuget_api,
-        NuGetFramework project_target_framework)
+        NuGetFramework project_framework)
     {
         PackagesConfigPath = packages_config_path;
         nugetApi = nuget_api;
-        this.project_target_framework = project_target_framework;
+        this.project_target_framework = project_framework;
     }
 
     /// <summary>
@@ -35,22 +35,19 @@ internal class PackagesConfigProcessor : IDependencyProcessor
     /// </summary>
     public DependencyResolution Resolve()
     {
-        var dependencies = GetDependencies();
-
-        DependencyResolution result = new()
+        DependencyResolution resolution = new()
         {
             Dependencies = new List<BasePackage>()
         };
-
+        var dependencies = GetDependencies();
         var packages = CreateBasePackage(dependencies: dependencies);
         foreach (var package in packages)
         {
             var has_package_references = packages.Any(pkg => pkg.dependencies.Contains(item: package));
             if (!has_package_references && package != null)
-                result.Dependencies.Add(item: package);
+                resolution.Dependencies.Add(item: package);
         }
-
-        return result;
+        return resolution;
     }
 
     /// <summary>
@@ -118,7 +115,7 @@ internal class PackagesConfigProcessor : IDependencyProcessor
         try
         {
             var resolver_helper = new PackagesConfigHelper(nugetApi: nugetApi);
-            var packages = resolver_helper.ProcessAll(packages: dependencies);
+            var packages = resolver_helper.ProcessAll(dependencies: dependencies);
             return packages;
         }
         catch (Exception listex)

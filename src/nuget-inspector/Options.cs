@@ -5,25 +5,29 @@ namespace NugetInspector;
 
 public class Options
 {
-    [CommandLineArg(key: "project-file", description: "Path to a .NET project file.")]
+    [CommandLineArg(
+        key: "project-file",
+        description: "Path to a .NET project file.")]
     public string ProjectFilePath = "";
 
-    [CommandLineArg(key: "target-framework",
-        description:
-        "Optional .NET Target framework. Defaults to the first project target framework. "+
-        "See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
+    [CommandLineArg(
+        key: "target-framework",
+        description: "Optional .NET Target framework. Defaults to the first project target framework. " +
+            "See https://learn.microsoft.com/en-us/dotnet/standard/frameworks for values")]
     public string TargetFramework = "";
 
-    [CommandLineArg(key: "json", description: "JSON output file path.")]
+    [CommandLineArg(
+        key: "json",
+        description: "JSON output file path.")]
     public string OutputFilePath = "";
 
-    [CommandLineArg(key: "nuget-config", description: "Path to a NuGet.config file")]
+    [CommandLineArg(
+        key: "nuget-config",
+        description: "Path to a nuget.config file to use, ignoring all other nuget.config.")]
     public string NugetConfigPath = "";
 
-    [CommandLineArg(key: "nuget-url",
-        description: "NuGet API URL. [default: https://api.nuget.org/v3/index.json]")]
-    public string NugetApiFeedUrl = "https://api.nuget.org/v3/index.json";
-
+    public bool WithDetails;
+    public bool WithFallback;
     public bool ShowHelp;
     public bool Verbose;
     public bool ShowVersion;
@@ -32,20 +36,15 @@ public class Options
     /// <summary>
     /// Print the values of this options object to the console.
     /// </summary>
-    public void Print()
+    public void Print(int indent=0)
     {
-        Console.WriteLine($"  ProjectFilePath: {ProjectFilePath}");
-        Console.WriteLine($"  TargetFramework: {TargetFramework}");
-        Console.WriteLine($"  OutputFilePath: {OutputFilePath}");
-        Console.WriteLine($"  NugetConfigPath: {NugetConfigPath}");
-        Console.WriteLine($"  NugetApiFeedUrl: {NugetApiFeedUrl}");
-        Console.WriteLine($"  Verbose: {Verbose}");
-        Console.WriteLine($"  ShowVersion: {ShowVersion}");
-        Console.WriteLine($"  ShowAbout: {ShowAbout}");
+        string margin = new (' ', indent);
+        foreach (var opt in AsCliList())
+            Console.WriteLine($"{margin}{opt}");
     }
 
     /// <summary>
-    /// Return a list of command line-like option values.
+    /// Return a list of command line-like option values to display in the output.
     /// </summary>
     public List<string> AsCliList()
     {
@@ -55,17 +54,20 @@ public class Options
             $"--json {OutputFilePath}",
         };
 
-        if (TargetFramework != "")
+        if (!string.IsNullOrWhiteSpace(TargetFramework))
             options.Add($"--target-framework {TargetFramework}");
 
         if (NugetConfigPath != "")
             options.Add($"--nuget-config {NugetConfigPath}");
 
-        if (NugetApiFeedUrl != "https://api.nuget.org/v3/index.json")
-            options.Add($"--nuget-url {NugetApiFeedUrl}");
-
         if (Verbose)
-            options.Add($"--verbose");
+            options.Add("--verbose");
+
+        if (WithDetails)
+            options.Add("--with-details");
+
+        if (WithFallback)
+            options.Add("--with-fallback");
 
         return options;
     }
@@ -77,7 +79,7 @@ public class Options
 
         foreach (var field in typeof(Options).GetFields())
         {
-            if (Config.TRACE) Console.WriteLine($"ParseArguments.field: {field}");
+            if (Config.TRACE_ARGS) Console.WriteLine($"ParseArguments.field: {field}");
             var attr = GetAttr<CommandLineArgAttribute>(field: field);
             if (attr != null)
             {
@@ -87,6 +89,12 @@ public class Options
                     action: value => field.SetValue(obj: options, value: value));
             }
         }
+
+        command_options.Add(prototype: "with-details", description: "Optionally include package metadata details (such as checksum and size) when available.",
+            action: value => options.WithDetails = value != null);
+
+        command_options.Add(prototype: "with-fallback", description: "Optionally use a plain XML project file parser as fallback from failures.",
+            action: value => options.WithDetails = value != null);
 
         command_options.Add(prototype: "h|help", description: "Show this message and exit.",
             action: value => options.ShowHelp = value != null);
@@ -124,17 +132,16 @@ public class Options
         }
         if (options.ShowAbout)
         {
-            string message = (
+            Console.Error.WriteLine(
                 $"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
-                + "Inspect .NET code and NuGet package manifests. Resolve NuGet dependencies.\n"
+                + "Inspect .NET and NuGet projects and package manifests. Resolve NuGet dependencies.\n"
                 + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
                 + "Copyright (c) nexB Inc. and others.\n"
                 + "https://github.com/nexB/nuget-inspector");
-            Console.Error.WriteLine(message);
             return null;
         }
 
-        if (string.IsNullOrEmpty(options.ProjectFilePath))
+        if (string.IsNullOrWhiteSpace(options.ProjectFilePath))
         {
             ShowHelpMessage(
                 message: "Error: missing required --project-file option. Usage: nuget-inspector [OPTIONS]",
@@ -142,7 +149,7 @@ public class Options
             return null;
         }
 
-        if (string.IsNullOrEmpty(options.OutputFilePath))
+        if (string.IsNullOrWhiteSpace(options.OutputFilePath))
         {
             ShowHelpMessage(
                 message: "Error: missing required --json option. Usage: nuget-inspector [OPTIONS]",

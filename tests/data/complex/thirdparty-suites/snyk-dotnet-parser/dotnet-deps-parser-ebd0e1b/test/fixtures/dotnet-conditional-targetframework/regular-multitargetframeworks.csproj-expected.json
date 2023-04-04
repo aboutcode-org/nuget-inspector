@@ -54,12 +54,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "MSTest.TestAdapter",
-          "version": "3.0.2",
+          "version": "1.4.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/MSTest.TestAdapter@3.0.2",
+          "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
           "primary_language": "C#",
-          "description": "The adapter to discover and execute MSTest Framework based tests.\n\n      Supported platforms:\n      - .NET 4.6.2+\n      - .NET Core 3.1+ (Universal Windows Apps 10+)\n      - .NET 6.0\n      - .NET 6.0 Windows.18362+\n      - ASP.NET Core 1.0+",
+          "description": "The adapter to discover and execute MSTest Framework based tests. \n\n  Supported platforms: \n   - .NET 4.5.0+ \n   - .NET Core 1.0+ (Universal Windows Apps 10+) (Visual Studio 2017) \n   - ASP.NET Core 1.0+ (Visual Studio 2017)",
           "release_date": "",
           "parties": [
             {
@@ -80,31 +80,35 @@
             "Microsoft"
           ],
           "homepage_url": "https://github.com/microsoft/testfx",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/3.0.2/mstest.testadapter.3.0.2.nupkg",
-          "size": 2367778,
+          "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "1413BEE792D5D439DBFF6DDAC090BF136A5A86000B7CC4341429BA27574A69B40E18D472148924D6944F43C13AB51DE53DB61D55817A65678BE15194E08F5D1E",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/MSTest.TestAdapter/3.0.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "net472"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestAdapter/3.0.2?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/3.0.2/mstest.testadapter.3.0.2.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/3.0.2.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestAdapter/1.4.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.4.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -112,12 +116,12 @@
       "type": "nuget",
       "namespace": "",
       "name": "MSTest.TestAdapter",
-      "version": "3.0.2",
+      "version": "1.4.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/MSTest.TestAdapter@3.0.2",
+      "purl": "pkg:nuget/MSTest.TestAdapter@1.4.0",
       "primary_language": "C#",
-      "description": "The adapter to discover and execute MSTest Framework based tests.\n\n      Supported platforms:\n      - .NET 4.6.2+\n      - .NET Core 3.1+ (Universal Windows Apps 10+)\n      - .NET 6.0\n      - .NET 6.0 Windows.18362+\n      - ASP.NET Core 1.0+",
+      "description": "The adapter to discover and execute MSTest Framework based tests. \n\n  Supported platforms: \n   - .NET 4.5.0+ \n   - .NET Core 1.0+ (Universal Windows Apps 10+) (Visual Studio 2017) \n   - ASP.NET Core 1.0+ (Visual Studio 2017)",
       "release_date": "",
       "parties": [
         {
@@ -138,29 +142,31 @@
         "Microsoft"
       ],
       "homepage_url": "https://github.com/microsoft/testfx",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/3.0.2/mstest.testadapter.3.0.2.nupkg",
-      "size": 2367778,
+      "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "1413BEE792D5D439DBFF6DDAC090BF136A5A86000B7CC4341429BA27574A69B40E18D472148924D6944F43C13AB51DE53DB61D55817A65678BE15194E08F5D1E",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/MSTest.TestAdapter/3.0.2/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "net472"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestAdapter/3.0.2?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/3.0.2/mstest.testadapter.3.0.2.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/3.0.2.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/MSTest.TestAdapter/1.4.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.4.0/mstest.testadapter.1.4.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.4.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

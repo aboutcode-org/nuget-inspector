@@ -81,11 +81,11 @@
           ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.3.2/mstest.testadapter.1.3.2.nupkg",
-          "size": 790866,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "19FDF3F6811C43DFA1F9CF99524788961AD792696F54C72A6300E51B31F499570E7B86E2FAB70854B64158302DC3E3A3119D25397DDE2F7D55BB363C0907A7D5",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -100,7 +100,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.3.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -135,11 +137,11 @@
           ],
           "homepage_url": "https://github.com/microsoft/testfx",
           "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testframework/1.3.2/mstest.testframework.1.3.2.nupkg",
-          "size": 1012713,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "D51E28FF027950542DD9CE0D966A2BDFDACC5F477407238C5576703B2846861D4142A823E787EE13EC8C674FDEF32119615976F4F1587E3E1C8C707DC8AC8E98",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -154,7 +156,9 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testframework/1.3.2.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         },
         {
           "type": "nuget",
@@ -179,11 +183,11 @@
           "keywords": [],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/4.2.0/nuget.common.4.2.0.nupkg",
-          "size": 88629,
+          "size": 0,
           "sha1": "",
           "md5": "",
           "sha256": "",
-          "sha512": "27235E687510620C8D29E88134C2108A389459553E51F0A3E55845AE166A84D69CEA9BD1D7916D745C5AD2D73E874B7B4F1AA60B3E75BBDE9BEB3BB8F5274232",
+          "sha512": "",
           "bug_tracking_url": "",
           "code_view_url": "",
           "vcs_url": "",
@@ -198,9 +202,13 @@
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/4.2.0.json",
           "datasource_id": "",
           "datafile_path": "",
-          "dependencies": []
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
         }
-      ]
+      ],
+      "warnings": [],
+      "errors": []
     }
   ],
   "dependencies": [
@@ -235,11 +243,11 @@
       ],
       "homepage_url": "https://github.com/microsoft/testfx",
       "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testadapter/1.3.2/mstest.testadapter.1.3.2.nupkg",
-      "size": 790866,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "19FDF3F6811C43DFA1F9CF99524788961AD792696F54C72A6300E51B31F499570E7B86E2FAB70854B64158302DC3E3A3119D25397DDE2F7D55BB363C0907A7D5",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -254,7 +262,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testadapter/1.3.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -289,11 +299,11 @@
       ],
       "homepage_url": "https://github.com/microsoft/testfx",
       "download_url": "https://api.nuget.org/v3-flatcontainer/mstest.testframework/1.3.2/mstest.testframework.1.3.2.nupkg",
-      "size": 1012713,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "D51E28FF027950542DD9CE0D966A2BDFDACC5F477407238C5576703B2846861D4142A823E787EE13EC8C674FDEF32119615976F4F1587E3E1C8C707DC8AC8E98",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -308,7 +318,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/mstest.testframework/1.3.2.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     },
     {
       "type": "nuget",
@@ -333,11 +345,11 @@
       "keywords": [],
       "homepage_url": "https://github.com/NuGet/NuGet.Client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/4.2.0/nuget.common.4.2.0.nupkg",
-      "size": 88629,
+      "size": 0,
       "sha1": "",
       "md5": "",
       "sha256": "",
-      "sha512": "27235E687510620C8D29E88134C2108A389459553E51F0A3E55845AE166A84D69CEA9BD1D7916D745C5AD2D73E874B7B4F1AA60B3E75BBDE9BEB3BB8F5274232",
+      "sha512": "",
       "bug_tracking_url": "",
       "code_view_url": "",
       "vcs_url": "",
@@ -352,7 +364,9 @@
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nuget.common/4.2.0.json",
       "datasource_id": "",
       "datafile_path": "",
-      "dependencies": []
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
     }
   ]
 }

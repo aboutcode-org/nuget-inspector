@@ -3,7 +3,7 @@
 internal interface IDependencyProcessor
 {
     /// <summary>
-    /// RProcess and resolve dependencies and return a DependencyResolution
+    /// Process and resolve dependencies and return a DependencyResolution
     /// </summary>
     /// <returns>DependencyResolution</returns>
     DependencyResolution Resolve();
@@ -11,15 +11,14 @@ internal interface IDependencyProcessor
 
 public class DependencyResolution
 {
+    public bool Success { get; set; } = true;
+    public List<BasePackage> Dependencies { get; set; } = new();
+
     public DependencyResolution() {}
 
-    public DependencyResolution(bool Success)
+    public DependencyResolution(bool success)
     {
-        this.Success = Success;
+        Success = success;
     }
 
-    public bool Success { get; set; } = true;
-    public string? ProjectVersion { get; set; }
-    public string? ErrorMessage { get; set; } = "";
-    public List<BasePackage> Dependencies { get; set; } = new();
 }

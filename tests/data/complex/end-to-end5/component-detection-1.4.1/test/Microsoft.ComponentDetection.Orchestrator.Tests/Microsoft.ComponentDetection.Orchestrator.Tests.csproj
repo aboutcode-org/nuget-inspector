@@ -1,8 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <ItemGroup Label="Project References">
-        <ProjectReference Include="..\..\src\Microsoft.ComponentDetection.Orchestrator\Microsoft.ComponentDetection.Orchestrator.csproj"/>
-        <ProjectReference Include="..\Microsoft.ComponentDetection.TestsUtilities\Microsoft.ComponentDetection.TestsUtilities.csproj"/>
-    </ItemGroup>
-
-</Project>
