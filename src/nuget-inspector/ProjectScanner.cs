@@ -131,9 +131,11 @@ internal class ProjectScanner
     {
         if (Config.TRACE_META)
             Console.WriteLine($"\nFetchDependenciesMetadata: with_details: {with_details}");
+
         foreach (BasePackage dep in scan_result.project_package.dependencies)
         {
             dep.Update(nugetApi: NugetApiService, with_details: with_details);
+
             if (Config.TRACE_META)
                 Console.WriteLine($"    Fetched for {dep.name}@{dep.version}");
         }
@@ -159,14 +161,6 @@ internal class ProjectScanner
             project_package = project
         };
 
-        // (string? framework_warning, NuGetFramework project_framework) = FrameworkFinder.GetFramework(
-        //     RequestedFramework: Options.TargetFramework,
-        //     ProjectFilePath: Options.ProjectFilePath
-        // );
-        // if (framework_warning != null)
-        //     scan_result.warnings.Add(framework_warning);
-        // Options.ProjectFramework = project_framework.GetShortFolderName();
-
         /*
          * Try each data file in sequence to resolve packages for a project:
          * 1. start with modern lockfiles such as project-assets.json and older projects.json.lock
@@ -178,7 +172,9 @@ internal class ProjectScanner
 
         DependencyResolution resolution;
         IDependencyProcessor resolver;
+
         // project.assets.json is the gold standard when available
+        // TODO: make the use of lockfiles optional
         if (FileExists(path: ScannerOptions.ProjectAssetsJsonPath!))
         {
             if (Config.TRACE)
