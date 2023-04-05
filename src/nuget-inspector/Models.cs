@@ -442,8 +442,7 @@ namespace NugetInspector
                 if (
                     string.IsNullOrWhiteSpace(api_data_url)
                     && download_url.StartsWith("https://api.nuget.org/")
-                    && !string.IsNullOrWhiteSpace(synthetic_api_data_url)
-                )
+                    && !string.IsNullOrWhiteSpace(synthetic_api_data_url))
                 {
                     api_data_url = synthetic_api_data_url;
                 }

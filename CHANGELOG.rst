@@ -2,6 +2,21 @@ Changelog
 =========
 
 
+v0.9.8
+-------
+
+This is a major feature update release with these updates and API breaking changes:
+
+* Add new "--with-nuget-org" command line option to optionally include the
+  nuget.org API feeds to the set of nuget.config-provided endpoints. Note that
+  this is always included if there is no provided or available nuget.config
+
+* Add extra debug tracing with the --debug option
+
+* Do not create API or download URLs using a default. Only use API-provided values.
+
+* Ensure we do not fail with a Package reference with no version.
+
 
 v0.9.7
 -------

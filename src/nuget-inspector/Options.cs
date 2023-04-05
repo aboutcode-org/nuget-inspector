@@ -26,10 +26,13 @@ public class Options
         description: "Path to a nuget.config file to use, ignoring all other nuget.config.")]
     public string NugetConfigPath = "";
 
+    // If True, return extra metadata details when available such as SHA512
     public bool WithDetails;
     public bool WithFallback;
+    public bool WithNuGetOrg;
     public bool ShowHelp;
     public bool Verbose;
+    public bool Debug;
     public bool ShowVersion;
     public bool ShowAbout;
 
@@ -63,11 +66,17 @@ public class Options
         if (Verbose)
             options.Add("--verbose");
 
+        if (Debug)
+            options.Add("--debug");
+
         if (WithDetails)
             options.Add("--with-details");
 
         if (WithFallback)
             options.Add("--with-fallback");
+
+        if (WithNuGetOrg)
+            options.Add("--with-nuget-org");
 
         return options;
     }
@@ -96,10 +105,15 @@ public class Options
         command_options.Add(prototype: "with-fallback", description: "Optionally use a plain XML project file parser as fallback from failures.",
             action: value => options.WithDetails = value != null);
 
+        command_options.Add(prototype: "with-nuget-org", description: "Optionally use the officila, public nuget.org API as a fallback in addition to nuget.config-configured API sources.",
+            action: value => options.WithNuGetOrg = value != null);
+
         command_options.Add(prototype: "h|help", description: "Show this message and exit.",
             action: value => options.ShowHelp = value != null);
         command_options.Add(prototype: "v|verbose", description: "Display more verbose output.",
             action: value => options.Verbose = value != null);
+        command_options.Add(prototype: "debug", description: "Display very verbose debug output.",
+            action: value => options.Debug = value != null);
         command_options.Add(prototype: "version", description: "Display nuget-inspector version and exit.",
             action: value => options.ShowVersion = value != null);
         command_options.Add(prototype: "about", description: "Display information about nuget-inspector and exit.",

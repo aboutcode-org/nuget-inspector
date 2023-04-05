@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
-using System.Xml;
 using Microsoft.Build.Locator;
+using Newtonsoft.Json;
 using NuGet.Frameworks;
 
 namespace NugetInspector;
@@ -99,7 +99,8 @@ internal static class Program
             var nuget_api_service = new NugetApi(
                 nuget_config_path: options.NugetConfigPath,
                 project_root_path: project_options.ProjectDirectory,
-                project_framework: project_framework);
+                project_framework: project_framework,
+                with_nuget_org: options.WithNuGetOrg);
 
             var scanner = new ProjectScanner(
                 options: project_options,
@@ -133,6 +134,17 @@ internal static class Program
 
             var output_formatter = new OutputFormatJson(scan_result: scan_result);
             output_formatter.Write();
+
+            if (Config.TRACE_OUTPUT)
+            {
+                Console.WriteLine("\n=============JSON OUTPUT================");
+                string output = JsonConvert.SerializeObject(
+                    value: output_formatter.scan_output,
+                    formatting: Formatting.Indented);
+                Console.WriteLine(output);
+
+                Console.WriteLine("=======================================\n");
+            }
 
             BasePackage project_package = scan_result.project_package;
 
@@ -245,6 +257,14 @@ internal static class Program
             if (options.Verbose)
             {
                 Config.TRACE = true;
+            }
+            if (options.Debug)
+            {
+                Config.TRACE = true;
+                Config.TRACE_DEEP = true;
+                Config.TRACE_META = true;
+                Config.TRACE_NET = true;
+                Config.TRACE_OUTPUT = true;
             }
 
             if (Config.TRACE_ARGS)

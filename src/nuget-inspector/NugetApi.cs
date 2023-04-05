@@ -33,7 +33,7 @@ public class NugetApi
     private readonly Dictionary<string, JObject> catalog_entry_by_catalog_url = new();
     private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> psmrs_by_package_name = new();
     private readonly Dictionary<PackageIdentity, PackageSearchMetadataRegistration?> psmr_by_identity = new();
-    private readonly Dictionary<(PackageIdentity, NuGetFramework), PackageDownload> download_by_identity = new();
+    private readonly Dictionary<(PackageIdentity, NuGetFramework), PackageDownload?> download_by_identity = new();
     private readonly Dictionary<(PackageIdentity, NuGetFramework), SourcePackageDependencyInfo> spdi_by_identity = new();
 
     private readonly List<SourceRepository> source_repositories = new();
@@ -44,7 +44,11 @@ public class NugetApi
 
     private readonly NuGetFramework project_framework;
 
-    public NugetApi(string nuget_config_path, string project_root_path, NuGetFramework project_framework)
+    public NugetApi(
+        string nuget_config_path,
+        string project_root_path,
+        NuGetFramework project_framework,
+        bool with_nuget_org)
     {
         this.project_framework = project_framework;
         List<Lazy<INuGetResourceProvider>> providers = new();
@@ -56,7 +60,8 @@ public class NugetApi
 
         PopulateResources(
             providers: providers,
-            settings: settings);
+            settings: settings,
+            with_nuget_org: with_nuget_org);
     }
 
     /// <summary>
@@ -114,13 +119,13 @@ public class NugetApi
     /// <returns>PackageSearchMetadataRegistration or null</returns>
     public PackageSearchMetadataRegistration? FindPackageVersion(PackageIdentity pid)
     {
-        if (Config.TRACE_NET)
+        if (Config.TRACE)
             Console.WriteLine($"FindPackageVersion: {pid}");
 
         if (psmr_by_identity.TryGetValue(key: pid, out PackageSearchMetadataRegistration? psmr))
         {
-            if (Config.TRACE_NET)
-                Console.WriteLine($"Metadata Cache hit for '{pid}'");
+            if (Config.TRACE)
+                Console.WriteLine($"    Metadata Cache hit for '{pid}'");
             return psmr;
         }
 
@@ -139,7 +144,7 @@ public class NugetApi
 
                 if (psmr != null)
                 {
-                    if (Config.TRACE_NET)
+                    if (Config.TRACE)
                         Console.WriteLine($"    Found metadata for '{pid}' from: {metadata_resources}");
                     psmr_by_identity[pid] = psmr;
                     return psmr;
@@ -147,22 +152,24 @@ public class NugetApi
             }
             catch (Exception ex)
             {
-                if (Config.TRACE_NET)
-                    Console.WriteLine($"FAILED to Fetch metadata for '{pid}' with: {ex.StackTrace}");
+                if (Config.TRACE)
+                    Console.WriteLine($"    FAILED to Fetch metadata for '{pid}' with: {ex.StackTrace}");
 
                 exceptions.Add(item: ex);
             }
         }
 
-        if (Config.TRACE_NET && exceptions.Any())
-        {
-            Console.WriteLine($"ERROR: No package found for {pid}.");
-            foreach (var ex in exceptions)
-                Console.WriteLine($"    {ex}");
-        }
+        var error_message = $"No package metadata found for {pid}.";
+        foreach (var ex in exceptions)
+            error_message += $"\n    {ex}";
+
+        if (Config.TRACE)
+            Console.WriteLine(error_message);
+
         // cache this null too
         psmr_by_identity[pid] = null;
-        return null;
+
+        throw new Exception(error_message);
     }
 
     /// <summary>
@@ -292,26 +299,34 @@ public class NugetApi
     /// from a feed URL and a nuget.config file path.
     /// These are MetadataResourceList and DependencyInfoResourceList attributes.
     /// </summary>
-    private void PopulateResources(List<Lazy<INuGetResourceProvider>> providers, ISettings settings)
+    private void PopulateResources(
+        List<Lazy<INuGetResourceProvider>> providers,
+        ISettings settings,
+        bool with_nuget_org = false)
     {
         PackageSourceProvider package_source_provider = new(settings: settings);
         List<PackageSource> package_sources = package_source_provider.LoadPackageSources().ToList();
         if (Config.TRACE)
             Console.WriteLine($"\nPopulateResources: Loaded {package_sources.Count} package sources from nuget.config");
 
-        // always nuget.org as last resort
-        var nuget_source = new PackageSource(source: "https://api.nuget.org/v3/index.json", name : "nuget.org");
-        package_sources.Add(nuget_source);
+        if (with_nuget_org || !package_sources.Any())
+        {
+            // Use nuget.org as last resort
+            var nuget_source = new PackageSource(
+                source: "https://api.nuget.org/v3/index.json",
+                name : "nuget.org");
+            package_sources.Add(nuget_source);
+        }
 
         HashSet<string> seen = new();
         foreach (PackageSource package_source in package_sources)
         {
-            var uri = package_source.SourceUri.ToString();
-            if (seen.Contains(uri))
+            var source_url = package_source.SourceUri.ToString();
+            if (seen.Contains(source_url))
                 continue;
             SourceRepository source_repository = new(source: package_source, providers: providers);
             AddSourceRepo(source_repo: source_repository);
-            seen.Add(uri);
+            seen.Add(source_url);
         }
     }
 
@@ -451,24 +466,18 @@ public class NugetApi
             if (spdi != null)
             {
                 download = PackageDownload.FromSpdi(spdi);
+                download_by_identity[(identity, project_framework)] = download;
             }
             else
             {
-                if (Config.TRACE_NET)
-                    Console.WriteLine($"        Crafting plain download for package '{identity}'");
+                if (Config.TRACE)
+                    Console.WriteLine($"        No download info available for package '{identity}'");
 
-                // Last resort we craft a synthetic download URL
-                string name_lower = identity.Id.ToLower();
-                string version_lower = identity.Version.ToString().ToLower();
-                download = new()
-                {
-                    download_url = $"https://api.nuget.org/v3-flatcontainer/{name_lower}/{version_lower}/{name_lower}.{version_lower}.nupkg"
-                };
+                 download_by_identity[(identity, project_framework)] = download;
             }
-            download_by_identity[(identity, project_framework)] = download;
         }
 
-        if (!with_details || (with_details && download.IsEnhanced()))
+        if (!with_details || (with_details && download?.IsEnhanced() == true))
             return download;
 
         // We need to fetch the SHA512 (and the size)
@@ -511,10 +520,12 @@ public class NugetApi
         }
 
         string hash = catalog_entry["packageHash"]!.ToString();
-        download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
-        download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
-        download.size = (int)catalog_entry["packageSize"]!;
-
+        if (download != null)
+        {
+            download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
+            download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
+            download.size = (int)catalog_entry["packageSize"]!;
+        }
         if (Config.TRACE_NET)
             Console.WriteLine($"        download: {download}");
         download_by_identity[(identity, project_framework)] = download;
@@ -656,7 +667,17 @@ public class NugetApi
 
         var packages = new List<PackageId>();
         foreach (var targetref in target_references)
-            packages.Add(PackageId.FromReference(targetref));
+        {
+            try
+            {
+                packages.Add(PackageId.FromReference(targetref));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"   FAILED: targetref: {targetref}");
+                throw new Exception(targetref.ToString(), ex);
+            }
+        }
 
         walk_context.ProjectLibraryProviders.Add(new ProjectLibraryProvider(packages));
 
@@ -913,10 +934,26 @@ public class PackageId
 
     public static PackageId FromReference(PackageReference reference)
     {
-        bool allow_prerel = reference.HasAllowedVersions && reference.AllowedVersions.MinVersion.IsPrerelease;
+        if (reference == null)
+            throw new ArgumentNullException(nameof(reference));
+        var av = reference.AllowedVersions;
+        bool allow_prerel = false;
+        string? version = null;
+        if (av != null)
+        {
+            var mv  = reference.AllowedVersions.MinVersion;
+            if (mv != null)
+                allow_prerel = mv.IsPrerelease;
+            version = reference.AllowedVersions.ToNormalizedString();
+        }
+        if (version == null && reference.PackageIdentity.Version != null)
+        {
+            version = reference.PackageIdentity.Version.ToString();
+        }
+
         return new PackageId(
-            id:reference.PackageIdentity.Id,
-            version: reference.AllowedVersions.ToNormalizedString(),
+            id: reference.PackageIdentity.Id,
+            version: version ?? "",
             allow_prerelease_versions: allow_prerel
         );
     }
