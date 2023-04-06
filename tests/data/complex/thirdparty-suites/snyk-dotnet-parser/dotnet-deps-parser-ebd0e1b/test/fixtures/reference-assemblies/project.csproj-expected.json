@@ -88,7 +88,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'ClientDependency.Core' version: '1.7.0.1'. System.Exception: No package metadata found for ClientDependency.Core.1.7.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'ClientDependency.Core' version: '1.7.0.1'. System.Exception: No package metadata found for ClientDependency.Core.1.7.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -230,7 +230,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Data.SqlServerCe' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Data.SqlServerCe' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -272,7 +272,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Data.SqlServerCe.Entity' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.Entity.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Data.SqlServerCe.Entity' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.Entity.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -458,7 +458,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.Helpers' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Helpers.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.Helpers' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Helpers.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -548,7 +548,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.Mvc' version: '4.0.0'. System.Exception: No package metadata found for System.Web.Mvc.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.Mvc' version: '4.0.0'. System.Exception: No package metadata found for System.Web.Mvc.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -590,7 +590,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -632,7 +632,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.WebPages' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.WebPages' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -674,7 +674,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.WebPages.Deployment' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Deployment.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.WebPages.Deployment' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Deployment.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -716,7 +716,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'System.Web.WebPages.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'System.Web.WebPages.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         }
@@ -764,7 +764,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'ClientDependency.Core' version: '1.7.0.1'. System.Exception: No package metadata found for ClientDependency.Core.1.7.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'ClientDependency.Core' version: '1.7.0.1'. System.Exception: No package metadata found for ClientDependency.Core.1.7.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -906,7 +906,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Data.SqlServerCe' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Data.SqlServerCe' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -948,7 +948,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Data.SqlServerCe.Entity' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.Entity.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Data.SqlServerCe.Entity' version: '4.0.0'. System.Exception: No package metadata found for System.Data.SqlServerCe.Entity.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1134,7 +1134,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.Helpers' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Helpers.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.Helpers' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Helpers.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1224,7 +1224,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.Mvc' version: '4.0.0'. System.Exception: No package metadata found for System.Web.Mvc.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.Mvc' version: '4.0.0'. System.Exception: No package metadata found for System.Web.Mvc.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1266,7 +1266,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1308,7 +1308,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.WebPages' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.WebPages' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1350,7 +1350,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.WebPages.Deployment' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Deployment.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.WebPages.Deployment' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Deployment.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
@@ -1392,7 +1392,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'System.Web.WebPages.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'System.Web.WebPages.Razor' version: '2.0.0'. System.Exception: No package metadata found for System.Web.WebPages.Razor.2.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     }

@@ -90,7 +90,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'foobar' version: '1.2.3'. System.Exception: No package metadata found for foobar.1.2.3.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'foobar' version: '1.2.3'. System.Exception: No package metadata found for foobar.1.2.3.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
           ],
           "errors": []
         },
@@ -570,7 +570,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'foobar' version: '1.2.3'. System.Exception: No package metadata found for foobar.1.2.3.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'foobar' version: '1.2.3'. System.Exception: No package metadata found for foobar.1.2.3.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
       ],
       "errors": []
     },
