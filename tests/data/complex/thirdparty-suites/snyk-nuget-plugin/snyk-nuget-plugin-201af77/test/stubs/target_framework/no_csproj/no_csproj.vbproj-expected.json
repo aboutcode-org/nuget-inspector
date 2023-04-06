@@ -57,24 +57,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/jQuery@3.6.4",
+          "purl": "",
           "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "jQuery Foundation, Inc.",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "jQuery"
-          ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -85,18 +75,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -153,24 +145,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.2.8",
+          "purl": "",
           "primary_language": "C#",
-          "description": "Provides a default set of APIs for building an ASP.NET Core application, and also includes API for third-party integrations with ASP.NET Core.\n\nThis package requires the ASP.NET Core runtime. This runtime is installed by the .NET Core SDK, or can be acquired separately using installers available at https://aka.ms/dotnet-download.",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "aspnetcore"
-          ],
-          "homepage_url": "https://asp.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.2.8/microsoft.aspnetcore.all.2.2.8.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -181,18 +163,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNetCore.All/2.2.8?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.2.8/microsoft.aspnetcore.all.2.2.8.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.2.8.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -249,22 +233,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
+          "purl": "",
           "primary_language": "C#",
-          "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Microsoft",
-              "email": "",
-              "url": ""
-            }
-          ],
+          "parties": [],
           "keywords": [],
-          "homepage_url": "https://dot.net/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -275,18 +251,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://github.com/dotnet/core-setup/blob/master/LICENSE.TXT",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.2.8.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -341,28 +319,14 @@
           "version": null,
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/NUnit.Runners@3.12.0",
+          "purl": "",
           "primary_language": "C#",
-          "description": "This package is now obsolete and has been replaced by the NUnit.Console package.\n\n      It includes the nunit3-console runner and test engine for version 3 of the NUnit unit-testing framework.\n\n      The following extensions are included with this package:\n      * NUnitProjectLoader     - loads tests from NUnit projects\n      * VSProjectLoader        - loads tests from Visual Studio projects\n      * NUnitV2ResultWriter    - saves results in NUnit V2 format.\n      * NUnitV2FrameworkDriver - runs NUnit V2 tests.\n      * TeamCityEventListener - supports special progress messages used by teamcity.\n\n      Other extensions, if needed, must be installed separately.",
+          "description": "",
           "release_date": "",
-          "parties": [
-            {
-              "type": "organization",
-              "role": "author",
-              "name": "Charlie Poole",
-              "email": "",
-              "url": ""
-            }
-          ],
-          "keywords": [
-            "nunit",
-            "test",
-            "testing",
-            "tdd",
-            "runner"
-          ],
-          "homepage_url": "https://nunit.org/",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.12.0/nunit.runners.3.12.0.nupkg",
+          "parties": [],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -373,18 +337,20 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/NUnit.Runners/3.12.0/license",
+          "declared_license": "",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {},
-          "repository_homepage_url": "https://www.nuget.org/packages/NUnit.Runners/3.12.0?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.12.0/nunit.runners.3.12.0.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.12.0.json",
+          "repository_homepage_url": "",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
           "warnings": [],
-          "errors": []
+          "errors": [
+            "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+          ]
         },
         {
           "type": "nuget",
@@ -451,24 +417,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/jQuery@3.6.4",
+      "purl": "",
       "primary_language": "C#",
-      "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "jQuery Foundation, Inc.",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "jQuery"
-      ],
-      "homepage_url": "http://jquery.com/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -479,18 +435,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: http://jquery.org/license",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/jQuery/3.6.4?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.6.4/jquery.3.6.4.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/jquery/3.6.4.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",
@@ -547,24 +505,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Microsoft.AspNetCore.All@2.2.8",
+      "purl": "",
       "primary_language": "C#",
-      "description": "Provides a default set of APIs for building an ASP.NET Core application, and also includes API for third-party integrations with ASP.NET Core.\n\nThis package requires the ASP.NET Core runtime. This runtime is installed by the .NET Core SDK, or can be acquired separately using installers available at https://aka.ms/dotnet-download.",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Microsoft",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "aspnetcore"
-      ],
-      "homepage_url": "https://asp.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.2.8/microsoft.aspnetcore.all.2.2.8.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -575,18 +523,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.AspNetCore.All/2.2.8?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.all/2.2.8/microsoft.aspnetcore.all.2.2.8.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.aspnetcore.all/2.2.8.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",
@@ -643,22 +593,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/Microsoft.NETCore.App@2.2.8",
+      "purl": "",
       "primary_language": "C#",
-      "description": "A set of .NET API's that are included in the default .NET Core application model. \nb9aa1abc510165cdc4c92e59d938def6f3eee0e1 \nWhen using NuGet 3.x this package requires at least version 3.4.",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Microsoft",
-          "email": "",
-          "url": ""
-        }
-      ],
+      "parties": [],
       "keywords": [],
-      "homepage_url": "https://dot.net/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -669,18 +611,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://github.com/dotnet/core-setup/blob/master/LICENSE.TXT",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.App/2.2.8?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app/2.2.8/microsoft.netcore.app.2.2.8.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.app/2.2.8.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",
@@ -735,28 +679,14 @@
       "version": null,
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/NUnit.Runners@3.12.0",
+      "purl": "",
       "primary_language": "C#",
-      "description": "This package is now obsolete and has been replaced by the NUnit.Console package.\n\n      It includes the nunit3-console runner and test engine for version 3 of the NUnit unit-testing framework.\n\n      The following extensions are included with this package:\n      * NUnitProjectLoader     - loads tests from NUnit projects\n      * VSProjectLoader        - loads tests from Visual Studio projects\n      * NUnitV2ResultWriter    - saves results in NUnit V2 format.\n      * NUnitV2FrameworkDriver - runs NUnit V2 tests.\n      * TeamCityEventListener - supports special progress messages used by teamcity.\n\n      Other extensions, if needed, must be installed separately.",
+      "description": "",
       "release_date": "",
-      "parties": [
-        {
-          "type": "organization",
-          "role": "author",
-          "name": "Charlie Poole",
-          "email": "",
-          "url": ""
-        }
-      ],
-      "keywords": [
-        "nunit",
-        "test",
-        "testing",
-        "tdd",
-        "runner"
-      ],
-      "homepage_url": "https://nunit.org/",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.12.0/nunit.runners.3.12.0.nupkg",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -767,18 +697,20 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/NUnit.Runners/3.12.0/license",
+      "declared_license": "",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {},
-      "repository_homepage_url": "https://www.nuget.org/packages/NUnit.Runners/3.12.0?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nunit.runners/3.12.0/nunit.runners.3.12.0.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit.runners/3.12.0.json",
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
       "warnings": [],
-      "errors": []
+      "errors": [
+        "ERROR: Cannot fetch remote metadata: Name or version cannot be empty"
+      ]
     },
     {
       "type": "nuget",
