@@ -19,7 +19,7 @@ from testing_utils import ROOT_DIR
 from testing_utils import TEST_DATA_DIR
 
 """
-A data-driven test suite with a number of solutions and project manifests
+A data-driven test suite with a number of project manifests and lockfiles
 that represent a variety of cases.
 """
 
@@ -29,48 +29,73 @@ test_env.test_data_dir = str(TEST_DATA_DIR)
 NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
 # These test paths are failing for now and need some TLC
-failing_paths = (
+failing_paths = tuple([
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/projectAssetsDir/another_example.csproj",
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/packagesConfigDir/example.csproj",
     "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462/DependencyChecker.csproj",
-    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-project-assets/SampleProject.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dummy_project_2/dummy_project_2.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/csproj_multiple/csproj_multiple.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/no_csproj.vbproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_valid_framework/no_target_valid_framework.csproj",
-    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework/no_target_framework.csproj",
     "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-empty-manifest/empty-manifest.csproj",
-    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
     "project-json/datatables/datatables.aspnet-68483b7/src/DataTables.AspNet.Extensions.DapperExtensions.Tests/DataTables.AspNet.Extensions.DapperExtensions.Tests.xproj",
-    # potential central package dependencies?
-    "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+
+    # invalid XML
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-invalid-manifest/invalid.csproj",
+
     # downgrade
     "nuget-config/myget-and-props/Configuration-608dd8/src/Steeltoe.Extensions.Configuration.CloudFoundryBase/Steeltoe.Extensions.Configuration.CloudFoundryBase.csproj",
-    # missing file
+
+    # missing file in the project
     "complex/end-to-end3/Newtonsoft.Json-10.0.1/Doc/doc.shfbproj",
-    # unknown deps
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Original/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Original/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms.iOS/EwDavidForms.iOS.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Original/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
     "complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json/Newtonsoft.Json.Portable.csproj",
-    # inavlid
+
+    # invalid csproj file
     "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
-    
-)
+
+    # TODO: This is using central package dependencies?
+    "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+])
 
 # These test paths are supposed to have an error returned by design with an output
 paths_expected_to_return_an_error_and_output = set([
     "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/dotnet_project/dotnet_project.csproj",
     "complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Stress/Microsoft.AspNet.SignalR.Stress.csproj",
     # has a circular dependency
-    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj"
+    "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj",
+
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_csproj/no_csproj.vbproj",
+
+    # to sort
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/ios/Upgraded/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-with-props/example.fsproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/UWPSample/Original/UWPMigrationSample2.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-no-packagereference/project.vbproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies-with-package-reference/project.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-complex-target-frameworks/simple-project.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project/simple-project.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-empty-item-group/simple-project-empty-item-group.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-package-reference-update/example.fsproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-vb-simple-project/manifest.vbproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/foobar-no-ver.csproj",
+    "complex/thirdparty-suites/snyk-nuget-plugin/snyk-nuget-plugin-201af77/test/stubs/target_framework/no_target_framework2/no_target_framework2.csproj",
+    "complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/reference-assemblies/project.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462Invalid/DependencyChecker.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/NetStandard.csproj",
+    "complex/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test/DotNetOutdated.Tests/TestData/CPVMProject.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/net462withoutPackages/DependencyChecker.csproj",
+    "complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/netCore21/DependencyChecker.csproj",
 ])
 
-# These test paths are supposed to have an error returned by design and not output
+# These test paths are supposed to have an error returned by design and no usable output
 paths_expected_to_return_an_error_and_no_output = set([
     "nuget-config/private-nuget/example.csproj",
     "nuget-config/api-v2-sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj",
     "complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
     "basic/csproj5/mini.csproj",
     "properties/project-with-packages.props1/Foo.csproj",
-    
 ])
 
 # These test path are launched with extra nuget-inspector CLI arguments
@@ -93,11 +118,20 @@ def get_test_file_paths(base_dir, pattern, excludes=failing_paths):
     return paths
 
 
-project_tests = get_test_file_paths(base_dir=TEST_DATA_DIR, pattern="**/*.*proj")
+project_tests = get_test_file_paths(
+    base_dir=TEST_DATA_DIR,
+    pattern="**/*.*proj",
+    excludes=failing_paths)
 
 
 @pytest.mark.parametrize("test_path", project_tests)
 def test_nuget_inspector_end_to_end_with_projects(test_path):
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
+
+
+@pytest.mark.xfail(reason="Failing tests to review")
+@pytest.mark.parametrize("test_path", failing_paths)
+def test_nuget_inspector_end_to_end_with_failing(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
@@ -170,6 +204,17 @@ def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net45(
     )
 
 
+def test_nuget_inspector_nuget_config_with_details_does_not_fail():
+    test_path = "nuget-config/mini-config2/Sample/Sample.csproj"
+    expected_path = "nuget-config/mini-config2/Sample/Sample.csproj-expected-details.json"
+    check_nuget_inspector_end_to_end(
+        test_path=test_path,
+        expected_path=expected_path,
+        extra_args=' --with-details ',
+        regen=REGEN_TEST_FIXTURES,
+    )
+
+
 def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net461_1():
     test_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj1/proj1.csproj"
     expected_path = "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/multipackagesconfig/proj1/proj1.csproj-expected-net461.json"
@@ -223,12 +268,6 @@ def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net451
         extra_args=' --target-framework "net451" ',
         regen=REGEN_TEST_FIXTURES,
     )
-
-
-@pytest.mark.xfail(reason="Failing tests to review")
-@pytest.mark.parametrize("test_path", failing_paths)
-def test_nuget_inspector_end_to_end_with_failing(test_path):
-    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
 def clean_text_file(location, path=test_env.test_data_dir):

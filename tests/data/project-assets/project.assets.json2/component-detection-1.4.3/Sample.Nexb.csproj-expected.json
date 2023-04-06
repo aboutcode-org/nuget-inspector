@@ -283,7 +283,9 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
-          "warnings": [],
+          "warnings": [
+            "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Common' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Common.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+          ],
           "errors": []
         },
         {
@@ -321,7 +323,9 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
-          "warnings": [],
+          "warnings": [
+            "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Contracts' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Contracts.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+          ],
           "errors": []
         },
         {
@@ -359,7 +363,9 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
-          "warnings": [],
+          "warnings": [
+            "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Detectors' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Detectors.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+          ],
           "errors": []
         },
         {
@@ -397,7 +403,9 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
-          "warnings": [],
+          "warnings": [
+            "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Orchestrator' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Orchestrator.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+          ],
           "errors": []
         },
         {
@@ -835,7 +843,9 @@
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
-      "warnings": [],
+      "warnings": [
+        "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Common' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Common.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+      ],
       "errors": []
     },
     {
@@ -873,7 +883,9 @@
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
-      "warnings": [],
+      "warnings": [
+        "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Contracts' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Contracts.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+      ],
       "errors": []
     },
     {
@@ -911,7 +923,9 @@
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
-      "warnings": [],
+      "warnings": [
+        "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Detectors' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Detectors.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+      ],
       "errors": []
     },
     {
@@ -949,7 +963,9 @@
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
-      "warnings": [],
+      "warnings": [
+        "Failed to get remote metadata for name: 'Microsoft.VisualStudio.Services.Governance.ComponentDetection.Orchestrator' version: '1.0.0'. System.Exception: No package metadata found for Microsoft.VisualStudio.Services.Governance.ComponentDetection.Orchestrator.1.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+      ],
       "errors": []
     },
     {
