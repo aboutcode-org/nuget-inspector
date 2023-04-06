@@ -2,6 +2,18 @@ Changelog
 =========
 
 
+v0.9.9
+-------
+
+This is a minor bug fix release with this update:
+
+* Try harder to return a download URL for a NuGet
+  The NuGet API does not expose a way to get the downlaod URL, so we
+  are fetching and probing in sequence a few places like the NuGet Client
+  does internally.
+
+
+
 v0.9.8
 -------
 
