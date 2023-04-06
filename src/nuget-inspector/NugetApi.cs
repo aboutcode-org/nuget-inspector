@@ -30,7 +30,7 @@ public class NugetApi
     };
     private readonly GatherCache gather_cache = new();
 
-    private readonly Dictionary<string, JObject> catalog_entry_by_catalog_url = new();
+    private readonly Dictionary<string, JObject?> catalog_entry_by_catalog_url = new();
     private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> psmrs_by_package_name = new();
     private readonly Dictionary<PackageIdentity, PackageSearchMetadataRegistration?> psmr_by_identity = new();
     private readonly Dictionary<(PackageIdentity, NuGetFramework), PackageDownload?> download_by_identity = new();
@@ -120,12 +120,12 @@ public class NugetApi
     public PackageSearchMetadataRegistration? FindPackageVersion(PackageIdentity pid)
     {
         if (Config.TRACE)
-            Console.WriteLine($"FindPackageVersion: {pid}");
+            Console.WriteLine($"Fetching package metadata for: {pid}");
 
         if (psmr_by_identity.TryGetValue(key: pid, out PackageSearchMetadataRegistration? psmr))
         {
             if (Config.TRACE)
-                Console.WriteLine($"    Metadata Cache hit for '{pid}'");
+                Console.WriteLine($"  Metadata Cache hit for '{pid}'");
             return psmr;
         }
 
@@ -145,7 +145,7 @@ public class NugetApi
                 if (psmr != null)
                 {
                     if (Config.TRACE)
-                        Console.WriteLine($"    Found metadata for '{pid}' from: {metadata_resources}");
+                        Console.WriteLine($"  Found metadata for '{pid}' from: {metadata_resource}");
                     psmr_by_identity[pid] = psmr;
                     return psmr;
                 }
@@ -398,8 +398,8 @@ public class NugetApi
             return spdi;
         }
 
-        if (Config.TRACE_DEEP)
-            Console.WriteLine($"    GetPackageInfo: {identity} framework: {framework}");
+        if (Config.TRACE)
+            Console.WriteLine($"  GetPackageInfo: {identity} framework: {framework}");
 
         foreach (var dir in dependency_info_resources)
         {
@@ -415,10 +415,13 @@ public class NugetApi
                 spdi = infoTask.Result;
 
                 if (Config.TRACE && spdi != null)
-                    Console.WriteLine($"         url: {spdi.DownloadUri} hash: {spdi.PackageHash}");
+                    Console.WriteLine($"    Found download URL: {spdi.DownloadUri} hash: {spdi.PackageHash}");
 
                 if (spdi != null)
-                    spdi_by_identity[(identity, project_framework)] = spdi;
+                    {
+                        spdi_by_identity[(identity, project_framework)] = spdi;
+                        return spdi;
+                    }
             }
             catch (Exception e)
             {
@@ -462,19 +465,18 @@ public class NugetApi
             var spdi = GetResolvedSourcePackageDependencyInfo(
                 identity: identity,
                 framework: project_framework);
+            if (Config.TRACE)
+                Console.WriteLine($"        Info available for package '{spdi}'");
 
             if (spdi != null)
             {
                 download = PackageDownload.FromSpdi(spdi);
                 download_by_identity[(identity, project_framework)] = download;
             }
-            else
-            {
-                if (Config.TRACE)
-                    Console.WriteLine($"        No download info available for package '{identity}'");
-
-                 download_by_identity[(identity, project_framework)] = download;
-            }
+            // else
+            // {
+            //      download_by_identity[(identity, project_framework)] = download;
+            // }
         }
 
         if (!with_details || (with_details && download?.IsEnhanced() == true))
@@ -501,7 +503,7 @@ public class NugetApi
         if (Config.TRACE_NET)
             Console.WriteLine($"       Fetching catalog for package_catalog_url: {package_catalog_url}");
 
-        JObject catalog_entry;
+        JObject? catalog_entry;
         if (catalog_entry_by_catalog_url.ContainsKey(package_catalog_url))
         {
             catalog_entry = catalog_entry_by_catalog_url[package_catalog_url];
@@ -509,27 +511,41 @@ public class NugetApi
         else
         {
             // note: this is caching accross runs 
-            RequestCachePolicy policy = new(RequestCacheLevel.Default);
-            WebRequest request = WebRequest.Create(package_catalog_url);
-            request.CachePolicy = policy;
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
-            catalog_entry = JObject.Parse(catalog);
-            // note: this is caching accross calls in a run 
-            catalog_entry_by_catalog_url[package_catalog_url] = catalog_entry;
+            try
+            {
+                RequestCachePolicy policy = new(RequestCacheLevel.Default);
+                WebRequest request = WebRequest.Create(package_catalog_url);
+                request.CachePolicy = policy;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                string catalog = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                catalog_entry = JObject.Parse(catalog);
+                // note: this is caching accross calls in a run 
+                catalog_entry_by_catalog_url[package_catalog_url] = catalog_entry;
+            }
+            catch (Exception ex)
+            {
+                if (Config.TRACE_NET)
+                    Console.WriteLine($"        failed to fetch metadata details for: {package_catalog_url}: {ex}");
+                catalog_entry_by_catalog_url[package_catalog_url] = null;
+                return null;
+            }
         }
-
-        string hash = catalog_entry["packageHash"]!.ToString();
-        if (download != null)
+        if (catalog_entry != null)
         {
-            download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
-            download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
-            download.size = (int)catalog_entry["packageSize"]!;
+            string hash = catalog_entry["packageHash"]
+            !.ToString();
+            if (download != null)
+            {
+                download.hash = Convert.ToHexString(Convert.FromBase64String(hash));
+                download.hash_algorithm = catalog_entry["packageHashAlgorithm"]!.ToString();
+                download.size = (int)catalog_entry["packageSize"]!;
+            }
+            if (Config.TRACE_NET)
+                Console.WriteLine($"        download: {download}");
+            download_by_identity[(identity, project_framework)] = download;
+            return download;
         }
-        if (Config.TRACE_NET)
-            Console.WriteLine($"        download: {download}");
-        download_by_identity[(identity, project_framework)] = download;
-        return download;
+        return null;
     }
 
     /// <summary>
@@ -714,8 +730,8 @@ public class NugetApi
 
         foreach (GraphNode<RemoteResolveResult> inner in resolved_graph.InnerNodes)
         {
-            if (Config.TRACE)
-                Console.WriteLine($"  inner.Key.TypeConstraint: {inner.Key.TypeConstraint} name: {inner.Item.Key.Name} version: {inner.Item.Key.Version}");
+            if (Config.TRACE_DEEP)
+                Console.WriteLine($"    Resolved direct dependency: {inner.Item.Key.Name}@{inner.Item.Key.Version}");
 
             FlattenGraph(inner, resolved_package_info_by_package_id);
         }
@@ -724,10 +740,12 @@ public class NugetApi
         foreach (KeyValuePair<PackageId, ResolvedPackageInfo> item in resolved_package_info_by_package_id)
         {
             var dependency = item.Key;
-            var dpi = item.Value;
-            var source_repo = dpi.remote_match?.Provider.Source;
-            if (Config.TRACE)
-                Console.WriteLine($"        flat_dependency: {dependency.Name} {dependency.Version} repo: {source_repo?.SourceUri}");
+            if (Config.TRACE_DEEP)
+            {
+                var dpi = item.Value;
+                var source_repo = dpi.remote_match?.Provider?.Source;
+                Console.WriteLine($"          flat_dependency: {dependency.Name} {dependency.Version} repo: {source_repo?.SourceUri}");
+            }
 
             var spdi = new SourcePackageDependencyInfo(
                 id: dependency.Name,
@@ -756,7 +774,7 @@ public class NugetApi
             GraphItem<RemoteResolveResult> item = node.Item;
             if (item == null)
             {
-                string message = $"FlattenGraph: node Item is null '{node}'";
+                string message = $"      FlattenGraph: node Item is null '{node}'";
                 if (Config.TRACE)
                 {
                     Console.WriteLine($"        {message}");
@@ -767,8 +785,8 @@ public class NugetApi
             string name = key.Name;
             string version = key.Version.ToNormalizedString();
             bool isPrerelease = key.Version.IsPrerelease;
-            if (Config.TRACE)
-                Console.WriteLine($"        FlattenGraph: node.Item {node.Item} LibraryId: {key}");
+            if (Config.TRACE_DEEP)
+                Console.WriteLine($"      FlattenGraph: node.Item {node.Item} LibraryId: {key}");
 
             var pid = new PackageId(
                 id: name,
@@ -780,8 +798,10 @@ public class NugetApi
                 package_id = pid,
                 remote_match = (RemoteMatch?)item.Data.Match
             };
-            if (Config.TRACE)
+
+            if (Config.TRACE_DEEP)
                 Console.WriteLine($"        FlattenGraph: {pid} Library: {item.Data.Match.Library}");
+
             if (!resolved_package_info_by_package_id.ContainsKey(resolved_package_info.package_id))
                 resolved_package_info_by_package_id.Add(resolved_package_info.package_id, resolved_package_info);
 

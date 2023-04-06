@@ -312,10 +312,10 @@ internal class ProjectScanner
         }
         catch (Exception ex)
         {
-            string message = $"Failed to process project file: {ScannerOptions.ProjectFilePath} with: {ex}";
+            string message = $"Failed to process project file: {ScannerOptions.ProjectFilePath} with:\n{ex}";
             scan_result.errors.Add(message);
             scan_result.Status = ScanResult.ResultStatus.Error;
-            if (Config.TRACE) Console.WriteLine($"    {message}");
+            if (Config.TRACE) Console.WriteLine($"\nERROR: {message}\n");
         }
 
         if (!ScannerOptions.WithFallback)
@@ -354,10 +354,10 @@ internal class ProjectScanner
         }
         catch (Exception ex)
         {
-            string message = $"Failed to process *.*proj project file as bare XML: {ScannerOptions.ProjectFilePath} with: {ex}";
+            string message = $"Failed to process *.*proj project file as bare XML: {ScannerOptions.ProjectFilePath} with:\n{ex}";
             scan_result.errors.Add(message);
             scan_result.Status = ScanResult.ResultStatus.Error;
-            if (Config.TRACE) Console.WriteLine($"    {message}");
+            if (Config.TRACE) Console.WriteLine($"\nERROR: {message}\n");
         }
 
         return scan_result;

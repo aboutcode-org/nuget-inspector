@@ -213,21 +213,22 @@ internal static class Program
         static void PrintErrors(ScanResult scan_result, BasePackage project_package)
         {
             if (scan_result.errors.Any())
-                Console.WriteLine("    ERROR: " + string.Join(", ", scan_result.errors));
+                Console.WriteLine("\nERROR: " + string.Join(", ", scan_result.errors));
 
-            Console.WriteLine("    Errors at the package level");
-            Console.WriteLine($"       {project_package.name}@{project_package.version} with purl: {project_package.purl}");
             if (project_package.errors.Any())
-                Console.WriteLine("        ERROR: " + string.Join(", ", project_package.errors));
+            {
+                Console.WriteLine("\nERRORS at the package level:");
+                Console.WriteLine($"    {project_package.name}@{project_package.version} with purl: {project_package.purl}");
+                Console.WriteLine("    ERROR: " + string.Join(", ", project_package.errors));
+            }
 
-            Console.WriteLine("        Errors at the dependencies level");
+            Console.WriteLine("\nERRORS at the dependencies level:");
             foreach (var dep in project_package.GetFlatDependencies())
             {
                 if (dep.errors.Any())
                 {
-                    Console.WriteLine($"            {dep.name}@{dep.version} with purl: {dep.purl}");
-                    if (dep.errors.Any())
-                        Console.WriteLine("            ERROR: " + string.Join(", ", dep.errors));
+                    Console.WriteLine($"    ERRORS for dependency: {dep.name}@{dep.version} with purl: {dep.purl}");
+                    Console.WriteLine("    ERROR: " + string.Join(", ", dep.errors));
                 }
             }
         }

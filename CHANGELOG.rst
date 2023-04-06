@@ -17,6 +17,9 @@ This is a major feature update release with these updates and API breaking chang
 
 * Ensure we do not fail with a Package reference with no version.
 
+* Ensure we do not fail when a package detailed metadata cannot be fetched when
+  using the --with-details option.
+
 
 v0.9.7
 -------

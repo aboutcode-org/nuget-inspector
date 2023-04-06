@@ -5,9 +5,9 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.JS/Microsoft.AspNet.SignalR.JS.csproj"
+        "--project-file /nuget-config/mini-config2/Sample/Sample.csproj"
       ],
-      "project_framework": "netstandard1.0",
+      "project_framework": "netstandard2.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
@@ -18,7 +18,7 @@
     {
       "type": "nuget",
       "namespace": "",
-      "name": "Microsoft.AspNet.SignalR.JS",
+      "name": "Sample",
       "version": null,
       "qualifiers": "",
       "subpath": "",
@@ -48,33 +48,35 @@
       "repository_download_url": "",
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
-      "datafile_path": "/complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.JS/Microsoft.AspNet.SignalR.JS.csproj",
+      "datafile_path": "/nuget-config/mini-config2/Sample/Sample.csproj",
       "dependencies": [
         {
           "type": "nuget",
           "namespace": "",
-          "name": "jQuery",
-          "version": "1.12.4",
+          "name": "Microsoft.Internal.NetSdkBuild.Mgmt.Tools",
+          "version": "0.9.0",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/jQuery@1.12.4",
+          "purl": "pkg:nuget/Microsoft.Internal.NetSdkBuild.Mgmt.Tools@0.9.0",
           "primary_language": "C#",
-          "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+          "description": "Build tools for building Azure SDK for NET repository",
           "release_date": "",
           "parties": [
             {
               "type": "organization",
               "role": "author",
-              "name": "jQuery Foundation, Inc.",
+              "name": "Microsoft",
               "email": "",
               "url": ""
             }
           ],
           "keywords": [
-            "jQuery"
+            "Azure",
+            ".NETSDK",
+            "BuildTools"
           ],
-          "homepage_url": "http://jquery.com/",
-          "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.12.4/jquery.1.12.4.nupkg",
+          "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
+          "download_url": "",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -85,15 +87,15 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: http://jquery.org/license",
+          "declared_license": "LicenseUrl: https://raw.githubusercontent.com/Microsoft/dotnet/master/LICENSE",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
-            "framework": "netstandard1.0"
+            "framework": "netstandard2.0"
           },
           "repository_homepage_url": "",
-          "repository_download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.12.4/jquery.1.12.4.nupkg",
-          "api_data_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/registrations2-semver2/jquery/1.12.4.json",
+          "repository_download_url": "",
+          "api_data_url": "",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -109,28 +111,30 @@
     {
       "type": "nuget",
       "namespace": "",
-      "name": "jQuery",
-      "version": "1.12.4",
+      "name": "Microsoft.Internal.NetSdkBuild.Mgmt.Tools",
+      "version": "0.9.0",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/jQuery@1.12.4",
+      "purl": "pkg:nuget/Microsoft.Internal.NetSdkBuild.Mgmt.Tools@0.9.0",
       "primary_language": "C#",
-      "description": "jQuery is a new kind of JavaScript Library.\n        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.\n        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/",
+      "description": "Build tools for building Azure SDK for NET repository",
       "release_date": "",
       "parties": [
         {
           "type": "organization",
           "role": "author",
-          "name": "jQuery Foundation, Inc.",
+          "name": "Microsoft",
           "email": "",
           "url": ""
         }
       ],
       "keywords": [
-        "jQuery"
+        "Azure",
+        ".NETSDK",
+        "BuildTools"
       ],
-      "homepage_url": "http://jquery.com/",
-      "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.12.4/jquery.1.12.4.nupkg",
+      "homepage_url": "https://github.com/Azure/azure-sdk-for-net",
+      "download_url": "",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -141,15 +145,15 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: http://jquery.org/license",
+      "declared_license": "LicenseUrl: https://raw.githubusercontent.com/Microsoft/dotnet/master/LICENSE",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
-        "framework": "netstandard1.0"
+        "framework": "netstandard2.0"
       },
       "repository_homepage_url": "",
-      "repository_download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.12.4/jquery.1.12.4.nupkg",
-      "api_data_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/registrations2-semver2/jquery/1.12.4.json",
+      "repository_download_url": "",
+      "api_data_url": "",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],

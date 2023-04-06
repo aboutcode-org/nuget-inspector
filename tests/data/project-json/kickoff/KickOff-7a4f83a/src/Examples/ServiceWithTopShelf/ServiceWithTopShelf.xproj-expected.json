@@ -383,7 +383,9 @@
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
-          "warnings": [],
+          "warnings": [
+            "Failed to get remote metadata for name: 'System.ServiceProcess' version: '4.0.0'. System.Exception: No package metadata found for System.ServiceProcess.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+          ],
           "errors": []
         },
         {
@@ -773,7 +775,9 @@
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],
-      "warnings": [],
+      "warnings": [
+        "Failed to get remote metadata for name: 'System.ServiceProcess' version: '4.0.0'. System.Exception: No package metadata found for System.ServiceProcess.4.0.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 172\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+      ],
       "errors": []
     },
     {

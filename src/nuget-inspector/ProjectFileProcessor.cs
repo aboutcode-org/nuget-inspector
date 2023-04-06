@@ -124,7 +124,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         if (Config.TRACE)
             Console.WriteLine($"ProjectFileProcessor.GetPackageReferences: ProjectPath {ProjectPath}");
 
-        var references = new List<PackageReference>();
+        List<PackageReference> references = new();
 
         // TODO: consider reading global.json if present?
         Dictionary<string, string> properties = new();
@@ -399,7 +399,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
         DependencyResolution resolution = new(success: true);
         foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
             {
                 Console.WriteLine($"     resolved: {resolved_dep.Id}@{resolved_dep.Version}");
                 foreach (var subdep in resolved_dep.Dependencies)
@@ -427,30 +427,29 @@ internal class ProjectFileProcessor : IDependencyProcessor
         if (references.Count == 0)
         {
             if (Config.TRACE)
-                Console.WriteLine("     no references");
+                Console.WriteLine("      No references found.");
 
             return new DependencyResolution(success: true);
         }
         else if (Config.TRACE)
         {
-            foreach (var reference in references)
-                Console.WriteLine($"    found reference: {reference}");
+            Console.WriteLine($"    Found #{references.Count} references");
         }
 
         references = DeduplicateReferences(references);
-        if (Config.TRACE)
+        if (Config.TRACE_DEEP)
         {
             foreach (var reference in references)
-                Console.WriteLine($"    found dedup reference: {reference}");
+                Console.WriteLine($"      Deduped reference: {reference}");
         }
         HashSet<SourcePackageDependencyInfo> resolved_deps = nugetApi.ResolveDependenciesForPackageReference(target_references: references);
 
         DependencyResolution resolution = new(success: true);
         foreach (SourcePackageDependencyInfo resolved_dep in resolved_deps)
         {
-            if (Config.TRACE)
+            if (Config.TRACE_DEEP)
             {
-                Console.WriteLine($"     resolved: {resolved_dep.Id}@{resolved_dep.Version}");
+                Console.WriteLine($"      resolved: {resolved_dep.Id}@{resolved_dep.Version}");
                 foreach (var subdep in resolved_dep.Dependencies)
                     Console.WriteLine($"        subdep: {subdep.Id}@{subdep.VersionRange}");
             }
