@@ -2,6 +2,14 @@ Changelog
 =========
 
 
+v0.9.10
+--------
+
+This is a feature update release with this update:
+
+* Collect copyright and VCS URL with the --with-details flag if available.
+
+
 v0.9.9
 -------
 
