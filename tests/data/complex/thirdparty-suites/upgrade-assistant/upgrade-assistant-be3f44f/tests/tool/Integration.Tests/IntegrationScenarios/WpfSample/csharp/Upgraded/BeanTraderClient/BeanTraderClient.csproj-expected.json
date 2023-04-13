@@ -189,7 +189,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'MahApps.Metro' version: '2.4.4'. System.Exception: No package metadata found for MahApps.Metro.2.4.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
+            "Failed to get remote metadata for name: 'MahApps.Metro' version: '2.4.4'. System.Exception: No package metadata found for MahApps.Metro.2.4.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 351\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
           ],
           "errors": []
         },
@@ -1730,7 +1730,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '5.1.0'. System.Exception: No package metadata found for Nito.AsyncEx.5.1.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
+            "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '5.1.0'. System.Exception: No package metadata found for Nito.AsyncEx.5.1.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 351\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
           ],
           "errors": []
         },
@@ -11010,7 +11010,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'MahApps.Metro' version: '2.4.4'. System.Exception: No package metadata found for MahApps.Metro.2.4.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
+        "Failed to get remote metadata for name: 'MahApps.Metro' version: '2.4.4'. System.Exception: No package metadata found for MahApps.Metro.2.4.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 351\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
       ],
       "errors": []
     },
@@ -12551,7 +12551,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '5.1.0'. System.Exception: No package metadata found for Nito.AsyncEx.5.1.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
+        "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '5.1.0'. System.Exception: No package metadata found for Nito.AsyncEx.5.1.0.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 174\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 351\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 324"
       ],
       "errors": []
     },

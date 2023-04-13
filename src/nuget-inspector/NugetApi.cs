@@ -34,13 +34,13 @@ public class NugetApi
     private readonly Dictionary<string, List<PackageSearchMetadataRegistration>> psmrs_by_package_name = new();
     private readonly Dictionary<PackageIdentity, PackageSearchMetadataRegistration?> psmr_by_identity = new();
     private readonly Dictionary<PackageIdentity, PackageDownload?> download_by_identity = new();
-    private readonly Dictionary<(PackageIdentity, NuGetFramework), SourcePackageDependencyInfo> spdi_by_identity = new();
+    private readonly Dictionary<PackageIdentity, SourcePackageDependencyInfo> spdi_by_identity = new();
 
     private readonly List<SourceRepository> source_repositories = new();
     private readonly List<PackageMetadataResource> metadata_resources = new();
     private readonly List<DependencyInfoResource> dependency_info_resources = new();
 
-    private readonly ISettings settings;
+        private readonly ISettings settings;
     private readonly List<Lazy<INuGetResourceProvider>> providers = new();
     private readonly NuGetFramework project_framework;
     private readonly List<PackageSource> package_sources = new();
@@ -132,7 +132,7 @@ public class NugetApi
 
         var exceptions = new List<Exception>();
 
-        foreach (PackageMetadataResource metadata_resource in metadata_resources)
+        foreach (var metadata_resource in metadata_resources)
         {
             try
             {
@@ -395,7 +395,7 @@ public class NugetApi
         if (framework == null)
             framework = project_framework;
 
-        if (spdi_by_identity.TryGetValue(key: (identity, framework), out SourcePackageDependencyInfo? spdi))
+        if (spdi_by_identity.TryGetValue(key: identity, out SourcePackageDependencyInfo? spdi))
         {
             return spdi;
         }
@@ -421,7 +421,7 @@ public class NugetApi
 
                 if (spdi != null)
                     {
-                        spdi_by_identity[(identity, project_framework)] = spdi;
+                        spdi_by_identity[identity] = spdi;
                         return spdi;
                     }
             }
@@ -447,7 +447,7 @@ public class NugetApi
     /// </summary>
     public string? GetDownloadUrl(PackageIdentity identity)
     {
-        if (spdi_by_identity.TryGetValue(key: (identity, project_framework), out SourcePackageDependencyInfo? spdi))
+        if (spdi_by_identity.TryGetValue(key: identity, out SourcePackageDependencyInfo? spdi))
         {
             var du = spdi.DownloadUri;
             if (du != null && !string.IsNullOrWhiteSpace(du.ToString()))
@@ -651,7 +651,7 @@ public class NugetApi
         foreach (var spdi in gathered_dependencies)
         {
             PackageIdentity identity = new(id: spdi.Id, version: spdi.Version);
-            spdi_by_identity[(identity, project_framework)] = spdi;
+            spdi_by_identity[identity] = spdi;
         }
 
         return gathered_dependencies;
@@ -915,6 +915,52 @@ public class NugetApi
             var selected = $"{item.Selected.Item.Key.Name},{item.Selected.Item.Key.Version.ToNormalizedString()}";
             throw new InvalidOperationException($"One package has version conflict: requested: {requested}, selected: {selected}");
         }
+    }
+
+    /// <summary>
+    /// Return Nuspec data fetched and extracted from a .nupkg
+    /// </summary>
+    public NuspecReader? GetNuspecDetails(
+        PackageIdentity identity,
+        string download_url,
+        SourceRepository source_repo
+        )
+    {
+        try
+        {
+            var httpSource = HttpSource.Create(source_repo);
+            var downloader = new FindPackagesByIdNupkgDownloader(httpSource);
+            NuspecReader reader = downloader.GetNuspecReaderFromNupkgAsync(
+                identity: identity,
+                url: download_url,
+                cacheContext: source_cache_context,
+                logger: nuget_logger,
+                token: CancellationToken.None).Result;
+
+            var copyright = reader.GetCopyright();
+            if (Config.TRACE)
+                Console.WriteLine($"    Nuspec copyright: {copyright}");
+
+            var repometa = reader.GetRepositoryMetadata();
+            if (Config.TRACE)
+            {
+                Console.WriteLine($"    Nuspec repo.type: {repometa.Type}");
+                Console.WriteLine($"    Nuspec repo.url: {repometa.Url}");
+                Console.WriteLine($"    Nuspec repo.branch: {repometa.Branch}");
+                Console.WriteLine($"    Nuspec repo.commit: {repometa.Commit}");
+            }
+            if (repometa.Type == "git" && repometa.Url.StartsWith("https://github.com"))
+            {
+                //<repository type="git" url="https://github.com/JamesNK/Newtonsoft.Json" commit="0a2e291c0d9c0c7675d445703e51750363a549ef"/>
+            }
+            return reader;
+        }
+        catch (Exception ex)
+        {
+            if (Config.TRACE)
+                Console.WriteLine($"    Failed to fetch Nuspec: {ex}");
+        }
+        return null;
     }
 }
 
