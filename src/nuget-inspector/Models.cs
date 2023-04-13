@@ -339,7 +339,20 @@ namespace NugetInspector
                 // Also fetch download URL and package hash
                 PackageDownload? download = nugetApi.GetPackageDownload(identity: pid, with_details: with_details);
                 SourcePackageDependencyInfo? spdi = nugetApi.GetResolvedSourcePackageDependencyInfo(pid, framework: null);
-                UpdateAttributes(metadata: psmr, download: download, spdi: spdi);
+                NuspecReader? nuspec = null;
+                if (spdi != null && download != null && with_details)
+                {
+                    nuspec = nugetApi.GetNuspecDetails(
+                        identity: pid,
+                        download_url: download.download_url,
+                        source_repo: spdi.Source);
+                }
+
+                UpdateAttributes(
+                    metadata: psmr,
+                    download: download,
+                    spdi: spdi,
+                    nuspec: nuspec);
             }
         }
 
@@ -349,7 +362,8 @@ namespace NugetInspector
         public void UpdateAttributes(
             PackageSearchMetadataRegistration? metadata,
             PackageDownload? download,
-            SourcePackageDependencyInfo? spdi)
+            SourcePackageDependencyInfo? spdi,
+            NuspecReader? nuspec)
         {
             string? synthetic_api_data_url = null;
 
@@ -418,6 +432,32 @@ namespace NugetInspector
                     repository_homepage_url = metadata.PackageDetailsUrl.ToString();
 
                 synthetic_api_data_url = $"https://api.nuget.org/v3/registration5-gz-semver2/{name_lower}/{version_lower}.json";
+            }
+            if (nuspec != null)
+            {
+                // vcs package details
+                var repo = nuspec.GetRepositoryMetadata();
+                var vcs_tool = repo.Type ?? "";
+                var vcs_repository = repo.Url;
+                var vcs_commit = repo.Commit ?? "";
+
+                if (!string.IsNullOrWhiteSpace(vcs_repository))
+                {
+                    if (!string.IsNullOrWhiteSpace(vcs_tool))
+                    {
+                        vcs_url = $"{vcs_tool}+{vcs_repository}";
+                    }
+                    else
+                    {
+                        vcs_url = vcs_repository ?? "";
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(vcs_commit))
+                    {
+                        vcs_url = $"{vcs_url}@{vcs_commit}";
+                    }
+                }
+                copyright = nuspec.GetCopyright();
             }
 
             if (download != null)

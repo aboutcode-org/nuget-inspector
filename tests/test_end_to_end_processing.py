@@ -104,6 +104,7 @@ paths_with_extra_arguments = {
     "nuget-config/api-v2-sunnydrive-7f6e4b/src/MusicStore/MusicStore.xproj": "--with-fallback",
     "basic/csproj1/CycloneDX.csproj": "--with-details",
     "basic/csproj2/example.csproj": "--with-details",
+    "basic/metadata/sample.csproj": "--with-details",
 }
 
 

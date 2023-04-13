@@ -1,0 +1,168 @@
+{
+  "headers": [
+    {
+      "tool_name": "nuget-inspector",
+      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_version": "0.0.0",
+      "options": [
+        "--project-file /basic/metadata/sample.csproj"
+      ],
+      "project_framework": "net6.0",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "files": [],
+  "packages": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "sample",
+      "version": null,
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "",
+      "primary_language": "C#",
+      "description": "",
+      "release_date": "",
+      "parties": [],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {},
+      "repository_homepage_url": "",
+      "repository_download_url": "",
+      "api_data_url": "",
+      "datasource_id": "dotnet-project-reference",
+      "datafile_path": "/basic/metadata/sample.csproj",
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "xunit.analyzers",
+          "version": "1.0.0",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/xunit.analyzers@1.0.0",
+          "primary_language": "C#",
+          "description": "xUnit.net is a developer testing framework, built to support Test Driven Development, with a design goal of extreme simplicity and alignment with framework features.\n\nInstalling this package provides code analyzers to help developers find and fix frequent issues when writing tests and xUnit.net extensibility code.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "jnewkirk,bradwilson,marcind",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "xunit.analyzers",
+            "analyzers",
+            "roslyn",
+            "xunit",
+            "xunit.net"
+          ],
+          "homepage_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.0.0/xunit.analyzers.1.0.0.nupkg",
+          "size": 146928,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "D3A58D37646082414D0954088D285068AEF43C7992BDBDECCBB4F84E5850DBAAFCCD3275468031B51041A7A1A82A990A86E4FDEB5169684B878FD169B7FBBF73",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "git+https://github.com/xunit/xunit.analyzers@2108db7ed1fc227632d18639413761dc7b0b5f17",
+          "copyright": "Copyright (C) .NET Foundation",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.analyzers/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "net6.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/xunit.analyzers/1.0.0?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.0.0/xunit.analyzers.1.0.0.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/1.0.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "xunit.analyzers",
+      "version": "1.0.0",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/xunit.analyzers@1.0.0",
+      "primary_language": "C#",
+      "description": "xUnit.net is a developer testing framework, built to support Test Driven Development, with a design goal of extreme simplicity and alignment with framework features.\n\nInstalling this package provides code analyzers to help developers find and fix frequent issues when writing tests and xUnit.net extensibility code.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "jnewkirk,bradwilson,marcind",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "xunit.analyzers",
+        "analyzers",
+        "roslyn",
+        "xunit",
+        "xunit.net"
+      ],
+      "homepage_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.0.0/xunit.analyzers.1.0.0.nupkg",
+      "size": 146928,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "D3A58D37646082414D0954088D285068AEF43C7992BDBDECCBB4F84E5850DBAAFCCD3275468031B51041A7A1A82A990A86E4FDEB5169684B878FD169B7FBBF73",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "git+https://github.com/xunit/xunit.analyzers@2108db7ed1fc227632d18639413761dc7b0b5f17",
+      "copyright": "Copyright (C) .NET Foundation",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/xunit.analyzers/1.0.0/license\nLicenseType: Expression\nLicense: Apache-2.0\nLicenseExpression: Apache-2.0",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "net6.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/xunit.analyzers/1.0.0?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.0.0/xunit.analyzers.1.0.0.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/xunit.analyzers/1.0.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}
