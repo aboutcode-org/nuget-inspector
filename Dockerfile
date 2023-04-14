@@ -15,7 +15,7 @@ RUN curl --location https://packages.microsoft.com/config/ubuntu/22.04/packages-
     && rm packages-microsoft-prod.deb
 
 RUN apt-get update && \
-  sudo apt-get install -y dotnet-sdk-6.0
+  apt-get install -y dotnet-sdk-6.0
 
 ENV NI_HOME=/opt/nuget-inspector/bin
 ENV PATH=$PATH:$NI_HOME
