@@ -7,7 +7,15 @@ ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
 RUN apt-get update \
-    && apt-get install -y curl
+    && apt-get install -y \
+    curl \
+    libc6 \
+    libgcc1 \
+    libgssapi-krb5-2 \
+    libicu67 \
+    libssl1.1 \
+    libstdc++6 \
+    zlib1g
 
 RUN curl --location https://dot.net/v1/dotnet-install.sh \
          --output dotnet-install.sh \
