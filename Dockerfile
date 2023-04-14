@@ -12,7 +12,7 @@ RUN apt-get update \
 RUN curl --location https://dot.net/v1/dotnet-install.sh \
          --output dotnet-install.sh \
     && chmod +x dotnet-install.sh \
-    && ./dotnet-install.sh --channel 6.0
+    && ./dotnet-install.sh --channel 6.0 \
     && rm dotnet-install.sh
 ENV DOTNET_ROOT=$HOME/.dotnet
 ENV PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
