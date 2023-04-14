@@ -105,7 +105,7 @@ public class Options
         command_options.Add(prototype: "with-fallback", description: "Optionally use a plain XML project file parser as fallback from failures.",
             action: value => options.WithDetails = value != null);
 
-        command_options.Add(prototype: "with-nuget-org", description: "Optionally use the officila, public nuget.org API as a fallback in addition to nuget.config-configured API sources.",
+        command_options.Add(prototype: "with-nuget-org", description: "Optionally use the official, public nuget.org API as a fallback in addition to nuget.config-configured API sources.",
             action: value => options.WithNuGetOrg = value != null);
 
         command_options.Add(prototype: "h|help", description: "Show this message and exit.",
