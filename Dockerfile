@@ -6,7 +6,7 @@ ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
-RUN apt-get update && apt-get install -y dotnet6
+RUN apt-get update && apt-get install -y curl dotnet6
 
 ENV NI_HOME=/opt/nuget-inspector/bin
 ENV PATH=$PATH:$NI_HOME
