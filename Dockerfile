@@ -11,10 +11,13 @@ RUN apt-get update \
     curl \
     libc6 \
     libgcc1 \
+    libgcc-s1 \
     libgssapi-krb5-2 \
-    libicu67 \
-    libssl1.1 \
+    libicu70 \
+    liblttng-ust1 \
+    libssl3 \
     libstdc++6 \
+    libunwind8 \
     zlib1g
 
 RUN curl --location https://dot.net/v1/dotnet-install.sh \
