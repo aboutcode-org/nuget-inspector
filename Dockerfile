@@ -9,13 +9,13 @@ ENV LC_ALL=en_US.UTF-8
 RUN apt-get update \
     && apt-get install -y curl
 
-RUN curl --location https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb \
-         --output packages-microsoft-prod.deb \
-    && dpkg -i packages-microsoft-prod.deb \
-    && rm packages-microsoft-prod.deb
-
-RUN apt-get update && \
-  apt-get install -y dotnet-sdk-6.0
+RUN curl --location https://dot.net/v1/dotnet-install.sh \
+         --output dotnet-install.sh \
+    && chmod +x dotnet-install.sh \
+    && ./dotnet-install.sh --channel 6.0
+    && rm dotnet-install.sh
+ENV DOTNET_ROOT=$HOME/.dotnet
+ENV PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
 
 ENV NI_HOME=/opt/nuget-inspector/bin
 ENV PATH=$PATH:$NI_HOME
