@@ -6,7 +6,16 @@ ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
-RUN apt-get update && apt-get install -y curl dotnet6
+RUN apt-get update \
+    && apt-get install -y curl
+
+RUN curl --location https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb \
+         --output packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb \
+    && rm packages-microsoft-prod.deb
+
+RUN apt-get update && \
+  sudo apt-get install -y dotnet-sdk-6.0
 
 ENV NI_HOME=/opt/nuget-inspector/bin
 ENV PATH=$PATH:$NI_HOME
