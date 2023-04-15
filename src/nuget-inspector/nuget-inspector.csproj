@@ -23,24 +23,46 @@
         <PackageId>nuget-inspector</PackageId>
         <Product>nuget-inspector</Product>
         <AssemblyName>nuget-inspector</AssemblyName>
-        <Version>0.9.10</Version>
+
+        <Version>0.9.11</Version>
+        <AssemblyVersion>0.9.11.0</AssemblyVersion>
+        <FileVersion>0.9.11.0</FileVersion>
+
         <Authors>nexB Inc.</Authors>
         <Company>nexB Inc</Company>
-        <AssemblyVersion>0.9.10.0</AssemblyVersion>
-        <FileVersion>0.9.10.0</FileVersion>
-        <Description>A NuGet and Dotnet package dependency resolver</Description>
-        <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
-        <PackageLicenseUrl>Apache-2.0 AND MIT</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
         <Copyright>Copyright (c) nexB Inc. and others.</Copyright>
+
+        <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
+        <Description>A NuGet and Dotnet package dependency resolver</Description>
+        <PackageTags>nuget, dependencies, dependency, resolver, dotnet, csproj, linux, windows, macos</PackageTags>
+
+        <PackageLicenseExpression>Apache-2.0 AND MIT</PackageLicenseExpression>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/nexB/nuget-inspector/main/NOTICE</PackageLicenseUrl>
+        <PackageLicenseFile>../NOTICE</PackageLicenseFile>
+
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>nuget dependencies</PackageTags>
+        <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
+
     </PropertyGroup>
 
+    
     <ItemGroup>
-        <PackageReference Include="Microsoft.Build" Version="17.3.2" />
+        <None Include="../NOTICE" Pack="true" PackagePath="NOTICE"/>
+        <None Include="../AUTHORS.rst" Pack="true" PackagePath="AUTHORS.rst"/>
+        <None Include="../mit.LICENSE" Pack="true" PackagePath="mit.LICENSE"/>
+        <None Include="../apache-2.0.LICENSE" Pack="true" PackagePath="apache-2.0.LICENSE"/>
+        <None Include="../CHANGELOG.rst" Pack="true" PackagePath="CHANGELOG.rst"/>
+        <None Include="../README.rst" Pack="true" PackagePath="README.rst"/>
+    </ItemGroup>
+
+    <!-- production dependencies -->
+    <ItemGroup>
         <PackageReference Include="Microsoft.Build.Locator" Version="1.4.10-g38d95f4814" />
+        <PackageReference Include="Microsoft.Build" Version="17.3.2" />
         <!--
+        <PackageReference Include="Microsoft.Build.Framework" Version="17.3.2" />
         <PackageReference Include="Microsoft.Build.Runtime" Version="17.3.2" />
         <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.3.2"/>
         -->
@@ -58,6 +80,13 @@
         <PackageReference Include="NuGet.Resolver" Version="6.4.0" />
         <PackageReference Include="NuGet.Versioning" Version="6.4.0" />
         <PackageReference Include="packageurl-dotnet" Version="1.2.0" />
+
     </ItemGroup>
+
+    <!-- development dependencies
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+    </ItemGroup>
+    -->
 
 </Project>

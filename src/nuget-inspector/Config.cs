@@ -9,6 +9,6 @@ public static class Config
     public static bool TRACE_DEEP = false;
     public static bool TRACE_META = false;
     public static bool TRACE_OUTPUT = false;
-    public const string NUGET_INSPECTOR_VERSION = "0.9.10";
+    public const string NUGET_INSPECTOR_VERSION = "0.9.11";
     #pragma warning restore CA2211
 }
