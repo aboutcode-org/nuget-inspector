@@ -30,6 +30,9 @@ style of .NET and NuGet projects and package layouts, manifests and lockfiles.
 Usage
 --------
 
+- Install the dotnet SDK 6.x for your platform from Microsoft
+  https://learn.microsoft.com/en-us/dotnet/core/install/
+
 - Download and extract the pre-built binary release archive from the release page
   https://github.com/nexB/nuget-inspector for your operating system. (Linux-only
   for now)
@@ -119,5 +122,6 @@ Here are credits for some of these key projects without which it would not exist
   https://github.com/Dropcraft/Dropcraft
 
 These projects are used either in the built executables, at build time or for
-testing. The built executables are designed to be self-contained exes that do
-not require additional libraries to run on the target system.
+testing (a large number are used for testing). The built executables are designed
+to be self-contained exes that do not require additional libraries to run on the
+target system, beyond a dotnet SDK.

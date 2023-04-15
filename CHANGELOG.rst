@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v0.9.11
+--------
+
+This is a minor feature update release with this update:
+
+* Add Dockerfile and document dotnet requirements
+
 
 v0.9.10
 --------

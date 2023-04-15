@@ -16,7 +16,7 @@
 rm -rf release/
 mkdir release
 
-VERSION=0.9.10
+VERSION=0.9.11
 
 TARGET_BASE=nuget-inspector-$(git describe)
 
