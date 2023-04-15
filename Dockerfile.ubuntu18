@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-FROM ubuntu:jammy as base-image
+FROM ubuntu:bionic as base-image
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
@@ -12,13 +12,10 @@ RUN apt-get update \
     curl \
     libc6 \
     libgcc1 \
-    libgcc-s1 \
     libgssapi-krb5-2 \
-    libicu70 \
-    liblttng-ust1 \
-    libssl3 \
+    libicu60 \
+    libssl1.1 \
     libstdc++6 \
-    libunwind8 \
     zlib1g
 
 ENV NI_ROOT=/opt/nuget-inspector
@@ -31,9 +28,12 @@ RUN mkdir -p $NI_DOTNET_HOME \
     && curl --location https://aka.ms/dotnet/6.0/dotnet-sdk-linux-x64.tar.gz \
     | tar -C $NI_DOTNET_HOME -xz
 
-ARG NI_VERSION=0.9.10
-RUN mkdir -p $NI_HOME \
-    && curl -L https://github.com/nexB/nuget-inspector/releases/download/v${NI_VERSION}/nuget-inspector-v${NI_VERSION}-linux-x64.tar.gz \
-    | tar --strip-components=1 -C $NI_HOME -xz
+# ARG NI_VERSION=0.9.10
+# RUN mkdir -p $NI_HOME \
+#    && curl -L https://github.com/nexB/nuget-inspector/releases/download/v${NI_VERSION}/nuget-inspector-v${NI_VERSION}-linux-x64.tar.gz \
+#    | tar --strip-components=1 -C $NI_HOME -xz
+
+RUN mkdir -p $NI_HOME
+ADD ./build/ $NI_HOME
 
 ENTRYPOINT ["/opt/nuget-inspector/bin/nuget-inspector"]
