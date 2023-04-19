@@ -39,7 +39,11 @@ public class PackagesConfigHelper
     {
         foreach (var dependency in dependencies)
         {
-            Add(id: dependency.name!, name: dependency.name, range: dependency.version_range, framework: dependency.framework);
+            Add(
+                id: dependency.name!,
+                name: dependency.name,
+                range: dependency.version_range,
+                framework: dependency.framework);
         }
 
         var builder = new PackageTree();
@@ -72,7 +76,11 @@ public class PackagesConfigHelper
     public void Add(string id, string? name, VersionRange? range, NuGetFramework? framework)
     {
         id = id.ToLower();
-        Resolve(id: id, name: name, project_target_framework: framework, overrideRange: range);
+        Resolve(
+            id: id,
+            name: name,
+            project_target_framework: framework,
+            overrideRange: range);
     }
 
     private void Resolve(

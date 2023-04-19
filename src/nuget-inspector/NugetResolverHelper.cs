@@ -74,8 +74,8 @@ public class NugetResolverHelper
             var resolved_version = package_tree.GetResolvedVersion(name: pkg.Id, range: pkg.VersionRange);
             if (resolved_version != null)
             {
-                var id = new BasePackage(name: pkg.Id, version: resolved_version);
-                dependencies.Add(item: id);
+                var base_pkg = new BasePackage(name: pkg.Id, version: resolved_version);
+                dependencies.Add(item: base_pkg);
                 if (Config.TRACE)
                     Console.WriteLine($"        dependencies.Add name: {pkg.Id}, version: {resolved_version}");
             }

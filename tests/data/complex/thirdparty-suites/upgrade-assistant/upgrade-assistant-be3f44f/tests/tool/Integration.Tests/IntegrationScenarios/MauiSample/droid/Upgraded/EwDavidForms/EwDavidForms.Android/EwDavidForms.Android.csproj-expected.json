@@ -49,96 +49,10 @@
       "api_data_url": "",
       "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/MauiSample/droid/Upgraded/EwDavidForms/EwDavidForms.Android/EwDavidForms.Android.csproj",
-      "dependencies": [
-        {
-          "type": "nuget",
-          "namespace": "",
-          "name": "CommunityToolkit.Maui",
-          "version": "1.0.0-rc2",
-          "qualifiers": "",
-          "subpath": "",
-          "purl": "",
-          "primary_language": "C#",
-          "description": "",
-          "release_date": "",
-          "parties": [],
-          "keywords": [],
-          "homepage_url": "",
-          "download_url": "",
-          "size": 0,
-          "sha1": "",
-          "md5": "",
-          "sha256": "",
-          "sha512": "",
-          "bug_tracking_url": "",
-          "code_view_url": "",
-          "vcs_url": "",
-          "copyright": "",
-          "license_expression": "",
-          "declared_license": "",
-          "notice_text": "",
-          "source_packages": [],
-          "extra_data": {
-            "framework": "net6.0-android"
-          },
-          "repository_homepage_url": "",
-          "repository_download_url": "",
-          "api_data_url": "",
-          "datasource_id": "",
-          "datafile_path": "",
-          "dependencies": [],
-          "warnings": [
-            "Failed to get remote metadata for name: 'CommunityToolkit.Maui' version: '1.0.0-rc2'. System.Exception: No package metadata found for CommunityToolkit.Maui.1.0.0-rc2.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
-          ],
-          "errors": []
-        }
-      ],
+      "dependencies": [],
       "warnings": [],
       "errors": []
     }
   ],
-  "dependencies": [
-    {
-      "type": "nuget",
-      "namespace": "",
-      "name": "CommunityToolkit.Maui",
-      "version": "1.0.0-rc2",
-      "qualifiers": "",
-      "subpath": "",
-      "purl": "",
-      "primary_language": "C#",
-      "description": "",
-      "release_date": "",
-      "parties": [],
-      "keywords": [],
-      "homepage_url": "",
-      "download_url": "",
-      "size": 0,
-      "sha1": "",
-      "md5": "",
-      "sha256": "",
-      "sha512": "",
-      "bug_tracking_url": "",
-      "code_view_url": "",
-      "vcs_url": "",
-      "copyright": "",
-      "license_expression": "",
-      "declared_license": "",
-      "notice_text": "",
-      "source_packages": [],
-      "extra_data": {
-        "framework": "net6.0-android"
-      },
-      "repository_homepage_url": "",
-      "repository_download_url": "",
-      "api_data_url": "",
-      "datasource_id": "",
-      "datafile_path": "",
-      "dependencies": [],
-      "warnings": [
-        "Failed to get remote metadata for name: 'CommunityToolkit.Maui' version: '1.0.0-rc2'. System.Exception: No package metadata found for CommunityToolkit.Maui.1.0.0-rc2.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
-      ],
-      "errors": []
-    }
-  ]
+  "dependencies": []
 }

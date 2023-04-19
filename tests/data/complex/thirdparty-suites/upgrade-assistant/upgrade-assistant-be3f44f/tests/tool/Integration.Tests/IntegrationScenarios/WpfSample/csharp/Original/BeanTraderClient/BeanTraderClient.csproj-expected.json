@@ -140,7 +140,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'Castle.Windsor' version: '4.1.1'. System.Exception: No package metadata found for Castle.Windsor.4.1.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'Castle.Windsor' version: '4.1.1'. System.Exception: No package metadata found for Castle.Windsor.4.1.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
           ],
           "errors": []
         },
@@ -180,7 +180,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'ControlzEx' version: '3.0.2.4'. System.Exception: No package metadata found for ControlzEx.3.0.2.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'ControlzEx' version: '3.0.2.4'. System.Exception: No package metadata found for ControlzEx.3.0.2.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
           ],
           "errors": []
         },
@@ -535,7 +535,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'MahApps.Metro' version: '1.6.5'. System.Exception: No package metadata found for MahApps.Metro.1.6.5.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'MahApps.Metro' version: '1.6.5'. System.Exception: No package metadata found for MahApps.Metro.1.6.5.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
           ],
           "errors": []
         },
@@ -1016,7 +1016,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '4.0.1'. System.Exception: No package metadata found for Nito.AsyncEx.4.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '4.0.1'. System.Exception: No package metadata found for Nito.AsyncEx.4.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
           ],
           "errors": []
         },
@@ -1255,7 +1255,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'Castle.Windsor' version: '4.1.1'. System.Exception: No package metadata found for Castle.Windsor.4.1.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'Castle.Windsor' version: '4.1.1'. System.Exception: No package metadata found for Castle.Windsor.4.1.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
       ],
       "errors": []
     },
@@ -1295,7 +1295,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'ControlzEx' version: '3.0.2.4'. System.Exception: No package metadata found for ControlzEx.3.0.2.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'ControlzEx' version: '3.0.2.4'. System.Exception: No package metadata found for ControlzEx.3.0.2.4.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
       ],
       "errors": []
     },
@@ -1392,7 +1392,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'MahApps.Metro' version: '1.6.5'. System.Exception: No package metadata found for MahApps.Metro.1.6.5.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'MahApps.Metro' version: '1.6.5'. System.Exception: No package metadata found for MahApps.Metro.1.6.5.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
       ],
       "errors": []
     },
@@ -2071,7 +2071,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '4.0.1'. System.Exception: No package metadata found for Nito.AsyncEx.4.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'Nito.AsyncEx' version: '4.0.1'. System.Exception: No package metadata found for Nito.AsyncEx.4.0.1.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
       ],
       "errors": []
     },

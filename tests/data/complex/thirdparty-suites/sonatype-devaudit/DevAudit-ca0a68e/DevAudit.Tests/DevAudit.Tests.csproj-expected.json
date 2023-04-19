@@ -135,7 +135,7 @@
           "datafile_path": "",
           "dependencies": [],
           "warnings": [
-            "Failed to get remote metadata for name: 'Versatile' version: '0.2.6'. System.Exception: No package metadata found for Versatile.0.2.6.\n    System.InvalidCastException: Unable to cast object of type 'ClonedPackageSearchMetadata' to type 'NuGet.Protocol.PackageSearchMetadataRegistration'.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 139\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+            "Failed to get remote metadata for name: 'Versatile' version: '0.2.6'. System.Exception: No package metadata found for Versatile.0.2.6.\n    System.InvalidCastException: Unable to cast object of type 'ClonedPackageSearchMetadata' to type 'NuGet.Protocol.PackageSearchMetadataRegistration'.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 139\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
           ],
           "errors": []
         },
@@ -513,7 +513,7 @@
       "datafile_path": "",
       "dependencies": [],
       "warnings": [
-        "Failed to get remote metadata for name: 'Versatile' version: '0.2.6'. System.Exception: No package metadata found for Versatile.0.2.6.\n    System.InvalidCastException: Unable to cast object of type 'ClonedPackageSearchMetadata' to type 'NuGet.Protocol.PackageSearchMetadataRegistration'.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 139\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 333\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 312"
+        "Failed to get remote metadata for name: 'Versatile' version: '0.2.6'. System.Exception: No package metadata found for Versatile.0.2.6.\n    System.InvalidCastException: Unable to cast object of type 'ClonedPackageSearchMetadata' to type 'NuGet.Protocol.PackageSearchMetadataRegistration'.\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 139\n   at NugetInspector.NugetApi.FindPackageVersion(PackageIdentity pid) in ./nuget-inspector/NugetApi.cs:line 173\n   at NugetInspector.BasePackage.UpdateWithRemoteMetadata(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 342\n   at NugetInspector.BasePackage.Update(NugetApi nugetApi, Boolean with_details) in ./nuget-inspector/Models.cs:line 321"
       ],
       "errors": []
     },

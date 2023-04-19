@@ -10,9 +10,7 @@
       "project_framework": "netstandard2.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
       "warnings": [],
-      "errors": [
-        "Failed to process project file: /complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/NetStandard.csproj with:\nSystem.Exception: Failed to resolve graph with: NoVersionNotFound Accepted\n ---> System.NullReferenceException: Object reference not set to an instance of an object.\n   at NugetInspector.NugetApi.FlattenGraph(GraphNode`1 node, Dictionary`2 resolved_package_info_by_package_id) in ./nuget-inspector/NugetApi.cs:line 831\n   --- End of inner exception stack trace ---\n   at NugetInspector.NugetApi.FlattenGraph(GraphNode`1 node, Dictionary`2 resolved_package_info_by_package_id) in ./nuget-inspector/NugetApi.cs:line 864\n   at NugetInspector.NugetApi.ResolveDependenciesForPackageReference(IEnumerable`1 target_references) in ./nuget-inspector/NugetApi.cs:line 779\n   at NugetInspector.ProjectFileProcessor.ResolveUsingLib() in ./nuget-inspector/ProjectFileProcessor.cs:line 445\n   at NugetInspector.ProjectScanner.RunScan() in ./nuget-inspector/ProjectScanner.cs:line 293"
-      ]
+      "errors": []
     }
   ],
   "files": [],
@@ -49,12 +47,206 @@
       "repository_homepage_url": "",
       "repository_download_url": "",
       "api_data_url": "",
-      "datasource_id": "",
+      "datasource_id": "dotnet-project-reference",
       "datafile_path": "/complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/TestProjects/NetStandard/NetStandard/NetStandard/NetStandard.csproj",
-      "dependencies": [],
+      "dependencies": [
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "Newtonsoft.Json",
+          "version": "3.5.8",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/Newtonsoft.Json@3.5.8",
+          "primary_language": "C#",
+          "description": "Json.NET is a popular high-performance JSON framework for .NET",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "James Newton-King",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/3.5.8?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/3.5.8.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "NUnit",
+          "version": "2.5.7.10213",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/NUnit@2.5.7.10213",
+          "primary_language": "C#",
+          "description": "NUnit is a unit-testing framework for all .Net languages. Initially ported from JUnit, the current production release, version 2.5, is the sixth major release of this xUnit based unit testing tool for Microsoft .NET.",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Charlie Poole",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [],
+          "homepage_url": "",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/nunit/2.5.7.10213/nunit.2.5.7.10213.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/NUnit/2.5.7.10213?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nunit/2.5.7.10213/nunit.2.5.7.10213.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/2.5.7.10213.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        }
+      ],
       "warnings": [],
       "errors": []
     }
   ],
-  "dependencies": []
+  "dependencies": [
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "Newtonsoft.Json",
+      "version": "3.5.8",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/Newtonsoft.Json@3.5.8",
+      "primary_language": "C#",
+      "description": "Json.NET is a popular high-performance JSON framework for .NET",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "James Newton-King",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/Newtonsoft.Json/3.5.8?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/3.5.8/newtonsoft.json.3.5.8.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/newtonsoft.json/3.5.8.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "NUnit",
+      "version": "2.5.7.10213",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/NUnit@2.5.7.10213",
+      "primary_language": "C#",
+      "description": "NUnit is a unit-testing framework for all .Net languages. Initially ported from JUnit, the current production release, version 2.5, is the sixth major release of this xUnit based unit testing tool for Microsoft .NET.",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Charlie Poole",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [],
+      "homepage_url": "",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/nunit/2.5.7.10213/nunit.2.5.7.10213.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/NUnit/2.5.7.10213?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/nunit/2.5.7.10213/nunit.2.5.7.10213.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/nunit/2.5.7.10213.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    }
+  ]
 }

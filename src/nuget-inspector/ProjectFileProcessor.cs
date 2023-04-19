@@ -142,6 +142,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
 
             if (Config.TRACE_DEEP)
             {
+                Console.WriteLine($"    Project reference: {reference}");
                 Console.WriteLine($"    Project reference: name: {name}");
                 foreach (var meta in reference.Metadata)
                     Console.WriteLine($"        Metadata: name: '{meta.Name}' value: '{meta.EvaluatedValue}'");
