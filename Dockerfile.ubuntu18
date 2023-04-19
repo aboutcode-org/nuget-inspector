@@ -28,7 +28,7 @@ RUN mkdir -p $NI_DOTNET_HOME \
     && curl --location https://aka.ms/dotnet/6.0/dotnet-sdk-linux-x64.tar.gz \
     | tar -C $NI_DOTNET_HOME -xz
 
-# ARG NI_VERSION=0.9.11
+# ARG NI_VERSION=0.9.12
 # RUN mkdir -p $NI_HOME \
 #    && curl -L https://github.com/nexB/nuget-inspector/releases/download/v${NI_VERSION}/nuget-inspector-v${NI_VERSION}-linux-x64.tar.gz \
 #    | tar --strip-components=1 -C $NI_HOME -xz

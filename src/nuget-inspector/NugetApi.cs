@@ -121,11 +121,11 @@ public class NugetApi
     public PackageSearchMetadataRegistration? FindPackageVersion(PackageIdentity pid)
     {
         if (Config.TRACE)
-            Console.WriteLine($"Fetching package metadata for: {pid}");
+            Console.WriteLine($"      Fetching package metadata for: {pid}");
 
         if (psmr_by_identity.TryGetValue(key: pid, out PackageSearchMetadataRegistration? psmr))
         {
-            if (Config.TRACE)
+            if (Config.TRACE_META)
                 Console.WriteLine($"  Metadata Cache hit for '{pid}'");
             return psmr;
         }
@@ -145,7 +145,7 @@ public class NugetApi
 
                 if (psmr != null)
                 {
-                    if (Config.TRACE)
+                    if (Config.TRACE_META)
                         Console.WriteLine($"  Found metadata for '{pid}' from: {metadata_resource}");
                     psmr_by_identity[pid] = psmr;
                     return psmr;
@@ -400,7 +400,7 @@ public class NugetApi
             return spdi;
         }
 
-        if (Config.TRACE)
+        if (Config.TRACE_META)
             Console.WriteLine($"  GetPackageInfo: {identity} framework: {framework}");
 
         foreach (var dir in dependency_info_resources)
@@ -416,7 +416,7 @@ public class NugetApi
 
                 spdi = infoTask.Result;
 
-                if (Config.TRACE && spdi != null)
+                if (Config.TRACE_META && spdi != null)
                     Console.WriteLine($"    Found download URL: {spdi.DownloadUri} hash: {spdi.PackageHash}");
 
                 if (spdi != null)
@@ -506,8 +506,8 @@ public class NugetApi
             var spdi = GetResolvedSourcePackageDependencyInfo(
                 identity: identity,
                 framework: project_framework);
-            if (Config.TRACE)
-                Console.WriteLine($"        Info available for package '{spdi}'");
+            if (Config.TRACE_DEEP)
+                Console.WriteLine($"      Info available for package '{spdi}'");
 
             if (spdi != null)
             {
@@ -720,8 +720,9 @@ public class NugetApi
         var walk_context = new RemoteWalkContext(
             cacheContext: source_cache_context,
             packageSourceMapping: psm,
-            logger: nuget_logger);
-
+            logger: nuget_logger){
+                IsMsBuildBased = true
+            };
         var packages = new List<PackageId>();
         foreach (var targetref in target_references)
         {
@@ -750,8 +751,8 @@ public class NugetApi
             walk_context.RemoteLibraryProviders.Add(provider);
         }
 
-        // We need a fake root lib as there is only one allowed input
-        // This represents the project
+        // We need a fake root lib as there is only one allowed input to walk
+        // the dependencies: This represents the project
         var rootlib = new LibraryRange(
             name: "root_project",
             versionRange: VersionRange.Parse("1.0.0"),
@@ -762,22 +763,70 @@ public class NugetApi
         var results = walker.WalkAsync(
             library: rootlib,
             framework: project_framework,
+            // TODO: add eventual support for runtime id
+            // https://learn.microsoft.com/en-us/dotnet/core/rid-catalog
             runtimeIdentifier: null,
-            runtimeGraph: RuntimeGraph.Empty,
+            runtimeGraph: null, //RuntimeGraph.Empty,
             recursive: true);
-        var resolved_graph = results.Result;
+        GraphNode<RemoteResolveResult> resolved_graph = results.Result;
         CheckGraphForErrors(resolved_graph);
+
+        RestoreTargetGraph rg = RestoreTargetGraph.Create(
+            graphs: new List<GraphNode<RemoteResolveResult>>() { resolved_graph },
+            context: walk_context,
+            logger: nuget_logger,
+            framework: project_framework
+        );
 
         var resolved_package_info_by_package_id = new Dictionary<PackageId, ResolvedPackageInfo>();
 
-        // we iterate only inner nodes, because we have only one outer node: the "fake" root project 
-        foreach (GraphNode<RemoteResolveResult> inner in resolved_graph.InnerNodes)
-        {
-            if (Config.TRACE_DEEP)
-                Console.WriteLine($"    Resolved direct dependency: {inner.Item.Key.Name}@{inner.Item.Key.Version}");
+        if (Config.TRACE)
+            Console.WriteLine("      RestoreTargetGraph");
 
-            FlattenGraph(inner, resolved_package_info_by_package_id);
+        if (rg.Flattened != null)
+        {
+            var flats = new List<GraphItem<RemoteResolveResult>>(rg.Flattened);
+            flats.Sort((x,y) => x.Data.Match.Library.CompareTo(y.Data.Match.Library));
+
+            foreach (var item in flats)
+            {
+                LibraryIdentity lib = item.Key;
+                if (lib.Type != "package")
+                    continue;
+
+
+                string name = lib.Name;
+                string version = lib.Version.ToNormalizedString();
+                bool is_prerelease = lib.Version.IsPrerelease;
+
+                RemoteMatch remote_match= item.Data.Match;
+
+                var deps = item.Data.Dependencies;
+                var pid = new PackageId(id: name, version: version,  allow_prerelease_versions: is_prerelease);
+                var rpi = new ResolvedPackageInfo() {
+                    package_id= pid,
+                    remote_match= remote_match
+                };
+                resolved_package_info_by_package_id[pid] = rpi;
+                if (Config.TRACE)
+                {
+                    Console.WriteLine($"      {lib}");
+                    foreach (var dep in deps)
+                    {
+                        Console.WriteLine($"           {lib.Type}/{dep.Name}@{dep.LibraryRange} autoref: {dep.AutoReferenced}");
+                    }
+                }
+            }
         }
+
+        // we iterate only inner nodes, because we have only one outer node: the "fake" root project 
+        // foreach (GraphNode<RemoteResolveResult> inner in resolved_graph.InnerNodes)
+        // {
+        //     if (Config.TRACE_DEEP)
+        //         Console.WriteLine($"\n    Resolved direct dependency: {inner.Item.Key.Name}@{inner.Item.Key.Version}");
+
+        //     FlattenGraph(inner, resolved_package_info_by_package_id);
+        // }
 
         HashSet<SourcePackageDependencyInfo> flat_dependencies = new();
         foreach (KeyValuePair<PackageId, ResolvedPackageInfo> item in resolved_package_info_by_package_id)
@@ -803,7 +852,7 @@ public class NugetApi
     }
 
     /// <summary>
-    /// Flatten the graph and populate the result a mapping recursively
+    /// Flatten the graph and populate the result mapping recursively
     /// </summary>
     public static void FlattenGraph(
         GraphNode<RemoteResolveResult> node,
@@ -831,8 +880,18 @@ public class NugetApi
             string name = key.Name;
             string version = key.Version.ToNormalizedString();
             bool isPrerelease = key.Version.IsPrerelease;
+
+            RemoteMatch remote_match = item.Data.Match;
+
             if (Config.TRACE_DEEP)
-                Console.WriteLine($"      FlattenGraph: node.Item {node.Item} LibraryId: {key}");
+            {
+                Console.WriteLine($"\n     FlattenGraph: node.Item {node.Item} type: {node.GetType()} LibraryId: {key} LibraryIdType: {key.Type}");
+                Console.WriteLine($"          remote_match: {remote_match} path: {remote_match.Path} type: {remote_match.Library}");
+                foreach (var idd in item.Data.Dependencies)
+                {
+                    Console.WriteLine($"             Dependency: {idd} AutoReferenced: {idd.AutoReferenced} ");
+                }
+            }
 
             var pid = new PackageId(
                 id: name,
@@ -842,11 +901,11 @@ public class NugetApi
             var resolved_package_info = new ResolvedPackageInfo
             {
                 package_id = pid,
-                remote_match = (RemoteMatch?)item.Data.Match
+                remote_match = item.Data.Match
             };
 
             if (Config.TRACE_DEEP)
-                Console.WriteLine($"        FlattenGraph: {pid} Library: {item.Data.Match.Library}");
+                Console.WriteLine($"          FlattenGraph: {pid} Library: {item.Data.Match.Library}");
 
             if (!resolved_package_info_by_package_id.ContainsKey(resolved_package_info.package_id))
                 resolved_package_info_by_package_id.Add(resolved_package_info.package_id, resolved_package_info);

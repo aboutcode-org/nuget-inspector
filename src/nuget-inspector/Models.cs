@@ -14,14 +14,23 @@ namespace NugetInspector
         public string? name;
         public NuGetFramework? framework;
         public VersionRange? version_range;
-       public bool is_direct;
+        public bool is_direct;
 
-        public Dependency(string? name, VersionRange? version_range, NuGetFramework? framework = null, bool is_direct = false)
+        //True only for legacy packages.config-based projects only when set there
+        public bool is_development_dependency = false;
+
+        public Dependency(
+            string? name,
+            VersionRange? version_range,
+            NuGetFramework? framework = null,
+            bool is_direct = false,
+            bool is_development_dependency = false)
         {
             this.framework = framework;
             this.name = name;
             this.version_range = version_range;
             this.is_direct = is_direct;
+            this.is_development_dependency = is_development_dependency;
         }
         /// <summary>
         /// Return a new empty BasePackageWithDeps using this package.

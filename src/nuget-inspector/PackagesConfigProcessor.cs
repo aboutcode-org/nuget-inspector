@@ -103,7 +103,8 @@ internal class PackagesConfigProcessor : IDependencyProcessor
                 name: name,
                 version_range: range,
                 framework: package_framework,
-                is_direct: true);
+                is_direct: true,
+                is_development_dependency: package.IsDevelopmentDependency);
             dependencies.Add(item: dep);
         }
 
@@ -131,7 +132,7 @@ internal class PackagesConfigProcessor : IDependencyProcessor
             catch (Exception treeex)
             {
                 if (Config.TRACE)
-                    Console.WriteLine($"PackagesConfigHandler.CreateBasePackage: TFailed processing packages.config as a tree: {treeex.Message}");
+                    Console.WriteLine($"PackagesConfigHandler.CreateBasePackage: Failed processing packages.config as a tree: {treeex.Message}");
                 var packages =
                     new List<BasePackage>(
                         collection: dependencies.Select(selector: dependency => dependency.CreateEmptyBasePackage()));
