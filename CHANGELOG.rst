@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v0.9.12
+--------
+
+This is a minor bug fix release with this fix:
+
+* Improve filtering of duplicated dependency names.
+
+
 v0.9.11
 --------
 
