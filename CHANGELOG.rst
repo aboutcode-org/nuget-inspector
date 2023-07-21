@@ -72,7 +72,7 @@ This is a major feature update release with these updates and API breaking chang
   there is a problem reported.
 
 * Add new dependency resolver that works best for modern PackageReference-based
-  projects. 
+  projects.
 
 * Remove the "--nuget-url" command line option to configure an alternative
   NuGet API URL. A nuget.config should be used instead, either the standard one,
@@ -118,7 +118,7 @@ This is a major feature update release with these updates and API breaking chang
   needed. Many processors return a flat list of dependencies. This is towards
   https://github.com/nexB/nuget-inspector/issues/24
 
-* Resolve packages removing duplicates to fix 
+* Resolve packages removing duplicates to fix
   https://github.com/nexB/nuget-inspector/issues/23
 
 
