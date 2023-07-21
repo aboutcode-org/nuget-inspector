@@ -2,6 +2,7 @@
 *.py[cod]
 
 # virtualenv and other misc bits
+/src/*.egg-info
 *.egg-info
 /dist
 /build
@@ -22,9 +23,6 @@
 /share/
 /tcl/
 /.eggs/
-/.vscode/
-/.idea/
-
 
 # Installer logs
 pip-log.txt
@@ -74,4 +72,3 @@ tcl
 
 # Ignore Jupyter Notebook related temp files
 .ipynb_checkpoints/
-/release/

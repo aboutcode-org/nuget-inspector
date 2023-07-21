@@ -80,7 +80,7 @@ Here are credits for some of these key projects without which it would not exist
   https://github.com/dotnet/msbuild/
   https://github.com/dotnet/upgrade-assistant
 
-- ``nuget-dotnet5-inspector`` from Synopsys as forked by Mario Rivis 
+- ``nuget-dotnet5-inspector`` from Synopsys as forked by Mario Rivis
   https://github.com/dxworks/nuget-dotnet5-inspector
 
 - ``audit.net`` ``NugetAuditor`` and ``DevAudit`` from Sonatype
