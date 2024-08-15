@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.VerificationTests/Microsoft.DependencyDetective.VerificationTests.csproj"
       ],
       "project_framework": "any",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,14 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Faker",
-            "Testing",
-            "TDD",
-            ".Net",
-            "WP7",
-            "WP71"
-          ],
+          "keywords": ["Faker", "Testing", "TDD", ".Net", "WP7", "WP71"],
           "homepage_url": "https://github.com/oriches/faker-cs",
           "download_url": "https://api.nuget.org/v3-flatcontainer/faker.net/1.0.0/faker.net.1.0.0.nupkg",
           "size": 0,
@@ -487,9 +480,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -591,14 +582,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Faker",
-        "Testing",
-        "TDD",
-        ".Net",
-        "WP7",
-        "WP71"
-      ],
+      "keywords": ["Faker", "Testing", "TDD", ".Net", "WP7", "WP71"],
       "homepage_url": "https://github.com/oriches/faker-cs",
       "download_url": "https://api.nuget.org/v3-flatcontainer/faker.net/1.0.0/faker.net.1.0.0.nupkg",
       "size": 0,
@@ -1008,9 +992,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,

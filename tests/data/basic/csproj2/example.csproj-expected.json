@@ -2,13 +2,11 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
-      "options": [
-        "--project-file /basic/csproj2/example.csproj"
-      ],
+      "options": ["--project-file /basic/csproj2/example.csproj"],
       "project_framework": "netstandard2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,14 +68,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "itext",
-            "itextsharp",
-            "c#",
-            ".net",
-            "csharp",
-            "pdf"
-          ],
+          "keywords": ["itext", "itextsharp", "c#", ".net", "csharp", "pdf"],
           "homepage_url": "http://itextpdf.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
           "size": 1870150,
@@ -131,14 +122,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "itext",
-        "itextsharp",
-        "c#",
-        ".net",
-        "csharp",
-        "pdf"
-      ],
+      "keywords": ["itext", "itextsharp", "c#", ".net", "csharp", "pdf"],
       "homepage_url": "http://itextpdf.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/itextsharp/5.5.13.1/itextsharp.5.5.13.1.nupkg",
       "size": 1870150,

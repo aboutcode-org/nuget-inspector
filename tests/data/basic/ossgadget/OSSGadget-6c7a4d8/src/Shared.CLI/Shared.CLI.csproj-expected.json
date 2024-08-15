@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /basic/ossgadget/OSSGadget-6c7a4d8/src/Shared.CLI/Shared.CLI.csproj"
       ],
       "project_framework": "net6.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -201,11 +201,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "ansii",
-            "colors",
-            "chalk"
-          ],
+          "keywords": ["ansii", "colors", "chalk"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/crayon/2.0.69/crayon.2.0.69.nupkg",
           "size": 0,
@@ -253,10 +249,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Btrfs"
-          ],
+          "keywords": ["DiscUtils", "Btrfs"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.btrfs/0.16.13/discutils.btrfs.0.16.13.nupkg",
           "size": 0,
@@ -361,11 +354,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Filesystem",
-            "ext"
-          ],
+          "keywords": ["DiscUtils", "Filesystem", "ext"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.ext/0.16.13/discutils.ext.0.16.13.nupkg",
           "size": 0,
@@ -413,11 +402,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Filesystem",
-            "FAT"
-          ],
+          "keywords": ["DiscUtils", "Filesystem", "FAT"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.fat/0.16.13/discutils.fat.0.16.13.nupkg",
           "size": 0,
@@ -465,12 +450,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Filesystem",
-            "Hfs+",
-            "HfsPlus"
-          ],
+          "keywords": ["DiscUtils", "Filesystem", "Hfs+", "HfsPlus"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.hfsplus/0.16.13/discutils.hfsplus.0.16.13.nupkg",
           "size": 0,
@@ -518,11 +498,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Optical",
-            "Iso9660"
-          ],
+          "keywords": ["DiscUtils", "Optical", "Iso9660"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.iso9660/0.16.13/discutils.iso9660.0.16.13.nupkg",
           "size": 0,
@@ -570,11 +546,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Filesystem",
-            "NTFS"
-          ],
+          "keywords": ["DiscUtils", "Filesystem", "NTFS"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.ntfs/0.16.13/discutils.ntfs.0.16.13.nupkg",
           "size": 0,
@@ -622,10 +594,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Streams"
-          ],
+          "keywords": ["DiscUtils", "Streams"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.streams/0.16.13/discutils.streams.0.16.13.nupkg",
           "size": 0,
@@ -673,10 +642,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "VHD"
-          ],
+          "keywords": ["DiscUtils", "VHD"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vhd/0.16.13/discutils.vhd.0.16.13.nupkg",
           "size": 0,
@@ -724,10 +690,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "VHDX"
-          ],
+          "keywords": ["DiscUtils", "VHDX"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vhdx/0.16.13/discutils.vhdx.0.16.13.nupkg",
           "size": 0,
@@ -775,10 +738,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "VMDK"
-          ],
+          "keywords": ["DiscUtils", "VMDK"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vmdk/0.16.13/discutils.vmdk.0.16.13.nupkg",
           "size": 0,
@@ -826,10 +786,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "WIM"
-          ],
+          "keywords": ["DiscUtils", "WIM"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.wim/0.16.13/discutils.wim.0.16.13.nupkg",
           "size": 0,
@@ -877,10 +834,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "DiscUtils",
-            "Xfs"
-          ],
+          "keywords": ["DiscUtils", "Xfs"],
           "homepage_url": "https://github.com/DiscUtils/DiscUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.xfs/0.16.13/discutils.xfs.0.16.13.nupkg",
           "size": 0,
@@ -989,11 +943,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "C#",
-            "glob",
-            "minimatch"
-          ],
+          "keywords": ["C#", "glob", "minimatch"],
           "homepage_url": "https://github.com/kthompson/glob/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/glob/1.1.9/glob.1.1.9.nupkg",
           "size": 0,
@@ -1041,13 +991,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "HTML",
-            "parse",
-            "crawler",
-            "spider",
-            "linq"
-          ],
+          "keywords": ["HTML", "parse", "crawler", "spider", "linq"],
           "homepage_url": "http://html-agility-pack.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/htmlagilitypack/1.11.46/htmlagilitypack.1.11.46.nupkg",
           "size": 0,
@@ -1095,9 +1039,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "lzo"
-          ],
+          "keywords": ["lzo"],
           "homepage_url": "https://github.com/zivillian/lzo.net",
           "download_url": "https://api.nuget.org/v3-flatcontainer/lzo.net/0.0.3/lzo.net.0.0.3.nupkg",
           "size": 0,
@@ -1145,10 +1087,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "commandline",
-            "parsing"
-          ],
+          "keywords": ["commandline", "parsing"],
           "homepage_url": "https://github.com/natemcmaster/CommandLineUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/mcmaster.extensions.commandlineutils/4.0.1/mcmaster.extensions.commandlineutils.4.0.1.nupkg",
           "size": 0,
@@ -1292,11 +1231,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "unzip",
-            "extract",
-            "extractor"
-          ],
+          "keywords": ["unzip", "extract", "extractor"],
           "homepage_url": "https://github.com/microsoft/RecursiveExtractor",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.recursiveextractor/1.1.18/microsoft.cst.recursiveextractor.1.1.18.nupkg",
           "size": 0,
@@ -1824,9 +1759,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -1933,11 +1866,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nlog",
-            "intellisense",
-            "xsd"
-          ],
+          "keywords": ["nlog", "intellisense", "xsd"],
           "homepage_url": "https://nlog-project.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nlog.schema/5.0.4/nlog.schema.5.0.4.nupkg",
           "size": 0,
@@ -1985,11 +1914,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "semver",
-            "semantic",
-            "versioning"
-          ],
+          "keywords": ["semver", "semantic", "versioning"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg",
           "size": 0,
@@ -4078,12 +4003,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "LINQ",
-            "async",
-            "streams",
-            "query"
-          ],
+          "keywords": ["LINQ", "async", "streams", "query"],
           "homepage_url": "https://github.com/dotnet/reactive",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.linq.async/6.0.1/system.linq.async.6.0.1.nupkg",
           "size": 0,
@@ -6188,11 +6108,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "ansii",
-        "colors",
-        "chalk"
-      ],
+      "keywords": ["ansii", "colors", "chalk"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/crayon/2.0.69/crayon.2.0.69.nupkg",
       "size": 0,
@@ -6240,10 +6156,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Btrfs"
-      ],
+      "keywords": ["DiscUtils", "Btrfs"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.btrfs/0.16.13/discutils.btrfs.0.16.13.nupkg",
       "size": 0,
@@ -6348,11 +6261,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Filesystem",
-        "ext"
-      ],
+      "keywords": ["DiscUtils", "Filesystem", "ext"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.ext/0.16.13/discutils.ext.0.16.13.nupkg",
       "size": 0,
@@ -6400,11 +6309,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Filesystem",
-        "FAT"
-      ],
+      "keywords": ["DiscUtils", "Filesystem", "FAT"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.fat/0.16.13/discutils.fat.0.16.13.nupkg",
       "size": 0,
@@ -6452,12 +6357,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Filesystem",
-        "Hfs+",
-        "HfsPlus"
-      ],
+      "keywords": ["DiscUtils", "Filesystem", "Hfs+", "HfsPlus"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.hfsplus/0.16.13/discutils.hfsplus.0.16.13.nupkg",
       "size": 0,
@@ -6505,11 +6405,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Optical",
-        "Iso9660"
-      ],
+      "keywords": ["DiscUtils", "Optical", "Iso9660"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.iso9660/0.16.13/discutils.iso9660.0.16.13.nupkg",
       "size": 0,
@@ -6557,11 +6453,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Filesystem",
-        "NTFS"
-      ],
+      "keywords": ["DiscUtils", "Filesystem", "NTFS"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.ntfs/0.16.13/discutils.ntfs.0.16.13.nupkg",
       "size": 0,
@@ -6609,10 +6501,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Streams"
-      ],
+      "keywords": ["DiscUtils", "Streams"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.streams/0.16.13/discutils.streams.0.16.13.nupkg",
       "size": 0,
@@ -6660,10 +6549,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "VHD"
-      ],
+      "keywords": ["DiscUtils", "VHD"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vhd/0.16.13/discutils.vhd.0.16.13.nupkg",
       "size": 0,
@@ -6711,10 +6597,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "VHDX"
-      ],
+      "keywords": ["DiscUtils", "VHDX"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vhdx/0.16.13/discutils.vhdx.0.16.13.nupkg",
       "size": 0,
@@ -6762,10 +6645,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "VMDK"
-      ],
+      "keywords": ["DiscUtils", "VMDK"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.vmdk/0.16.13/discutils.vmdk.0.16.13.nupkg",
       "size": 0,
@@ -6813,10 +6693,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "WIM"
-      ],
+      "keywords": ["DiscUtils", "WIM"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.wim/0.16.13/discutils.wim.0.16.13.nupkg",
       "size": 0,
@@ -6864,10 +6741,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "DiscUtils",
-        "Xfs"
-      ],
+      "keywords": ["DiscUtils", "Xfs"],
       "homepage_url": "https://github.com/DiscUtils/DiscUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/discutils.xfs/0.16.13/discutils.xfs.0.16.13.nupkg",
       "size": 0,
@@ -6976,11 +6850,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "C#",
-        "glob",
-        "minimatch"
-      ],
+      "keywords": ["C#", "glob", "minimatch"],
       "homepage_url": "https://github.com/kthompson/glob/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/glob/1.1.9/glob.1.1.9.nupkg",
       "size": 0,
@@ -7028,13 +6898,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "HTML",
-        "parse",
-        "crawler",
-        "spider",
-        "linq"
-      ],
+      "keywords": ["HTML", "parse", "crawler", "spider", "linq"],
       "homepage_url": "http://html-agility-pack.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/htmlagilitypack/1.11.46/htmlagilitypack.1.11.46.nupkg",
       "size": 0,
@@ -7082,9 +6946,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "lzo"
-      ],
+      "keywords": ["lzo"],
       "homepage_url": "https://github.com/zivillian/lzo.net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/lzo.net/0.0.3/lzo.net.0.0.3.nupkg",
       "size": 0,
@@ -7132,10 +6994,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "commandline",
-        "parsing"
-      ],
+      "keywords": ["commandline", "parsing"],
       "homepage_url": "https://github.com/natemcmaster/CommandLineUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/mcmaster.extensions.commandlineutils/4.0.1/mcmaster.extensions.commandlineutils.4.0.1.nupkg",
       "size": 0,
@@ -7279,11 +7138,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "unzip",
-        "extract",
-        "extractor"
-      ],
+      "keywords": ["unzip", "extract", "extractor"],
       "homepage_url": "https://github.com/microsoft/RecursiveExtractor",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.cst.recursiveextractor/1.1.18/microsoft.cst.recursiveextractor.1.1.18.nupkg",
       "size": 0,
@@ -7811,9 +7666,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,
@@ -7920,11 +7773,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nlog",
-        "intellisense",
-        "xsd"
-      ],
+      "keywords": ["nlog", "intellisense", "xsd"],
       "homepage_url": "https://nlog-project.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nlog.schema/5.0.4/nlog.schema.5.0.4.nupkg",
       "size": 0,
@@ -7972,11 +7821,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "semver",
-        "semantic",
-        "versioning"
-      ],
+      "keywords": ["semver", "semantic", "versioning"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg",
       "size": 0,
@@ -8024,13 +7869,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GitHub",
-        "API",
-        "Octokit",
-        "linqpad-samples",
-        "dotnetcore"
-      ],
+      "keywords": ["GitHub", "API", "Octokit", "linqpad-samples", "dotnetcore"],
       "homepage_url": "https://github.com/octokit/octokit.net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/octokit/4.0.1/octokit.4.0.1.nupkg",
       "size": 0,
@@ -10065,12 +9904,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "LINQ",
-        "async",
-        "streams",
-        "query"
-      ],
+      "keywords": ["LINQ", "async", "streams", "query"],
       "homepage_url": "https://github.com/dotnet/reactive",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.linq.async/6.0.1/system.linq.async.6.0.1.nupkg",
       "size": 0,

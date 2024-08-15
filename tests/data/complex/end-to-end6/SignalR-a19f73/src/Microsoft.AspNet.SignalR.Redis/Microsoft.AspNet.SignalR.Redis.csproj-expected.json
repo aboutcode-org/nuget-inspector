@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end6/SignalR-a19f73/src/Microsoft.AspNet.SignalR.Redis/Microsoft.AspNet.SignalR.Redis.csproj"
       ],
       "project_framework": "net45",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,13 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Async",
-            "Redis",
-            "Cache",
-            "PubSub",
-            "Messaging"
-          ],
+          "keywords": ["Async", "Redis", "Cache", "PubSub", "Messaging"],
           "homepage_url": "https://github.com/StackExchange/StackExchange.Redis",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
           "size": 0,
@@ -130,13 +124,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Async",
-        "Redis",
-        "Cache",
-        "PubSub",
-        "Messaging"
-      ],
+      "keywords": ["Async", "Redis", "Cache", "PubSub", "Messaging"],
       "homepage_url": "https://github.com/StackExchange/StackExchange.Redis",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/stackexchange.redis.strongname/1.1.608/stackexchange.redis.strongname.1.1.608.nupkg",
       "size": 0,

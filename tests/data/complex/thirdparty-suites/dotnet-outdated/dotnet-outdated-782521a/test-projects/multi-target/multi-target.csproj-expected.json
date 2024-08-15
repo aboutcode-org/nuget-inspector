@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/test-projects/multi-target/multi-target.csproj"
       ],
       "project_framework": "netstandard1.6",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,9 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/1.0.4/microsoft.aspnetcore.http.abstractions.1.0.4.nupkg",
           "size": 0,
@@ -120,9 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/1.0.4/microsoft.aspnetcore.http.extensions.1.0.4.nupkg",
           "size": 0,
@@ -170,9 +166,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/1.0.4/microsoft.aspnetcore.http.features.1.0.4.nupkg",
           "size": 0,
@@ -220,10 +214,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/1.0.1/microsoft.extensions.fileproviders.abstractions.1.0.1.nupkg",
           "size": 0,
@@ -271,9 +262,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "primitives"
-          ],
+          "keywords": ["primitives"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/1.0.1/microsoft.extensions.primitives.1.0.1.nupkg",
           "size": 0,
@@ -321,9 +310,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "http"
-          ],
+          "keywords": ["http"],
           "homepage_url": "http://www.asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/1.0.4/microsoft.net.http.headers.1.0.4.nupkg",
           "size": 0,
@@ -2777,9 +2764,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/1.0.4/microsoft.aspnetcore.http.abstractions.1.0.4.nupkg",
       "size": 0,
@@ -2827,9 +2812,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/1.0.4/microsoft.aspnetcore.http.extensions.1.0.4.nupkg",
       "size": 0,
@@ -2877,9 +2860,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/1.0.4/microsoft.aspnetcore.http.features.1.0.4.nupkg",
       "size": 0,
@@ -2927,10 +2908,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/1.0.1/microsoft.extensions.fileproviders.abstractions.1.0.1.nupkg",
       "size": 0,
@@ -2978,9 +2956,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "primitives"
-      ],
+      "keywords": ["primitives"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/1.0.1/microsoft.extensions.primitives.1.0.1.nupkg",
       "size": 0,
@@ -3028,9 +3004,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "http"
-      ],
+      "keywords": ["http"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/1.0.4/microsoft.net.http.headers.1.0.4.nupkg",
       "size": 0,

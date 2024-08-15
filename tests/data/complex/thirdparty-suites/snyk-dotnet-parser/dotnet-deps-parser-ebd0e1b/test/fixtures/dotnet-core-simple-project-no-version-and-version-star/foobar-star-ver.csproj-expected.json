@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/foobar-star-ver.csproj"
       ],
       "project_framework": "netcoreapp2.2",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -124,9 +124,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore/2.2.0/microsoft.aspnetcore.2.2.0.nupkg",
           "size": 0,
@@ -174,10 +172,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "antiforgery"
-          ],
+          "keywords": ["aspnetcore", "antiforgery"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg",
           "size": 0,
@@ -225,9 +220,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app/2.2.8/microsoft.aspnetcore.app.2.2.8.nupkg",
           "size": 0,
@@ -275,11 +268,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg",
           "size": 0,
@@ -327,11 +316,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -379,11 +364,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg",
           "size": 0,
@@ -431,11 +412,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg",
           "size": 0,
@@ -483,11 +460,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.facebook/2.2.0/microsoft.aspnetcore.authentication.facebook.2.2.0.nupkg",
           "size": 0,
@@ -535,11 +508,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.google/2.2.2/microsoft.aspnetcore.authentication.google.2.2.2.nupkg",
           "size": 0,
@@ -587,11 +556,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.jwtbearer/2.2.0/microsoft.aspnetcore.authentication.jwtbearer.2.2.0.nupkg",
           "size": 0,
@@ -639,11 +604,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.microsoftaccount/2.2.0/microsoft.aspnetcore.authentication.microsoftaccount.2.2.0.nupkg",
           "size": 0,
@@ -691,11 +652,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.oauth/2.2.0/microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg",
           "size": 0,
@@ -743,11 +700,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.openidconnect/2.2.0/microsoft.aspnetcore.authentication.openidconnect.2.2.0.nupkg",
           "size": 0,
@@ -795,11 +748,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.twitter/2.2.0/microsoft.aspnetcore.authentication.twitter.2.2.0.nupkg",
           "size": 0,
@@ -847,11 +796,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.wsfederation/2.2.0/microsoft.aspnetcore.authentication.wsfederation.2.2.0.nupkg",
           "size": 0,
@@ -899,10 +844,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authorization"
-          ],
+          "keywords": ["aspnetcore", "authorization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization/2.2.0/microsoft.aspnetcore.authorization.2.2.0.nupkg",
           "size": 0,
@@ -950,10 +892,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authorization"
-          ],
+          "keywords": ["aspnetcore", "authorization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization.policy/2.2.0/microsoft.aspnetcore.authorization.policy.2.2.0.nupkg",
           "size": 0,
@@ -1001,9 +940,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.connections.abstractions/2.2.0/microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1051,9 +988,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cookiepolicy/2.2.8/microsoft.aspnetcore.cookiepolicy.2.2.8.nupkg",
           "size": 0,
@@ -1101,10 +1036,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cors"
-          ],
+          "keywords": ["aspnetcore", "cors"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg",
           "size": 0,
@@ -1152,10 +1084,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "dataprotection"
-          ],
+          "keywords": ["aspnetcore", "dataprotection"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cryptography.internal/2.2.0/microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg",
           "size": 0,
@@ -1203,10 +1132,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "dataprotection"
-          ],
+          "keywords": ["aspnetcore", "dataprotection"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cryptography.keyderivation/2.2.0/microsoft.aspnetcore.cryptography.keyderivation.2.2.0.nupkg",
           "size": 0,
@@ -1254,10 +1180,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "dataprotection"
-          ],
+          "keywords": ["aspnetcore", "dataprotection"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg",
           "size": 0,
@@ -1305,10 +1228,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "dataprotection"
-          ],
+          "keywords": ["aspnetcore", "dataprotection"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection.abstractions/2.2.0/microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1356,10 +1276,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "dataprotection"
-          ],
+          "keywords": ["aspnetcore", "dataprotection"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection.extensions/2.2.0/microsoft.aspnetcore.dataprotection.extensions.2.2.0.nupkg",
           "size": 0,
@@ -1407,10 +1324,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "diagnostics"
-          ],
+          "keywords": ["aspnetcore", "diagnostics"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics/2.2.0/microsoft.aspnetcore.diagnostics.2.2.0.nupkg",
           "size": 0,
@@ -1458,10 +1372,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "diagnostics"
-          ],
+          "keywords": ["aspnetcore", "diagnostics"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.abstractions/2.2.0/microsoft.aspnetcore.diagnostics.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1509,11 +1420,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "diagnostics",
-            "entityframeworkcore"
-          ],
+          "keywords": ["aspnetcore", "diagnostics", "entityframeworkcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.entityframeworkcore/2.2.1/microsoft.aspnetcore.diagnostics.entityframeworkcore.2.2.1.nupkg",
           "size": 0,
@@ -1561,10 +1468,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "diagnostics",
-            "healthchecks"
-          ],
+          "keywords": ["diagnostics", "healthchecks"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.healthchecks/2.2.0/microsoft.aspnetcore.diagnostics.healthchecks.2.2.0.nupkg",
           "size": 0,
@@ -1612,9 +1516,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hostfiltering/2.2.0/microsoft.aspnetcore.hostfiltering.2.2.0.nupkg",
           "size": 0,
@@ -1662,10 +1564,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "hosting"
-          ],
+          "keywords": ["aspnetcore", "hosting"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting/2.2.7/microsoft.aspnetcore.hosting.2.2.7.nupkg",
           "size": 0,
@@ -1713,10 +1612,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "hosting"
-          ],
+          "keywords": ["aspnetcore", "hosting"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1764,10 +1660,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "hosting"
-          ],
+          "keywords": ["aspnetcore", "hosting"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/2.2.0/microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1815,9 +1708,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1865,9 +1756,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg",
           "size": 0,
@@ -1915,9 +1804,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -1965,10 +1852,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections/1.1.0/microsoft.aspnetcore.http.connections.1.1.0.nupkg",
           "size": 0,
@@ -2016,10 +1900,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections.common/1.1.0/microsoft.aspnetcore.http.connections.common.1.1.0.nupkg",
           "size": 0,
@@ -2067,9 +1948,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/2.2.0/microsoft.aspnetcore.http.extensions.2.2.0.nupkg",
           "size": 0,
@@ -2117,9 +1996,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg",
           "size": 0,
@@ -2167,12 +2044,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "proxy",
-            "headers",
-            "xforwarded"
-          ],
+          "keywords": ["aspnetcore", "proxy", "headers", "xforwarded"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.httpoverrides/2.2.0/microsoft.aspnetcore.httpoverrides.2.2.0.nupkg",
           "size": 0,
@@ -2220,11 +2092,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "https",
-            "hsts"
-          ],
+          "keywords": ["aspnetcore", "https", "hsts"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.httpspolicy/2.2.0/microsoft.aspnetcore.httpspolicy.2.2.0.nupkg",
           "size": 0,
@@ -2272,11 +2140,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "identity",
-            "membership"
-          ],
+          "keywords": ["aspnetcore", "identity", "membership"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg",
           "size": 0,
@@ -2377,12 +2241,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "identity",
-            "membership",
-            "razorpages"
-          ],
+          "keywords": ["aspnetcore", "identity", "membership", "razorpages"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity.ui/2.2.5/microsoft.aspnetcore.identity.ui.2.2.5.nupkg",
           "size": 0,
@@ -2430,11 +2289,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "json",
-            "jsonpatch"
-          ],
+          "keywords": ["aspnetcore", "json", "jsonpatch"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.jsonpatch/2.2.0/microsoft.aspnetcore.jsonpatch.2.2.0.nupkg",
           "size": 0,
@@ -2482,10 +2337,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "localization"
-          ],
+          "keywords": ["aspnetcore", "localization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.localization/2.2.0/microsoft.aspnetcore.localization.2.2.0.nupkg",
           "size": 0,
@@ -2533,10 +2385,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "localization"
-          ],
+          "keywords": ["aspnetcore", "localization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.localization.routing/2.2.0/microsoft.aspnetcore.localization.routing.2.2.0.nupkg",
           "size": 0,
@@ -2584,10 +2433,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "diagnostics"
-          ],
+          "keywords": ["aspnetcore", "diagnostics"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.middlewareanalysis/2.2.0/microsoft.aspnetcore.middlewareanalysis.2.2.0.nupkg",
           "size": 0,
@@ -2635,10 +2481,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc/2.2.0/microsoft.aspnetcore.mvc.2.2.0.nupkg",
           "size": 0,
@@ -2686,10 +2529,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.abstractions/2.2.0/microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -2737,10 +2577,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.analyzers/2.2.0/microsoft.aspnetcore.mvc.analyzers.2.2.0.nupkg",
           "size": 0,
@@ -2788,10 +2625,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.apiexplorer/2.2.0/microsoft.aspnetcore.mvc.apiexplorer.2.2.0.nupkg",
           "size": 0,
@@ -2839,10 +2673,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.core/2.2.5/microsoft.aspnetcore.mvc.core.2.2.5.nupkg",
           "size": 0,
@@ -2890,11 +2721,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "cors"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "cors"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.cors/2.2.0/microsoft.aspnetcore.mvc.cors.2.2.0.nupkg",
           "size": 0,
@@ -2942,10 +2769,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.dataannotations/2.2.0/microsoft.aspnetcore.mvc.dataannotations.2.2.0.nupkg",
           "size": 0,
@@ -2993,11 +2817,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "json"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "json"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.formatters.json/2.2.0/microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg",
           "size": 0,
@@ -3045,11 +2865,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "xml"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "xml"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.formatters.xml/2.2.0/microsoft.aspnetcore.mvc.formatters.xml.2.2.0.nupkg",
           "size": 0,
@@ -3097,11 +2913,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "localization"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "localization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.localization/2.2.0/microsoft.aspnetcore.mvc.localization.2.2.0.nupkg",
           "size": 0,
@@ -3149,12 +2961,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razor/2.2.0/microsoft.aspnetcore.mvc.razor.2.2.0.nupkg",
           "size": 0,
@@ -3202,12 +3009,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cshtml",
-            "razor",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "cshtml", "razor", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razor.extensions/2.2.0/microsoft.aspnetcore.mvc.razor.extensions.2.2.0.nupkg",
           "size": 0,
@@ -3309,12 +3111,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razorpages/2.2.5/microsoft.aspnetcore.mvc.razorpages.2.2.5.nupkg",
           "size": 0,
@@ -3415,10 +3212,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.viewfeatures/2.2.0/microsoft.aspnetcore.mvc.viewfeatures.2.2.0.nupkg",
           "size": 0,
@@ -3466,11 +3260,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "nodeservices"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "nodeservices"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.nodeservices/2.2.0/microsoft.aspnetcore.nodeservices.2.2.0.nupkg",
           "size": 0,
@@ -3518,10 +3308,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "owin"
-          ],
+          "keywords": ["aspnetcore", "owin"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.owin/2.2.0/microsoft.aspnetcore.owin.2.2.0.nupkg",
           "size": 0,
@@ -3623,11 +3410,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.design/2.2.0/microsoft.aspnetcore.razor.design.2.2.0.nupkg",
           "size": 0,
@@ -3675,11 +3458,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.language/2.2.0/microsoft.aspnetcore.razor.language.2.2.0.nupkg",
           "size": 0,
@@ -3781,11 +3560,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cache",
-            "caching"
-          ],
+          "keywords": ["aspnetcore", "cache", "caching"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecaching/2.2.0/microsoft.aspnetcore.responsecaching.2.2.0.nupkg",
           "size": 0,
@@ -3833,11 +3608,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cache",
-            "caching"
-          ],
+          "keywords": ["aspnetcore", "cache", "caching"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecaching.abstractions/2.2.0/microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -3885,9 +3656,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecompression/2.2.0/microsoft.aspnetcore.responsecompression.2.2.0.nupkg",
           "size": 0,
@@ -3935,11 +3704,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "urlrewrite",
-            "mod_rewrite"
-          ],
+          "keywords": ["aspnetcore", "urlrewrite", "mod_rewrite"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.rewrite/2.2.0/microsoft.aspnetcore.rewrite.2.2.0.nupkg",
           "size": 0,
@@ -3987,10 +3752,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "routing"
-          ],
+          "keywords": ["aspnetcore", "routing"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.routing/2.2.2/microsoft.aspnetcore.routing.2.2.2.nupkg",
           "size": 0,
@@ -4038,10 +3800,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "routing"
-          ],
+          "keywords": ["aspnetcore", "routing"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.routing.abstractions/2.2.0/microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -4089,11 +3848,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "weblistener",
-            "httpsys"
-          ],
+          "keywords": ["aspnetcore", "weblistener", "httpsys"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.httpsys/2.2.6/microsoft.aspnetcore.server.httpsys.2.2.6.nupkg",
           "size": 0,
@@ -4141,10 +3896,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "iis"
-          ],
+          "keywords": ["aspnetcore", "iis"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.iis/2.2.6/microsoft.aspnetcore.server.iis.2.2.6.nupkg",
           "size": 0,
@@ -4192,10 +3944,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "iis"
-          ],
+          "keywords": ["aspnetcore", "iis"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.iisintegration/2.2.1/microsoft.aspnetcore.server.iisintegration.2.2.1.nupkg",
           "size": 0,
@@ -4243,10 +3992,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "kestrel"
-          ],
+          "keywords": ["aspnetcore", "kestrel"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel/2.2.0/microsoft.aspnetcore.server.kestrel.2.2.0.nupkg",
           "size": 0,
@@ -4294,10 +4040,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "kestrel"
-          ],
+          "keywords": ["aspnetcore", "kestrel"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.core/2.2.0/microsoft.aspnetcore.server.kestrel.core.2.2.0.nupkg",
           "size": 0,
@@ -4345,10 +4088,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "kestrel"
-          ],
+          "keywords": ["aspnetcore", "kestrel"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.https/2.2.0/microsoft.aspnetcore.server.kestrel.https.2.2.0.nupkg",
           "size": 0,
@@ -4396,10 +4136,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "kestrel"
-          ],
+          "keywords": ["aspnetcore", "kestrel"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.transport.abstractions/2.2.0/microsoft.aspnetcore.server.kestrel.transport.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -4447,10 +4184,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "kestrel"
-          ],
+          "keywords": ["aspnetcore", "kestrel"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.transport.sockets/2.2.1/microsoft.aspnetcore.server.kestrel.transport.sockets.2.2.1.nupkg",
           "size": 0,
@@ -4498,11 +4232,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "session",
-            "sessionstate"
-          ],
+          "keywords": ["aspnetcore", "session", "sessionstate"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.session/2.2.0/microsoft.aspnetcore.session.2.2.0.nupkg",
           "size": 0,
@@ -4550,10 +4280,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr/1.1.0/microsoft.aspnetcore.signalr.1.1.0.nupkg",
           "size": 0,
@@ -4601,10 +4328,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.common/1.1.0/microsoft.aspnetcore.signalr.common.1.1.0.nupkg",
           "size": 0,
@@ -4652,10 +4376,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.core/1.1.0/microsoft.aspnetcore.signalr.core.1.1.0.nupkg",
           "size": 0,
@@ -4703,10 +4424,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "signalr"
-          ],
+          "keywords": ["aspnetcore", "signalr"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.protocols.json/1.1.0/microsoft.aspnetcore.signalr.protocols.json.1.1.0.nupkg",
           "size": 0,
@@ -4802,11 +4520,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "aspnetcoremvc",
-            "nodeservices"
-          ],
+          "keywords": ["aspnetcore", "aspnetcoremvc", "nodeservices"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.spaservices.extensions/2.2.0/microsoft.aspnetcore.spaservices.extensions.2.2.0.nupkg",
           "size": 0,
@@ -4854,10 +4568,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "staticfiles"
-          ],
+          "keywords": ["aspnetcore", "staticfiles"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.staticfiles/2.2.0/microsoft.aspnetcore.staticfiles.2.2.0.nupkg",
           "size": 0,
@@ -4905,9 +4616,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.websockets/2.2.1/microsoft.aspnetcore.websockets.2.2.1.nupkg",
           "size": 0,
@@ -4955,9 +4664,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg",
           "size": 0,
@@ -5270,11 +4977,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.razor/2.2.0/microsoft.codeanalysis.razor.2.2.0.nupkg",
           "size": 0,
@@ -5602,9 +5305,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "efcore"
-          ],
+          "keywords": ["efcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/2.2.6/microsoft.entityframeworkcore.analyzers.2.2.6.nupkg",
           "size": 0,
@@ -5950,11 +5651,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "memorycache",
-            "distributedcache"
-          ],
+          "keywords": ["cache", "memorycache", "distributedcache"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/2.2.0/microsoft.extensions.caching.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -6002,10 +5699,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "memorycache"
-          ],
+          "keywords": ["cache", "memorycache"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/2.2.0/microsoft.extensions.caching.memory.2.2.0.nupkg",
           "size": 0,
@@ -6053,11 +5747,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "distributedcache",
-            "sqlserver"
-          ],
+          "keywords": ["cache", "distributedcache", "sqlserver"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.sqlserver/2.2.0/microsoft.extensions.caching.sqlserver.2.2.0.nupkg",
           "size": 0,
@@ -6105,9 +5795,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/2.2.0/microsoft.extensions.configuration.2.2.0.nupkg",
           "size": 0,
@@ -6155,9 +5843,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/2.2.0/microsoft.extensions.configuration.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -6205,9 +5891,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/2.2.4/microsoft.extensions.configuration.binder.2.2.4.nupkg",
           "size": 0,
@@ -6255,10 +5939,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "commandline"
-          ],
+          "keywords": ["configuration", "commandline"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/2.2.0/microsoft.extensions.configuration.commandline.2.2.0.nupkg",
           "size": 0,
@@ -6306,11 +5987,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "envvar",
-            "environmentvariable"
-          ],
+          "keywords": ["configuration", "envvar", "environmentvariable"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/2.2.4/microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg",
           "size": 0,
@@ -6358,9 +6035,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/2.2.0/microsoft.extensions.configuration.fileextensions.2.2.0.nupkg",
           "size": 0,
@@ -6408,10 +6083,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "ini"
-          ],
+          "keywords": ["configuration", "ini"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.ini/2.2.0/microsoft.extensions.configuration.ini.2.2.0.nupkg",
           "size": 0,
@@ -6459,10 +6131,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "json"
-          ],
+          "keywords": ["configuration", "json"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/2.2.0/microsoft.extensions.configuration.json.2.2.0.nupkg",
           "size": 0,
@@ -6510,9 +6179,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.keyperfile/2.2.4/microsoft.extensions.configuration.keyperfile.2.2.4.nupkg",
           "size": 0,
@@ -6560,11 +6227,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "secrets",
-            "usersecrets"
-          ],
+          "keywords": ["configuration", "secrets", "usersecrets"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/2.2.0/microsoft.extensions.configuration.usersecrets.2.2.0.nupkg",
           "size": 0,
@@ -6612,10 +6275,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration",
-            "xml"
-          ],
+          "keywords": ["configuration", "xml"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.xml/2.2.0/microsoft.extensions.configuration.xml.2.2.0.nupkg",
           "size": 0,
@@ -6663,10 +6323,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "dependencyinjection",
-            "di"
-          ],
+          "keywords": ["dependencyinjection", "di"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/2.2.0/microsoft.extensions.dependencyinjection.2.2.0.nupkg",
           "size": 0,
@@ -6714,10 +6371,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "dependencyinjection",
-            "di"
-          ],
+          "keywords": ["dependencyinjection", "di"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -6865,10 +6519,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "diagnostics",
-            "healthchecks"
-          ],
+          "keywords": ["diagnostics", "healthchecks"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/2.2.5/microsoft.extensions.diagnostics.healthchecks.2.2.5.nupkg",
           "size": 0,
@@ -6916,10 +6567,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "diagnostics",
-            "healthchecks"
-          ],
+          "keywords": ["diagnostics", "healthchecks"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/2.2.0/microsoft.extensions.diagnostics.healthchecks.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -6967,10 +6615,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -7018,10 +6663,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.composite/2.2.0/microsoft.extensions.fileproviders.composite.2.2.0.nupkg",
           "size": 0,
@@ -7069,10 +6711,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.embedded/2.2.0/microsoft.extensions.fileproviders.embedded.2.2.0.nupkg",
           "size": 0,
@@ -7120,10 +6759,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/2.2.0/microsoft.extensions.fileproviders.physical.2.2.0.nupkg",
           "size": 0,
@@ -7171,12 +6807,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem",
-            "glob",
-            "globbing"
-          ],
+          "keywords": ["files", "filesystem", "glob", "globbing"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/2.2.0/microsoft.extensions.filesystemglobbing.2.2.0.nupkg",
           "size": 0,
@@ -7224,9 +6855,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "hosting"
-          ],
+          "keywords": ["hosting"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/2.2.0/microsoft.extensions.hosting.2.2.0.nupkg",
           "size": 0,
@@ -7274,9 +6903,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "hosting"
-          ],
+          "keywords": ["hosting"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -7324,10 +6951,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "httpclient"
-          ],
+          "keywords": ["aspnetcore", "httpclient"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/2.2.0/microsoft.extensions.http.2.2.0.nupkg",
           "size": 0,
@@ -7375,11 +6999,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "identity",
-            "membership"
-          ],
+          "keywords": ["aspnetcore", "identity", "membership"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/2.2.0/microsoft.extensions.identity.core.2.2.0.nupkg",
           "size": 0,
@@ -7427,11 +7047,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "identity",
-            "membership"
-          ],
+          "keywords": ["aspnetcore", "identity", "membership"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.stores/2.2.0/microsoft.extensions.identity.stores.2.2.0.nupkg",
           "size": 0,
@@ -7479,9 +7095,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "localization"
-          ],
+          "keywords": ["localization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.localization/2.2.0/microsoft.extensions.localization.2.2.0.nupkg",
           "size": 0,
@@ -7529,9 +7143,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "localization"
-          ],
+          "keywords": ["localization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.localization.abstractions/2.2.0/microsoft.extensions.localization.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -7579,9 +7191,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/2.2.0/microsoft.extensions.logging.2.2.0.nupkg",
           "size": 0,
@@ -7629,9 +7239,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/2.2.0/microsoft.extensions.logging.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -7679,9 +7287,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/2.2.0/microsoft.extensions.logging.configuration.2.2.0.nupkg",
           "size": 0,
@@ -7729,9 +7335,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/2.2.0/microsoft.extensions.logging.console.2.2.0.nupkg",
           "size": 0,
@@ -7779,9 +7383,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/2.2.0/microsoft.extensions.logging.debug.2.2.0.nupkg",
           "size": 0,
@@ -7829,11 +7431,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging",
-            "EventSource",
-            "ETW"
-          ],
+          "keywords": ["logging", "EventSource", "ETW"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/2.2.0/microsoft.extensions.logging.eventsource.2.2.0.nupkg",
           "size": 0,
@@ -7881,10 +7479,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging",
-            "tracesource"
-          ],
+          "keywords": ["logging", "tracesource"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.tracesource/2.2.0/microsoft.extensions.logging.tracesource.2.2.0.nupkg",
           "size": 0,
@@ -7932,9 +7527,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "pooling"
-          ],
+          "keywords": ["pooling"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg",
           "size": 0,
@@ -7982,10 +7575,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "options"
-          ],
+          "keywords": ["aspnetcore", "options"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/2.2.0/microsoft.extensions.options.2.2.0.nupkg",
           "size": 0,
@@ -8033,11 +7623,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "configuration",
-            "options"
-          ],
+          "keywords": ["aspnetcore", "configuration", "options"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/2.2.0/microsoft.extensions.options.configurationextensions.2.2.0.nupkg",
           "size": 0,
@@ -8085,11 +7671,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "validation",
-            "options"
-          ],
+          "keywords": ["aspnetcore", "validation", "options"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.dataannotations/2.2.0/microsoft.extensions.options.dataannotations.2.2.0.nupkg",
           "size": 0,
@@ -8137,9 +7719,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "primitives"
-          ],
+          "keywords": ["primitives"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg",
           "size": 0,
@@ -8187,9 +7767,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.webencoders/2.2.0/microsoft.extensions.webencoders.2.2.0.nupkg",
           "size": 0,
@@ -8685,9 +8263,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "http"
-          ],
+          "keywords": ["http"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/2.2.8/microsoft.net.http.headers.2.2.8.nupkg",
           "size": 0,
@@ -9400,9 +8976,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "size": 0,
@@ -9450,9 +9024,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "bson"
-          ],
+          "keywords": ["bson"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json.bson/1.0.1/newtonsoft.json.bson.1.0.1.nupkg",
           "size": 0,
@@ -9500,9 +9072,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg",
           "size": 0,
@@ -9550,11 +9120,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "re-motion",
-            "LINQ",
-            "ExpressionTrees"
-          ],
+          "keywords": ["re-motion", "LINQ", "ExpressionTrees"],
           "homepage_url": "http://relinq.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/remotion.linq/2.2.0/remotion.linq.2.2.0.nupkg",
           "size": 0,
@@ -15398,9 +14964,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore/2.2.0/microsoft.aspnetcore.2.2.0.nupkg",
       "size": 0,
@@ -15448,10 +15012,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "antiforgery"
-      ],
+      "keywords": ["aspnetcore", "antiforgery"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg",
       "size": 0,
@@ -15499,9 +15060,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app/2.2.8/microsoft.aspnetcore.app.2.2.8.nupkg",
       "size": 0,
@@ -15549,11 +15108,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg",
       "size": 0,
@@ -15601,11 +15156,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -15653,11 +15204,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg",
       "size": 0,
@@ -15705,11 +15252,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg",
       "size": 0,
@@ -15757,11 +15300,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.facebook/2.2.0/microsoft.aspnetcore.authentication.facebook.2.2.0.nupkg",
       "size": 0,
@@ -15809,11 +15348,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.google/2.2.2/microsoft.aspnetcore.authentication.google.2.2.2.nupkg",
       "size": 0,
@@ -15861,11 +15396,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.jwtbearer/2.2.0/microsoft.aspnetcore.authentication.jwtbearer.2.2.0.nupkg",
       "size": 0,
@@ -15913,11 +15444,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.microsoftaccount/2.2.0/microsoft.aspnetcore.authentication.microsoftaccount.2.2.0.nupkg",
       "size": 0,
@@ -15965,11 +15492,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.oauth/2.2.0/microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg",
       "size": 0,
@@ -16017,11 +15540,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.openidconnect/2.2.0/microsoft.aspnetcore.authentication.openidconnect.2.2.0.nupkg",
       "size": 0,
@@ -16069,11 +15588,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.twitter/2.2.0/microsoft.aspnetcore.authentication.twitter.2.2.0.nupkg",
       "size": 0,
@@ -16121,11 +15636,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.wsfederation/2.2.0/microsoft.aspnetcore.authentication.wsfederation.2.2.0.nupkg",
       "size": 0,
@@ -16173,10 +15684,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authorization"
-      ],
+      "keywords": ["aspnetcore", "authorization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization/2.2.0/microsoft.aspnetcore.authorization.2.2.0.nupkg",
       "size": 0,
@@ -16224,10 +15732,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authorization"
-      ],
+      "keywords": ["aspnetcore", "authorization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization.policy/2.2.0/microsoft.aspnetcore.authorization.policy.2.2.0.nupkg",
       "size": 0,
@@ -16275,9 +15780,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.connections.abstractions/2.2.0/microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -16325,9 +15828,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cookiepolicy/2.2.8/microsoft.aspnetcore.cookiepolicy.2.2.8.nupkg",
       "size": 0,
@@ -16375,10 +15876,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cors"
-      ],
+      "keywords": ["aspnetcore", "cors"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg",
       "size": 0,
@@ -16426,10 +15924,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "dataprotection"
-      ],
+      "keywords": ["aspnetcore", "dataprotection"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cryptography.internal/2.2.0/microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg",
       "size": 0,
@@ -16477,10 +15972,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "dataprotection"
-      ],
+      "keywords": ["aspnetcore", "dataprotection"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.cryptography.keyderivation/2.2.0/microsoft.aspnetcore.cryptography.keyderivation.2.2.0.nupkg",
       "size": 0,
@@ -16528,10 +16020,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "dataprotection"
-      ],
+      "keywords": ["aspnetcore", "dataprotection"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg",
       "size": 0,
@@ -16579,10 +16068,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "dataprotection"
-      ],
+      "keywords": ["aspnetcore", "dataprotection"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection.abstractions/2.2.0/microsoft.aspnetcore.dataprotection.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -16630,10 +16116,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "dataprotection"
-      ],
+      "keywords": ["aspnetcore", "dataprotection"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection.extensions/2.2.0/microsoft.aspnetcore.dataprotection.extensions.2.2.0.nupkg",
       "size": 0,
@@ -16681,10 +16164,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "diagnostics"
-      ],
+      "keywords": ["aspnetcore", "diagnostics"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics/2.2.0/microsoft.aspnetcore.diagnostics.2.2.0.nupkg",
       "size": 0,
@@ -16732,10 +16212,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "diagnostics"
-      ],
+      "keywords": ["aspnetcore", "diagnostics"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.abstractions/2.2.0/microsoft.aspnetcore.diagnostics.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -16783,11 +16260,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "diagnostics",
-        "entityframeworkcore"
-      ],
+      "keywords": ["aspnetcore", "diagnostics", "entityframeworkcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.entityframeworkcore/2.2.1/microsoft.aspnetcore.diagnostics.entityframeworkcore.2.2.1.nupkg",
       "size": 0,
@@ -16835,10 +16308,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "diagnostics",
-        "healthchecks"
-      ],
+      "keywords": ["diagnostics", "healthchecks"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.diagnostics.healthchecks/2.2.0/microsoft.aspnetcore.diagnostics.healthchecks.2.2.0.nupkg",
       "size": 0,
@@ -16886,9 +16356,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hostfiltering/2.2.0/microsoft.aspnetcore.hostfiltering.2.2.0.nupkg",
       "size": 0,
@@ -16936,10 +16404,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "hosting"
-      ],
+      "keywords": ["aspnetcore", "hosting"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting/2.2.7/microsoft.aspnetcore.hosting.2.2.7.nupkg",
       "size": 0,
@@ -16987,10 +16452,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "hosting"
-      ],
+      "keywords": ["aspnetcore", "hosting"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -17038,10 +16500,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "hosting"
-      ],
+      "keywords": ["aspnetcore", "hosting"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/2.2.0/microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -17089,9 +16548,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -17139,9 +16596,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg",
       "size": 0,
@@ -17189,9 +16644,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -17239,10 +16692,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections/1.1.0/microsoft.aspnetcore.http.connections.1.1.0.nupkg",
       "size": 0,
@@ -17290,10 +16740,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections.common/1.1.0/microsoft.aspnetcore.http.connections.common.1.1.0.nupkg",
       "size": 0,
@@ -17341,9 +16788,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/2.2.0/microsoft.aspnetcore.http.extensions.2.2.0.nupkg",
       "size": 0,
@@ -17391,9 +16836,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg",
       "size": 0,
@@ -17441,12 +16884,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "proxy",
-        "headers",
-        "xforwarded"
-      ],
+      "keywords": ["aspnetcore", "proxy", "headers", "xforwarded"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.httpoverrides/2.2.0/microsoft.aspnetcore.httpoverrides.2.2.0.nupkg",
       "size": 0,
@@ -17494,11 +16932,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "https",
-        "hsts"
-      ],
+      "keywords": ["aspnetcore", "https", "hsts"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.httpspolicy/2.2.0/microsoft.aspnetcore.httpspolicy.2.2.0.nupkg",
       "size": 0,
@@ -17546,11 +16980,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "identity",
-        "membership"
-      ],
+      "keywords": ["aspnetcore", "identity", "membership"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg",
       "size": 0,
@@ -17651,12 +17081,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "identity",
-        "membership",
-        "razorpages"
-      ],
+      "keywords": ["aspnetcore", "identity", "membership", "razorpages"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity.ui/2.2.5/microsoft.aspnetcore.identity.ui.2.2.5.nupkg",
       "size": 0,
@@ -17704,11 +17129,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "json",
-        "jsonpatch"
-      ],
+      "keywords": ["aspnetcore", "json", "jsonpatch"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.jsonpatch/2.2.0/microsoft.aspnetcore.jsonpatch.2.2.0.nupkg",
       "size": 0,
@@ -17756,10 +17177,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "localization"
-      ],
+      "keywords": ["aspnetcore", "localization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.localization/2.2.0/microsoft.aspnetcore.localization.2.2.0.nupkg",
       "size": 0,
@@ -17807,10 +17225,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "localization"
-      ],
+      "keywords": ["aspnetcore", "localization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.localization.routing/2.2.0/microsoft.aspnetcore.localization.routing.2.2.0.nupkg",
       "size": 0,
@@ -17858,10 +17273,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "diagnostics"
-      ],
+      "keywords": ["aspnetcore", "diagnostics"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.middlewareanalysis/2.2.0/microsoft.aspnetcore.middlewareanalysis.2.2.0.nupkg",
       "size": 0,
@@ -17909,10 +17321,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc/2.2.0/microsoft.aspnetcore.mvc.2.2.0.nupkg",
       "size": 0,
@@ -17960,10 +17369,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.abstractions/2.2.0/microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -18011,10 +17417,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.analyzers/2.2.0/microsoft.aspnetcore.mvc.analyzers.2.2.0.nupkg",
       "size": 0,
@@ -18062,10 +17465,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.apiexplorer/2.2.0/microsoft.aspnetcore.mvc.apiexplorer.2.2.0.nupkg",
       "size": 0,
@@ -18113,10 +17513,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.core/2.2.5/microsoft.aspnetcore.mvc.core.2.2.5.nupkg",
       "size": 0,
@@ -18164,11 +17561,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "cors"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "cors"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.cors/2.2.0/microsoft.aspnetcore.mvc.cors.2.2.0.nupkg",
       "size": 0,
@@ -18216,10 +17609,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.dataannotations/2.2.0/microsoft.aspnetcore.mvc.dataannotations.2.2.0.nupkg",
       "size": 0,
@@ -18267,11 +17657,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "json"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "json"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.formatters.json/2.2.0/microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg",
       "size": 0,
@@ -18319,11 +17705,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "xml"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "xml"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.formatters.xml/2.2.0/microsoft.aspnetcore.mvc.formatters.xml.2.2.0.nupkg",
       "size": 0,
@@ -18371,11 +17753,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "localization"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "localization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.localization/2.2.0/microsoft.aspnetcore.mvc.localization.2.2.0.nupkg",
       "size": 0,
@@ -18423,12 +17801,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razor/2.2.0/microsoft.aspnetcore.mvc.razor.2.2.0.nupkg",
       "size": 0,
@@ -18476,12 +17849,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razor.extensions/2.2.0/microsoft.aspnetcore.mvc.razor.extensions.2.2.0.nupkg",
       "size": 0,
@@ -18583,12 +17951,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.razorpages/2.2.5/microsoft.aspnetcore.mvc.razorpages.2.2.5.nupkg",
       "size": 0,
@@ -18636,12 +17999,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "taghelper",
-        "taghelpers"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "taghelper", "taghelpers"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.taghelpers/2.2.0/microsoft.aspnetcore.mvc.taghelpers.2.2.0.nupkg",
       "size": 0,
@@ -18689,10 +18047,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.viewfeatures/2.2.0/microsoft.aspnetcore.mvc.viewfeatures.2.2.0.nupkg",
       "size": 0,
@@ -18740,11 +18095,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "nodeservices"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "nodeservices"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.nodeservices/2.2.0/microsoft.aspnetcore.nodeservices.2.2.0.nupkg",
       "size": 0,
@@ -18792,10 +18143,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "owin"
-      ],
+      "keywords": ["aspnetcore", "owin"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.owin/2.2.0/microsoft.aspnetcore.owin.2.2.0.nupkg",
       "size": 0,
@@ -18843,13 +18191,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor",
-        "taghelper",
-        "taghelpers"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor", "taghelper", "taghelpers"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg",
       "size": 0,
@@ -18897,11 +18239,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.design/2.2.0/microsoft.aspnetcore.razor.design.2.2.0.nupkg",
       "size": 0,
@@ -18949,11 +18287,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.language/2.2.0/microsoft.aspnetcore.razor.language.2.2.0.nupkg",
       "size": 0,
@@ -19001,13 +18335,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor",
-        "taghelper",
-        "taghelpers"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor", "taghelper", "taghelpers"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg",
       "size": 0,
@@ -19055,11 +18383,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cache",
-        "caching"
-      ],
+      "keywords": ["aspnetcore", "cache", "caching"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecaching/2.2.0/microsoft.aspnetcore.responsecaching.2.2.0.nupkg",
       "size": 0,
@@ -19107,11 +18431,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cache",
-        "caching"
-      ],
+      "keywords": ["aspnetcore", "cache", "caching"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecaching.abstractions/2.2.0/microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -19159,9 +18479,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.responsecompression/2.2.0/microsoft.aspnetcore.responsecompression.2.2.0.nupkg",
       "size": 0,
@@ -19209,11 +18527,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "urlrewrite",
-        "mod_rewrite"
-      ],
+      "keywords": ["aspnetcore", "urlrewrite", "mod_rewrite"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.rewrite/2.2.0/microsoft.aspnetcore.rewrite.2.2.0.nupkg",
       "size": 0,
@@ -19261,10 +18575,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "routing"
-      ],
+      "keywords": ["aspnetcore", "routing"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.routing/2.2.2/microsoft.aspnetcore.routing.2.2.2.nupkg",
       "size": 0,
@@ -19312,10 +18623,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "routing"
-      ],
+      "keywords": ["aspnetcore", "routing"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.routing.abstractions/2.2.0/microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -19363,11 +18671,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "weblistener",
-        "httpsys"
-      ],
+      "keywords": ["aspnetcore", "weblistener", "httpsys"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.httpsys/2.2.6/microsoft.aspnetcore.server.httpsys.2.2.6.nupkg",
       "size": 0,
@@ -19415,10 +18719,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "iis"
-      ],
+      "keywords": ["aspnetcore", "iis"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.iis/2.2.6/microsoft.aspnetcore.server.iis.2.2.6.nupkg",
       "size": 0,
@@ -19466,10 +18767,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "iis"
-      ],
+      "keywords": ["aspnetcore", "iis"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.iisintegration/2.2.1/microsoft.aspnetcore.server.iisintegration.2.2.1.nupkg",
       "size": 0,
@@ -19517,10 +18815,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "kestrel"
-      ],
+      "keywords": ["aspnetcore", "kestrel"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel/2.2.0/microsoft.aspnetcore.server.kestrel.2.2.0.nupkg",
       "size": 0,
@@ -19568,10 +18863,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "kestrel"
-      ],
+      "keywords": ["aspnetcore", "kestrel"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.core/2.2.0/microsoft.aspnetcore.server.kestrel.core.2.2.0.nupkg",
       "size": 0,
@@ -19619,10 +18911,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "kestrel"
-      ],
+      "keywords": ["aspnetcore", "kestrel"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.https/2.2.0/microsoft.aspnetcore.server.kestrel.https.2.2.0.nupkg",
       "size": 0,
@@ -19670,10 +18959,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "kestrel"
-      ],
+      "keywords": ["aspnetcore", "kestrel"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.transport.abstractions/2.2.0/microsoft.aspnetcore.server.kestrel.transport.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -19721,10 +19007,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "kestrel"
-      ],
+      "keywords": ["aspnetcore", "kestrel"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.server.kestrel.transport.sockets/2.2.1/microsoft.aspnetcore.server.kestrel.transport.sockets.2.2.1.nupkg",
       "size": 0,
@@ -19772,11 +19055,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "session",
-        "sessionstate"
-      ],
+      "keywords": ["aspnetcore", "session", "sessionstate"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.session/2.2.0/microsoft.aspnetcore.session.2.2.0.nupkg",
       "size": 0,
@@ -19824,10 +19103,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr/1.1.0/microsoft.aspnetcore.signalr.1.1.0.nupkg",
       "size": 0,
@@ -19875,10 +19151,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.common/1.1.0/microsoft.aspnetcore.signalr.common.1.1.0.nupkg",
       "size": 0,
@@ -19926,10 +19199,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.core/1.1.0/microsoft.aspnetcore.signalr.core.1.1.0.nupkg",
       "size": 0,
@@ -19977,10 +19247,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "signalr"
-      ],
+      "keywords": ["aspnetcore", "signalr"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.protocols.json/1.1.0/microsoft.aspnetcore.signalr.protocols.json.1.1.0.nupkg",
       "size": 0,
@@ -20076,11 +19343,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "aspnetcoremvc",
-        "nodeservices"
-      ],
+      "keywords": ["aspnetcore", "aspnetcoremvc", "nodeservices"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.spaservices.extensions/2.2.0/microsoft.aspnetcore.spaservices.extensions.2.2.0.nupkg",
       "size": 0,
@@ -20128,10 +19391,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "staticfiles"
-      ],
+      "keywords": ["aspnetcore", "staticfiles"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.staticfiles/2.2.0/microsoft.aspnetcore.staticfiles.2.2.0.nupkg",
       "size": 0,
@@ -20179,9 +19439,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.websockets/2.2.1/microsoft.aspnetcore.websockets.2.2.1.nupkg",
       "size": 0,
@@ -20229,9 +19487,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg",
       "size": 0,
@@ -20544,11 +19800,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.razor/2.2.0/microsoft.codeanalysis.razor.2.2.0.nupkg",
       "size": 0,
@@ -20876,9 +20128,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "efcore"
-      ],
+      "keywords": ["efcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/2.2.6/microsoft.entityframeworkcore.analyzers.2.2.6.nupkg",
       "size": 0,
@@ -21224,11 +20474,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "memorycache",
-        "distributedcache"
-      ],
+      "keywords": ["cache", "memorycache", "distributedcache"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/2.2.0/microsoft.extensions.caching.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -21276,10 +20522,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "memorycache"
-      ],
+      "keywords": ["cache", "memorycache"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/2.2.0/microsoft.extensions.caching.memory.2.2.0.nupkg",
       "size": 0,
@@ -21327,11 +20570,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "distributedcache",
-        "sqlserver"
-      ],
+      "keywords": ["cache", "distributedcache", "sqlserver"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.sqlserver/2.2.0/microsoft.extensions.caching.sqlserver.2.2.0.nupkg",
       "size": 0,
@@ -21379,9 +20618,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/2.2.0/microsoft.extensions.configuration.2.2.0.nupkg",
       "size": 0,
@@ -21429,9 +20666,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/2.2.0/microsoft.extensions.configuration.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -21479,9 +20714,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/2.2.4/microsoft.extensions.configuration.binder.2.2.4.nupkg",
       "size": 0,
@@ -21529,10 +20762,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "commandline"
-      ],
+      "keywords": ["configuration", "commandline"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/2.2.0/microsoft.extensions.configuration.commandline.2.2.0.nupkg",
       "size": 0,
@@ -21580,11 +20810,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "envvar",
-        "environmentvariable"
-      ],
+      "keywords": ["configuration", "envvar", "environmentvariable"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/2.2.4/microsoft.extensions.configuration.environmentvariables.2.2.4.nupkg",
       "size": 0,
@@ -21632,9 +20858,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/2.2.0/microsoft.extensions.configuration.fileextensions.2.2.0.nupkg",
       "size": 0,
@@ -21682,10 +20906,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "ini"
-      ],
+      "keywords": ["configuration", "ini"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.ini/2.2.0/microsoft.extensions.configuration.ini.2.2.0.nupkg",
       "size": 0,
@@ -21733,10 +20954,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "json"
-      ],
+      "keywords": ["configuration", "json"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/2.2.0/microsoft.extensions.configuration.json.2.2.0.nupkg",
       "size": 0,
@@ -21784,9 +21002,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.keyperfile/2.2.4/microsoft.extensions.configuration.keyperfile.2.2.4.nupkg",
       "size": 0,
@@ -21834,11 +21050,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "secrets",
-        "usersecrets"
-      ],
+      "keywords": ["configuration", "secrets", "usersecrets"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/2.2.0/microsoft.extensions.configuration.usersecrets.2.2.0.nupkg",
       "size": 0,
@@ -21886,10 +21098,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration",
-        "xml"
-      ],
+      "keywords": ["configuration", "xml"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.xml/2.2.0/microsoft.extensions.configuration.xml.2.2.0.nupkg",
       "size": 0,
@@ -21937,10 +21146,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/2.2.0/microsoft.extensions.dependencyinjection.2.2.0.nupkg",
       "size": 0,
@@ -21988,10 +21194,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22087,11 +21290,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "diagnosticadapter",
-        "diagnosticlistener",
-        "diagnostics"
-      ],
+      "keywords": ["diagnosticadapter", "diagnosticlistener", "diagnostics"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnosticadapter/2.2.0/microsoft.extensions.diagnosticadapter.2.2.0.nupkg",
       "size": 0,
@@ -22139,10 +21338,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "diagnostics",
-        "healthchecks"
-      ],
+      "keywords": ["diagnostics", "healthchecks"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/2.2.5/microsoft.extensions.diagnostics.healthchecks.2.2.5.nupkg",
       "size": 0,
@@ -22190,10 +21386,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "diagnostics",
-        "healthchecks"
-      ],
+      "keywords": ["diagnostics", "healthchecks"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/2.2.0/microsoft.extensions.diagnostics.healthchecks.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22241,10 +21434,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22292,10 +21482,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.composite/2.2.0/microsoft.extensions.fileproviders.composite.2.2.0.nupkg",
       "size": 0,
@@ -22343,10 +21530,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.embedded/2.2.0/microsoft.extensions.fileproviders.embedded.2.2.0.nupkg",
       "size": 0,
@@ -22394,10 +21578,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/2.2.0/microsoft.extensions.fileproviders.physical.2.2.0.nupkg",
       "size": 0,
@@ -22445,12 +21626,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem",
-        "glob",
-        "globbing"
-      ],
+      "keywords": ["files", "filesystem", "glob", "globbing"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/2.2.0/microsoft.extensions.filesystemglobbing.2.2.0.nupkg",
       "size": 0,
@@ -22498,9 +21674,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "hosting"
-      ],
+      "keywords": ["hosting"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/2.2.0/microsoft.extensions.hosting.2.2.0.nupkg",
       "size": 0,
@@ -22548,9 +21722,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "hosting"
-      ],
+      "keywords": ["hosting"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22598,10 +21770,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "httpclient"
-      ],
+      "keywords": ["aspnetcore", "httpclient"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/2.2.0/microsoft.extensions.http.2.2.0.nupkg",
       "size": 0,
@@ -22649,11 +21818,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "identity",
-        "membership"
-      ],
+      "keywords": ["aspnetcore", "identity", "membership"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/2.2.0/microsoft.extensions.identity.core.2.2.0.nupkg",
       "size": 0,
@@ -22701,11 +21866,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "identity",
-        "membership"
-      ],
+      "keywords": ["aspnetcore", "identity", "membership"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.stores/2.2.0/microsoft.extensions.identity.stores.2.2.0.nupkg",
       "size": 0,
@@ -22753,9 +21914,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "localization"
-      ],
+      "keywords": ["localization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.localization/2.2.0/microsoft.extensions.localization.2.2.0.nupkg",
       "size": 0,
@@ -22803,9 +21962,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "localization"
-      ],
+      "keywords": ["localization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.localization.abstractions/2.2.0/microsoft.extensions.localization.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22853,9 +22010,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/2.2.0/microsoft.extensions.logging.2.2.0.nupkg",
       "size": 0,
@@ -22903,9 +22058,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/2.2.0/microsoft.extensions.logging.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -22953,9 +22106,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/2.2.0/microsoft.extensions.logging.configuration.2.2.0.nupkg",
       "size": 0,
@@ -23003,9 +22154,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/2.2.0/microsoft.extensions.logging.console.2.2.0.nupkg",
       "size": 0,
@@ -23053,9 +22202,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/2.2.0/microsoft.extensions.logging.debug.2.2.0.nupkg",
       "size": 0,
@@ -23103,11 +22250,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging",
-        "EventSource",
-        "ETW"
-      ],
+      "keywords": ["logging", "EventSource", "ETW"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/2.2.0/microsoft.extensions.logging.eventsource.2.2.0.nupkg",
       "size": 0,
@@ -23155,10 +22298,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging",
-        "tracesource"
-      ],
+      "keywords": ["logging", "tracesource"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.tracesource/2.2.0/microsoft.extensions.logging.tracesource.2.2.0.nupkg",
       "size": 0,
@@ -23206,9 +22346,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "pooling"
-      ],
+      "keywords": ["pooling"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg",
       "size": 0,
@@ -23256,10 +22394,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/2.2.0/microsoft.extensions.options.2.2.0.nupkg",
       "size": 0,
@@ -23307,11 +22442,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "configuration",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "configuration", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/2.2.0/microsoft.extensions.options.configurationextensions.2.2.0.nupkg",
       "size": 0,
@@ -23359,11 +22490,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "validation",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "validation", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.dataannotations/2.2.0/microsoft.extensions.options.dataannotations.2.2.0.nupkg",
       "size": 0,
@@ -23411,9 +22538,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "primitives"
-      ],
+      "keywords": ["primitives"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg",
       "size": 0,
@@ -23461,9 +22586,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.webencoders/2.2.0/microsoft.extensions.webencoders.2.2.0.nupkg",
       "size": 0,
@@ -23567,13 +22690,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        ".NET",
-        "Windows",
-        "Authentication",
-        "Identity",
-        "Logging"
-      ],
+      "keywords": [".NET", "Windows", "Authentication", "Identity", "Logging"],
       "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/5.3.0/microsoft.identitymodel.logging.5.3.0.nupkg",
       "size": 0,
@@ -23959,9 +23076,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "http"
-      ],
+      "keywords": ["http"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/2.2.8/microsoft.net.http.headers.2.2.8.nupkg",
       "size": 0,
@@ -24674,9 +23789,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "size": 0,
@@ -24724,9 +23837,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "bson"
-      ],
+      "keywords": ["bson"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json.bson/1.0.1/newtonsoft.json.bson.1.0.1.nupkg",
       "size": 0,
@@ -24774,9 +23885,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg",
       "size": 0,
@@ -24824,11 +23933,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "re-motion",
-        "LINQ",
-        "ExpressionTrees"
-      ],
+      "keywords": ["re-motion", "LINQ", "ExpressionTrees"],
       "homepage_url": "http://relinq.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/remotion.linq/2.2.0/remotion.linq.2.2.0.nupkg",
       "size": 0,

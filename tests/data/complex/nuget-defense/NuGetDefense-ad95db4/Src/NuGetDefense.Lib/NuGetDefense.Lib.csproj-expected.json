@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/nuget-defense/NuGetDefense-ad95db4/Src/NuGetDefense.Lib/NuGetDefense.Lib.csproj"
       ],
       "project_framework": "net6.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -129,12 +129,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "xml",
-            "serializer",
-            "serialization",
-            "string"
-          ],
+          "keywords": ["xml", "serializer", "serialization", "string"],
           "homepage_url": "https://github.com/ByteDev/ByteDev.Xml",
           "download_url": "https://api.nuget.org/v3-flatcontainer/bytedev.xml/2.0.0/bytedev.xml.2.0.0.nupkg",
           "size": 0,
@@ -182,9 +177,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "GraphQL"
-          ],
+          "keywords": ["GraphQL"],
           "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client/5.1.0/graphql.client.5.1.0.nupkg",
           "size": 0,
@@ -232,9 +225,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "GraphQL"
-          ],
+          "keywords": ["GraphQL"],
           "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.abstractions/5.1.0/graphql.client.abstractions.5.1.0.nupkg",
           "size": 0,
@@ -282,9 +273,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "GraphQL"
-          ],
+          "keywords": ["GraphQL"],
           "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.abstractions.websocket/5.1.0/graphql.client.abstractions.websocket.5.1.0.nupkg",
           "size": 0,
@@ -332,9 +321,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "GraphQL"
-          ],
+          "keywords": ["GraphQL"],
           "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.serializer.systemtextjson/5.1.0/graphql.client.serializer.systemtextjson.5.1.0.nupkg",
           "size": 0,
@@ -382,9 +369,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "GraphQL"
-          ],
+          "keywords": ["GraphQL"],
           "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.primitives/5.1.0/graphql.primitives.5.1.0.nupkg",
           "size": 0,
@@ -592,11 +577,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "SQLite",
-            "Data",
-            "ADO.NET"
-          ],
+          "keywords": ["SQLite", "Data", "ADO.NET"],
           "homepage_url": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite/6.0.10/microsoft.data.sqlite.6.0.10.nupkg",
           "size": 0,
@@ -644,11 +625,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "SQLite",
-            "Data",
-            "ADO.NET"
-          ],
+          "keywords": ["SQLite", "Data", "ADO.NET"],
           "homepage_url": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/6.0.10/microsoft.data.sqlite.core.6.0.10.nupkg",
           "size": 0,
@@ -696,9 +673,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "MSBuild"
-          ],
+          "keywords": ["MSBuild"],
           "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/1.0.0/microsoft.net.stringtools.1.0.0.nupkg",
           "size": 0,
@@ -746,11 +721,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "semver",
-            "semantic",
-            "versioning"
-          ],
+          "keywords": ["semver", "semantic", "versioning"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg",
           "size": 0,
@@ -798,9 +769,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Security"
-          ],
+          "keywords": ["Security"],
           "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.core/2.0.4/nugetdefense.core.2.0.4.nupkg",
           "size": 0,
@@ -848,10 +817,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "NuGetDefense",
-            "Security"
-          ],
+          "keywords": ["NuGetDefense", "Security"],
           "homepage_url": "https://github.com/digitalcoyote/NuGetDefense.GitHubAdvisoryDatabase",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.githubadvisorydatabase/2.0.2/nugetdefense.githubadvisorydatabase.2.0.2.nupkg",
           "size": 0,
@@ -899,9 +865,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Security"
-          ],
+          "keywords": ["Security"],
           "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense.NVD",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.nvd/2.0.8/nugetdefense.nvd.2.0.8.nupkg",
           "size": 0,
@@ -949,9 +913,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Security"
-          ],
+          "keywords": ["Security"],
           "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense.OSSIndex",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.ossindex/2.0.5/nugetdefense.ossindex.2.0.5.nupkg",
           "size": 0,
@@ -999,12 +961,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "logging",
-            "semantic",
-            "structured"
-          ],
+          "keywords": ["serilog", "logging", "semantic", "structured"],
           "homepage_url": "https://serilog.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.10.0/serilog.2.10.0.nupkg",
           "size": 0,
@@ -1052,11 +1009,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "console",
-            "terminal"
-          ],
+          "keywords": ["serilog", "console", "terminal"],
           "homepage_url": "https://github.com/serilog/serilog-sinks-console",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.console/4.1.0/serilog.sinks.console.4.1.0.nupkg",
           "size": 0,
@@ -1104,10 +1057,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "file"
-          ],
+          "keywords": ["serilog", "file"],
           "homepage_url": "https://serilog.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg",
           "size": 0,
@@ -1155,10 +1105,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite",
-            "xamarin"
-          ],
+          "keywords": ["sqlite", "xamarin"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg",
           "size": 0,
@@ -1206,9 +1153,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite"
-          ],
+          "keywords": ["sqlite"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg",
           "size": 0,
@@ -1256,10 +1201,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite",
-            "xamarin"
-          ],
+          "keywords": ["sqlite", "xamarin"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg",
           "size": 0,
@@ -1307,10 +1249,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite",
-            "xamarin"
-          ],
+          "keywords": ["sqlite", "xamarin"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/2.0.6/sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg",
           "size": 0,
@@ -1670,12 +1609,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "xml",
-        "serializer",
-        "serialization",
-        "string"
-      ],
+      "keywords": ["xml", "serializer", "serialization", "string"],
       "homepage_url": "https://github.com/ByteDev/ByteDev.Xml",
       "download_url": "https://api.nuget.org/v3-flatcontainer/bytedev.xml/2.0.0/bytedev.xml.2.0.0.nupkg",
       "size": 0,
@@ -1723,9 +1657,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GraphQL"
-      ],
+      "keywords": ["GraphQL"],
       "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client/5.1.0/graphql.client.5.1.0.nupkg",
       "size": 0,
@@ -1773,9 +1705,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GraphQL"
-      ],
+      "keywords": ["GraphQL"],
       "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.abstractions/5.1.0/graphql.client.abstractions.5.1.0.nupkg",
       "size": 0,
@@ -1823,9 +1753,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GraphQL"
-      ],
+      "keywords": ["GraphQL"],
       "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.abstractions.websocket/5.1.0/graphql.client.abstractions.websocket.5.1.0.nupkg",
       "size": 0,
@@ -1873,9 +1801,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GraphQL"
-      ],
+      "keywords": ["GraphQL"],
       "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.client.serializer.systemtextjson/5.1.0/graphql.client.serializer.systemtextjson.5.1.0.nupkg",
       "size": 0,
@@ -1923,9 +1849,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "GraphQL"
-      ],
+      "keywords": ["GraphQL"],
       "homepage_url": "https://github.com/graphql-dotnet/graphql-client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/graphql.primitives/5.1.0/graphql.primitives.5.1.0.nupkg",
       "size": 0,
@@ -2133,11 +2057,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "SQLite",
-        "Data",
-        "ADO.NET"
-      ],
+      "keywords": ["SQLite", "Data", "ADO.NET"],
       "homepage_url": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite/6.0.10/microsoft.data.sqlite.6.0.10.nupkg",
       "size": 0,
@@ -2185,11 +2105,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "SQLite",
-        "Data",
-        "ADO.NET"
-      ],
+      "keywords": ["SQLite", "Data", "ADO.NET"],
       "homepage_url": "https://docs.microsoft.com/dotnet/standard/data/sqlite/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/6.0.10/microsoft.data.sqlite.core.6.0.10.nupkg",
       "size": 0,
@@ -2237,9 +2153,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "MSBuild"
-      ],
+      "keywords": ["MSBuild"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=624683",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/1.0.0/microsoft.net.stringtools.1.0.0.nupkg",
       "size": 0,
@@ -2287,11 +2201,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "semver",
-        "semantic",
-        "versioning"
-      ],
+      "keywords": ["semver", "semantic", "versioning"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.3.1/nuget.versioning.6.3.1.nupkg",
       "size": 0,
@@ -2339,9 +2249,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Security"
-      ],
+      "keywords": ["Security"],
       "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.core/2.0.4/nugetdefense.core.2.0.4.nupkg",
       "size": 0,
@@ -2389,10 +2297,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "NuGetDefense",
-        "Security"
-      ],
+      "keywords": ["NuGetDefense", "Security"],
       "homepage_url": "https://github.com/digitalcoyote/NuGetDefense.GitHubAdvisoryDatabase",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.githubadvisorydatabase/2.0.2/nugetdefense.githubadvisorydatabase.2.0.2.nupkg",
       "size": 0,
@@ -2440,9 +2345,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Security"
-      ],
+      "keywords": ["Security"],
       "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense.NVD",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.nvd/2.0.8/nugetdefense.nvd.2.0.8.nupkg",
       "size": 0,
@@ -2490,9 +2393,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Security"
-      ],
+      "keywords": ["Security"],
       "homepage_url": "https://github.com/DigitalCoyote/NuGetDefense.OSSIndex",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nugetdefense.ossindex/2.0.5/nugetdefense.ossindex.2.0.5.nupkg",
       "size": 0,
@@ -2540,12 +2441,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "logging",
-        "semantic",
-        "structured"
-      ],
+      "keywords": ["serilog", "logging", "semantic", "structured"],
       "homepage_url": "https://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.10.0/serilog.2.10.0.nupkg",
       "size": 0,
@@ -2593,11 +2489,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "console",
-        "terminal"
-      ],
+      "keywords": ["serilog", "console", "terminal"],
       "homepage_url": "https://github.com/serilog/serilog-sinks-console",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.console/4.1.0/serilog.sinks.console.4.1.0.nupkg",
       "size": 0,
@@ -2645,10 +2537,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "file"
-      ],
+      "keywords": ["serilog", "file"],
       "homepage_url": "https://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg",
       "size": 0,
@@ -2696,10 +2585,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "xamarin"
-      ],
+      "keywords": ["sqlite", "xamarin"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg",
       "size": 0,
@@ -2747,9 +2633,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite"
-      ],
+      "keywords": ["sqlite"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg",
       "size": 0,
@@ -2797,10 +2681,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "xamarin"
-      ],
+      "keywords": ["sqlite", "xamarin"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg",
       "size": 0,
@@ -2848,10 +2729,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "xamarin"
-      ],
+      "keywords": ["sqlite", "xamarin"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/2.0.6/sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg",
       "size": 0,

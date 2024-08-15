@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end7/Nuuvify.CommonPack-119311/src/Nuuvify.CommonPack.Security/Nuuvify.CommonPack.Security.csproj"
       ],
       "project_framework": "netcoreapp3.1",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,11 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authentication",
-            "security"
-          ],
+          "keywords": ["aspnetcore", "authentication", "security"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.jwtbearer/3.1.26/microsoft.aspnetcore.authentication.jwtbearer.3.1.26.nupkg",
           "size": 0,
@@ -122,10 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "authorization"
-          ],
+          "keywords": ["aspnetcore", "authorization"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization/3.1.26/microsoft.aspnetcore.authorization.3.1.26.nupkg",
           "size": 0,
@@ -173,9 +166,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore"
-          ],
+          "keywords": ["aspnetcore"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.metadata/3.1.26/microsoft.aspnetcore.metadata.3.1.26.nupkg",
           "size": 0,
@@ -271,10 +262,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlclient",
-            "microsoft.data.sqlclient"
-          ],
+          "keywords": ["sqlclient", "microsoft.data.sqlclient"],
           "homepage_url": "https://aka.ms/sqlclientproject",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/1.0.19239.1/microsoft.data.sqlclient.1.0.19239.1.nupkg",
           "size": 0,
@@ -322,11 +310,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "memorycache",
-            "distributedcache"
-          ],
+          "keywords": ["cache", "memorycache", "distributedcache"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/3.1.26/microsoft.extensions.caching.abstractions.3.1.26.nupkg",
           "size": 0,
@@ -374,11 +358,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "distributedcache",
-            "sqlserver"
-          ],
+          "keywords": ["cache", "distributedcache", "sqlserver"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.sqlserver/3.1.26/microsoft.extensions.caching.sqlserver.3.1.26.nupkg",
           "size": 0,
@@ -426,9 +406,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/3.1.26/microsoft.extensions.configuration.3.1.26.nupkg",
           "size": 0,
@@ -476,9 +454,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/3.1.26/microsoft.extensions.configuration.abstractions.3.1.26.nupkg",
           "size": 0,
@@ -526,9 +502,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "configuration"
-          ],
+          "keywords": ["configuration"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/3.1.26/microsoft.extensions.configuration.binder.3.1.26.nupkg",
           "size": 0,
@@ -576,10 +550,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "dependencyinjection",
-            "di"
-          ],
+          "keywords": ["dependencyinjection", "di"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/3.1.26/microsoft.extensions.dependencyinjection.abstractions.3.1.26.nupkg",
           "size": 0,
@@ -627,9 +598,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "logging"
-          ],
+          "keywords": ["logging"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/3.1.26/microsoft.extensions.logging.abstractions.3.1.26.nupkg",
           "size": 0,
@@ -677,10 +646,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "options"
-          ],
+          "keywords": ["aspnetcore", "options"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/3.1.26/microsoft.extensions.options.3.1.26.nupkg",
           "size": 0,
@@ -728,11 +694,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "configuration",
-            "options"
-          ],
+          "keywords": ["aspnetcore", "configuration", "options"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/3.1.26/microsoft.extensions.options.configurationextensions.3.1.26.nupkg",
           "size": 0,
@@ -780,9 +742,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "primitives"
-          ],
+          "keywords": ["primitives"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/3.1.26/microsoft.extensions.primitives.3.1.26.nupkg",
           "size": 0,
@@ -1319,9 +1279,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.1/newtonsoft.json.10.0.1.nupkg",
           "size": 0,
@@ -4503,11 +4461,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authentication",
-        "security"
-      ],
+      "keywords": ["aspnetcore", "authentication", "security"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.jwtbearer/3.1.26/microsoft.aspnetcore.authentication.jwtbearer.3.1.26.nupkg",
       "size": 0,
@@ -4555,10 +4509,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "authorization"
-      ],
+      "keywords": ["aspnetcore", "authorization"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization/3.1.26/microsoft.aspnetcore.authorization.3.1.26.nupkg",
       "size": 0,
@@ -4606,9 +4557,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore"
-      ],
+      "keywords": ["aspnetcore"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.metadata/3.1.26/microsoft.aspnetcore.metadata.3.1.26.nupkg",
       "size": 0,
@@ -4704,10 +4653,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlclient",
-        "microsoft.data.sqlclient"
-      ],
+      "keywords": ["sqlclient", "microsoft.data.sqlclient"],
       "homepage_url": "https://aka.ms/sqlclientproject",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/1.0.19239.1/microsoft.data.sqlclient.1.0.19239.1.nupkg",
       "size": 0,
@@ -4755,11 +4701,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "memorycache",
-        "distributedcache"
-      ],
+      "keywords": ["cache", "memorycache", "distributedcache"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/3.1.26/microsoft.extensions.caching.abstractions.3.1.26.nupkg",
       "size": 0,
@@ -4807,11 +4749,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "distributedcache",
-        "sqlserver"
-      ],
+      "keywords": ["cache", "distributedcache", "sqlserver"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.sqlserver/3.1.26/microsoft.extensions.caching.sqlserver.3.1.26.nupkg",
       "size": 0,
@@ -4859,9 +4797,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/3.1.26/microsoft.extensions.configuration.3.1.26.nupkg",
       "size": 0,
@@ -4909,9 +4845,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/3.1.26/microsoft.extensions.configuration.abstractions.3.1.26.nupkg",
       "size": 0,
@@ -4959,9 +4893,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "configuration"
-      ],
+      "keywords": ["configuration"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/3.1.26/microsoft.extensions.configuration.binder.3.1.26.nupkg",
       "size": 0,
@@ -5009,10 +4941,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/3.1.26/microsoft.extensions.dependencyinjection.abstractions.3.1.26.nupkg",
       "size": 0,
@@ -5060,9 +4989,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "logging"
-      ],
+      "keywords": ["logging"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/3.1.26/microsoft.extensions.logging.abstractions.3.1.26.nupkg",
       "size": 0,
@@ -5110,10 +5037,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/3.1.26/microsoft.extensions.options.3.1.26.nupkg",
       "size": 0,
@@ -5161,11 +5085,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "configuration",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "configuration", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/3.1.26/microsoft.extensions.options.configurationextensions.3.1.26.nupkg",
       "size": 0,
@@ -5213,9 +5133,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "primitives"
-      ],
+      "keywords": ["primitives"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/3.1.26/microsoft.extensions.primitives.3.1.26.nupkg",
       "size": 0,
@@ -5385,13 +5303,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        ".NET",
-        "Windows",
-        "Authentication",
-        "Identity",
-        "Logging"
-      ],
+      "keywords": [".NET", "Windows", "Authentication", "Identity", "Logging"],
       "homepage_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/5.5.0/microsoft.identitymodel.logging.5.5.0.nupkg",
       "size": 0,
@@ -5752,9 +5664,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/10.0.1/newtonsoft.json.10.0.1.nupkg",
       "size": 0,

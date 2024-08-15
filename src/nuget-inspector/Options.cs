@@ -151,7 +151,7 @@ public class Options
                 + "Inspect .NET and NuGet projects and package manifests. Resolve NuGet dependencies.\n"
                 + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
                 + "Copyright (c) nexB Inc. and others.\n"
-                + "https://github.com/nexB/nuget-inspector");
+                + "https://github.com/aboutcode-org/nuget-inspector");
             return null;
         }
 

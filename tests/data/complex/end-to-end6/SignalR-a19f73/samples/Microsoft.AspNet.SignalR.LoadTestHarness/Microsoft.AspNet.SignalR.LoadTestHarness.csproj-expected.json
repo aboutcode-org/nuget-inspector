@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end6/SignalR-a19f73/samples/Microsoft.AspNet.SignalR.LoadTestHarness/Microsoft.AspNet.SignalR.LoadTestHarness.csproj"
       ],
       "project_framework": "net45",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,11 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "jQuery",
-            "plugins",
-            "color"
-          ],
+          "keywords": ["jQuery", "plugins", "color"],
           "homepage_url": "http://plugins.jquery.com/project/color/",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery.color/2.1.0/jquery.color.2.1.0.nupkg",
           "size": 0,
@@ -117,9 +113,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "jQuery"
-              ],
+              "keywords": ["jQuery"],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.8.2/jquery.1.8.2.nupkg",
               "size": 0,
@@ -169,11 +163,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "jQuery",
-            "jQueryUI",
-            "plugins"
-          ],
+          "keywords": ["jQuery", "jQueryUI", "plugins"],
           "homepage_url": "http://jqueryui.com/",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery.ui.combined/1.9.0/jquery.ui.combined.1.9.0.nupkg",
           "size": 0,
@@ -216,9 +206,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "jQuery"
-              ],
+              "keywords": ["jQuery"],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.8.2/jquery.1.8.2.nupkg",
               "size": 0,
@@ -268,10 +256,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "knockout",
-            "mvvm"
-          ],
+          "keywords": ["knockout", "mvvm"],
           "homepage_url": "http://knockoutjs.com/",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/knockoutjs/2.1.0/knockoutjs.2.1.0.nupkg",
           "size": 0,
@@ -317,11 +302,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
+          "keywords": ["Microsoft", "OWIN", "Katana"],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.owin.host.systemweb/2.1.0/microsoft.owin.host.systemweb.2.1.0.nupkg",
           "size": 0,
@@ -364,11 +345,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
               "size": 0,
@@ -414,9 +391,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -466,9 +441,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://james.newtonking.com/json",
           "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
           "size": 0,
@@ -520,9 +493,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery"
-      ],
+      "keywords": ["jQuery"],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.8.2/jquery.1.8.2.nupkg",
       "size": 0,
@@ -568,9 +539,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery"
-      ],
+      "keywords": ["jQuery"],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery/1.8.2/jquery.1.8.2.nupkg",
       "size": 0,
@@ -616,11 +585,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery",
-        "plugins",
-        "color"
-      ],
+      "keywords": ["jQuery", "plugins", "color"],
       "homepage_url": "http://plugins.jquery.com/project/color/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery.color/2.1.0/jquery.color.2.1.0.nupkg",
       "size": 0,
@@ -666,11 +631,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery",
-        "jQueryUI",
-        "plugins"
-      ],
+      "keywords": ["jQuery", "jQueryUI", "plugins"],
       "homepage_url": "http://jqueryui.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/jquery.ui.combined/1.9.0/jquery.ui.combined.1.9.0.nupkg",
       "size": 0,
@@ -716,10 +677,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "knockout",
-        "mvvm"
-      ],
+      "keywords": ["knockout", "mvvm"],
       "homepage_url": "http://knockoutjs.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/knockoutjs/2.1.0/knockoutjs.2.1.0.nupkg",
       "size": 0,
@@ -765,11 +723,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.owin/2.1.0/microsoft.owin.2.1.0.nupkg",
       "size": 0,
@@ -815,11 +769,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/microsoft.owin.host.systemweb/2.1.0/microsoft.owin.host.systemweb.2.1.0.nupkg",
       "size": 0,
@@ -865,9 +815,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://james.newtonking.com/json",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/newtonsoft.json/6.0.4/newtonsoft.json.6.0.4.nupkg",
       "size": 0,
@@ -913,9 +861,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://pkgs.dev.azure.com/dnceng/9ee6d478-d288-47f7-aacc-f6e6d082ae6d/_packaging/45bacae2-5efb-47c8-91e5-8ec20c22b4f8/nuget/v3/flat2/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,

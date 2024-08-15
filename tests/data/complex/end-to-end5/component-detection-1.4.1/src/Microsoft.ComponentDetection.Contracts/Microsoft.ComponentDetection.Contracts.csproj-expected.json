@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end5/component-detection-1.4.1/src/Microsoft.ComponentDetection.Contracts/Microsoft.ComponentDetection.Contracts.csproj"
       ],
       "project_framework": "netstandard2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -214,11 +214,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Package",
-            "URL",
-            "purl"
-          ],
+          "keywords": ["Package", "URL", "purl"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/packageurl-dotnet/1.0.0/packageurl-dotnet.1.0.0.nupkg",
           "size": 0,
@@ -2179,11 +2175,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Package",
-        "URL",
-        "purl"
-      ],
+      "keywords": ["Package", "URL", "purl"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/packageurl-dotnet/1.0.0/packageurl-dotnet.1.0.0.nupkg",
       "size": 0,

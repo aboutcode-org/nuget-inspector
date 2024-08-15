@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server.Test/Bonobo.Git.Server.Test.csproj"
       ],
       "project_framework": "net46",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -134,9 +134,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -232,12 +230,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "AspNet",
-                "Mvc",
-                "AspNetMvc"
-              ],
+              "keywords": ["Microsoft", "AspNet", "Mvc", "AspNetMvc"],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
               "size": 0,
@@ -283,11 +276,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "aspnetmvc",
-                "futures",
-                "aspnet"
-              ],
+              "keywords": ["aspnetmvc", "futures", "aspnet"],
               "homepage_url": "http://aspnet.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc.futures/5.0.0/microsoft.aspnet.mvc.futures.5.0.0.nupkg",
               "size": 0,
@@ -385,11 +374,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Selenium",
-                "WebDriver",
-                "chromedriver"
-              ],
+              "keywords": ["Selenium", "WebDriver", "chromedriver"],
               "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-chromedriver/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/selenium.webdriver.chromedriver/2.29.0/selenium.webdriver.chromedriver.2.29.0.nupkg",
               "size": 0,
@@ -490,13 +475,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite",
-            "database",
-            "ado.net",
-            "provider",
-            "interop"
-          ],
+          "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite/1.0.104/system.data.sqlite.1.0.104.nupkg",
           "size": 0,
@@ -705,12 +684,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "Mvc",
-        "AspNetMvc"
-      ],
+      "keywords": ["Microsoft", "AspNet", "Mvc", "AspNetMvc"],
       "homepage_url": "http://www.asp.net/mvc",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
       "size": 0,
@@ -756,11 +730,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetmvc",
-        "futures",
-        "aspnet"
-      ],
+      "keywords": ["aspnetmvc", "futures", "aspnet"],
       "homepage_url": "http://aspnet.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc.futures/5.0.0/microsoft.aspnet.mvc.futures.5.0.0.nupkg",
       "size": 0,
@@ -870,9 +840,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,
@@ -918,13 +886,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Selenium",
-        "WebDriver",
-        "browser",
-        "automation",
-        "support"
-      ],
+      "keywords": ["Selenium", "WebDriver", "browser", "automation", "support"],
       "homepage_url": "https://github.com/SeleniumHQ/selenium",
       "download_url": "https://api.nuget.org/v3-flatcontainer/selenium.support/3.3.0/selenium.support.3.3.0.nupkg",
       "size": 0,
@@ -970,11 +932,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Selenium",
-        "WebDriver",
-        "chromedriver"
-      ],
+      "keywords": ["Selenium", "WebDriver", "chromedriver"],
       "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-chromedriver/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/selenium.webdriver.chromedriver/2.29.0/selenium.webdriver.chromedriver.2.29.0.nupkg",
       "size": 0,
@@ -1020,12 +978,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Selenium",
-        "WebDriver",
-        "IEDriverServer",
-        "iedriver"
-      ],
+      "keywords": ["Selenium", "WebDriver", "IEDriverServer", "iedriver"],
       "homepage_url": "https://github.com/jsakamoto/nupkg-selenium-webdriver-iedriver/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/selenium.webdriver.iedriver/3.3.0/selenium.webdriver.iedriver.3.3.0.nupkg",
       "size": 0,
@@ -1124,13 +1077,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite/1.0.104/system.data.sqlite.1.0.104.nupkg",
       "size": 0,
@@ -1176,13 +1123,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.core/1.0.104/system.data.sqlite.core.1.0.104.nupkg",
       "size": 0,
@@ -1228,13 +1169,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.ef6/1.0.104/system.data.sqlite.ef6.1.0.104.nupkg",
       "size": 0,
@@ -1280,13 +1215,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.linq/1.0.104/system.data.sqlite.linq.1.0.104.nupkg",
       "size": 0,

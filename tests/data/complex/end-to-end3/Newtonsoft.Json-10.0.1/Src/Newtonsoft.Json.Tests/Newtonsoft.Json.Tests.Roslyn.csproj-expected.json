@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end3/Newtonsoft.Json-10.0.1/Src/Newtonsoft.Json.Tests/Newtonsoft.Json.Tests.Roslyn.csproj"
       ],
       "project_framework": "net45",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,12 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "autofac",
-            "di",
-            "ioc",
-            "dependencyinjection"
-          ],
+          "keywords": ["autofac", "di", "ioc", "dependencyinjection"],
           "homepage_url": "http://autofac.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/autofac/4.0.0-rc2-240/autofac.4.0.0-rc2-240.nupkg",
           "size": 0,
@@ -123,11 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "benchmark",
-            "benchmarking",
-            "performance"
-          ],
+          "keywords": ["benchmark", "benchmarking", "performance"],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/0.10.2/benchmarkdotnet.0.10.2.nupkg",
           "size": 0,
@@ -175,11 +166,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "benchmark",
-            "benchmarking",
-            "performance"
-          ],
+          "keywords": ["benchmark", "benchmarking", "performance"],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet.core/0.10.2/benchmarkdotnet.core.0.10.2.nupkg",
           "size": 0,
@@ -227,11 +214,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "benchmark",
-            "benchmarking",
-            "performance"
-          ],
+          "keywords": ["benchmark", "benchmarking", "performance"],
           "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
           "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet.toolchains.roslyn/0.10.2/benchmarkdotnet.toolchains.roslyn.0.10.2.nupkg",
           "size": 0,
@@ -279,11 +262,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "F#",
-            "FSharp",
-            "FSharp.Core"
-          ],
+          "keywords": ["F#", "FSharp", "FSharp.Core"],
           "homepage_url": "https://github.com/fsharp/fsharp",
           "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/4.0.1.7-alpha/fsharp.core.4.0.1.7-alpha.nupkg",
           "size": 0,
@@ -1609,12 +1588,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "autofac",
-        "di",
-        "ioc",
-        "dependencyinjection"
-      ],
+      "keywords": ["autofac", "di", "ioc", "dependencyinjection"],
       "homepage_url": "http://autofac.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/autofac/4.0.0-rc2-240/autofac.4.0.0-rc2-240.nupkg",
       "size": 0,
@@ -1662,11 +1636,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "benchmark",
-        "benchmarking",
-        "performance"
-      ],
+      "keywords": ["benchmark", "benchmarking", "performance"],
       "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet/0.10.2/benchmarkdotnet.0.10.2.nupkg",
       "size": 0,
@@ -1714,11 +1684,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "benchmark",
-        "benchmarking",
-        "performance"
-      ],
+      "keywords": ["benchmark", "benchmarking", "performance"],
       "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet.core/0.10.2/benchmarkdotnet.core.0.10.2.nupkg",
       "size": 0,
@@ -1766,11 +1732,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "benchmark",
-        "benchmarking",
-        "performance"
-      ],
+      "keywords": ["benchmark", "benchmarking", "performance"],
       "homepage_url": "https://github.com/dotnet/BenchmarkDotNet",
       "download_url": "https://api.nuget.org/v3-flatcontainer/benchmarkdotnet.toolchains.roslyn/0.10.2/benchmarkdotnet.toolchains.roslyn.0.10.2.nupkg",
       "size": 0,
@@ -1818,11 +1780,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "F#",
-        "FSharp",
-        "FSharp.Core"
-      ],
+      "keywords": ["F#", "FSharp", "FSharp.Core"],
       "homepage_url": "https://github.com/fsharp/fsharp",
       "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/4.0.1.7-alpha/fsharp.core.4.0.1.7-alpha.nupkg",
       "size": 0,
@@ -2128,13 +2086,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "test",
-        "visualstudio",
-        "testadapter",
-        "nunit",
-        "nunit3"
-      ],
+      "keywords": ["test", "visualstudio", "testadapter", "nunit", "nunit3"],
       "homepage_url": "https://github.com/nunit/docs/wiki/VS-Adapter",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nunit3testadapter/3.7.0/nunit3testadapter.3.7.0.nupkg",
       "size": 0,

@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /basic/simple-projects/ASimpleProject-project-reference-no-version.csproj"
       ],
       "project_framework": "net5.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,14 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "web",
-            "utility",
-            "http",
-            "json",
-            "url",
-            "parsing"
-          ],
+          "keywords": ["web", "utility", "http", "json", "url", "parsing"],
           "homepage_url": "http://project_url_here_or_delete_this_line/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/contoso.utility.usefulstuff/1.8.7/contoso.utility.usefulstuff.1.8.7.nupkg",
           "size": 0,
@@ -269,9 +262,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -1909,14 +1900,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "web",
-        "utility",
-        "http",
-        "json",
-        "url",
-        "parsing"
-      ],
+      "keywords": ["web", "utility", "http", "json", "url", "parsing"],
       "homepage_url": "http://project_url_here_or_delete_this_line/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/contoso.utility.usefulstuff/1.8.7/contoso.utility.usefulstuff.1.8.7.nupkg",
       "size": 0,
@@ -2108,9 +2092,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,

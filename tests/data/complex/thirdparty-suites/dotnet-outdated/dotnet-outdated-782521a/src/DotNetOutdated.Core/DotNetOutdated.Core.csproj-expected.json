@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/dotnet-outdated/dotnet-outdated-782521a/src/DotNetOutdated.Core/DotNetOutdated.Core.csproj"
       ],
       "project_framework": "netstandard2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,10 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "commandline",
-            "parsing"
-          ],
+          "keywords": ["commandline", "parsing"],
           "homepage_url": "https://github.com/natemcmaster/CommandLineUtils",
           "download_url": "https://api.nuget.org/v3-flatcontainer/mcmaster.extensions.commandlineutils/4.0.1/mcmaster.extensions.commandlineutils.4.0.1.nupkg",
           "size": 0,
@@ -121,9 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
           "size": 0,
@@ -171,9 +166,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.3.1/nuget.common.6.3.1.nupkg",
           "size": 0,
@@ -221,9 +214,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.3.1/nuget.configuration.6.3.1.nupkg",
           "size": 0,
@@ -271,9 +262,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.credentials/6.0.0/nuget.credentials.6.0.0.nupkg",
           "size": 0,
@@ -321,9 +310,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/6.0.0/nuget.dependencyresolver.core.6.0.0.nupkg",
           "size": 0,
@@ -371,9 +358,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.3.1/nuget.frameworks.6.3.1.nupkg",
           "size": 0,
@@ -421,9 +406,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/6.0.0/nuget.librarymodel.6.0.0.nupkg",
           "size": 0,
@@ -471,9 +454,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.0.0/nuget.packaging.6.0.0.nupkg",
           "size": 0,
@@ -521,9 +502,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/6.0.0/nuget.projectmodel.6.0.0.nupkg",
           "size": 0,
@@ -571,10 +550,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget",
-            "protocol"
-          ],
+          "keywords": ["nuget", "protocol"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.0.0/nuget.protocol.6.0.0.nupkg",
           "size": 0,
@@ -622,11 +598,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "semver",
-            "semantic",
-            "versioning"
-          ],
+          "keywords": ["semver", "semantic", "versioning"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.0.0/nuget.versioning.6.0.0.nupkg",
           "size": 0,
@@ -818,9 +790,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "testing"
-          ],
+          "keywords": ["testing"],
           "homepage_url": "https://github.com/System-IO-Abstractions/System.IO.Abstractions",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.io.abstractions/14.0.13/system.io.abstractions.14.0.13.nupkg",
           "size": 0,
@@ -1306,10 +1276,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "commandline",
-        "parsing"
-      ],
+      "keywords": ["commandline", "parsing"],
       "homepage_url": "https://github.com/natemcmaster/CommandLineUtils",
       "download_url": "https://api.nuget.org/v3-flatcontainer/mcmaster.extensions.commandlineutils/4.0.1/mcmaster.extensions.commandlineutils.4.0.1.nupkg",
       "size": 0,
@@ -1357,9 +1324,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
       "size": 0,
@@ -1407,9 +1372,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/6.3.1/nuget.common.6.3.1.nupkg",
       "size": 0,
@@ -1457,9 +1420,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.3.1/nuget.configuration.6.3.1.nupkg",
       "size": 0,
@@ -1507,9 +1468,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.credentials/6.0.0/nuget.credentials.6.0.0.nupkg",
       "size": 0,
@@ -1557,9 +1516,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/6.0.0/nuget.dependencyresolver.core.6.0.0.nupkg",
       "size": 0,
@@ -1607,9 +1564,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.3.1/nuget.frameworks.6.3.1.nupkg",
       "size": 0,
@@ -1657,9 +1612,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/6.0.0/nuget.librarymodel.6.0.0.nupkg",
       "size": 0,
@@ -1707,9 +1660,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.0.0/nuget.packaging.6.0.0.nupkg",
       "size": 0,
@@ -1757,9 +1708,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/6.0.0/nuget.projectmodel.6.0.0.nupkg",
       "size": 0,
@@ -1807,10 +1756,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget",
-        "protocol"
-      ],
+      "keywords": ["nuget", "protocol"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.0.0/nuget.protocol.6.0.0.nupkg",
       "size": 0,
@@ -1858,11 +1804,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "semver",
-        "semantic",
-        "versioning"
-      ],
+      "keywords": ["semver", "semantic", "versioning"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.0.0/nuget.versioning.6.0.0.nupkg",
       "size": 0,
@@ -2054,9 +1996,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "testing"
-      ],
+      "keywords": ["testing"],
       "homepage_url": "https://github.com/System-IO-Abstractions/System.IO.Abstractions",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.io.abstractions/14.0.13/system.io.abstractions.14.0.13.nupkg",
       "size": 0,

@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-complex-target-frameworks/simple-project.csproj"
       ],
       "project_framework": "netcoreapp1.1",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": [
         "Failed to process project file: /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-complex-target-frameworks/simple-project.csproj with:\nSystem.NullReferenceException: Object reference not set to an instance of an object.\n   at NugetInspector.NugetApi.CheckGraphForErrors(GraphNode`1 resolved_graph) in ./nuget-inspector/NugetApi.cs:line 944\n   at NugetInspector.NugetApi.ResolveDependenciesForPackageReference(IEnumerable`1 target_references) in ./nuget-inspector/NugetApi.cs:line 772\n   at NugetInspector.ProjectFileProcessor.ResolveUsingLib() in ./nuget-inspector/ProjectFileProcessor.cs:line 446\n   at NugetInspector.ProjectScanner.RunScan() in ./nuget-inspector/ProjectScanner.cs:line 293"

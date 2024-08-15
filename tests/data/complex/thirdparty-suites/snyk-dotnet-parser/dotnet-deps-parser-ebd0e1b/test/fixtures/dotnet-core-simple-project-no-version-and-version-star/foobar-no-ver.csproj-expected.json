@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-simple-project-no-version-and-version-star/foobar-no-ver.csproj"
       ],
       "project_framework": "netcoreapp2.2",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,9 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "libuv"
-          ],
+          "keywords": ["libuv"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/libuv/1.9.1/libuv.1.9.1.nupkg",
           "size": 0,
@@ -120,11 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "aspnetcore",
-            "cshtml",
-            "razor"
-          ],
+          "keywords": ["aspnetcore", "cshtml", "razor"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.language/2.2.0/microsoft.aspnetcore.razor.language.2.2.0.nupkg",
           "size": 0,
@@ -677,10 +671,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "dependencyinjection",
-            "di"
-          ],
+          "keywords": ["dependencyinjection", "di"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/2.2.0/microsoft.extensions.dependencyinjection.2.2.0.nupkg",
           "size": 0,
@@ -728,10 +719,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "dependencyinjection",
-            "di"
-          ],
+          "keywords": ["dependencyinjection", "di"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg",
           "size": 0,
@@ -2006,9 +1994,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg",
           "size": 0,
@@ -8072,9 +8058,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "libuv"
-      ],
+      "keywords": ["libuv"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/libuv/1.9.1/libuv.1.9.1.nupkg",
       "size": 0,
@@ -8122,11 +8106,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "cshtml",
-        "razor"
-      ],
+      "keywords": ["aspnetcore", "cshtml", "razor"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.razor.language/2.2.0/microsoft.aspnetcore.razor.language.2.2.0.nupkg",
       "size": 0,
@@ -8679,10 +8659,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/2.2.0/microsoft.extensions.dependencyinjection.2.2.0.nupkg",
       "size": 0,
@@ -8730,10 +8707,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg",
       "size": 0,
@@ -10008,9 +9982,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg",
       "size": 0,

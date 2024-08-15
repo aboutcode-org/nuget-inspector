@@ -2,13 +2,11 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
-      "options": [
-        "--project-file /basic/includes/Common/Common.csproj"
-      ],
+      "options": ["--project-file /basic/includes/Common/Common.csproj"],
       "project_framework": "netstandard2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,12 +68,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "deviceid",
-            "unique",
-            "device",
-            "identifier"
-          ],
+          "keywords": ["deviceid", "unique", "device", "identifier"],
           "homepage_url": "https://github.com/MatthewKing/DeviceId",
           "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid/6.3.0/deviceid.6.3.0.nupkg",
           "size": 0,
@@ -123,12 +116,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "deviceid",
-            "unique",
-            "device",
-            "identifier"
-          ],
+          "keywords": ["deviceid", "unique", "device", "identifier"],
           "homepage_url": "https://github.com/MatthewKing/DeviceId",
           "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid.windows/6.2.0/deviceid.windows.6.2.0.nupkg",
           "size": 0,
@@ -176,12 +164,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "deviceid",
-            "unique",
-            "device",
-            "identifier"
-          ],
+          "keywords": ["deviceid", "unique", "device", "identifier"],
           "homepage_url": "https://github.com/MatthewKing/DeviceId",
           "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid.windows.wmi/6.2.1/deviceid.windows.wmi.6.2.1.nupkg",
           "size": 0,
@@ -853,10 +836,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "files",
-            "filesystem"
-          ],
+          "keywords": ["files", "filesystem"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.embedded/7.0.3/microsoft.extensions.fileproviders.embedded.7.0.3.nupkg",
           "size": 0,
@@ -1720,12 +1700,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "logging",
-            "semantic",
-            "structured"
-          ],
+          "keywords": ["serilog", "logging", "semantic", "structured"],
           "homepage_url": "https://serilog.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.10.0/serilog.2.10.0.nupkg",
           "size": 0,
@@ -1829,9 +1804,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog"
-          ],
+          "keywords": ["serilog"],
           "homepage_url": "https://github.com/serilog/serilog-expressions",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.expressions/3.4.1/serilog.expressions.3.4.1.nupkg",
           "size": 0,
@@ -1879,12 +1852,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "aspnet",
-            "aspnetcore",
-            "hosting"
-          ],
+          "keywords": ["serilog", "aspnet", "aspnetcore", "hosting"],
           "homepage_url": "https://github.com/serilog/serilog-extensions-hosting",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.extensions.hosting/5.0.1/serilog.extensions.hosting.5.0.1.nupkg",
           "size": 0,
@@ -1932,10 +1900,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "Microsoft.Extensions.Logging"
-          ],
+          "keywords": ["serilog", "Microsoft.Extensions.Logging"],
           "homepage_url": "https://github.com/serilog/serilog-extensions-logging",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.extensions.logging/3.1.0/serilog.extensions.logging.3.1.0.nupkg",
           "size": 0,
@@ -2709,12 +2674,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "deviceid",
-        "unique",
-        "device",
-        "identifier"
-      ],
+      "keywords": ["deviceid", "unique", "device", "identifier"],
       "homepage_url": "https://github.com/MatthewKing/DeviceId",
       "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid/6.3.0/deviceid.6.3.0.nupkg",
       "size": 0,
@@ -2762,12 +2722,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "deviceid",
-        "unique",
-        "device",
-        "identifier"
-      ],
+      "keywords": ["deviceid", "unique", "device", "identifier"],
       "homepage_url": "https://github.com/MatthewKing/DeviceId",
       "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid.windows/6.2.0/deviceid.windows.6.2.0.nupkg",
       "size": 0,
@@ -2815,12 +2770,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "deviceid",
-        "unique",
-        "device",
-        "identifier"
-      ],
+      "keywords": ["deviceid", "unique", "device", "identifier"],
       "homepage_url": "https://github.com/MatthewKing/DeviceId",
       "download_url": "https://api.nuget.org/v3-flatcontainer/deviceid.windows.wmi/6.2.1/deviceid.windows.wmi.6.2.1.nupkg",
       "size": 0,
@@ -3492,10 +3442,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "files",
-        "filesystem"
-      ],
+      "keywords": ["files", "filesystem"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.embedded/7.0.3/microsoft.extensions.fileproviders.embedded.7.0.3.nupkg",
       "size": 0,
@@ -4359,12 +4306,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "logging",
-        "semantic",
-        "structured"
-      ],
+      "keywords": ["serilog", "logging", "semantic", "structured"],
       "homepage_url": "https://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.10.0/serilog.2.10.0.nupkg",
       "size": 0,
@@ -4468,9 +4410,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog"
-      ],
+      "keywords": ["serilog"],
       "homepage_url": "https://github.com/serilog/serilog-expressions",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.expressions/3.4.1/serilog.expressions.3.4.1.nupkg",
       "size": 0,
@@ -4518,12 +4458,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "aspnet",
-        "aspnetcore",
-        "hosting"
-      ],
+      "keywords": ["serilog", "aspnet", "aspnetcore", "hosting"],
       "homepage_url": "https://github.com/serilog/serilog-extensions-hosting",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.extensions.hosting/5.0.1/serilog.extensions.hosting.5.0.1.nupkg",
       "size": 0,
@@ -4571,10 +4506,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "Microsoft.Extensions.Logging"
-      ],
+      "keywords": ["serilog", "Microsoft.Extensions.Logging"],
       "homepage_url": "https://github.com/serilog/serilog-extensions-logging",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.extensions.logging/3.1.0/serilog.extensions.logging.3.1.0.nupkg",
       "size": 0,

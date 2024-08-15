@@ -32,7 +32,7 @@
         <Company>nexB Inc</Company>
         <Copyright>Copyright (c) nexB Inc. and others.</Copyright>
 
-        <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/aboutcode-org/nuget-inspector</PackageProjectUrl>
         <Description>A NuGet and Dotnet package dependency resolver</Description>
         <PackageTags>nuget, dependencies, dependency, resolver, dotnet, csproj, linux, windows, macos</PackageTags>
 
@@ -43,11 +43,11 @@
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
+        <RepositoryUrl>https://github.com/aboutcode-org/nuget-inspector</RepositoryUrl>
 
     </PropertyGroup>
 
-    
+
     <ItemGroup>
         <None Include="../NOTICE" Pack="true" PackagePath="NOTICE"/>
         <None Include="../AUTHORS.rst" Pack="true" PackagePath="AUTHORS.rst"/>

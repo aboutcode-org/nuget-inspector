@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/component-detection/component-detection-2a128f6/test/Microsoft.ComponentDetection.VerificationTests/resources/nuget/packages-config/Microsoft.DependencyDetective.VerificationTests2.csproj"
       ],
       "project_framework": "any",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,13 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "AspNet",
-            "WebApi",
-            "AspNetWebApi",
-            "OWIN"
-          ],
+          "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi", "OWIN"],
           "homepage_url": "http://www.asp.net/web-api",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.owin/5.2.3/microsoft.aspnet.webapi.owin.5.2.3.nupkg",
           "size": 0,
@@ -119,12 +113,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "AspNet",
-                "WebApi",
-                "AspNetWebApi"
-              ],
+              "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi"],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.3/microsoft.aspnet.webapi.core.5.2.3.nupkg",
               "size": 0,
@@ -170,11 +159,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "https://github.com/aspnet/AspNetKatana/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.1.0/microsoft.owin.3.1.0.nupkg",
               "size": 0,
@@ -220,9 +205,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -321,12 +304,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "AspNet",
-                "WebApi",
-                "AspNetWebApi"
-              ],
+              "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi"],
               "homepage_url": "http://www.asp.net/web-api",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.3/microsoft.aspnet.webapi.core.5.2.3.nupkg",
               "size": 0,
@@ -494,10 +472,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "cache",
-            "memorycache"
-          ],
+          "keywords": ["cache", "memorycache"],
           "homepage_url": "https://asp.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/2.0.0/microsoft.extensions.caching.memory.2.0.0.nupkg",
           "size": 0,
@@ -540,11 +515,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "cache",
-                "memorycache",
-                "distributedcache"
-              ],
+              "keywords": ["cache", "memorycache", "distributedcache"],
               "homepage_url": "https://asp.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/2.0.0/microsoft.extensions.caching.abstractions.2.0.0.nupkg",
               "size": 0,
@@ -590,10 +561,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "dependencyinjection",
-                "di"
-              ],
+              "keywords": ["dependencyinjection", "di"],
               "homepage_url": "https://asp.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.0.0/microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg",
               "size": 0,
@@ -639,10 +607,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "aspnetcore",
-                "options"
-              ],
+              "keywords": ["aspnetcore", "options"],
               "homepage_url": "https://asp.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/2.0.0/microsoft.extensions.options.2.0.0.nupkg",
               "size": 0,
@@ -692,11 +657,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
+          "keywords": ["Microsoft", "OWIN", "Katana"],
           "homepage_url": "https://github.com/aspnet/AspNetKatana/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/3.1.0/microsoft.owin.host.systemweb.3.1.0.nupkg",
           "size": 0,
@@ -739,11 +700,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "https://github.com/aspnet/AspNetKatana/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.1.0/microsoft.owin.3.1.0.nupkg",
               "size": 0,
@@ -789,9 +746,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -2875,12 +2830,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "WebApi",
-        "AspNetWebApi"
-      ],
+      "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi"],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.3/microsoft.aspnet.webapi.core.5.2.3.nupkg",
       "size": 0,
@@ -2926,12 +2876,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "WebApi",
-        "AspNetWebApi"
-      ],
+      "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi"],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.core/5.2.3/microsoft.aspnet.webapi.core.5.2.3.nupkg",
       "size": 0,
@@ -2977,13 +2922,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "WebApi",
-        "AspNetWebApi",
-        "OWIN"
-      ],
+      "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi", "OWIN"],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.owin/5.2.3/microsoft.aspnet.webapi.owin.5.2.3.nupkg",
       "size": 0,
@@ -3029,13 +2968,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "WebApi",
-        "AspNetWebApi",
-        "WebHost"
-      ],
+      "keywords": ["Microsoft", "AspNet", "WebApi", "AspNetWebApi", "WebHost"],
       "homepage_url": "http://www.asp.net/web-api",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.webapi.webhost/5.2.3/microsoft.aspnet.webapi.webhost.5.2.3.nupkg",
       "size": 0,
@@ -3134,11 +3067,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "memorycache",
-        "distributedcache"
-      ],
+      "keywords": ["cache", "memorycache", "distributedcache"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/2.0.0/microsoft.extensions.caching.abstractions.2.0.0.nupkg",
       "size": 0,
@@ -3184,10 +3113,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "cache",
-        "memorycache"
-      ],
+      "keywords": ["cache", "memorycache"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/2.0.0/microsoft.extensions.caching.memory.2.0.0.nupkg",
       "size": 0,
@@ -3233,10 +3159,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "dependencyinjection",
-        "di"
-      ],
+      "keywords": ["dependencyinjection", "di"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/2.0.0/microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg",
       "size": 0,
@@ -3282,10 +3205,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "aspnetcore",
-        "options"
-      ],
+      "keywords": ["aspnetcore", "options"],
       "homepage_url": "https://asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/2.0.0/microsoft.extensions.options.2.0.0.nupkg",
       "size": 0,
@@ -3441,11 +3361,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "https://github.com/aspnet/AspNetKatana/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.1.0/microsoft.owin.3.1.0.nupkg",
       "size": 0,
@@ -3491,11 +3407,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "https://github.com/aspnet/AspNetKatana/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.1.0/microsoft.owin.3.1.0.nupkg",
       "size": 0,
@@ -3541,11 +3453,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "https://github.com/aspnet/AspNetKatana/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/3.1.0/microsoft.owin.host.systemweb.3.1.0.nupkg",
       "size": 0,
@@ -3683,9 +3591,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,
@@ -3731,9 +3637,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,

@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /basic/nuget-dotnet-inspector5/nuget-dotnet5-inspector-87bee5/NugetDotnet5InspectorTests/NugetDotnet5InspectorTests.csproj"
       ],
       "project_framework": "net5.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -691,9 +691,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -789,9 +787,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/4.8.0/nuget.common.4.8.0.nupkg",
           "size": 0,
@@ -839,9 +835,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/4.8.0/nuget.configuration.4.8.0.nupkg",
           "size": 0,
@@ -937,9 +931,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/4.8.0/nuget.dependencyresolver.core.4.8.0.nupkg",
           "size": 0,
@@ -987,9 +979,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg",
           "size": 0,
@@ -1037,9 +1027,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/4.8.0/nuget.librarymodel.4.8.0.nupkg",
           "size": 0,
@@ -1087,9 +1075,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/4.8.0/nuget.packaging.4.8.0.nupkg",
           "size": 0,
@@ -1137,9 +1123,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging.core/4.8.0/nuget.packaging.core.4.8.0.nupkg",
           "size": 0,
@@ -1187,9 +1171,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/4.8.0/nuget.projectmodel.4.8.0.nupkg",
           "size": 0,
@@ -1237,10 +1219,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget",
-            "protocol"
-          ],
+          "keywords": ["nuget", "protocol"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.8.0/nuget.protocol.4.8.0.nupkg",
           "size": 0,
@@ -1384,11 +1363,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "semver",
-            "semantic",
-            "versioning"
-          ],
+          "keywords": ["semver", "semantic", "versioning"],
           "homepage_url": "",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/4.8.0/nuget.versioning.4.8.0.nupkg",
           "size": 0,
@@ -4625,9 +4600,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,
@@ -4723,9 +4696,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/4.8.0/nuget.common.4.8.0.nupkg",
       "size": 0,
@@ -4773,9 +4744,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.configuration/4.8.0/nuget.configuration.4.8.0.nupkg",
       "size": 0,
@@ -4871,9 +4840,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/4.8.0/nuget.dependencyresolver.core.4.8.0.nupkg",
       "size": 0,
@@ -4921,9 +4888,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.0.0/nuget.frameworks.5.0.0.nupkg",
       "size": 0,
@@ -4971,9 +4936,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/4.8.0/nuget.librarymodel.4.8.0.nupkg",
       "size": 0,
@@ -5021,9 +4984,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/4.8.0/nuget.packaging.4.8.0.nupkg",
       "size": 0,
@@ -5071,9 +5032,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging.core/4.8.0/nuget.packaging.core.4.8.0.nupkg",
       "size": 0,
@@ -5121,9 +5080,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/4.8.0/nuget.projectmodel.4.8.0.nupkg",
       "size": 0,
@@ -5171,10 +5128,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget",
-        "protocol"
-      ],
+      "keywords": ["nuget", "protocol"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol/4.8.0/nuget.protocol.4.8.0.nupkg",
       "size": 0,
@@ -5318,11 +5272,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "semver",
-        "semantic",
-        "versioning"
-      ],
+      "keywords": ["semver", "semantic", "versioning"],
       "homepage_url": "",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/4.8.0/nuget.versioning.4.8.0.nupkg",
       "size": 0,

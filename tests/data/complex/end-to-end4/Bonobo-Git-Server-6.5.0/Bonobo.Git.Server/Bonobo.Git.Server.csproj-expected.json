@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end4/Bonobo-Git-Server-6.5.0/Bonobo.Git.Server/Bonobo.Git.Server.csproj"
       ],
       "project_framework": "net46",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,9 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "linq"
-          ],
+          "keywords": ["linq"],
           "homepage_url": "http://linqcomparer.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/anonymouscomparer/1.3.0/anonymouscomparer.1.3.0.nupkg",
           "size": 0,
@@ -118,10 +116,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "CommonMark",
-            "Markdown"
-          ],
+          "keywords": ["CommonMark", "Markdown"],
           "homepage_url": "https://github.com/Knagis/CommonMark.NET/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/commonmark.net/0.15.1/commonmark.net.0.15.1.nupkg",
           "size": 0,
@@ -314,10 +309,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "C#",
-            "ASP.NET"
-          ],
+          "keywords": ["C#", "ASP.NET"],
           "homepage_url": "https://github.com/samuelneff/MimeTypeMap",
           "download_url": "https://api.nuget.org/v3-flatcontainer/mediatypemap/2.1.0/mediatypemap.2.1.0.nupkg",
           "size": 0,
@@ -412,9 +404,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "ASPNETWEBPAGES"
-              ],
+              "keywords": ["ASPNETWEBPAGES"],
               "homepage_url": "http://www.asp.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg",
               "size": 0,
@@ -717,9 +707,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "json"
-              ],
+              "keywords": ["json"],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
               "size": 0,
@@ -769,11 +757,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
+          "keywords": ["Microsoft", "OWIN", "Katana"],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/3.0.1/microsoft.owin.host.systemweb.3.0.1.nupkg",
           "size": 0,
@@ -816,11 +800,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
               "size": 0,
@@ -866,9 +846,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -918,11 +896,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
+          "keywords": ["Microsoft", "OWIN", "Katana"],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.cookies/3.0.1/microsoft.owin.security.cookies.3.0.1.nupkg",
           "size": 0,
@@ -965,11 +939,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
               "size": 0,
@@ -1015,11 +985,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/3.0.1/microsoft.owin.security.3.0.1.nupkg",
               "size": 0,
@@ -1065,9 +1031,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -1117,11 +1081,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Microsoft",
-            "OWIN",
-            "Katana"
-          ],
+          "keywords": ["Microsoft", "OWIN", "Katana"],
           "homepage_url": "http://katanaproject.codeplex.com/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.wsfederation/3.0.1/microsoft.owin.security.wsfederation.3.0.1.nupkg",
           "size": 0,
@@ -1215,11 +1175,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
               "size": 0,
@@ -1265,11 +1221,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "OWIN",
-                "Katana"
-              ],
+              "keywords": ["Microsoft", "OWIN", "Katana"],
               "homepage_url": "http://katanaproject.codeplex.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/3.0.1/microsoft.owin.security.3.0.1.nupkg",
               "size": 0,
@@ -1315,9 +1267,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "OWIN"
-              ],
+              "keywords": ["OWIN"],
               "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
               "size": 0,
@@ -1487,10 +1437,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "xml"
-          ],
+          "keywords": ["serilog", "xml"],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.settings.appsettings/2.1.0/serilog.settings.appsettings.2.1.0.nupkg",
           "size": 0,
@@ -1533,12 +1480,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "serilog",
-                "logging",
-                "semantic",
-                "structured"
-              ],
+              "keywords": ["serilog", "logging", "semantic", "structured"],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.4.0/serilog.2.4.0.nupkg",
               "size": 0,
@@ -1588,12 +1530,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "serilog",
-            "file",
-            "io",
-            "rolling"
-          ],
+          "keywords": ["serilog", "file", "io", "rolling"],
           "homepage_url": "http://serilog.net/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.rollingfile/3.3.0/serilog.sinks.rollingfile.3.3.0.nupkg",
           "size": 0,
@@ -1636,11 +1573,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "serilog",
-                "file",
-                "io"
-              ],
+              "keywords": ["serilog", "file", "io"],
               "homepage_url": "http://serilog.net/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.file/3.2.0/serilog.sinks.file.3.2.0.nupkg",
               "size": 0,
@@ -1690,13 +1623,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "sqlite",
-            "database",
-            "ado.net",
-            "provider",
-            "interop"
-          ],
+          "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
           "homepage_url": "https://system.data.sqlite.org/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite/1.0.104/system.data.sqlite.1.0.104.nupkg",
           "size": 0,
@@ -2052,12 +1979,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "AspNet",
-                "Mvc",
-                "AspNetMvc"
-              ],
+              "keywords": ["Microsoft", "AspNet", "Mvc", "AspNetMvc"],
               "homepage_url": "http://www.asp.net/mvc",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
               "size": 0,
@@ -2233,9 +2155,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "linq"
-      ],
+      "keywords": ["linq"],
       "homepage_url": "http://linqcomparer.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/anonymouscomparer/1.3.0/anonymouscomparer.1.3.0.nupkg",
       "size": 0,
@@ -2281,10 +2201,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "CommonMark",
-        "Markdown"
-      ],
+      "keywords": ["CommonMark", "Markdown"],
       "homepage_url": "https://github.com/Knagis/CommonMark.NET/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/commonmark.net/0.15.1/commonmark.net.0.15.1.nupkg",
       "size": 0,
@@ -2522,10 +2439,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "C#",
-        "ASP.NET"
-      ],
+      "keywords": ["C#", "ASP.NET"],
       "homepage_url": "https://github.com/samuelneff/MimeTypeMap",
       "download_url": "https://api.nuget.org/v3-flatcontainer/mediatypemap/2.1.0/mediatypemap.2.1.0.nupkg",
       "size": 0,
@@ -2571,12 +2485,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AspNet",
-        "Mvc",
-        "AspNetMvc"
-      ],
+      "keywords": ["Microsoft", "AspNet", "Mvc", "AspNetMvc"],
       "homepage_url": "http://www.asp.net/mvc",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
       "size": 0,
@@ -2773,12 +2682,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Identity",
-        "Claims",
-        "OpenIdConnect",
-        "WS-Federation"
-      ],
+      "keywords": ["Identity", "Claims", "OpenIdConnect", "WS-Federation"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkId=272508",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocol.extensions/1.0.4.403061554/microsoft.identitymodel.protocol.extensions.1.0.4.403061554.nupkg",
       "size": 0,
@@ -2934,11 +2838,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
       "size": 0,
@@ -2984,11 +2884,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
       "size": 0,
@@ -3034,11 +2930,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin/3.0.1/microsoft.owin.3.0.1.nupkg",
       "size": 0,
@@ -3084,11 +2976,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.host.systemweb/3.0.1/microsoft.owin.host.systemweb.3.0.1.nupkg",
       "size": 0,
@@ -3134,11 +3022,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/3.0.1/microsoft.owin.security.3.0.1.nupkg",
       "size": 0,
@@ -3184,11 +3068,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security/3.0.1/microsoft.owin.security.3.0.1.nupkg",
       "size": 0,
@@ -3234,11 +3114,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.cookies/3.0.1/microsoft.owin.security.cookies.3.0.1.nupkg",
       "size": 0,
@@ -3284,11 +3160,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "OWIN",
-        "Katana"
-      ],
+      "keywords": ["Microsoft", "OWIN", "Katana"],
       "homepage_url": "http://katanaproject.codeplex.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.owin.security.wsfederation/3.0.1/microsoft.owin.security.wsfederation.3.0.1.nupkg",
       "size": 0,
@@ -3334,9 +3206,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "ASPNETWEBPAGES"
-      ],
+      "keywords": ["ASPNETWEBPAGES"],
       "homepage_url": "http://www.asp.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.infrastructure/1.0.0/microsoft.web.infrastructure.1.0.0.nupkg",
       "size": 0,
@@ -3438,9 +3308,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,
@@ -3486,9 +3354,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,
@@ -3534,9 +3400,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,
@@ -3582,9 +3446,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "OWIN"
-      ],
+      "keywords": ["OWIN"],
       "homepage_url": "https://github.com/owin-contrib/owin-hosting/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/owin/1.0.0/owin.1.0.0.nupkg",
       "size": 0,
@@ -3630,12 +3492,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "logging",
-        "semantic",
-        "structured"
-      ],
+      "keywords": ["serilog", "logging", "semantic", "structured"],
       "homepage_url": "http://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog/2.4.0/serilog.2.4.0.nupkg",
       "size": 0,
@@ -3681,10 +3538,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "xml"
-      ],
+      "keywords": ["serilog", "xml"],
       "homepage_url": "http://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.settings.appsettings/2.1.0/serilog.settings.appsettings.2.1.0.nupkg",
       "size": 0,
@@ -3730,11 +3584,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "file",
-        "io"
-      ],
+      "keywords": ["serilog", "file", "io"],
       "homepage_url": "http://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.file/3.2.0/serilog.sinks.file.3.2.0.nupkg",
       "size": 0,
@@ -3780,12 +3630,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "serilog",
-        "file",
-        "io",
-        "rolling"
-      ],
+      "keywords": ["serilog", "file", "io", "rolling"],
       "homepage_url": "http://serilog.net/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/serilog.sinks.rollingfile/3.3.0/serilog.sinks.rollingfile.3.3.0.nupkg",
       "size": 0,
@@ -3831,13 +3676,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite/1.0.104/system.data.sqlite.1.0.104.nupkg",
       "size": 0,
@@ -3883,13 +3722,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.core/1.0.104/system.data.sqlite.core.1.0.104.nupkg",
       "size": 0,
@@ -3935,13 +3768,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.ef6/1.0.104/system.data.sqlite.ef6.1.0.104.nupkg",
       "size": 0,
@@ -3987,13 +3814,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "sqlite",
-        "database",
-        "ado.net",
-        "provider",
-        "interop"
-      ],
+      "keywords": ["sqlite", "database", "ado.net", "provider", "interop"],
       "homepage_url": "https://system.data.sqlite.org/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.data.sqlite.linq/1.0.104/system.data.sqlite.linq.1.0.104.nupkg",
       "size": 0,

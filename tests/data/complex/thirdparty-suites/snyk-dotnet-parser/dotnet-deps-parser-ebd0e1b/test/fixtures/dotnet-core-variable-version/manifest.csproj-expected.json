@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-core-variable-version/manifest.csproj"
       ],
       "project_framework": "netcoreapp2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -118,9 +118,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "size": 0,
@@ -168,11 +166,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json",
-            "schema",
-            "jsonschema"
-          ],
+          "keywords": ["json", "schema", "jsonschema"],
           "homepage_url": "https://www.newtonsoft.com/jsonschema",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json.schema/3.0.10/newtonsoft.json.schema.3.0.10.nupkg",
           "size": 0,
@@ -418,9 +412,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "size": 0,
@@ -468,11 +460,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json",
-        "schema",
-        "jsonschema"
-      ],
+      "keywords": ["json", "schema", "jsonschema"],
       "homepage_url": "https://www.newtonsoft.com/jsonschema",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json.schema/3.0.10/newtonsoft.json.schema.3.0.10.nupkg",
       "size": 0,

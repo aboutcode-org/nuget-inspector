@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/dependencychecker/DependencyChecker-22983ae/DependencyChecker.Test/DependencyChecker.Test.csproj"
       ],
       "project_framework": "net462",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -180,9 +180,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging.core/5.1.0/nuget.packaging.core.5.1.0.nupkg",
           "size": 0,
@@ -225,9 +223,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "nuget"
-              ],
+              "keywords": ["nuget"],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/5.1.0/nuget.packaging.5.1.0.nupkg",
               "size": 0,
@@ -320,9 +316,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "nuget"
-              ],
+              "keywords": ["nuget"],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.1.0/nuget.frameworks.5.1.0.nupkg",
               "size": 0,
@@ -368,11 +362,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "semver",
-                "semantic",
-                "versioning"
-              ],
+              "keywords": ["semver", "semantic", "versioning"],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/5.1.0/nuget.versioning.5.1.0.nupkg",
               "size": 0,
@@ -422,10 +412,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget",
-            "protocol"
-          ],
+          "keywords": ["nuget", "protocol"],
           "homepage_url": "https://github.com/NuGet/NuGet.Client",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol.core.v3/4.2.0/nuget.protocol.core.v3.4.2.0.nupkg",
           "size": 0,
@@ -468,9 +455,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "json"
-              ],
+              "keywords": ["json"],
               "homepage_url": "https://www.newtonsoft.com/json",
               "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg",
               "size": 0,
@@ -516,9 +501,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "nuget"
-              ],
+              "keywords": ["nuget"],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/5.1.0/nuget.common.5.1.0.nupkg",
               "size": 0,
@@ -564,9 +547,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "nuget"
-              ],
+              "keywords": ["nuget"],
               "homepage_url": "https://aka.ms/nugetprj",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/5.1.0/nuget.packaging.5.1.0.nupkg",
               "size": 0,
@@ -612,10 +593,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "nuget",
-                "protocol"
-              ],
+              "keywords": ["nuget", "protocol"],
               "homepage_url": "https://github.com/NuGet/NuGet.Client",
               "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol.core.types/4.2.0/nuget.protocol.core.types.4.2.0.nupkg",
               "size": 0,
@@ -781,9 +759,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg",
       "size": 0,
@@ -829,9 +805,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.common/5.1.0/nuget.common.5.1.0.nupkg",
       "size": 0,
@@ -877,9 +851,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.1.0/nuget.frameworks.5.1.0.nupkg",
       "size": 0,
@@ -925,9 +897,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/5.1.0/nuget.packaging.5.1.0.nupkg",
       "size": 0,
@@ -973,9 +943,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging/5.1.0/nuget.packaging.5.1.0.nupkg",
       "size": 0,
@@ -1021,9 +989,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.packaging.core/5.1.0/nuget.packaging.core.5.1.0.nupkg",
       "size": 0,
@@ -1115,10 +1081,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget",
-        "protocol"
-      ],
+      "keywords": ["nuget", "protocol"],
       "homepage_url": "https://github.com/NuGet/NuGet.Client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol.core.types/4.2.0/nuget.protocol.core.types.4.2.0.nupkg",
       "size": 0,
@@ -1164,10 +1127,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget",
-        "protocol"
-      ],
+      "keywords": ["nuget", "protocol"],
       "homepage_url": "https://github.com/NuGet/NuGet.Client",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.protocol.core.v3/4.2.0/nuget.protocol.core.v3.4.2.0.nupkg",
       "size": 0,
@@ -1213,11 +1173,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "semver",
-        "semantic",
-        "versioning"
-      ],
+      "keywords": ["semver", "semantic", "versioning"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.versioning/5.1.0/nuget.versioning.5.1.0.nupkg",
       "size": 0,

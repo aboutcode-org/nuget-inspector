@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /basic/ossgadget/OSSGadget-6c7a4d8/src/oss-tests/oss-tests.csproj"
       ],
       "project_framework": "net6.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -186,10 +186,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "jmespath",
-            "json"
-          ],
+          "keywords": ["jmespath", "json"],
           "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
           "download_url": "https://api.nuget.org/v3-flatcontainer/jmespath.net/1.0.205/jmespath.net.1.0.205.nupkg",
           "size": 0,
@@ -237,10 +234,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "jmespath",
-            "json"
-          ],
+          "keywords": ["jmespath", "json"],
           "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
           "download_url": "https://api.nuget.org/v3-flatcontainer/jmespath.net.parser/1.0.205/jmespath.net.parser.1.0.205.nupkg",
           "size": 0,
@@ -880,9 +874,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
           "size": 0,
@@ -930,9 +922,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg",
           "size": 0,
@@ -980,13 +970,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "httpclient",
-            "test",
-            "mock",
-            "fake",
-            "stub"
-          ],
+          "keywords": ["httpclient", "test", "mock", "fake", "stub"],
           "homepage_url": "https://github.com/richardszalay/mockhttp",
           "download_url": "https://api.nuget.org/v3-flatcontainer/richardszalay.mockhttp/6.0.0/richardszalay.mockhttp.6.0.0.nupkg",
           "size": 0,
@@ -4756,10 +4740,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jmespath",
-        "json"
-      ],
+      "keywords": ["jmespath", "json"],
       "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jmespath.net/1.0.205/jmespath.net.1.0.205.nupkg",
       "size": 0,
@@ -4807,10 +4788,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jmespath",
-        "json"
-      ],
+      "keywords": ["jmespath", "json"],
       "homepage_url": "https://github.com/jdevillard/JmesPath.Net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jmespath.net.parser/1.0.205/jmespath.net.parser.1.0.205.nupkg",
       "size": 0,
@@ -5450,9 +5428,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg",
       "size": 0,
@@ -5500,9 +5476,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg",
       "size": 0,
@@ -5550,13 +5524,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "httpclient",
-        "test",
-        "mock",
-        "fake",
-        "stub"
-      ],
+      "keywords": ["httpclient", "test", "mock", "fake", "stub"],
       "homepage_url": "https://github.com/richardszalay/mockhttp",
       "download_url": "https://api.nuget.org/v3-flatcontainer/richardszalay.mockhttp/6.0.0/richardszalay.mockhttp.6.0.0.nupkg",
       "size": 0,

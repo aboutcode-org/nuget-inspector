@@ -2,14 +2,14 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/packagesconfig/packagesconfig.csproj",
         "--target-framework net461"
       ],
       "project_framework": "net461",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -121,9 +121,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "jQuery"
-              ],
+              "keywords": ["jQuery"],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
               "size": 0,
@@ -219,9 +217,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "https://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
           "size": 0,
@@ -267,9 +263,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://github.com/NuGet/NuGet2",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.core/2.14.0/nuget.core.2.14.0.nupkg",
           "size": 0,
@@ -421,9 +415,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery"
-      ],
+      "keywords": ["jQuery"],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
       "size": 0,
@@ -515,9 +507,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "https://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg",
       "size": 0,
@@ -563,9 +553,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://github.com/NuGet/NuGet2",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.core/2.14.0/nuget.core.2.14.0.nupkg",
       "size": 0,

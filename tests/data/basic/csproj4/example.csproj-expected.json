@@ -2,13 +2,11 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
-      "options": [
-        "--project-file /basic/csproj4/example.csproj"
-      ],
+      "options": ["--project-file /basic/csproj4/example.csproj"],
       "project_framework": "netstandard2.1",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,12 +68,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Bond",
-            ".NET",
-            "C#",
-            "serialization"
-          ],
+          "keywords": ["Bond", ".NET", "C#", "serialization"],
           "homepage_url": "https://github.com/Microsoft/bond/",
           "download_url": "https://api.nuget.org/v3-flatcontainer/bond.core.csharp/5.3.1/bond.core.csharp.5.3.1.nupkg",
           "size": 0,
@@ -619,9 +612,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/7.0.1/newtonsoft.json.7.0.1.nupkg",
           "size": 0,
@@ -1841,12 +1832,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Bond",
-        ".NET",
-        "C#",
-        "serialization"
-      ],
+      "keywords": ["Bond", ".NET", "C#", "serialization"],
       "homepage_url": "https://github.com/Microsoft/bond/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/bond.core.csharp/5.3.1/bond.core.csharp.5.3.1.nupkg",
       "size": 0,
@@ -2390,9 +2376,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/7.0.1/newtonsoft.json.7.0.1.nupkg",
       "size": 0,
@@ -2488,13 +2472,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "BCL",
-        "Microsoft",
-        "System",
-        "Immutable",
-        "Collections"
-      ],
+      "keywords": ["BCL", "Microsoft", "System", "Immutable", "Collections"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=310193",
       "download_url": "https://api.nuget.org/v3-flatcontainer/system.collections.immutable/1.1.36/system.collections.immutable.1.1.36.nupkg",
       "size": 0,

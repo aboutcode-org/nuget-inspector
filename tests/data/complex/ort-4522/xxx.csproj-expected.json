@@ -2,13 +2,11 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
-      "options": [
-        "--project-file /complex/ort-4522/xxx.csproj"
-      ],
+      "options": ["--project-file /complex/ort-4522/xxx.csproj"],
       "project_framework": "net462",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,11 +68,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "antlr",
-            "antlr4",
-            "parsing"
-          ],
+          "keywords": ["antlr", "antlr4", "parsing"],
           "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
           "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4/4.6.1/antlr4.4.6.1.nupkg",
           "size": 0,
@@ -117,11 +111,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "antlr",
-                "antlr4",
-                "parsing"
-              ],
+              "keywords": ["antlr", "antlr4", "parsing"],
               "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
               "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4.codegenerator/4.6.1/antlr4.codegenerator.4.6.1.nupkg",
               "size": 0,
@@ -167,11 +157,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "antlr",
-                "antlr4",
-                "parsing"
-              ],
+              "keywords": ["antlr", "antlr4", "parsing"],
               "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
               "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4.runtime/4.6.1/antlr4.runtime.4.6.1.nupkg",
               "size": 0,
@@ -267,9 +253,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
           "size": 0,
@@ -361,11 +345,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "antlr",
-        "antlr4",
-        "parsing"
-      ],
+      "keywords": ["antlr", "antlr4", "parsing"],
       "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
       "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4/4.6.1/antlr4.4.6.1.nupkg",
       "size": 0,
@@ -411,11 +391,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "antlr",
-        "antlr4",
-        "parsing"
-      ],
+      "keywords": ["antlr", "antlr4", "parsing"],
       "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
       "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4.codegenerator/4.6.1/antlr4.codegenerator.4.6.1.nupkg",
       "size": 0,
@@ -461,11 +437,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "antlr",
-        "antlr4",
-        "parsing"
-      ],
+      "keywords": ["antlr", "antlr4", "parsing"],
       "homepage_url": "https://github.com/tunnelvisionlabs/antlr4cs",
       "download_url": "https://api.nuget.org/v3-flatcontainer/antlr4.runtime/4.6.1/antlr4.runtime.4.6.1.nupkg",
       "size": 0,
@@ -557,9 +529,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
       "size": 0,

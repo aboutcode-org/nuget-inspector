@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end8/elasticsearch-net-abstractions-0.3.5/examples/ScratchPad/ScratchPad.csproj"
       ],
       "project_framework": "net5.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -70,13 +70,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "elasticsearch",
-            "elastic",
-            "search",
-            "lucene",
-            "nest"
-          ],
+          "keywords": ["elasticsearch", "elastic", "search", "lucene", "nest"],
           "homepage_url": "https://github.com/elastic/elasticsearch-net",
           "download_url": "https://api.nuget.org/v3-flatcontainer/elasticsearch.net/6.0.1/elasticsearch.net.6.0.1.nupkg",
           "size": 0,
@@ -364,13 +358,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "elasticsearch",
-            "elastic",
-            "search",
-            "lucene",
-            "nest"
-          ],
+          "keywords": ["elasticsearch", "elastic", "search", "lucene", "nest"],
           "homepage_url": "https://github.com/elastic/elasticsearch-net",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nest/6.0.1/nest.6.0.1.nupkg",
           "size": 0,
@@ -466,10 +454,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "observable",
-            "process"
-          ],
+          "keywords": ["observable", "process"],
           "homepage_url": "https://github.com/nullean/proc",
           "download_url": "https://api.nuget.org/v3-flatcontainer/proc/0.6.1/proc.0.6.1.nupkg",
           "size": 0,
@@ -3883,13 +3868,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "elasticsearch",
-        "elastic",
-        "search",
-        "lucene",
-        "nest"
-      ],
+      "keywords": ["elasticsearch", "elastic", "search", "lucene", "nest"],
       "homepage_url": "https://github.com/elastic/elasticsearch-net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/elasticsearch.net/6.0.1/elasticsearch.net.6.0.1.nupkg",
       "size": 0,
@@ -4177,13 +4156,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "elasticsearch",
-        "elastic",
-        "search",
-        "lucene",
-        "nest"
-      ],
+      "keywords": ["elasticsearch", "elastic", "search", "lucene", "nest"],
       "homepage_url": "https://github.com/elastic/elasticsearch-net",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nest/6.0.1/nest.6.0.1.nupkg",
       "size": 0,
@@ -4279,10 +4252,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "observable",
-        "process"
-      ],
+      "keywords": ["observable", "process"],
       "homepage_url": "https://github.com/nullean/proc",
       "download_url": "https://api.nuget.org/v3-flatcontainer/proc/0.6.1/proc.0.6.1.nupkg",
       "size": 0,

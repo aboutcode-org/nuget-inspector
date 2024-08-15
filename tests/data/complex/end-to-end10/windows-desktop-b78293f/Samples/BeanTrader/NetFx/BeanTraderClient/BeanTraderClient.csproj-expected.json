@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetFx/BeanTraderClient/BeanTraderClient.csproj"
       ],
       "project_framework": "net472",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -230,13 +230,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "BCL",
-                "Microsoft",
-                "System",
-                "Task",
-                "IProgress"
-              ],
+              "keywords": ["BCL", "Microsoft", "System", "Task", "IProgress"],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg",
               "size": 0,
@@ -335,11 +329,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "BCL",
-                "Microsoft",
-                "System"
-              ],
+              "keywords": ["BCL", "Microsoft", "System"],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.1.0.21.nupkg",
               "size": 0,
@@ -439,9 +429,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "json"
-              ],
+              "keywords": ["json"],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
               "size": 0,
@@ -941,12 +929,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "Microsoft",
-                "AutoRest",
-                "ClientRuntime",
-                "Common"
-              ],
+              "keywords": ["Microsoft", "AutoRest", "ClientRuntime", "Common"],
               "homepage_url": "https://github.com/Azure/AutoRest",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.rest.clientruntime/2.3.8/microsoft.rest.clientruntime.2.3.8.nupkg",
               "size": 0,
@@ -992,9 +975,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "json"
-              ],
+              "keywords": ["json"],
               "homepage_url": "http://www.newtonsoft.com/json",
               "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
               "size": 0,
@@ -1094,13 +1075,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "BCL",
-                "Microsoft",
-                "System",
-                "Task",
-                "IProgress"
-              ],
+              "keywords": ["BCL", "Microsoft", "System", "Task", "IProgress"],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg",
               "size": 0,
@@ -1199,11 +1174,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "BCL",
-                "Microsoft",
-                "System"
-              ],
+              "keywords": ["BCL", "Microsoft", "System"],
               "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
               "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.1.0.21.nupkg",
               "size": 0,
@@ -1534,13 +1505,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "BCL",
-        "Microsoft",
-        "System",
-        "Task",
-        "IProgress"
-      ],
+      "keywords": ["BCL", "Microsoft", "System", "Task", "IProgress"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg",
       "size": 0,
@@ -1586,13 +1551,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "BCL",
-        "Microsoft",
-        "System",
-        "Task",
-        "IProgress"
-      ],
+      "keywords": ["BCL", "Microsoft", "System", "Task", "IProgress"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=280057",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl/1.1.10/microsoft.bcl.1.1.10.nupkg",
       "size": 0,
@@ -1744,11 +1703,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "BCL",
-        "Microsoft",
-        "System"
-      ],
+      "keywords": ["BCL", "Microsoft", "System"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.1.0.21.nupkg",
       "size": 0,
@@ -1794,11 +1749,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "BCL",
-        "Microsoft",
-        "System"
-      ],
+      "keywords": ["BCL", "Microsoft", "System"],
       "homepage_url": "http://go.microsoft.com/fwlink/?LinkID=296436",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.bcl.build/1.0.21/microsoft.bcl.build.1.0.21.nupkg",
       "size": 0,
@@ -2126,12 +2077,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Microsoft",
-        "AutoRest",
-        "ClientRuntime",
-        "Common"
-      ],
+      "keywords": ["Microsoft", "AutoRest", "ClientRuntime", "Common"],
       "homepage_url": "https://github.com/Azure/AutoRest",
       "download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.rest.clientruntime/2.3.8/microsoft.rest.clientruntime.2.3.8.nupkg",
       "size": 0,
@@ -2230,9 +2176,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
       "size": 0,
@@ -2278,9 +2222,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/6.0.8/newtonsoft.json.6.0.8.nupkg",
       "size": 0,

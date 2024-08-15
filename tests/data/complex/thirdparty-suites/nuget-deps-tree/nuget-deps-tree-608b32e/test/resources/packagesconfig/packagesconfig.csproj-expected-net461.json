@@ -2,14 +2,14 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/nuget-deps-tree/nuget-deps-tree-608b32e/test/resources/packagesconfig/packagesconfig.csproj",
         "--target-framework net461"
       ],
       "project_framework": "net461",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -121,9 +121,7 @@
                   "url": ""
                 }
               ],
-              "keywords": [
-                "jQuery"
-              ],
+              "keywords": ["jQuery"],
               "homepage_url": "http://jquery.com/",
               "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
               "size": 0,
@@ -278,9 +276,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "jQuery"
-      ],
+      "keywords": ["jQuery"],
       "homepage_url": "http://jquery.com/",
       "download_url": "https://api.nuget.org/v3-flatcontainer/jquery/3.0.0/jquery.3.0.0.nupkg",
       "size": 0,

@@ -2,13 +2,11 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
-      "options": [
-        "--project-file /basic/no-dupes/sample.csproj"
-      ],
+      "options": ["--project-file /basic/no-dupes/sample.csproj"],
       "project_framework": "net6.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -118,13 +116,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "Regex",
-            "Test",
-            "NFA",
-            "DFA",
-            "Automaton"
-          ],
+          "keywords": ["Regex", "Test", "NFA", "DFA", "Automaton"],
           "homepage_url": "https://github.com/moodmosaic/Fare",
           "download_url": "https://api.nuget.org/v3-flatcontainer/fare/2.1.1/fare.2.1.1.nupkg",
           "size": 0,
@@ -702,9 +694,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "json"
-          ],
+          "keywords": ["json"],
           "homepage_url": "http://www.newtonsoft.com/json",
           "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
           "size": 0,
@@ -752,9 +742,7 @@
               "url": ""
             }
           ],
-          "keywords": [
-            "nuget"
-          ],
+          "keywords": ["nuget"],
           "homepage_url": "https://aka.ms/nugetprj",
           "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg",
           "size": 0,
@@ -4846,13 +4834,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "Regex",
-        "Test",
-        "NFA",
-        "DFA",
-        "Automaton"
-      ],
+      "keywords": ["Regex", "Test", "NFA", "DFA", "Automaton"],
       "homepage_url": "https://github.com/moodmosaic/Fare",
       "download_url": "https://api.nuget.org/v3-flatcontainer/fare/2.1.1/fare.2.1.1.nupkg",
       "size": 0,
@@ -5430,9 +5412,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "json"
-      ],
+      "keywords": ["json"],
       "homepage_url": "http://www.newtonsoft.com/json",
       "download_url": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg",
       "size": 0,
@@ -5480,9 +5460,7 @@
           "url": ""
         }
       ],
-      "keywords": [
-        "nuget"
-      ],
+      "keywords": ["nuget"],
       "homepage_url": "https://aka.ms/nugetprj",
       "download_url": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg",
       "size": 0,
