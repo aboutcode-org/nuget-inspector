@@ -28,7 +28,7 @@ public class PackagesConfigHelper
             foreach (var depPair in pkg.Dependencies)
             {
                 if (depPair.Key == id)
-                result.Add(item: depPair.Value);
+                    result.Add(item: depPair.Value);
             }
         }
 
@@ -39,8 +39,10 @@ public class PackagesConfigHelper
     {
         foreach (var dependency in dependencies)
         {
+            Console.WriteLine( $"ProcessAll() Adding {dependency.type} {dependency.name} to builder" );
             Add(
                 id: dependency.name!,
+                type: dependency.type,
                 name: dependency.name,
                 range: dependency.version_range,
                 framework: dependency.framework);
@@ -60,12 +62,15 @@ public class PackagesConfigHelper
                 {
                     deps.Add(item: new BasePackage(
                         name: ResolutionDatas[key: dep].Name!,
+                        type: ResolutionDatas[key: dep].Type!,
                         version: ResolutionDatas[key: dep].CurrentVersion?.ToNormalizedString()));
                 }
             }
 
             builder.AddOrUpdatePackage(
-                base_package: new BasePackage(name: data.Name!,
+                base_package: new BasePackage(
+                    name: data.Name!,
+                    type: data.Type!,
                     version: data.CurrentVersion?.ToNormalizedString()),
                     dependencies: deps!);
         }
@@ -73,11 +78,12 @@ public class PackagesConfigHelper
         return builder.GetPackageList();
     }
 
-    public void Add(string id, string? name, VersionRange? range, NuGetFramework? framework)
+    public void Add(string id, string type, string? name, VersionRange? range, NuGetFramework? framework)
     {
         id = id.ToLower();
         Resolve(
             id: id,
+            type: type,
             name: name,
             project_target_framework: framework,
             overrideRange: range);
@@ -85,12 +91,14 @@ public class PackagesConfigHelper
 
     private void Resolve(
         string id,
+        string type,
         string? name,
         NuGetFramework? project_target_framework = null,
         VersionRange? overrideRange = null)
     {
         id = id.ToLower();
         ResolutionData data = new();
+        data.Type = type;
         if (ResolutionDatas.ContainsKey(key: id))
         {
             data = ResolutionDatas[key: id];
@@ -138,6 +146,7 @@ public class PackagesConfigHelper
                 data.Dependencies.Add(key: dependency.Id.ToLower(), value: dependency.VersionRange);
                 Resolve(
                     id: dependency.Id.ToLower(),
+                    type: ComponentType.NuGet,
                     name: dependency.Id,
                     project_target_framework: project_target_framework);
             }
@@ -150,5 +159,6 @@ public class PackagesConfigHelper
         public readonly Dictionary<string, VersionRange?> Dependencies = new();
         public VersionRange? ExternalVersionRange;
         public string? Name;
+        public string? Type;
     }
 }

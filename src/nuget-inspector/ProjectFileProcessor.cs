@@ -42,6 +42,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             var rpid = reference.PackageIdentity;
             var dep = new Dependency(
                 name: rpid.Id,
+                type: ComponentType.NuGet,
                 version_range: reference.AllowedVersions ?? new VersionRange(rpid.Version),
                 framework: ProjectFramework,
                 is_direct: true);
@@ -408,6 +409,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
             BasePackage dep = new(
                 name: resolved_dep.Id,
+                type: ComponentType.NuGet,
                 version: resolved_dep.Version.ToString(),
                 framework: ProjectFramework!.GetShortFolderName());
 
@@ -456,6 +458,7 @@ internal class ProjectFileProcessor : IDependencyProcessor
             }
             BasePackage dep = new(
                 name: resolved_dep.Id,
+                type: ComponentType.NuGet,
                 version: resolved_dep.Version.ToString(),
                 framework: ProjectFramework!.GetShortFolderName());
 
