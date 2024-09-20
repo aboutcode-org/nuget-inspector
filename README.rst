@@ -2,7 +2,7 @@
 nuget-inspector - inspect nuget and .NET projects packages dependencies
 ========================================================================
 
-Homepage: https://github.com/nexB/nuget-inspector and https://www.aboutcode.org/
+Homepage: https://github.com/aboutcode-org/nuget-inspector and https://www.aboutcode.org/
 
 
 ``nuget-inspector`` is a utility to:
@@ -34,7 +34,7 @@ Usage
   https://learn.microsoft.com/en-us/dotnet/core/install/
 
 - Download and extract the pre-built binary release archive from the release page
-  https://github.com/nexB/nuget-inspector for your operating system. (Linux-only
+  https://github.com/aboutcode-org/nuget-inspector for your operating system. (Linux-only
   for now)
 
 - Run the command line utility with::
