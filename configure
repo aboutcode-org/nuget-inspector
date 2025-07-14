@@ -10,6 +10,9 @@
 set -e
 #set -x
 
+# we are doing a dotnet publish from src/nuget-inspector/nuget-inspector.csproj
+bash ./build.sh
+
 ################################
 # A configuration script to set things up:
 # create a virtualenv and install or update thirdparty packages.
