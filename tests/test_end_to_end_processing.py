@@ -271,6 +271,17 @@ def test_nuget_inspector_end_to_end_packages_config_with_target_framework_net451
     )
 
 
+def test_nuget_inspector_central_package_management():
+    """
+    Test that NuGet Central Package Management (CPM) features are correctly handled:
+    - PackageVersion: packages without an explicit version use the centrally-defined one
+    - VersionOverride: a project-level VersionOverride supersedes the central version
+    - GlobalPackageReference: packages listed as GlobalPackageReference appear as dependencies
+    """
+    test_path = "basic/cpm/SampleApp.csproj"
+    check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
+
+
 def clean_text_file(location, path=test_env.test_data_dir):
     """
     Clean a text file at ``location`` from harcoded ``path`` and return the

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Version resolved from central Directory.Packages.props (PackageVersion 13.0.3) -->
+    <PackageReference Include="Newtonsoft.Json" />
+    <!-- VersionOverride takes precedence over the central version of 7.0.3 -->
+    <PackageReference Include="System.Text.Json">
+      <VersionOverride>6.0.9</VersionOverride>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
