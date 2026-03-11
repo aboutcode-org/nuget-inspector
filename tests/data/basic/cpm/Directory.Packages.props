@@ -1,0 +1,19 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- GlobalPackageReference: applied to all projects automatically -->
+    <GlobalPackageReference Include="MinVer" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- PackageVersion: central version definitions used by projects without a version -->
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- System.Text.Json: central version is 7.0.3, but the project will override it -->
+    <PackageVersion Include="System.Text.Json" Version="7.0.3" />
+  </ItemGroup>
+
+</Project>
