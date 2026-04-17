@@ -24,26 +24,26 @@
         <Product>nuget-inspector</Product>
         <AssemblyName>nuget-inspector</AssemblyName>
 
-        <Version>0.9.12</Version>
-        <AssemblyVersion>0.9.12.0</AssemblyVersion>
-        <FileVersion>0.9.12.0</FileVersion>
+        <Version>0.10.0</Version>
+        <AssemblyVersion>0.10.0.0</AssemblyVersion>
+        <FileVersion>0.10.0.0</FileVersion>
 
-        <Authors>nexB Inc.</Authors>
-        <Company>nexB Inc</Company>
-        <Copyright>Copyright (c) nexB Inc. and others.</Copyright>
+        <Authors>AboutCode</Authors>
+        <Company>AboutCode</Company>
+        <Copyright>Copyright (c) AboutCode, nexB Inc. and others.</Copyright>
 
-        <PackageProjectUrl>https://github.com/nexB/nuget-inspector</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/aboutcode-org/nuget-inspector</PackageProjectUrl>
         <Description>A NuGet and Dotnet package dependency resolver</Description>
         <PackageTags>nuget, dependencies, dependency, resolver, dotnet, csproj, linux, windows, macos</PackageTags>
 
         <PackageLicenseExpression>Apache-2.0 AND MIT</PackageLicenseExpression>
-        <PackageLicenseUrl>https://raw.githubusercontent.com/nexB/nuget-inspector/main/NOTICE</PackageLicenseUrl>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/aboutcode-org/nuget-inspector/main/NOTICE</PackageLicenseUrl>
         <PackageLicenseFile>../NOTICE</PackageLicenseFile>
 
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/nexB/nuget-inspector</RepositoryUrl>
+        <RepositoryUrl>https://github.com/aboutcode-org/nuget-inspector</RepositoryUrl>
 
     </PropertyGroup>
 

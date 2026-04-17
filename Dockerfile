@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-FROM ubuntu:jammy as base-image
+FROM ubuntu:22.04 as base-image
 
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
@@ -19,7 +19,8 @@ RUN apt-get update \
     libssl3 \
     libstdc++6 \
     libunwind8 \
-    zlib1g
+    zlib1g \
+    dotnet-sdk-6.0
 
 ENV NI_ROOT=/opt/nuget-inspector
 ENV NI_HOME=$NI_ROOT/bin
@@ -31,9 +32,9 @@ RUN mkdir -p $NI_DOTNET_HOME \
     && curl --location https://aka.ms/dotnet/6.0/dotnet-sdk-linux-x64.tar.gz \
     | tar -C $NI_DOTNET_HOME -xz
 
-ARG NI_VERSION=0.9.12
+ARG NI_VERSION=0.10.0
 RUN mkdir -p $NI_HOME \
-    && curl -L https://github.com/nexB/nuget-inspector/releases/download/v${NI_VERSION}/nuget-inspector-v${NI_VERSION}-linux-x64.tar.gz \
+    && curl -L https://github.com/aboutcode-org/nuget-inspector/releases/download/v${NI_VERSION}/nuget-inspector-v${NI_VERSION}-linux-x64.tar.gz \
     | tar --strip-components=1 -C $NI_HOME -xz
 
 ENTRYPOINT ["/opt/nuget-inspector/bin/nuget-inspector"]

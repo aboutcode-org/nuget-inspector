@@ -1,6 +1,18 @@
 Changelog
 =========
 
+v0.10.0
+--------
+
+This is a medium release with various fixes, improvements and updates
+
+* Drop older version of Ubuntu
+* Improve README
+* Update skeletton
+* Update test results
+
+
+
 v0.9.12
 --------
 
