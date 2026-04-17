@@ -46,4 +46,4 @@ jobs:
             path: release/*.tar.gz
 
       - name: Run tests
-        run: .venv/bin/python pytest -vvs -n3
+        run: ./venv/bin/pytest -vvs -n3
