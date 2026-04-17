@@ -52,7 +52,21 @@ And then run::
 And review the ``nuget-inspector.json`` JSON output file with its resolved dependencies.
 Note that the output data structure is evolving and not final.
 
+Developement
+-------------
 
+Getting started for development:
+
+- Install the .NET SDK 6.x from https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+- Install the VSCode from https://code.visualstudio.com/
+- Install the extension: C# for Visual Studio Code (powered by OmniSharp) 
+  from https://code.visualstudio.com/Docs/languages/csharp
+
+To run the tests:
+
+- Run ``./build.sh`` to create a Linux build
+- Run ``./configure --dev`` once to setup the Python evnvironment used for testing
+- Run pytest with: ``venv/bin/pytest -vvs``
 
 License
 -------------
