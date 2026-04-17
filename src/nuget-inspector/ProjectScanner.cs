@@ -88,8 +88,8 @@ internal class ProjectScanner
 
         string project_directory = ScannerOptions.ProjectDirectory;
 
-        // TODO: Also rarer files named packahes.<project name>.congig
-        // See CommandLineUtility.IsValidConfigFileName(Path.GetFileName(path) 
+        // TODO: Also rarer files named packages.<project name>.config
+        // See CommandLineUtility.IsValidConfigFileName(Path.GetFileName(path)
         if (string.IsNullOrWhiteSpace(value: ScannerOptions.PackagesConfigPath))
             ScannerOptions.PackagesConfigPath = combine_paths(project_directory, "packages.config");
 
@@ -152,11 +152,13 @@ internal class ProjectScanner
 
         var project = new BasePackage(
             name: ScannerOptions.ProjectName!,
+            type: ComponentType.Project,
             version: ScannerOptions.ProjectVersion,
             datafile_path: ScannerOptions.ProjectFilePath
         );
 
-        var scan_result = new ScanResult() {
+        var scan_result = new ScanResult()
+        {
             Options = ScannerOptions,
             project_package = project
         };
@@ -174,11 +176,11 @@ internal class ProjectScanner
         IDependencyProcessor resolver;
 
         // project.assets.json is the gold standard when available
-        // TODO: make the use of lockfiles optional
+        // TODO: make the use of lock files optional
         if (FileExists(path: ScannerOptions.ProjectAssetsJsonPath!))
         {
             if (Config.TRACE)
-                Console.WriteLine($"  Using project-assets.json lockfile at: {ScannerOptions.ProjectAssetsJsonPath}");
+                Console.WriteLine($"  Using project.assets.json lockfile at: {ScannerOptions.ProjectAssetsJsonPath}");
             try
             {
                 resolver = new ProjectAssetsJsonProcessor(projectAssetsJsonPath: ScannerOptions.ProjectAssetsJsonPath!);
@@ -287,7 +289,6 @@ internal class ProjectScanner
         // first we try using MSbuild to read the project
         if (Config.TRACE)
             Console.WriteLine($"  Using project file: {ScannerOptions.ProjectFilePath}");
-
         try
         {
             resolver = new ProjectFileProcessor(

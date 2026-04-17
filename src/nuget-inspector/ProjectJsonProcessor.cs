@@ -27,6 +27,7 @@ internal class ProjectJsonProcessor : IDependencyProcessor
         {
             var bpwd = new BasePackage(
                 name: package.Name,
+                type: ComponentType.NuGet,
                 version: package.LibraryRange.VersionRange.OriginalString
             );
             resolution.Dependencies.Add(item: bpwd);

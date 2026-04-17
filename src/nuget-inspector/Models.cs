@@ -8,12 +8,13 @@ using NuGet.Versioning;
 
 namespace NugetInspector
 {
-    #pragma warning disable IDE1006
+#pragma warning disable IDE1006
     public class Dependency
     {
         public string? name;
         public NuGetFramework? framework;
         public VersionRange? version_range;
+        public string type;
         public bool is_direct;
 
         //True only for legacy packages.config-based projects only when set there
@@ -21,6 +22,7 @@ namespace NugetInspector
 
         public Dependency(
             string? name,
+            string type,
             VersionRange? version_range,
             NuGetFramework? framework = null,
             bool is_direct = false,
@@ -28,6 +30,7 @@ namespace NugetInspector
         {
             this.framework = framework;
             this.name = name;
+            this.type = type;
             this.version_range = version_range;
             this.is_direct = is_direct;
             this.is_development_dependency = is_development_dependency;
@@ -40,6 +43,7 @@ namespace NugetInspector
         {
             return new BasePackage(
                 name: name!,
+                type: type,
                 version: version_range?.MinVersion.ToNormalizedString(),
                 framework: framework?.ToString()
             );
@@ -144,6 +148,12 @@ namespace NugetInspector
         }
     }
 
+    public static class ComponentType
+    {
+        public const string NuGet = "nuget";
+        public const string Project = "project";
+    }
+
     /// <summary>
     /// Package data object using purl as identifying attributes as
     /// specified here https://github.com/package-url/purl-spec
@@ -194,11 +204,12 @@ namespace NugetInspector
         [JsonIgnore]
         public bool has_updated_metadata;
 
-       public BasePackage(){}
+        public BasePackage() { }
 
-        public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
+        public BasePackage(string name, string type, string? version, string? framework = "", string? datafile_path = "")
         {
             this.name = name;
+            this.type = type;
             this.version = version;
             if (!string.IsNullOrWhiteSpace(framework))
                 this.version = version;
@@ -210,7 +221,7 @@ namespace NugetInspector
 
         public static BasePackage FromPackage(BasePackage package, List<BasePackage> dependencies)
         {
-            return new(name: package.name, version: package.version)
+            return new(name: package.name, type: package.type, version: package.version)
             {
                 extra_data = package.extra_data,
                 dependencies = dependencies
@@ -220,13 +231,14 @@ namespace NugetInspector
         ///<summary>
         /// Return a deep clone of this package. Optionally clone dependencies.
         ///</summary>
-        public BasePackage Clone(bool with_deps=false)
+        public BasePackage Clone(bool with_deps = false)
         {
             List<BasePackage> deps = with_deps ? dependencies : new List<BasePackage>();
 
             return new BasePackage(
                 name: name,
-                version:version,
+                type: type,
+                version: version,
                 datafile_path: datafile_path
             )
             {
@@ -318,7 +330,8 @@ namespace NugetInspector
 
             try
             {
-                UpdateWithRemoteMetadata(nugetApi, with_details: with_details);
+                if (!type.Equals(ComponentType.Project))
+                    UpdateWithRemoteMetadata(nugetApi, with_details: with_details);
             }
             catch (Exception ex)
             {
@@ -527,7 +540,8 @@ namespace NugetInspector
         /// <summary>
         /// Sort recursively the dependencies of this package.
         /// </summary>
-        public void Sort() {
+        public void Sort()
+        {
             dependencies.Sort();
             foreach (var dep in dependencies)
                 dep.Sort();
@@ -599,12 +613,13 @@ namespace NugetInspector
 
         public Party Clone()
         {
-            return new Party(){
-                type=type,
-                role=role,
-                name=name,
-                email=email,
-                url=url
+            return new Party()
+            {
+                type = type,
+                role = role,
+                name = name,
+                email = email,
+                url = url
             };
         }
     }
@@ -631,14 +646,15 @@ namespace NugetInspector
         public string hash { get; set; } = "";
         public string hash_algorithm { get; set; } = "";
         public int? size { get; set; } = 0;
-        public bool IsEnhanced(){
+        public bool IsEnhanced()
+        {
             return !string.IsNullOrWhiteSpace(download_url) && !string.IsNullOrWhiteSpace(hash);
         }
 
         public static PackageDownload FromSpdi(SourcePackageDependencyInfo spdi)
         {
-            PackageDownload download = new(){ download_url = spdi.DownloadUri.ToString() };
-            /// Note that this hash is unlikely there per https://github.com/NuGet/NuGetGallery/issues/9433
+            PackageDownload download = new() { download_url = spdi.DownloadUri.ToString() };
+            // Note that this hash is unlikely there per https://github.com/NuGet/NuGetGallery/issues/9433
             if (!string.IsNullOrEmpty(spdi.PackageHash))
             {
                 download.hash = spdi.PackageHash;
