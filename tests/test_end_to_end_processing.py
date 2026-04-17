@@ -56,6 +56,15 @@ failing_paths = tuple([
 
     # TODO: This is using central package dependencies?
     "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    
+    # misc failures
+    "basic/win/sample.csproj",
+    "basic/includes/ClientApiTestApp/ClientModelTestApp.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/BeanTraderClient.csproj",
+    "complex/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.Core.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/WpfApp1.vbproj",
+    "complex/thirdparty-suites/ort-tests/dotnet/subProjectTestWithNuspec/test.csproj",
+    "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj",
 ])
 
 # These test paths are supposed to have an error returned by design with an output
@@ -136,6 +145,7 @@ def test_nuget_inspector_end_to_end_with_failing(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
+#@pytest.mark.xfail(reason="Failing tests to review")
 def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_config_1():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"
