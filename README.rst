@@ -32,6 +32,10 @@ Usage
 
 - Install the dotnet SDK 6.x for your platform from Microsoft
   https://learn.microsoft.com/en-us/dotnet/core/install/
+  
+  - On debian and Ubuntu::
+
+      sudo apt-get install dotnet-sdk-6.0
 
 - Download and extract the pre-built binary release archive from the release page
   https://github.com/aboutcode-org/nuget-inspector for your operating system. (Linux-only
@@ -52,12 +56,17 @@ And then run::
 And review the ``nuget-inspector.json`` JSON output file with its resolved dependencies.
 Note that the output data structure is evolving and not final.
 
+
 Developement
 -------------
 
 Getting started for development:
 
 - Install the .NET SDK 6.x from https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+  - On debian and Ubuntu::
+
+      sudo apt-get install dotnet-sdk-6.0
+
 - Install the VSCode from https://code.visualstudio.com/
 - Install the extension: C# for Visual Studio Code (powered by OmniSharp) 
   from https://code.visualstudio.com/Docs/languages/csharp
@@ -67,6 +76,10 @@ To run the tests:
 - Run ``./build.sh`` to create a Linux build
 - Run ``./configure --dev`` once to setup the Python evnvironment used for testing
 - Run pytest with: ``venv/bin/pytest -vvs``
+- Run pytest in parallel with: ``venv/bin/pytest -vvs -n10``
+- Regen last failed tests JSON fixtures: ``REGEN_TEST_FIXTURES=yes venv/bin/pytest -vvs -n10 --lf``
+
+
 
 License
 -------------
