@@ -47,7 +47,7 @@ Usage
 
 For instance, you can fetch nuget-inspector own project file at::
 
-    https://raw.githubusercontent.com/nexB/nuget-inspector/main/src/nuget-inspector/nuget-inspector.csproj
+    https://raw.githubusercontent.com/aboutcode-org/nuget-inspector/main/src/nuget-inspector/nuget-inspector.csproj
 
 And then run::
 
@@ -84,7 +84,7 @@ To run the tests:
 License
 -------------
 
-Copyright (c) nexB Inc. and others.
+Copyright (c) AboutCode, nexB Inc. and others.
 
 Copyright (c) the .NET Foundation, Microsoft and others.
 
