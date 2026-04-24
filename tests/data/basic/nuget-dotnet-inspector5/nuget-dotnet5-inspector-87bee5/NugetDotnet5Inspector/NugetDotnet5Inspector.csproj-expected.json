@@ -5,7 +5,8 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /basic/nuget-dotnet-inspector5/nuget-dotnet5-inspector-87bee5/NugetDotnet5Inspector/NugetDotnet5Inspector.csproj"
+        "--project-file /basic/nuget-dotnet-inspector5/nuget-dotnet5-inspector-87bee5/NugetDotnet5Inspector/NugetDotnet5Inspector.csproj",
+        "--verbose"
       ],
       "project_framework": "net5.0",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",

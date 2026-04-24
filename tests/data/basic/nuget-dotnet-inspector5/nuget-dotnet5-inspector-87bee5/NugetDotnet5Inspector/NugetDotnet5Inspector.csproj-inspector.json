@@ -2,7 +2,7 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.9.11",
       "options": [
         "--project-file tests/data/basic/nuget-dotnet-inspector5/nuget-dotnet5-inspector-87bee5/NugetDotnet5Inspector/NugetDotnet5Inspector.csproj",
@@ -10,7 +10,7 @@
         "--verbose"
       ],
       "project_framework": "net5.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from AboutCode, nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
