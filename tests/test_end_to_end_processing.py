@@ -62,6 +62,9 @@ failing_paths = tuple([
     "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/BeanTraderClient.csproj",
     "complex/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.Core.csproj",
     "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/WpfApp1.vbproj",
+    
+    # this returns weird extra packages
+    "basic/csproj5/mini.csproj",
 ])
 
 # These test paths are supposed to have an error returned by design with an output

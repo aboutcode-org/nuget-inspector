@@ -5,8 +5,7 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /basic/csproj3/example.csproj",
-        "--verbose"
+        "--project-file /basic/csproj3/example.csproj"
       ],
       "project_framework": "netcoreapp2.2",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",

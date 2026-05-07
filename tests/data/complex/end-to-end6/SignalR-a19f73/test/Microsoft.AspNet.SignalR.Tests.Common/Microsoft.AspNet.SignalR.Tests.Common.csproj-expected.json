@@ -5,8 +5,7 @@
       "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
-        "--project-file /complex/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj",
-        "--verbose"
+        "--project-file /complex/end-to-end6/SignalR-a19f73/test/Microsoft.AspNet.SignalR.Tests.Common/Microsoft.AspNet.SignalR.Tests.Common.csproj"
       ],
       "project_framework": "any",
       "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
