@@ -21,7 +21,7 @@ VERSION=0.10.0
 TARGET_BASE=nuget-inspector-$(git describe)
 
 # see https://learn.microsoft.com/en-us/dotnet/core/rid-catalog
-for platform in "linux-x64" "win-x64" "osx-x64"
+for platform in "linux-x64" "win-x64" "osx-x64" "linux-arm64" "osx-arm64"
 do
     TARGET=$TARGET_BASE-$platform
     RELEASE_DIR=release/nuget-inspector
