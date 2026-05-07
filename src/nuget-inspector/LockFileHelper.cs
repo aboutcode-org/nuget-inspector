@@ -1,4 +1,5 @@
-﻿using NuGet.ProjectModel;
+﻿using System.Diagnostics.CodeAnalysis;
+using NuGet.ProjectModel;
 using NuGet.Versioning;
 
 namespace NugetInspector;
@@ -143,9 +144,16 @@ public class LockFileHelper
         {
             foreach (var dependency in dependency_group.Dependencies)
             {
-                var project_dependency = ParseProjectFileDependencyGroup(project_file_dependency: dependency);
-                var library_version = GetBestLibraryVersion(name: project_dependency.GetName(),
-                    range: project_dependency.GetVersionRange(), libraries: ProjectLockFile.Libraries);
+                // if it is an external reference (not another project), we should find a reference in the
+                // framework dependencies
+                if( !TryGetPackageDependency( dependency_group, dependency, out var project_dependency ))
+                    project_dependency = ParseProjectFileDependencyGroup(project_file_dependency: dependency);
+                
+                var library_version = GetBestLibraryVersion(
+                    name: project_dependency.GetName(),
+                    range: project_dependency.GetVersionRange(), 
+                    libraries: ProjectLockFile.Libraries);
+                    
                 string? version = null;
                 if (library_version != null)
                 {
@@ -162,6 +170,34 @@ public class LockFileHelper
             Console.WriteLine($"Found no dependencies for lock file: {ProjectLockFile.Path}");
         }
         return resolution;
+    }
+
+    /// <summary>
+    /// If the framework dependencies contain a matching package, use that version range.
+    /// </summary>
+    private bool TryGetPackageDependency(
+        ProjectFileDependencyGroup dependency_group,
+        string dependency,
+        [NotNullWhen(true)] out ProjectFileDependency? package_dependency )
+    {
+        package_dependency = null;
+        var package_id = dependency.Split(' ')[0];
+        var target_framework_information = ProjectLockFile
+            .PackageSpec
+            ?.TargetFrameworks
+            ?.Where(x => x.FrameworkName.ToString().Equals(dependency_group.FrameworkName));
+        if (target_framework_information?.FirstOrDefault() is not { } framework)
+            return package_dependency != null;
+        
+        var framework_dependency = framework
+            .Dependencies
+            .FirstOrDefault(x => x.Name.Equals(package_id, StringComparison.InvariantCultureIgnoreCase));
+        var range = framework_dependency?.LibraryRange.VersionRange;
+
+        if (range != null)
+            package_dependency = new ProjectFileDependency(package_id, range);
+
+        return package_dependency != null;
     }
 
     /// <summary>
