@@ -14,6 +14,7 @@ namespace NugetInspector
         public string? name;
         public NuGetFramework? framework;
         public VersionRange? version_range;
+        public string type;
         public bool is_direct;
 
         //True only for legacy packages.config-based projects only when set there
@@ -21,6 +22,7 @@ namespace NugetInspector
 
         public Dependency(
             string? name,
+            string type,
             VersionRange? version_range,
             NuGetFramework? framework = null,
             bool is_direct = false,
@@ -28,6 +30,7 @@ namespace NugetInspector
         {
             this.framework = framework;
             this.name = name;
+            this.type = type;
             this.version_range = version_range;
             this.is_direct = is_direct;
             this.is_development_dependency = is_development_dependency;
@@ -40,6 +43,7 @@ namespace NugetInspector
         {
             return new BasePackage(
                 name: name!,
+                type: type,
                 version: version_range?.MinVersion.ToNormalizedString(),
                 framework: framework?.ToString()
             );
@@ -144,6 +148,12 @@ namespace NugetInspector
         }
     }
 
+    public static class ComponentType
+    {
+        public const string NuGet = "nuget";
+        public const string Project = "project";
+    }
+
     /// <summary>
     /// Package data object using purl as identifying attributes as
     /// specified here https://github.com/package-url/purl-spec
@@ -196,9 +206,10 @@ namespace NugetInspector
 
        public BasePackage(){}
 
-        public BasePackage(string name, string? version, string? framework = "", string? datafile_path = "")
+        public BasePackage(string name, string type, string? version, string? framework = "", string? datafile_path = "")
         {
             this.name = name;
+            this.type = type;
             this.version = version;
             if (!string.IsNullOrWhiteSpace(framework))
                 this.version = version;
@@ -210,7 +221,7 @@ namespace NugetInspector
 
         public static BasePackage FromPackage(BasePackage package, List<BasePackage> dependencies)
         {
-            return new(name: package.name, version: package.version)
+            return new(name: package.name, type: package.type, version: package.version)
             {
                 extra_data = package.extra_data,
                 dependencies = dependencies
@@ -226,6 +237,7 @@ namespace NugetInspector
 
             return new BasePackage(
                 name: name,
+                type: type,
                 version:version,
                 datafile_path: datafile_path
             )
@@ -318,7 +330,8 @@ namespace NugetInspector
 
             try
             {
-                UpdateWithRemoteMetadata(nugetApi, with_details: with_details);
+                if( !type.Equals( ComponentType.Project ) )
+                    UpdateWithRemoteMetadata(nugetApi, with_details: with_details);
             }
             catch (Exception ex)
             {
@@ -638,7 +651,7 @@ namespace NugetInspector
         public static PackageDownload FromSpdi(SourcePackageDependencyInfo spdi)
         {
             PackageDownload download = new(){ download_url = spdi.DownloadUri.ToString() };
-            /// Note that this hash is unlikely there per https://github.com/NuGet/NuGetGallery/issues/9433
+            // Note that this hash is unlikely there per https://github.com/NuGet/NuGetGallery/issues/9433
             if (!string.IsNullOrEmpty(spdi.PackageHash))
             {
                 download.hash = spdi.PackageHash;

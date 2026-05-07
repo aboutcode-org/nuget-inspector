@@ -37,7 +37,7 @@ internal static class Program
     }
 
     /// <summary>
-    /// Return True if there is an warning in the results.
+    /// Return True if there is a warning in the results.
     /// </summary>
     public static bool Has_warnings(OutputFormatJson output)
     {
@@ -52,7 +52,7 @@ internal static class Program
         {
             if (dep.warnings.Any())
                 has_dep_level = true;
-                break;
+            break;
         }
         return has_dep_level;
     }
@@ -73,7 +73,7 @@ internal static class Program
         {
             if (dep.errors.Any())
                 has_dep_level = true;
-                break;
+            break;
         }
         return has_dep_level;
     }
@@ -111,6 +111,7 @@ internal static class Program
 
             Stopwatch deps_timer = Stopwatch.StartNew();
             ScanResult scan_result = scanner.RunScan();
+
             deps_timer.Stop();
 
             Stopwatch meta_timer = Stopwatch.StartNew();
@@ -163,7 +164,7 @@ internal static class Program
                 if (with_warnings)
                     PrintWarnings(scan_result, project_package);
 
-               return ExecutionResult.Succeeded();
+                return ExecutionResult.Succeeded();
             }
             else
             {

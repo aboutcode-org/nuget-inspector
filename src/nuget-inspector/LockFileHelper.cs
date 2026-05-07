@@ -67,15 +67,21 @@ public class LockFileHelper
     {
         var tree_builder = new PackageTree();
         var resolution = new DependencyResolution();
+        var project_references = ProjectLockFile.Libraries
+            .Where( l => l.Type.Equals(ComponentType.Project) )
+            .Select( l =>  l.Name)
+            .ToList();
 
         foreach (var target in ProjectLockFile.Targets)
         {
             foreach (var library in target.Libraries)
             {
+                var type = library.Type;
                 var name = library.Name;
                 var version = library.Version.ToNormalizedString();
-                var package = new BasePackage(name: name, version: version);
+                var package = new BasePackage(name: name, type: type, version: version);
                 var dependencies = new List<BasePackage>();
+
                 foreach (var dependency in library.Dependencies)
                 {
                     var dep_name = dependency.Id;
@@ -90,7 +96,10 @@ public class LockFileHelper
                     }
                     else
                     {
-                        var depId = new BasePackage(name: dep_name, version: best_version.ToNormalizedString());
+                        var dep_type = project_references.Contains( dep_name)
+                            ? ComponentType.Project
+                            : ComponentType.NuGet;
+                        var depId = new BasePackage(name: dep_name, dep_type, version: best_version.ToNormalizedString());
                         dependencies.Add(item: depId);
                     }
                 }
@@ -111,7 +120,10 @@ public class LockFileHelper
             foreach (var dep in ProjectLockFile.PackageSpec.Dependencies)
             {
                 var version = tree_builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
-                resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
+                var dep_type1 = project_references.Contains( dep.Name )
+                    ? ComponentType.Project
+                    : ComponentType.NuGet;
+                resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, dep_type1, version: version));
             }
         }
         else
@@ -128,8 +140,11 @@ public class LockFileHelper
             {
                 foreach (var dep in framework.Dependencies)
                 {
+                    var dep_type1 = project_references.Contains( dep.Name )
+                        ? ComponentType.Project
+                        : ComponentType.NuGet;
                     var version = tree_builder.GetResolvedVersion(name: dep.Name, range: dep.LibraryRange.VersionRange);
-                    resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, version: version));
+                    resolution.Dependencies.Add(item: new BasePackage(name: dep.Name, dep_type1, version: version));
                 }
             }
         }
@@ -152,8 +167,13 @@ public class LockFileHelper
                     version = library_version.ToNormalizedString();
                 }
 
-                resolution.Dependencies.Add(
-                    item: new BasePackage(name: project_dependency.GetName()!, version: version));
+                var name = project_dependency.GetName()!;
+
+
+                var dep_type1 = project_references.Contains( name )
+                    ? ComponentType.Project
+                    : ComponentType.NuGet;
+                resolution.Dependencies.Add(item: new BasePackage(name: name, dep_type1, version: version));
             }
         }
 

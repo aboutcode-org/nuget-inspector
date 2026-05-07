@@ -101,6 +101,7 @@ internal class PackagesConfigProcessor : IDependencyProcessor
 
             Dependency dep = new(
                 name: name,
+                type: ComponentType.NuGet,
                 version_range: range,
                 framework: package_framework,
                 is_direct: true,
