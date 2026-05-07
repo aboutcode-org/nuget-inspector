@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows10.0.19041</TargetFramework>
+		<Title>FooBar</Title>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Svg" Version="3.2.3" />
+	</ItemGroup>
+
+</Project>

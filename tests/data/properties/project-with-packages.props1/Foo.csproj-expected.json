@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /properties/project-with-packages.props1/Foo.csproj"
       ],
       "project_framework": "netstandard2.0",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from AboutCode, nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -294,6 +294,114 @@
           "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
           "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
           "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "StyleCop.Analyzers",
+          "version": "1.2.0-beta.321",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers@1.2.0-beta.321",
+          "primary_language": "C#",
+          "description": "An implementation of StyleCop's rules using Roslyn analyzers and code fixes",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Sam Harwell et. al.",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
+          "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers/1.2.0-beta.321/stylecop.analyzers.1.2.0-beta.321.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.321/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.321?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers/1.2.0-beta.321/stylecop.analyzers.1.2.0-beta.321.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers/1.2.0-beta.321.json",
+          "datasource_id": "",
+          "datafile_path": "",
+          "dependencies": [],
+          "warnings": [],
+          "errors": []
+        },
+        {
+          "type": "nuget",
+          "namespace": "",
+          "name": "StyleCop.Analyzers.Unstable",
+          "version": "1.2.0.321",
+          "qualifiers": "",
+          "subpath": "",
+          "purl": "pkg:nuget/StyleCop.Analyzers.Unstable@1.2.0.321",
+          "primary_language": "C#",
+          "description": "An implementation of StyleCop's rules using Roslyn analyzers and code fixes",
+          "release_date": "",
+          "parties": [
+            {
+              "type": "organization",
+              "role": "author",
+              "name": "Sam Harwell et. al.",
+              "email": "",
+              "url": ""
+            }
+          ],
+          "keywords": [
+            "StyleCop",
+            "DotNetAnalyzers",
+            "Roslyn",
+            "Diagnostic",
+            "Analyzer"
+          ],
+          "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers.unstable/1.2.0.321/stylecop.analyzers.unstable.1.2.0.321.nupkg",
+          "size": 0,
+          "sha1": "",
+          "md5": "",
+          "sha256": "",
+          "sha512": "",
+          "bug_tracking_url": "",
+          "code_view_url": "",
+          "vcs_url": "",
+          "copyright": "",
+          "license_expression": "",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/StyleCop.Analyzers.Unstable/1.2.0.321/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "notice_text": "",
+          "source_packages": [],
+          "extra_data": {
+            "framework": "netstandard2.0"
+          },
+          "repository_homepage_url": "https://www.nuget.org/packages/StyleCop.Analyzers.Unstable/1.2.0.321?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers.unstable/1.2.0.321/stylecop.analyzers.unstable.1.2.0.321.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers.unstable/1.2.0.321.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -1846,6 +1954,114 @@
       "repository_homepage_url": "https://www.nuget.org/packages/Microsoft.NETCore.Targets/1.1.0?_src=template",
       "repository_download_url": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg",
       "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/microsoft.netcore.targets/1.1.0.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "StyleCop.Analyzers",
+      "version": "1.2.0-beta.321",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/StyleCop.Analyzers@1.2.0-beta.321",
+      "primary_language": "C#",
+      "description": "An implementation of StyleCop's rules using Roslyn analyzers and code fixes",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Sam Harwell et. al.",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "StyleCop",
+        "DotNetAnalyzers",
+        "Roslyn",
+        "Diagnostic",
+        "Analyzer"
+      ],
+      "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers/1.2.0-beta.321/stylecop.analyzers.1.2.0-beta.321.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.321/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.321?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers/1.2.0-beta.321/stylecop.analyzers.1.2.0-beta.321.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers/1.2.0-beta.321.json",
+      "datasource_id": "",
+      "datafile_path": "",
+      "dependencies": [],
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "type": "nuget",
+      "namespace": "",
+      "name": "StyleCop.Analyzers.Unstable",
+      "version": "1.2.0.321",
+      "qualifiers": "",
+      "subpath": "",
+      "purl": "pkg:nuget/StyleCop.Analyzers.Unstable@1.2.0.321",
+      "primary_language": "C#",
+      "description": "An implementation of StyleCop's rules using Roslyn analyzers and code fixes",
+      "release_date": "",
+      "parties": [
+        {
+          "type": "organization",
+          "role": "author",
+          "name": "Sam Harwell et. al.",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "keywords": [
+        "StyleCop",
+        "DotNetAnalyzers",
+        "Roslyn",
+        "Diagnostic",
+        "Analyzer"
+      ],
+      "homepage_url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers.unstable/1.2.0.321/stylecop.analyzers.unstable.1.2.0.321.nupkg",
+      "size": 0,
+      "sha1": "",
+      "md5": "",
+      "sha256": "",
+      "sha512": "",
+      "bug_tracking_url": "",
+      "code_view_url": "",
+      "vcs_url": "",
+      "copyright": "",
+      "license_expression": "",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/StyleCop.Analyzers.Unstable/1.2.0.321/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "notice_text": "",
+      "source_packages": [],
+      "extra_data": {
+        "framework": "netstandard2.0"
+      },
+      "repository_homepage_url": "https://www.nuget.org/packages/StyleCop.Analyzers.Unstable/1.2.0.321?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/stylecop.analyzers.unstable/1.2.0.321/stylecop.analyzers.unstable.1.2.0.321.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/stylecop.analyzers.unstable/1.2.0.321.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],

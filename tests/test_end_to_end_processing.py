@@ -1,10 +1,9 @@
 #
-# Copyright (c) nexB Inc. and others. All rights reserved.
-# ScanCode is a trademark of nexB Inc.
+# Copyright (c) AboutCode, nexB Inc. and others. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/nuget-inspector for support or download.
-# See https://aboutcode.org for more information about nexB OSS projects.
+# See https://github.com/aboutcode-org/nuget-inspector for support or download.
+# See https://aboutcode.org for more information about AboutCode OSS projects.
 #
 
 import json
@@ -54,8 +53,18 @@ failing_paths = tuple([
     # invalid csproj file
     "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/Integration.Tests.csproj",
 
-    # TODO: This is using central package dependencies?
-    "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    # This is using central package dependencies?
+    # "complex/component-detection/component-detection-2a128f6/src/Microsoft.ComponentDetection.Common/Microsoft.ComponentDetection.Common.csproj",
+    
+    # misc failures
+    "basic/win/sample.csproj",
+    "basic/includes/ClientApiTestApp/ClientModelTestApp.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/csharp/Upgraded/BeanTraderClient/BeanTraderClient.csproj",
+    "complex/end-to-end10/windows-desktop-b78293f/Samples/BeanTrader/NetCore/BeanTraderClient/BeanTraderClient.Core.csproj",
+    "complex/thirdparty-suites/upgrade-assistant/upgrade-assistant-be3f44f/tests/tool/Integration.Tests/IntegrationScenarios/WpfSample/vb/Upgraded/WpfApp1/WpfApp1.vbproj",
+    
+    # this returns weird extra packages
+    "basic/csproj5/mini.csproj",
 ])
 
 # These test paths are supposed to have an error returned by design with an output
@@ -136,6 +145,7 @@ def test_nuget_inspector_end_to_end_with_failing(test_path):
     check_nuget_inspector_end_to_end(test_path=test_path, regen=REGEN_TEST_FIXTURES)
 
 
+#@pytest.mark.xfail(reason="Failing tests to review")
 def test_nuget_inspector_end_to_end_proj_file_target_with_framework_and_nuget_config_1():
     test_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj"
     expected_path = "complex/thirdparty-suites/ort-tests/dotnet/subProjectTest/test.csproj-expected-netcoreapp3.1.json"

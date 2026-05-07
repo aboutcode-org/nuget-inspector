@@ -150,8 +150,8 @@ public class Options
                 $"nuget-inspector v{Config.NUGET_INSPECTOR_VERSION}\n"
                 + "Inspect .NET and NuGet projects and package manifests. Resolve NuGet dependencies.\n"
                 + "SPDX-License-Identifier: Apache-2.0 AND MIT\n"
-                + "Copyright (c) nexB Inc. and others.\n"
-                + "https://github.com/nexB/nuget-inspector");
+                + "Copyright (c) AboutCode, nexB Inc. and others.\n"
+                + "https://github.com/aboutcode-org/nuget-inspector");
             return null;
         }
 

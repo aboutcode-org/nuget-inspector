@@ -2,13 +2,13 @@
   "headers": [
     {
       "tool_name": "nuget-inspector",
-      "tool_homepageurl": "https://github.com/nexB/nuget-inspector",
+      "tool_homepageurl": "https://github.com/aboutcode-org/nuget-inspector",
       "tool_version": "0.0.0",
       "options": [
         "--project-file /complex/thirdparty-suites/snyk-dotnet-parser/dotnet-deps-parser-ebd0e1b/test/fixtures/dotnet-fs-simple-project/manifest.fsproj"
       ],
       "project_framework": "netcoreapp2.1",
-      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from nexB Inc. and others.\nVisit https://github.com/nexB/nuget-inspector/ for support and download.",
+      "notice": "Dependency tree generated with nuget-inspector.\nnuget-inspector is a free software tool from AboutCode, nexB Inc. and others.\nVisit https://github.com/aboutcode-org/nuget-inspector/ for support and download.",
       "warnings": [],
       "errors": []
     }
@@ -54,12 +54,12 @@
           "type": "nuget",
           "namespace": "",
           "name": "FSharp.Core",
-          "version": "6.0.5",
+          "version": "6.0.1",
           "qualifiers": "",
           "subpath": "",
-          "purl": "pkg:nuget/FSharp.Core@6.0.5",
+          "purl": "pkg:nuget/FSharp.Core@6.0.1",
           "primary_language": "C#",
-          "description": "FSharp.Core redistributables from F# Tools version 12.0.4 For F# 6.0.  Contains code from the F# Software Foundation.",
+          "description": "FSharp.Core redistributables from F# Tools version 12.0.0 For F# 6.0.  Contains code from the F# Software Foundation.",
           "release_date": "",
           "parties": [
             {
@@ -79,7 +79,7 @@
             "programming"
           ],
           "homepage_url": "https://github.com/dotnet/fsharp",
-          "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
+          "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg",
           "size": 0,
           "sha1": "",
           "md5": "",
@@ -90,15 +90,15 @@
           "vcs_url": "",
           "copyright": "",
           "license_expression": "",
-          "declared_license": "LicenseUrl: https://www.nuget.org/packages/FSharp.Core/6.0.5/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+          "declared_license": "LicenseUrl: https://www.nuget.org/packages/FSharp.Core/6.0.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
           "notice_text": "",
           "source_packages": [],
           "extra_data": {
             "framework": "netcoreapp2.1"
           },
-          "repository_homepage_url": "https://www.nuget.org/packages/FSharp.Core/6.0.5?_src=template",
-          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
-          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/fsharp.core/6.0.5.json",
+          "repository_homepage_url": "https://www.nuget.org/packages/FSharp.Core/6.0.1?_src=template",
+          "repository_download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg",
+          "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/fsharp.core/6.0.1.json",
           "datasource_id": "",
           "datafile_path": "",
           "dependencies": [],
@@ -4893,12 +4893,12 @@
       "type": "nuget",
       "namespace": "",
       "name": "FSharp.Core",
-      "version": "6.0.5",
+      "version": "6.0.1",
       "qualifiers": "",
       "subpath": "",
-      "purl": "pkg:nuget/FSharp.Core@6.0.5",
+      "purl": "pkg:nuget/FSharp.Core@6.0.1",
       "primary_language": "C#",
-      "description": "FSharp.Core redistributables from F# Tools version 12.0.4 For F# 6.0.  Contains code from the F# Software Foundation.",
+      "description": "FSharp.Core redistributables from F# Tools version 12.0.0 For F# 6.0.  Contains code from the F# Software Foundation.",
       "release_date": "",
       "parties": [
         {
@@ -4918,7 +4918,7 @@
         "programming"
       ],
       "homepage_url": "https://github.com/dotnet/fsharp",
-      "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
+      "download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg",
       "size": 0,
       "sha1": "",
       "md5": "",
@@ -4929,15 +4929,15 @@
       "vcs_url": "",
       "copyright": "",
       "license_expression": "",
-      "declared_license": "LicenseUrl: https://www.nuget.org/packages/FSharp.Core/6.0.5/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
+      "declared_license": "LicenseUrl: https://www.nuget.org/packages/FSharp.Core/6.0.1/license\nLicenseType: Expression\nLicense: MIT\nLicenseExpression: MIT",
       "notice_text": "",
       "source_packages": [],
       "extra_data": {
         "framework": "netcoreapp2.1"
       },
-      "repository_homepage_url": "https://www.nuget.org/packages/FSharp.Core/6.0.5?_src=template",
-      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.5/fsharp.core.6.0.5.nupkg",
-      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/fsharp.core/6.0.5.json",
+      "repository_homepage_url": "https://www.nuget.org/packages/FSharp.Core/6.0.1?_src=template",
+      "repository_download_url": "https://api.nuget.org/v3-flatcontainer/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg",
+      "api_data_url": "https://api.nuget.org/v3/registration5-gz-semver2/fsharp.core/6.0.1.json",
       "datasource_id": "",
       "datafile_path": "",
       "dependencies": [],

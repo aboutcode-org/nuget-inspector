@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) nexB Inc. and others. All rights reserved.
+# Copyright (c) AboutCode, nexB Inc. and others. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 # See http://www.apache.org/licenses/LICENSE-2.0 for the license text.
-# See https://github.com/nexB/nuget-inpector for support or download.
-# See https://aboutcode.org for more information about nexB OSS projects.
+# See https://github.com/aboutcode-org/nuget-inpector for support or download.
+# See https://aboutcode.org for more information about AboutCode OSS projects.
 #
 
 # TODO: add --framework
@@ -16,12 +16,12 @@
 rm -rf release/
 mkdir release
 
-VERSION=0.9.12
+VERSION=0.10.0
 
 TARGET_BASE=nuget-inspector-$(git describe)
 
 # see https://learn.microsoft.com/en-us/dotnet/core/rid-catalog
-for platform in "linux-x64" "win-x64" "osx-x64"
+for platform in "linux-x64" "win-x64" "osx-x64" "linux-arm64" "osx-arm64"
 do
     TARGET=$TARGET_BASE-$platform
     RELEASE_DIR=release/nuget-inspector
