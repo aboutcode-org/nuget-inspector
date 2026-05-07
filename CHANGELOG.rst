@@ -10,7 +10,11 @@ This is a medium release with various fixes, improvements and updates
 * Improve README
 * Update skeletton
 * Update test results
-
+* Add support for Central Package Management (CPM)
+  Thanks to  Wolfgang Klenk @wkl3nk and MarcelBochtler @MarcelBochtler and @    msz-bd 
+  https://github.com/aboutcode-org/nuget-inspector/pull/72
+* Update dependencies
+  Thanks to Georg Eckert @cz-dev-ge
 
 
 v0.9.12
