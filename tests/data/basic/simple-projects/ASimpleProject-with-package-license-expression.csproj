@@ -1,0 +1,8 @@
+<Project>
+<!-- See https://www.strathweb.com/2018/07/solution-wide-nuget-package-version-handling-with-msbuild-15/ -->
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
+    <PackageLicenseExpression>LICENSE1 OR LICENSE2</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

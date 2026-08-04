@@ -161,6 +161,8 @@ internal class ProjectScanner
             project_package = project
         };
 
+        project.license_expression = GetLicense(ScannerOptions.ProjectFilePath);
+
         /*
          * Try each data file in sequence to resolve packages for a project:
          * 1. start with modern lockfiles such as project-assets.json and older projects.json.lock
@@ -371,5 +373,22 @@ internal class ProjectScanner
     private static bool FileExists(string path)
     {
         return !string.IsNullOrWhiteSpace(value: path) && File.Exists(path: path);
+    }
+
+    /// <summary>
+    /// Return the license expression from the project file if present, otherwise return a empty string.
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns>string</returns>
+    private static string GetLicense(string path)
+    {
+        Dictionary<string, string> properties = new();
+
+        var project = new Microsoft.Build.Evaluation.Project(
+            projectFile: path,
+            globalProperties: properties,
+            toolsVersion: null);
+
+        return project.GetPropertyValue("PackageLicenseExpression");
     }
 }
