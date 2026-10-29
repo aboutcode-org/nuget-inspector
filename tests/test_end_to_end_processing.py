@@ -27,6 +27,27 @@ test_env.test_data_dir = str(TEST_DATA_DIR)
 
 NUGET_INSPECTOR = str(ROOT_DIR / "build" / "nuget-inspector")
 
+
+def test_project_assets_includes_transitive_dependencies(tmp_path):
+    project = test_env.get_test_loc("project-assets/project.assets.json1/Sample.Nexb.csproj")
+    output = tmp_path / "result.json"
+    subprocess.run(
+        [NUGET_INSPECTOR, "--project-file", project, "--json", str(output)],
+        check=True,
+    )
+
+    packages = json.loads(output.read_text())["packages"][0]["dependencies"]
+    data_access = next(p for p in packages if p["name"] == "PackagesExplorer.DataAccess")
+    entity_framework = next(
+        p for p in data_access["dependencies"]
+        if p["name"] == "Microsoft.EntityFrameworkCore"
+    )
+    caching = next(
+        p for p in entity_framework["dependencies"]
+        if p["name"] == "Microsoft.Extensions.Caching.Memory"
+    )
+    assert any(p["name"] == "Microsoft.Extensions.Primitives" for p in caching["dependencies"])
+
 # These test paths are failing for now and need some TLC
 failing_paths = tuple([
     "complex/thirdparty-suites/buildinfo/build-info-9bd00bd/build-info-extractor-nuget/extractor/projectRootTestDir/projectAssetsDir/another_example.csproj",
@@ -383,4 +404,3 @@ def check_nuget_inspector_end_to_end(
             assert result == expected
         except:
             assert json.dumps(result, indent=2) == json.dumps(expected, indent=2)
-

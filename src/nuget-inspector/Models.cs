@@ -117,6 +117,28 @@ namespace NugetInspector
             return base_package_deps_by_base_package.Values.ToList();
         }
 
+        public BasePackage GetPackageWithDependencies(BasePackage package)
+        {
+            return Expand(package, new HashSet<BasePackage>());
+        }
+
+        private BasePackage Expand(BasePackage package, HashSet<BasePackage> ancestors)
+        {
+            var expanded = package.Clone();
+            if (!base_package_deps_by_base_package.TryGetValue(package, out var recorded)
+                || !ancestors.Add(package))
+                return expanded;
+
+            foreach (var dependency in recorded.dependencies)
+            {
+                if (!ancestors.Contains(dependency))
+                    expanded.dependencies.Add(Expand(dependency, ancestors));
+            }
+
+            ancestors.Remove(package);
+            return expanded;
+        }
+
         public string? GetResolvedVersion(string name, VersionRange range)
         {
             var allVersions = versions_pair_by_base_package.Keys.Where(predicate: key => key.name == name)

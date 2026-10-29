@@ -161,6 +161,9 @@ public class LockFileHelper
         {
             Console.WriteLine($"Found no dependencies for lock file: {ProjectLockFile.Path}");
         }
+        resolution.Dependencies = resolution.Dependencies
+            .Select(tree_builder.GetPackageWithDependencies)
+            .ToList();
         return resolution;
     }
 
